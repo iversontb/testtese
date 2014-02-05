@@ -1,0 +1,23 @@
+.search__wrap,
+.enter,
+.basket,
+.header__menu,
+.header__menu a,
+.vehicle ,
+.vehicle span ,
+.vehicle p ,
+.search2 ,
+.price__search__btn ,
+.small__banner ,
+.small__banner p,
+.small__banner span ,
+.banner__wrap ,
+.accept ,
+.info ,
+.button input ,
+.support
+{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

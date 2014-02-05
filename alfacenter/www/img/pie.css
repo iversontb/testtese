@@ -1,0 +1,8 @@
+.why_wy,
+.benefit,
+.newsletter
+{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

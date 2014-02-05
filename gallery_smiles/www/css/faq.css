@@ -1,0 +1,44 @@
+/* --------------- teeth --------------- */
+.teeth{
+    font-family: arial;
+    font-size: 14px;
+    margin-top: 55px;
+}
+.teeth dt{
+    color: #1e1e81;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.teeth dt span{
+    background: url("../img/down.png") no-repeat right 7px;
+    padding-right: 10px;
+}
+.teeth dt:hover{
+    text-decoration: none;
+}
+.teeth dt.active span{
+    background: url("../img/up.png") no-repeat right 7px;
+}
+.teeth dt.active{
+    text-decoration: none;
+}
+.teeth dd{
+    display: none;
+    background-color: #f3f9eb;
+    margin-top: 15px;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 39px;
+    padding-bottom: 17px;
+    margin-bottom: 20px;
+}
+.teeth dd h2, .teeth dd h1{
+    display: inline-block;
+    color: #000000;
+    margin-bottom: 11px;
+}
+.teeth dd p{
+    line-height: 21px;
+}
+/* --------------- /teeth --------------- */

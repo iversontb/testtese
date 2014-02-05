@@ -1,0 +1,667 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    main-menu
+
+    language
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd, 
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {    
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {                        
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            
+} 
+input, select, button, textarea {
+    margin: 0;                 
+    font-size: 100%;             
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;     
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {         
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+     list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;    
+}
+textarea {
+    resize:none; 
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus { 
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner { 
+    padding:0; 
+    border:0; 
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- b-content --------------- */
+.content {
+
+}
+.content h1 {
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+.content h2 {
+    font-size: 140%;
+    margin-bottom: 15px;
+}
+.content h3 {
+    font-size: 130%;
+    margin-bottom: 12px;
+}
+.content h4 {
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+.content h5 {
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+.content h6 {
+    font-size: 100%;
+    margin-bottom: 10px;
+}
+.content p {
+    margin-bottom: 15px;
+}
+.content ul {
+    list-style: disc;
+    margin: 0 15px 10px 15px;
+}
+.content ul ul {
+    margin: 10px 0 10px 25px;
+}
+.content ol {
+    list-style: decimal;
+    margin: 0 15px 10px 20px;
+}
+.content ol ol {
+    margin: 10px 0 10px 25px;
+}
+.content li {
+    margin-bottom: 5px;
+}
+.content table {
+    margin-bottom: 15px;
+    font-size: 100%;
+    width: auto;
+    border: 1px solid #000;
+}
+.content th,
+.content td {
+    border: 1px solid #000;
+    padding: 4px;
+    text-align: left;
+}
+.content th {
+    font-weight: bold;
+    text-align: center;
+}
+.content a,
+.content a font {
+    color: #0000ff;
+    text-decoration: underline;
+}
+.content a:visited,
+.content a:visited font {
+    color: #0000aa;
+}
+.content a:hover,
+.content a:hover font {
+    color: #0000ff;
+    text-decoration: none;
+}
+.content a:active,
+.content a:active font {
+    color: #ff0000;
+}
+.content img[align=left] {
+    margin: 0 10px 10px 0;
+    float: left;
+}
+.content img[align=right] {
+    margin: 0 0 10px 10px;
+    float: right;
+}
+.content dl {
+    margin: 0 0 15px 0;
+}
+.content dt {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.content dd {
+    margin-bottom: 5px;
+}
+.content hr {
+    height: 1px;
+    border: none;
+    color: #aaa;
+    background: #aaa;
+    margin: 10px 0;
+    clear: both;
+}
+/* --------------- /b-content --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "myriadpro-semibold-wf";
+    src: url("../fonts/myriadpro-semibold-wf.eot");
+    src: url("../fonts/myriadpro-semibold-wf.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/myriadpro-semibold-wf.woff") format("woff"),
+    url("../fonts/myriadpro-semibold-wf.ttf") format("truetype");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+}
+    .site:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 130px;
+    }
+.site__layout {
+    font-family: tahoma;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    background: url("../img/head-back.png");
+    height: 42px;
+
+}
+.headInside{
+    width: 961px;
+    position: relative;
+    margin: 0 auto;
+    height: 42px;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 37px;
+    z-index: 10;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- main-menu --------------- */
+.main-menu {
+    position: absolute;
+    top: 13px;
+    left: 255px;
+}
+.main-menu__item:first-child{
+    background: none;
+}
+.main-menu__item{
+    float: left;
+    background: url("../img/dot.png") no-repeat 0 5px;
+    padding: 0 20px 0 25px;
+}
+.main-menu__lnk{
+    text-transform: uppercase;
+    color: #709edd;
+    font-size: 14px;
+}
+.main-menu__lnk:visited{
+    color: #709edd;
+}
+.main-menu__lnk:hover{
+    color: #fff;
+}
+.main-menu__item_active .main-menu__lnk{
+    cursor: default;
+    color: #fff;
+}
+/* --------------- /main-menu --------------- */
+.baner{
+    background: url("../img/baner-back.jpg") no-repeat top center;
+    height: 367px;
+}
+.banerInside{
+    width: 961px;
+    background: url("../pic/pic1.jpg");
+    height: 367px;
+    position: relative;
+    margin: 0 auto;
+}
+.address{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 243px;
+}
+.address address{
+    font-style: normal;
+}
+.emailHref:visited{
+    color: #013173;
+}
+.emailHref{
+    font-size: 20px;
+    float: right;
+    margin-bottom: 12px;
+    color: #013173;
+}
+.emailHref:hover{
+    text-decoration: underline;
+}
+.phoneBlock{
+    overflow: hidden;
+    font-family: arial;
+    clear: both;
+    margin-bottom: 17px;
+    cursor: default;
+}
+.firstPart{
+    float: left;
+    margin-top: 5px;
+}
+.firstPart p{
+    color: #fff;
+    font-size: 14px;
+}
+.secondPart{
+    float: left;
+    color: #013173;
+    font-size: 41px;
+}
+.firstPart .town{
+    color: #013173;;
+}
+.header .social{
+    overflow: hidden;
+    float: right;
+}
+.social li{
+    float: left;
+    margin-left: 9px;
+}
+.social a:hover{
+    opacity: 0.8;
+}
+.social a{
+    display: block;
+    width: 25px;
+    height: 25px;
+    text-indent: -5000px;
+}
+.vkontakte{
+    background: url("../img/vkontakte.png");
+}
+.facebook{
+    background: url("../img/facebook.png");
+}
+.twitter{
+    background: url("../img/twitter.png");
+}
+.in{
+    background: url("../img/in.png");
+}
+.leftSideBar{
+    width: 285px;
+    float: left;
+    margin-bottom: 50px;
+    margin-top: 35px;
+}
+.wraper{
+    width: 961px;
+    margin: 0 auto;
+}
+.asideNav li:first-child{
+    border:  none;
+}
+.asideNav li{
+    border-top: 1px dotted #d3d3d3;
+    padding: 10px 0 10px 50px;
+}
+.asideNav a{
+    color: #818181;
+    font-size: 14px;
+    background: url("../img/gray-arrow.png") no-repeat 0 5px;
+    padding-left: 25px;
+}
+.asideNav{
+    margin-bottom: 53px;
+}
+.asideNav .active,
+.asideNav a:hover{
+    background: url("../img/blue-arrow.png") no-repeat 0 5px;
+    color: #013172;
+}
+.reviewsBlock  .topicType{
+    font-size: 24px;
+    color: #033579;
+    margin-bottom: 17px;
+    font-weight: normal;
+    overflow: hidden;
+}
+.reviewsBlock .topicType span{
+    float: left;
+}
+.reviewsBlock .topicType a{
+    float: right;
+    color: #777777;
+    font-size: 12px;
+    margin: 10px 0 0 0;
+}
+.reviewsBlock .topicType a:hover{
+    text-decoration: underline;
+}
+.reiviewsList{}
+.reiviewsList li{
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.imgWrap{
+    border-radius: 5px;
+    border: 1px solid #ced6d9;
+    background: url("../img/img-back.png");
+    height: 100px;
+    width: 100px;
+    padding: 5px 5px 4px 5px;
+    float: left;
+}
+.imgWrap img{
+    display: block;
+    border-radius: 5px;
+}
+.reviewsText{
+    float: right;
+    width: 160px;
+}
+.reviewsText p.userName a:hover{
+    text-decoration: underline;
+}
+.reviewsText p.userName a,
+.reviewsText p.userName{
+    color: #235dae;
+    font-size: 14px;
+    margin: 4px 0 5px 0;
+    font-weight: normal;
+}
+.reviewsText p{
+    color: #8a8a8a;
+    font-size: 12px;
+    line-height: 15px;
+}
+.counterWrap{
+    overflow: hidden;
+}
+.counter{
+    width: 31px;
+    height: 31px;
+    margin: 0 auto;
+}
+.reviewsBlock{
+    margin-bottom: 59px;
+}
+.commersial{
+    background: url("../pic/pic4.jpg");
+    width: 629px;
+    position: relative;
+    height: 299px;
+    margin-bottom: 25px;
+}
+.content-wrap{
+    width: 629px;
+    float: right;
+    margin-top: 22px;
+}
+.commersialText{
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 296px;
+}
+.content .commersialText h3{
+    color: #fff;
+    line-height: 30px;
+    font-size: 24px;
+    font-family: myriadpro-semibold-wf;
+}
+.content .commersialText p{
+    color: #fff;
+    font-size: 12px;
+    margin: 0 5px 0 43px;
+    line-height: 15px;
+}
+.callBack:hover{
+    opacity: 0.8;
+}
+.callBack{
+    text-indent: -5000px;
+    background: url("../img/call-back-but.png");
+    width: 285px;
+    height: 52px;
+    display: block;
+    margin-left: 9px;
+    position: fixed;
+    bottom: 0;
+    left: 830px;
+    z-index: 1000;
+}
+.content .textWrap h1{
+    color: #033478;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.content .textWrap p{
+    color: #525252;
+    font-size: 12px;
+    margin-bottom: 6px;
+    line-height: 17px;
+}
+.content .textWrap .uperTrans{
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.content .socialLikes{
+    overflow: hidden;
+    list-style: none;
+    margin: 20px 0 0 0;
+}
+.content .socialLikes li{
+    float: left;
+    margin-right: 10px;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -130px;
+    background: url("../img/footer-back.png");
+}
+.footer__layout {
+    width: 961px;
+    margin: 0 auto;
+    font-family: tahoma;
+    color: #fff;
+    height: 130px;
+    position: relative;
+}
+.add{
+    position: absolute;
+    top: 42px;
+    left: 0;
+    font-size: 12px;
+}
+.add dt{
+    float: left;
+    margin-top: 4px;
+}
+.add dd{
+    float: left;
+}
+.copy{
+    position: absolute;
+    font-size: 12px;
+    top: 75px;
+    left: 0;
+}
+.footerNav{
+    position: absolute;
+    top: 30px;
+    left: 575px;
+}
+.footerNav ol{
+    width: 420px;
+}
+.footerNav li{
+    float: left;
+    margin-right: 15px;
+}
+.footerNav a{
+    color: #709edd;
+    font-size: 12px;
+    font-family: tahoma;
+}
+.footerNav a:hover{
+    color: #fff;
+}
+.creaters{
+    font-size: 12px;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    font-family: tahoma;
+}
+.creaters dd{
+    float: left;
+}
+.creaters dt{
+    float: left;
+    margin-right: 5px;
+}
+/* --------------- /footer --------------- */

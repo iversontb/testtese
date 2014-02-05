@@ -1,0 +1,40 @@
+/* --------------- white_teeth --------------- */
+.white_teeth{
+    margin-top: 8px;
+}
+.white_teeth h1{
+    font-family: "PT Sans";
+    font-size: 30px;
+    color: #000000;
+    font-weight: normal;
+    margin-bottom: 23px;
+}
+.white_teeth h2{
+    font-family: arial;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 26px;
+    font-weight: bold;
+}
+.white_teeth p{
+    font-family: arial;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 21px;
+    line-height: 21px;
+}
+/* --------------- /white_teeth --------------- */
+
+/* --------------- gallery --------------- */
+.gallery{
+    margin-bottom: 33px;
+}
+.gallery span{
+    font-family: arial;
+    font-size: 12px;
+    font-style: italic;
+    color: #737373;
+    display: block;
+    word-spacing: -1px;
+}
+/* --------------- /gallery --------------- */

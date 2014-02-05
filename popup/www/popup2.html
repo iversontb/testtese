@@ -1,0 +1,447 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/modernizr-1.7.min.js"></script>
+    <!--<script src="js/jquery-1.7.2.min.js"></script>-->
+    <script src="js/1.4.js"></script>
+	<script src="js/jquery.main.js"></script>
+
+
+	<!--[if lte IE 7]> 
+		<link rel="stylesheet" href="css/main-ie7.css" />
+	<![endif]-->
+
+	
+</head>
+<body>
+
+	<!--popUpContainer-->
+	<form action="#" method="post" class="popUpContainer filterPop">
+	
+		<span class="closeButton" title="close">close</span>
+		<h2>
+			<span>Фильтр по категориям</span>
+			<ul>
+				<li><a href="#" class="selectAll">Выбрать все</a></li>
+				<li><a href="#" class="clearfilter">Снять выбор</a></li>				
+			</ul>
+		</h2>
+		<div class="selected">
+			<dl>
+				<dt>Выбрано: </dt>
+			</dl>
+		</div>
+		
+		<!--container-->
+		<div class="container">
+			
+			<div class="categoryWrap">
+				<div class="radioContainer">
+					<input type="checkbox" id="0" name="mainCategory">
+					<label for="0">Транспорт</label>
+				</div>
+				<div class="radioContainer">
+					<input type="checkbox" id="1" name="mainCategory">
+					<label for="1">Дороги</label>
+				</div>
+				<div class="radioContainer">
+					<input type="checkbox" id="2" name="mainCategory">
+					<label for="2">Городское хозяйство</label>
+				</div>
+				<div class="radioContainer">
+					<input type="checkbox" id="3" name="mainCategory">
+					<label for="3">Безопасность</label>
+				</div>
+				<div class="radioContainer">
+					<input type="checkbox" id="4" name="mainCategory">
+					<label for="4">Нарушение закона</label>
+				</div>	
+				<div class="radioContainer">
+					<input type="checkbox" id="5" name="mainCategory">
+					<label for="5">Социальная сфера</label>
+				</div>																											
+			</div>
+			
+			<div class="subCategory">
+
+				<div class="listWrap">
+					<ul>
+						<li>
+							<div class="radioContainer">
+								<input id="11" type="checkbox" name="subCategory">
+								<label for="11">Требуется остановка</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="12" type="checkbox" name="subCategory">
+								<label for="12">Нет знака</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="13" type="checkbox" name="subCategory">
+								<label for="13">Нужен "лежачий полицейский"</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="14" type="checkbox" name="subCategory">
+								<label for="14">Нужен светофор</label>
+							</div>							
+						</li>				
+						<li>
+							<div class="radioContainer">
+								<input id="15" type="checkbox" name="subCategory">
+								<label for="15">Знак-ловушка</label>
+							</div>							
+						</li>
+					</ul>
+					<ul
+						<li>
+							<div class="radioContainer">
+								<input id="16" type="checkbox" name="subCategory">
+								<label for="16">Благоутройство остановки</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="16" type="checkbox" name="subCategory">
+								<label for="16">Необходим пешеходный переход</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="17" type="checkbox" name="subCategory">
+								<label for="17">Заброшенное авто</label>
+							</div>							
+						</li>		
+						<li>
+							<div class="radioContainer">
+								<input id="18" type="checkbox" name="subCategory">
+								<label for="18">Нарушение ПДД водителем общественного транспорта</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="19" type="checkbox" name="subCategory">
+								<label for="19">Незаконная парковка</label>
+							</div>							
+						</li>																										
+					</ul>
+				</div>
+				<div  class="listWrap">
+					<ul>
+						<li>
+							<div class="radioContainer">
+								<input id="21" type="checkbox" name="subCategory">
+								<label for="21">Проезд закрыт</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="22" type="checkbox" name="subCategory">
+								<label for="22">Вечная лужа</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="23" type="checkbox" name="subCategory">
+								<label for="23">Мусор на дороге</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="24" type="checkbox" name="subCategory">
+								<label for="24">Нет разметки</label>
+							</div>							
+						</li>	
+					</ul>
+					<ul>			
+						<li>
+							<div class="radioContainer">
+								<input id="25" type="checkbox" name="subCategory">
+								<label for="25">Нет люка</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="26" type="checkbox" name="subCategory">
+								<label for="26">Опасный участок</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="27" type="checkbox" name="subCategory">
+								<label for="27">Ремонт дороги</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="28" type="checkbox" name="subCategory">
+								<label for="28">Разбитая дорога</label>
+							</div>							
+						</li>		
+						<li>
+							<div class="radioContainer">
+								<input id="29" type="checkbox" name="subCategory">
+								<label for="29">Яма на дороге</label>
+							</div>							
+						</li>
+					</ul>
+				</div>
+				<div  class="listWrap">
+					<ul>
+						<li>
+							<div class="radioContainer">
+								<input id="31" type="checkbox" name="subCategory">
+								<label for="31">Не работает освещение</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="32" type="checkbox" name="subCategory">
+								<label for="32">Течет крыша</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="33" type="checkbox" name="subCategory">
+								<label for="33">Нет мусорных баков</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="34" type="checkbox" name="subCategory">
+								<label for="34">Мусор от организации</label>
+							</div>							
+						</li>				
+						<li>
+							<div class="radioContainer">
+								<input id="35" type="checkbox" name="subCategory">
+								<label for="35">Нужен пандус</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="36" type="checkbox" name="subCategory">
+								<label for="36">Заброшенные объекты строительства</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="37" type="checkbox" name="subCategory">
+								<label for="37">Нужен фонарь</label>
+							</div>							
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="radioContainer">
+								<input id="38" type="checkbox" name="subCategory">
+								<label for="38">Не работает лифт</label>
+							</div>							
+						</li>		
+						<li>
+							<div class="radioContainer">
+								<input id="39" type="checkbox" name="subCategory">
+								<label for="39">Проблема водостока</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="391" type="checkbox" name="subCategory">
+								<label for="391">Нелегальная свалка</label>
+							</div>							
+						</li>			
+						<li>
+							<div class="radioContainer">
+								<input id="392" type="checkbox" name="subCategory">
+								<label for="392">Необходим тротуар</label>
+							</div>							
+						</li>		
+						<li>
+							<div class="radioContainer">
+								<input id="393" type="checkbox" name="subCategory">
+								<label for="393">Не вывозится мусор</label>
+							</div>							
+						</li>	
+						<li>
+							<div class="radioContainer">
+								<input id="394" type="checkbox" name="subCategory">
+								<label for="394">Заброшенный объект</label>
+							</div>							
+						</li>																																	
+					</ul>	
+				</div>
+				<div  class="listWrap">	
+					<ul>
+						<li>
+							<div class="radioContainer">
+								<input id="41" type="checkbox" name="subCategory">
+								<label for="41">Бесхозный объект</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="42" type="checkbox" name="subCategory">
+								<label for="42">Требуется ограждение</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="43" type="checkbox" name="subCategory">
+								<label for="43">Места общественных правонарушений</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="44" type="checkbox" name="subCategory">
+								<label for="44">Лица без ОМЖ</label>
+							</div>							
+						</li>		
+					</ul>
+					<ul>			
+						<li>
+							<div class="radioContainer">
+								<input id="45" type="checkbox" name="subCategory">
+								<label for="45">Опасное использование помещений в жилых зданиях</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="46" type="checkbox" name="subCategory">
+								<label for="46">Нелегалы</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="47" type="checkbox" name="subCategory">
+								<label for="47">Ветхое жилье</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="48" type="checkbox" name="subCategory">
+								<label for="48">Бездомные собаки</label>
+							</div>							
+						</li>		
+					</ul>	
+				</div>
+				<div  class="listWrap">
+					<ul>
+						<li>
+							<div class="radioContainer">
+								<input id="51" type="checkbox" name="subCategory">
+								<label for="51">Продажа алкоголя и сигарет детям</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="52" type="checkbox" name="subCategory">
+								<label for="52">Распространение наркотиков</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="53" type="checkbox" name="subCategory">
+								<label for="53">Нарушения прав потребителей</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="54" type="checkbox" name="subCategory">
+								<label for="54">Казино</label>
+							</div>							
+						</li>	
+					</ul>
+					<ul>			
+						<li>
+							<div class="radioContainer">
+								<input id="55" type="checkbox" name="subCategory">
+								<label for="55">Нарушение правил торговли</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="56" type="checkbox" name="subCategory">
+								<label for="56">Нарушение общественного порядка</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="57" type="checkbox" name="subCategory">
+								<label for="57">Самозахват территории</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="58" type="checkbox" name="subCategory">
+								<label for="58">Нарушения прав человека</label>
+							</div>							
+						</li>		
+					</ul>	
+				</div>
+				<div  class="listWrap">
+					<ul>
+						<li>
+							<div class="radioContainer">
+								<input id="61" type="checkbox" name="subCategory">
+								<label for="61">Образование</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="62" type="checkbox" name="subCategory">
+								<label for="62">СМИ</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="63" type="checkbox" name="subCategory">
+								<label for="63">Соц.защита и трудовые отношения</label>
+							</div>							
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="radioContainer">
+								<input id="64" type="checkbox" name="subCategory">
+								<label for="64">Спорт</label>
+							</div>							
+						</li>				
+						<li>
+							<div class="radioContainer">
+								<input id="65" type="checkbox" name="subCategory">
+								<label for="65">Здравоохранение</label>
+							</div>							
+						</li>
+						<li>
+							<div class="radioContainer">
+								<input id="66" type="checkbox" name="subCategory">
+								<label for="66">Культура</label>
+							</div>							
+						</li>
+					</ul>	
+				</div>
+				<div class="emptySub">
+					Выберите одну из категорий или подкатегорий
+				</div>
+			</div>
+
+		</div>
+		<!--/container-->
+		
+				
+		<div class="container footerCont">		
+			<input type="submit" class="e-Button" value="Выбрать">
+		</div>
+		
+	</form>
+	<!--/popUpContainer-->
+
+</body>
+</html>

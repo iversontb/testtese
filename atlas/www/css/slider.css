@@ -1,0 +1,57 @@
+.slideWrap {
+    /*margin: 0 auto 40px;*/
+    height: 100%;
+    width: 100%;
+}
+.ares-slider2 {
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.ares-slider2 img {
+}
+.ares-slider2__item .gallBlock {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ares-slider2__item .gallBlock .redBut:hover {
+    opacity: 0.9;
+}
+.ares-slider2__item {
+    display: none;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100% !important;
+    z-index: 1;
+}
+.ares-slider__points {
+    position: absolute;
+    top: 93px;
+    right: 160px;
+    z-index: 4;
+    list-style: none !important;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li {
+    border-radius: 14px;
+    cursor: pointer;
+    height: 14px;
+    margin-bottom: 11px;
+    width: 14px;
+    background: url("../img/point_active.png") no-repeat;
+}
+.ares-slider__points li.active {
+    background: #bc301b;
+    box-shadow: none;
+    cursor: default;
+}
+
+@media screen and (max-width: 950px){
+   .ares-slider__points{
+       right: 20px;
+   }
+}

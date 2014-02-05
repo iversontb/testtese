@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vextel_profile_gallery.css">
+    <link rel="stylesheet" href="css/select.css">
+
+    <title>zapishi</title>
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.select.js" > </script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="index.html" title="На главную" class="logo"><img src="img/logo.png" width="221" height="192" alt=""></a>
+            <!-- /logo -->
+
+            <!-- enterBlock -->
+            <form class="enterBlock">
+                <input type="text" placeholder="my@mail.ru">
+                <input type="password" placeholder="Пароль">
+                <input type="submit" class="enterBut">
+                <a href="#" class="regBut">Регистрация</a>
+                <a href="#" class="forgetPass">Забыли пароль?</a>
+            </form>
+            <!-- /enterBlock -->
+
+            <!-- showCounter -->
+            <ul class="showCounter">
+                <li class="users">3400
+                    <span>пользователей</span></li>
+                <li class="organization">1200
+                    <span>организаций</span></li>
+            </ul>
+            <!-- /showCounter -->
+
+            <!-- social -->
+            <div class="social">
+                <a href="#" title="twitter" class="twitter">twitter</a>
+                <a href="#" title="facebook" class="facebook">facebook</a>
+                <a href="#" title="linkedIn" class="linkedIn">linkedIn</a>
+            </div>
+            <!-- /social -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- leftSideBar -->
+                <aside class="leftSideBar">
+
+                    <!-- subMenu -->
+                    <div class="subMenu">
+                        <a href="#">О нас</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                    <!-- /subMenu -->
+
+                    <!-- wrap_your_office -->
+                    <div class="wrap_your_office">
+
+                        <!-- your_office -->
+                        <div class="your_office">
+                            <h3>Ваш кабинет:</h3>
+
+                            <!-- profile_info -->
+                            <div class="profile_info">
+                                <ol>
+                                    <li><a href="#">Профиль</a></li>
+                                    <li><a href="#">Блог</a><span>4</span></li>
+                                    <li><a href="#">Мои фото</a></li>
+                                </ol>
+                                <div class="wrap_img">
+                                    <img src="img/current_avatar.png" width="81" height="81" alt=""/>
+                                </div>
+                            </div>
+                            <!-- /profile_info -->
+
+                            <!-- favorites -->
+                            <div class="favorites">
+                                <ol>
+                                    <li><a href="#">Избранные организации</a></li>
+                                    <li><a href="#">Избранные филиалы</a></li>
+                                </ol>
+                            </div>
+                            <!-- /favorites -->
+
+                        </div>
+                        <!-- /your_office -->
+
+                        <!-- log_off -->
+                        <a class="log_off" href="#"><span>Выйти</span></a>
+                        <!-- /log_off -->
+
+                    </div>
+                    <!-- /wrap_your_office -->
+
+                </aside>
+                <!-- /leftSideBar -->
+
+                <!-- contentBlock -->
+                <div class="contentBlock">
+
+                    <!-- contantBanner -->
+                    <a href="#" class="contantBanner">
+                       <img src="pic/pic4.jpg" width="100%"  alt="">
+                    </a>
+                    <!-- /contantBanner -->
+
+                    <!-- search -->
+                    <form class="search">
+                        <input type="search" placeholder="Поиск">
+                        <input type="submit" class="searchBut">
+
+                        <!-- searchDop -->
+                        <div class="searchDop">
+                            <dl>
+                                <dt>
+                                    Район:
+                                </dt>
+                                <dd>
+                                    <!-- selectResult -->
+                                    <div class="selectResult">м. аэропорт</div>
+                                    <!-- /selectResult -->
+
+                                    <!-- selectList -->
+                                    <div class="selectList">
+                                        <div id="test-webkit2" class="content scroll-simple scroll-simple_outer">
+                                            <div class="resizable">
+                                                <a href="#">Хорошевский</a>
+                                                <a href="#">Дмитровский</a>
+                                                <a href="#">Ленинасктий</a>
+                                                <a href="#">м. Динамо</a>
+                                                <a href="#">Шереметьево</a>
+                                                <a href="#">Домодедовская</a>
+                                                <a href="#">Хорошевский</a>
+                                                <a href="#">Дмитровский</a>
+                                                <a href="#">Ленинасктий</a>
+                                                <a href="#">м. Динамо</a>
+                                                <a href="#">Шереметьево</a>
+                                                <a href="#">Домодедовская</a>
+
+                                            </div>
+                                        </div>
+                                        <a href="#" class="showOnMap">Указать на карте</a>
+                                    </div>
+                                    <!-- /selectList -->
+
+                                </dd>
+                            </dl>
+
+                            <input id="nocash" type="checkbox">
+                            <label for="nocash">Безнал</label>
+                            <input id="mapShow"  type="checkbox">
+                            <label for="mapShow">показать на карте</label>
+                            <input id="photoShow"  type="checkbox">
+                            <label for="photoShow">С ФОТО</label>
+
+                        </div>
+                        <!-- /searchDop -->
+
+                    </form>
+                    <!-- /search -->
+
+                    <!-- your_photo -->
+                    <div class="your_photo">
+                        <h1>Ваши фото</h1>
+                        <div class="title">
+                            <h2>ГАЛЕРЕИ</h2>
+                            <a class="download" href="#">Добавить</a>
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="wrap_img">
+                                        <img src="img/photo_gallery.png" width="196" height="196" alt=""/>
+                                    </div>
+                                    <span class="name_gallery">Название галереи</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="wrap_img">
+                                        <img src="img/photo_gallery.png" width="196" height="196" alt=""/>
+                                    </div>
+                                    <span class="name_gallery">Название галереи</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="wrap_img">
+                                        <img src="img/photo_gallery.png" width="196" height="196" alt=""/>
+                                    </div>
+                                    <span class="name_gallery">Название галереи</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="wrap_img">
+                                        <img src="img/photo_gallery.png" width="196" height="196" alt=""/>
+                                    </div>
+                                    <span class="name_gallery">Название галереи</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="wrap_img">
+                                        <img src="img/photo_gallery.png" width="196" height="196" alt=""/>
+                                    </div>
+                                    <span class="name_gallery">Название галереи</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="wrap_img">
+                                        <img src="img/photo_gallery.png" width="196" height="196" alt=""/>
+                                    </div>
+                                    <span class="name_gallery">Название галереи</span>
+                                </a>
+                            </li>
+                            <li>
+                                <div class="wrap_img">
+                                    <a href="#"><img src="img/photo_gallery.png" width="196" height="196" alt=""/></a>
+                                </div>
+                                <a class="name_gallery" href="#">Название галереи</a>
+                            </li>
+                            <li>
+                                <a class="add_gallery" href="#"><img src="img/add_gallery.png" width="198" height="198" alt=""/></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /your_photo -->
+
+                </div>
+                <!-- /contentBlock -->
+
+
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <a href="#" class="footerLogo"><img src="img/footer-logo.png" width="76" height="110" alt=""></a>
+
+            <!-- footerMenu -->
+            <div class="footerMenu">
+                <a href="#">Справка</a>
+                <a href="#">Правила</a>
+                <a href="#">Пользовательское соглашение</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Услуги</a>
+                <a href="#">Места</a>
+                <a href="#">Новости</a>
+            </div>
+            <!-- /footerMenu -->
+
+            <div class="logos"><img src="img/weblogos.png" width="100" height="52" alt=""></div>
+            <p class="copy">&copy; Vextel, 2012-2013</p>
+
+            <dl class="creaters">
+                <dt>Разработка:</dt>
+                <dd><a href="#"> Надежда Древаль</a>  & <a href="#">Михаил Белстар</a> </dd>
+            </dl>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

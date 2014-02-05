@@ -1,0 +1,76 @@
+.wrap_inside {
+    width: 100%;
+    float: left;
+    padding-top: 29px;
+}
+.left_aside {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+}
+.left_aside ol li {
+    margin-bottom: 21px;
+}
+.left_aside ol li a:hover {
+    text-decoration: none;
+}
+.left_aside ol li a {
+    color: #69b295;
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: Times New Roman;
+}
+.left_aside ol li.active a {
+    text-decoration: none;
+    cursor: default;
+}
+.inside_content {
+    width: 800px;
+    color: #9f683f;
+    display: inline-block;
+    vertical-align: top;
+}
+h1 {
+    color: #75b79c;
+    font-size: 20px;
+    font-family: Times New Roman;
+    text-align: center;
+    font-weight: normal;
+}
+.office_form .wrap_input {
+    margin-bottom: 32px;
+}
+.office_form .wrap_input input {
+    display: inline-block;
+    color: #9f683f;
+    font-size: 14px;
+}
+.office_form label {
+    width: 71px;
+    display: inline-block;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 15px;
+}
+form .save:hover {
+    opacity: 0.8;
+}
+form .save {
+    background: none repeat scroll 0 0 #69B295;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 14px;
+    height: 41px;
+    margin: 0 0 20px 90px;
+    width: 200px;
+}
+.inside_content p {
+    font-size: 14px;
+    padding-left: 90px;
+}
+.inside_content h2 {
+    font-size: 14px;
+    font-family: Times New Roman;
+    padding: 35px 0 14px 91px;
+    font-weight: normal;
+}

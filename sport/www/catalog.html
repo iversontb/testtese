@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!--<script src="js/jquery-1.8.3.min.js"></script>-->
+    <script src="js/jquery-1.6.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/coin-slider-styles.css" />
+    <script type="text/javascript" src="js/coin-slider.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui-slider.js"></script>
+
+
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+<script>
+    var Slider = 2;
+</script>
+<!-- site -->
+<div class="site">
+
+<!-- site__layout -->
+<div class="site__layout inside">
+<!-- header -->
+<header class="header">
+
+
+    <!-- insideHeader -->
+    <div class="insideHeader">
+
+        <!-- logo -->
+        <h1 class="logo"><a href="index.html" title="main"> <img src="img/logo.png" width="215" height="131" alt=""></a></h1>
+        <!-- /logo -->
+
+        <!-- main-menu -->
+        <nav class="main-menu">
+            <ol class="main-menu__layout">
+                <li class="main-menu__item"><a class="main-menu__lnk" href="#">О нас</a></li>
+                <li class="main-menu__item"><a class="main-menu__lnk" href="#">Акции и скидки</a></li>
+                <li class="main-menu__item"><a class="main-menu__lnk" href="#">Оплата и доставка</a></li>
+                <li class="main-menu__item"><a class="main-menu__lnk" href="#">Обратная связь</a></li>
+            </ol>
+        </nav>
+        <!-- /main-menu -->
+
+        <!-- town -->
+        <a href="#" class="town">Москва</a>
+        <!-- /town -->
+
+        <!-- regList -->
+        <ul class="regList">
+            <li><a href="#" class="enterBut">Войти</a></li>
+            <li><a href="#">Регистрация</a></li>
+        </ul>
+        <!-- /regList -->
+
+        <!-- typeMenu -->
+        <ul class="typeMenu">
+            <li><a href="#" class="cars"><span>Автомодели</span></a></li>
+            <li><a href="#" class="holecapters"><span>Вертолеты </span></a></li>
+            <li><a href="#" class="planes"><span>Авиамодели</span></a></li>
+            <li><a href="#" class="boats"><span>Катера</span></a></li>
+            <li><a href="#" class="tanks"><span>Танки</span></a></li>
+        </ul>
+        <!-- /typeMenu -->
+
+    </div>
+    <!-- /insideHeader -->
+
+    <!-- subMenuWrap -->
+    <div class="subMenuWrap">
+
+        <!-- subMenu -->
+        <nav class="subMenu">
+            <ol>
+                <li><a href="#">Системы радиоуправления</a> </li>
+                <li><a href="#">Аккумуляторы и зарядные устройства</a> </li>
+                <li><a href="#">Моторы и электродвигатели</a> </li>
+                <li  class="widthType"><a href="#">Запчасти и тюнинг</a> </li>
+                <li  class="widthType2"><a href="#">Аксессуары и комплектующие</a> </li>
+                <li  class="widthType"><a href="#">Материалы и инструменты</a> </li>
+                <li><a href="#">Стартовые принадлежности</a> </li>
+            </ol>
+        </nav>
+        <!-- /subMenu -->
+
+    </div>
+    <!-- /subMenuWrap -->
+
+</header>
+<!-- /header -->
+
+
+<!-- site__content -->
+<div class="site__content">
+
+    <!-- contentHead -->
+    <div class="contentHead">
+
+        <!-- searchForm -->
+        <form class="searchForm">
+            <div class="inputWrap">
+                <input type="text" placeholder="Поиск">
+            </div>
+            <input type="submit" value="Найти" class="e-Button">
+        </form>
+        <!-- /searchForm -->
+
+        <!-- basketContainer -->
+        <div class="basketContainer">
+            <dl>
+                <dt>В <a href="#">корзине</a> </dt>
+                <dd>2 товара (<strong>15000</strong> руб)</dd>
+            </dl>
+        </div>
+        <!-- /basketContainer -->
+    </div>
+    <!-- /contentHead -->
+
+    <!-- leftSideBar -->
+    <aside class="leftSideBar">
+
+        <!-- countainer -->
+        <div class="countainer">
+            <h2>Фильтры товаров</h2>
+            <h3><span>Цена</span></h3>
+            <form action="#" method="post">
+                <div class="formCost">
+                    <input type="text" id="minCost" value="0"/>
+                    <label for="maxCost">-</label>
+                    <input type="text" id="maxCost" value="15000"/>
+                    <label for="maxCost">р</label>
+                </div>
+                <div class="sliderCont">
+                    <div id="slider"></div>
+                </div>
+                <a href="#">Дополнительно</a>
+            </form>
+        </div>
+        <!-- /countainer -->
+
+        <!-- countainer -->
+        <div class="countainer">
+            <h2>Недавно просмотренные</h2>
+            <ul class="youWached">
+                <li><a href="#">Mirage - 2000 RTF</a></li>
+                <li><a href="#">Mirage - 2000 RTF</a></li>
+                <li><a href="#">Mirage - 2000 RTF</a></li>
+                <li><a href="#">Mirage - 2000 RTF</a></li>
+            </ul>
+
+        </div>
+        <!-- /countainer -->
+    </aside>
+    <!-- /leftSideBar -->
+
+    <!-- content-wrap -->
+    <div class="content-wrap">
+
+        <!-- goodsList -->
+        <div class="goodsList">
+
+            <h2>Автомодели</h2>
+
+            <!-- crumbs -->
+            <ul class="crumbs">
+              <li><a href="#">Главная</a> /</li>
+              <li><a href="#">Автомодели</a> /</li>
+              <li>Трековые</li>
+            </ul>
+            <!-- /crumbs -->
+
+            <!-- parinator -->
+            <ul class="parinator">
+                <li><a href="#" class="prevPage">Предыдущая</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#" class="active">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><span>...</span></li>
+                <li><a href="#">10</a></li>
+                <li><a href="#" class="nextPage">Следующая</a></li>
+            </ul>
+            <!-- /parinator -->
+
+            <!-- goodsContainer -->
+            <ul class="goodsContainer">
+                <li>
+                    <a href="#">
+                        <h2>Mirage - 2000 RTF</h2>
+                        <img src="pic/pic6.jpg" height="147" width="219" alt="">
+                    </a>
+                    <p class="price"><span>1750</span> руб.</p>
+                    <a href="#" class="toBasket">в корзину</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>Mirage - 2000 RTF</h2>
+                        <img src="pic/pic6.jpg" height="147" width="219" alt="">
+                    </a>
+                    <p class="price"><span>1750</span> руб.</p>
+                    <a href="#" class="toBasket">в корзину</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>Mirage - 2000 RTF</h2>
+                        <img src="pic/pic6.jpg" height="147" width="219" alt="">
+                    </a>
+                    <p class="price"><span>1750</span> руб.</p>
+                    <a href="#" class="toBasket">в корзину</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>Mirage - 2000 RTF</h2>
+                        <img src="pic/pic6.jpg" height="147" width="219" alt="">
+                    </a>
+                    <p class="price"><span>1750</span> руб.</p>
+                    <a href="#" class="toBasket">в корзину</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>Mirage - 2000 RTF</h2>
+                        <img src="pic/pic6.jpg" height="147" width="219" alt="">
+                    </a>
+                    <p class="price"><span>1750</span> руб.</p>
+                    <a href="#" class="toBasket">в корзину</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h2>Mirage - 2000 RTF</h2>
+                        <img src="pic/pic6.jpg" height="147" width="219" alt="">
+                    </a>
+                    <p class="price"><span>1750</span> руб.</p>
+                    <a href="#" class="toBasket">в корзину</a>
+                </li>
+            </ul>
+            <!-- /goodsContainer -->
+
+            <!-- parinator -->
+            <ul class="parinator">
+                <li><a href="#" class="prevPage">Предыдущая</a></li>
+                <li><a href="#">1</a></li>
+                <li><a href="#" class="active">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><span>...</span></li>
+                <li><a href="#">10</a></li>
+                <li><a href="#" class="nextPage">Следующая</a></li>
+            </ul>
+            <!-- /parinator -->
+
+
+        </div>
+        <!-- /goodsList -->
+
+
+    </div>
+    <!-- /content-wrap -->
+
+    <!-- partnersWrap -->
+    <div class="partnersWrap">
+        <h2>Наши партнеры:</h2>
+        <!-- partners -->
+        <ul class="partners">
+            <li><a href="#"><img src="pic/pic4.jpg" height="60" width="90" alt=""></a></li>
+            <li><a href="#"><img src="pic/pic5.jpg" height="60" width="90" alt=""></a></li>
+            <li><a href="#"><img src="pic/pic4.jpg" height="60" width="90" alt=""></a></li>
+            <li><a href="#"><img src="pic/pic5.jpg" height="60" width="90" alt=""></a></li>
+            <li><a href="#"><img src="pic/pic4.jpg" height="60" width="90" alt=""></a></li>
+            <li><a href="#"><img src="pic/pic4.jpg" height="60" width="90" alt=""></a></li>
+            <li><a href="#"><img src="pic/pic5.jpg" height="60" width="90" alt=""></a></li>
+            <li><a href="#"><img src="pic/pic4.jpg" height="60" width="90" alt=""></a></li>
+        </ul>
+        <!-- /partners -->
+    </div>
+    <!-- /partnersWrap -->
+
+</div>
+<!-- /site__content -->
+</div>
+<!-- /site__layout -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+        <a href="index.html" title="main" class="footerLogo"><img src="img/footer-logo.png" height="56" width="91"></a>
+        <p class="copy">© 2012  Все права защищены.</p>
+
+        <ul class="footerMenu">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Акции и скидки</a></li>
+            <li><a href="#">Оплата и доставка</a></li>
+            <li><a href="#">Обратная связь</a></li>
+        </ul>
+
+        <ul class="footerMenu foterMenu2">
+            <li><a href="#">Автомодели </a></li>
+            <li><a href="#">Вертолеты</a></li>
+            <li><a href="#">Авиамодели</a></li>
+            <li><a href="#">Катера</a></li>
+            <li><a href="#">Танки</a></li>
+        </ul>
+
+        <dl class="creaters">
+            <dt>Разработка сайта: </dt>
+            <dd><a href="http://xn--80aqcukcj1i.xn--p1ai/" class="saitoria">saitoria</a></dd>
+        </dl>
+
+        <div class="counter">
+            <img src="img/counter.png" height="27" width="117" alt="">
+        </div>
+
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

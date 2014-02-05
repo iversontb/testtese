@@ -1,0 +1,120 @@
+/* --------------- okompanii --------------- */
+.okompanii {
+    font-family: 'Open Sans', sans-serif;
+}
+.okompanii div {
+    position: relative;
+    min-height: 118px;
+    margin-bottom: 16px;
+}
+.okompanii h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.okompanii p {
+    font-size: 14px;
+    line-height: 24px;
+}
+/* --------------- /okompanii --------------- */
+
+/* --------------- professionals --------------- */
+.professionals {
+    font-family: 'Open Sans', sans-serif;
+}
+.professionals h2 {
+    margin-bottom: 18px;
+    color: #dc1f26;
+}
+.professionals li {
+    display: inline-block;
+    vertical-align: top;
+    width: 156px;
+    margin-right: 16px;
+    margin-bottom: 10px;
+}
+.professionals li img {
+    border: 1px solid #e2e7eb;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.professionals li h3 {
+    font-size: 14px;
+    display: block;
+    line-height: 20px;
+    margin-bottom: 3px;
+    min-height: 37px;
+}
+.professionals li span {
+    font-size: 12px;
+    font-style: italic;
+}
+/* --------------- /professionals --------------- */
+
+/* --------------- presentation --------------- */
+.presentation {
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+}
+.presentation a {
+    display: block;
+    position: relative;
+    border: 3px solid #de343a;
+    height: 90px;
+    width: 650px;
+    font-family: 'Open Sans', sans-serif;
+}
+.presentation a:after {
+    content: '';
+    background: url("../img/presentation_after.jpg");
+    width: 42px;
+    height: 96px;
+    position: absolute;
+    top: -3px;
+    right: -42px;
+}
+.presentation span {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    margin: 15px 0 0 115px;
+}
+.presentation span:before {
+    content: '';
+    background: #000;
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+}
+.presentation span > span {
+    color: #dc1f26;
+    display: inline-block;
+    position: relative;
+    margin-left: 0;
+}
+.presentation span > span:before {
+    content: '';
+    background: #dc1f26;
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+}
+.presentation a:hover span:before{
+    display: none;
+}
+.presentation span > span:after {
+    content: '';
+    background: url("../img/presentation_play.jpg");
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    top: -20px;
+    right: -129px;
+}
+/* --------------- /presentation --------------- */

@@ -1,0 +1,130 @@
+.subMenuWrap H2 {
+    color: #f7c823;
+    font-weight: normal;
+    font-size: 36px;
+    font-family: Philosopher;
+}
+DIV.materialsWrap H4 {
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-family: Philosopher;
+    font-weight: normal;
+    color: #7b7b7b;
+}
+
+.rightSideBar .delivery, .rightSideBar .delivery SPAN, .rightSideBar .guarantee, .rightSideBar .guarantee SPAN{
+    color: #505050 !important;
+
+}
+.DIV.materialsWrap .container{
+    width: 25%;
+}
+DIV.materialsWrap H5 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+    font-family: Philosopher;
+    font-weight: normal;
+}
+.materialsWrap H3 {
+
+    color: #333333;
+    font-size: 20px !important;
+    font-weight: normal;
+}
+.goodsPrice {
+    background-position: right 8px;
+    padding-right: 15px;
+}
+DIV.materialsWrap {
+    overflow: hidden;
+    border-top: 2px solid #ECECEC;
+    padding: 10px 0px 0 0;
+}
+.riceWrap .buttonsWrap > DIV:first-child {
+    width: 34%;
+}
+.buttonsWrap .buyButton {
+    width: 88%;
+    padding: 0px;
+    margin: 0px auto;
+}
+.descriptionText dl{
+    overflow: hidden;
+    padding: 0 30px;
+    margin-bottom: 25px;
+}
+.descriptionText dt span{
+    background: #fff;
+
+}
+.descriptionText dt{
+    float: left;
+    color: #333333;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    width: 40%;
+    background: url("../img/dotted.png") repeat-x 0 10px;
+}
+.descriptionText dd{
+    width: 60%;
+    float: left;
+    padding-left: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #fff;
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.riceWrap FIELDSET > DIV {
+    border-bottom: 2px solid #ECECEC;
+    border-top: 2px solid #ECECEC;
+    background-color: #F9F9F9;
+    padding: 30px 0px;
+    margin: 0px 0 40px 0;
+    overflow: hidden;
+    width: 100%;
+}
+.attention{
+    background: #f9f9f9;
+    margin: 0 50px;
+    padding: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.attention p{
+    margin: 0 0 5px 0;
+    font-weight: 300;
+    line-height: 15px;
+}
+.attention p b{
+    font-weight: 700;
+}
+
+.descriptionText {
+    clear: both;
+    font-size: 14px;
+    font-family: "Open Sans";
+    color: #454545;
+    border-bottom: 1px solid #d1d1d1;
+    padding-bottom: 36px;
+}
+.dostblocks {
+    padding: 40px 30px 0 30px;
+    position: relative;
+    margin: 0 0 15px;
+    clear: both;
+}
+.dostblocks .container {
+    float: left;
+    width: 170px;
+    margin: 0 10px 30px 0;
+}
+.cartst {
+    float: none !important;
+    width: auto !important;
+    margin: 0 11px 30px 0 !important;
+}

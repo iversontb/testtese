@@ -1,0 +1,680 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <title>title</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/zoomslider.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.hammer.min.js"></script>
+    <script src="js/jquery.ares.slider.js"></script>
+    <script src="js/main_popup.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/zoomSlider.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+
+</head>
+<body class="print">
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- wrap_popup -->
+        <div class="wrap_popup">
+            <div class="popup">
+                <span title="close" class="close_popup">close</span>
+                <div class="popup_inner">
+
+                    <!-- popup_content -->
+                    <div class="popup_content">
+                        <span class="welcome">Добро пожаловать в интернет-бутик</span>
+                        <h2><img src="img/popup_img.png" width="318" height="62" alt=""/></h2>
+                        <span class="title">МЫ ДАРИМ ВАМ</span>
+
+                        <div class="popup_info">
+                            <div class="price"><span>200</span>
+                                рублей</div>
+                            <div class="popup_text">на Вашу первую
+                                покупку в нашем
+                                интернет-магазине</div>
+                        </div>
+                        <span class="info_text">(действительно в течение 3-х дней)</span>
+
+
+                    </div>
+                    <!-- /popup_content -->
+
+                    <!-- form -->
+                    <form action="#">
+                        <input type="text" placeholder="Ваш e-mail"/>
+                        <input type="submit" value="ПОЛУЧИТЬ"/>
+                    </form>
+                    <!-- /form -->
+
+                    <!-- bottom -->
+                    <span class="bottom">не может быть использовано при почтовой доставке</span>
+                    <!-- /bottom -->
+
+                </div>
+            </div>
+        </div>
+        <!-- /wrap_popup -->
+
+        <!-- site__layout -->
+        <div class="site__layout">
+
+            <!-- header -->
+            <header class="header">
+
+                <!-- header_top -->
+                <div class="header_top">
+
+                    <!-- header_left -->
+                    <ol class="header_left">
+                        <li>
+                            <a class="favourite" title="Favourite" href="#"></a>
+                        </li>
+                        <li>
+                            <a class="site_map" title="Site map" href="#"></a>
+                        </li>
+                        <li><a href="#">Информация для покупателей</a></li>
+                        <li><a href="#">Корпоративные заказы</a></li>
+                        <li><a href="mailto:mag@UniChoc.ru"><img src="img/mail_header.png" width="58" height="10" alt=""/></a></li>
+                    </ol>
+                    <!-- /header_left -->
+
+                    <!-- header_right -->
+                    <ol class="header_right">
+                        <li><a href="#">Вход</a></li>
+                        <li><a href="#">Регистрация</a></li>
+                        <li>
+                            <form action="#">
+                                <input type="text" placeholder="Введите слово для поиска"/>
+                                <input type="submit" value=""/>
+
+                                <!-- typeahead -->
+                                <!--<ul class="typeahead dropdown-menu">-->
+                                    <!--<li data-value="Шоколадная история" class="active">-->
+                                        <!--<a href="#">-->
+                                            <!--<strong>Шок</strong>оладная история</a>-->
+                                    <!--</li>-->
+                                    <!--<li data-value="Конфеты шоколадные &quot;Морские ракушки&quot;">-->
+                                        <!--<a href="#">Конфеты <strong>шок</strong>оладные "Морские ракушки"</a>-->
+                                    <!--</li>-->
+                                    <!--<li data-value="Горький шоколад ручной работы ChocoMe_M-101">-->
+                                        <!--<a href="#">Горький <strong>шок</strong>олад ручной работы ChocoMe_M-101</a>-->
+                                    <!--</li>-->
+                                    <!--<li data-value="Молочный шоколад ручной работы ChocoMe_M-104">-->
+                                        <!--<a href="#">Молочный <strong>шок</strong>олад ручной работы ChocoMe_M-104</a>-->
+                                    <!--</li>-->
+                                    <!--<li data-value="Трюфели &quot;Трюфлина&quot; коробка Люкс">-->
+                                        <!--<a href="#">Трюфели "Трюфлина" коробка Люкс</a>-->
+                                    <!--</li>-->
+                                    <!--<li data-value="Трюфели &quot;Трюфлина&quot; подарочный сундучок">-->
+                                        <!--<a href="#">Трюфели "Трюфлина" подарочный сундучок</a>-->
+                                    <!--</li>-->
+                                    <!--<li data-value="Конфеты подарочные &quot;AMBROSIA-168&quot;">-->
+                                        <!--<a href="#">Конфеты подарочные "AMBROSIA-168"</a>-->
+                                    <!--</li>-->
+                                    <!--<li data-value="Конфеты подарочные &quot;JADE_12-228&quot;">-->
+                                        <!--<a href="#">Конфеты подарочные "JADE_12-228"</a>-->
+                                    <!--</li>-->
+                                <!--</ul>-->
+                                <!-- /typeahead -->
+
+                            </form>
+                        </li>
+                    </ol>
+                    <!-- /header_right -->
+
+                </div>
+                <!-- /header_top -->
+
+                <!-- aphorism -->
+                <div class="wrap_aphorism">
+                    <div class="aphorism">
+                        <p>Шоколад - это не заменитель любви.
+                            Любовь - это заменитель шоколада.
+                            Такова правда жизни.
+                        </p>
+                        <span>(Миранда Ингрэм)</span>
+                    </div>
+
+                    <a href="#">Еще афоризмы</a>
+                </div>
+                <!-- /aphorism -->
+
+                <!-- address -->
+                <address>
+
+                    <!-- wrap_tel -->
+                    <div class="wrap_tel">
+                        <span class="tel">+7 (495) 730-75-57</span>
+                        <span class="street"><a href="#proezd"> г.Москва, ул. Ольховская, 20</a></span>
+                    </div>
+                    <!-- /wrap_tel -->
+
+                    <!-- wrap_back_call -->
+                    <div class="wrap_back_call">
+
+                        <!-- back_call -->
+                        <a class="back_call" href="#">
+                            <span>Обратный</span>
+                            <span>звонок</span>
+                        </a>
+                        <!-- back_call -->
+
+                        <!-- back_call__popup -->
+                        <form action="#" class="back_call__popup">
+                            <input type="text" placeholder="Введите свое имя"/>
+                            <input type="text" placeholder="Введите номер телефона"/>
+                            <input type="submit" value="Отправить"/>
+                        </form>
+                        <!-- /back_call__popup -->
+                    </div>
+                    <!-- /wrap_back_call -->
+
+                    <p>Прием заказов круглосуточно.
+                        Работаем: пн-суб, 9-21</p>
+
+                </address>
+                <!-- /address -->
+
+                <!-- cart -->
+                <div class="cart">
+                    <div class="total">
+                        <span>2 товара </span>на <span>2900 Р</span>
+                    </div>
+                    <a href="#">Оформить заказ</a>
+                </div>
+                <!-- /cart -->
+
+                <!-- logo -->
+                <a href="#" class="logo" title="На главную"><img src="img/logo.png" width="360" height="270" alt=""></a>
+                <!-- /logo -->
+
+                <!-- main-menu -->
+                <nav class="main-menu main-menu2">
+                    <ol class="main-menu__layout">
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">О НАС</a></li>
+                        <li class="main-menu__item main-menu__item_active"><span class="main-menu__lnk">ОТЗЫВЫ</span></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">БРЕНДЫ</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">КАТАЛОГ</a></li>
+                    </ol>
+
+                    <ol class="main-menu__layout">
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">ПРО ШОКОЛАД</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">НОВОСТИ</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">ОПЛАТА И ДОСТАВКА</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">ПАРТНЕРАМ</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">КОНТАКТЫ</a></li>
+                    </ol>
+                </nav>
+                <!-- /main-menu -->
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- left_aside -->
+                    <aside class="left_aside">
+
+                        <!-- wrap_aside -->
+                        <div class="wrap_aside">
+
+                            <!-- content_aside -->
+                            <div class="content_aside">
+                                <h2>Бренды</h2>
+                                <ol>
+                                    <li><a href="#">Michel Cluizel</a></li>
+                                    <li><a href="#">Baci</a></li>
+                                    <li><a href="#">Guylian</a></li>
+                                    <li><a href="#">Duc d’O</a></li>
+                                    <li><a href="#">Danesi</a></li>
+                                    <li><a href="#">Choco Me</a></li>
+                                    <li><a href="#">Alyonka</a></li>
+                                    <li><a href="#">Krasnyi Oktyabr</a></li>
+                                    <li><a href="#">Другие</a></li>
+                                </ol>
+                            </div>
+                            <!-- /content_aside -->
+
+                            <!-- wrapcontent_aside_aside -->
+                            <div class="content_aside">
+                                <h2>Происхождение</h2>
+                                <ol>
+                                    <li><a href="#">Бельгийский шоколад</a></li>
+                                    <li><a href="#">Швейцарский шоколад</a></li>
+                                    <li><a href="#">Французский шоколад</a></li>
+                                    <li><a href="#">Итальянский шоколад</a></li>
+                                    <li><a href="#">Турецкий шоколад</a></li>
+                                </ol>
+                            </div>
+                            <!-- /content_aside -->
+
+                            <!-- content_aside -->
+                            <div class="content_aside">
+                                <h2>Упаковка</h2>
+                                <ol>
+                                    <li><a href="#">Дерево</a></li>
+                                    <li><a href="#">Жесть</a></li>
+                                    <li><a href="#">Картон</a></li>
+                                    <li><a href="#">Другая</a></li>
+                                </ol>
+                            </div>
+                            <!-- /content_aside -->
+
+                        </div>
+                        <!-- /wrap_aside -->
+
+                        <!-- wrap_aside -->
+                        <div class="wrap_aside">
+
+                            <!-- content_aside -->
+                            <div class="content_aside">
+                                <h2>Шоколад плиточный</h2>
+                                <ol>
+                                    <li><a href="#">Ягодный шоколад</a></li>
+                                    <li><a href="#">Ореховый шоколад</a></li>
+                                    <li><a href="#">Фруктовый шоколад</a></li>
+                                    <li><a href="#">Зерновой шоколад</a></li>
+                                    <li><a href="#">Цветочный шоколад</a></li>
+                                    <li><a href="#">Кофейный шоколад</a></li>
+                                    <li><a href="#">Шоколад к алкоголю</a></li>
+                                    <li><a href="#">Шоколад с алкоголем</a></li>
+                                    <li><a href="#">Шоколадная романтика</a></li>
+                                    <li><a href="#">Шоколадная экзотика</a></li>
+                                    <li><a href="#">Шоколадная классика</a></li>
+                                    <li><a href="#">Шоколад с начинками</a></li>
+                                    <li><a href="#">Шоколад в наборе</a></li>
+                                </ol>
+                            </div>
+                            <!-- /content_aside -->
+
+                            <!-- content_aside -->
+                            <div class="content_aside">
+                                <h2>Конфеты подарочные</h2>
+                                <ol>
+                                    <li><a href="#">Конфеты в дереве</a></li>
+                                    <li><a href="#">Конфеты в картоне</a></li>
+                                    <li><a href="#">Конфеты в жести</a></li>
+                                    <li><a href="#">Конфеты в пластике</a></li>
+                                </ol>
+                            </div>
+                            <!-- /content_aside -->
+
+                            <!-- content_aside -->
+                            <div class="content_aside">
+                                <h2>Трюфели</h2>
+                                <ol>
+                                    <li><a href="#">Твердые трюфели</a></li>
+                                    <li><a href="#">Полумягкие трюфели</a></li>
+                                    <li><a href="#">Мягкие трюфели</a></li>
+                                </ol>
+                            </div>
+                            <!-- /content_aside -->
+
+                            <!-- content_aside -->
+                            <div class="content_aside">
+                                <h2>Шоколад фигурный</h2>
+                                <ol>
+                                    <li><a href="#">Из черного шоколада</a></li>
+                                    <li><a href="#">Из молочного шоколада</a></li>
+                                    <li><a href="#">Из белого шоколада</a></li>
+                                </ol>
+                            </div>
+                            <!-- /content_aside -->
+
+                            <!-- content_aside -->
+                            <div class="content_aside">
+                                <h2>Конфеты с начинкой</h2>
+                                <ol>
+                                    <li><a href="#">Пралине</a></li>
+                                    <li><a href="#">Ганаш</a></li>
+                                    <li><a href="#">Шоколадные хлопья</a></li>
+                                    <li><a href="#">Орехи</a></li>
+                                    <li><a href="#">Крем</a></li>
+                                    <li><a href="#">Ликер</a></li>
+                                    <li><a href="#">Черный шоколад</a></li>
+                                    <li><a href="#">Молочный шоколад</a></li>
+                                    <li><a href="#">Белый шоколад</a></li>
+                                    <li><a href="#">Ассорти</a></li>
+                                </ol>
+                            </div>
+                            <!-- /content_aside -->
+
+                            <!-- content_aside -->
+                            <div class="content_aside">
+                                <h2>Печенье</h2>
+                                <ol>
+                                    <li><a href="#">Печенье с начинкой</a></li>
+                                    <li><a href="#">Печенье без начинки</a></li>
+                                </ol>
+                            </div>
+                            <!-- /content_aside -->
+                            
+                            <h2><a href="#">Прочие сладости</a></h2>
+                            <h2><a href="#">Горячий шоколад</a></h2>
+                        </div>
+                        <!-- /wrap_aside -->
+
+                        <!-- wrap_aside -->
+                        <div class="wrap_aside">
+                            <h2>Новинки</h2>
+
+                            <!-- slideWrap -->
+                            <div class="slideWrap">
+
+                                <!-- ares-slider -->
+                                <div class="ares-slider2">
+                                    <div class="ares-slider2__item">
+                                        <span class="title">Трюфели "Трюфлина" </span>
+
+                                        <a href="#"><img width="194" height="150" alt="" src="img/img8.png"></a>
+                                    </div>
+                                    <div class="ares-slider2__item">
+                                        <span class="title">Трюфели "Трюфлина" </span>
+
+                                        <a href="#"><img width="194" height="150" alt="" src="img/img9.png"></a>
+                                    </div>
+                                    <div class="ares-slider2__item">
+                                        <span class="title">Трюфели "Трюфлина" </span>
+
+                                        <a href="#"><img width="194" height="150" alt="" src="img/img8.png"></a>
+                                    </div>
+                                    <div class="ares-slider2__item">
+                                        <span class="title">Трюфели "Трюфлина" </span>
+
+                                        <a href="#"><img width="194" height="150" alt="" src="img/img9.png"></a>
+                                    </div>
+
+                                    <div class="ares-slider2__prev"></div>
+                                    <div class="ares-slider2__next"></div>
+                                </div>
+                                <!-- /ares-slider -->
+
+                            </div>
+                            <!-- slideWrap -->
+
+                        </div>
+                        <!-- /wrap_aside -->
+
+                    </aside>
+                    <!-- /left_aside -->
+
+                    <!-- content -->
+                    <div class="content">
+
+                        <h1><span>Шоколад в подарок - больше, чем просто подарок!</span></h1>
+
+                        <!-- wrap_gallery -->
+                        <div class="wrap_gallery">
+                            <div id="wrapper">
+                                <div id="zoom-slider">
+                                    <img src="img/img1.jpg" width="1350" height="610" alt="" />
+                                    <img src="img/choko.jpg" width="1350" height="610" alt="" />
+                                    <img src="img/img1.jpg" width="1350" height="610" alt="" />
+                                    <img src="img/img1.jpg" width="1350" height="610" alt="" />
+                                    <img src="img/img1.jpg" width="1350" height="610" alt="" />
+                                    <img src="img/choko.jpg" width="1350" height="610" alt="" />
+                                    <img src="img/img1.jpg" width="1350" height="610" alt="" />
+                                    <img src="img/img1.jpg" width="1350" height="610" alt="" />
+                                </div>
+                                <a onclick="zoomSlider.previous()" class="navPrev"></a>
+                                <a onclick="zoomSlider.next()" class="navNext"></a>
+
+                            </div>
+                        </div>
+                        <!-- /wrap_gallery -->
+
+                        <!-- text_wrap -->
+                        <div class="text_wrap">
+                            <p><b>Шоколад в подарок</b>, согласно исследованиям, желают получать почти треть Россиян и около половины европейцев, где культура дарения шоколада имеет глубокие исторические корни. Что же это за подарок, шоколад? Всякий ли шоколад в подарок подойдет и уместен?  Можно ли вообще рассматривать шоколад в качестве подарка? Разве может быть подарком то, что можно съесть? На эти и другие вопросы по теме "шоколад в подарок" мы и постараемся ответить.</p>
+                            <p>Все мы любим получать подарки. Точнее – мы любим получать подарки и делать подарки. И сложно сказать, что приятнее: дарить самому или принимать подарки. Однако бесспорно одно: подарки – это всегда приятно! Подарки - это позитивные эмоции, это радость общения. Так что шоколад в подарок - это дарение шоколадных эмоций близким нам людям.</p>
+                            <p>Наш магазин называется <b>«Интернет-бутик шоколада и шоколадных подарков»</b> неспроста. Мы хотим помогать Вам делать подарки, точнее - делать шоколадные подарки. Шоколад в подарок - это здорово, это нам нравится. Своей работой мы хотим сделать нашу жизнь немного вкуснее, ярче, добрее и чуточку счастливее. Наверное, именно этого нам в жизни так часто не хватает. Вы с нами согласны?</p>
+                        </div>
+                        <!-- /text_wrap -->
+
+                        <!-- category_products -->
+                        <ol class="category_products">
+                            <li>
+                                <a href="#">
+                                    <span>Шоколад плиточный</span>
+                                    <div class="wrap_img"><img src="img/img2.png" alt=""/></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Конфеты подарочные</span>
+                                    <div class="wrap_img"><img src="img/img3.png" alt=""/></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Трюфели шоколадные</span>
+                                    <div class="wrap_img"><img src="img/img4.png" alt=""/></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Шоколад фигурный</span>
+                                    <div class="wrap_img"><img src="img/img5.png" alt=""/></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Печенье</span>
+                                    <div class="wrap_img"><img src="img/img6.png" alt=""/></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span>Прочие сладости</span>
+                                    <div class="wrap_img"><img src="img/img7.png" alt=""/></div>
+                                </a>
+                            </li>
+                        </ol>
+                        <!-- /category_products -->
+
+                        <!-- text_wrap -->
+                        <div class="text_wrap">
+                            <p>Знаменитая Коко Шанель однажды в переписке своей подруге Мисе Годебска написала <b>«… Те, кто дарит мне что-то изрядно дорогое, всегда от меня чего-то хотят. Те же, кто мне дарит шоколад, просто хотят сделать мне приятное».</b></p>
+                            <p>У многих из нас слово «шоколад» прочно ассоциируется со словом «подарок». Шоколад в подарок – это, действительно, здорово! Особенно здорово, если это НАСТОЯЩИЙ шоколад, сделанный по всем канонам шоколадного искусства. Еще лучше - если это шоколад ручной работы под известным брендом. При этом, конечно, не слишком важно, что это за шоколад: плиточный шоколад, шоколадные конфеты, шоколадные трюфели, фигурный шоколад, фрукты в шоколаде или что-то иное.</p>
+                            <p>Кстати, производители шоколада, хорошо понимая КАКАЯ часть шоколада приобретается в подорок, стараются делать все необходимое, чтобы упаковка их шоколада (в основном, конечно, шоколадных конфет и трюфелей) могла выполнять подарочную функцию. Шоколад в подарок предлагается в картонной упаковке, пластике, жести и дереве. В деревянной упаковке, кстати, предлагают подарочный шоколад суперпремиальные марки элитного шоколада, например, бренд "zChocolate".</p>
+                            <p>Мы получали шоколад в подарок, когда еще были детьми, мы сами дарили шоколад, когда ухаживали за девушками, мы покупаем шоколад своим детям, в виде плиток, трюфелей, фигурок и шоколадных конфет мы дарим шоколад своим знакомым. Мы дарим шоколад часто больше интуитивно, не задумываясь о том, приятен будет подарок человеку или нет – мы знаем, что приятен. Ведь шоколад – это особенный продукт, которому всегда рад каждый от мала до велика. В подтверждение приведем одну известную фразу Джона Туллиуса: «…Девять из десяти человек говорят, что любят шоколад. Десятый человек всегда врет».</p>
+                            <p>Шоколад, будь то горький шоколад, молочный шоколад или белый шоколад - один из немногих продуктов, который способствует поднятию настроения. Косвенно этот факт подтверждается тем, что основной объем шоколада потребляется с осени по весну, когда в утверждение «у природы нет плохой погоды» верится менее всего и когда нам с Вами просто не хватает солнца. Тем самым получается, что шоколад заменяет нам солнце! Вы только представьте! Шоколад заменяет солнце! Непостижимо.</p>
+                            <p>Хорошо известно, что настоящий шоколад – один из немногих продуктов, львиная (!) доля которого покупается с целью дарения. Согласитесь, получить хороший шоколад в подарок – это здорово! Приятно еще и то, что понемногу в стране появляется выбор дорогого настоящего шоколада, шоколада от самых известных производителей, которые не привыкли экономить на качестве и которые не умеют производить что-то шаблонное или «такое же».</p>
+                            <p>Настоящий шоколад – это всегда произведение кулинарного искусства. Казалось бы: состав шоколада всем давным-давно знаком, однако сколько производителей шоколада, столько и его вкусов не говоря уже о его формах.</p>
+                            <p><b>Шоколад в подарок – это лучший способ удивить и порадовать одновременно.</b> Можно ошибиться с каким угодно подарком, Вы наверняка это знаете, но если Вы подарите настоящий дорогой шоколад – Ваш подарок обязательно попадет в цель! Причем, попадете в цель даже в том случае, если тот, кому Вы дарите шоколад, предпочитает иной вид шоколада, например, горький шоколад, а Вы подарили молочный шоколад или белый шоколад.</p>
+                            <p><b>Шоколад в подарок – это всегда хороший повод для знакомства.</b> Тот, кто дарит шоколад, всегда оставляет о себе воспоминания, ассоциируемые с его подарком. И если подарок принес исключительно приятные эмоции, то и о дарителе останутся воспоминания самые приятные. Разве не так?</p>
+                            <p>Шоколад в подарок – это отличный способ показать свою неординарность, свой вкус, свою разборчивость, свое ОТНОШЕНИЕ. Человек, который в качестве подарка ищет и преподносит что-то оригинальное и по-настоящему стоящее, не может не вызывать внимания и уважения!</p>
+                            <p>Все мы разные, мы имеем разные взгляды, разные пристрастия и разные вкусы, но если мы любим шоколад независимо от того какой он: горький шоколад, сливочный шоколад или белый шоколад, мы ни за что не променяем настоящий шоколад ни на что другое. Причина проста: шоколад – тот продукт, который не имеет прямых заменителей. Не создано до сих пор другого продукта, который мог бы сравниться по вкусу и приносимому удовольствию с настоящим качественным шоколадом.</p>
+                            <p>На нашем сайте мы предусмотрели удобное совмещение шоколада и подарка. Если Вам понравится что-то на сайте, Вы можете уведомить кого-либо о том, что хотите это в подарок. Тем самым подарок себе Вы выбираете сами, а близкий Вам человек только приобретает его для Вас и Вам же дарит. Ну, разве не здорово?</p>
+                            <p>Самый непростой вопрос, который нам задают наши покупатели, таков: "Какой шоколад ЛУЧШЕ?". Крайне сложный вопрос! И вопрос не только в том, что каждому нравится СВОЙ шоколад. Вопрос еще касается того с какой целью Вы выбираете шоколад. Весь шоколад, который мы Вам предлагаем, это хороший шоколад. Точнее так: мы предлагаем лучший шоколад из самого хорошего. Так что "хороший шоколад" и "лучший шоколад" для каждого - свои.</p>
+                            <p>Вкус шоколада формируется в зависимости от сырья, технологии изготовления, замысла и мастерства шоколатье. Каждый шоколад вкусен по-своему: горький шоколад, который считается самым полезным, имеет самое высокое содержание какао и самый глубокий вкус; молочный шоколад имеет более нежный вкус, долгое послевкусие, он нравится детям; белый шоколад – шоколад для утонченных натур и ценителей всего нового. Какой шоколад лучший решать Вам и только Вам. Наше дело - предоставить Вам выбор.</p>
+                            <p>Диапазон цен на шоколадные подарки и их ассортимент таковы, что каждый сможет выбрать шоколад на свой вкус и бюджет. Мы предлагаем подарочный шоколад от дорого шоколада до элитного шоколада ручной работы в дорогих подарочных коробках. Большой разницы нет в том, что Вы дарите: плиточный шоколад, трюфели или шоколадные конфеты ручной работы. Важно, чтобы Вы это делали с понимаем дела и желанием сделать приятное.</p>
+                            <p>Шоколада, наверное, не может быть много: выбирайте, пробуйте, оценивайте, дарите, делитесь с нами и Вашими знакомыми своими ощущениями и открытиями! И жизнь будет вкуснее.</p>
+                        </div>
+                        <!-- /text_wrap -->
+
+                    </div>
+                    <!-- /content -->
+
+                    <!-- footer_nav -->
+                    <div class="footer_nav">
+                        <ol>
+                            <li>
+                                <a href="#">О НАС</a>
+                                <a href="#">ОТЗЫВЫ</a>
+                                <a href="#">ВОПРОСЫ И ОТВЕТЫ</a>
+                                <a href="#">БРЕНДЫ</a>
+                                <a href="#">КАТАЛОГ</a>
+                                <a href="#">ПРО ШОКОЛАД</a>
+                                <a href="#">НОВОСТИ</a>
+                                <a href="#">ОПЛАТА И ДОСТАВКА</a>
+                                <a href="#">ПАРТНЕРАМ</a>
+                                <a href="#">КОНТАКТЫ</a>
+                            </li>
+                        </ol>
+                    </div>
+                    <!-- /footer_nav -->
+
+                    <!-- bottom_content -->
+                    <div class="bottom_content">
+
+                        <!-- wrap_new -->
+                        <div class="wrap_new">
+                            <h2>НОВОСТИ</h2>
+
+                            <!-- new -->
+                            <div class="new">
+                                <time datetime="2013-11-08">08.11.2013</time>
+                                <a href="#">Поступил в продажу бельгийский шоколад «Willi Wonka». Шоколад уже доступен для заказа.</a>
+                            </div>
+                            <!-- /new -->
+
+                            <!-- new -->
+                            <div class="new">
+                                <time datetime="2013-11-08">08.11.2013</time>
+                                <a href="#">Поступил в продажу бельгийский шоколад «Willi Wonka». Шоколад уже доступен для заказа.</a>
+                            </div>
+                            <!-- /new -->
+
+                            <!-- all_new -->
+                            <a class="all_new" href="#"><span>Все новости</span></a>
+                            <!-- /all_new -->
+
+                            <!-- form -->
+                            <form action="#">
+                                <span class="title">Подписка на рассылку новостей:</span>
+
+                                <div class="wrap_label">
+                                    <div><input type="checkbox" class="niceCheck" id="ch1" tabindex="1" /><label for="ch1">Подписка на новости </label></div>
+                                    <div><input type="checkbox" class="niceCheck" id="ch2" tabindex="1" /><label for="ch2">Подписка на акции и спец. предложения </label></div>
+                                </div>
+
+                                <div class="wrap_input">
+                                    <input type="text" placeholder="email@mail.ru"/>
+                                    <input type="submit" value="Подписаться"/>
+                                </div>
+                            </form>
+                            <!-- /form -->
+
+                        </div>
+                        <!-- /wrap_new -->
+
+                        <!-- wrap_map -->
+                        <div class="wrap_map" id="proezd">
+                            <a href="#">Распечатать схему</a>
+                            <img src="img/choko_2.jpg" height="420" alt=""/>
+                        </div>
+                        <div class="print_info">
+                            Интернет-бутик шоколада и шоколадных подарков "Шоколадный Восторг". Адрес: Москва, ул. Ольховская, 20. Сайт: UniChoc.ru. Тел.: +7(495)730-75-57. Прием заказов - круглосуточно
+                        </div>
+                        <!-- /wrap_map -->
+
+                    </div>
+                    <!-- /bottom_content -->
+
+                    <!-- bottom_content -->
+                    <div class="bottom_content">
+
+                        <!-- network -->
+                        <ol class="network">
+                            <li><a class="facebook" title="Facebook" href="#">facebook</a></li>
+                            <li><a class="vkontakte" title="Vkontakte" href="#">vkontakte</a></li>
+                            <li><a class="odnoklassniki" title="Odnoklassniki" href="#">odnoklassniki</a></li>
+                            <li><a class="google" title="Google" href="#">google</a></li>
+                            <li><a class="twitter" title="Twitter" href="#">twitter</a></li>
+                        </ol>
+                        <!-- /network -->
+
+                        <!-- street_info -->
+                        <div class="street_info">
+                            <span class="street"><span>г.Москва</span>, ул. Ольховская, 20.</span>
+                            <span class="tel">+7 (495) 730-75-57</span>
+                            <a href="mailto:mag@UniChoc.ru" class="mail"><img src="img/mail_street.png" width="104" height="14" alt=""/></a>
+                            <div class="payment"><img src="img/payment.png" width="76" height="20" alt=""/></div>
+                        </div>
+                        <!-- /street_info -->
+
+                    </div>
+                    <!-- bottom_content -->
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+        <!-- /site__layout -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <!-- footer_menu -->
+            <div class="footer_menu">
+                <a class="font18" href="#">шоколад</a>
+                <a href="#">шоколад ручной работы</a>
+                <a href="#">черный шоколад</a>
+                <a href="#">молочный шоколад</a>
+                <a href="#">белый шоколад</a>
+                <a class="font14" href="#">конфеты подарочные</a>
+                <a class="font14" href="#">конфеты ручной работы</a>
+                <a class="font14" href="#">фрукты в шоколаде</a>
+                <a href="#">марципаны</a>
+                <a href="#">горячий шоколад</a>
+                <a class="font18" href="#">шоколадные подарки</a>
+                <a class="font18" href="#">элитный шоколад</a>
+                <a class="font18" href="#">подарочный шоколад</a>
+                <a class="font14" href="#">подарок</a>
+                <a href="#">купить шоколад</a>
+                <a href="#">доставка шоколада в Москве</a>
+                <a href="#">доставка шоколада</a>
+                <a class="font18" href="#">шоколад в Москве</a>
+            </div>
+            <!-- /footer_menu -->
+
+            <p>Вся информация, представленная на сайте <a href="mailto:mag@UniChoc.ru"><img src="img/mail_text.png" width="92" height="10" alt=""/></a>, в том числе текстовые, графические, фото, видео, презентации, элементы графического дизайна и иные материаля являются интеллектуальной собственностью, является собственностью интернет-бутика "Шоколадный Восторг". Какое-либо их использование в коммерческих или личных целях на других сайтах или иным способом без письменного согласия правообладателей НЕДОПУСТИМО. За нарушение прав на интеллектуальную собственность Российским законодательством предусмотрена гражданско-правовая, административная и уголовная ответственность.</p>
+
+            <!-- counter -->
+            <div class="counter">
+                <span><img src="img/counter.png" width="86" height="32" alt=""/></span>
+                <span><img src="img/counter.png" width="86" height="32" alt=""/></span>
+            </div>
+            <!-- /counter -->
+
+            <!-- copy -->
+            <span class="copy">2013 г. <a href="mailto:mag@UniChoc.ru"><img src="img/mail_footer.png" width="65" height="10" alt=""/></a> - интернет-бутик элитного шоколада и шоколадных подарков «Шоколадный восторг».</span>
+            <!-- /copy -->
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <!-- scroller -->
+    <div id="scroller" class="b-top" style="display: none;"><span class="b-top-but">наверх</span></div>
+    <!-- /scroller -->
+
+</body>
+</html>

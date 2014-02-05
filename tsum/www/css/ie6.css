@@ -1,0 +1,24 @@
+div#sidebar div.basket div.items div.item div.info {
+    margin-left: 52px;
+}
+div#footer div.copyright div.subscribe {
+    width: 385px;
+}
+div.photo-slider div.nav div {
+    margin-left: auto;
+    position: relative;
+    left: -50%;
+}
+div#sidebar {
+    padding-bottom: 150px;
+}
+div.city-select div.list {
+    border-width: 0px;
+    width: 100%;
+}
+div.submenu {
+    width: 803px;
+}
+div.submenu div.category {
+    float: left;
+}

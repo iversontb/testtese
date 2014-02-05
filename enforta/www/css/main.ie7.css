@@ -1,0 +1,195 @@
+.search__text {
+    padding-bottom: 5px;
+}
+.response .nice-select {
+    display: inline;
+    width: 468px;
+}
+.response__phone {
+    width: 359px;
+}
+.response__mail {
+    width: 458px;
+}
+.menu > div {
+    display: inline;
+}
+.response textarea {
+    width: 399px;
+}
+.menu > .after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    height: 0;
+}
+.menu__item a > .before,
+.menu__item a > .after {
+    content: '';
+    background: url("../img/menu.png") no-repeat;
+    width: 54px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 2px;
+    display: block;
+    cursor: pointer;
+}
+.menu__item a:hover > .after,
+.menu__item a > .before {
+    background-position: 0 bottom;
+    display: none;
+}
+.menu__item a:hover > .before{
+    display: block;
+}
+.menu__item_career a > .before,
+.menu__item_career a > .after {
+    background-position: -56px 0;
+    left: 0;
+}
+.menu__item_career a > .before {
+    background-position: -56px bottom;
+}
+.menu__item_motivation a > .before,
+.menu__item_motivation a > .after {
+    background-position: -112px 0;
+}
+.menu__item_motivation a > .before {
+    background-position: -112px bottom;
+}
+.menu__item_warranty a > .before,
+.menu__item_warranty a > .after {
+    background-position: -168px 0;
+    left: 45px;
+}
+.menu__item_warranty a > .before {
+    background-position: -168px bottom;
+}
+.menu__item_structure a > .before,
+.menu__item_structure a > .after {
+    background-position: -224px 0;
+}
+.menu__item_structure a > .before {
+    background-position: -224px bottom;
+}
+.menu__item_live a > .before,
+.menu__item_live a > .after {
+    background-position: -280px 0;
+    left: 14px;
+}
+.menu__item_live a > .before {
+    background-position: -280px bottom;
+}
+.menu__item_live.active a > .after {
+    display: none !important;
+}
+.menu__item_live.active a > .before {
+    display: block !important;
+}
+.menu__item_about a > .before,
+.menu__item_about a > .after {
+    background-position: -336px 0;
+    left: 10px;
+}
+.menu__item_about a > .before {
+    background-position: -336px bottom;
+}
+.footer__layout > .after {
+    content: '';
+    background: url("../img/footer__after.jpg");
+    width: 634px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -518px;
+}
+.site__footer > .before {
+    content: '';
+    background: url("../img/footer__after2.jpg");
+    width: 50%;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.site__footer > .after {
+    content: '';
+    background: url("../img/footer__after3.jpg");
+    width: 50%;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+.social dt,
+.social dd,
+.subscribe dt,
+.subscribe dd {
+    display: inline;
+}
+.menu__item {
+    margin-left: 60px;
+}
+.menu__item:first-child {
+    margin: 0;
+}
+.search__text {
+    line-height: 20px;
+}
+.steps-list li span{
+    display: block;
+}
+.diagnostic__town h3{
+    margin-top: -2px;
+    height: 28px;
+    line-height: 28px;
+    padding-right: 8px;
+}
+.diagnostic__town .nice-select{
+   width: 195px;
+}
+.diagnostic__town .nice-select,
+.diagnostic__town h3,
+.vacanse-description,
+.sub-menu li,
+.vacanse-description,
+.process-list,
+.diagnostic,
+.steps-list,
+.process-list__text,
+.development__text,
+.development__cartoon,
+.tab-menu li,
+.faceBlock__day-face,
+.faceBlock__face-text,
+.faceBlock__foto-container,
+.search-secsess__form,
+.search-secsess__face-list,
+.motivation-block__row__news li,
+.motivation-block__row,
+.vacance-list li{
+    display: inline;
+}
+.response .response__err > .after {
+    color: #cf0000;
+    margin-top: 8px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 7px;
+}
+.nice-select__item > .after {
+    content: '';
+    width: 27px;
+    height: 26px;
+    background: url("../img/nice-select.png") no-repeat 0 bottom;
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    z-index: 10;
+    border-radius: 0 3px 3px 0;
+}

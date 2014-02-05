@@ -1,0 +1,27 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "HelveticaNeueCyr-Light";
+    src: url("../fonts/helveticaneuecyr-light.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "HelveticaNeueCyr-Roman";
+    src: url("../fonts/helveticaneuecyr-roman.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "HelveticaNeueCyr-Bold";
+    src: url("../fonts/helveticaneuecyr-bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "HelveticaNeueCyr-Thin";
+    src: url("../fonts/helveticaneuecyr-thin.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

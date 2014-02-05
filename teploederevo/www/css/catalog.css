@@ -1,0 +1,116 @@
+.botBlock{
+    padding: 18px;
+    border: 2px dotted #b89650;
+    margin-bottom: 12px;
+}
+.descirptionText{
+    width: 519px;
+    display: inline-block;
+    vertical-align: top;
+    color: #9f683f;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 19px;
+    margin-left: 13px;
+}
+.descirptionText p{
+    margin-bottom: 25px;
+
+
+}
+.recomend a:hover{
+    opacity: 0.8;
+}
+.recomend a{
+    display: inline-block;
+    vertical-align: top;
+    text-indent: -5000px;
+    width: 22px;
+    height: 22px;
+    margin-right: 7px;
+}
+.recomend dd,
+.recomend dt{
+    display: inline-block;
+    vertical-align: top;
+    letter-spacing: 1px;
+}
+.catalogList{
+    width: 1000px;
+}
+.goodsBlock{
+    border: 2px dotted #b89650;
+    display: inline-block;
+    vertical-align: top;
+    width: 315px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 18px;
+    text-align: center;
+    margin-bottom: 13px;
+    margin-right: 13px;
+}
+.imgContainer{
+    width: 279px;
+    display: table-cell;
+    vertical-align: middle;
+    height: 160px;
+    position: relative;
+}
+.imgContainer a:hover{
+    text-decoration: none;
+}
+.imgContainer a{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #5cac8d;
+    font-size: 13px;
+    text-decoration: underline;
+}
+.goodsBlock h3{
+    color: #9f683f;
+    font-size: 16px;
+    text-align: center;
+    border-bottom: 1px solid #9f683f;
+    padding-bottom: 16px;
+    margin-top: 21px;
+    margin-bottom: 10px;
+}
+.oldPrice{
+    display: inline-block;
+    vertical-align: top;
+    color: #5cac8d;
+    width: 50%;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    border-right: 1px solid #9f683f;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.newPrice{
+    display: inline-block;
+    vertical-align: top;
+    color: #9f683f;
+    font-size: 14px;
+    width: 48%;
+    line-height: 24px;
+    box-sizing: border-box;
+    text-align: center;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.newPrice span,
+.oldPrice span{
+    display: block;
+}
+.content-wrap{
+    color: #9f683f;
+}
+.diference{
+    font-size: 12px;
+    margin-bottom: 20px;
+}

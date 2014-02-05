@@ -1,0 +1,135 @@
+.topicType{
+    color: #0046ad;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+/* motivation-block */
+.motivation-block p{
+    line-height: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-family: arial;
+}
+.motivation-block{
+    margin-top: 38px;
+}
+.motivation-block__row{
+    display: inline-block;
+    width: 456px;
+    margin-bottom: 8px;
+    vertical-align: top;
+    margin-top: 17px;
+}
+.motivation-block__row h3{
+    color: #ff7900;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+.motivation-block__row h4{
+    color: #0046ad;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 14px;
+}
+.motivation-block__row img{
+    display: block;
+    margin-bottom: 11px;
+}
+/* /motivation-block */
+
+.firs-elem{
+    margin-right: 43px;
+}
+
+/* gallery-container */
+.gallery-container__next{
+    background: url("../img/gall-but-sprite.png")  0 -63px;
+    width: 11px;
+    height: 16px;
+    position: absolute;
+    top: 80px;
+    right: 8px;
+    border: none;
+    text-indent: -5000px;
+    cursor: pointer;
+
+}
+.gallery-container__next:hover{
+    background-position: 0 -42px;
+}
+.gallery-container__prev{
+    background: url("../img/gall-but-sprite.png") 0 -21px;
+    width: 11px;
+    height: 16px;
+    position: absolute;
+    top: 80px;
+    border: none;
+    left: 0;
+    cursor: pointer;
+    text-indent: -5000px;
+}
+.gallery-container__prev:hover{
+    background-position: 0 0;
+}
+.gallery-container{
+    position: relative;
+    padding: 0 27px;
+}
+.gallery-container__gallery li{
+    width: 185px;
+    margin-right: 18px;
+}
+.gallery-container__description{
+    font-family: arial;
+    line-height: 15px;
+    font-size: 11px;
+    color: #565656;
+    font-style: italic;
+}
+
+/* /gallery-container */
+
+/* motivation-block */
+.motivation-block__row__news li{
+    display: inline-block;
+    width: 208px;
+    margin-right: 40px;
+    vertical-align: top;
+    margin-bottom: 25px;
+}
+.motivation-block__row__news li time{
+    display: block;
+    font-family: arial;
+    font-style: italic;
+    font-size: 12px;
+    margin: 14px 0 6px 0;
+    color: #565656;
+}
+.motivation-block__row__news li a{
+    color: #0046ad;
+    line-height: 16px;
+}
+.motivation-block__row__news li a:hover{
+    text-decoration: none;
+}
+.motivation-block__row__news{
+    margin-top: 10px;
+    width: 500px;
+}
+/* /motivation-block */
+.allNewsBut:hover{
+    text-decoration: none;
+}
+.allNewsBut{
+    color: #ff7900;
+    font-size: 12px;
+    font-family: arial;
+    text-decoration: underline;
+}

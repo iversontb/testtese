@@ -1,0 +1,631 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    aside-left
+
+    content-wrap
+
+    breadcrumbs
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 308px;
+}
+.site__content {
+    display: table;
+    width: 1000px;
+    margin: 0 auto;
+}
+.site__title {
+    color: #dc1f26;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 37px;
+    font-family: 'Open Sans', sans-serif;
+}
+.site__title > span {
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding-right: 15px;
+}
+.site__title:after {
+    content: '';
+    background: #cfd7de;
+    width: 100%;
+    position: absolute;
+    top: 12px;
+    z-index: 1;
+    left: 0;
+    height: 1px;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 120px;
+    width: 1000px;
+    margin: 0 auto;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 24px;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- menu --------------- */
+.menu {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: absolute;
+    left: 296px;
+    top: 56px;
+    letter-spacing: 1px;
+}
+.menu a,
+.menu a:visited,
+.menu span {
+    color: #242021;
+    margin-right: 40px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    -ms-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+}
+.menu .active{
+    margin-top: -10px;
+    cursor: default;
+}
+.menu a:hover {
+    color: #dc1f26;
+}
+.menu .active:after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #d91a21;
+    position: absolute;
+    top: -46px;
+    left: 0;
+}
+
+
+/* --------------- /menu --------------- */
+
+/* --------------- phone --------------- */
+.phone {
+    font-style: normal;
+    font-size: 22px;
+    color: #262223;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    right: -1px;
+    top: 50px;
+}
+.phone > span {
+    font-weight: 300;
+}
+/* --------------- /phone --------------- */
+
+/* --------------- aside-left --------------- */
+.aside-left {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 10px;
+    width: 228px;
+    background: green;
+}
+/* --------------- /aside-left --------------- */
+
+/* --------------- submenu --------------- */
+.submenu {
+    padding-top: 7px;
+    margin-bottom: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+.submenu a,
+.submenu span {
+    display: block;
+    border-bottom: 2px;
+    border-color: #f5f7f8;
+    border-bottom-style: ridge;
+    padding-left: 18px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+}
+.submenu a {
+    color: #000;
+}
+.submenu span {
+    background: #dc1f26;
+    color: #fff;
+    border-color: #d95057;
+}
+/* --------------- /submenu --------------- */
+
+/* --------------- aside-left --------------- */
+.order {
+    background: #f1f4f7;
+    border: 1px solid;
+    border-right: none;
+    border-top-color: #f8fafb;
+    border-left-color: #eff2f5;
+    border-bottom-color: #d7dadd;
+}
+.order > h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.order fieldset > input,
+.order fieldset > textarea {
+    border: 1px solid #cfd7de;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "Trebuchet MS";
+    line-height: 17px;
+    height: 36px;
+    width: 152px;
+    padding: 0 17px;
+    margin-bottom: 11px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.order fieldset > textarea {
+    height: 109px;
+    margin-bottom: 9px;
+    padding: 10px 17px;
+}
+.order .placeholder {
+    color: #999999;
+}
+.order ::-webkit-input-placeholder { /* Ð´Ð»Ñ webkit Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ð¾Ð² */
+    color: #999999;
+}
+.order :-moz-placeholder { /* Ð´Ð»Ñ Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ð¾Ð² mozilla */
+    color: #999999;
+}
+.order > span {
+    font-style: italic;
+    font-size: 12px;
+    font-family: "Trebuchet MS";
+    color: #999999;
+    display: block;
+    padding-left: 19px;
+    line-height: 16px;
+    margin-bottom: 23px;
+}
+.order > span > span {
+    color: #df3b42;
+}
+.order > p > span {
+    display: block;
+    color: #de343a;
+    text-align: center;
+    margin-bottom: 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.order > p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    line-height: 17px;
+    margin-bottom: 15px;
+}
+.order > input {
+    background: #de343a;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 19px;
+    width: 196px;
+    height: 50px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+}
+.order > input:hover {
+    background: #e2494e;
+}
+/* --------------- /aside-left --------------- */
+
+/* --------------- content-wrap --------------- */
+.content-wrap {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 68px;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- breadcrumbs --------------- */
+.breadcrumbs {
+    cursor: default;
+    height: 23px;
+    padding-top: 20px;
+    margin-bottom: 38px;
+    font-family: 'Open Sans', sans-serif;
+}
+.breadcrumbs a,
+.breadcrumbs a:visited {
+    font-size: 12px;
+    color: #949da5;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-decoration: underline;
+    margin-right: 25px;
+}
+.breadcrumbs a:hover {
+    text-decoration: none;
+}
+.breadcrumbs a:after {
+    position: absolute;
+    content: '>';
+    top: 0;
+    right: -17px;
+}
+.breadcrumbs span {
+    font-size: 12px;
+    color: #949da5;
+    display: inline-block;
+    vertical-align: top;
+}
+/* --------------- /breadcrumbs --------------- */
+
+/* --------------- portfolio --------------- */
+.portfolio {
+    font-family: 'Open Sans', sans-serif;
+    width: 606px;
+    padding-bottom: 40px;
+}
+.portfolio h2{
+    font-weight: 800;
+    color: #242021;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 29px;
+}
+.portfolio__about {
+    font-size: 20px;
+    color: #413e3f;
+    text-align: center;
+    line-height: 31px;
+    margin-bottom: 18px;
+}
+.portfolio__about span {
+    display: block;
+    line-height: 31px;
+}
+.portfolio__about a,
+.portfolio__about a:visited {
+    font-weight: 300;
+    color: #dc1f26;
+    font-style: italic;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.portfolio__about a:hover {
+    text-decoration: none;
+}
+.portfolio__item {
+    color: #413e3f;
+    font-size: 12px;
+    font-weight: 300;
+}
+.portfolio__item h3{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.portfolio__item p{
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.portfolio__item a,
+.portfolio__item a:visited {
+    color: #dc1f26;
+    font-size: 16px;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+    margin-bottom: 24px;
+}
+.portfolio__item a:hover {
+    text-decoration: none;
+}
+.portfolio__item img {
+    border: 1px solid #b8c1c8;
+    margin-bottom: 34px;
+}
+.portfolio__btn {
+    text-align: center;
+    position: relative;
+}
+.portfolio__btn:after {
+    content: '';
+    left: 0;
+    right: 0;
+    top: 22px;
+    position: absolute;
+    background: #e5eaed;
+    border-right: 1px solid #f3f5f7;
+    border-left: 1px solid #f3f5f7;
+    height: 2px;
+    z-index: 1;
+}
+.portfolio__btn:before {
+    content: '';
+    left: 148px;
+    right: 148px;
+    top: 22px;
+    position: absolute;
+    background: #fff;
+    border-right: 1px solid #f3f5f7;
+    border-left: 1px solid #f3f5f7;
+    height: 2px;
+    z-index: 2;
+}
+.portfolio__btn a,
+.portfolio__btn a:visited {
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 19px;
+    color: #fff;
+    background: #df353b;
+    border-radius: 3px;
+    height: 35px;
+    text-transform: uppercase;
+    padding: 15px 26px 0;
+    position: relative;
+    z-index: 3;
+}
+.portfolio__btn a span {
+    font-weight: bold;
+}
+.portfolio__btn a:hover{
+    background: #e2494e;
+}
+/* --------------- /portfolio --------------- */
+
+/* --------------- podrazdel2 --------------- */
+.podrazdel2 {
+    font-family: 'Open Sans', sans-serif;
+}
+.podrazdel2 img {
+    float: left;
+    margin-top: 3px;
+    margin-right: 26px;
+}
+.podrazdel2 h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -1px;
+    margin-bottom: 24px;
+}
+.podrazdel2__title {
+    font-weight: 300;
+    color: #dc1f26;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.podrazdel2 dd.podrazdel2__title {
+    font-weight: 300;
+    color: #dc1f26;
+    font-size: 24px;
+    margin-bottom: 57px;
+}
+.podrazdel2__title:after {
+    display: none;
+}
+.podrazdel2 dd {
+    font-size: 14px;
+    font-weight: 300;
+    position: relative;
+    padding-left: 21px;
+    margin-bottom: 10px;
+}
+.podrazdel2 dd:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background: #dc1f26;
+}
+/* --------------- /podrazdel2 --------------- */
+
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -308px;
+}
+.footer__layout {
+    width: 100%;
+    height: 308px;
+    background: #1b1d2c url("../img/footer-back.png") no-repeat center top;
+}
+/* --------------- /footer --------------- */

@@ -1,0 +1,113 @@
+.howTooMenu{
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+.howTooMenu li{
+    float: left;
+    width: 33%;
+}
+.howTooMenu li a{
+    color: #bfbfbf;
+    font-size: 15px;
+    font-family: intro;
+    webkit-text-stroke: 0.35px;
+    text-align: center;
+    display: block;
+    padding-top: 73px;
+}
+.howTooMenu li a.active,
+.howTooMenu li a:hover{
+    color: #0baed3;
+}
+.howTooMenu li a.active span,
+.howTooMenu li a:hover span{
+    border-top: 3px solid #0baed3;
+}
+.howTooMenu li span{
+    border-top: 3px solid #bfbfbf;
+    padding-top: 18px;
+    display: block;
+}
+.howToCar{
+    background: url("../img/by-car-hover.png") no-repeat top center;
+    background-size: 60px 52px;
+}
+.howTooMenu li .howToCar.active,
+.howToCar:hover{
+    background: url("../img/by-car.png") no-repeat top center;
+    background-size: 60px 52px;
+}
+.howToBus{
+    background: url("../img/by-bus-hover.png") no-repeat top center;
+    background-size: 60px 58px;
+}
+.howTooMenu li .howToBus.active,
+.howToBus:hover{
+    background: url("../img/by-bus.png") no-repeat top center;
+    background-size: 60px 58px;
+}
+.howToTrain{
+    background: url("../img/by-train-hover.png") no-repeat top center;
+    background-size: 56px 59px;
+}
+.howTooMenu li .howToTrain.active,
+.howToTrain:hover{
+    background: url("../img/by-train.png") no-repeat top center;
+    background-size: 56px 59px;
+}
+.textAligneCEnter{
+    text-align: center;
+    padding: 0 120px;
+    margin-bottom: 50px;
+    line-height: 20px;
+}
+.mapDescription{
+    position: absolute;
+    height: 319px;
+    width: 276px;
+    background: rgba(245, 245, 245, 0.9);
+    padding: 29px 0 0 32px;
+}
+.mapBox .insideBlock{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -482px;
+}
+.mapDescription li{
+    padding-left: 35px;
+    color: #0baed3;
+    padding-top: 5px;
+    margin-bottom: 23px;
+}
+.mapDescription li span{
+    display: block;
+    white-space: pre-line;
+    color: #333333;
+    line-height: 19px;
+    font-size: 14px;
+    margin-top: 2px;
+
+}
+.mapDescription li span a:hover{
+    text-decoration: none;
+}
+.mapDescription li span a{
+    color: #333333;
+    text-decoration: underline;
+}
+.trevalTime{
+    background: url("../img/trevaltime.png") no-repeat;
+}
+.probki{
+    background: url("../img/probki.png") no-repeat;
+    background-size: 24px;
+}
+.coast{
+    background: url("../img/coast.png") no-repeat;
+    background-size: 24px;
+}
+.trainList{
+    background: url("../img/train.png") no-repeat;
+    background-size: 24px;
+}

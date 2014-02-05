@@ -1,0 +1,80 @@
+body {
+    color: #63665F;
+    font-family: Helvetica;
+    font-size: 12px;
+}
+
+#page {
+    margin: 30px auto;
+    position: inherit;
+    width: auto;
+}
+
+#thumbs { padding-top: 10px; }
+
+#thumbs img {
+    background-color: white;
+    border: 1px solid gray;
+  
+    margin-right: 4px;
+    padding: 3px;
+    position: relative;
+}
+
+#activeImage, #rotateImage {
+    background-color: white;
+    margin-right: 3px;
+    position: relative;
+}
+
+#reelControlsPanel img {
+    float: left;
+    margin-right: 4px;
+}
+
+#frameCounter { }
+
+.reelImage {
+    height: 242px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 400px;
+}
+
+#description {
+    background: black;
+    bottom: 0;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+    position: absolute;
+}
+
+#panel {
+    position: relative;
+    width: 585;
+}
+
+.rotateButton { }
+
+h1, h2 {
+    color: #333;
+    font-size: 30px;
+    text-align: inherit;
+    text-shadow: 0px 2px 3px #c5c5c5;
+}
+
+h2 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+h2 a {
+    background-color: #F5FF4C;
+    color: #333;
+    padding: 5px;
+    text-decoration: none;
+}
+
+h2 a:hover { background-color: #d5dd42; }

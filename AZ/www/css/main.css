@@ -1,0 +1,630 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    main-menu
+
+    language
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd, 
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {    
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {                        
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            
+} 
+input, select, button, textarea {
+    margin: 0;                 
+    font-size: 100%;             
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;     
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {         
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+     list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+    background: url("../img/body-back.jpg");
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;    
+}
+textarea {
+    resize:none; 
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus { 
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner { 
+    padding:0; 
+    border:0; 
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #818181;
+}
+:-moz-placeholder {
+    color: #818181;
+}
+.placeholder {
+    color: #818181;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "cambriai";
+    src: url("../fonts/cambriai.eot");
+    src: url("../fonts/cambriai.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/cambriai.woff") format("woff"),
+    url("../fonts/cambriai.ttf") format("truetype");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 960px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+    .site:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 150px;
+    }
+.site__layout {
+    width: 960px;
+    margin: 0 auto;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 275px;
+}
+.discount{
+    font-family: "cambriai";
+    font-weight: normal;
+    color: #959595;
+    font-size: 35px;
+    position: absolute;
+    top: 35px;
+    left: 329px;
+}
+.discount span{
+    font-weight: bold;
+    color: #f0a437;
+}
+.address{
+    position: absolute;
+    top: 110px;
+    left: 330px;
+    font-family: times;
+}
+.address address{
+    font-style: normal;
+}
+.address p{
+    font-size: 38px;
+    color: #2f5b8a;
+}
+.address p span{
+    color: #959494;
+    font-size: 22px;
+}
+.address a{
+    color: #858585;
+    font-size: 20px;
+    float: right;
+    margin-top: 5px;
+}
+.address a:hover{
+    text-decoration: underline;
+}
+.address a span{
+    color: #2f5b8a;
+}
+.searchForm{
+    position: absolute;
+    top: 105px;
+    right: 10px;
+}
+.searchForm .inputWrap{
+    background: #e7e7e7 url("../img/search.png") no-repeat 275px 6px;
+    border-top: 1px solid #d2d2d2;
+    border-bottom: 1px solid #fbfbfb;
+    border-radius: 5px;
+    width: 300px;
+    height: 25px;
+}
+.searchForm .inputWrap input{
+    background: none;
+    border: none;
+    height: 25px;
+    width: 270px;
+    font-size: 12px;
+    font-family: tahoma;
+    padding: 0 25px 0 5px;
+}
+.searchForm ul{
+    margin: 17px 0 0 0;
+}
+.searchForm li:first-child{
+    margin-left: 0;
+}
+.searchForm li{
+    float: left;
+    margin-left: 35px;
+}
+.discountButton{
+    background: url("../img/discountBut.png");
+    width: 79px;
+    height: 27px;
+    display: block;
+    text-indent: -5000px;
+}
+.onlineHelp{
+    width: 185px;
+    height: 29px;
+    border-radius: 10px;
+    background: #2c5b8c;
+    color: #fff;
+    font-family: verdana;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    line-height: 29px;
+}
+.onlineHelp:visited{
+    color: #fff;
+}
+.discountButton:hover,
+.onlineHelp:hover{
+    opacity: 0.8;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 33px;
+    left: 41px;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- main-menu --------------- */
+.main-menu {
+    background: #f5f5f5;
+    height: 54px;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.main-menu__layout{
+    overflow: hidden;
+    padding-top: 19px;
+    height: 35px;
+    width: 1020px;
+    margin-left: 15px;
+}
+.main-menu__item{
+    float: left;
+    margin-right: 97px;
+}
+.main-menu__lnk{
+    color: #858585;
+    text-decoration: underline;
+    font-size: 16px;
+    font-family: tahoma;
+    padding: 6px 18px;
+
+}
+.main-menu__item_active .main-menu__lnk{
+    cursor: default;
+    background: -moz-linear-gradient(top, #f09b28, #ed8528);
+    background: -webkit-linear-gradient(top, #f09b28, #ed8528);
+    background: -o-linear-gradient(top, #f09b28, #ed8528);
+    background: -ms-linear-gradient(top, #f09b28, #ed8528);
+    background: linear-gradient(top, #f09b28, #ed8528);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* --------------- /main-menu --------------- */
+.discountContainer h2{
+    color: #2f5b8a;
+    font-size: 40px;
+    font-family: "cambriai";
+    margin: 34px 0 63px 174px;
+}
+.discountContainer li{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.discountContainer li p{
+    text-align: left;
+    width: 450px;
+    color: #656565;
+    font-size: 16px;
+    font-family: tahoma;
+    line-height: 20px;
+    margin: 0 auto;
+}
+.discountContainer li img{
+    margin-bottom: 9px;
+}
+.red{
+    color: #ff0000;
+}
+.orange{
+    color: #ec8438;
+}
+.moreInfo{
+    background: #d1d1d3;
+    border-radius: 5px;
+    width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px 0;
+    text-align: center;
+    margin-bottom: 115px;
+}
+.moreInfo dl{
+    margin-left: 30px;
+}
+.moreInfo dt{
+    float: left;
+    color: #656565;
+    font-size: 16px;
+    font-family: tahoma;
+    margin-top: 5px;
+}
+.moreInfo dd{
+    float: left;
+    color: #2f5b8a;
+    font-size: 24px;
+    font-family: tahoma;
+}
+.social{
+    float: right;
+}
+.social dt{
+    color: #545454;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: verdana;
+    margin-bottom: 17px;
+}
+.social dd{
+    float: left;
+    margin-right: 26px;
+}
+.social a:hover{
+    opacity: 0.8;
+}
+.social a{
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-indent: -5000px;
+}
+.odnoklassniki{
+    background: url("../img/odnoklasniki.png");
+}
+.in{
+    background: url("../img/in.png");
+}
+.gplus{
+    background: url("../img/gplus.png");
+}
+.facebook{
+    background: url("../img/facebook.png");
+}
+.twitter{
+    background: url("../img/twitter.png");
+}
+.vkontakte{
+    background: url("../img/vkontakte.png");
+}
+
+.textWrap h2{
+    color: #2f5b8a;
+    font-family: "cambriai";
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+.textWrap h3{
+    color: #2f5b8a;
+    font-family: "cambriai";
+    font-size: 24px;
+    margin-bottom: 21px;
+}
+.comersialType{
+    overflow: hidden;
+    margin-left: 22px;
+    width: 1000px;
+    margin-bottom: 56px;
+}
+.comersialType li{
+    float: left;
+    margin-right: 46px;
+}
+.comersialType li a{
+    color: #3a6483;
+    font-size: 12px;
+    display: block;
+    padding-top: 85px;
+    font-family: verdana;
+    padding-bottom: 5px;
+    width: 110px;
+    text-align: center;
+    text-decoration: underline;
+}
+.comersialType li a:hover{
+    text-decoration: none;
+}
+.boards{
+    background: url("../img/board.png") no-repeat top center;
+}
+.cityForm{
+    background: url("../img/citi-form.png") no-repeat top center;
+}
+.videoBoard{
+    background: url("../img/video-board.png") no-repeat top center;
+}
+.ways{
+    background: url("../img/ways.png") no-repeat top center;
+}
+.indoor{
+    background: url("../img/indor.png") no-repeat top center;
+}
+.textWrap p{
+    color: #656565;
+    font-size: 14px;
+    font-family: tahoma;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.textWrap{
+    padding: 33px 91px;
+}
+.vagon{
+    background: url("../img/vagon.png") no-repeat top center;
+}
+.stations{
+    background: url("../img/stations.png") no-repeat top center;
+}
+.voiceComersial{
+    background: url("../img/loadComersial.png") no-repeat top center;
+}
+.comersialType.metroComersial li a{
+    padding-top: 70px;
+    width: 140px;
+}
+.metroMap{
+    overflow: hidden;
+
+}
+.metroMap .textWrap{
+    padding-left: 0;
+    padding-right: 0;
+    width: 510px;
+    float: left;
+}
+.mapContainer{
+    width: 439px;
+    float: right;
+    padding-top: 100px;
+    cursor: pointer;
+}
+.popUp{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 1000;
+    display: none;
+}
+.popForm{
+    margin: 0 auto;
+    margin-top: 100px;
+    border-radius: 10px;
+    position: relative;
+    width: 778px;
+}
+.popForm img{
+    border-radius: 10px;
+}
+.close:hover{
+    opacity: 0.6;
+}
+.close{
+    background: url("../img/close-but.png");
+    width: 13px;
+    height: 13px;
+    display: block;
+    text-indent: -5000px;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: -20px;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    background: url("../img/footer-back.png");
+    margin-top: -128px;
+}
+.footer__layout {
+    width: 960px;
+    margin: 0 auto;
+    height: 128px;
+    position: relative;
+}
+.footerAddress{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    color: #767676;
+    font-size: 12px;
+    font-family: tahoma;
+}
+.footerAddress p{
+    margin-bottom: 5px;
+}
+.footerAddress address{
+    font-style: normal;
+}
+.counter{
+    position: absolute;
+    top: 60px;
+    left: 300px;
+}
+.creaters{
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+.creaters dt{
+    float: left;
+    color: #767676;
+    font-size: 12px;
+    font-family: tahoma;
+    margin-top: 15px;
+    margin-right: 5px;
+}
+.creaters dd{
+    float: left;
+}
+.saitoria{
+    display: block;
+    background: url("../img/saitoria.png");
+    width: 94px;
+    height: 43px;
+    text-indent: -5000px;
+}
+.saitoria:hover{
+    opacity: 0.8;
+}
+.copy{
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    white-space: pre-line;
+    color: #878787;
+    font-family: tahoma;
+    font-size: 12px;
+}
+/* --------------- /footer --------------- */

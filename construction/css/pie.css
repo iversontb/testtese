@@ -1,0 +1,5 @@
+.ares-slider__points li{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

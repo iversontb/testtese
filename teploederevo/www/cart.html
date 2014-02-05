@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="css/select.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+<!-- site -->
+<div class="site">
+<!-- header -->
+<header class="header">
+
+    <!-- headerInide -->
+    <div class="headerInside">
+
+        <!-- logo -->
+        <a href="index.html" title="На главную" class="logo"><img src="img/logo.png" width="419" height="132" alt=""></a>
+        <!-- /logo -->
+
+        <!-- helloBlock -->
+        <div class="helloBlock">
+            Добро пожаловать,
+            <span>Александр</span>
+        </div>
+        <!-- /helloBlock -->
+
+        <!-- social -->
+        <div class="social">
+            <a href="#" class="facebook" title="facebook">facebook</a>
+            <a href="#" class="vkontakte" title="vkontakte">vkontakte</a>
+            <a href="#" class="odnoklasniki" title="odnoklasniki">odnoklasniki</a>
+            <a href="#" class="twitter" title="twitter">twitter</a>
+        </div>
+        <!-- /social -->
+
+        <!-- phoneBlock -->
+        <dl class="phoneBlock">
+            <dt>Звоните: </dt>
+            <dd>
+                <a href="tel:794534545623" class="tel">7 (945) <span>345 456 23</span></a>
+                <a href="#">Или напишите нам</a>
+            </dd>
+        </dl>
+        <!-- /phoneBlock -->
+
+        <!-- basket -->
+        <dl class="basket">
+            <dt>Товаров:</dt>
+            <dd><span class="basketCount">100</span><span class="totalPrice">(1 000 000 руб.)</span></dd>
+        </dl>
+        <!-- /basket -->
+
+        <a href="#" class="myRoom">Мой кабинет</a>
+
+    </div>
+    <!-- /headerInide -->
+
+    <!-- menuWrap -->
+    <div class="menuWrap">
+
+        <!-- mainMenu -->
+        <nav class="mainMenu">
+
+            <div class="insideBlock">
+                <ol>
+                    <li><a href="#">Акции</a></li>
+                    <li><a href="#">Коллекции</a></li>
+                    <li><a href="#">Партнерство</a></li>
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Журнал</a></li>
+                </ol>
+            </div>
+
+        </nav>
+        <!-- /mainMenu -->
+
+
+    </div>
+    <!-- /menuWrap -->
+
+</header>
+<!-- /header -->
+
+<!-- site__content -->
+<div class="site__content">
+
+    <!-- content-wrap -->
+    <div class="content-wrap">
+
+        <!-- insideBlock -->
+        <div class="insideBlock">
+
+            <!-- bread_crumbs -->
+            <ol class="bread_crumbs">
+                <li><a href="#">Вернуться к просмотру коллекции</a></li>
+            </ol>
+            <!-- /bread_crumbs -->
+
+            <h3 class="topicType">Корзина</h3>
+
+            <!-- tableWrap -->
+            <div class="tableWrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Фото</th>
+                            <th class="product">Изделие</th>
+                            <th>Цена товара</th>
+                            <th>Количество</th>
+                            <th>Итоговая цена</th>
+                            <th>Отменить</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="#" class="imgBasket"><img src="pic/pic5.jpg" width="107" height="76" alt=""></a> </td>
+                            <td><a href="#">Статуэтка «Кошка», резьба по дереву, высота фигурки 100см.</a> </td>
+                            <td>1200 руб.</td>
+                            <td>
+                                <!-- countWrap -->
+                                <div class="countWrap">
+                                    <input type="text" value="1">
+                                    <button class="upCount">upCount</button>
+                                    <button class="downCount">downCount</button>
+                                </div>
+                                <!-- /countWrap -->
+                            </td>
+                            <td>1200 руб.</td>
+                            <td><span class="cancelBut">cancel</span></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#" class="imgBasket"><img src="pic/pic5.jpg" width="107" height="76" alt=""></a> </td>
+                            <td><a href="#">Статуэтка «Кошка», резьба по дереву, высота фигурки 100см.</a> </td>
+                            <td>1200 руб.</td>
+                            <td>
+                                <!-- countWrap -->
+                                <div class="countWrap">
+                                    <input type="text" value="1">
+                                    <button class="upCount">upCount</button>
+                                    <button class="downCount">downCount</button>
+                                </div>
+                                <!-- /countWrap -->
+                            </td>
+                            <td>1200 руб.</td>
+                            <td><span class="cancelBut">cancel</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /tableWrap -->
+
+            <!-- calcul -->
+            <div class="calcul">
+                <dl>
+                    <dt>Сумма к оплате: </dt>
+                    <dd>2400 руб.</dd>
+                </dl>
+                <dl>
+                    <dt>Приблизительная стоимость доставки: </dt>
+                    <dd>100 руб.</dd>
+                </dl>
+            </div>
+            <!-- /calcul -->
+
+            <!-- userInfo -->
+            <form action="#" method="post" class="userInfo">
+
+                <!-- userInfoContainer -->
+                <div class="userInfoContainer">
+                    <h3>Адрес</h3>
+                    <p>*Все поля обязательный для заполнения</p>
+
+                    <div class="inputWrap">
+                        <label>*Имя, фамилия</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="inputWrap">
+                        <label>*Адрес</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="inputWrap">
+                        <label>*Телефон</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="inputWrap">
+                        <label>*Email</label>
+                        <input type="text">
+                    </div>
+
+                    <div class="inputWrap">
+                        <label>Служба доставки</label>
+                        <select>
+                            <option>Деловые линии</option>
+                            <option>Деловые линии</option>
+                            <option>Деловые линии</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- /userInfoContainer -->
+
+                <!-- payType -->
+                <div class="payType">
+                    <h3>Способы оплаты</h3>
+
+                    <ul class="listType">
+                        <li>Банковской картой Visa \ Mastercard</li>
+                        <li>Яндекс-деньги</li>
+                        <li>Перевод на расчетный счет</li>
+                        <li>Наличные курьеру</li>
+                    </ul>
+                    <span class="niceCheck"><input type="checkbox" name="ch1" /></span>
+                    <label>Я согласен с <a href="#">условиями покупки</a> </label>
+
+                    <input type="submit" value="Оплатить" class="payBut">
+
+                </div>
+                <!-- /payType -->
+
+            </form>
+            <!-- /userInfo -->
+
+
+        </div>
+        <!-- /insideBlock -->
+
+    </div>
+    <!-- /content-wrap -->
+
+</div>
+<!-- /site__content -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+
+    <!-- footer__layout -->
+    <div class="footer__layout">
+
+        <!-- insideBlock -->
+        <div class="insideBlock">
+
+            <!-- footerMenu -->
+            <nav class="footerMenu">
+                <a href="#">О нас</a>
+                <a href="#">Условия покупки </a>
+                <a href="#">FAQ</a>
+                <a href="#">Спонсорам</a>
+            </nav>
+            <!-- /footerMenu -->
+
+            <p class="copy">«Теплое дерево» 2013</p>
+
+            <a href="#" class="creaters"><img src="img/creaters.png" width="93" height="43" alt="saitoria"></a>
+
+        </div>
+        <!-- /insideBlock -->
+
+    </div>
+    <!-- /footer__layout -->
+
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

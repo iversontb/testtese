@@ -1,0 +1,295 @@
+.light {
+    padding-right: 100px;
+    position: relative;
+}
+.largeGallery {
+    position: relative;
+}
+.preview li{
+    position: absolute;
+    width: 160px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    border: 1px solid #d3d3d3;
+}
+.preview li.active {
+    border-color: #05afc8;
+}
+.preview img {
+    width: 160px;
+    height: 100px;
+    display: block;
+}
+.preview__prev,
+.preview__next {
+    width: 14px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+}
+.preview__prev {
+    left: 0;
+    background: url("../img/left-gall.png") no-repeat center center;
+}
+.preview__next {
+    right: 0;
+    background: url("../img/right-fall.png") no-repeat center center;
+}
+.preview__up,
+.preview__down {
+    width: 82px;
+    height: 26px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.preview__up {
+    top: 0;
+    background: url("../img/up-gall.png") no-repeat center center;
+}
+.preview__down {
+    bottom: 0;
+    background: url("../img/down-gall.png") no-repeat center center;
+}
+.light  .preview img {
+    width: 80px;
+    height: 88px;
+    display: block;
+}
+.preview {
+    margin: 0 auto;
+    position: relative;
+    height: 102px;
+    overflow: hidden;
+}
+.light .preview {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 82px;
+    height: 340px;
+}
+.light .preview li {
+    width: 80px;
+    height: 88px;
+    margin-bottom: 14px;
+    margin-right: 0;
+    display: block;
+}
+.largeGallery__main {
+    border: 1px solid #d3d3d3;
+    height: 400px;
+    margin-bottom: 20px;
+    background: #fff;
+    position: relative;
+}
+.largeGallery__main .zoom {
+    position: absolute;
+    overflow: hidden;
+}
+.zoom img {
+    position: absolute;
+    opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0)
+    transition: opacity 0.3s ease-in;
+    -moz-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+    -webkit-transition: opacity 0.3s ease-in;
+}
+.zoom img:first-child{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100)
+}
+.zoom:hover {
+    cursor: move;
+}
+.zoom:hover img {
+    opacity: 1;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100)
+}
+
+/* line 6, ../sass/lightbox.sass */
+#lightboxOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: black;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=85);
+    opacity: 0.85;
+    display: none;
+}
+
+/* line 15, ../sass/lightbox.sass */
+#lightbox {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    text-align: center;
+    line-height: 0;
+    font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+    font-weight: normal;
+}
+/* line 24, ../sass/lightbox.sass */
+#lightbox img {
+    width: auto;
+    height: auto;
+}
+/* line 27, ../sass/lightbox.sass */
+#lightbox a img {
+    border: none;
+}
+
+/* line 30, ../sass/lightbox.sass */
+.lb-outerContainer {
+    position: relative;
+    background-color: white;
+    *zoom: 1;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.lb-outerContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* line 39, ../sass/lightbox.sass */
+.lb-container {
+    padding: 10px;
+}
+
+/* line 42, ../sass/lightbox.sass */
+.lb-loader {
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    height: 25%;
+    width: 100%;
+    text-align: center;
+    line-height: 0;
+}
+
+/* line 51, ../sass/lightbox.sass */
+.lb-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+/* line 59, ../sass/lightbox.sass */
+.lb-container > .nav {
+    left: 0;
+}
+
+/* line 62, ../sass/lightbox.sass */
+.lb-nav a {
+    outline: none;
+}
+
+/* line 65, ../sass/lightbox.sass */
+.lb-prev, .lb-next {
+    width: 49%;
+    height: 100%;
+    background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7");
+    /* Trick IE into showing hover */
+    display: block;
+}
+
+/* line 72, ../sass/lightbox.sass */
+.lb-prev {
+    left: 0;
+    float: left;
+}
+
+/* line 76, ../sass/lightbox.sass */
+.lb-next {
+    right: 0;
+    float: right;
+}
+
+/* line 81, ../sass/lightbox.sass */
+.lb-prev:hover {
+    background: url(../images/prev.png) left 48% no-repeat;
+}
+
+/* line 85, ../sass/lightbox.sass */
+.lb-next:hover {
+    background: url(../images/next.png) right 48% no-repeat;
+}
+
+/* line 88, ../sass/lightbox.sass */
+.lb-dataContainer {
+    margin: 0 auto;
+    padding-top: 5px;
+    *zoom: 1;
+    width: 100%;
+    -moz-border-radius-bottomleft: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -ms-border-bottom-left-radius: 4px;
+    -o-border-bottom-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    -moz-border-radius-bottomright: 4px;
+    -webkit-border-bottom-right-radius: 4px;
+    -ms-border-bottom-right-radius: 4px;
+    -o-border-bottom-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.2-p290/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.lb-dataContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* line 95, ../sass/lightbox.sass */
+.lb-data {
+    padding: 0 10px;
+    color: #bbbbbb;
+}
+/* line 98, ../sass/lightbox.sass */
+.lb-data .lb-details {
+    width: 85%;
+    float: left;
+    text-align: left;
+    line-height: 1.1em;
+}
+/* line 103, ../sass/lightbox.sass */
+.lb-data .lb-caption {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1em;
+}
+/* line 107, ../sass/lightbox.sass */
+.lb-data .lb-number {
+    display: block;
+    clear: left;
+    padding-bottom: 1em;
+    font-size: 11px;
+}
+/* line 112, ../sass/lightbox.sass */
+.lb-data .lb-close {
+    width: 35px;
+    float: right;
+    padding-bottom: 0.7em;
+    outline: none;
+}
+/* line 117, ../sass/lightbox.sass */
+.lb-data .lb-close:hover {
+    cursor: pointer;
+}

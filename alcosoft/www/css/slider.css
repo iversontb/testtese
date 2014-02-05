@@ -1,0 +1,95 @@
+.slideWrap{
+    height: 212px;
+    width: 980px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.ares-slider2 {
+    width: 980px;
+    margin: 0 auto;
+    height: 212px;
+    overflow: hidden;
+    position: relative;
+}
+.ares-slider2__item {
+    width: 980px;
+    height: 212px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: none;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    z-index: 1;
+    line-height: 20px;
+}
+.ares-slider2__item p{
+    margin-bottom: 20px;
+}
+.ares-slider2__item span{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 13px;
+}
+.ares-slider2__item > img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.ares-slider2__next{
+}
+.ares-slider2__prev{
+}
+
+
+
+.ares-slider2__next,
+.ares-slider2__prev {
+    position: absolute;
+    content: '';
+    width: 29px;
+    height: 57px;
+    top: 79px;
+    cursor: pointer;
+    background-size: 100%;
+    opacity: .8;
+    z-index: 2;
+}
+.ares-slider2__prev {
+    left: 0px;
+
+}
+.ares-slider2__prev:hover{
+}
+.ares-slider2__next {
+    right: 0px;
+
+}
+.ares-slider2__next:hover{
+}
+.ares-slider__points {
+    display: inline-block;
+    position: relative;
+    top: 141px;
+    z-index: 4;
+}
+.ares-slider__points li {
+    width: 16px;
+    height: 16px;
+    float: left;
+    background: url("../img/dot.png");
+    border-radius: 14px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li.active {
+    box-shadow: none;
+    background: url("../img/active-dot.png");
+    cursor: default;
+}

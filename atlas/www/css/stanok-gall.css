@@ -1,0 +1,58 @@
+.imgBigWrap{
+    margin-right: 100px;
+    text-align: center;
+    height: 364px;
+}
+.imgBigWrap{
+    margin-top: 20px;
+}
+.imgBigWrap a{
+    height: 354px;
+
+}
+.gallWrap{
+    position: relative;
+}
+.littlGall{
+    width: 58px;
+    height: 201px;
+    top: 50%;
+    margin-top: -122px;
+    right: 0;
+    padding: 25px 0;
+    position: absolute;
+}
+.littlGall a:hover{
+    border: 1px solid #bc301b;
+}
+.littlGall a{
+    display: block;
+    border: 1px solid #e7e7e7;
+    line-height: 38px;
+    width: 56px;
+    margin: 0 0 9px 0;
+    height: 56px;
+}
+.prev{
+    background: url("../img/up-but.png");
+    width: 18px;
+    height: 11px;
+    text-indent: -5000px;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -9px;
+}
+.next{
+    background: url("../img/bottom-but.png");
+    width: 18px;
+    height: 11px;
+    text-indent: -5000px;
+    border: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    left: 50%;
+    margin-left: -9px;
+}

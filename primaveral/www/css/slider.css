@@ -1,0 +1,108 @@
+
+
+.slideWrap{
+    height: 135px;
+    width: 626px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 7px;
+}
+.ares-slider2 {
+    width: 626px;
+    margin: 0 auto;
+    height: 135px;
+    position: relative;
+}
+.ares-slider2__item {
+    width: 626px;
+    height: 135px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: none;
+    z-index: 1;
+}
+.ares-slider2__item img{
+    float: left;
+    margin-right: 15px;
+}
+.silder_descript{
+    height: 124px;
+    overflow: hidden;
+}
+.silder_descript h2{
+    color: #3b4255;
+    font-size: 30px;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+.silder_descript p{
+    font-size: 12px;
+    color: #3b4255;
+    line-height: 16px;
+}
+.ares-slider2__next{
+    /*background: url("../img/gall-left.png");*/
+}
+.ares-slider2__prev{
+    background-position: 0 0;
+}
+
+
+
+.ares-slider2__next,
+.ares-slider2__prev {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 44px;
+    top: 169px;
+    cursor: pointer;
+    display: none !important;
+    /*background: url("../img/gall-sprite.png");*/
+    background-size: 100%;
+    opacity: .8;
+    z-index: 2;
+}
+.ares-slider2__prev {
+    right: -46px;
+    background-position: 0 44px;
+}
+.ares-slider2__prev:hover{
+    background-position: 0 113px;
+}
+.ares-slider2__next {
+    left: -50px;
+    background-position: 0 182px;
+}
+.ares-slider2__next:hover{
+    background-position: 0 0;
+}
+.ares-slider__points {
+    display: inline-block;
+    position: relative;
+    top: 139px;
+
+    z-index: 4;
+}
+.ares-slider__points li {
+    width: 10px;
+    height: 10px;
+    float: left;
+    background: #bed3dd;
+    border-radius: 14px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li.active {
+    box-shadow: none;
+    background: #ef4b23;
+    cursor: default;
+}
+.slider2__item > img{
+    float: left;
+}

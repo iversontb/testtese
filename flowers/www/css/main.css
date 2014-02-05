@@ -1,0 +1,489 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 29.09.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "heinrichscript";
+    src: url("../fonts/heinrichscript.woff") format("woff");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 900px;
+    overflow: hidden;
+    position: relative;
+    font-family: calibri;
+    z-index: 1;
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+
+    height: 300px;
+}
+.site__content {
+    display: table;
+    width: 100%;
+}
+
+.site__content {
+    width: 900px;
+    position: relative;
+    margin:0 auto;
+    padding-bottom: 60px;
+}
+/* --------------- /site --------------- */
+
+
+
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+
+    height: 226px;
+    background: #fff url("../img/head-bike.png") no-repeat 322px 0;
+    width: 900px;
+    margin: 0 auto;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 32px;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+.address{
+    width: 229px;
+    position: absolute;
+    top: 17px;
+    font-style: normal;
+    font-family: heinrichscript;
+    right: 3px;
+}
+.address span{
+    text-align: center;
+    color: #333333;
+    display: block;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+.phone{
+    display: block;
+    color: #333;
+    font-size: 30px;
+    margin-bottom: 9px;
+    text-align: center;
+}
+.callOrder:hover{
+    opacity: 0.8;
+}
+.callOrder{
+    background: url("../img/but-back.png");
+    height: 26px;
+    display: block;
+    border: 1px solid #69af3e;
+    border-radius: 5px;
+    width: 165px;
+    color: #fff;
+    line-height: 26px;
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 15px;
+
+    text-indent: 12px;
+}
+.callOrder:after{
+    content: "";
+    background: url("../img/phone2.png") no-repeat;
+    width: 17px;
+    height: 21px;
+    position: absolute;
+    top: 1px;
+    right: 15px;
+}
+.callOrder:before{
+    content: "";
+    background: url("../img/phone.png") no-repeat;
+    width: 48px;
+    height: 37px;
+    position: absolute;
+    top: -6px;
+    right: -57px;
+}
+.mail:hover{
+    text-decoration: underline;
+}
+.mail{
+    background: url("../img/mail.png") no-repeat 0 4px;
+    padding-left: 20px;
+    color: #4e4e4e;
+    font-family: calibri;
+    font-size: 14px;
+}
+.menuWrap{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: url("../img/menu-back.png");
+    width: 900px;
+    height: 64px;
+}
+.mainMenu{
+    margin: 18px 0 0 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 590px;
+    white-space: nowrap;
+}
+.mainMenu a:hover{
+    text-decoration: underline;
+}
+.mainMenu a{
+    display: inline-block;
+    vertical-align: top;
+    color: #786e67;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+.mainMenu a.active:hover{
+    text-decoration: none;
+}
+.mainMenu a.active{
+    border: 1px solid #c8bdaa;
+    position: relative;
+}
+
+.cart{
+    background: url("../img/busket.png") no-repeat;
+    height: 44px;
+    display: inline-block;
+    color: #686868;
+    font-size: 14px;
+    padding-top: 12px;
+    vertical-align: middle;
+    padding-left: 62px;
+    margin-left: 73px;
+    width: 150px;
+}
+.order:hover{
+    opacity: 0.8;
+}
+.order{
+    display: inline-block;
+    vertical-align: top;
+    background: url("../img/make-order.png");
+    width: 110px;
+    text-align: center;
+    margin-top: 5px;
+    line-height: 20px;
+    height: 20px;
+    color: #000;
+    font-size: 13px;
+}
+.cart span{
+    color: #096502;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -241px;
+    font-family: calibri;
+    min-width: 900px;
+    /*overflow: hidden;*/
+}
+.footer__layout {
+    width: 900px;
+    margin: 0 auto;
+    height: 241px;
+    position: relative;
+    border-top: 1px solid #d2d2d2;
+
+}
+.footer__layout:after{
+    content: "";
+    background: url("../img/figur.png");
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    top: -7px;
+    left: 0;
+}
+.footer__layout:before{
+    content: "";
+    background: url("../img/flower.png");
+    width: 294px;
+    height: 320px;
+    position: absolute;
+    top: -132px;
+    right: -153px;
+}
+.footerLogo{
+    position: absolute;
+    top: 87px;
+    right: 0;
+}
+.footerMenu{
+    position: absolute;
+    top: 35px;
+    left: 26px;
+}
+.footerMenu a:hover{
+    text-decoration: underline;
+}
+.footerMenu a{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #786e67;
+    margin-right: 11px;
+}
+.social{
+    position: absolute;
+    top: 67px;
+    left: 26px;
+}
+.social li{
+    display: inline-block;
+    margin-right: 7px;
+}
+.social li a{
+    text-indent: -5000px;
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+.social li a:hover{
+    opacity: 0.8;
+}
+.vkontakte{
+    background: url("../img/vk.png");
+}
+.facebook{
+    background: url("../img/facebook.png");
+}
+.twitter{
+    background: url("../img/twitter.png");
+}
+.odnoklasniki{
+    background: url("../img/odnoklassniki.png");
+}
+.copy{
+    position: absolute;
+    top: 77px;
+    left: 183px;
+    color: #5c5c5c;
+    font-size: 12px;
+}
+.siteMap{
+    position: absolute;
+    top: 109px;
+    left: 26px;
+}
+.siteMap dt{
+    float: left;
+    color: #858585;
+    font-size: 12px;
+    margin-right: 7px;
+}
+.siteMap dd{
+    float: left;
+    margin-right: 21px;
+    margin-top: -2px;
+}
+.siteMap a{
+    text-indent: -5000px;
+    display: block;
+    width: 16px;
+    height: 16px;
+}
+.map{
+    text-indent: -5000px;
+    background: url("../img/map.png") no-repeat;
+}
+.print{
+    text-indent: -5000px;
+    background: url("../img/print.png") no-repeat;
+}
+.creaters{
+    position: absolute;
+    top: 106px;
+    left: 186px;
+}
+.creaters dt{
+    display: inline-block;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-right: 5px;
+}
+.creaters dd{
+    display: inline-block;
+}
+.creaters dd a:hover{
+    text-decoration: underline;
+}
+.creaters dd a{
+    text-transform: uppercase;
+    color: #709e00;
+    font-size: 12px;
+}
+.counter{
+    position: absolute;
+    top: 139px;
+    left: 27px;
+}
+/* --------------- /footer --------------- */

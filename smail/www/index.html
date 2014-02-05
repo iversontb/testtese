@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]> <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]> <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]> <html class="ie9 ie"> <![endif]-->
+<!-- <![if !IE]> --> <html class="noie"> <!-- <![endif]> -->
+	<head>
+		<!--[if lte IE 6]>
+			<script src="/lib/iepngfix/iepngfix_tilebg.js"></script>
+		<![endif]-->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Smile</title>
+		<meta name="description" content="Smile">
+		<meta name="viewport" content="width=device-width">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<link rel="stylesheet" href="/h5bp.css">
+		<link rel="stylesheet" href="/style.css">
+		<script src="/lib/es5-shim/es5-shim.min.js"></script>
+		<script src="/lib/modernizr/modernizr-2.5.2.min.js"></script>
+		<script src="/lib/jquery/jquery-1.7.1.min.js"></script>
+		<script src="/lib/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+		<script src="/lib/jquery/jquery.form.js"></script>
+		<script src="/lib/jquery/jquery-cookie/jquery.cookie.js"></script>
+		<script src="/lib/jquery/jquery.html5.js"></script>
+		<script src="/lib/jquery/jquery.cycle/jquery.cycle.all.js"></script>
+		<script src="/lib/jquery/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+		<script src="/lib/jquery/jcarousellite/jcarousellite_1.0.1.pack.js"></script>
+		<script src="/lib/mustache/mustache.js"></script>
+		<script src="/lib/infrajs/dist/infra.js"></script>
+		<script src="/layers/functions.js"></script>
+		<script>
+			$.html5();
+			jQuery.fn.center = function () {
+				this.css("position","absolute");
+				this.css("top", (($(window).height() - this.outerHeight()) / 3.5) + $(window).scrollTop() + "px");
+				this.css("left", (($(window).width() - this.outerWidth()) / 2) + $(window).scrollLeft() + "px");
+				return this;
+			};
+			// обработка формы
+			window._form = function(infraform, ans_elem, success_message, error_message) {
+				$(infraform).ajaxForm({
+					dataType: 'json',
+					beforeSubmit: function(formData, jqForm, options) {
+						/*infra.noscroll = true; infra.check(true);*/
+						ans_elem.html('<b>Сообщение отправляется...</b>'); 
+					},
+					success: function(responseText, statusText, xhr, form) {
+						var htmlString = '<span style="color:red">'+error_message+'</span>';
+						if (responseText) {
+							if (responseText.result) {
+								htmlString = '<span style="color:green">'+success_message+'</span>';
+							} else if (responseText.answer) {
+								htmlString = '<span style="color:red">'+responseText.answer+'</span>';
+							}
+						}
+						ans_elem.html(htmlString);
+					},
+					error: function() { ans_elem.html('<span style="color:red">'+error_message+'</span>'); }
+				});
+				infraform.find('input, textarea').keyup(function() {
+					// сохранение в куках
+					$.cookie(this.name, this.value, { expires: 1 });
+				}).each(function(i, el) {
+					if ($.cookie(el.name)) {
+						$(el).val($.cookie(el.name));
+					}
+				});
+			};
+			// показ окошка не в infra
+			window.openPopup = function() {
+				var contacts_window = $('#contacts_window');
+				var contacts_window_popup = $('#contacts_window .popup');
+				$('.popup_body form .form_fields').show();
+				$('.popup_body form .submit').show();
+				contacts_window.show();
+				contacts_window_popup.center();
+				contacts_window_popup.draggable();
+				$(".popup .popup_close").on('click.smile', function () {
+					$('#contacts_window').hide();
+				});
+			};
+			$(document).on('keyup.smile', function(e) {
+				// Esc
+				if (e.keyCode == 27) {
+					$('#contacts_window').hide();
+				}
+			});
+			if (document.addEventListener && window.Infra) {
+				document.addEventListener("DOMContentLoaded", function() {
+					// start
+					infra = Infra.init();
+					infra.log.logger = 'DEBUG';
+					infra.load.json('/layers/layers.json', function(err, data) {
+						infra.index = data;
+						// дополнительные настройки only browser
+						infra.set.loader('/images/loader.gif');
+						infra.set.addressBar();
+						infra.set.links();
+						infra.set.cache();
+						infra.check();
+					});
+				}, false);
+			}
+		</script>
+	</head>
+	<body>
+
+		<div id='base_html'> </div>
+	</body>
+</html>

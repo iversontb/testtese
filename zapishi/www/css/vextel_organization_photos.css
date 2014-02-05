@@ -1,0 +1,14 @@
+.description{
+    width: 79%;
+    padding-right: 0;
+}
+.videoBlock{
+    margin-bottom: 50px;
+}
+.videoBlock a:hover{
+    text-decoration: underline;
+}
+.videoBlock a{
+    color: #2f75af;
+    font-size: 18px;
+}

@@ -1,0 +1,13 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "helveticaneue";
+    src: url("../font/helveticaneue.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+
+.get_in_touch .contact_us input[type="text"]{
+    line-height: 28px;
+}

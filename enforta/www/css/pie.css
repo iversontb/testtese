@@ -1,0 +1,22 @@
+.search,
+.search__text,
+.search__send,
+.btn ,
+.news__gall__imgBigWrap img,
+.last__news__block__img,
+.vacance-list li,
+.our-news__item img,
+.our-photo .ares-multiple-slider__item img,
+.eBut,
+.response__input,
+.response textarea,
+.response__send,
+.tabs__btn,
+.file__load,
+.file__btn,
+.nice-select,
+.nice-select__item > .after{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

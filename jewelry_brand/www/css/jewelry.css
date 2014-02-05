@@ -1,0 +1,92 @@
+/* --------------- our_jewelry --------------- */
+.our_jewelry{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+.our_jewelry h1{
+    position: relative;
+    padding-bottom: 44px;
+    margin-left: 26px;
+    margin-right: 24px;
+    overflow: hidden;
+}
+.our_jewelry h1:before{
+    content: '';
+    position: absolute;
+    background: url("../img/btn-pattern-left(1).png") no-repeat;
+    left: -35px;
+    bottom: 20px;
+    width: 500px;
+    height: 15px;
+}
+.our_jewelry h1:after{
+    content: '';
+    position: absolute;
+    background: url("../img/btn-pattern-right(1).png") no-repeat;
+    right: -35px;
+    bottom: 20px;
+    width: 500px;
+    height: 15px;
+}
+.our_jewelry section ul{
+    display: inline-block;
+}
+.our_jewelry section ul li, .our_jewelry section .jewelry{
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+    margin-left: 9px;
+    margin-right: 8px;
+}
+.our_jewelry section{
+    padding-bottom: 48px;
+}
+.our_jewelry section ul li img{
+    padding: 3px 3px 3px 3px;
+    background: #f6dec2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6dec2 0%, #7f6d5f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6dec2), color-stop(100%,#7f6d5f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f6dec2 0%,#7f6d5f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f6dec2 0%,#7f6d5f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f6dec2 0%,#7f6d5f 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f6dec2 0%,#7f6d5f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6dec2', endColorstr='#7f6d5f',GradientType=0 ); /* IE6-9 */
+}
+/* --------------- /our_jewelry --------------- */
+
+/* --------------- jewelry --------------- */
+.our_jewelry section .jewelry .view_collection{
+    display: inline-block;
+    font-family: "Times New Roman";
+    color: #151516;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    margin-top: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 6px;
+    background: #f6dec2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6dec2 0%, #7f6d5f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6dec2), color-stop(100%,#7f6d5f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f6dec2 0%,#7f6d5f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f6dec2 0%,#7f6d5f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f6dec2 0%,#7f6d5f 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f6dec2 0%,#7f6d5f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6dec2', endColorstr='#7f6d5f',GradientType=0 ); /* IE6-9 */
+}
+.our_jewelry section .jewelry .view_collection:hover{
+    background: #343438; /* Old browsers */
+    background: -moz-linear-gradient(top,  #343438 0%, #1b1b1e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#343438), color-stop(100%,#1b1b1e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #343438 0%,#1b1b1e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #343438 0%,#1b1b1e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #343438 0%,#1b1b1e 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #343438 0%,#1b1b1e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343438', endColorstr='#1b1b1e',GradientType=0 ); /* IE6-9 */
+    color:#ffffff;
+}
+/* --------------- /jewelry --------------- */

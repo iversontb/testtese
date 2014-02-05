@@ -1,0 +1,25 @@
+.content-wrap .insideBlock {
+    text-align: center;
+    padding-bottom: 52px;
+}
+.title {
+    color: #9f683f;
+    font-size: 25px;
+    padding: 37px 0 96px;
+    line-height: 30px;
+}
+.title span {
+    display: block;
+}
+.back_link {
+    color: #69b295;
+    padding-left: 10px;
+    font-size: 14px;
+    background: url("../img/crumbs_bg.png") 0 center no-repeat;
+}
+.back_link span:hover {
+    text-decoration: none;
+}
+.back_link span {
+    text-decoration: underline;
+}

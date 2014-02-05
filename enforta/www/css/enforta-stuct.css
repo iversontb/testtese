@@ -1,0 +1,97 @@
+/* people-block */
+.people-block{
+    width: 708px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 41px;
+    margin-bottom: 61px;
+}
+.people-block__photo{
+    float: left;
+}
+.people-block__description{
+    float: right;
+    width: 500px;
+}
+.people-block__description h3{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #ff7900;
+    font-size: 34px;
+    margin-bottom: 19px;
+}
+.people-block__description p{
+    font-size: 12px;
+    line-height: 20px;
+    font-family: arial;
+    margin-bottom: 15px;
+}
+.people-block__description span{
+    color: #919191;
+    font-size: 11px;
+    font-family: arial;
+}
+/* /people-block */
+
+/* vacance-list */
+.vacance-list li{
+    display: inline-block;
+    margin-right: 10px;
+    width: 298px;
+    background: #fff;
+    position: relative;
+    padding:  20px 10px 25px 0;
+}
+.vacance-list__item1 a{
+    background: url("../img/pic1.png") no-repeat 23px 23px;
+}
+.vacance-list__item2 a{
+    background: url("../img/pic2.png") no-repeat  4px 23px;
+}
+.vacance-list__item3 a{
+    background: url("../img/pic3.png") no-repeat 10px 23px;
+}
+.vacance-list__item4 a{
+    background: url("../img/pic4.png") no-repeat 16px 21px;
+}
+.vacance-list__item5 a{
+    background: url("../img/pic5.png") no-repeat  11px 22px;
+}
+.vacance-list__item6 a{
+    background: url("../img/pic6.png") no-repeat  13px 24px;
+}
+.vacance-list__item7 a{
+    background: url("../img/pic7.png") no-repeat  16px 26px;
+}
+.vacance-list__item8 a{
+    background: url("../img/pic8.png") no-repeat  17px 26px;
+}
+.vacance-list__item9 a{
+    background: url("../img/pic9.png") no-repeat 17px 25px;
+}
+.vacance-list li a{
+    text-decoration: none;
+    display: block;
+    padding-left: 74px;
+}
+.vacance-list li:hover{
+    box-shadow: 0 0 10px #e8e8e8;
+}
+.vacance-list li h3{
+    font-family: 'Open Sans', sans-serif;
+    color: #ff7900;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 11px;
+}
+.vacance-list li p{
+    font-size: 12px;
+    font-family: arial;
+    color: #000;
+    line-height: 19px;
+}
+.vacance-list{
+    margin-bottom: 50px;
+    width: 1000px;
+}
+/* /vacance-list */

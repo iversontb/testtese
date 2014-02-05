@@ -1,0 +1,15 @@
+.index-gallery,
+.window,
+.feedback input,
+.feedback textarea,
+.address,
+.feedback__form,
+.our-team,
+.our-team li,
+.why-we > article {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+.why-we > article.pie_first-child {
+	margin-left: 0 !important;
+}

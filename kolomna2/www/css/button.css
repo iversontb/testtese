@@ -1,0 +1,351 @@
+
+
+
+.big_button {
+    color: #fff;
+    font-family: intro;
+    font-size: 12px;
+    text-align: center;
+    width: 200px;
+    height: 25px;
+    padding-top: 15px;
+    border-radius: 20px;
+    display: block;
+    background: url('../img/button-sprite.png') no-repeat top left;
+    background-size: 100%;
+
+}
+
+.little_button {
+    color: #fff;
+    font-family: intro;
+    font-size: 12px;
+    text-align: center;
+    width: 72px;
+    height: 25px;
+    padding-top: 15px;
+    border-radius: 20px;
+    display: block;
+    background: url('../img/little_but_sprite.png') no-repeat top left;
+    background-size: 100%;
+
+}
+
+
+.big_button:hover {
+    cursor: pointer;
+}
+.big_button:active {
+    cursor: pointer;
+    height: 24px;
+    padding-top: 16px;
+}
+.big_blue_button:hover {
+    background-position: 0 -130px;
+}
+.big_blue_button:active {
+    background-position: 0 -65px;
+}
+.big_blue_button {
+    background-size: 100%;
+}
+.big_red_button:hover {
+    background-position: 0 -650px;
+}
+.big_red_button:active {
+    background-position: 0 -585px;
+}
+.big_red_button {
+    background-position: 0 -520px;
+}
+
+.big_gray_button:hover {
+    background-position: 0 -325px;
+}
+.big_gray_button:active {
+    background-position: 0 -65px;
+}
+.big_gray_button {
+    background-position: 0 -260px;
+
+}
+.little_gray_button:hover {
+
+    background-position: 0 -130px;
+}
+.little_gray_button:active {
+    background-position: 0 0px;
+}
+.little_gray_button {
+    background-position: 0 -65px;
+}
+
+
+
+.ticket {
+    font-family: intro;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: normal;
+    cursor: pointer;
+}
+.ticket:hover, .ticket:active {
+    color: #0baed3;
+}
+.language__layout li {
+    float: left;
+}
+.language__layout li .language__lnk {
+    width: 25px;
+    height: 24px;
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-family: intro;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+}
+.language__layout .language__item_active span:hover {
+    background: #0baed3;
+}
+.language__layout .language__item_active span{
+    background: #0baed3;
+    border-bottom: 1px solid #08829e;
+}
+.language__layout .language__lnk {
+    background: #000;
+    border-bottom: 1px solid #000;
+}
+.language__layout .language__lnk:hover {
+    background: #262626;
+}
+
+.cart:hover {
+    background-position: 0 0;
+
+
+}
+.cart {
+    cursor: pointer;
+    height: 15px;
+    width: 6px;
+    background: url("../img/basket-sprite.png") no-repeat 0 -44px;
+    background-size: 21px;
+    padding: 5px 0 0 26px;
+    display: block;
+    font-family: intro;
+    font-size: 11px;
+    font-size: 11px;
+    color: #e5512c;
+}
+.sprite-basket-hover{ background-position: 0 0; width: 42px; height: 38px; }
+.sprite-basket{ width: 42px; height: 38px; }
+
+
+.look {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 11px;
+    display: block;
+    height: 14px;
+    padding-top: 22px;
+    text-decoration: underline;
+    color: #0baed3;
+}
+
+.route {
+    background: url("../img/but-sprite.png") no-repeat center -126px;
+    background-size: 17px;
+    padding-top: 22px;
+    width: 120px;
+}
+
+.look:hover, .look:active {
+    color: #e5512c;
+    text-decoration: underline;
+}
+
+.route:hover, .route:active {
+    background: url("../img/but-sprite.png") no-repeat center -84px;
+    background-size: 17px;
+}
+
+.schedule {
+    width: 140px;
+    background: url("../img/but-sprite.png") no-repeat center -42px;
+    background-size: 17px;
+}
+
+.schedule:hover, .schedule:active {
+    background: url("../img/but-sprite.png") no-repeat center 0px;
+    background-size: 17px;
+}
+
+.more {
+    width: 90px;
+    height: 13px;
+    padding: 7px 0 0 0;
+}
+
+.more:after {
+    position: absolute;
+    content: "";
+    background: url("../img/blue_arrow.png") 0 2px no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 10px;
+    margin-left: 4px;
+}
+.more:hover:after, .more:active:after {
+    position: absolute;
+    content: "";
+    background: url("../img/red_arrow.png") 0 2px  no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 10px;
+    margin-left: 4px;
+}
+
+.program {
+    color: #bfbfbf;
+    font-family: intro;
+    font-size: 14px;
+    height: 25px;
+    border-bottom: 2px solid #bfbfbf;
+    text-align: center;
+    display: block;
+}
+.program:hover {
+    color: #b2b2b2;
+    border-bottom: 2px solid #b3b3b3;
+
+}
+.program:active {
+    border-bottom: 2px solid #0baed3;
+    color: #0baed3;
+}
+.network li {
+    float: left;
+    margin: 0 2px;
+}
+.network li a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    text-indent: -5000px;
+    background: url("../img/socail-sprite.png") no-repeat;
+    background-size: 100%;
+}
+.network .vk {
+    background-position: 0 -448px;
+}
+.network .vk:hover {
+    background-position: 0 -404px;
+}
+.network .facebook {
+    background-position: 0 -43px;
+}
+.network .facebook:hover {
+    background-position: 0 0px;
+}
+.network .ok {
+    background-position: 0 -269px;
+}
+.network .ok:hover {
+    background-position: 0 -495px;
+}
+.network .twitter {
+    background-position: 0 -358px;
+}
+.network .twitter:hover {
+    background-position: 0 -314px;
+}
+.network .google {
+    background-position: 0 -133px;
+}
+.network .google:hover {
+    background-position: 0 -88px;
+}
+.network .mail {
+    background-position: 0 -223px;
+}
+.network .mail:hover {
+    background-position: 0 -178px;
+}
+.big_cart {
+    display: block;
+    width: 42px;
+    height: 38px;
+    background: url("../img/cart_bg.png") no-repeat;
+}
+.big_cart:hover {
+    background-position: 0 -54px;
+}
+.big_route {
+    width: 34px;
+    height: 34px;
+    background: url("../img/sprite.png") -69px -71px no-repeat;
+    cursor: pointer;
+    display: block;
+}
+.big_route:hover {
+    background-position: -69px -107px;
+}
+.big_schedule {
+    width: 34px;
+    height: 34px;
+    background: url("../img/sprite.png") -105px -71px no-repeat;
+    cursor: pointer;
+    display: block;
+}
+.big_schedule:hover {
+    background-position: -105px -107px;
+
+}
+.pointer {
+
+    min-height: 22px;
+    display: block;
+    background: url("../img/more_bg.png") no-repeat;
+    padding-left: 20px;
+    font-weight: 700;
+    background-size: 13px 22px;
+    color: #000;
+}
+.pointer:hover {
+    background: url("../img/more_hover.png") no-repeat;
+    background-size: 13px 22px;
+}
+
+.mapPointer{
+    background: url("../img/map-pointer-sprite.png") no-repeat;
+    width: 35px;
+    background-size: 100%;
+    height: 58px;
+    cursor: pointer;
+    font-size: 13px;
+    color: #fff;
+    display: block;
+}
+.pointerInside{
+    width: 35px;
+    height: 35px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.disabled{
+    background-position: 0 -82px;
+    cursor: default;
+}
+.activePointer{
+    background-position: 0 0;
+}
+.activePointer:hover{
+    background-position: 0 -165px;
+}
+.sprite-blue-map-pointer{ background-position: 0 0; width: 70px; height: 115px; }
+.sprite-gray-map-pointer{ background-position: 0 -165px; width: 70px; height: 116px; }
+.sprite-red-map-pointer{ background-position: 0 -331px; width: 70px; height: 116px; }

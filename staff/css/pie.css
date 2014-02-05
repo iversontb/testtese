@@ -1,0 +1,6 @@
+.block_price, .wrap_aside, .main-menu, a.send_resume, .contact_form input[type="submit"], .contact_form input[type="reset"] {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+    position: relative;
+}
+

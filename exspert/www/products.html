@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Products</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/toningImage.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.toningImage.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            if(!$.browser.msie)
+            {
+                // переводим фото в черно-белый вид
+                $(".color").load(function(){
+                    $(this).jToningImage();
+                });
+            }
+            else // кастяль для IE
+            {
+                if($(".color")[0].complete == true) $(".color").jToningImage();
+                else  $(".color").one('load', function(){$(".color").jToningImage();});
+            }
+
+            //цепляем обработчик события ховер
+            $(".products").hover(function(){
+                        $(this).find('.toiningImgNew').fadeOut(50);
+                    },
+                    function(){
+                        $(this).find('.toiningImgNew').fadeIn(50);
+                    });
+
+        });
+    </script>
+    <script>
+
+        $(document).ready(function(){
+
+            if(!$.browser.msie)
+            {
+                // переводим фото в черно-белый вид
+                $(".logotype").load(function(){
+                    $(this).jToningImage();
+                });
+            }
+            else // кастяль для IE
+            {
+                if($(".logotype")[0].complete == true) $(".logotype").jToningImage();
+                else  $(".logotype").one('load', function(){$(".logotype").jToningImage();});
+            }
+
+            //цепляем обработчик события ховер
+            $(".brand li").hover(function(){
+                        $(this).find('.toiningImgNew').fadeOut(50);
+                    },
+                    function(){
+                        $(this).find('.toiningImgNew').fadeIn(50);
+                    });
+
+        });
+    </script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- enter -->
+            <div class="enter">
+                <!-- logo -->
+                <a href="#" title="На главную" class="logo"><img src="pic/logo.jpg" width="241" height="57" alt="logo"></a>
+                <!-- /logo -->
+                <form action="#" method="get">
+                    <input type="text" name="login" placeholder="Логин:">
+                    <input type="password" name="pass" placeholder="*********">
+                    <input type="submit" name="butt" value=" ">
+                </form>
+                <a href="#">Регистрация</a>
+                <a href="#">Забыли пароль</a>
+            </div>
+            <!-- /enter -->
+
+            <!-- menu -->
+            <div class="menu">
+
+                <!-- navigation -->
+                <nav class="navigation">
+                    <ul>
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Продукция</a></li>
+                        <li><a href="#">Обучение</a></li>
+                        <li><a href="#">Выставки</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <!-- /navigation -->
+
+                <!-- search -->
+                <form class="search">
+                    <input type="text" name="search" placeholder="Поиск">
+                    <input type="submit" name="but" value=" ">
+                </form>
+                <!-- /search -->
+
+            </div>
+            <!-- /menu -->
+
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>c 25.10.13</th>
+                        <th>c 26.10.13</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="valuta">Доллар США</th>
+                        <td>31,6618</td>
+                        <td class="up">31,6775</td>
+                    </tr>
+                    <tr>
+                        <th class="valuta">ЕвроЕвро</th>
+                        <td>43,7249</td>
+                        <td class="up">43,7625</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- order_call -->
+            <div class="order_call">
+                <span>+7(343)384-44-44</span>
+                <a href="#">Заказать звонок</a>
+            </div>
+            <!-- /order_call -->
+
+            <!-- basket -->
+            <dl class="basket">
+                <dt>Ваш заказ:</dt>
+                <dd><span>0 товаров</span><span>0 рублей</span></dd>
+            </dl>
+            <!-- /basket -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <<!-- brand -->
+                <ul class="brand">
+                    <li><a href="#"><img class="logotype" src="pic/logotype1.png" width="129" height="32" alt="logotype1"></a></li>
+                    <li><a href="#"><img class="logotype" src="pic/logotype2.png" width="125" height="20" alt="logotype2"></a></li>
+                    <li><a href="#"><img class="logotype" src="pic/logotype.png" width="145" height="34" alt="logotype4"></a> </li>
+                    <li><a href="#"><img class="logotype" src="pic/logotype5.png" width="124" height="45" alt="logotype5"></a></li>
+                    <li><a href="#"><img class="logotype" src="pic/logotype6.png" width="118" height="53" alt="logotype6"></a></li>
+                    <li><a href="#"><img class="logotype" src="pic/logotype7.png" width="121" height="59" alt="logotype7"></a></li>
+                </ul>
+                <!-- /brand -->
+
+                <!-- products -->
+                <div class="products">
+                    <h2>Подъемное оборудование</h2>
+                    <img class="color" src="pic/prod1.jpg" width="290" height="122" alt="pic1">
+                    <ul>
+                        <li><a href="#">Двухстоечные подъемники</a></li>
+                        <li><a href="#">Трехстоечные подъемники</a></li>
+                        <li><a href="#">Четырехстоечные подъемники</a></li>
+                        <li><a href="#">Ножничные подъемники</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Оборудование для кузовного ремонта</h2>
+                    <img class="color" src="pic/prod2.jpg" width="290" height="122" alt="pic2">
+                    <ul>
+                        <li><a href="#">Системы правки кузова</a></li>
+                        <li><a href="#">Системы измерений</a></li>
+                        <li><a href="#">Лужение</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Стапели</h2>
+                    <img class="color" src="pic/prod3.jpg" width="290" height="122" alt="pic3">
+                    <ul>
+                        <li><a href="#">Рамные</a></li>
+                        <li><a href="#">Напольные</a></li>
+                        <li><a href="#">Подкатные</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Многофункциональные посты</h2>
+                    <img class="color" src="pic/prod4.jpg" width="290" height="123" alt="pic4">
+                    <ul>
+                        <li><a href="#">3-5 постов</a></li>
+                        <li><a href="#">6-8 постов</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Компрессорное оборудование</h2>
+                    <img class="color" src="pic/prod5.jpg" width="290" height="123" alt="pic5">
+                    <ul>
+                        <li><a href="#">Переносные регуляторы</a></li>
+                        <li><a href="#">Стационарные регуляторы</a></li>
+                        <li><a href="#">Компрессоры</a></li>
+                        <li><a href="#">Принадлежности</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Сварочное оборудование</h2>
+                    <img class="color" src="pic/prod6.jpg" width="290" height="123" alt="pic6">
+                    <ul>
+                        <li><a href="#">Сварочные аппараты</a></li>
+                        <li><a href="#">Точечная сварка</a></li>
+                        <li><a href="#">Плазменная сварка</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Техника безопасности</h2>
+                    <img class="color" src="pic/prod7.jpg" width="290" height="119" alt="pic7">
+                    <ul>
+                        <li><a href="#">Рабочие перчатки</a></li>
+                        <li><a href="#">Искрозащита</a></li>
+                        <li><a href="#">Очки и наушники</a></li>
+                        <li><a href="#">Сварочные маски</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Комплектующие</h2>
+                    <img class="color" src="pic/prod8.jpg" width="290" height="119" alt="pic8">
+                    <ul>
+                        <li><a href="#">Для сварки </a></li>
+                        <li><a href="#">Для рихтовки</a></li>
+                        <li><a href="#">Для окраски</a></li>
+                        <li><a href="#">Для подъемного оборудования</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Расходные материалы</h2>
+                    <img class="color" src="pic/prod9.jpg" width="290" height="119" alt="pic9">
+                    <ul>
+                        <li><a href="#">Материалы для сварки</a></li>
+                        <li><a href="#">Материалы для рихтовки</a></li>
+                        <li><a href="#">Материалы для окраски</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Инструмент</h2>
+                    <img class="color" src="pic/prod10.jpg" width="290" height="125" alt="pic10">
+                    <ul>
+                        <li><a href="#">Инструмент для кузовных работ</a></li>
+                        <li><a href="#">Рихтовочный инструмент</a></li>
+                        <li><a href="#">Клепальный инструмент</a></li>
+                        <li><a href="#">Шлифовальный и полировальный</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Оборудование для ремонта алюминиевых кузовов</h2>
+                    <img class="color" src="pic/prod11.jpg" width="290" height="131" alt="pic11">
+                    <ul>
+                        <li><a href="#">Рихтовка алюминия</a></li>
+                        <li><a href="#"> Сварка алюминия</a></li>
+                    </ul>
+                </div>
+
+                <div class="products">
+                    <h2>Покрасочное оборудование</h2>
+                    <img class="color" src="pic/prod12.jpg" width="290" height="131" alt="pic12">
+                    <ul>
+                        <li><a href="#">Покрасочные камеры</a></li>
+                        <li><a href="#">Подготовительные камеры</a></li>
+                        <li><a href="#">Фильтры</a></li>
+                        <li><a href="#">Краскораспылители</a></li>
+                    </ul>
+                </div>
+                <!-- /products -->
+
+                <!-- germany_equipment -->
+                <div class="germany_equipment">
+                    <h1>Оборудование для автосервиса из Германии</h1>
+                    <p>Точечное воздействие повсеместно определяет креатив, не считаясь с затратами. Анализ зарубежного опытаанализируя результаты рекламной кампании, спорадически индуцирует комплексный принцип восприятия, повышая конкуренцию. Конкурент интуитивно охватывает имидж предприятия, размещаясь во всех медиа. Более того, стратегия позиционирования изоморфна времени.</p>
+                    <p>Отсюда естественно следует, что адекватная ментальность искажает рыночный повторный контакт, используламоноситель, повышая конкуренцию. Клиентский спрос ригиден. Ретроконверсия национального наследия, анализируя результаты рекламной кампании, регулярно транслирует повседневный побочный PR-эффект.</p>
+                    <a href="#">Подробнее</a>
+                </div>
+                <!-- /germany_equipment -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <!-- footer__menu -->
+            <ul class="footer__menu">
+                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Продукция</a></li>
+                <li><a href="#">Обучение</a></li>
+                <li><a href="#">Выставки</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <!-- footer__menu -->
+
+            <address>&copy;  2013 г. Екатеринбург, ул. Энгельса, 36, 11 этаж,<span>телефон +7 (343) 384-44-44</span></address>
+
+            <!-- social_networks -->
+            <div class="social_networks">
+                <a href="#" class="vk"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="twitter"></a>
+                <a href="#" class="odnoklassniki"></a>
+
+            </div>
+            <!-- /social_networks -->
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

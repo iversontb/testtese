@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!--<script src="js/jquery.min.js"></script>-->
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <!--<script src="js/jquery.localscroll.js"></script>-->
+    <!--<script src="js/jquery.scrollto.js"></script>-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a[href*=#]').bind("click", function(e){
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top
+                }, 1000);
+                e.preventDefault();
+            });
+            return false;
+        });
+    </script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+        <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <div class="site__layout">
+            <!-- header -->
+            <header class="header">
+
+                <div class="insideHeader">
+
+                    <!-- logo -->
+                    <h1 class="logo"><img src="img/logo.png"></h1>
+                    <!-- /logo -->
+
+                    <!-- main-menu -->
+                    <nav class="main-menu">
+                        <ol class="main-menu__layout">
+                            <li class="main-menu__item"><a class="main-menu__lnk" href="#">О компании </a></li>
+                            <li class="main-menu__item"><a class="main-menu__lnk" href="#">Наш бизнес</a></li>
+                            <li class="main-menu__item"><a class="main-menu__lnk" href="#">Партнеры</a></li>
+                            <li class="main-menu__item"><a class="main-menu__lnk" href="#">статьи </a></li>
+                            <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                        </ol>
+                    </nav>
+                    <!-- /main-menu -->
+
+                    <p class="slogan">Интегрированные услуги производства технологического оборудования, промышленного консалтинга, сервисного обслуживания и логистики</p>
+
+                </div>
+
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- content -->
+                    <div class="content">
+
+                        <!-- block1 -->
+                        <div class="block1">
+
+                            <!-- blockInside -->
+                            <div class="blockInside">
+
+                                <!-- menuTop -->
+                                <div class="menuTop">
+                                    <ul>
+                                        <li><a href="#about">Производство технологического оборудования</a></li>
+                                        <li><a href="#ourbusines">Промышленный консалтинг</a></li>
+                                        <li><a href="#partnres">Модернизация
+                                            и сервисное обслуживание</a></li>
+                                        <li><a href="#articles">Институт машиностроительных компетенций</a></li>
+                                        <li><a href="#contacts">Логистика</a></li>
+                                    </ul>
+                                </div>
+                                <!-- /menuTop -->
+
+                                <!-- blockWrap -->
+                                <div class="blockWrap">
+                                    <p id="about"></p>
+
+                                    <h3 class="topicType1"  >Производство технологического оборудования</h3>
+                                    <div class="textWrap">
+                                        <p>Компания МК ИНВЕСТ занимается производством различного рода технологического оборудования для обеспечения потребностей Оборонно-промышленного комплекса Российской Федерации.
+                                            Наши партнеры, известные производители оборудования на мировом и российском рынке, SHW, Kekeisen, WFL и ряд других.</p>
+                                    </div>
+                                </div>
+                                <!-- /blockWrap -->
+
+                                <!-- typeOf -->
+                                <ul class="typeOf">
+                                    <li>
+                                        <a href="#">
+                                            <span>станки</span>
+                                            <p>горизонтального
+                                                типа</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>станки</span>
+                                            <p>Вертикального
+                                                типа</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>станки</span>
+                                            <p>портального </br>
+                                                типа</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span>станки</span>
+                                            <p>Токарного</br>
+                                                типа</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- /typeOf -->
+
+                            </div>
+                            <!-- /blockInside -->
+
+
+
+                        </div>
+                        <!-- /block1 -->
+
+                        <!-- block2 -->
+                        <div class="block2">
+
+                            <!-- blockInside -->
+                            <div class="blockInside">
+
+                                <div class="textWrap2">
+                                    <p id="ourbusines"></p>
+                                    <h3>Промышленный консалтинг</h3>
+                                    <p>Благодаря высокой компетентности в разработке, конструировании и изготовлении металлорежущего, мы, помимо серийного оборудования предлагаем оптимальные индивидуальные решения для Ваших задач и проблем.</p>
+                                    <a href="#">Перейти в раздел</a>
+                                </div>
+
+                            </div>
+                            <!-- /blockInside -->
+
+                        </div>
+                        <!-- /block2 -->
+
+
+
+                        <!-- block3 -->
+                        <div class="block3">
+
+                            <!-- blockInside -->
+                            <div class="blockInside">
+
+                                <div class="textWrap3">
+                                    <p id="partnres"></p>
+                                    <h3>МОДЕРНИЗАЦИЯ
+                                        И СЕРВИСНОЕ
+                                        ОБСЛУЖИВАНИЕ</h3>
+                                    <p>Помимо производства и продажи оборудования, компания МК ИНВСЕТ занимается также ремонтом и модернизацией технологического оборудования и имеет за плечами значительный опыт выполнения как государственных, так и частных заказов (в том числе и экспортных)
+                                        Также мы обладаем собственной службой сервисного обслуживания промышленного и технологического оборудования, состоящей из высококвалифицированных специалистов прошедших обучение и стажировку на ведущих зарубежных предприятиях.</p>
+                                    <a href="#">Перейти в раздел</a>
+                                </div>
+
+                            </div>
+                            <!-- /blockInside -->
+
+                        </div>
+                        <!-- /block3 -->
+
+                        <!-- block4 -->
+                        <div class="block4">
+
+                            <!-- blockInside -->
+                            <div class="blockInside">
+
+                                <p id="articles"></p>
+
+                                <h3 class="topicType2" >ИНСТИТУТ </br> МАШИНОСТРОИТЕЛЬНЫХ </br> КОМПЕТЕНЦИЙ</h3>
+                                <ul class="listType">
+                                    <li><a href="#" class="pic1">Центр компетенций по сварке
+                                        и термообработке</a></li>
+                                    <li><a href="#" class="pic2">Центр компетенций
+                                        по металлообработке</a></li>
+                                    <li><a href="#" class="pic3">Центр компетенций
+                                        по робототехнике</a></li>
+                                </ul>
+
+
+                            </div>
+                            <!-- /blockInside -->
+
+                        </div>
+                        <!-- /block4 -->
+
+                        <!-- block5 -->
+                        <div class="block5">
+
+                            <!-- blockInside -->
+                            <div class="blockInside">
+                                <p  id="contacts"></p>
+                                <h3 class="topicType3">Логистика</h3>
+                                <ul class="listType2">
+                                    <li>МК ИНВЕСТ предлагает анализ эффективности логистической деятельности предприятия. Результатом чего становится выработка рекомендаций по совершенствованию управления логистикой.</li>
+                                    <li>Кроме того наша компания оказывает консультационные услуги по вопросам проведения таможенной очистки.
+                                    </li>
+                                </ul>
+                                <a href="#" class="goTo">Перейти в раздел</a>
+
+
+
+                            </div>
+                            <!-- /blockInside -->
+
+                        </div>
+                        <!-- /block5 -->
+
+                    </div>
+                    <!-- /content -->
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+            <!-- main-menu -->
+            <nav class="main-menu">
+                <ol class="main-menu__layout">
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">О компании </a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Наш бизнес</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Партнеры</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">статьи </a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                </ol>
+            </nav>
+            <!-- /main-menu -->
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

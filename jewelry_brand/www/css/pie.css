@@ -1,0 +1,8 @@
+.welcome .read_more a,
+.our_jewelry ul .jewelry .view_collection,
+.get_in_touch .contact_us .reset,
+.get_in_touch .contact_us .send{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

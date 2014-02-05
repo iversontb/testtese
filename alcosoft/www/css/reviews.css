@@ -1,0 +1,53 @@
+.clients_block{
+    display: inline-block;
+    vertical-align: top;
+    width: 33%;
+    margin-left: -4px;
+    text-align: center;
+    margin-bottom: 73px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0 20px;
+}
+.clients_block p{
+    color: #556982;
+    font-size: 15px;
+    line-height: 17px;
+    margin-bottom: 9px;
+}
+.clients_block a:hover{
+    text-decoration: none;
+}
+.clients_block a{
+    color: #556982;
+    text-decoration: underline;
+}
+.clients_block img{
+    padding-bottom: 18px;
+}
+.img_container{
+    display: inline-block;
+    width: 187px;
+    vertical-align: top;
+}
+.text_container{
+    vertical-align: top;
+    display: inline-block;
+    width: 750px;
+    color: #556982;
+    font-size: 16px;
+}
+.text_container h4{
+    margin-bottom: 20px;
+}
+.text_container h4 span{
+    font-weight: 400;
+    font-size: 14px;
+}
+.text_container p{
+    line-height: 21px;
+}
+.review_block{
+    margin-bottom: 44px;
+}

@@ -1,0 +1,519 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    main-menu
+
+    language
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd, 
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {    
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {                        
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            
+} 
+input, select, button, textarea {
+    margin: 0;                 
+    font-size: 100%;             
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;     
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {         
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+     list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    background: url("../img/bg.jpg") repeat-y top center;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;    
+}
+textarea {
+    resize:none; 
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus { 
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner { 
+    padding:0; 
+    border:0; 
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+
+@font-face {
+    font-family: "hagin_caps_medium-webfont";
+    src: url("../fonts/hagin_caps_medium-webfont.eot");
+    src: url("../fonts/hagin_caps_medium-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/hagin_caps_medium-webfont.woff") format("woff"),
+    url("../fonts/hagin_caps_medium-webfont.ttf") format("truetype");
+}
+
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 1024px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+    .site:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 100px;
+    }
+.site__layout {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 199px;
+    z-index: 5;
+}
+.searchForm{
+    position: absolute;
+    top: 47px;
+    left: 306px;
+}
+.searchForm .inputWrap{
+    border: 1px solid #fff;
+    width: 390px;
+    height: 25px;
+    background: url("../img/search.png") no-repeat 9px 8px;
+    padding-left: 27px;
+}
+.searchForm .inputWrap input{
+    padding: 0 10px 0 0;
+    height: 25px;
+    width: 380px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+.workTime{
+    position: absolute;
+    top: 0;
+    right: 8px;
+    padding-top: 35px;
+    background: url("../img/phone-back.png");
+    width: 206px;
+    height: 22px;
+    font-size: 14px;
+    font-family: "hagin_caps_medium-webfont";
+}
+.workTime dl{
+    margin-left: 30px;
+
+}
+.workTime dt{
+    float: left;
+    color: #d3ffb5;
+}
+.workTime dd{
+    float: left;
+    color: #fff;
+}
+.address{
+    position: absolute;
+    top: 61px;
+    right: 42px;
+}
+.address address{
+    font-style: normal;
+}
+.address p{
+    color: #fff;
+    font-family: "hagin_caps_medium-webfont";
+    font-size: 36px;
+}
+.address p span{
+    color: #d3ffb5;
+    font-size: 16px;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 0px;
+    left: 30px;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- main-menu --------------- */
+.main-menu {
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+}
+.main-menu__item{
+    float: left;
+    background: url("../img/menu-line.png") no-repeat 0 5px;
+}
+.main-menu__item:first-child{
+    background: none;
+}
+.main-menu__lnk{
+    display: block;
+    height: 60px;
+    font-family: "hagin_caps_medium-webfont";
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 60px;
+    padding: 0 30px;
+    position: relative;
+}
+.main-menu__lnk:hover{
+    text-decoration: underline;
+}
+.main-menu__item_active .main-menu__lnk{
+    background: rgba(0,0,0,0.5);
+    cursor: default;
+}
+.main-menu__item_active .main-menu__lnk:hover{
+    text-decoration: none;
+}
+.main-menu__item_active .main-menu__lnk:after{
+    background: url("../img/active-arrow.png");
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    margin-left: -5px;
+    content: "";
+}
+.main-menu__layout{
+    margin-left: 41px;
+}
+.social{
+    position: absolute;
+    bottom: 6px;
+    right: 43px;
+}
+.social li{
+    float: left;
+}
+.social a{
+    display: block;
+    text-indent: -5000px;
+    width: 36px;
+    height: 61px;
+}
+.social a:hover{
+    opacity: 0.8;
+}
+.facebook{
+    background: url("../img/facebook.png");
+}
+.twitter{
+    background: url("../img/twitter.png");
+}
+/* --------------- /main-menu --------------- */
+.rombsWrap{
+    background: url("../img/rombs.png") no-repeat top center;
+    height: 869px;
+    position: relative;
+}
+.textWrap h2{
+    color: #4d657e;
+    font-size: 36px;
+    font-weight: normal;
+    font-family: "hagin_caps_medium-webfont";
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.rombsWrap p{
+    position: absolute;
+    color: #fff;
+    font-family: "hagin_caps_medium-webfont";
+    font-size: 20px;
+    width: 242px;
+    text-align: center;
+    line-height: 28px;
+}
+.text1{
+    top: 115px;
+    left: 70px;
+}
+.text2{
+    top: 115px;
+    left: 390px;
+}
+.text3{
+    top: 115px;
+    right: 70px;
+}
+.text4{
+    top: 355px;
+    right: 230px;
+}
+.text5{
+    top: 390px;
+    left: 225px;
+}
+.text6{
+    top: 630px;
+    left: 400px;
+}
+.listWrap h2{
+    color: #1869a8;
+    font-size: 30px;
+    font-family: "hagin_caps_medium-webfont";
+    text-transform: uppercase;
+    margin-left: 41px;
+    margin-bottom: 13px;
+}
+.paginator{
+    margin: 0 0 15px 40px;
+    overflow: hidden;
+}
+.paginator li{
+    float: left;
+    margin-right: 10px;
+}
+.paginator li a{
+    color: #333;
+    font-size: 12px;
+    font-family: tahoma;
+    padding: 5px 5px;
+    display: inline-block;
+    text-decoration: underline;
+}
+.paginator li a:hover{
+    text-decoration: none;
+}
+.paginator li .prevPag{
+    background: #f5f5f5;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.paginator li .nextPag{
+    background: #f5f5f5;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px 10px;
+}
+.paginator li .active{
+    color: #fff;
+    background: #393939;
+    text-decoration: none;
+}
+.catalogList{
+    overflow: hidden;
+    margin: 0 0 0 42px;
+}
+.catalogList li{
+    display: inline-block;
+    width: 219px;
+    vertical-align: top;
+    margin-right: 17px;
+    margin-bottom: 36px;
+}
+.catalogList li img{
+    margin-bottom: 10px;
+}
+.catalogList li a{
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    font-family: tahoma;
+}
+.catalogList li a span{
+    text-decoration: underline;
+}
+.catalogList li a:hover span{
+    text-decoration: none;
+}
+.catalogList li p{
+    font-size: 12px;
+    font-family: tahoma;
+    color: #696969;
+    line-height: 14px;
+    margin-top: 9px;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -59px;
+}
+.footer__layout {
+    width: 1024px;
+    margin: 0 auto;
+    height: 59px;
+    background: url("../img/footer-back.png");
+    position: relative;
+}
+.copy{
+    position: absolute;
+    font-size: 11px;
+    font-family: tahoma;
+    color: #333333;
+    top: 23px;
+    left: 96px;
+}
+.footerPhone{
+    position: absolute;
+    top: 21px;
+    left: 522px;
+    font-family: "hagin_caps_medium-webfont";
+    color: #333333;
+    font-size: 18px;
+}
+.creaters{
+    position: absolute;
+    top: 10px;
+    right: 45px;
+}
+.creaters dt{
+    color: #333;
+    font-family: tahoma;
+    font-size: 11px;
+    float: left;
+    margin-top: 12px;
+}
+.creaters dd{
+    float: left;
+    margin-left: 16px;
+}
+.creaters a:hover{
+    opacity: 0.8;
+}
+.creaters a{
+    display: block;
+    background: url("../img/creaters.png");
+    width: 74px;
+    height: 37px;
+    text-indent: -5000px;
+}
+/* --------------- /footer --------------- */

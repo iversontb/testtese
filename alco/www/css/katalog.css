@@ -1,0 +1,52 @@
+.sortForm{
+    border-radius: 5px;
+    background: #f2e8cb;
+    padding: 13px 0 13px 8px;
+    margin-top: 25px;
+    margin-bottom: 36px;
+}
+.showList label{
+    margin: 6px 1px 0 5px;
+    display: inline-block;
+    vertical-align: top;
+}
+.paginator{
+    float: right;
+    margin: 6px 13px 0 0;
+}
+.paginator dt{
+    float: left;
+    font-size: 12px;
+    color: #353535;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+.paginator dd{
+    float: left;
+}
+.paginator dd a{
+    display: inline-block;
+    color: #000;
+    text-decoration: underline;
+    border-radius: 3px;
+    padding: 3px 5px;
+
+    font-size: 12px;
+}
+.paginator dd a:hover{
+    text-decoration: none;
+}
+.paginator dd a.active{
+    background: #775522;
+    text-decoration: none;
+    color: #fff;
+}
+.catalog_list li{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 32px;
+}
+.showList{
+    margin-bottom: 10px;
+}

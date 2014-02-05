@@ -1,0 +1,509 @@
+body{
+    background: #f5f5f5 url("../img/12thigth-head.jpg") no-repeat   center top;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.topicType4{
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    white-space: pre-line;
+    margin-bottom: 77px;
+    line-height: 26px;
+}
+.header{
+    margin-bottom: 77px;
+}
+.bottomLineBlock{
+    border-bottom: 3px solid #cccccc;
+    padding-bottom: 36px;
+    margin-bottom: 35px;
+}
+.cartForm .topicType5{
+    color: #333333;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 27px;
+    font-family: intro;
+    -webkit-text-stroke: 0.35px;
+}
+.bottomLineBlock .big_button{
+    padding-top: 10px;
+    height: 30px;
+    vertical-align: top;
+    display: inline-block;
+}
+.dateBut{
+    background: url("../img/blue-calendar.png") no-repeat;
+    display: inline-block;
+    height: 21px;
+    line-height: 24px;
+    font-weight: normal;
+    text-decoration: underline;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 30px;
+}
+.stepBlock{
+    margin-bottom: 76px;
+}
+.message{
+    display: inline-block;
+    background: #fae2b1;
+    border-bottom: 2px solid #e0c897;
+    text-align: center;
+    white-space: pre-line;
+    font-size: 11px;
+    vertical-align: top;
+    position: relative;
+    height: 33px;
+    padding-top: 5px;
+    width: 308px;
+    margin-left: 41px;
+    line-height: 14px;
+
+}
+.message:after{
+    content: "";
+    background: url("../img/arrow.png");
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    left: -8px;
+    top: 12px;
+}
+.wraper{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 9px;
+
+}
+.clientType{
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 9px;
+    margin-top: 9px;
+}
+.clientType p{
+    color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.clientType span{
+    font-family: 'Open Sans', sans-serif;
+    color: #808080;
+    font-size: 11px;
+    display: block;
+    margin-bottom: 7px;
+
+}
+.youNeed{
+    display: inline-block;
+    vertical-align: top;
+    margin: 11px 0 0 61px;
+}
+.youNeed span span{
+    font-weight: 700;
+}
+.youNeed span{
+    color: #f6572f;
+}
+.cartForm .price{
+    float: right;
+    color: #bfbfbf;
+    font-size: 26px;
+}
+.cartForm .price span{
+    font-weight: 700;
+}
+.roomBlock .nice-select{
+    width: 391px;
+    margin-bottom: 20px;
+}
+.roomBlock{
+    background: #fff;
+    border-bottom: 2px solid #cccccc;
+    width: 616px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 19px 0 18px 19px;
+    position: relative;
+}
+.container{
+    margin-bottom: 13px;
+}
+.cartForm .roomBlock label{
+    font-size: 13px;
+    padding-left: 5px;
+}
+.lineConteiner{
+    margin-bottom: 9px;
+}
+.container .price{
+    margin-top: 16px;
+}
+.closeBut{
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    text-indent: -5000px;
+    background: url("../img/close.png");
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.closeBut:hover{
+    opacity: 0.7;
+}
+.counterRoom .topicType5{
+    margin-bottom: 35px;
+}
+.addRoom{
+    background: url("../img/plus.png") no-repeat 0 5px;
+    padding-left: 15px;
+    color: #0baed3;
+    text-decoration: underline;
+}
+.totalPrice > p a:hover,
+.addRoom:hover{
+    text-decoration: none;
+}
+.totalPrice{
+    overflow: hidden;
+    margin-top: 13px;
+}
+.priceBlock{
+    float: right;
+}
+.totalPrice > p{
+    margin-top: 65px;
+    float: left;
+}
+.totalPrice > p a{
+    color: #0baed3;
+    text-decoration: underline;
+}
+.cartForm .big_button{
+    border: none;
+    height: 40px;
+    line-height: 44px;
+    padding-top: 0;
+}
+.totalPrice .price{
+    float: none;
+    color: #0baed3;
+    text-align: right;
+    font-size: 36px;
+    margin-bottom: 16px;
+
+}
+.userInfo{
+    width: 618px;
+    vertical-align: top;
+    display: inline-block;
+}
+.userInfo label{
+    display: inline-block;
+    color: #999999;
+    font-size: 13px;
+    vertical-align: top;
+    width: 92px;
+    line-height: 32px;
+}
+.userInfo input[type="text"]{
+    display: inline-block;
+    width: 204px;
+    height: 32px;
+    padding: 0 10px;
+    vertical-align: top;
+    border: 1px solid #cccccc;
+    color: #333333;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+.userInfo input[type="text"]:focus{
+    border: 1px solid #0baed3;
+    box-shadow: 0 0 5px #0baed3;
+}
+.block{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.userInfo .topicType5{
+    margin-bottom: 37px;
+}
+.userInfo .shortWidth{
+    width: 38px;
+    margin-left: 23px;
+}
+.userInfo  .lineConteiner{
+    margin-bottom: 15px;
+}
+.phoneType{
+    display: block;
+    color: #b2b2b2;
+    font-size: 11px;
+    white-space: pre-line;
+    margin: 11px 0 0 97px;
+    line-height: 13px;
+}
+.userInfo input.longInput{
+    width: 273px;
+}
+.userInfo  label.lineHeight{
+    line-height: 17px;
+}
+.userInfo .nice-select{
+    margin-top: 8px;
+}
+.longSelect .nice-select{
+    width: 520px;
+}
+.proof{
+    position: absolute;
+    top: 12px;
+    right: 7px;
+    background: url("../img/proof.png");
+    width: 18px;
+    height: 13px;
+	display: none;
+}
+.yourOrder{
+    display: inline-block;
+    vertical-align: top;
+    width: 308px;
+    margin-left: 34px;
+}
+.bill{
+    background: #fff;
+    padding: 27px 20px 0 20px;
+    border-bottom: 2px solid #cccccc;
+    margin-bottom: 25px;
+}
+.bill li:first-child{
+    border-top: none;
+}
+.bill li:first-child > span{
+    margin-top: 0;
+}
+.bill li{
+    border-top: 2px solid #e6e6e6;
+    overflow: hidden;
+    margin-bottom: 27px;
+}
+.rowBlock > span{
+    color: #999999;
+    font-size: 13px;
+    margin-top: 27px;
+    line-height: 15px;
+    float: left;
+    white-space: pre-line;
+}
+.rowBlock time{
+    color: #0baed3;
+    font-weight: 700;
+    float: right;
+}
+.ticketPrice > span{
+    text-align: right;
+    display: block;
+    font-weight: 700;
+    color: #bfbfbf;
+    margin-bottom: 4px;
+    font-size: 36px;
+}
+.ticketPrice .price{
+    color: #0baed3;
+    font-size: 15px;
+}
+.ticketPrice .price span{
+    font-weight: 700;
+}
+.calculPrice{
+    float: right;
+    color: #0baed3;
+    font-size: 36px;
+    margin-top: 10px;
+}
+.calculPrice span{
+    font-weight: 700;
+}
+.ticketPrice{
+    float: right;
+    margin-top: 15px;
+}
+.back{
+    background: url("../img/arrow2.png") no-repeat 0 5px;
+    padding-left: 20px;
+    color: #0baed3;
+    font-size: 14px;
+    text-decoration: underline;
+    float: left;
+    margin-top: 11px;
+}
+.back:hover{
+    text-decoration: none;
+}
+.yourOrder .big_button{
+    float: right;
+}
+.payType{
+    width: 618px;
+    display: inline-block;
+    vertical-align: top;
+}
+.payList li{
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 13px;
+    margin-right: 17px;
+}
+.payList img{
+    display: block;
+}
+.payList a{
+    display: block;
+    border: 1px solid #cccccc;
+}
+.payList a:hover{
+    border: 1px solid #0baed3;
+}
+.payList{
+    padding-top: 10px;
+    margin-bottom: 32px;
+}
+.worning{
+    color: #999999;
+    font-size: 14px;
+    line-height: 21px;
+}
+.cartForm{
+    margin-bottom: 50px;
+}
+.popup{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: none;
+}
+.popupBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: rgba(0,0,0,0.5);
+}
+.popupContainer{
+    background: #fff;
+    padding: 62px;
+    z-index: 10;
+    position: relative;
+    width: 676px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.popupContainer h2{
+    font-family: intro;
+    font-weight: normal;
+    -webkit-text-stroke: 0.35px;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.popupContainer h3{
+    color: #0baed3;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.popupContainer p{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+.closeDoc:hover{
+    text-decoration: none;
+}
+.butContainer {
+    text-align: center;
+}
+.closeDoc{
+
+    color: #0baed3;
+    text-decoration: underline;
+}
+.orderNumber{
+    font-weight: 700;
+    overflow: hidden;
+}
+.orderNumber dt{
+    float: left;
+    color: #333333;
+    margin-right: 3px;
+    margin-bottom: 14px;
+}
+.orderNumber dd{
+    float: left;
+    color: #0baed3;
+}
+.cartText{
+    line-height: 18px;
+    padding-right: 50px;
+    margin-bottom: 69px;
+}
+.goodTrevel{
+    font-size: 24px;
+}
+.textWrap{
+    overflow: auto;
+    max-height: 777px;
+}
+
+.step2-form-submit {display: none;}
+.error {border: 1px solid #ff0000!important;}
+
+.stepBlock{
+    margin-bottom: 76px;
+    position: relative;
+}
+.step1{
+    position: absolute;
+    top: 43px;
+    left: 100px;
+    text-transform: uppercase;
+    color: #c2c2c2;
+    font-weight: 700;
+}
+
+.step2{
+    position: absolute;
+    top: 43px;
+    left: 420px;
+    text-transform: uppercase;
+    color: #c2c2c2;
+    font-weight: 700;
+}
+.step3{
+    position: absolute;
+    top: 43px;
+    left: 782px;
+    text-transform: uppercase;
+    color: #c2c2c2;
+    font-weight: 700;
+}
+.stepBlock .active,
+.stepBlock .active,
+.stepBlock .actice{
+    color: #0baed3 !important;
+}
+
+.first-step-button {display: none;}

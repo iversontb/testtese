@@ -1,0 +1,56 @@
+/* --------------- nice-select --------------- */
+.nice-select {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    line-height: 27px;
+    height: 38px;
+    width: 144px;
+    font-family: "Arial";
+    font-size: 14px;
+    margin-bottom: 14px;
+    border-radius: 5px;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 3px 2px #fdfdfd inset;
+    background: rgb(241,241,241);
+    background: -moz-linear-gradient(top,  rgba(241,241,241,1) 0%, rgba(254,254,254,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,241,241,1)), color-stop(100%,rgba(254,254,254,1)));
+    background: -webkit-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(254,254,254,1) 100%);
+    background: -o-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(254,254,254,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(241,241,241,1) 0%,rgba(254,254,254,1) 100%);
+    background: linear-gradient(to bottom,  rgba(241,241,241,1) 0%,rgba(254,254,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#fefefe',GradientType=0 );
+}
+.nice-select__item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    padding-left: 16px;
+}
+.nice-select__item:after {
+    content: '';
+    width: 6px;
+    height: 4px;
+    background: url("../img/time.png") no-repeat 0 bottom;
+    position: absolute;
+    top: 10px;
+    right: 31px;
+    z-index: 10;
+    border-radius: 0 3px 3px 0;
+}
+.nice-select select {
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+.nice-select__item{
+    font-family: "Arial";
+    font-size: 14px;
+    color: #8c8c8c;
+    margin-top: 6px;
+}
+/* --------------- /nice-select --------------- */

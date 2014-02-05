@@ -1,0 +1,12 @@
+.join,
+.next__wrap,
+.next,
+.apply,
+.steps li:after,
+.yippee,
+.ask
+{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

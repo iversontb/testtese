@@ -1,0 +1,999 @@
+@charset "utf-8";
+/*
+	main styles
+	version: 16.01.2012
+	
+	Style to null
+	
+	Main Wrap
+	
+	Main Header
+	
+	Content Wrap
+	
+	content
+	
+	index
+	
+	text
+	
+	tovar
+	
+	zakaz
+	
+
+	
+	Main Footer
+	
+*/
+
+
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                              
+	vertical-align: baseline;          
+	background: transparent;      
+	font-size: 100%;              
+}
+a {                                      	    
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+table {						
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;
+} 
+input, select, button, textarea {
+	margin: 0; 				
+	font-size: 100%; 	
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 		
+	-webkit-appearance: none;
+}
+input[type="search"]{
+	-webkit-appearance: none;	
+	border: none;
+}
+input[type="checkbox"] { 		
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+ol,
+ul,
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	overflow-y: scroll; 
+}
+body {
+	line-height: 1;
+	color: #000;
+	text-align: left;
+	font: 14px Verdana, Geneva, sans-serif;
+	background: url(../img/back.jpg) no-repeat; 
+	background-size: 100%;
+	height: 100%;
+}
+html, body {
+height: 100%;
+}
+input, select, button, textarea {
+	font-family: Verdana, Geneva, sans-serif;
+}
+label, input[type="button"], input[type="submit"], button {
+	cursor: pointer; 
+}
+a, a:visited { 
+	color: #287fc3;
+	text-decoration: underline;
+}
+a:hover {
+	color: #287fc3;
+	text-decoration: none;
+}
+a:focus, a:active {
+	color: #287fc3;
+	text-decoration: underline;
+}
+
+/* --------------- /базовые настройки ---------*/
+
+/*-----------------MainWrap--------------------*/
+.mainWrap{
+  min-height: 100%;
+	width: 977px;
+	margin: 0 auto;
+	padding: 0 24px;
+	position: relative;
+	z-index: 1;
+}
+    .mainWrap:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 83px;
+    }
+/*-----------------MainHeader--------------------*/
+.mainHeader{
+	position: relative;
+	height: 114px;
+	z-index: 10;
+}
+.logo{
+	position: absolute;
+	top: 48px;
+	left: 2px;
+}
+.mainMenu{
+	margin-left: 185px;
+	padding-top: 11px;
+}
+.mainMenu ol > li{
+	float: left;
+	margin-left: 31px;
+	position: relative;
+}
+.mainMenu ol > li > a{
+	display: block;
+	padding-top: 65px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	font-size: 11px;
+	padding-bottom: 5px;
+}
+.mainMenu ol > li.active .akkapunktButton span,
+.mainMenu ol > li.active .shaktYougaButton span,
+.mainMenu ol > li.active .mainButton span,
+.mainMenu ol > li.active .forYogaButton span,
+.mainMenu ol > li.active .shaktiMatButton span,
+.mainMenu ol > li > a:hover span{
+	border-bottom: 5px solid #266d58;
+}
+.mainButton{
+	background: url(../img/main-button.png) no-repeat center 2px;
+	width: 65px;
+}
+.mainMenu ol > li.active .mainButton,
+.mainButton:hover{
+	background: url(../img/main-button-hover.png)  no-repeat center 2px;
+}
+.shaktYougaButton{
+	background: url(../img/shakti-yoga-button.png) no-repeat center 0;
+	width: 90px;
+}
+.mainMenu ol > li.active .shaktYougaButton,
+.shaktYougaButton:hover{
+	background: url(../img/shakti-yoga-button-hover.png) no-repeat center 0;
+}
+.shaktiMatButton{
+	background: url(../img/shakti-mat.png) no-repeat center 8px;
+	width: 90px;
+}
+.mainMenu ol > li.active .shaktiMatButton,
+.shaktiMatButton:hover{
+	background: url(../img/shakti-mat-hover.png) no-repeat center 8px;
+}
+.akkapunktButton{
+	background: url(../img/akkapuktur-button.png) no-repeat  center 2px;
+	width: 95px;
+}
+.mainMenu ol > li.active .akkapunktButton,
+.akkapunktButton:hover{
+	background: url(../img/akkapuktur-button-hover.png)  no-repeat  center 2px;
+}
+.forYogaButton{
+	background: url(../img/for-yoga.png) no-repeat  center 0;
+	width: 95px;
+}
+.mainMenu ol > li.active .forYogaButton,
+.forYogaButton:hover{
+	background: url(../img/for-yoga-hover.png) no-repeat  center 0;
+}
+.mainMenu li ul{
+	position: absolute;
+	top: 83px;
+	width: 126px;
+	display: none;
+	margin-left: -63px;
+}
+.mainMenu ul li{
+	padding-bottom: 1px;
+}
+.mainMenu ul li a{
+	display: block;
+	background: #fff;
+	font-size: 10px;
+	color: #21825f;
+	text-decoration: none;
+	text-align: center;
+	padding: 5px 0;
+}
+.mainMenu ul li a:hover{
+	text-decoration: underline;
+}
+.addressWrap{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 173px;
+}
+.deliverContacts{
+	border-left: 1px solid #568468;
+	border-right: 1px solid #568468;	
+	overflow: hidden;
+	padding: 20px 0 23px 19px;
+}
+.deliverContacts li:first-child{
+	background: none;
+}
+.deliverContacts li{
+	float: left;
+	background: url(../img/contact-line.png) no-repeat;
+	height: 22px;
+	padding: 0 5px;
+}
+.deliverContacts li a{
+	font-size: 11px;
+	text-decoration: none;
+	color: #0d4a38;
+}
+.addressWrap address a:hover,
+.deliverContacts li a:hover{
+	text-decoration: underline;
+}
+.addressWrap address{
+	background: url(../img/address-back.png);
+	height: 28px;
+	text-align: center;
+	font-style: normal;
+	padding-top: 5px;
+}
+.addressWrap address a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 17px;
+}
+/*----------------/MainHeader--------------------*/
+
+
+/*-----------------contentWrap----------------------*/
+.contentWrap{
+	clear: both;
+}
+/*-----------------mainContent------------------------*/
+.mainContent{
+}
+
+.subMenu{
+	overflow: hidden;
+	margin-bottom: 15px;
+}
+
+.block{
+	position: relative;
+}
+.subMenu > li{
+	float: left;
+	position: relative;
+}
+.subMenu > li img{
+	display: block;
+}
+.subMenu > li > a{
+	text-decoration: none;
+	color: #0b964a;
+}
+
+.block > a:hover h2,
+.subMenu > li > a:hover h2{
+	background: #fff;
+} 
+.subMenu > li:first-child h2{
+	border: none;
+}
+.block h2,
+.subMenu > li h2{
+	height: 24px;
+	background: url(../img/hover-opacitiy-white.png);
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #0b964a;
+	line-height: 24px;
+	border-left: 1px solid #98c5a2;
+}
+.block ol,
+.subMenu ol{
+	position: absolute;
+	bottom: 24px;
+	right: 0;
+}
+.subMenu ol li{
+	float: left;
+	margin-left: 2px;
+}
+.block img{
+	display: block;
+}
+.block ol li a,
+.subMenu ol li a{
+	display: inline-block;
+	height: 19px;
+	line-height: 19px;
+	padding: 0 10px;
+	font-size: 11px;
+	text-decoration: none;
+}
+.block ol li a:hover,
+.subMenu ol li a:hover{
+	text-decoration: underline;
+}
+.subMenu ol li .whiteButton{
+	background: #fff;
+	color: #0b964a;
+}
+.block .greenButton,
+.subMenu ol li .greenButton{
+	background: #2ea26a;
+	color: #fff;
+}
+.gallWrap{
+	position: relative;
+}
+.gallWrap button:hover{
+	opacity: 0.8;
+}
+.prev{
+	background: url(../img/gall-button-left.png);
+	width: 8px;
+	height: 13px;
+	padding: 0;
+	border: none;
+	position: absolute;
+	top: 51px;
+	left: -15px;
+	text-indent: -5000px;
+}
+.next{
+	background: url(../img/gall-button-right.png);
+	width: 8px;
+	height: 13px;
+	padding: 0;
+	border: none;
+	position: absolute;
+	top: 51px;
+	right: -20px;
+	text-indent: -5000px;
+}
+.gallery li{
+	width: 239px;
+	height: 104px;
+	background: url(../img/gall-back.png);
+	overflow: hidden;
+	border: 1px solid #557c63;
+	padding-bottom: 9px;
+	font-size: 10px;
+	margin-right: 4px;
+}
+.gallery li p{
+	padding: 0 6px;
+}
+.gallery li h2{
+	color: #000;
+	font-size: 10px;
+	margin: 10px 0 11px 9px;
+}
+
+
+/* content -----------------------*/
+.content h1 {
+	font-size: 150%;
+	margin-bottom: 20px;
+}
+.content h2 {
+	font-size: 140%;
+	margin-bottom: 15px;
+}
+.content h3 {
+	font-size: 130%;
+	margin-bottom: 12px;
+}
+.content h4 {
+	font-size: 120%;
+	margin-bottom: 10px;
+}
+.content h5 {
+	font-size: 110%;
+	margin-bottom: 10px;
+}
+.content h6 {
+	font-size: 100%;
+	margin-bottom: 10px;
+}
+.content p {
+	margin-bottom: 15px;
+	font-size: 12px;
+	color: #333132;
+}
+.content ul {
+	list-style: disc;
+	margin: 0 15px 10px 15px;
+}
+.content ul ul {
+	margin: 10px 0 10px 25px;
+}
+.content ol {
+	list-style: decimal;
+	margin: 0 15px 10px 20px;
+}
+.content ol ol {
+	margin: 10px 0 10px 25px;
+}
+.content li {
+	margin-bottom: 5px;
+}
+.content table {
+	margin-bottom: 15px;
+	font-size: 100%;
+	width: auto;
+	border: 1px solid #000;
+}
+.content th,
+.content td {
+	border: 1px solid #000;
+	padding: 4px;
+	text-align: left;
+}
+.content th {
+	font-weight: bold;
+	text-align: center;
+}
+.content a,
+.content a font {
+	color: #0000ff;
+	text-decoration: underline;
+}
+.content a:visited,
+.content a:visited font {
+	color: #0000aa;
+}
+.content a:hover,
+.content a:hover font {
+	color: #0000ff;
+	text-decoration: none;
+}
+.content a:active,
+.content a:active font {
+	color: #ff0000;
+}
+.content img[align=left] {
+	margin: 0 10px 10px 0;
+	float: left;
+}
+.content img[align=right] {
+	margin: 0 0 10px 10px;
+	float: right;
+}
+.content dl {
+	margin: 0 0 15px 0;
+}
+.content dt {
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+.content dd {
+	margin-bottom: 5px;
+}
+.content hr {
+	height: 1px;
+	border: none;
+	color: #aaa;
+	background: #aaa;
+	margin: 10px 0;
+	clear: both;
+}
+/*/content---------------------------------*/
+
+
+/*-------------------------------------text-----------------*/
+.crumbsMenu{
+	overflow: hidden;
+	height: 24px;
+	margin: -8px 0 19px 2px;
+}
+.crumbsMenu dt{
+	float: left;
+	height: 24px;
+	border-right: 1px solid #009445;
+	padding-right: 18px;
+	margin-right: 20px;
+}
+.crumbsMenu dt a{
+	color: #007637;
+	font-size: 12px;
+	text-decoration: none;
+}
+.crumbsMenu dd{
+	float: left;
+	margin-right: 28px;
+}
+.crumbsMenu dd a{
+	font-size: 10px;
+	color: #0d4a38;
+	text-decoration: none;
+}
+.crumbsMenu a:hover{
+	text-decoration: underline;
+}
+.crumbsMenu dd a.active{
+	font-weight: bold;
+	text-decoration: underline;
+}
+.inside .mainContent{
+	width: 768px;
+	float: left;
+}
+.content .topic1{
+	background: #fff;
+	color: #333132;
+	font-size: 18px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 13px;
+	font-weight: normal;
+	margin-bottom: 0;
+}
+.asideBlok{
+	width: 256px;
+	float: left;
+
+}
+.goodsShow{
+	background: url(../img/hover-opacitiy-white.png);
+}
+.asideBlok p{
+	white-space: pre-line;
+	font-style: italic;
+	color: #089547;
+	margin-bottom: 0;
+	padding: 0 5px 9px 14px;
+}
+.textWrap{
+	float: right;
+	background: url(../img/text-back.png) no-repeat;
+	width: 508px;
+	padding: 6px 0;
+}
+.textWrap p{
+	padding: 0 5px;
+}
+.rightSideBar{
+	width: 175px;
+	float: right;
+}
+.container{
+	overflow: hidden;
+	margin-top: 19px;
+	margin-bottom: 28px;
+	padding-bottom: 5px;
+}
+.content .container ul{
+	float: left;
+	margin: 0;
+	list-style: none;
+}
+.content .container li{
+	margin-bottom: 0;
+}
+.container ul a{
+	text-decoration: none;
+	padding-left: 30px;
+	border-bottom: 1px solid #106f35;
+	color: #106f35;
+}
+.content .container ul a:visited{
+	color: #106f35;
+}
+.content .container ul a:hover{
+	color: #106f35;
+	border-bottom: none;
+}
+.goodsPrice{
+	float: right;
+	font-size: 12px;
+	margin-top: 61px;
+}
+.goodsPrice h2{
+	font-size: 10px;
+	background: #fff;
+	height: 19px;
+	line-height: 19px;
+	margin-bottom: 3px;
+	padding: 0 12px;
+}
+.goodsPrice h2 span{
+	font-weight: normal;
+}
+.content .goodsPrice  .greenButton{
+	color: #fff;
+	background: #34a666;
+	float: right;
+	font-weight: bold;
+	height: 19px;
+	line-height: 19px;
+	padding: 0 19px;
+	font-size: 10px;
+	text-decoration: none;
+}
+.content .goodsPrice  .greenButton:hover{
+	opacity: 0.8;
+}
+.content .contentMenu{
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+}
+.contentMenu li:first-child{
+	margin-left: 0;
+}
+.content .contentMenu li:first-child a{
+	margin-left: 0;
+	padding: 2px 11px;
+}
+.contentMenu li{
+	float: left;
+	margin-left: 1px;
+	padding-bottom: 4px;
+}
+.contentMenu li.active,
+.contentMenu li:hover{
+	border-bottom: 4px solid #266d58;
+	padding-bottom: 0;
+}
+.content .imgList.first{
+	display: block;
+}
+.content .contentMenu a{
+	color: #33806f;
+	font-size: 11px;
+	text-decoration: none;
+	background: #fff;
+	display: block;
+	padding: 2px 9px;
+}
+.content .contentMenu .reviewButton{
+	background: url(../img/hover-opacitiy-white.png);
+}
+.content .imgList{
+	overflow: hidden;
+	list-style: none;
+	display: none;
+	margin: 0;
+}
+.content .imgList li:first-child{
+	margin-left: 0;
+}
+.content .imgList li{
+	float: left;
+	margin-left: 1px;
+}
+.content .greenText{
+	color: #2c775a;
+}
+.content .countList{
+	list-style: none;
+	margin: 0;
+}
+.content .countList li{
+	background: url(../img/hover-opacitiy-white.png);
+	font-size: 12px;
+	color: #333132;
+	margin-bottom: 3px;
+	padding: 0 15px;
+}
+.order a{
+	background: #31a564;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	height: 29px;
+	line-height: 29px;
+	font-size: 12px;
+}
+.order a:hover{
+	opacity: 0.8;
+}
+.order p{
+	background: url(../img/hover-opacitiy-white.png);
+	color: #0d4a38;
+	text-align: center;
+	height: 29px;
+	line-height: 29px;
+}
+
+/*------------------------zakaz----------------*/
+.orderForm .lineContainer > label{
+	font-weight: bold;
+	color: #3d3d3d;
+	clear: both;
+	display: block;
+	margin-bottom: 6px;
+	font-size: 12px;
+}
+.orderForm select{
+	width: 253px;
+	height: 23px;
+	background: url(../img/hover-opacitiy-white.png);
+	border: 1px solid #b4bfb6
+}
+.inputWrap{
+	width: 229px;
+	height: 21px;
+	border: 1px solid #b4bfb6;
+	background: url(../img/hover-opacitiy-white.png);
+	position: relative;	
+	float: left;
+	margin-right: 22px;
+	margin-bottom: 2px;
+}
+.inputWrap input{
+	color: #3d3d3d;
+	font-size: 10px;
+	width: 219px;
+	height: 21px;
+	border: none;
+	background: none;
+	padding: 0 5px;
+}
+.lineContainer:first-child{
+	border: none;
+	padding-top: 0;
+}
+.lineContainer{
+	float: left;
+	margin-bottom: 21px;
+	width: 100%;
+	padding: 5px 8px 0 8px;
+	border-top: 1px solid #fff;
+}
+.checkBox {
+	overflow: hidden;
+	margin-bottom: 2px;
+}
+.checkBox input{
+	float: left;
+	margin-right: 5px;
+}
+.checkBox label{
+	float: left;
+	font-weight: bold;
+	color: #3d3d3d;
+	font-size: 12px;
+}
+.deliverytype{
+	width: 231px;
+	float: left;
+}
+.addressContainer{
+	float: right;
+	width: 231px;
+	margin: 5px 22px 0 0;
+}
+.orderForm p{
+	color: #3d3d3d;
+	font-size: 10px;
+	padding-left: 20px;
+	padding-top: 10px;	
+}
+.orderForm p a{
+	color: #3d3d3d;
+}
+.orderForm p a:visited,
+.orderForm p a:hover{
+	color: #3d3d3d;
+}
+.orderForm .price{
+	background: #fff;
+	float: right;
+	font-weight: bold;
+	height: 19px;
+	margin-bottom: 2px;
+	padding-bottom: 0;
+	line-height: 19px;
+	padding-top: 0;
+}
+.price span{
+	font-weight: normal;
+}
+.e-Button{
+	color: #fff;
+	float: right;
+	border: none;
+	background: #2ca361;
+	width: 231px;
+	font-weight: bold;
+	font-size: 12px;
+	height: 19px;
+	line-height: 15px;
+	text-align: center;
+}
+.e-Button:hover{
+	opacity: 0.8;
+}
+.box{
+	clear: both;
+	overflow: hidden;
+}
+.orderForm textarea{
+	background: url(../img/hover-opacitiy-white.png);
+	border: 1px solid #b4bfb6;
+	width: 219px;
+	font-size: 10px;
+	height: 30px;
+	padding: 5px;
+}
+.deliverytype > label{
+	font-weight: bold;
+	color: #3d3d3d;
+	font-size: 12px;
+	margin-bottom: 6px;
+	display: block;
+}
+.orderForm{
+	overflow: hidden;
+	margin-bottom: 100px;
+}
+.desabled{
+	opacity: 0.5;
+}
+
+.niceRadio {
+	width: 14px;
+	height: 14px;
+	float: left;
+	cursor: pointer;
+	background: url(../img/radio-sprite.png);
+	overflow: hidden;
+	margin-right: 5px;
+}
+.radioChecked {
+	background-position: 0 -14px;
+}
+.niceRadio input {
+	margin-left: -15px;
+}
+		
+/*-----------------/mainContent------------------------*/
+/*----------------/contentWrap-----------------------*/
+/*-----------------/MainWrap--------------------*/
+
+/*----------------------.mainFooter----------------------*/
+.mainFooter{
+	width: 100%;
+	margin: 0 auto;
+	background: url(../img/footer-back.jpg) no-repeat;
+	background-size: 100%;
+	z-index: 2;
+	position: relative;
+	margin-top: -43px;
+}
+.footerInside{
+	width: 977px;
+	height: 43px;
+	position: relative;
+	margin: 0 auto;
+}
+.footerInside address{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-style: normal;
+}
+.footerInside address p{
+	float: left;
+	border-left: 1px solid #b4ccd1;
+	font-size: 12px;
+	height: 33px;
+	padding: 10px 10px  0 10px;
+
+}
+.footerInside address p:first-child{
+	border: none;
+	padding-left: 0;
+}
+.footerInside address a{
+	font-size: 12px;
+	text-decoration: none;
+	color: #fff;
+}
+.footerInside address a:hover{
+	text-decoration: underline;
+}
+.footerInside address .phone{
+	font-size: 17px;
+}
+.slogan{
+	font-size: 11px;
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 485px;
+	padding-top: 13px;
+	background: url(../img/clogan-back.jpg);
+	width: 368px;
+	height: 30px;
+	text-align: center;
+}
+.email{
+	display: block;
+	margin-top: 3px;
+}
+.footerInside .social{
+	position: absolute;
+	top: 8px;
+	right: 0;
+		
+}
+.content .social {
+	margin: 5px 0 0 0;
+	overflow: hidden;
+}
+.social li{
+	margin-right: 6px;	
+	float: left;
+}
+.footerInside .social li{
+	float: left;
+	margin-left: 6px;
+	margin-right: 0;
+}
+.social li a{
+	display: block;
+	width: 32px;
+	height: 26px;
+	text-indent: -5000px;
+}
+.social li a:hover{
+	opacity: 0.8;
+}
+.facebook{
+	background: url(../img/facebook.png);
+}
+.vkontakte{
+	background: url(../img/vkonatkte.png);
+}
+.twitter{
+	background: url(../img/twitter.png);
+}
+/*---------------------/mainFooter------------------------*/

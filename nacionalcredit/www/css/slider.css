@@ -1,0 +1,92 @@
+.slideWrap{
+
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.ares-slider2 {
+    width: 757px;
+    margin: 0 auto;
+    height: 450px;
+    position: relative;
+}
+.ares-slider2__item {
+    width: 757px;
+    height: 103px;
+    padding-top: 307px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 1;
+}
+.ares-slider2__item > img {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.ares-slider2__prev{
+    background-position: 0 0;
+}
+.gallDescript{
+    background: url("../img/car.png") no-repeat left center;
+    padding-left: 80px;
+    height: 50px;
+    font-size: 20px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.ares-slider2__next,
+.ares-slider2__prev {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 44px;
+    top: 169px;
+    cursor: pointer;
+    display: none !important;
+    background-size: 100%;
+    opacity: .8;
+    z-index: 2;
+}
+.ares-slider2__prev {
+    right: -46px;
+    background-position: 0 44px;
+}
+.ares-slider2__prev:hover{
+    background-position: 0 113px;
+}
+.ares-slider2__next {
+    left: -50px;
+    background-position: 0 182px;
+}
+.ares-slider2__next:hover{
+    background-position: 0 0;
+}
+.ares-slider__points {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 4;
+}
+.ares-slider__points li {
+    width: 17px;
+    height: 17px;
+    float: left;
+    background: url("../img/not-active.png");
+    border-radius: 14px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li.active {
+    box-shadow: none;
+    background: url("../img/active.png");
+    cursor: default;
+}

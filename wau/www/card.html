@@ -1,0 +1,311 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <title>title</title>
+    <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/select.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/lightbox-2.6.min.js"></script>
+    <script src="js/card.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+    <!-- site -->
+    <div class="site inner_site">
+
+        <div class="site__layout">
+
+            <!-- header -->
+            <header class="header">
+
+                <!-- header_inner -->
+                <div class="header_inner">
+
+                    <!-- wrap_logo -->
+                    <div class="wrap_logo">
+                        <a href="#" title="На главную" class="logo"><img src="img/logo.png" width="98" height="48" alt=""></a>
+                    </div>
+                    <!-- /wrap_logo -->
+
+                    <!-- logo_title -->
+                    <span class="logo_title">ДИСКОНТНЫЙ СЕРВИС</span>
+                    <!-- /logo_title -->
+
+                    <!-- registration -->
+                    <form class="registration" action="#">
+                        <input type="text" placeholder="Логин"/>
+                        <input type="password" placeholder="Пароль"/>
+                        <input type="submit" value="Войти"/>
+                        <a href="#">Регистрация</a>
+
+                        <!-- networks -->
+                        <div class="networks">
+                            <a class="vk" title="Vkontakte" href="#">Vkontakte</a>
+                            <a class="fb" title="Facebook" href="#">Facebook</a>
+                            <a class="ok" title="Одноклассники" href="#">Одноклассники</a>
+                        </div>
+                        <!-- /networks -->
+
+                    </form>
+                    <!-- /registration -->
+                </div>
+                <!-- /header_inner -->
+
+                <!-- wrap_menu -->
+                <div class="wrap_menu">
+
+                    <!-- main-menu -->
+                    <nav class="main-menu">
+                        <a href="#">Выбрать сертификат</a>
+                        <a href="#">Погасить Сертификат</a>
+                        <a href="#">Как работает сервис</a>
+                        <a href="#">Каталог  партнеров</a>
+                        <a href="#">Контакты</a>
+                        <a class="drop_down" href="#">Помощь</a>
+                    </nav>
+                    <!-- /main-menu -->
+
+                </div>
+                <!-- /wrap_menu -->
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- content -->
+                    <div class="content">
+
+                        <!-- wp_money -->
+                        <div class="wp_money">
+                            <label>WP =</label>
+                            <select name="" id="">
+                                <option value="">31 руб.</option>
+                                <option value="">0 y.e. </option>
+                            </select>
+                        </div>
+                        <!-- wp_money -->
+
+                        <!-- bread_crumbs -->
+                        <ol class="bread_crumbs">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Выбор сертификата</a></li>
+                            <li><span>Электронный сертификат</span></li>
+                        </ol>
+                        <!-- /bread_crumbs -->
+
+                        <!-- wrap_product -->
+                        <div class="wrap_product">
+
+                            <!-- wrap_img -->
+                            <div class="wrap_img">
+
+                                <!-- wrap_gallery -->
+                                <div class="wrap_gallery">
+
+                                    <!-- big_img -->
+                                    <div class="big_img">
+                                        <a href="pic/big1.png">
+                                            <img src="pic/big1.png" width="457" alt=""/>
+                                        </a>
+                                    </div>
+                                    <!-- /big_img -->
+
+                                    <!-- small_thumbs -->
+                                    <ol class="preview">
+                                        <li class="active" data-pic="img/big1.png">
+                                            <a data-lightbox="image-1" href="pic/big1.png"><img src="pic/small1.png" width="104" height="60" alt=""/></a>
+                                        </li>
+                                        <li data-pic="img/big2.png">
+                                            <a data-lightbox="image-1" href="pic/big2.png"><img src="pic/small2.png" width="104" height="60" alt=""/></a>
+                                        </li>
+                                        <li data-pic="img/big3.png">
+                                            <a data-lightbox="image-1" href="pic/big3.png"><img src="pic/small3.png" width="104" height="60" alt=""/></a>
+                                        </li>
+                                        <li data-pic="img/big4.png">
+                                            <a data-lightbox="image-1" href="pic/big4.png"><img src="pic/small4.png" width="104" height="60" alt=""/></a>
+                                        </li>
+                                    </ol>
+                                    <!-- /small_thumbs -->
+
+                                </div>
+                                <!-- /wrap_gallery -->
+
+                                <!-- product_price -->
+                                <div class="product_price">
+
+                                    <!-- price_block -->
+                                    <div class="price_block">
+                                        <div class="price">Номинал  WP<span>100 000,00</span></div>
+                                        <div class="price">Продано  WP<span>???</span></div>
+                                    </div>
+                                    <!-- /price_block -->
+
+                                    <!-- wrap_premium -->
+                                    <div class="wrap_premium">
+                                        <div class="open_price"><a href="#">Открыть цену</a></div>
+                                        <a href="#" class="red_block">за<span>3,00 WP</span></a>
+                                        <a href="#" class="blue_block">за<span>1,00 WP</span></a>
+                                        <a class="prem_link" href="#">Как стать premium?</a>
+                                    </div>
+                                    <!-- /wrap_premium -->
+
+                                </div>
+                                <!-- /product_price -->
+
+                            </div>
+                            <!-- /wrap_img -->
+
+                            <!-- product_info -->
+                            <div class="product_info">
+                                <div class="info_title">
+                                    <h1>Электронный сертификат</h1>
+                                    <dl><dt>Город:</dt><dd>Москва</dd></dl>
+                                </div>
+                                <dl>
+                                    <dt>Описание</dt>
+                                    <dd>Электронный туристический сертификат (ЭТС) - приобретается участником сервиса, первым оплатившим предоплату за ЭТС в размере 2% от номинальной стоимости ЭТС. Использовать ЭТС можно через партнеров, указанных на сайте www.wau24.com в разделе <a href="#">наши партнеры</a></dd>
+                                </dl>
+                                <dl>
+                                    <dt>Правила использования</dt>
+                                    <dd>Электронный туристический сертификат (ЭТС) - приобретается участником сервиса, первым оплатившим предоплату за ЭТС в размере 2% от номинальной стоимости ЭТС. </dd>
+                                </dl>
+                                <dl>
+                                    <dt>Где предъявить?</dt>
+                                    <dd>Этот сертефикат вы можете предъявить в сети магазинов <a href="#">Евросеть</a></dd>
+                                </dl>
+                            </div>
+                            <!-- /product_info -->
+
+                            <div class="product_bottom_info">
+                                <span>У Вас будет 10 сек., чтобы купить этот лот</span>
+                                <dl>
+                                    <dt>Теги:</dt><dd><a href="#">Путешествия</a> <a href="#">от 900 WP.</a></dd>
+                                </dl>
+                            </div>
+
+                            <!-- wrap_review -->
+                            <div class="wrap_review" >
+                                <h3>2 комментария</h3>
+
+                                <!-- form_review -->
+                                <form class="form_review" action="#">
+                                    <input type="text" placeholder="Ваш комментарий"/>
+                                    <input type="submit" value="Отправить"/>
+                                </form>
+                                <!-- /form_review -->
+
+                                <!-- review -->
+                                <div class="review">
+
+                                    <!-- wrap_img -->
+                                    <div class="wrap_img"><img src="pic/photo1.png" width="48" height="48" alt=""/></div>
+                                    <!-- /wrap_img -->
+
+                                    <!-- review_info -->
+                                    <div class="review_info">
+                                        <span class="name">Имя Фамилия</span>
+                                        <time datetime="2014-02-05">5 фев 2014, 20:05</time>
+                                        <p>Электронный туристический сертификат (ЭТС) - приобретается участником сервиса, первым оплатившим предоплату за ЭТС в размере 2% от номинальной стоимости ЭТС. </p>
+                                    </div>
+                                    <!-- /review_info -->
+
+                                </div>
+                                <!-- /review -->
+
+                                <!-- review -->
+                                <div class="review">
+
+                                    <!-- wrap_img -->
+                                    <div class="wrap_img"><img src="pic/photo1.png" width="48" height="48" alt=""/></div>
+                                    <!-- /wrap_img -->
+
+                                    <!-- review_info -->
+                                    <div class="review_info">
+                                        <span class="name">Имя Фамилия</span>
+                                        <time datetime="2014-02-05">5 фев 2014, 20:05</time>
+                                        <p>Электронный туристический сертификат (ЭТС) - приобретается участником сервиса, первым оплатившим предоплату за ЭТС в размере 2% от номинальной стоимости ЭТС. </p>
+                                    </div>
+                                    <!-- /review_info -->
+
+                                </div>
+                                <!-- /review -->
+
+                            </div>
+                            <!-- /wrap_review -->
+
+                        </div>
+                        <!-- /wrap_product -->
+
+                    </div>
+                    <!-- /content -->
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- wrap_footer_menu -->
+        <div class="wrap_footer_menu">
+            <div class="footer_menu">
+                <a href="#">Выбрать сертификат</a>
+                <a href="#">Погасить сертификат</a>
+                <a href="#">Как работает сервис</a>
+                <a href="#">Каталог партнеров</a>
+                <a href="#">Контакты</a>
+
+                <!-- footer_project -->
+                <dl class="footer_project">
+                    <dt>Наши проекты:</dt>
+                    <dd><a href="#"><img title="wautour" src="img/wautour.png" width="58" height="25" alt=""/></a></dd>
+                    <dd><a href="#"><img title="waucard" src="img/waucard.png" width="58" height="25" alt=""/></a></dd>
+                </dl>
+                <!-- /footer_project -->
+
+            </div>
+        </div>
+        <!-- /wrap_footer_menu -->
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <!-- footer_text -->
+            <div class="footer_text">&copy; 2013 WAU | All rights reserved | При перепечатке материалов ссылка на источник обязательна.</div>
+            <!-- footer_text -->
+
+            <!-- created -->
+            <a class="created" title="siteoria" href="#"><img src="img/siteoria.png" width="104" height="47" alt=""/></a>
+            <!-- /created -->
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

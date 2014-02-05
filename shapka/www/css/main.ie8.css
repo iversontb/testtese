@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "logo";
+    src: url("../fonts/logo.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.product .img__big {
+margin-right 42px;
+}

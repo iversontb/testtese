@@ -1,0 +1,5 @@
+.callback, .appointment a, .sign_up, .caries .sign_up{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

@@ -1,0 +1,11 @@
+.content td {
+    padding: 10px 0;
+}
+.content td.nice_color {
+    font-weight: normal;
+    color: #0c9937;
+    font-size: 14px;
+}
+.person_info {
+
+}

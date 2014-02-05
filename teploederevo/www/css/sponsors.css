@@ -1,0 +1,55 @@
+.textContainer {
+    padding-top: 30px;
+}
+.textContainer a:hover{
+    text-decoration: none;
+}
+.textContainer a{
+    color: #69b295;
+    text-decoration: underline;
+}
+.textContainer h3{
+    color: #9f683f;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.textContainer h3 a{
+    color: #9f683f;
+    font-size: 20px;
+    font-weight: normal;
+    border-bottom: 1px dotted #9f683f;
+    text-decoration: none;
+}
+.tableWrap2{
+    width: 802px;
+    margin: 0 auto;
+    font-family: "times new roman";
+    margin-bottom: 40px;
+}
+.tableWrap2 table{
+    width: 100%;
+}
+.tableWrap2 th{
+    background: #69b295;
+    color: #fff;
+    height: 46px;
+    font-weight: normal;
+    padding: 0 20px;
+    vertical-align: middle;
+    border: 1px solid #fff;
+}
+.tableWrap2  .noStyle{
+    background: none;
+}
+.tableWrap2 tr:nth-child(odd) td{
+    background: #def9ee;
+}
+.tableWrap2  td{
+    background: #fbfdfb;
+    border-left: 2px solid #fff;
+    border-bottom: 1px solid #69b295;
+    height: 46px;
+    padding: 0 20px;
+    vertical-align: middle;
+}

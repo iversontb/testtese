@@ -1,0 +1,101 @@
+/* --------------- user_status --------------- */
+.user_status{
+    padding-top: 53px;
+    margin-left: 83px;
+    display: none;
+}
+.active_status{
+    display: block;
+}
+.user_status__topic{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.acceptedTop{
+    color: #8069d4;
+    border-bottom: 1px solid #8069d4;
+
+}
+.declinedTop{
+    color: #cc3e45;
+    border-bottom: 1px solid #cc3e45;
+}
+/* --------------- /user_status --------------- */
+
+
+/* --------------- user_info --------------- */
+.user_info{
+    margin-left: 77px;
+}
+.user_info__img{
+    width: 104px;
+    height: 104px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 4px solid #dfeded;
+    border-radius: 100px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 22px;
+}
+.user_info__img img{
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 100px;
+
+}
+.user_info__text{
+    width: 308px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 26px;
+    text-align: left;
+}
+.user_info__text h2{
+    color: #3d4655;
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 9px;
+}
+.work_place{
+    color: #5b5b5b;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 38px;
+}
+.meeting_time{
+    color: #3d4655;
+    background: url("../img/time.png") no-repeat left center;
+    line-height: 19px;
+    padding-left: 25px;
+    font-size: 18px;
+    margin-bottom: 16px;
+
+}
+.meeting_place:hover{
+    text-decoration: underline;
+}
+.meeting_place{
+    background: url("../img/pointer.png") no-repeat left center;
+    line-height: 20px;
+    color: #3d4655;
+    font-size: 18px;
+    padding-left: 25px;
+}
+/* --------------- /user_info --------------- */
+
+.disabled_type{
+    color: #b8bec2 !important;
+}
+.meeting_time.disabled_type{
+    background: url("../img/time-disabled.png") no-repeat left center;
+}
+.meeting_place.disabled_type{
+    background: url("../img/pointer-disabled.png") no-repeat left center;
+}

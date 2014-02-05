@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/GauraMap-Map.css" />
+
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/jquery.time-range.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+
+<!-- pop_back -->
+<div class="pop_back">
+
+    <!-- enter_form  если добавить форме класс error_form - будет выводиться текст, ошибка и красные поля у инпутов -->
+    <form class="enter_form ">
+        <h2>Вход в личный кабинет</h2>
+        <span class="close_pop">close</span>
+
+        <!-- enter_form_line -->
+        <div class="enter_form_line">
+            <label>Логин</label>
+            <input type="text">
+        </div>
+        <!-- /enter_form_line -->
+
+        <!-- enter_form_line -->
+        <div class="enter_form_line">
+            <label>Пароль</label>
+            <input type="password">
+        </div>
+        <!-- /enter_form_line -->
+
+        <p class="error_text">Логин или пароль неверны!</p>
+
+        <input type="submit" value="Войти" class="blue_submit">
+
+        <a href="#" class="forget_pas">Забыли пароль?</a>
+        <a href="#" class="registr_but">Зарегистрироваться</a>
+    </form>
+    <!-- /enter_form -->
+
+</div>
+<!-- /pop_back -->
+
+<!-- pop_back -->
+<div class="pop_back2">
+
+    <!-- enter_form -->
+    <form class="enter_form sortTown">
+        <h2>Вход в личный кабинет</h2>
+        <span class="close_pop">close</span>
+        <input type="text"  name="searchText" data-php="php/town-search.php" class="townSearch" placeholder="Москва">
+
+        <!-- resulSearch -->
+        <div class="resulSearch">
+            <ul>
+
+            </ul>
+        </div>
+        <!-- /resulSearch -->
+
+        <input type="submit" value="Выбрать" class="blue_submit">
+    </form>
+    <!-- /enter_form -->
+
+</div>
+<!-- /pop_back -->
+
+<!-- site -->
+<div class="site">
+<!-- header -->
+<header class="header">
+
+    <!-- header_inside -->
+    <div class="header_inside">
+
+        <!-- logo -->
+        <a href="#" title="На главную" class="logo"><img src="img/logo.png" width="233" height="66" alt=""></a>
+        <!-- /logo -->
+
+        <a href="#" class="town_select"><span>Выберите город</span></a>
+
+        <!-- main_menu -->
+        <nav class="main_menu">
+            <a href="#">О проекте</a>
+            <a href="#">Знания</a>
+            <a href="#">Карта</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <!-- main_menu -->
+
+        <!-- autorization_block -->
+        <div class="autorization_block">
+            <a href="#">Зарегистрироваться</a>
+            <a href="#" class="enter_but">Войти</a>
+        </div>
+        <!-- /autorization_block -->
+
+    </div>
+    <!-- /header_inside -->
+
+</header>
+<!-- /header -->
+
+<!-- site__content -->
+<div class="site__content">
+
+    <!-- content-wrap -->
+    <div class="content-wrap">
+
+
+
+        <!-- map_container -->
+        <div class="map_container">
+
+            <!-- map -->
+            <div class="map">
+                <img src="pic/pic6.jpg" width="100%" height="598" alt="">
+            </div>
+            <!-- /map -->
+
+            <!-- gray_block -->
+            <div class="gray_block">
+
+                <!-- inside_block -->
+                <div class="inside_block">
+
+                    <!-- line_container -->
+                    <div class="line_container">
+
+                        <!-- check_box_typoe -->
+                        <div class="check_box_type green_checkbox">
+                            <label for="11">Группы духовного общения</label>
+                            <input class="niceCheck" id="11" type="checkbox" name="ch1" />
+
+                        </div>
+                        <!-- check_box_typoe -->
+
+                        <!-- check_box_typoe -->
+                        <div class="check_box_type blue_checkbox">
+                            <label for="12">Организации</label>
+                            <input class="niceCheck" id="12" type="checkbox" name="ch1" />
+
+                        </div>
+                        <!-- check_box_typoe -->
+
+                        <!-- check_box_typoe -->
+                        <div class="check_box_type pink_checkbox">
+                            <label for="13">Рестораны и кафе</label>
+                            <input class="niceCheck" id="13" type="checkbox" name="ch1" />
+
+                        </div>
+                        <!-- check_box_typoe -->
+                    </div>
+                    <!-- /line_container -->
+
+                    <!-- day_line -->
+                    <div class="day_line">
+
+                        <!-- day_container -->
+                        <div class="day_container">
+                            <a href="#" class="active">пн</a>
+                            <a href="#">вт</a>
+                            <a href="#">ср</a>
+                            <a href="#">чт</a>
+                            <a href="#">пт</a>
+                            <a href="#">сб</a>
+                            <a href="#">вс</a>
+                        </div>
+                        <!-- /day_container -->
+
+                        <!-- time_range -->
+                        <div class="time_range">
+
+                            <!-- sliderCont -->
+                            <div class="sliderCont">
+                                <div id="slider"></div>
+                            </div>
+                            <!-- /sliderCont -->
+
+                            <div class="min_time">
+                                <input type="text" id="minCost" value="0" disabled />
+                            </div>
+
+                            <div class="max_time">
+                                <input type="text" id="maxCost" value="24" disabled />
+                            </div>
+
+                        </div>
+                        <!-- /time_range -->
+
+                    </div>
+                    <!-- /day_line -->
+
+                    <!-- check_box_typoe -->
+                    <div class="check_box_type fiolet_checkbox">
+                        <label for="16">Клубы</label>
+                        <input class="niceCheck" id="16" type="checkbox" name="ch1" />
+
+                    </div>
+                    <!-- check_box_typoe -->
+
+                    <!-- check_box_typoe -->
+                    <div class="check_box_type orange_checkbox">
+                        <label for="17">Событие, мероприятие и др.</label>
+                        <input class="niceCheck" id="17" type="checkbox" name="ch1" />
+
+                    </div>
+                    <!-- check_box_typoe -->
+
+
+
+                </div>
+                <!-- /inside_block -->
+
+            </div>
+            <!-- /gray_block -->
+
+        </div>
+        <!-- /map_container -->
+
+        <!-- inside_block -->
+        <div class="inside_block">
+
+            <!-- add_recently -->
+            <dl class="add_recently">
+                <dt>Недавно добавлено на карту:</dt>
+                <dd class="green_edit">Бхакти-Врикша в городе <b>Егорьевск</b> <a href="#">Посмотреть</a></dd>
+                <dd class="green_edit">Бхакти-Врикша в городе <b>Константинополь </b> <a href="#">Посмотреть</a></dd>
+                <dd class="pink_edit">Вегетарианское кафе «У Джаганатха» в городе  <b>Коломна</b> <a href="#">Посмотреть</a></dd>
+                <dd class="blue_edit">Центр ведической культуры «Энергия жизни» в городе  <b>Коломна</b> <a href="#">Посмотреть</a></dd>
+            </dl>
+            <!-- /add_recently -->
+
+
+        </div>
+        <!-- /inside_block -->
+
+    </div>
+    <!-- /content-wrap -->
+
+</div>
+<!-- /site__content -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <a href="#" class="footer_logo"></a>
+
+        <!-- footer_menu -->
+        <nav class="footer_menu">
+            <a href="#">О проекте</a>
+            <a href="#">Знания</a>
+            <a href="#">Карта</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <!-- /footer_menu -->
+
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

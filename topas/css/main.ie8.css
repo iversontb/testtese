@@ -1,0 +1,14 @@
+/* css for ltie8 */
+@font-face {
+    font-family: "lucida";
+    src: url("../fonts/lucida.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+.ares-slider2__next:hover, .ares-slider2__prev:hover {
+    filter: alpha(opacity=90);
+}
+.form_recommendation input:hover, .form_recommendation a:hover, .wrap_aside .form_selection input[type="submit"]:hover,
+.feedback input[type="submit"]:hover, .network a:hover {
+    filter: alpha(opacity=80);
+}

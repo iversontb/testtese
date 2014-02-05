@@ -1,0 +1,134 @@
+/* --------------- welcome --------------- */
+.welcome{
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-bottom: 40px;
+}
+
+h2.pattern{
+    position: relative;
+    padding-bottom: 42px;
+    background: url("../img/pattern-center.png") no-repeat 50% 35px;
+}
+h2.pattern:before{
+    content: '';
+    position: absolute;
+    background: url(../img/pattern-left.png) no-repeat;
+    left: 0;
+    bottom: 24px;
+    width: 128px;
+    height: 3px;
+}
+h2.pattern:after{
+    content: '';
+    position: absolute;
+    background: url(../img/pattern-right.png) no-repeat;
+    right: 0;
+    bottom: 24px;
+    width: 128px;
+    height: 3px;
+}
+.welcome .read_more a{
+    position: relative;
+    display: inline-block;
+    font-family: "Times New Roman";
+    color: #151516;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    margin-top: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: 6px;
+    background: #f6dec2; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f6dec2 0%, #7f6d5f 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6dec2), color-stop(100%,#7f6d5f)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f6dec2 0%,#7f6d5f 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f6dec2 0%,#7f6d5f 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f6dec2 0%,#7f6d5f 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f6dec2 0%,#7f6d5f 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6dec2', endColorstr='#7f6d5f',GradientType=0 ); /* IE6-9 */
+}
+
+.welcome .read_more:before{
+    content: '';
+    position: absolute;
+    background: url("../img/btn-pattern-left.png") no-repeat;
+    left: 7px;
+    bottom: 8px;
+    height: 15px;
+    width: 90px;
+}
+.welcome .read_more:after{
+    content: '';
+    position: absolute;
+    background: url("../img/btn-pattern-right.png") no-repeat;
+    right: 2px;
+    bottom: 8px;
+    height: 15px;
+    width: 91px;
+}
+.welcome .read_more a:hover{
+    background: #343438; /* Old browsers */
+    background: -moz-linear-gradient(top,  #343438 0%, #1b1b1e 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#343438), color-stop(100%,#1b1b1e)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #343438 0%,#1b1b1e 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #343438 0%,#1b1b1e 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #343438 0%,#1b1b1e 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #343438 0%,#1b1b1e 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#343438', endColorstr='#1b1b1e',GradientType=0 ); /* IE6-9 */
+    color:#ffffff;
+}
+/* --------------- /welcome --------------- */
+
+/* --------------- latest_collection --------------- */
+.latest_collection{
+    position: relative;
+    z-index: 1;
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 49px;
+}
+.latest_collection a{
+    display: inline-block;
+    margin-top: 20px;
+}
+.latest_collection a img{
+    margin-bottom: 6px;
+}
+.latest_collection h2.pattern span{
+    display: block;
+    margin-top: 4px;
+}
+.latest_collection h2.pattern a span, .latest_collection h3{
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 26px;
+    color: #f4ddc4;
+}
+.latest_collection h2.pattern a span{
+    width:276px
+}
+.latest_collection h2.pattern:hover a span{
+    color: #54545e;
+}
+.latest_collection h2.pattern{
+    background: url("../img/pattern-center.png") no-repeat 50% 94%;
+}
+.latest_collection h3{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+    color: #54545e;
+}
+/* --------------- /latest_collection --------------- */

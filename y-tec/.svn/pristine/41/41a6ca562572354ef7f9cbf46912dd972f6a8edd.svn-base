@@ -1,0 +1,74 @@
+/* --------------- ares-slider --------------- */
+.ares-slider {
+    width: 599px;
+    height: 431px;
+    border: 3px solid #cfd7de;
+    position: absolute;
+    top: 65px;
+    left: 138px;
+    color: #413e3f;
+    font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
+}
+.ares-slider .ares-slider__item{
+    width: 433px;
+    height: 397px;
+    padding: 34px 83px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: #fff;
+}
+.ares-slider h2 {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.ares-slider time {
+    color: #dc1f26;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 29px;
+}
+.ares-slider p {
+    font-size: 14px;
+    font-style: italic;
+    line-height: 24px;
+    margin-bottom: 29px;
+}
+.ares-slider span {
+    font-size: 14px;
+    display: block;
+}
+.ares-slider p + span{
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.ares-slider__next,
+.ares-slider__prev {
+    position: absolute;
+    content: '';
+    background: url("../img/slider-btn.png");
+    width: 38px;
+    height: 37px;
+    top: 198px;
+    cursor: pointer;
+}
+.ares-slider__prev {
+    left: 13px;
+}
+.ares-slider__next {
+    background-position: right 0;
+    right: 13px;
+}
+.ares-slider__next:hover {
+    background-position: right bottom;
+}
+.ares-slider__prev:hover {
+    background-position: 0 bottom;
+}
+.ares-slider__points {
+    display: none;
+}
+/* --------------- /slider --------------- */

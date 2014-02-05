@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Авто Юрист</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/navigator.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+
+        <!-- pop_up -->
+        <div class="pop_up">
+            <div class="close" title="close"></div>
+            <h2>Обратный звонок</h2>
+            <span>Введите имя и телефон и мы перезвоним Вам в течение 15 минут!</span>
+            <form action="php/feedback.php" id="feedback" >
+                <input type="text" required name="name" placeholder="Введите имя *">
+                <input type="text" required name="phone" placeholder="Ваш телефон *">
+                <input type="submit" value="Отправить">
+            </form>
+        </div>
+        <!-- /pop_up -->
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <h1 class="logo"><img src="pic/logo.png" width="457" height="102" alt="авто юрист"></h1>
+            <!-- /logo -->
+
+            <!-- slogan -->
+            <p class="slogan">защита прав автовладельцев</p>
+            <!-- /slogan -->
+
+            <!-- phone -->
+            <div class="phone">
+                <span>+8 800</span>
+                <span>770 0990</span>
+
+                <!-- order_call -->
+                <a class="order_call" href="#">заказать звонок</a>
+                <!-- /order_call -->
+
+            </div>
+            <!-- /phone -->
+
+
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- send_request -->
+                <div class="send_request">
+                    <h2>Отправить заявку на бесплатную консультацию</h2>
+                    <p>Стали участником ДТП?  Обращайтесь - мы обязательно поможем! Консультация абсолютно бесплатно!</p>
+                    <form action="#" method="get">
+                        <div>
+                            <label>Ваше имя<input type="text" name="name"></label>
+                            <label>Ваш телефон<input type="text" name="phone"></label>
+                            <label>Регион<input type="text" name="region"></label>
+                        </div>
+                        <div>
+                            <label>Описание ситуации (не обязательно)<textarea cols="58" rows="8"></textarea> </label>
+                        </div>
+                        <a href="#" class="send">отправить заявку</a>
+                    </form>
+                </div>
+                <!-- /send_request -->
+
+                <!-- why_we -->
+                <div class="why_we">
+                    <h2>Почему именно мы?!</h2>
+                    <ul>
+                        <li>86,8% выигранных дел</li>
+                        <li>мы помогаем только на основании закона</li>
+                        <li>все наши консультации бесплатные</li>
+                        <li>мы возвращаем права и после вступления постановления</li>
+                        <li>мы специализируемся исключительно в области автоправа</li>
+                    </ul>
+                </div>
+                <!-- /why_we -->
+
+                <!-- callback -->
+                <div class="callback">
+                    <h2>Заказать обратный звонок</h2>
+                    <form action="#" method="get">
+                        <div>
+                            <label>Ваше имя<input type="text" name="name"></label>
+                            <label>Ваш телефон<input type="text" name="phone"></label>
+                        </div>
+                        <input type="submit" value="заказать звонок">
+                    </form>
+                </div>
+                <!-- /callback -->
+
+                <!-- reviews -->
+                <div class="reviews">
+
+                    <h2>Отзывы:</h2>
+                    <div>
+                        <span>Алексей:</span>
+                        <div class="stars"><div style="width: 80%;"></div></div>
+                    <p>Скандал, вызванный разоблачениями бывшего сотрудника Агентства Национальной Безопасности (АНБ) США Эдварда Сноудена, заставил многих краснеть и в Австралии. Как одновременно сообщили несколько зарубежных изданий, ссылаясь на раскрытые экс-агентом документы.</p>
+                    </div>
+                    <div>
+                        <span>Алексей:</span>
+                        <div class="stars"><div style="width: 80%;"></div></div>
+                        <p>Скандал, вызванный разоблачениями бывшего сотрудника Агентства Национальной Безопасности (АНБ) США Эдварда Сноудена, заставил многих краснеть и в Австралии. Как одновременно сообщили несколько зарубежных изданий, ссылаясь на раскрытые экс-агентом документы.</p>
+                    </div>
+                </div>
+                <!-- reviews -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <!-- social_networks -->
+            <div class="social_networks">
+                <a href="#" class="twitter"></a>
+                <a href="#" class="vk"></a>
+                <a href="#" class="facebook"></a>
+            </div>
+            <!-- /social_networks -->
+
+            <!-- up -->
+            <a data-href="site" class="up">наверх</a>
+            <!-- /up -->
+
+            <!-- number_phone -->
+            <span class="number_phone">+88007700990</span>
+            <!-- /number_phone -->
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

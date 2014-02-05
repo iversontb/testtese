@@ -1,0 +1,195 @@
+.container{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+.container > img{
+    display: block;
+    box-shadow: 0 3px 5px #adadad;
+    margin-bottom: 15px;
+}
+.gallList{
+
+}
+.gallList li img{
+    display: block;
+    box-shadow: 0 0 5px #adadad;
+    margin-bottom: 15px;
+}
+.gallList li{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-left: -4px;
+    padding-right: 15px;
+    padding-left: 4px;
+    -webkit-box-sizing: border-box;
+}
+
+.containerMenu a span{
+    color: #000;
+}
+.containerMenu a.active,
+.containerMenu a:hover{
+    background: url("../img/shadow.png") no-repeat bottom left;
+    background-size:  100% 14px;
+}
+.containerMenu a{
+    display: block;
+    color: #2f75af;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+.typeOfCmoer{
+    display: inline-block;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.description .typeOfCmoer{
+    margin-bottom: 15px;
+}
+.orange{
+    background: #efd662;
+}
+.blue{
+    background: #1b87a2;
+}
+.green{
+    background: #a1ef62;
+}
+.description{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-left: 20px;
+}
+.bigLikes .moreInfo:hover{
+
+    text-decoration: underline;
+}
+.bigLikes .moreInfo{
+    display: inline-block;
+    color: #2f75af;
+    font-size: 14px;
+    background: none;
+    vertical-align: top;
+    text-decoration: none;
+    margin: 3px 0 0 10px;
+}
+.workTime dl{
+    color: #646f78;
+    margin-bottom: 25px;
+}
+.workTime dl:first-child dt{
+    display: block;
+    font-weight: 400;
+}
+.workTime dl:first-child dd{
+    display: block;
+    font-size: 38px;
+    color: #252b30;
+}
+.workTime dl dt{
+    display: inline-block;
+    font-weight: 800;
+}
+.workTime dl dd{
+    display: inline-block;
+}
+.bigLikes{
+    margin-bottom: 20px;
+}
+a.mapShow{
+    font-weight: normal;
+    background: url("../img/pointer2.png") no-repeat;
+    padding-left: 25px;
+    line-height: 29px;
+    display: inline-block;
+    color: #2f75af;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.mapShow:hover{
+    text-decoration: underline;
+}
+.tabs li{
+    display: inline-block;
+    vertical-align: top;
+}
+.tabs a{
+    color: #2f75af;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 5px 10px 0 10px;
+}
+.tabs a:hover{
+    color: #4f4f4f;
+}
+.tabs a.active{
+    border: 1px solid #8b8b8b;
+    border-bottom: none;
+    color: #4f4f4f;
+}
+.tabBlock address{
+    font-style: normal;
+}
+.tabBlock{
+    color: #646f78;
+    font-size: 14px;
+}
+.tabBlock dl{
+    overflow: hidden;
+    height: 29px;
+    line-height: 29px;
+}
+.tabBlock dl dt{
+    float: left;
+    margin-right: 5px;
+}
+.tabBlock dl dd{
+    font-weight: 800;
+}
+.tabBlock a:hover{
+    text-decoration: underline;
+}
+.tabBlock a{
+    color: #2f75af;
+    line-height: 29px;
+    font-weight: 800;
+    text-decoration: none;
+}
+.payType{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.payType li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.descriptionText{
+    margin-bottom: 50px;
+}
+.descriptionText img{
+    display: block;
+    margin-bottom: 20px;
+}
+.descriptionText h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+.descriptionText p{
+    color: #646f78;
+    font-size: 18px;
+    line-height: 21px;
+}

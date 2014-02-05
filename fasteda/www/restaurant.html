@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/jquery.scrollbar.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery.scrollbar.js"></script>
+    <script src="js/scroll-init.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="js/basket_hold.js"></script>
+    <script src="js/jquery.map.show.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+
+</head>
+<body>
+
+
+<!-- site -->
+<div class="site">
+
+<!-- message -->
+<div class="message">
+    Срочное сообщение, которое сообщает о каком-то <a href="#">событии!</a>
+    <a href="#" class="close" title="close">close</a>
+</div>
+<!-- /message -->
+
+<!-- header -->
+<header class="header inner_header">
+
+    <!-- header_top -->
+    <div class="header_top">
+
+        <div class="block_inside">
+
+            <!-- logo -->
+            <a href="#" title="На главную" class="logo"><img src="img/logo.png" width="175" height="47" alt=""></a>
+            <!-- /logo -->
+
+
+            <!-- wrap_mainMenu -->
+            <div class="wrap_mainMenu">
+                <table class="mainMenu">
+                    <tbody>
+                    <tr>
+                        <td><a href="tel:702-33-22" class="phone">702-33-22</a></td>
+                        <td><a href="#">Битвы</a></td>
+                        <td><a href="#">Купить скидку</a></td>
+                        <td><a href="#" class="instagram">instagram</a></td>
+                        <td><form class="header_search" action="#"><input type="text"/></form></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //wrap_mainMenu -->
+
+        </div>
+
+    </div>
+    <!-- /header_top -->
+
+    <!-- header_banner -->
+    <div class="header_banner"><img src="img/header_banner.jpg" height="150" alt=""/></div>
+    <!-- /header_banner -->
+
+    <!-- subMenu -->
+    <nav class="subMenu">
+        <ol id="nav">
+            <li><a href="#"><div>Выберите ресторан</div></a></li>
+            <li><a href="#"  class="active"><div>Посмотрите меню</div></a></li>
+            <li><a href="#"><div>Сделайте заказ</div></a></li>
+            <li><a href="#" class="lastMenu"><div>Встречайте курьера</div></a></li>
+        </ol>
+    </nav>
+    <!-- /subMenu -->
+
+</header>
+<!-- /header -->
+
+<!-- site__content -->
+<div class="site__content">
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+
+
+<!-- grayBlock -->
+<div class="grayBlock">
+
+    <!-- blue_crumbs -->
+    <div class="blue_crumbs">
+        <a href="#">Главная </a>
+        <a href="#">Каталог ресторанов</a>
+        <a href="#">Адмиралтейская </a>
+        <span>Subway</span>
+    </div>
+    <!-- /blue_crumbs -->
+
+    <!-- tabs -->
+    <div class="tabs">
+        <a href="#">
+            <span><span>Меню ресторана</span></span>
+        </a>
+        <a href="#">
+            <span><span>О ресторане</span></span>
+        </a>
+        <a href="#"  class="last active"  >
+            <span><span>Отзывы (94/3)</span></span>
+        </a>
+    </div>
+    <!-- /tabs -->
+
+    <!-- tabContainer -->
+    <div class="tabContainer">
+
+        <!-- imgWrap -->
+        <div class="imgWrap">
+
+            <div>
+                <img src="pic/pic12.jpg" width="198" height="60" alt="">
+            </div>
+
+        </div>
+        <!-- /imgWrap -->
+
+        <!-- resturantPlace -->
+        <div class="resturantPlace">
+
+            <!-- mapPlace -->
+            <span href="#" class="mapPlace">
+
+                <span>карта доставки</span>
+
+                    <!-- mapContainer -->
+                <div class="mapContainer">
+                    <!-- stationList -->
+                    <div class="stationList">
+
+                    <div class="tableWrap">
+
+                    <table>
+                    <tbody>
+                    <tr>
+                        <td  class="no_hover">A</td>
+                        <td  class="no_hover">О</td>
+
+                    </tr>
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Автово</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Обводный канал</a> </td>
+                    </tr>
+                    <tr>
+                        <td  class="no_delivery"><a href="#" >Адмиралтейская</a> </td>
+                        <td  class="no_delivery"><a href="#" >Обухово</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Академическая</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Озерки</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td  class="no_hover">Б</td>
+                        <td  class="no_hover">П</td>
+
+                    </tr>
+
+                    <tr>
+                        <td  class="no_delivery"><a href="#" >Балтийская</a> </td>
+                        <td  class="no_delivery"><a href="#" >Парк Победы</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Бухарестская</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Парнас</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td  class="no_hover">В</td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Петраградская</a> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Владимерская</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Пионерская</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Волковская</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Площадь Александра Невского</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Выборгыская</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Площадь Восстания</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td  class="no_hover">Г</td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Площадь Ленина</a> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Горьковская</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Площадь Мужества</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Готсиный двор</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Политехническая</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Гражданский проспект</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Приморская</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td  class="no_hover">Д</td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Пролетарская</a> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Девяткино</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Проспект Большевиков</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Достоевская</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Проспект Ветеранов</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td  class="no_hover">Е</td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Проспект Просвещения</a> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Елизаровская</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Пушкинская</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td  class="no_hover">З</td>
+                        <td  class="no_hover">Р</td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Звездная</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Рыбатскаое</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Звенигородская</a> </td>
+                        <td  class="no_hover">С</td>
+                    </tr>
+
+                    <tr>
+                        <td  class="no_hover">К</td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Садовая</a> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Кировский завод</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Сенная площадь</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Комендантский проспект</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Спасская</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Крестовский остров</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Спортиваня</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Купчино</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Старая Деревня</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td  class="no_hover">Л</td>
+                        <td  class="no_hover">Т</td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Ладожская</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Технологический институт</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Ленинский проспект</a> </td>
+                        <td  class="no_hover">У</td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Лесная</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Удельная</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Лиговский проспект</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Улица Дыбенко</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Ломоносовская</a> </td>
+                        <td  class="no_hover">Ф</td>
+
+                    </tr>
+
+                    <tr>
+                        <td  class="no_hover">М</td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Фрунзенская</a> </td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Маяковская</a> </td>
+                        <td  class="no_hover">Ч</td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Международная</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Черная речка</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Московская</a> </td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Чкаловская</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Московские ворота</a> </td>
+                        <td  class="no_hover">Э</td>
+
+                    </tr>
+
+                    <tr>
+                        <td  class="no_hover">Н</td>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Электросила</a> </td>
+
+                    </tr>
+
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Нарвская</a> </td>
+                        <td  class="no_hover"></td>
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Невский проспект</a> </td>
+                        <td  class="no_hover"></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><a href="#"><img src="pic/pic12.png" height="15px">Новочеркасская</a> </td>
+                        <td  class="no_hover"></td>
+
+                    </tr>
+
+                    </tbody>
+                    </table>
+
+                    </div>
+
+
+
+                    </div>
+                    <!-- /stationList -->
+                </div>
+                <!-- /mapContainer -->
+
+            </span>
+            <!-- /mapPlace -->
+
+
+
+            <div class="socialWrap">
+                <script type="text/javascript">(function() {
+                    if (window.pluso)if (typeof window.pluso.start == "function") return;
+                    if (window.ifpluso==undefined) { window.ifpluso = 1;
+                        var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                        s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                        s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                        var h=d[g]('body')[0];
+                        h.appendChild(s);
+                    }})();</script>
+                <div class="pluso" data-background="#ebebeb" data-options="big,square,line,horizontal,counter,theme=04" data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print"></div>
+            </div>
+
+        </div>
+        <!-- /resturantPlace -->
+
+
+        <!-- restoruntText -->
+        <div class="restoruntText">
+
+            <h3>Доставка Subway</h3>
+            <!--<p>Свежие, вкусные, натуральные сэндвичи от Sabway. Сегодня SUBWAY® — это более 39 000 ресторанов в 102 странах мира. Subway является одним из лидеров индустрии фаст-фуда, а сэндвичи SUBWAY® являются здоровой альтернативой жирной пище, приготовленной на полуфабрикатах. Глобальная миссия Subway — быть № 1 в мире в сфере обслуживания клиентов и по развитию сети ресторанов в мире.</p>-->
+
+            <!-- foodType -->
+            <div class="foodType">
+                <a href="#">Фаст-фуд</a>,
+                <a href="#">сытная</a>,
+                <a href="#">вегетарианская</a>,
+                <a href="#">бургеры</a>,
+                <a href="#">салаты</a>,
+                <a href="#">напитки</a>
+            </div>
+            <!-- /foodType -->
+
+            <!-- payType -->
+            <dl class="payType">
+                <dt >Варианты оплаты:</dt>
+                <dd ><span class="pay1">Оплата по карте
+                на сайте</span> </dd>
+                <dd ><span  class="pay2">Оплата по карте
+                курьеру</span> </dd>
+                <dd><span  class="pay3" >Сбербанк квитанция</span> </dd>
+
+            </dl>
+            <!-- /payType -->
+
+
+
+
+
+
+        </div>
+        <!-- /restoruntText -->
+
+        <!-- infoForClient -->
+        <div class="infoForClient">
+            <div class="info1">
+                Время заказа
+                <span>09:00 - 22:00</span>
+            </div>
+            <div class="info2">
+                Время доставки
+                <span>60-90 мин.</span>
+            </div>
+            <div class="info3">
+                Стоимость доставки
+                <span>350 P</span>
+            </div>
+            <div class="info4">
+                Минимальная сумма
+                <span>300 P</span>
+            </div>
+        </div>
+        <!-- /infoForClient -->
+
+
+
+    </div>
+    <!-- /tabContainer -->
+
+    <!-- basketBlock -->
+    <form action="#" method="post" class="basketBlock">
+
+        <!-- basketHead -->
+        <dl class="basketHead littleSocial">
+            <dt>Ваш заказ:</dt>
+            <dd><a href="#">вход</a> </dd>
+            <dd><a href="#" class="liitelVk" title="vkontakte">vkontakte</a> </dd>
+            <dd><a href="#" class="littleTw" title="littleTwitter">twitter</a> </dd>
+            <dd><a href="#" class="littleFb" title="facebook">facebook</a> </dd>
+        </dl>
+        <!-- /basketHead -->
+
+        <!-- scroll-simple -->
+        <div id="test-webkit" class="content scroll-simple scroll-simple_outer">
+
+            <!-- resizable -->
+            <div class="resizable">
+
+                <!-- basketWrap -->
+                <div class="basketWrap">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Белый хлеб</td>
+                            <td>1 шт.</td>
+                            <td></td>
+                            <td><span class="delete">delete</span> </td>
+                        </tr>
+                        <tr>
+                            <td>Белый хлеб</td>
+                            <td></td>
+                            <td>110 Р</td>
+                            <td><span class="delete">delete</span> </td>
+                        </tr>
+                        <tr>
+                            <td>Белый хлеб</td>
+                            <td></td>
+                            <td>110 Р</td>
+                            <td><span class="delete">delete</span> </td>
+                        </tr>
+                        <tr>
+                            <td>Белый хлеб</td>
+                            <td>1 шт.</td>
+                            <td>110 Р</td>
+                            <td><span class="delete">delete</span> </td>
+                        </tr>
+                        <tr>
+                            <td>Белый хлеб</td>
+                            <td>1 шт.</td>
+                            <td></td>
+                            <td><span class="delete">delete</span> </td>
+                        </tr>
+                        <tr>
+                            <td>Белый хлеб</td>
+                            <td></td>
+                            <td>110 Р</td>
+                            <td><span class="delete">delete</span> </td>
+                        </tr>
+                        <tr>
+                            <td>Белый хлеб</td>
+                            <td></td>
+                            <td>110 Р</td>
+                            <td><span class="delete">delete</span> </td>
+                        </tr>
+                        <tr>
+                            <td>Белый хлеб</td>
+                            <td>1 шт.</td>
+                            <td>110 Р</td>
+                            <td><span class="delete">delete</span> </td>
+                        </tr>
+                        <tr>
+                            <td>Белый хлеб</td>
+                            <td>1 шт.</td>
+                            <td></td>
+                            <td><span class="delete">delete</span> </td>
+                        </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
+                <!-- /basketWrap -->
+
+            </div>
+            <!-- /resizable -->
+
+        </div>
+        <!-- /scroll-simple -->
+
+        <div class="deliveryCost">Доставка — 250 P</div>
+
+        <div class="lineContainer">
+            <input class="niceCheck" id="11" type="checkbox" name="ch1" />
+            <label for="11">Ускоренная доставка (30 мин.) + 200 p</label>
+        </div>
+
+        <div class="lineContainer">
+            <input class="niceCheck message_check" id="888" type="checkbox" name="ch1" />
+            <label for="888">Доставка из Минимаркета(+100 руб.)</label>
+        </div>
+
+        <textarea class="comments_text delivery_message" placeholder="Что доставить"></textarea>
+
+
+        <textarea class="comments_text" placeholder="Комментарий к заказу"></textarea>
+
+
+        <!-- totalCost -->
+        <dl  class="totalCost">
+            <dt>Итого:</dt>
+            <dd>375 P</dd>
+        </dl>
+        <!-- /totalCost -->
+
+        <input type="submit" class="eBut" value="Оформите заказ">
+
+    </form>
+    <!-- /basketBlock -->
+
+    <!-- form_review -->
+    <form class="form_review" action="#">
+        <h2>Оставьте отзыв</h2>
+        <textarea name=""></textarea>
+
+        <div class="good_submit active">
+            <input type="submit" value="Классно!"/>
+        </div>
+
+        <div class="bad_submit">
+            <input type="submit" value="Так себе."/>
+        </div>
+
+        <dl class="log_in">
+            <dt>Чтобы оставить отзыв,  <a href="#">войдите</a></dt>
+            <dd>
+                <a class="vkontakte" href="#"></a>
+                <a class="twitter" href="#"></a>
+                <a class="facebook" href="#"></a>
+            </dd>
+        </dl>
+    </form>
+    <!-- /form_review -->
+
+    <!-- contentContainer -->
+    <div class="contentContainer">
+
+
+
+        <!-- restaurant_reviews -->
+        <div class="restaurant_reviews">
+
+            <h2>Отзывы о ресторане “Subway”</h2>
+
+            <!-- review -->
+            <div class="review good_review">
+                <a class="facebook" href="#"></a>
+                <a href="#" class="name">Евгений</a><time datetime="2013-07-31">31 июля в 19:11</time>
+                <p>Пока нес, курьер все съел. Он сказал, что было очень вкусно. Я ему верю.</p>
+                <div class="wrap_img"><img src="img/photo.png" width="150" height="99" alt=""/></div>
+            </div>
+            <!-- /review -->
+
+            <!-- review -->
+            <div class="review bad_review">
+                <a class="facebook" href="#"></a>
+                <a href="#" class="name">Татьяна Жиляева</a><time datetime="2013-07-31">31 июля в 19:11</time>
+                <p>Доставка была не просто долгой, а ОЧЕНЬ долгой, курьер потерялся, хотя наш дом есть на всех картах, и мы
+                    предупреждали как к нам ехать. Естественно, сэндвичи остыли, и все были неимоверно злы. Единственный плюс, что в
+                    итоге не стали брать деньги за доставку. А еда в сабвее всегда была хороша ;)</p>
+
+                <!-- answer -->
+                <div class="answer">
+                    <span class="name">Генеральный директор корпорации Fasteda </span>
+                    <p>Этот курьер уже остывает в канаве. Такое больше не повторится. Приносим извинения за доставленные
+                        неудобства и пусть вас не мучает совесть.</p>
+                </div>
+                <!-- /answer -->
+
+            </div>
+            <!-- /review -->
+
+            <!-- review -->
+            <div class="review good_review">
+                <a class="facebook" href="#"></a>
+                <a href="#" class="name">Евангелина</a><time datetime="2013-07-31">31 июля в 19:11</time>
+                <p>Сендвичи свежие, вкусные, впрочем, как всегда.
+                    Отдельно стоит отметить работу курьера, который приехал меньше чем за час, вместо заявленных полутора часов и был
+                    невероятно обходителен. Дайте премию парню! Да благословит вас Господь!</p>
+            </div>
+            <!-- /review -->
+
+            <!-- next_reviews -->
+            <div class="next_reviews">
+                <!-- review -->
+                <div class="review good_review">
+                    <a class="facebook" href="#"></a>
+                    <a href="#" class="name">Евгений</a><time datetime="2013-07-31">31 июля в 19:11</time>
+                    <p>Пока нес, курьер все съел. Он сказал, что было очень вкусно. Я ему верю.</p>
+                    <div class="wrap_img"><img src="img/photo.png" width="150" height="99" alt=""/></div>
+                </div>
+                <!-- /review -->
+
+                <!-- review -->
+                <div class="review bad_review">
+                    <a class="facebook" href="#"></a>
+                    <a href="#" class="name">Татьяна Жиляева</a><time datetime="2013-07-31">31 июля в 19:11</time>
+                    <p>Доставка была не просто долгой, а ОЧЕНЬ долгой, курьер потерялся, хотя наш дом есть на всех картах, и мы
+                        предупреждали как к нам ехать. Естественно, сэндвичи остыли, и все были неимоверно злы. Единственный плюс, что в
+                        итоге не стали брать деньги за доставку. А еда в сабвее всегда была хороша ;)</p>
+
+                    <!-- answer -->
+                    <div class="answer">
+                        <span class="name">Генеральный директор корпорации Fasteda </span>
+                        <p>Этот курьер уже остывает в канаве. Такое больше не повторится. Приносим извинения за доставленные
+                            неудобства и пусть вас не мучает совесть.</p>
+                    </div>
+                    <!-- /answer -->
+
+                </div>
+                <!-- /review -->
+
+                <!-- review -->
+                <div class="review good_review">
+                    <a class="facebook" href="#"></a>
+                    <a href="#" class="name">Евангелина</a><time datetime="2013-07-31">31 июля в 19:11</time>
+                    <p>Сендвичи свежие, вкусные, впрочем, как всегда.
+                        Отдельно стоит отметить работу курьера, который приехал меньше чем за час, вместо заявленных полутора часов и был
+                        невероятно обходителен. Дайте премию парню! Да благословит вас Господь!</p>
+                </div>
+                <!-- /review -->
+            </div>
+            <!-- /next_reviews -->
+
+            <!-- wrap_button -->
+            <div class="wrap_button">
+                <a class="to_menu" href="#">В меню</a>
+                <a class="next_item" href="#">Следующие 20 отзывов</a>
+            </div>
+            <!-- /wrap_button -->
+
+        </div>
+        <!-- /restaurant_reviews -->
+
+    </div>
+    <!-- /contentContainer -->
+
+</div>
+<!-- /grayBlock -->
+
+</div>
+<!-- /content-wrap -->
+
+</div>
+<!-- /site__content -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <!-- footerMenu -->
+        <ul class="footerMenu">
+
+            <li>
+                <a href="#">Доставка</a>
+            </li>
+            <li>
+                <a href="#">О компании</a>
+            </li>
+            <li>
+                <a href="#">Оплата</a>
+            </li>
+            <li>
+                <a href="#">Варианты оплаты</a>
+            </li>
+            <li>
+                <a href="#">Сотрудничество   </a>
+            </li>
+            <li>
+                <a href="#">Блог</a>
+            </li>
+            <li>
+                <a href="#">Рвбота у нас</a>
+            </li>
+            <li>
+                <a href="#">Отзывы и предложения </a>
+            </li>
+        </ul>
+        <!-- /footerMenu -->
+
+        <address class="address">197343, г. Санкт-Петербург, ул. Сердобольская д.7 Телефон <b>(812) 702-33-32</b></address>
+
+        <p class="copy">&copy; FastEda 2008-2013  <i>Все упомянутые на сайте тоговые марки принадлежат их уважаемым владельцам.
+            ООО «Провизия», ОГРН 1099847000109, ИНН 7839414284</i></p>
+
+        <dl class="creaters">
+            <dt>Дизайн сайта:</dt>
+            <dd><a href="#">сайтория.рф</a> </dd>
+        </dl>
+
+        <div class="social">
+            <a href="#" title="vkontakte" class="vkontakte">vkontakte</a>
+            <a href="#" title="facebook" class="facebook">facebook</a>
+            <a href="#" title="twitter" class="twitter">twitter</a>
+        </div>
+
+        <div class="stores">
+            <a href="#" class="appstore" title="appstore">appstore</a>
+            <a href="#" class="androidMarket" title="androidMarket">androidMarket</a>
+        </div>
+
+        <a href="#" class="upButton">Наверх</a>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

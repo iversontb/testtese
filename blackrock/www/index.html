@@ -1,0 +1,572 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/cusel.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.7.min.js"></script>
+    <!--<script src="js/jquery-1.8.3.min.js"></script>-->
+    <script src="js/jquery.slides.min.js"></script>
+
+    <script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+    <script type="text/javascript" src="js/main-gall.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+        <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <div class="site__layout">
+            <!-- header -->
+            <header class="header">
+
+                <!-- logo -->
+                <h1 class="logo"><a href="index.html" title="Main"><img src="img/logo.png" height="47" width="257" alt=""></a></h1>
+                <!-- /logo -->
+
+                <!-- main-menu -->
+                <nav class="main-menu">
+                    <ol class="main-menu__layout">
+                        <li class="main-menu__item "><a href="#" class="main-menu__lnk">Продажа недвижимости</a></li>
+                        <li class="main-menu__item main-menu__item_active"><span class="main-menu__lnk" >Аренда</span></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">О компании</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                    </ol>
+                </nav>
+                <!-- /main-menu -->
+
+                <!-- language -->
+                <div class="language">
+                    <ul class="language__layout">
+                        <li class="language__item language__item_active"><span class="language__lnk">Ру</span></li>
+                        <li class="language__item"><a class="language__lnk" href="#"><span>Eng</span></a></li>
+                    </ul>
+                </div>
+                <!-- /language -->
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- sliderContainer -->
+                <div class="sliderContainer">
+
+
+                    <!-- container2 -->
+                    <div class="container2">
+                        <div id="slides">
+                            <a href="#" class="contBox">
+                                <img src="pic/pic1.jpg" alt="" width="1000" height="440" />
+                                <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                            </a>
+                            <a href="#" class="contBox">
+                                <img src="pic/pic2.jpg" alt="" width="1000" height="440" />
+                                <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                            </a>
+                            <a href="#" class="contBox">
+                                <img src="pic/pic1.jpg" alt="" width="1000" height="440" />
+                                <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                            </a>
+                            <a href="#" class="contBox">
+                                <img src="pic/pic2.jpg" alt="" width="1000" height="440" />
+                                <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                            </a>
+                            <a href="#" class="contBox">
+                                <img src="pic/pic1.jpg" alt="" width="1000" height="440" />
+                                <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                            </a>
+                            <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+                            <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+                        </div>
+                    </div>
+                    <!-- /container2 -->
+
+                    <!-- sendOrder -->
+                    <form class="sendOrder" method="post" action="#">
+                        <p class="formTopic">Отправить заявку</p>
+                        <p>Оставте заявку на поиск обьекта
+                            недвижимости и наш менеджер
+                            свяжеться с вами!</p>
+                        <div class="inputWrap">
+                            <input type="text" placeholder="Имя">
+                        </div>
+                        <div class="inputWrap">
+                            <input type="text" placeholder="E-mail">
+                        </div>
+                        <div class="inputWrap">
+                            <input type="text" placeholder="Номер телефона">
+                        </div>
+                        <textarea class="textareaStyle" placeholder="Комментарий"></textarea>
+                        <input type="submit" value="Отправить" class="e-But">
+                    </form>
+                    <!-- /sendOrder -->
+
+
+                </div>
+                <!-- /sliderContainer -->
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- content -->
+                    <div class="content">
+
+                        <!-- tabs -->
+                        <ul class="tabs">
+                            <li><h2 class="active" id="0">Продажа недвижимости</h2></li>
+                            <li><h2 id="1">Аренда недвижимости</h2></li>
+                        </ul>
+                        <!-- /tabs -->
+
+                        <!-- blockWrap -->
+                        <div class="blockWrap first">
+
+                            <!-- realEstate -->
+                            <div class="realEstate">
+
+                                <!-- realEstateSell -->
+                                <div class="realEstateSell">
+
+
+                                    <!-- realEstateSellForm -->
+                                    <form action="#" method="post" class="realEstateSellForm">
+                                        <div class="lineContainer">
+                                            <label>Местоположение</label>
+                                            <div class="selectWrap">
+                                                <select id="idSelect" name="nameSelect">
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст2">текст2</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="lineContainer">
+                                            <label>Тип недвижимости</label>
+                                            <div class="selectWrap">
+                                                <select id="idSelect2" name="nameSelect">
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст2">текст2</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="lineContainer">
+                                            <label>Площадь, м2</label>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="lineContainer">
+                                            <label>Кол-во спален</label>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="lineContainer littleInput">
+                                            <label>Площадь участка, м2</label>
+                                            <span class="floatBlock">от</span>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                            <span class="floatBlock">до</span>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="lineContainer littleInput">
+                                            <label>Цена</label>
+                                            <span class="floatBlock">от</span>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                            <span class="floatBlock">до</span>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <input type="submit" value="Найти обьект" class="e-But2">
+                                    </form>
+                                    <!-- /realEstateSellForm -->
+
+                                </div>
+                                <!-- /realEstateSell -->
+
+                                <!-- realEstateOrenda -->
+                                <div class="realEstateOrenda">
+
+
+                                    <!-- littleGallWraper -->
+                                    <div class="littleGallWraper">
+
+                                        <!-- sliderContainer -->
+                                        <div class="sliderContainer2">
+                                            <!-- container2 -->
+                                            <div class="container2">
+                                                <div id="slides2">
+                                                    <a href="#" class="contBox">
+                                                        <img src="pic/pic3.jpg" alt="" width="470" height="289" />
+                                                        <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                                                    </a>
+                                                    <a href="#" class="contBox">
+                                                        <img src="pic/pic4.jpg" alt="" width="470" height="289"  />
+                                                        <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                                                    </a>
+                                                    <a href="#" class="contBox">
+                                                        <img src="pic/pic3.jpg" alt="" width="470" height="289" />
+                                                        <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- /container2 -->
+                                        </div>
+                                        <!-- /sliderContainer -->
+                                    </div>
+                                    <!-- /littleGallWraper -->
+
+                                </div>
+                                <!-- /realEstateOrenda -->
+
+                            </div>
+                            <!-- /realEstate -->
+
+                            <!-- ourServices -->
+                            <div class="ourServices">
+
+                                <h3 class="serviceTopic">Наши услуги</h3>
+
+                                <!-- service -->
+                                <ul class="service">
+                                    <li><a href="#" class="serv1">Подбор недвижимости</a></li>
+                                    <li><a href="#" class="serv2">Оформление сделки</a></li>
+                                    <li><a href="#" class="serv3">Налоги в Черногории</a></li>
+                                    <li><a href="#" class="serv4">ВНЖ в Черногории</a></li>
+                                    <li><a href="#" class="serv5">Законы в Черногории</a></li>
+                                    <li><a href="#" class="serv6">Инвестиции в Черногории</a></li>
+                                </ul>
+                                <!-- /service -->
+
+                            </div>
+                            <!-- /ourServices -->
+
+                        </div>
+                        <!-- /blockWrap -->
+
+                        <!-- blockWrap -->
+                        <div class="blockWrap">
+
+                            <!-- realEstate -->
+                            <div class="realEstate">
+
+                                <!-- realEstateSell -->
+                                <div class="realEstateSell">
+
+
+                                    <!-- realEstateSellForm -->
+                                    <form action="#" method="post" class="realEstateSellForm">
+                                        <div class="lineContainer">
+                                            <label>Местоположение</label>
+                                            <div class="selectWrap">
+                                                <select id="idSelect4" name="nameSelect">
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст2">текст2</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="lineContainer">
+                                            <label>Тип недвижимости</label>
+                                            <div class="selectWrap">
+                                                <select id="idSelect3" name="nameSelect">
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст2">текст2</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                    <option value="текст">текст</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="lineContainer">
+                                            <label>Площадь, м2</label>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="lineContainer">
+                                            <label>Кол-во спален</label>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="lineContainer littleInput">
+                                            <label>Площадь участка, м2</label>
+                                            <span class="floatBlock">от</span>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                            <span class="floatBlock">до</span>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <div class="lineContainer littleInput">
+                                            <label>Цена</label>
+                                            <span class="floatBlock">от</span>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                            <span class="floatBlock">до</span>
+                                            <div class="inputWrap">
+                                                <input type="text">
+                                            </div>
+                                        </div>
+                                        <input type="submit" value="Найти обьект" class="e-But2">
+                                    </form>
+                                    <!-- /realEstateSellForm -->
+
+                                </div>
+                                <!-- /realEstateSell -->
+
+                                <!-- realEstateOrenda -->
+                                <div class="realEstateOrenda">
+
+
+                                    <!-- littleGallWraper -->
+                                    <div class="littleGallWraper">
+
+                                        <!-- sliderContainer -->
+                                        <div class="sliderContainer2">
+                                            <!-- container2 -->
+                                            <div class="container2">
+                                                <div id="slides3">
+                                                    <a href="#" class="contBox">
+                                                        <img src="pic/pic3.jpg" alt="" width="470" height="289" />
+                                                        <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                                                    </a>
+                                                    <a href="#" class="contBox">
+                                                        <img src="pic/pic4.jpg" alt="" width="470" height="289"  />
+                                                        <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                                                    </a>
+                                                    <a href="#" class="contBox">
+                                                        <img src="pic/pic3.jpg" alt="" width="470" height="289" />
+                                                        <span class="gallDescript">Мы встретим вас и обеспечим по-настоящему <b>качественный отдых</b></span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <!-- /container2 -->
+                                        </div>
+                                        <!-- /sliderContainer -->
+                                    </div>
+                                    <!-- /littleGallWraper -->
+
+                                </div>
+                                <!-- /realEstateOrenda -->
+
+                            </div>
+                            <!-- /realEstate -->
+
+                            <!-- ourServices -->
+                            <div class="ourServices">
+
+                                <h3 class="serviceTopic">Наши услуги</h3>
+
+                                <!-- service -->
+                                <ul class="service">
+                                    <li><a href="#" class="serv1">Подбор недвижимости</a></li>
+                                    <li><a href="#" class="serv2">Оформление сделки</a></li>
+                                    <li><a href="#" class="serv3">Налоги в Черногории</a></li>
+                                    <li><a href="#" class="serv4">ВНЖ в Черногории</a></li>
+                                    <li><a href="#" class="serv5">Законы в Черногории</a></li>
+                                    <li><a href="#" class="serv6">Инвестиции в Черногории</a></li>
+                                </ul>
+                                <!-- /service -->
+
+                            </div>
+                            <!-- /ourServices -->
+
+                        </div>
+                        <!-- /blockWrap -->
+
+
+                        <!-- propouse -->
+                        <div class="propouse">
+                            <h3 class="topicType">Самые выгодные предложения</h3>
+
+                            <!-- catalogList -->
+                            <ul class="catalogList">
+                                <li>
+                                    <a href="#" class="imgWrap">
+                                        <div class="imgContainer">
+                                            <img src="pic/pic5.jpg" height="121" width="158" alt="">
+                                            <div class="watterMark"></div>
+                                        </div>
+                                        <h2>Квартира в Биеле </h2>
+                                    </a>
+                                    <dl>
+                                        <dt>Площадь:</dt>
+                                        <dd>62 м2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Кол-во спален:</dt>
+                                        <dd>3</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Площадь участка:</dt>
+                                        <dd>134 м2</dd>
+                                    </dl>
+                                    <p class="price">От  <b>123 000 евро</b></p>
+                                </li>
+                                <li>
+                                    <a href="#" class="imgWrap">
+                                        <div class="imgContainer">
+                                            <img src="pic/pic5.jpg" height="121" width="158" alt="">
+                                            <div class="watterMark"></div>
+                                        </div>
+                                        <h2>Квартира в Биеле </h2>
+                                    </a>
+                                    <dl>
+                                        <dt>Площадь:</dt>
+                                        <dd>62 м2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Кол-во спален:</dt>
+                                        <dd>3</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Площадь участка:</dt>
+                                        <dd>134 м2</dd>
+                                    </dl>
+                                    <p class="price">От  <b>123 000 евро</b></p>
+                                </li>
+                                <li>
+                                    <a href="#" class="imgWrap">
+                                        <div class="imgContainer">
+                                            <img src="pic/pic5.jpg" height="121" width="158" alt="">
+                                            <div class="watterMark"></div>
+                                        </div>
+                                        <h2>Квартира в Биеле </h2>
+                                    </a>
+                                    <dl>
+                                        <dt>Площадь:</dt>
+                                        <dd>62 м2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Кол-во спален:</dt>
+                                        <dd>3</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Площадь участка:</dt>
+                                        <dd>134 м2</dd>
+                                    </dl>
+                                    <p class="price">От  <b>123 000 евро</b></p>
+                                </li>
+                                <li>
+                                    <a href="#" class="imgWrap">
+                                        <div class="imgContainer">
+                                            <img src="pic/pic5.jpg" height="121" width="158" alt="">
+                                            <div class="watterMark"></div>
+                                        </div>
+                                        <h2>Квартира в Биеле </h2>
+                                    </a>
+                                    <dl>
+                                        <dt>Площадь:</dt>
+                                        <dd>62 м2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Кол-во спален:</dt>
+                                        <dd>3</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Площадь участка:</dt>
+                                        <dd>134 м2</dd>
+                                    </dl>
+                                    <p class="price">От  <b>123 000 евро</b></p>
+                                </li>
+                                <li>
+                                    <a href="#" class="imgWrap">
+                                        <div class="imgContainer">
+                                            <img src="pic/pic5.jpg" height="121" width="158" alt="">
+                                            <div class="watterMark"></div>
+                                        </div>
+                                        <h2>Квартира в Биеле </h2>
+                                    </a>
+                                    <dl>
+                                        <dt>Площадь:</dt>
+                                        <dd>62 м2</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Кол-во спален:</dt>
+                                        <dd>3</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>Площадь участка:</dt>
+                                        <dd>134 м2</dd>
+                                    </dl>
+                                    <p class="price">От  <b>123 000 евро</b></p>
+                                </li>
+                            </ul>
+                            <!-- /catalogList -->
+
+                        </div>
+                        <!-- /propouse -->
+
+                        <div class="showAllBlock">
+                            <a href="#" class="showAllBut">Посмотреть все предложения</a>
+                        </div>
+
+                    </div>
+                    <!-- /content -->
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <div class="footerLogo"><span>Area Investment</span><p>недвижимость в Черногории</p></div>
+            <p class="copy">Copyright © 2013 </p>
+
+            <ul class="phones">
+                <li><a href="tel:38269264337">+38269264337</a></li>
+                <li><a href="tel:38269541425">+38269541425</a></li>
+                <li><a href="tel:79854454598">+79854454598</a></li>
+            </ul>
+
+            <dl class="creaters">
+                <dt>Разработано:</dt>
+                <dd><a href="http://xn--80aqcukcj1i.xn--p1ai/" class="saitoria">saitoris</a></dd>
+            </dl>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

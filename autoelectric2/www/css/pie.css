@@ -1,0 +1,23 @@
+.header>input,
+.discount input,
+.discount,
+.content h1.first,
+.sale a {
+    behavior: url(css/pie.htc);
+    zoom: 1;
+}
+.discount input.button, .sale a {
+    background: url("../img/button_ie.png");
+}
+.discount input.button:hover, .sale a:hover {
+    background-position: 0 -38px;
+}
+.discount input.button:active, .sale a:active {
+    background-position: 0 bottom;
+}
+.info:after, .info > .after, .info:before, .info> .before, .info-next:after, .info-next > .after, .info-next:before, .info-next> .before {
+    background: #5e81a7;
+}
+.gallery p {
+    background: url("../img/ie_black.png");
+}

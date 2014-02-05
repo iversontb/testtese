@@ -1,0 +1,78 @@
+/*
+    main styles
+    version: 12.10.2013
+
+   oborudovanie
+
+   stanok
+
+*/
+/*---------- oborudovanie ----------*/
+.oborudovanie{
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.oborudovanie h3{
+    font-family: pfcentroslabproblack;
+    font-size: 32px;
+    color: #131313;
+    padding-top: 44px;
+    padding-bottom: 16px;
+}
+.oborudovanie p{
+    font-size: 14px;
+    color: #000000;
+    padding-bottom: 24px;
+    line-height: 20px;
+}
+.oborudovanie .more{
+    font-size: 14px;
+    color: #448ccb;
+    padding-bottom: 30px;
+    display: inline-block;
+}
+.oborudovanie .more span{
+    border-bottom: dotted 1px #448ccb;
+}
+.oborudovanie .more span:hover{
+   border-bottom: none;
+}
+/*---------- /oborudovanie ----------*/
+.site__content .type {
+    padding-bottom: 35px;
+    padding-left: 60px;
+}
+.site__content .type a{
+    display: inline-block;
+    font-size: 16px;
+    color: #448ccb;
+    text-decoration: underline;
+    padding-right: 20px;
+}
+.site__content .type a:hover{
+    text-decoration: none;
+}
+.site__content .type .active{
+    color: #bc301b;
+    text-decoration: none;
+}
+/*---------- stanok ----------*/
+.stanok{
+    width: 29%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 30px;
+    padding-left: 27px;
+}
+.stanok a{
+    font-size: 14px;
+    color: #448ccb;
+    text-decoration: underline;
+}
+.stanok a:hover{
+    text-decoration: none;
+}
+.stanok img{
+    padding-bottom: 25px;
+}
+/*---------- /stanok ----------*/

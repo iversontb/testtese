@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <title>title</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="#" title="на главную" class="logo"><img src="img/logo.png" width="119" height="46" alt="Редуксин лайт"></a>
+            <!-- /logo -->
+
+            <!-- header__address -->
+            <address class="header__address">
+                <a href="tel:8 (495) 664-42-64">8 (495) 664-42-64</a>
+            </address>
+            <!-- /header__address -->
+
+            <!-- header__menu -->
+            <ul class="header__menu">
+                <li><a href="#">Где купить</a></li>
+                <li><a href="#">Online консультация</a></li>
+            </ul>
+            <!-- /header__menu -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <ul>
+                    <li class="active">
+                        <div>
+                            <span>Женские секреты</span>
+                            <ul>
+                                <li>
+                                    <a href="#">Он прекрасен спору нет</a>
+                                </li>
+                                <li>
+                                    <a href="#">Как сделать его прекраснее</a>
+                                </li>
+                                <li>
+                                    <a href="#">Чтобы было счастье</a>
+                                </li>
+                                <li>
+                                    <a href="#">Меню такое</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Как повысить эффективность</a></li>
+                    <li><a href="#">Ваш идеальный вес</a></li>
+                    <li><a href="#">Конкурсы</a></li>
+                    <li><a href="#">Диеты и здоровое питание</a></li>
+                </ul>
+            </nav>
+            <!-- /menu -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- breadcrumbs -->
+            <nav class="breadcrumbs">
+                <a href="#">Главная</a>
+                <a href="#">Раздел</a>
+                <span>Подраздел</span>
+            </nav>
+            <!-- /breadcrumbs -->
+
+            <!-- calculator -->
+            <div class="calculator calculator_result">
+                <div>
+                    <h1>Индекс массы тела</h1>
+                    <p>Индекс массы тела позволяет определить степень избыточности веса и, следовательно, риска развития
+                        заболеваний, в происхождении которых ожирение играет существенную роль.  Узнайте свой ИМТ!</p>
+                    <form action="#">
+                        <input type="text" name="age">
+                        <input type="text" name="weight">
+                        <input type="text" name="height">
+                        <input type="submit" value="Расчитать">
+                    </form>
+
+                    <!-- calculator__result -->
+                    <div class="calculator__result">
+                        <div>
+                            <div>
+                                <dl>
+                                    <dt>Ваш индекс массы тела:</dt>
+                                    <dd>
+                                        <span>2</span>
+                                        <span>4</span>
+                                    </dd>
+                                </dl>
+                                <p>У вас резко выраженное ожирение
+                                    риск для здоровья очень высокий,
+                                    необходимо проконсультироваться у врача
+                                    и снизить массу </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /calculator__result -->
+
+                </div>
+            </div>
+            <!-- /calculator -->
+
+            <!-- hidden-form -->
+            <div class="hidden-form hidden-form__comment">
+
+                <!-- hidden-form__content -->
+                <div class="hidden-form__content">
+                    <form>
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="email" name="mail" required placeholder="Ваш e-mail на который придет ответ">
+                        <textarea placeholder="Ваше отзыв" required></textarea>
+                        <input type="hidden" name="rate" class="rate" value="5">
+                        <div>
+                            <input type="submit" value="Оставить комментарий">
+                            <a href="#" class="hidden-form__hide">Отменить</a>
+                        </div>
+                    </form>
+                </div>
+                <!-- /hidden-form__content -->
+
+                <a href="#" class="hidden-form__show">Оставить комментарий</a>
+            </div>
+            <!-- /hidden-form -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+            <span class="copyright">©  2013. Биологически активная добавка к пище Редуксин-лайт
+                <span>Не является лекарством.</span></span>
+            <div class="footer__counter">
+                <img src="pic/counter.png" width="88" height="15" alt="">
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

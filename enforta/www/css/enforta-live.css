@@ -1,0 +1,230 @@
+/*
+    enforta-live
+
+    panorama
+
+    our-news
+
+    our-photo
+*/
+
+
+/* enforta-live */
+.enforta-live{
+    padding-top: 39px;
+    padding-bottom: 37px;
+}
+.enforta-live h1 {
+    font-size: 30px;
+    color: #0046ad;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 21px;
+}
+.enforta-live h1 span {
+    font-style: italic;
+    color: #ff7900;
+}
+.enforta-live h2 {
+    font-size: 20px;
+    color: #ff7900;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 8px;
+}
+.enforta-live p {
+    line-height: 20px;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+/* /enforta-live */
+
+/* panorama */
+.panorama {
+    width: 960px;
+    height: 213px;
+    margin-bottom: 19px;
+    position: relative;
+    z-index: 1;
+}
+.panorama img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.panorama > div {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+.panorama>.panorama__btn {
+    position: absolute;
+    cursor: pointer;
+    z-index: 2;
+    background: transparent;
+    top: auto;
+}
+.panorama>.panorama__btn_next180{
+    width: 59px;
+    height: 28px;
+    bottom: 18px;
+    left: 560px;
+}
+.panorama>.panorama__btn_next {
+    width: 47px;
+    height: 29px;
+    bottom: 18px;
+    left: 514px;
+}
+.panorama>.panorama__btn_round {
+    width: 61px;
+    height: 56px;
+    bottom: 8px;
+    left: 450px;
+}
+.panorama>.panorama__btn_prev {
+    width: 47px;
+    height: 29px;
+    bottom: 18px;
+    left: 400px;
+}
+.panorama>.panorama__btn_prev180{
+    width: 59px;
+    height: 28px;
+    bottom: 18px;
+    left: 340px;
+}
+/* /panorama */
+
+/* our-news */
+.our-news {
+    margin-left: -1px;
+    width: 440px;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 33px;
+    margin-right: 59px;
+}
+.our-news h2 {
+    font-size: 20px;
+    color: #ff7900;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 23px;
+}
+.our-news__item,
+.our-news__item:hover,
+.our-news__item:visited {
+    display: block;
+    position: relative;
+    min-height: 55px;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 2px 0 0 79px;
+    margin-bottom: 21px;
+}
+.our-news__item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+}
+.our-news__item time {
+    display: block;
+    color: #565656;
+    font-style: italic;
+    margin-bottom: 3px;
+}
+.our-news__item span {
+    text-decoration: underline;
+    color: #0046ad;
+    line-height: 18px;
+}
+.our-news__item:hover span {
+    text-decoration: none;
+}
+.our-news__all,
+.our-news__all:visited {
+    position: absolute;
+    bottom: 11px;
+    left: 78px;
+    font-size: 12px;
+    color: #ff7900;
+    text-decoration: underline;
+}
+.our-news__all:hover {
+    text-decoration: none;
+}
+/* /our-news */
+
+/* our-photo */
+.our-photo {
+    width: 440px;
+    display: inline-block;
+    vertical-align: top;
+    padding-bottom: 33px;
+}
+.our-photo h2 {
+    font-size: 20px;
+    color: #ff7900;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+}
+.our-photo .ares-multiple-slider {
+    position: relative;
+    width: 392px;
+    margin-left: 34px;
+}
+.our-photo .ares-multiple-slider ul{
+    overflow: hidden;
+    position: relative;
+}
+.our-photo .ares-multiple-slider__item {
+    position: absolute;
+    left: -1000px;
+}
+.our-photo .ares-multiple-slider__item a,
+.our-photo .ares-multiple-slider__item a:visited{
+    color: #565656;
+    font-size: 11px;
+    font-style: italic;
+    text-decoration: none;
+    line-height: 16px;
+}
+.our-photo .ares-multiple-slider__item a:hover {
+    text-decoration: underline;
+}
+.our-photo .ares-multiple-slider__item img {
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 9px;
+}
+.our-photo .ares-multiple-slider__next,
+.our-photo .ares-multiple-slider__prev {
+    position: absolute;
+    content: '';
+    background: url("../img/gall-but-sprite.png") 0 -21px;
+    width: 11px;
+    height: 16px;
+    top: 79px;
+    left: -32px;
+    cursor: pointer;
+ }
+.our-photo .ares-multiple-slider__prev:hover {
+    background-position: 0 0;
+}
+.our-photo .ares-multiple-slider__next {
+    background-position: 0 bottom;
+    right: -32px;
+    left: auto;
+}
+.our-photo .ares-multiple-slider__next:hover {
+    background-position: 0 -42px;
+}
+/* /our-photo */

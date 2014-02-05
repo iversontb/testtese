@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/radio.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body class="cartPage">
+
+
+<!-- site -->
+<div class="site inside">
+
+<!-- message -->
+<div class="message">
+    Срочное сообщение, которое сообщает о каком-то <a href="#">событии!</a>
+    <a href="#" class="close" title="close">close</a>
+</div>
+<!-- /message -->
+
+<!-- header -->
+<header class="header inner_header">
+
+    <!-- header_top -->
+    <div class="header_top">
+
+        <div class="block_inside">
+
+            <!-- logo -->
+            <a href="#" title="На главную" class="logo"><img src="img/logo.png" width="175" height="47" alt=""></a>
+            <!-- /logo -->
+
+
+            <p class="cartPhone">702-33-22</p>
+
+
+        </div>
+
+
+    </div>
+    <!-- /header_top -->
+
+    <!-- header_banner -->
+    <div class="header_banner"><img src="img/header_banner.jpg" height="150" alt=""/></div>
+    <!-- /header_banner -->
+
+    <!-- subMenu -->
+    <nav class="subMenu">
+        <ol id="nav">
+            <li><a href="#" ><div>Выберите ресторан</div></a></li>
+            <li><a href="#"><div>Посмотрите меню</div></a></li>
+            <li><a href="#" class="active"><div>Сделайте заказ</div></a></li>
+            <li><a href="#" class="lastMenu"><div>Встречайте курьера</div></a></li>
+        </ol>
+    </nav>
+    <!-- /subMenu -->
+
+</header>
+<!-- /header -->
+
+<!-- site__content -->
+<div class="site__content">
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+
+<!-- grayBlock -->
+<div class="grayBlock">
+
+    <h3>Корзина</h3>
+
+
+    <!-- userInfo -->
+    <form action="#" method="post" class="userInfo">
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <span class="selectPlace">Адмиралтейская</span>
+            <!-- mapPlace -->
+            <span href="#" class="mapPlace rightMap">
+
+                <span>карта доставки</span>
+
+                <!-- mapContainer -->
+                <div class="mapContainer">
+                    <div class="map">
+                        <img src="pic/pic15.jpg" width="549" height="420" alt="">
+                    </div>
+                    <span><span class="redBlock"></span>Бесплатная доставка от 600р,на меньшую сумму доставка 210р. с 11:00 до 23:00</span>
+                    <span><span class="blueBlock"></span>Бесплатная доставка от 600р,на меньшую сумму доставка 210р. с 11:00 до 23:00</span>
+                    <span><span class="yellowBlock"></span>Доставка от 3000р(бесплатная) с 11.00 до 23.00</span>
+                    <span><span class="greenBlock"></span>	Бесплатная доставка от 600р,на меньшую сумму доставка 210р. с 11:00 до 23:00</span>
+                </div>
+                <!-- /mapContainer -->
+
+            </span>
+            <!-- /mapPlace -->
+        </div>
+        <!-- /lineContainer -->
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label for="1"><span>*</span>Ваше имя:</label>
+            <input id="1" type="text">
+        </div>
+        <!-- /lineContainer -->
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label for="2"><span>*</span>Телефон:</label>
+            <input id="2" type="text">
+        </div>
+        <!-- /lineContainer -->
+
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label for="3"><span>*</span>Адрес:</label>
+            <input id="3" type="text" placeholder="Не забудьте номер дома и квартиры">
+        </div>
+        <!-- /lineContainer -->
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label for="4">Доступ:</label>
+            <input id="4" type="text" class="littleInput" placeholder="Этаж">
+            <input type="text" class="littleInput" placeholder="Код домофона">
+        </div>
+        <!-- /lineContainer -->
+
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label for="5">Сдача:</label>
+
+            <input id="5" type="text" class="littleInput" placeholder="С суммы">
+            <span class="procentFoDeal">Размен купюры 5000 руб.
+стоит 50 руб.</span>
+        </div>
+        <!-- /lineContainer -->
+
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label for="6">Комментарий:
+                <p><span>В комментарии к
+                    заказу укажите те
+                    продукты из мини-
+                    маркета, которые вы
+                    хотели бы добавить
+                    к доставке!</span>
+                    Дополнительный
+                    тариф за продукты из
+                    мини-маркета <span>+ 100 Р</span> </p>
+            </label>
+            <textarea id="6"></textarea>
+
+        </div>
+        <!-- /lineContainer -->
+
+        <!-- footerForm -->
+        <div class="footerForm">
+            <span>Сохраните истории заказов</span>
+            <dl class="autorization">
+                <dt>Авторизация:</dt>
+                <dd><a href="#" class="vkontakte" title="vkontakte">vkontakte</a> </dd>
+                <dd><a href="#" class="facebook" title="facebook">facebook</a> </dd>
+                <dd><a href="#" class="twitter" title="twitter">twitter</a> </dd>
+                <dd><span>или</span></dd>
+                <dd><a href="#" class="enterBut">Вход</a> </dd>
+            </dl>
+        </div>
+        <!-- /footerForm -->
+
+    </form>
+    <!-- /userInfo -->
+
+    <!-- userCart -->
+    <div class="userCart">
+
+        <!-- cartForm -->
+        <form class="cartForm" action="#" method="post">
+
+            <!-- tableCart -->
+            <div class="tableCart">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><a href="#"><img src="pic/pic9.jpg" width="98" height="98" alt=""></a> </td>
+                            <td><a href="#">i-Twister Kiss =*</a> </td>
+                            <td>42 P</td>
+                            <td class="counterCell">
+                                <div class="counterWrap">
+                                    <button class="minusBut">-</button>
+                                    <input type="text" value="1">
+                                    <button class="plusBut">+</button>
+
+                                </div>
+                            </td>
+                            <td>
+                                <div class="totalPrice">
+                                    <span class="closeElem">close</span>
+                                    84 P
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /tableCart -->
+
+            <!-- tableCart -->
+            <div class="tableCart">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td><a href="#"><img src="pic/pic9.jpg" width="98" height="98" alt=""></a> </td>
+                        <td><a href="#">i-Twister Kiss =*</a> </td>
+                        <td>42 P</td>
+                        <td class="counterCell">
+                            <div class="counterWrap">
+                                <button class="minusBut">-</button>
+                                <input type="text" value="1">
+                                <button class="plusBut">+</button>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="totalPrice">
+                                <span class="closeElem">close</span>
+                                84 P
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /tableCart -->
+
+
+            <!-- tableCart -->
+            <div class="tableCart">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td><a href="#"><img src="pic/pic9.jpg" width="98" height="98" alt=""></a> </td>
+                        <td><a href="#">i-Twister Kiss =*</a> </td>
+                        <td>42 P</td>
+                        <td class="counterCell">
+                            <div class="counterWrap">
+                                <button class="minusBut">-</button>
+                                <input type="text" value="1">
+                                <button class="plusBut">+</button>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="totalPrice">
+                                <span class="closeElem">close</span>
+                                84 P
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /tableCart -->
+
+            <!-- tableCart -->
+            <div class="tableCart">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td><a href="#"><img src="pic/pic9.jpg" width="98" height="98" alt=""></a> </td>
+                        <td><a href="#">i-Twister Kiss =*</a> </td>
+                        <td>42 P</td>
+                        <td class="counterCell">
+                            <div class="counterWrap">
+                                <button class="minusBut">-</button>
+                                <input type="text" value="1">
+                                <button class="plusBut">+</button>
+
+                            </div>
+                        </td>
+                        <td>
+                            <div class="totalPrice">
+                                <span class="closeElem">close</span>
+                                84 P
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /tableCart -->
+
+
+            <!-- deliveryType -->
+            <div class="deliveryType">
+                <div class="checkBox">
+                    <input type="radio" class="niceRadio" name="myradio" id="myradio1" tabindex="1" checked="checked" >
+                    <label for="myradio1">Доставка — 250 P</label>
+                </div>
+                <div class="checkBox">
+                    <input type="radio"  class="niceRadio" name="myradio" id="myradio2" tabindex="2" >
+                    <label for="myradio2">Срочная доставка (30 мин.) — 500 P</label>
+                </div>
+                <div class="checkBox">
+                    <div class="lineContainer">
+                        <input class="niceCheck message_check" id="888" type="checkbox" name="ch1" />
+                        <label for="888">Доставка из Минимаркета(+100 руб.)</label>
+                    </div>
+
+                    <textarea class="comments_text delivery_message" placeholder="Что доставить"></textarea>
+
+                </div>
+
+            </div>
+            <!-- /deliveryType -->
+
+            <!-- totalCalc -->
+            <dl class="totalCalc">
+                <dt>Итого:</dt>
+                <dd>1200 P</dd>
+            </dl>
+            <!-- /totalCalc -->
+
+            <p class="payType">Оплата наличными курьеру или другие <a href="#">способы оплаты</a> </p>
+
+            <input type="submit" class="eBut" value="Привезите мне еду!">
+
+        </form>
+        <!-- /cartForm -->
+
+    </div>
+    <!-- /userCart -->
+
+
+</div>
+<!-- /grayBlock -->
+
+</div>
+<!-- /content-wrap -->
+
+</div>
+<!-- /site__content -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+
+
+        <address class="address">197343, г. Санкт-Петербург, ул. Сердобольская д.7 Телефон <b>(812) 702-33-32</b></address>
+
+        <p class="copy">&copy; FastEda 2008-2013  <i>Все упомянутые на сайте тоговые марки принадлежат их уважаемым владельцам.
+            ООО «Провизия», ОГРН 1099847000109, ИНН 7839414284</i></p>
+
+        <dl class="creaters">
+            <dt>Дизайн сайта:</dt>
+            <dd><a href="#">сайтория.рф</a> </dd>
+        </dl>
+
+
+
+        <a href="#" class="upButton">Наверх</a>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

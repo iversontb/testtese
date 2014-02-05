@@ -1,0 +1,33 @@
+.knowMore,
+.order fieldset > input,
+.order fieldset > textarea,
+.orderWrap > input,
+.jobsHead a,
+.archive,
+.more,
+.footer__layout a.button_cabinet,
+.footer__layout a.button_back_call,
+.order > input,
+.letters fieldset input,
+.letters form > input,
+.letters form > textarea,
+.portfolio__btn a{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+.order fieldset > input,
+.orderWrap > input,
+.order fieldset > textarea,
+.jobsHead a,
+.archive,
+.more,
+.order > input,
+.letters fieldset input,
+.letters form > input,.letters form > textarea,
+.portfolio__btn a{
+    position: relative;
+}
+.order fieldset > input {
+    line-height: 38px;
+}
+

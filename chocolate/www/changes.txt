@@ -1,0 +1,32 @@
+1) В файлах html заменить следующий участок кода:
+<!-- wrap_title -->
+<div class="wrap_title">
+
+	<!-- title -->
+	<span class="title">
+		<span>Arriba 39% </span>
+		<span>Молочный шоколад Молочный шоколад Молочный шоколад Молочный шоколад</span>
+	</span>
+	<!-- /title -->
+
+</div>
+<!-- /wrap_title -->
+
+
+2) В файле css заменить:
+.wrap_list .special .title {
+    color: #2F180B;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 190px;
+    height: 60px;
+}
+
+
+3) В файле css добавить:
+.wrap_title {
+    height: 59px;
+    overflow: hidden;
+    margin-bottom: 7px;
+}

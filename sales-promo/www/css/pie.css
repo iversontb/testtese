@@ -1,0 +1,30 @@
+.sale div.price,
+.card_content div.add_to_cart{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+
+.header form input.send,
+.filter form input.send,
+.price span.new_price,
+.women_items a.percent:hover:after,
+.women_items a > div,
+.add_to_cart a,
+.slider__price div{
+    background: url("../img/ie_fon.jpg");
+}
+.header form input.send:hover,
+.filter form input.send:hover,
+.add_to_cart a:hover {
+    background-position: 0 -44px;
+}
+.header form input.send:active,
+.filter form input.send:active {
+    background-position: 0 bottom;
+}
+.sale div.price {
+    background: url("../img/ie_fon2.jpg");
+}
+.card_content div.add_to_cart {
+    background: url("../img/ie_fon3.jpg");
+}

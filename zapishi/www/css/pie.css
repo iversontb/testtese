@@ -1,0 +1,10 @@
+.your_photo .title .download, .replace_avatar .download,
+.replace_avatar .cancel_button, .replace_avatar .save_button,
+.editing .current_avatar .wrap_img, .replace_avatar .wrap_img,
+.editing .current_avatar .wrap_img img, .replace_avatar .wrap_img img,
+.your_office .profile_info .wrap_img, .your_office .profile_info .wrap_img img {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+    position: relative;
+}
+

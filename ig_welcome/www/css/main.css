@@ -1,0 +1,843 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    main-menu
+
+    language
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd, 
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {    
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {                        
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            
+} 
+input, select, button, textarea {
+    margin: 0;                 
+    font-size: 100%;             
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;     
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {         
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+     list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+    background: url("../img/head-back.jpg") no-repeat top center;
+
+    height: 100%;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;    
+}
+textarea {
+    resize:none; 
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus { 
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner { 
+    padding:0; 
+    border:0; 
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "scada-regular-webfont";
+    src: url("../fonts/scada-regular-webfont.eot");
+    src: url("../fonts/scada-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/scada-regular-webfont.woff") format("woff"),
+    url("../fonts/scada-regular-webfont.ttf") format("truetype");
+}
+@font-face {
+    font-family: "scada-bold-webfont";
+    src: url("../fonts/scada-bold-webfont.eot");
+    src: url("../fonts/scada-bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/scada-bold-webfont.woff") format("woff"),
+    url("../fonts/scada-bold-webfont.ttf") format("truetype");
+}
+/* --------------- /fonts --------------- */
+.butType2{
+    font-family: scada-regular-webfont;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 3px;
+    display: block;
+    text-shadow: 0 -1px 1px #4b4b83;
+}
+.sizeType1{
+    height: 40px;
+    width: 230px;
+    line-height: 40px;
+}
+.sizeType2{
+    height: 30px;
+    width: 90px;
+    line-height: 30px;
+}
+.mapBut span{
+    background: url("../img/map-b.png") no-repeat;
+    padding-left: 23px;
+}
+.problemBut span{
+    background: url("../img/pointer.png") no-repeat 0 10px;
+    padding-left: 20px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+}
+.greenButType{
+    background: url("../img/but2-back.png");
+}
+.greenButType:hover{
+    background: url("../img/but2-back-hover.png");
+}
+.greenButType:active{
+    background: url("../img/but2-back-active.png");
+}
+.filetButType{
+    background: url("../img/but1-back.png");
+}
+.filetButType:hover{
+    background: url("../img/but1-back-hover.png");
+}
+.filetButType:active{
+    background: url("../img/but1-back-active.png");
+}
+.socialButType{
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-indent: -5000px;
+    background: url("../img/but-sprite.png");
+}
+.content-wrap{
+    background: #fff;
+}
+
+.vkontakteBut:hover{ background-position: 0 -893px; width: 40px; height: 40px; }
+.vkontakteBut{ background-position: 0 -953px; width: 40px; height: 40px; }
+.facebookBut{ background-position: 0 -60px; width: 40px; height: 40px; }
+.facebookBut:hover{ background-position: 0 0; width: 40px; height: 40px; }
+.odnoklasnikiBut:hover{ background-position: 0 -505px; width: 40px; height: 40px; }
+.odnoklasnikiBut{ background-position: 0 -565px; width: 40px; height: 40px; }
+.twitterBut:hover{ background-position: 0 -773px; width: 40px; height: 40px; }
+.twitterBut{ background-position: 0 -833px; width: 40px; height: 40px; }
+.gplusBut:hover{ background-position: 0 -120px; width: 40px; height: 40px; }
+.gplusBut{ background-position: 0 -180px; width: 40px; height: 40px; }
+.mailworldBut:hover{ background-position: 0 -385px; width: 40px; height: 40px; }
+.mailworldBut{ background-position: 0 -445px; width: 40px; height: 40px; }
+
+.arrowBut{
+    display: block;
+    width: 18px;
+    height: 35px;
+    text-indent: -5000px;
+    background: url("../img/but-sprite.png");
+}
+.leftButArrow:hover{background-position: 0 -240px; width: 19px; height: 35px; }
+.leftButArrow{ background-position: 0 -295px; width: 19px; height: 35px; }
+.rightButArrow:hover{ background-position: 0 -663px; width: 19px; height: 35px; }
+.rightButArrow{ background-position: 0 -718px; width: 19px; height: 35px; }
+
+.imageBut{
+    color: #ffffff;
+    font-family: scada-regular-webfont;
+    font-size: 14px;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+    padding-left: 30px;
+}
+.playVideoBut{
+    background: url("../img/play.png") no-repeat;
+}
+.playVideoBut:hover{
+    background: url("../img/play-hover.png") no-repeat;
+    text-decoration: underline;
+    color: #7373d1;
+}
+.jnowMoreBut{
+    background: url("../img/more.png") no-repeat;
+
+}
+.jnowMoreBut:hover{
+    background: url("../img/more-hover.png") no-repeat;
+    text-decoration: underline;
+    color: #7373d1;
+}
+.hrefType{
+    color: #999999;
+    font-size: 14px;
+    font-family: scada-regular-webfont;
+}
+.hrefType:hover{
+    color: #cccccc;
+}
+.boldHrefType{
+    font-family: scada-bold-webfont;
+    font-size: 20px;
+}
+.sprite-map-b{ background-position: 0 -350px; width: 17px; height: 15px; }
+.sprite-pointer{ background-position: 0 -625px; width: 15px; height: 18px; }
+
+.underlineHref{
+    color: #fff;
+    font-size: 14px;
+    font-family: scada-regular-webfont;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+}
+.underlineHref:hover{
+    text-decoration: underline;
+}
+.problemHref{
+    background: url("../img/pointer.png") no-repeat;
+    padding-left: 20px;
+}
+/* --------------- site --------------- */
+.batShow{
+    background: #000;
+}
+.showBut1 li{
+    margin-bottom: 10px;
+}
+.showBut2 li{
+    float: left;
+    margin-right: 5px;
+}
+.showBut5,
+.showBut2,
+.showBut4,
+.showBut3{
+    overflow: hidden;
+}
+.showBut3 li{
+    float: left;
+    margin-right: 5px;
+}
+.site {
+    min-height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+    .site:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 125px;
+    }
+.site__layout {
+
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 500px;
+    width: 940px;
+    margin: 0 auto;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 154px;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- main-menu --------------- */
+.main-menu {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.main-menu__layout li{
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 50px;
+}
+/* --------------- /main-menu --------------- */
+
+.littleNav{
+    position: absolute;
+    top: 270px;
+    left: 115px;
+}
+.littleNav li{
+    margin-bottom: 10px;
+}
+.slogan{
+    position: absolute;
+    color: #fff;
+    font-weight: normal;
+    font-size: 29px;
+    top: 183px;
+    left: 430px;
+    font-family: "scada-regular-webfont";
+}
+.townSelect{
+    background: url("../img/opcatity-back.png");
+    width: 510px;
+    height: 165px;
+    top: 240px;
+    left: 431px;
+    position: absolute;
+    border-radius: 5px;
+}
+.townSelect > ul{
+    overflow: hidden;
+    clear: both;
+    margin: 0 0 0 20px;
+}
+.townSelect > ul > li{
+    float: left;
+    width: 230px;
+    height: 70px;
+    margin-right: 10px;
+}
+.noUsers{
+    font-size: 12px;
+    color: #cbcbcb;
+    margin-top: 18px;
+    line-height: 16px;
+    font-family: scada-regular-webfont;
+}
+.townSelect  .problemBut,
+.townSelect  .mapBut{
+    margin-top: 15px;
+}
+.townSelect p{
+    color: #fff;
+    font-size: 16px;
+    font-family: scada-regular-webfont;
+    margin: 31px 0 20px 21px;
+    float: left;
+}
+.downContainer > a{
+    background: url("../img/town-arrow.png") no-repeat right 8px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #97a1ff;
+}
+.downList{
+
+}
+.downContainer{
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.townBlock{
+    float: left;
+    width: 50%;
+    margin-bottom: 20px;
+}
+.newType{
+    width: 100%;
+}
+.townList .newType li{
+    width: 150px;
+    float: left;
+}
+.townList{
+    position: absolute;
+    top: 300px;
+    background: url("../img/white-opacity.png");
+    border-radius: 5px;
+    left: 50%;
+    margin-left: -470px;
+    width: 900px;
+    padding: 20px;
+    z-index: 1000;
+    color: #333333;
+    font-size: 14px;
+    font-family: tahoma;
+    display: none;
+}
+.townList h3{
+    color: #7373d1;
+    font-family: scada-bold-webfont;
+    font-weight: normal;
+    font-size: 14px;
+}
+.townList li{
+    margin-bottom: 10px;
+
+}
+.townList a{
+    color: #333333;
+    font-family: scada-regular-webfont;
+}
+.townList a:hover{
+    color: #7373d1;
+    text-decoration: underline;
+}
+.downContainer > a span{
+    border-bottom: 1px dotted #97a1ff;
+    font-family: scada-regular-webfont;
+}
+.downContainer > a:hover span{
+    border: none;
+}
+.wroteAbouUs{
+    background: #e6e6e6;
+    border-bottom: 1px solid #cecece;
+    height: 70px;
+    margin-bottom: 40px;
+}
+.aboutTopic{
+    background: url("../img/pen.png") no-repeat;
+    height: 19px;
+    line-height: 19px;
+    color: #808080;
+    font-size: 14px;
+    padding-left: 25px;
+    font-family: tahoma;
+}
+.aboutTopic span{
+    background: url("../img/gray-arrow.png") no-repeat right 6px;
+    padding-right: 25px;
+}
+.wroteAbouUs ul{
+    width: 940px;
+    margin: 0 auto;
+}
+.wroteAbouUs ul li{
+    display: table-cell;
+    padding-right: 80px;
+    height: 70px;
+    vertical-align: middle;
+}
+.wroteAbouUs ul li img{
+    display: block;
+}
+.wroteAbouUs ul li a{
+    display: block;
+}
+.wroteAbouUs ul li a:hover{
+    opacity: 0.8;
+}
+.advantage{
+    overflow: hidden;
+    width: 940px;
+    margin: 0 auto;
+    margin-bottom: 37px;
+}
+.advantage ul{
+    width: 1000px;
+}
+.advantage li{
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+}
+.advantage li h2{
+    color: #7272d0;
+    font-size: 24px;
+    font-family: "scada-bold-webfont";
+    font-weight: normal;
+    height: 34px;
+    padding-left: 40px;
+    line-height: 34px;
+    margin-bottom: 25px;
+}
+.usefull{
+    background: url("../img/usefusl.png") no-repeat;
+}
+.convenient{
+    background: url("../img/convenient.png") no-repeat;
+}
+.decisive{
+    background: url("../img/decisive.png") no-repeat;
+}
+.advantage li p{
+    font-family: "scada-regular-webfont";
+    font-size: 14px;
+    line-height: 18px;
+}
+.container{
+    background: #f3f3f3;
+    border-bottom: 1px solid #d1d1d1;
+    border-top: 1px solid #d1d1d1;
+    overflow: hidden;
+    padding: 40px 0 13px 0;
+}
+.insideContainer{
+    width: 940px;
+    margin: 0 auto;
+}
+.videoContainer img{
+    display: block;
+}
+.videoContainer{
+    border: solid #343434 5px;
+    float: left;
+
+}
+.videoText{
+    float: right;
+    width: 300px;
+}
+.videoText h3{
+    color: #7272d0;
+    font-size: 24px;
+    font-family: "scada-bold-webfont";
+    font-weight: normal;
+    margin-bottom: 45px;
+}
+.videoText li{
+    padding-left: 50px;
+    margin-bottom: 25px;
+}
+.videoText li h2{
+    font-family: "scada-bold-webfont";
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.secsessText p,
+.videoText li p{
+    font-family: scada-regular-webfont;
+    font-size: 14px;
+    line-height: 17px;
+}
+.talkProblem{
+    background: url("../img/big-pointer.png") no-repeat;
+}
+.govermentDiside{
+    background: url("../img/big-doc.png") no-repeat;
+}
+.finishDiside{
+    background: url("../img/big-result.png") no-repeat;
+}
+.free{
+    background: url("../img/free.png") no-repeat;
+}
+.mobile{
+    background: url("../img/phoe.png") no-repeat;
+}
+.safty{
+    background: url("../img/safty.png") no-repeat;
+}
+.secsess{
+    width: 940px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+.secsessText{
+    float: left;
+    width: 300px;
+    margin-top: 20px;
+}
+.secsessText h2{
+    color: #7272d0;
+    font-size: 24px;
+    font-family: "scada-bold-webfont";
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.secsessImg{
+    float: right;
+}
+.box{
+    padding-top: 20px;
+    overflow: hidden;
+}
+.noBorders{
+    border: none;
+}
+.wraper{
+    width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 63px;
+    padding-top: 30px;
+}
+.gallery li{
+    width: 516px;
+}
+.likeUs{
+    position: relative;
+    float: left;
+}
+.likeUs img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.gallText{
+    float: right;
+    width: 385px;
+}
+.userName{
+    background: url("../img/user-icon.png") no-repeat 0 1px;
+    padding-left: 15px;
+    color: #6f6f6f;
+    font-family: tahoma;
+    font-size: 12px;
+}
+.dateTime{
+    background: url("../img/calendar.png") no-repeat;
+    padding-left: 15px;
+    color: #6f6f6f;
+    font-family: tahoma;
+    font-size: 12px;
+}
+.gallText p{
+    font-family: scada-regular-webfont;
+    font-size: 14px;
+    margin: 10px 0 0 0;
+}
+
+.gallWrap button{
+    display: block;
+    width: 18px;
+    height: 35px;
+    border: none;
+    text-indent: -5000px;
+    background: url("../img/but-sprite.png");
+    position: absolute;
+    padding: 0;
+    top: 40px;
+}
+.gallWrap  .prev:hover{background-position: 0 -240px; width: 19px; height: 35px; }
+.gallWrap .prev{ background-position: 0 -295px; width: 19px; height: 35px;  left: 0;}
+.gallWrap  .next:hover{ background-position: 0 -663px; width: 19px; height: 35px; }
+.gallWrap .next{ background-position: 0 -718px; width: 19px; height: 35px; right: 0 }
+
+
+
+.gallWrap{
+    position: relative;
+    width: 570px;
+    float: right;
+    padding-left: 60px;
+}
+.wraper h3{
+    font-family: scada-bold-webfont;
+    font-size: 24px;
+    font-weight: normal;
+    color: #7272d0;
+    float: left;
+}
+.centerText{
+    text-align: center;
+    width: 428px;
+    margin:  0 auto;
+    margin-bottom: 50px;
+}
+.centerText .problemBut{
+    margin: 0 auto;
+}
+.centerText h3{
+    color: #7272d0;
+    font-size: 24px;
+    font-weight: normal;
+    font-family: scada-bold-webfont;
+    margin-bottom: 20px;
+}
+.centerText p{
+    font-family: scada-regular-webfont;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+.closeBut{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: url("../img/close-but.png");
+    width: 19px;
+    height: 19px;
+    text-indent: -5000px;
+    cursor: pointer;
+}
+.closeBut:hover{
+    opacity: 0.8;
+}
+.nowTime{
+    float: right;
+    width: 617px;
+    margin-top: 20px;
+    font-family: scada-regular-webfont;
+    font-size: 14px;
+    line-height: 18px;
+}
+.nowTime span{
+    color: #7373d1;
+    font-size: 24px;
+}
+.showMap{
+    background: url("../img/show-map.png") no-repeat;
+    padding-left: 20px;
+    font-family: scada-regular-webfont;
+    font-size: 14px;
+    color: #7373d1;
+}
+.showMap:visited{
+    color: #7373d1;
+}
+.showMap:hover{
+    text-decoration: underline;
+}
+.mapContainer{
+    display: none;
+    text-align: center;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    background: #343434;
+    height: 125px;
+    margin-top: -125px;
+}
+.footer__layout {
+    width: 940px;
+    margin: 0 auto;
+    height: 125px;
+    position: relative;
+}
+.footerNav{
+    position: absolute;
+    top: 51px;
+    left: 0;
+}
+.footerNav li{
+    float: left;
+    margin-right: 50px;
+}
+.socialMenu{
+    position: absolute;
+    top: 42px;
+    right: 0;
+}
+.socialMenu li{
+    float: left;
+    margin-left: 8px;
+}
+/* --------------- /footer --------------- */

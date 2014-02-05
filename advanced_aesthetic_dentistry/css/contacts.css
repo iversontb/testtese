@@ -1,0 +1,142 @@
+.content-wrap{
+    padding-top: 34px;
+    padding-left: 4px;
+    width: 786px;
+}
+/* --------------- adds --------------- */
+/* --------------- phone_fax --------------- */
+.adds,.phone_fax{
+    display: inline-block;
+    font-style: normal;
+}
+.adds{
+    margin-right: 69px;
+}
+.adds span, .phone_fax span{
+    display: block;
+    font-family:'Arial';
+    font-size: 12px;
+    color: #5f5f5f;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+.adds h1, .phone_fax h2{
+    margin-bottom: 9px;
+}
+.phone_fax span a{
+    color: #5c4108;
+}
+.phone_fax span a:hover{
+    text-decoration: underline;
+}
+/* --------------- /phone_fax --------------- */
+/* --------------- /adds --------------- */
+
+/* --------------- /adds_phone --------------- */
+.adds_phone{
+    position: relative;
+    margin-bottom: 68px;
+}
+.adds_phone:after{
+    content: '';
+    position: absolute;
+    background: url("../img/adds_border.png") no-repeat;
+    width: 784px;
+    height: 1px;
+    bottom: -31px;
+    right: 6px;
+}
+/* --------------- /adds_phone --------------- */
+
+/* --------------- schedule --------------- */
+/* --------------- feedback --------------- */
+.schedule, .feedback{
+    display: inline-block;
+    vertical-align: top;
+    font-family:'Arial';
+    font-size: 12px;
+    color: #5f5f5f;
+    line-height: 22px;
+}
+.schedule{
+    margin-right: 103px;
+}
+.schedule h2, .feedback h2{
+    margin-bottom: 15px;
+}
+.schedule dl{
+    width: 160px;
+    letter-spacing: 1px;
+}
+.schedule dt, .schedule dd{
+    display: inline-block;
+}
+.schedule dt{
+    margin-right: 33px;
+}
+.feedback{
+    margin-bottom: 39px;
+}
+.feedback form{
+    display: inline-block;
+    margin-left: 3px;
+    margin-top: 4px;
+    position: relative;
+}
+.feedback form input, .feedback form textarea{
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    background-color: #f2ebd7;
+    font-family: arial;
+    font-size: 12px;
+    color: #636363;
+}
+.feedback form input{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 154px;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-right: 9px;
+}
+.feedback form textarea{
+    display: block;
+    padding: 10px 15px;
+    width: 338px;
+    height: 75px;
+    margin-bottom: 12px;
+}
+.feedback form .button{
+    background: url("../img/but.png") repeat-x left top;
+    height:45px;
+    font-family: arial;
+    font-size: 14px;
+    color: #ecd3b5;
+    position: absolute;
+    right: 0;
+    width: 179px;
+}
+.feedback form .button:hover{
+    background-position: 0 -47px;
+}
+.feedback form .button:active {
+    background-position: 0 bottom;
+}
+.feedback span{
+    display: block;
+    width: 150px;
+    margin-top: -14px;
+    line-height: 19px;
+}
+/* --------------- /feedback --------------- */
+/* --------------- /schedule --------------- */
+
+/* --------------- map --------------- */
+.map h2{
+    margin-bottom: 15px;
+}
+.map img{
+    margin-left: 2px;
+}
+/* --------------- /map --------------- */

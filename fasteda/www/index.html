@@ -1,0 +1,900 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/select.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.hammer.min.js"></script>
+    <script src="js/jquery.ares.slider.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery.station.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+<!-- stationPopup -->
+<div class="stationPopup">
+    <div class="backPop"></div>
+
+
+    <!-- stationList -->
+    <div class="stationList">
+        <div class="closePop">Х</div>
+
+        <div class="tableWrap">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td colspan="3">A</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Автово</a> </td>
+                        <td><a href="#">Академическая</a> </td>
+                        <td><a href="#">Автово</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Автово</a> </td>
+                        <td><a href="#">Академическая</a> </td>
+                        <td><a href="#">Автово</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">Б</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Балтийская</a> </td>
+                        <td><a href="#">Бухарестская</a> </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">В</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Василеостровская</a> </td>
+                        <td><a href="#">Владимирская</a> </td>
+                        <td><a href="#">Волковская</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Василеостровская</a> </td>
+                        <td><a href="#">Владимирская</a> </td>
+                        <td><a href="#">Волковская</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Выборгская</a> </td>
+                        <td></td>
+                        <td> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="3">Г</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Горьковская</a> </td>
+                        <td><a href="#">Гостиный двор</a> </td>
+                        <td><a href="#">Гражданский проспект</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Горьковская</a> </td>
+                        <td><a href="#">Гостиный двор</a> </td>
+                        <td><a href="#">Гражданский проспект</a> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">A</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Автово</a> </td>
+                        <td><a href="#">Академическая</a> </td>
+                        <td><a href="#">Автово</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Автово</a> </td>
+                        <td><a href="#">Академическая</a> </td>
+                        <td><a href="#">Автово</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">Б</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Балтийская</a> </td>
+                        <td><a href="#">Бухарестская</a> </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">В</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Василеостровская</a> </td>
+                        <td><a href="#">Владимирская</a> </td>
+                        <td><a href="#">Волковская</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Василеостровская</a> </td>
+                        <td><a href="#">Владимирская</a> </td>
+                        <td><a href="#">Волковская</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Выборгская</a> </td>
+                        <td></td>
+                        <td> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="3">Г</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Горьковская</a> </td>
+                        <td><a href="#">Гостиный двор</a> </td>
+                        <td><a href="#">Гражданский проспект</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Горьковская</a> </td>
+                        <td><a href="#">Гостиный двор</a> </td>
+                        <td><a href="#">Гражданский проспект</a> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">A</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Автово</a> </td>
+                        <td><a href="#">Академическая</a> </td>
+                        <td><a href="#">Автово</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Автово</a> </td>
+                        <td><a href="#">Академическая</a> </td>
+                        <td><a href="#">Автово</a> </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">Б</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Балтийская</a> </td>
+                        <td><a href="#">Бухарестская</a> </td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="3">В</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Василеостровская</a> </td>
+                        <td><a href="#">Владимирская</a> </td>
+                        <td><a href="#">Волковская</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Василеостровская</a> </td>
+                        <td><a href="#">Владимирская</a> </td>
+                        <td><a href="#">Волковская</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Выборгская</a> </td>
+                        <td></td>
+                        <td> </td>
+                    </tr>
+
+
+                    <tr>
+                        <td colspan="3">Г</td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Горьковская</a> </td>
+                        <td><a href="#">Гостиный двор</a> </td>
+                        <td><a href="#">Гражданский проспект</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">Горьковская</a> </td>
+                        <td><a href="#">Гостиный двор</a> </td>
+                        <td><a href="#">Гражданский проспект</a> </td>
+                    </tr>
+
+
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <!--<ul>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#">Девяткино</a></li>-->
+            <!--<li><a href="#">Достоевская</a></li>-->
+            <!--<li><a href="#">Елизаровская</a></li>-->
+            <!--<li><a href="#">Звёздная</a></li>-->
+            <!--<li><a href="#">Звенигородская</a></li>-->
+            <!--<li><a href="#">Кировский завод</a></li>-->
+            <!--<li><a href="#">Комендантский проспект</a></li>-->
+            <!--<li><a href="#">Крестовский остров</a></li>-->
+            <!--<li><a href="#">Купчино</a></li>-->
+            <!--<li><a href="#">Ладожская</a></li>-->
+            <!--<li><a href="#">Ленинский проспект</a></li>-->
+            <!--<li><a href="#">Лесная</a></li>-->
+            <!--<li><a href="#">Лиговский проспект</a></li>-->
+            <!--<li><a href="#">Ломоносовская</a></li>-->
+            <!--<li><a href="#">Маяковская</a></li>-->
+            <!--<li><a href="#">Международная</a></li>-->
+            <!--<li><a href="#">Московская</a></li>-->
+            <!--<li><a href="#">Московские ворота</a></li>-->
+            <!--<li><a href="#">Нарвская</a></li>-->
+            <!--<li><a href="#"> Невский проспект</a></li>-->
+            <!--<li><a href="#">Новочеркасская</a></li>-->
+            <!--<li><a href="#">Обводный канал</a></li>-->
+            <!--<li><a href="#">Обухово</a></li>-->
+            <!--<li><a href="#">Озерки</a></li>-->
+            <!--<li><a href="#">Парк Победы</a></li>-->
+            <!--<li><a href="#">Парнас</a></li>-->
+            <!--<li><a href="#">Петроградская</a></li>-->
+            <!--<li><a href="#">Пионерская</a></li>-->
+            <!--<li><a href="#">Площадь Александра Невского</a></li>-->
+            <!--<li><a href="#">Площадь Александра Невского</a></li>-->
+            <!--<li><a href="#">Площадь Восстания</a></li>-->
+            <!--<li><a href="#">Площадь Ленина</a></li>-->
+            <!--<li><a href="#">Площадь Мужества</a></li>-->
+            <!--<li><a href="#">Политехническая</a></li>-->
+            <!--<li><a href="#">Приморская</a></li>-->
+            <!--<li><a href="#">Пролетарская</a></li>-->
+            <!--<li><a href="#">Проспект Большевиков</a></li>-->
+            <!--<li><a href="#">Проспект Ветеранов</a></li>-->
+            <!--<li><a href="#">Проспект Просвещения</a></li>-->
+            <!--<li><a href="#">Пушкинская</a></li>-->
+            <!--<li><a href="#">Рыбацкое</a></li>-->
+            <!--<li><a href="#">Садовая</a></li>-->
+            <!--<li><a href="#">Сенная площадь</a></li>-->
+            <!--<li><a href="#">Спасская</a></li>-->
+            <!--<li><a href="#">Спортивная</a></li>-->
+            <!--<li><a href="#">Старая Деревня</a></li>-->
+            <!--<li><a href="#">Технологический институт</a></li>-->
+            <!--<li><a href="#">Технологический институт</a></li>-->
+            <!--<li><a href="#">Удельная</a></li>-->
+            <!--<li><a href="#">Улица Дыбенко</a></li>-->
+            <!--<li><a href="#">Фрунзенская</a></li>-->
+            <!--<li><a href="#">Чёрная речка</a></li>-->
+            <!--<li><a href="#">Чернышевская</a></li>-->
+            <!--<li><a href="#">Чкаловская</a></li>-->
+            <!--<li><a href="#">Электросила</a> </li>-->
+        <!--</ul>-->
+    </div>
+    <!-- /stationList -->
+
+</div>
+<!-- /stationPopup -->
+
+<!-- yourStation -->
+<div class="yourStation">
+
+    <!-- stationForm -->
+    <form class="stationForm townSelect" action="#" data-php="php/station.php" >
+
+        <!-- townChoose -->
+        <div class="townChoose">
+            <label>Ваш город</label>
+            <select name="town">
+                <option>Москва</option>
+                <option>Москва</option>
+                <option>Москва</option>
+                <option>Москва</option>
+                <option>Москва</option>
+            </select>
+            <input type="button" class="selectMetro" value="Выбрать метро">
+        </div>
+        <!-- /townChoose -->
+
+        <!-- resultStation -->
+        <div class="resultStation">
+            <label>Ваша станция метро</label>
+            <input type="text" value="Station" disabled>
+            <input type="submit" class="doneBut" value="Готово">
+            <a href="#" class="changeStation">Изменить станцию</a>
+        </div>
+        <!-- /resultStation -->
+
+    </form>
+    <!-- /stationForm -->
+
+</div>
+<!-- /yourStation -->
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- message -->
+        <div class="message">
+            <div  class="textMessage"><marquee>Срочное сообщение, которое сообщает о каком-то <a href="#">событии!</a></marquee></div>
+            <a href="#" class="close" title="close">close</a>
+        </div>
+        <!-- /message -->
+
+        <!-- header -->
+        <header class="header">
+
+            <!-- header_top -->
+            <div class="header_top">
+
+                <div class="block_inside">
+
+                    <!-- logo -->
+                    <a href="#" title="На главную" class="logo"><img src="img/logo.png" width="175" height="47" alt=""></a>
+                    <!-- /logo -->
+
+
+                    <!-- wrap_mainMenu -->
+                    <div class="wrap_mainMenu">
+                        <table class="mainMenu">
+                            <tbody>
+                            <tr>
+                                <td><a href="tel:702-33-22" class="phone">702-33-22</a></td>
+                                <td><a href="#">Битвы</a></td>
+                                <td><a href="#">Купить скидку</a></td>
+                                <td><a href="#" class="instagram">instagram</a></td>
+                                <td><form class="header_search" action="#"><input type="text"/></form></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //wrap_mainMenu -->
+
+                </div>
+
+            </div>
+            <!-- /header_top -->
+
+
+            <!-- slideWrap -->
+            <div class="slideWrap">
+
+                <!-- ares-slider -->
+                <div class="ares-slider2">
+                    <div class="ares-slider2__item">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="leftContainer"><img src="pic/pic1.png" width="294" height="105" alt=""></div>
+                                    </td>
+                                    <td class="centerText">
+                                        <h2>Хотите вкусно поесть?</h2>
+                                        <p>Некогда сходить самому?</p>
+                                        <p>Мы доставим вашу любимую еду!<span>Быстро и <b>ДЬЯВОЛЬСКИ вкусно!</b></span></p>
+                                    </td>
+                                    <td>
+                                       <img src="pic/pic2.png" width="202" height="161" alt="">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ares-slider2__item">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="leftContainer"><img src="pic/pic1.png" width="294" height="105" alt=""></div>
+                                </td>
+                                <td class="centerText">
+                                    <h2>Хотите вкусно поесть?</h2>
+                                    <p>Некогда сходить самому?</p>
+                                    <p>Мы доставим вашу любимую еду!<span>Быстро и <b>ДЬЯВОЛЬСКИ вкусно!</b></span></p>
+                                </td>
+                                <td>
+                                    <img src="pic/pic2.png" width="202" height="161" alt="">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ares-slider2__item">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="leftContainer"><img src="pic/pic1.png" width="294" height="105" alt=""></div>
+                                </td>
+                                <td class="centerText">
+                                    <h2>Хотите вкусно поесть?</h2>
+                                    <p>Некогда сходить самому?</p>
+                                    <p>Мы доставим вашу любимую еду!<span>Быстро и <b>ДЬЯВОЛЬСКИ вкусно!</b></span></p>
+                                </td>
+                                <td>
+                                    <img src="pic/pic2.png" width="202" height="161" alt="">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="ares-slider2__item">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <div class="leftContainer"><img src="pic/pic1.png" width="294" height="105" alt=""></div>
+                                </td>
+                                <td class="centerText">
+                                    <h2>Хотите вкусно поесть?</h2>
+                                    <p>Некогда сходить самому?</p>
+                                    <p>Мы доставим вашу любимую еду!<span>Быстро и <b>ДЬЯВОЛЬСКИ вкусно!</b></span></p>
+                                </td>
+                                <td>
+                                    <img src="pic/pic2.png" width="202" height="161" alt="">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+
+                    <div class="ares-slider2__prev"></div>
+                    <div class="ares-slider2__next"></div>
+                </div>
+                <!-- /ares-slider -->
+
+            </div>
+            <!-- /slideWrap -->
+
+            <!-- subMenu -->
+            <nav class="subMenu">
+                <ol id="nav">
+                    <li><a href="#" class="active"><div>Выберите ресторан</div></a></li>
+                    <li><a href="#"><div>Посмотрите меню</div></a></li>
+                    <li><a href="#"><div>Сделайте заказ</div></a></li>
+                    <li><a href="#" class="lastMenu"><div>Встречайте курьера</div></a></li>
+                </ol>
+            </nav>
+            <!-- /subMenu -->
+
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- deliveryBlock -->
+                <div class="deliveryBlock">
+
+
+                    <!-- subMenu -->
+                    <div class="deliveryWrap">
+                        <div class="box">
+                            <div class="fourBlok">
+                                <div class="wraper">
+                                    <a href="#" class="deliver1"></a>
+                                    <a href="#" class="deliver2">Доставка
+                                        бургеров</a>
+                                    <a href="#" class="deliver3">Паназиатская
+                                        кухня</a>
+                                    <a href="#" class="deliver4">Доставка
+                                        пиццы</a>
+                                </div>
+                            </div>
+                            <div class="fourBlok">
+                                <div class="wraper">
+                                    <a href="#" class="deliver5">Русская
+                                        кухня</a>
+                                    <a href="#" class="deliver6"></a>
+                                    <a href="#" class="deliver7">Доставка
+                                        пирогов</a>
+                                    <a href="#" class="deliver8">Доставка
+                                        блинов</a>
+                                </div>
+                            </div>
+                            <div class="fourBlok">
+                                <div class="wraper">
+                                    <a href="#" class="deliver9">Итальянская
+                                        паста</a>
+                                    <a href="#" class="deliver10">Европейская
+                                        кухня</a>
+                                    <a href="#" class="deliver11">Доставка
+                                        шашлыка</a>
+                                    <a href="#" class="deliver12"></a>
+                                </div>
+                            </div>
+                            <div class="fourBlok">
+                                <div class="wraper">
+                                    <a href="#" class="deliver13">Суши-роллы</a>
+                                    <a href="#" class="deliver14">Полезная
+                                        еда</a>
+                                    <a href="#" class="deliver17"> Все
+                                        рестораны</a>
+                                    <a href="#" class="deliver16">Десерты
+                                        и торты</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- /subMenu -->
+
+
+
+                </div>
+                <!-- /deliveryBlock -->
+
+
+                <!-- wrapBox -->
+                <div class="wrapBox">
+
+                    <!-- leftSide -->
+                    <aside class="leftSide">
+
+                        <!-- search -->
+                        <form action="#" method="post" class="search">
+                            <input type="text" placeholder="Поиск по названию">
+                            <input type="submit">
+                        </form>
+                        <!-- /search -->
+
+                        <!-- asideMenu -->
+                        <div class="asideMenu">
+                            <a href="#" class="active">Все рестораны</a>
+
+                            <div class="butonsWrap">
+                                <a href="#">Все рестораны</a>
+                                <a href="#">Все рестораны</a>
+                                <a href="#">Все рестораны</a>
+                            </div>
+
+                        </div>
+                        <!-- /asideMenu -->
+
+                        <!-- asideMenu -->
+                        <div class="asideMenu">
+                            <a href="#"  class="active" >Любая кухня</a>
+                            <div class="butonsWrap">
+                                <a href="#">Все рестораны</a>
+                                <a href="#">Все рестораны</a>
+                                <a href="#">Все рестораны</a>
+                            </div>
+                        </div>
+                        <!-- /asideMenu -->
+
+                        <!-- asideMenu -->
+                        <div class="asideMenu">
+                            <a href="#"  class="active">Любое блюдо</a>
+                            <div class="butonsWrap">
+                                <a href="#">Все рестораны</a>
+                                <a href="#">Все рестораны</a>
+                                <a href="#">Все рестораны</a>
+                            </div>
+                        </div>
+                        <!-- /asideMenu -->
+
+                        <!-- asideMenu -->
+                        <div class="asideMenu">
+                            <a href="#"  class="active">Все особенности</a>
+                            <div class="butonsWrap">
+                                <a href="#">Все рестораны</a>
+                                <a href="#">Все рестораны</a>
+                                <a href="#">Все рестораны</a>
+                            </div>
+                        </div>
+                        <!-- /asideMenu -->
+
+                    </aside>
+                    <!-- /leftSide -->
+
+                    <!-- contentBlock -->
+                    <div class="contentBlock">
+
+
+
+                        <!-- catalogList -->
+                        <div class="catalogList">
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic3.png" width="113" height="113" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic4.png" width="105" height="79" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic5.png" width="110" height="111" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic3.png" width="113" height="113" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic4.png" width="105" height="79" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic5.png" width="110" height="111" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic3.png" width="113" height="113" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic4.png" width="105" height="79" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic5.png" width="110" height="111" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic3.png" width="113" height="113" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic4.png" width="105" height="79" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic5.png" width="110" height="111" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic3.png" width="113" height="113" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic4.png" width="105" height="79" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+                            <a href="#">
+                                <span class="imgContainer">
+                                    <img src="pic/pic5.png" width="110" height="111" alt="">
+                                </span>
+                                <span class="nameGoods">Доставка Burger KING Бургер Кинг</span>
+                                <span class="textDesc">Королевские бургеры</span>
+                            </a>
+
+                        </div>
+                        <!-- /catalogList -->
+
+
+                    </div>
+                    <!-- /contentBlock -->
+
+                </div>
+                <!-- /wrapBox -->
+
+                <!-- grayBlock -->
+                <div class="grayBlock">
+
+                    <!-- battle -->
+                    <div class="battle">
+
+                        <h3 class="topicType">Битва  <span>бургер vs шаурма</span></h3>
+
+                        <!-- battleWrap -->
+                        <div class="battleWrap">
+
+                            <!-- battleBox -->
+                            <div class="battleBox">
+                                <img src="pic/pic7.png" width="399" height="303" alt="">
+                                <a href="#">Я за бургер</a>
+                            </div>
+                            <!-- /battleBox -->
+
+                            <!-- battleBox -->
+                            <div class="battleBox">
+                                <img src="pic/pic8.png" width="369" height="277" alt="">
+                                <a href="#">Я за шаурму</a>
+                            </div>
+                            <!-- /battleBox -->
+
+                        </div>
+                        <!-- /battleWrap -->
+
+                    </div>
+                    <!-- /battle -->
+
+                    <!-- discountBlock -->
+                    <div class="discountBlock">
+                        <h2 class="topicType">Акции и скидки</h2>
+
+                        <div class="discountBox">
+                            <!-- discounts -->
+                            <div class="discounts">
+
+                                <a href="#"><img src="pic/pic6.jpg" width="263" height="170" alt=""></a>
+                                <p><span>50% скидка</span> на доставку из рестрана “Терраса” Ginza project</p>
+
+                            </div>
+                            <!-- /discounts -->
+
+                            <!-- discounts -->
+                            <div class="discounts">
+
+                                <a href="#"><img src="pic/pic6.jpg" width="263" height="170" alt=""></a>
+                                <p><span>50% скидка</span> на доставку из рестрана “Терраса” Ginza project</p>
+
+                            </div>
+                            <!-- /discounts -->
+
+                            <!-- discounts -->
+                            <div class="discounts">
+
+                                <a href="#"><img src="pic/pic6.jpg" width="263" height="170" alt=""></a>
+                                <p><span>50% скидка</span> на доставку из рестрана “Терраса” Ginza project</p>
+
+                            </div>
+                            <!-- /discounts -->
+
+                            <!-- discounts -->
+                            <div class="discounts">
+
+                                <a href="#"><img src="pic/pic6.jpg" width="263" height="170" alt=""></a>
+                                <p><span>50% скидка</span> на доставку из рестрана “Терраса” Ginza project</p>
+
+                            </div>
+                            <!-- /discounts -->
+
+                            <!-- discounts -->
+                            <div class="discounts">
+
+                                <a href="#"><img src="pic/pic6.jpg" width="263" height="170" alt=""></a>
+                                <p><span>50% скидка</span> на доставку из рестрана “Терраса” Ginza project</p>
+
+                            </div>
+                            <!-- /discounts -->
+
+                            <!-- discounts -->
+                            <div class="discounts">
+
+                                <a href="#"><img src="pic/pic6.jpg" width="263" height="170" alt=""></a>
+                                <p><span>50% скидка</span> на доставку из рестрана “Терраса” Ginza project</p>
+
+                            </div>
+                            <!-- /discounts -->
+                        </div>
+
+                    </div>
+                    <!-- /discountBlock -->
+
+                </div>
+                <!-- /grayBlock -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <!-- footerMenu -->
+            <ul class="footerMenu">
+
+                <li>
+                    <a href="#">Доставка</a>
+                </li>
+
+                <li>
+                    <a href="#">О компании</a>
+                </li>
+                <li>
+                    <a href="#">Оплата</a>
+                </li>
+                <li>
+                    <a href="#">Варианты оплаты</a>
+                </li>
+                <li>
+                    <a href="#">Сотрудничество   </a>
+                </li>
+                <li>
+                    <a href="#">Блог</a>
+                </li>
+                <li>
+                    <a href="#">Рвбота у нас</a>
+                </li>
+                <li>
+                    <a href="#">Отзывы и предложения </a>
+                </li>
+            </ul>
+            <!-- /footerMenu -->
+
+            <address class="address">197343, г. Санкт-Петербург, ул. Сердобольская д.7 Телефон <b>(812) 702-33-32</b></address>
+
+            <p class="copy">&copy; FastEda 2008-2013  <i>Все упомянутые на сайте тоговые марки принадлежат их уважаемым владельцам.
+                ООО «Провизия», ОГРН 1099847000109, ИНН 7839414284</i></p>
+
+            <dl class="creaters">
+                <dt>Дизайн сайта:</dt>
+                <dd><a href="#">сайтория.рф</a> </dd>
+            </dl>
+
+            <div class="social">
+                <a href="#" title="vkontakte" class="vkontakte">vkontakte</a>
+                <a href="#" title="facebook" class="facebook">facebook</a>
+                <a href="#" title="twitter" class="twitter">twitter</a>
+            </div>
+
+            <div class="stores">
+                <a href="#" class="appstore" title="appstore">appstore</a>
+                <a href="#" class="androidMarket" title="androidMarket">androidMarket</a>
+            </div>
+
+            <a href="#" class="upButton">Наверх</a>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

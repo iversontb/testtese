@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <title>head</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.ares.multiple.slider.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+
+<div class="popup">
+    <div class="backpop"></div>
+    <form action="#" class="order" id="order">
+        <h2>Оформить заявку</h2>
+
+        <div class="orderWrap">
+            <p><span>Отправьте заявку</span>и мы свяжемся с вами в ближайшее время!</p>
+            <fieldset>
+                <input type="text" id="name" name="name" placeholder="Ваше имя">
+                <input type="tel" name="phone" id="phone" placeholder="Ваш телефон">
+                <input type="email" name="mail" id="mail" placeholder="E-mail">
+                <textarea name="sms" id="sms" placeholder="Если у вас есть комментарии или вопросы, вы можете написать их тут"></textarea>
+                <div style="position: absolute; top: 8px; left: 25px;">*</div><div style="position: absolute; top: 57px; left: 25px;">*</div><div style="position: absolute; top: 106px; left: 25px;">*</div></fieldset>
+            <span>Поля, отмеченные звёздочкой <span>*</span>, обязательны для заполнения</span>
+
+            <input type="submit" class="eBut" value="Отправить">
+        </div>
+    </form>
+</div>
+
+<!-- site -->
+<div class="site insede">
+    <div class="site__layout">
+        <!-- header -->
+        <header class="header">
+
+
+
+            <!-- logo -->
+            <a href="index.html" title="На главную" class="logo"><img src="img/logo.png" width="213" height="50" alt=""></a>
+            <!-- /logo -->
+
+            <!-- main-menu -->
+            <nav class="main-menu">
+                <ol class="main-menu__layout">
+                    <li class="main-menu__item "><a href="#" class="main-menu__lnk">Главная</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">О компании</a></li>
+                    <li class="main-menu__item main-menu__item_active"><span class="main-menu__lnk" >Услуги</span></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Тарифы </a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Документы</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Калькулятор</a></li>
+                </ol>
+            </nav>
+            <!-- /main-menu -->
+
+            <!-- filialSelect -->
+            <form action="#" class="filialSelect">
+                <select>
+                    <option>Выбрать филиал</option>
+                    <option>Выбрать филиал</option>
+                    <option>Выбрать филиал</option>
+                    <option>Выбрать филиал</option>
+                </select>
+            </form>
+            <!-- /filialSelect -->
+
+            <address class="address">
+                <p><span>+7(495)</span>232-48-11</p>
+                <a href="#" class="orderBut">Отправить заявку</a>
+            </address>
+
+
+
+        </header>
+        <!-- /header -->
+
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <ul class="crumbs">
+                    <li><a href="#">Главная</a> > </li>
+                    <li><a href="#">Услуги</a> > </li>
+                    <li>Доставка сборного груза</li>
+                </ul>
+
+
+                <!-- calculator -->
+                <div class="calculator">
+                    <h2 class="topicType">Калькулятор</h2>
+                    <p>Расчитать стоимость и сроки доставки</p>
+                    <form action="#" class="calculForm">
+                        <div class="lineContainer">
+                            <label class="widthLabel">Откуда:</label>
+                            <select>
+                                <option>Select</option>
+                                <option>Select</option>
+                                <option>Select</option>
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="lineContainer">
+                            <label  class="widthLabel">Куда:</label>
+                            <select>
+                                <option>Select</option>
+                                <option>Select</option>
+                                <option>Select</option>
+                                <option>Select</option>
+                            </select>
+                        </div>
+                        <div class="lineContainer">
+                            <label class="littleLable">Вес, кг:</label>
+                            <input type="text">
+                            <label  class="littleLable">Объем, м<sup>3</sup>:</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="doneCalc">
+                            <span class="price">20 252 руб.</span>
+                            <a href="#">Сделать заявку</a>
+                        </div>
+
+                        <input type="submit" value="Рассчитать" class="eBut calcBut">
+                    </form>
+                </div>
+                <!-- /calculator -->
+
+                <div class="siteContant">
+
+
+                    <!-- listType -->
+                    <ul class="listType2">
+                        <li><a href="#">Доставка сборного груза</a></li>
+                        <li><a href="#">Автомобильные грузоперевозки
+                            по Москве и России</a></li>
+                        <li><a href="#">Упаковка груза</a></li>
+                        <li><a href="#">Авиационные перевозки</a></li>
+                        <li><a href="#">Хранение груза </a></li>
+                        <li><a href="#"> Переехды</a></li>
+                    </ul>
+                    <!-- /listType -->
+
+
+                    <div class="content">
+                        Заголовки:
+                        <h1>Заголовок первого уровня (h1)</h1>
+                        <h2>Заголовок второго уровня (h2)</h2>
+                        <h3>Заголовок третьего уровня (h3)</h3>
+                        <h4>Заголовок четвертого уровня (h4)</h4>
+                        <h5>Заголовок пятого уровня (h5)</h5>
+                        <h6>Заголовок шестого уровня (h6)</h6>
+
+
+                        Ненумерованный список: (ul)
+                        <ul>
+                            <li>первый элемент</li>
+                            <li>второй элемент
+                                <ul>
+                                    <li>первый элемент вложенного списка</li>
+
+                                    <li>второй элемент вложенного списка</li>
+                                </ul>
+                            </li>
+                            <li>элемент в <br/>две строки</li>
+                            <li>элемент N</li>
+
+                        </ul>
+                        Нумерованный список: (ol)
+                        <ol>
+                            <li>первый элемент</li>
+                            <li>второй элемент
+                                <ol>
+                                    <li>первый элемент вложенного списка</li>
+
+                                    <li>второй элемент вложенного списка</li>
+                                </ol>
+                            </li>
+                            <li>элемент в <br/>две строки</li>
+                            <li>элемент N</li>
+
+                        </ol>
+                        Список определений: (dl)
+                        <dl>
+                            <dt>первое определение</dt>
+                            <dd>описание первого определения</dd>
+                            <dt>второе определение</dt>
+
+                            <dd>описание второго определения</dd>
+                        </dl>
+                        Таблица: (table)
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>Заголовок столбца 1</th><th>Заголовок столбца 2</th><th>Заголовок столбца 3</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>Ячейка 1</td><td>Ячейка 2</td><td>Ячейка 3</td>
+
+                            </tr>
+                            <tr>
+                                <td>Ячейка 4</td><td>Ячейка 5</td><td>Ячейка 6</td>
+                            </tr>
+                            </tbody>
+
+                        </table>
+                        Теги форматирования:
+                        <p>Тег <strong>strong — выделение жирным</strong>, повышает вес слова для поисковых систем.</p>
+                        <p>Тег <b>b — выделение жирным</b>, не повышает вес слова для поисковых систем.</p>
+
+                        <p>Тег <em>em — выделение курсивом</em>, повышает вес слова для поисковых систем.</p>
+                        <p>Тег <i>i — выделение курсивом</i>, не повышает вес слова для поисковых систем.</p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+    </div>
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <p class="copy">(c) 2013 — «Мейджик Транс» - современные
+            транспортно-экспедиционные услуги высокого уровня</p>
+        <div class="socialWrap">
+            <img src="pic/pic2.png" width="241" height="18" alt="">
+        </div>
+
+        <address class="address">
+            <p><span>+7(495)</span>232-48-11</p>
+            <a href="#" class="orderBut">Отправить заявку</a>
+        </address>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

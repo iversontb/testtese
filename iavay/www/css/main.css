@@ -1,0 +1,3199 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    main-menu
+
+    language
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd, 
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {    
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {                        
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            
+} 
+input, select, button, textarea {
+    margin: 0;                 
+    font-size: 100%;             
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;     
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {         
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+     list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+    background: #efefef;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;    
+}
+textarea {
+    resize:none; 
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus { 
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner { 
+    padding:0; 
+    border:0; 
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+    .site:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 100px;
+    }
+.site__layout {
+    width: 1000px;
+
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+
+    height: 100px;
+    background: red;
+
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- main-menu --------------- */
+.main-menu {
+
+}
+/* --------------- /main-menu --------------- */
+
+/* --------------- language --------------- */
+.language {
+
+}
+/* --------------- /language --------------- */
+
+
+
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -100px;
+}
+.footer__layout {
+    width: 1000px;
+    margin: 0 auto;
+
+    height: 100px;
+    background: blue;
+}
+
+
+
+
+
+/* --------------- /footer --------------- */
+
+@font-face {
+    font-family: "scada-regular-webfont";
+    src: url("../fonts/scada-regular-webfont.eot");
+    src: url("../fonts/scada-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/scada-regular-webfont.woff") format("woff"),
+    url("../fonts/scada-regular-webfont.ttf") format("truetype");
+}
+@font-face {
+    font-family: "scada-bold-webfont";
+    src: url("../fonts/scada-bold-webfont.eot");
+    src: url("../fonts/scada-bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/scada-bold-webfont.woff") format("woff"),
+    url("../fonts/scada-bold-webfont.ttf") format("truetype");
+}
+
+/* --------------- /fonts --------------- */
+
+a.size1{
+    line-height: 25px;
+}
+a.size2{
+    line-height: 32px;
+}
+a.size3{
+     line-height: 35px;
+ }
+a.size4{
+    line-height: 28px;
+}
+a.red:visited,
+a.fiolet:visited{
+    color: #fff;
+}
+a.gray:visited{
+    color: #333;
+}
+input[type="submit"].size1{
+    width: 112px;
+    height: 27px;
+    line-height: 27px;
+}
+input[type="submit"].size2{
+    width: 112px;
+    height: 34px;
+    line-height: 34px;
+}
+input[type="submit"].size3{
+    width: 112px;
+    height: 37px;
+    line-height: 37px;
+}
+input[type="submit"].size4{
+    width: 112px;
+    height: 30px;
+    line-height: 30px;
+}
+.fiolet{
+    color: #fff;
+    border: 1px solid #5656aa;
+    background: url("../img/fiolet-back.png");
+    text-shadow: 1px -1px 1px #4b4b90;
+}
+.fiolet:hover{
+    background: url("../img/fiolet-back-hover.png");
+}
+.fiolet:active{
+    background: url("../img/fiolet-back-active.png");
+
+}
+.size1{
+    font-size: 12px;
+    height: 25px;
+}
+.size2{
+    height: 32px;
+    font-size: 13px;
+}
+.size3{
+    height: 35px;
+    font-size: 13px;
+}
+.size4{
+    height: 28px;
+    font-size: 13px;
+}
+.gray{
+    border: 1px solid #b6b6b6;
+    color: #333333;
+    background: url("../img/gray-back.png");
+    text-shadow: 2px 1px 1px #fff;
+}
+.gray:hover{
+    background: url("../img/gray-back-hover.png");
+}
+.gray:active{
+    background: url("../img/gray-back-active.png");
+}
+.red{
+    border: 1px solid #ff3d3d;
+    color: #fff;
+    background: url("../img/red-back.png");
+    text-shadow: 2px -1px 1px #d43737;
+}
+.red:hover{
+    background: url("../img/red-back-hover.png");
+}
+.red:active{
+    background: url("../img/red-back-active.png");
+}
+.buttonType{
+    border-radius: 3px;
+    display:  block;
+    width: 110px;
+    text-align: center;
+    padding: 0;
+    font-family: "scada-regular-webfont";
+    -webkit-appearance: none;
+}
+
+.socialBut{
+    display: block;
+    text-indent: -5000px;
+    width: 218px;
+    height: 30px;
+    background: url("../img/button-sprite.png");
+    border: none;
+}
+a.control,
+a.tracking{
+    line-height: 27px;
+}
+.tracking{
+    width: 118px;
+}
+.control{
+    width: 129px;
+}
+.blakStar{
+    background: url("../img/black-star.png") no-repeat;
+    padding-left: 20px;
+}
+.orangeStar{
+    background: url("../img/orange-star.png") no-repeat;
+    padding-left: 20px;
+}
+.socialBut.fb:active{ background-position: 0 0;}
+.fb:hover{ background-position: 0 -31px;}
+.fb{ background-position: 0 -62px;}
+.socialBut.g:active{ background-position: 0 -93px;}
+.g:hover{ background-position: 0 -124px; }
+.g{ background-position: 0 -155px; }
+.socialBut.mr:active{ background-position: 0 -186px; }
+.mr:hover{ background-position: 0 -217px;}
+.mr{ background-position: 0 -248px; }
+.socialBut.od:active{ background-position: 0 -279px;}
+.od:hover{ background-position: 0 -310px;}
+.od{ background-position: 0 -341px;}
+.socialBut.t:active{ background-position: 0 -372px;}
+.t:hover{ background-position: 0 -403px;}
+.t{ background-position: 0 -434px; }
+.socialBut.vk:active{ background-position: 0 -465px; }
+.vk:hover{ background-position: 0 -496px;}
+.vk{ background-position: 0 -527px;}
+
+
+
+.newButtons{
+    overflow: hidden;
+}
+.newButtons li{
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.show{
+    float:  left;
+    margin-right: 10px;
+}
+.socialWrap li,
+.show li{
+    margin-bottom: 10px;
+}
+.socialWrap{
+    overflow: hidden;
+    clear: both;
+}
+.popUpContainer{
+    background: url("../img/popup-back.png");
+    padding: 5px;
+    width: 268px;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10px;
+}
+.popUpContainer .popUpForm{
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.popUpContainer .formHead{
+    background: url("../img/form-head.png");
+    height: 55px;
+    margin-bottom: 17px;
+    border-radius: 5px 5px 0 0;
+}
+.popUpContainer .formHead h2{
+    color: #333333;
+    font-family: "scada-bold-webfont";
+    font-size: 18px;
+    padding: 19px 0 0 23px;
+
+}
+.popUpContainer .closeBut{
+    position: absolute;
+    text-indent: -5000px;
+    top: 20px;
+    right: 25px;
+    background: url("../img/close-button.png");
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.popUpContainer .closeBut:hover{
+    opacity: 1;
+}
+.popUpContainer p{
+    text-align: center;
+    font-family: "scada-regular-webfont";
+    font-size: 13px;
+    margin-bottom: 17px;
+}
+.popUpContainer .socialWrap{
+    overflow: hidden;
+    clear: both;
+    height:  150px;
+}
+.popUpContainer .socialWrap li{
+    margin: 0 0 20px 25px;
+}
+.popUpContainer .wraper{
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 17px 0;
+    clear: both;
+}
+.popUpContainer .inputWrap{
+    border: 1px solid #999;
+    background: #f3f3f3;
+    width: 216px;
+    border-radius: 3px;
+    height: 28px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.popUpContainer .inputWrap input{
+    background: none;
+    border: none;
+    color: #333333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*height: 28px;*/
+    width: 196px;
+    padding: 6px 10px;
+    font-family: "scada-regular-webfont";
+    font-size: 14px;
+}
+.popUpContainer input[type="submit"].size4{
+    width: 218px;
+    margin-left: 25px;
+}
+::-webkit-input-placeholder {
+    color: #999;
+}
+:-moz-placeholder {
+    color: #999;
+}
+.placeholder {
+    color: #999;
+}
+.popUpContainer .popUpFormFooter{
+    overflow: hidden;
+    padding: 17px 0 17px 24px;
+}
+.popUpContainer .popUpFormFooter li:first-child{
+    margin-left: 0;
+}
+.popUpContainer .popUpFormFooter li{
+    float: left;
+    margin-left: 66px;
+}
+.popUpContainer .popUpFormFooter li a{
+    font-family: "scada-regular-webfont";
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px solid #e4e4e4;
+}
+.popUpContainer .popUpFormFooter li a:hover{
+    border-bottom: 1px solid #888;
+}
+.popUpContainer .moreSoc{
+    color: #666;
+    font-size: 11px;
+    font-family: "scada-regular-webfont";
+    float: right;
+    text-decoration: none;
+    border-bottom: 1px dotted #666;
+    margin: 0 25px 10px 0;
+}
+.popUpContainer .moreSoc:hover{
+    border-bottom: none;
+    margin-bottom: 11px;
+}
+.popUpContainer .error{
+    font-size: 11px;
+    color: #333;
+    background: #e7f0c4;
+    text-align: left;
+    padding: 16px 0 16px 24px;
+    margin-top: -10px;
+    margin-bottom: 9px;
+}
+.popUpContainer .error p{
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 11px;
+}
+.popUpContainer .userContainer{
+    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 13px;
+}
+.popUpContainer .imgWrap{
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 51px;
+}
+.popUpContainer .vkUser{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background: url("../img/vk-boble.png");
+    width: 20px;
+    height: 20px;
+    text-indent: -5000px;
+}
+.popUpContainer .fbUser{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background: url("../img/fb-bovble.png");
+    width: 20px;
+    height: 20px;
+    text-indent: -5000px;
+}
+.popUpContainer .odUser{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background: url("../img/od-boble.png");
+    width: 20px;
+    height: 20px;
+    text-indent: -5000px;
+}
+.popUpContainer .ttUser{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background: url("../img/tt-boble.png");
+    width: 20px;
+    height: 20px;
+    text-indent: -5000px;
+}
+.popUpContainer .userContainer p{
+    float: left;
+    text-align: left;
+    width: 200px;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 12px 0 0 12px;
+    line-height: 15px;
+    font-family: "scada-regular-webfont";
+}
+.regPop{
+    width: 301px;
+}
+.regPop .formHead{
+    margin-bottom: 10px;
+}
+.popUpContainer .lineContainer{
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+}
+.popUpContainer .checkWrap{
+    float: left;
+    margin-left: 25px;
+}
+.popUpContainer .lineContainer label{
+    float: left;
+    font-family: "scada-regular-webfont";
+    font-size: 12px;
+    color: #333;
+    margin: 5px 0 0 9px;
+}
+.regPop .inputWrap{
+    width: 249px;
+}
+.regPop .inputWrap input{
+    width: 229px;
+}
+.regPop  input[type="submit"].size4{
+    width: 251px;
+}
+.popUpContainer .registred{
+    display: none;
+}
+.popUpContainer .noLine{
+    border-top: none;
+}
+.popUpContainer .forgotMessage{
+    text-align: left;
+    padding-left: 25px;
+    line-height: 20px;
+    padding-right: 20px;
+}
+.popUpContainer .load{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: url("../img/thinkin-back.png");
+}
+.popUpContainer .load img{
+    position: absolute;
+    top: 50%;
+    margin-left: -19.5px;
+    margin-top: -19.5px;
+    left: 50%;
+}
+.popUpContainer .forgotMessage a{
+    font-family: 13px;
+    color: #7474d1;
+}
+.popUpContainer .forgotMessage a:hover{
+    text-decoration: underline;
+}
+.popUpContainer .noLine2{
+    border-bottom:  none;
+}
+.popUpContainer .noLine2 a.size1{
+    margin-left: 25px;
+}
+.oferta{
+    width: 582px;
+}
+.popUpContainer .scrollBox{
+    padding-left: 25px;
+    position: relative;
+}
+.popUpContainer .scroll-pane {
+    width: 534px;
+    height: 343px;
+    overflow: auto;
+
+}
+
+
+.popUpContainer .scrollBox p{
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    line-height: 15px;
+}
+
+/*
+	ScrollBar Styles
+*/
+.content-wrap .jScrollPaneContainer,
+.popUpContainer .jScrollPaneContainer {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.content-wrap .jScrollPaneTrack,
+.popUpContainer .jScrollPaneTrack {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0 !important;
+    height: 91% !important;
+    background: #dddddd;
+    border-radius: 15px;
+    width: 14px !important;
+}
+.content-wrap .jScrollPaneDrag,
+.popUpContainer .jScrollPaneDrag {
+    position: absolute;
+    background: #a2a2a2;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 10px !important;
+    left: 2px;
+    margin: 2px 0 -2px 0;
+
+}
+.content-wrap .jScrollPaneDragTop,
+.popUpContainer .jScrollPaneDragTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:  none;
+    overflow: hidden;
+    background: url(../images/scrollDragTop.gif) no-repeat;
+    height:3px;
+}
+.content-wrap .jScrollPaneDragBottom,
+.popUpContainer .jScrollPaneDragBottom {
+    position: absolute;
+    bottom: 0;
+    display:  none;
+    left: 0;
+    overflow: hidden;
+    background: url(../images/scrollDragBot.gif) no-repeat;
+    height:3px;
+}
+.content-wrap a.jScrollArrowUp,
+.popUpContainer a.jScrollArrowUp {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    display:  none;
+    height: 18px;
+    background: url(../images/arrow_up.gif) no-repeat;
+}
+.content-wrap a.jScrollArrowDown,
+.popUpContainer a.jScrollArrowDown {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display:  none;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    height: 18px;
+    background: url(../images/arrow_down.gif) no-repeat;
+}
+.content-wrap .scrollShadow,
+.popUpContainer .scrollShadow{
+    background: url("../img/scrool-back.png");
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 88%;
+    z-index: 10;
+    margin: 0 25px;
+}
+.oferta .formHead{
+    margin-bottom: 20px;
+}
+.popUpContainer .conteiner{
+    overflow: hidden;
+    border-top: 1px solid #e4e4e4;
+    margin-top: 10px;
+    padding:  20px 25px;
+}
+.popUpContainer .conteiner .size1{
+    width: 110px;
+    float: left;
+}
+.popUpContainer .conteiner .fiolet{
+    float: right;
+    width: 206px;
+}
+.popUpContainer .haveAc{
+    display: block;
+    color: #666;
+    font-size: 12px;
+    float: right;
+    border-bottom: 1px solid #e4e4e4;
+}
+.popUpContainer .haveAc:hover{
+    border-bottom: 1px solid #333;
+}
+.popUpContainer .over{
+    overflow:  hidden;
+    padding: 15px 25px;
+}
+.popUpContainer .conteiner .forgotMessage{
+    padding: 0;
+    margin-bottom: 0;
+}
+.popUpContainer .exemple{
+    font-family: "scada-regular-webfont";
+    font-size: 12px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    }
+.popUpContainer .exemple p{
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.popUpContainer .exemple p a{
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px dashed #666;
+}
+.popUpContainer .exemple p a:hover{
+    border-bottom: none;
+}
+.selectPop{
+    width: 446px;
+}
+.selectPop .error{
+    margin-top: 0;
+}
+.selectPop input[type="submit"].size4{
+    width: 176px;
+    margin:  0 auto;
+}
+/*
+	styles for select
+*/
+
+.content-wrap .cusel,
+.content-wrap .cuselFrameRight,
+.content-wrap .jScrollPaneDrag,
+.content-wrap .jScrollArrowUp,
+.content-wrap .jScrollArrowDown,
+.selectPop .cusel,
+.selectPop .cuselFrameRight,
+.selectPop .jScrollPaneDrag,
+.selectPop .jScrollArrowUp,
+.selectPop .jScrollArrowDown {
+    background:  url(../img/selects-2.png) no-repeat;
+}
+.content-wrap select,
+.content-wrap .cusel,
+.selectPop .cusel { /* общий вид селекта включая стрелку справа */
+    height: 30px;
+    background-position: left top;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 396px !important;
+    font-size: 14px;
+    z-index: 1;
+}
+.content-wrap .cuselFrameRight,
+.selectPop .cuselFrameRight { /* левая чсть селект. обыно скругление и левая граница */
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 42px;
+    background-position: right top;
+}
+.content-wrap .cuselText,
+.selectPop .cuselText { /* контейнер для отображенного текста селект */
+    height: 14px;
+    padding: 9px 0 0 7px; /* подбираем отступы и высоту для видимого текста в селекте */
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    font: 14px;
+    font-family:  "scada-regular-webfont";
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #999;
+}
+.content-wrap .cusel span,
+.selectPop .cusel span { /* оформление оптиона */
+    display: block;
+    cursor: pointer;
+    white-space: nowrap;
+    color: #545454;
+    font-family:  "scada-regular-webfont";
+    padding: 5px 15px 5px 5px; /* паддинг справа - это отступ текста от ползунка */
+    zoom: 1;
+}
+.content-wrap .cusel span:hover,
+.selectPop .cusel span:hover,
+.content-wrap .cusel .cuselOptHover,
+.selectPop .cusel .cuselOptHover { /* реакция оптиона на наведение */
+    background: #f3f3f3;
+    color: #545454;
+}
+.content-wrap .cusel .cuselActive,
+.selectPop .cusel .cuselActive { /* оформление активного оптиона в списке */
+    color: #545454;
+    cursor: default;
+}
+
+/*
+	styles for focus and hover
+*/
+.content-wrap .cusel:hover,
+.selectPop .cusel:hover,
+.content-wrap .cusel:hover .cuselFrameRight,
+.selectPop .cusel:hover .cuselFrameRight,
+.content-wrap .cusel:focus,
+.selectPop .cusel:focus,
+.content-wrap .cusel:focus .cuselFrameRight,
+.selectPop .cusel:focus .cuselFrameRight,
+.content-wrap .cuselFocus,
+.selectPop .cuselFocus,
+.content-wrap .cuselFocus .cuselFrameRight,
+.selectPop .cuselFocus .cuselFrameRight {
+    background-image: url(../img/selects-2.png);
+}
+.content-wrap .cuselOpen,
+.selectPop .cuselOpen {
+    z-index: 999;
+}
+
+/*
+	styles for disabled select
+*/
+.content-wrap .classDisCusel,
+.selectPop .classDisCusel,
+.content-wrap .classDisCusel .cuselFrameRight,
+.selectPop .classDisCusel .cuselFrameRight {
+    background-image: url(../img/selects-2.png) !important;
+    cursor: default;
+    color: #ccc;
+}
+.content-wrap .classDisCusel .cuselText,
+.selectPop .classDisCusel .cuselText {
+    cursor: default;
+}
+
+
+/*
+	styles for scrollbar
+*/
+.content-wrap .cusel .cusel-scroll-wrap,
+.selectPop .cusel .cusel-scroll-wrap { /* контейнер для блока с прокруткой */
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #fff; /* фон выпадающего списка */
+    min-width: 100%;
+    width: auto;
+}
+.content-wrap .cusel .jScrollPaneContainer,
+.selectPop .cusel .jScrollPaneContainer {
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    background: #fff;
+    border: 1px solid #999; /* границы выпадающего спиcка */
+}
+.content-wrap .cusel .jScrollPaneTrack,
+.selectPop .cusel .jScrollPaneTrack { /* трек для ползунка прокрутки */
+    height: 100% !important;
+    width: 9px !important;
+    background: #ccc;
+    position: absolute;
+    top: 0;
+    right: 2px;
+}
+.content-wrap .cusel .jScrollPaneDrag,
+.selectPop .cusel .jScrollPaneDrag { /* ползунок */
+    position: absolute;
+    background: #a2a2a2;
+    cursor: pointer;
+    width: 5px !important;
+    height: 27px;
+    right: -4px;
+    margin: 0 !important;
+
+}
+.content-wrap .cusel .jScrollPaneDragTop,
+.selectPop .cusel .jScrollPaneDragTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.content-wrap .cusel .jScrollPaneDragBottom,
+.selectPop .cusel .jScrollPaneDragBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.content-wrap .cusel .jScrollArrowUp,
+.selectPop .cusel .jScrollArrowUp { /* стрелка вверх */
+    position: absolute;
+    top: 0;
+    right: 2px;
+    width: 26px;
+    height: 12px;
+    cursor: pointer;
+    background-position: -2px -26px;
+    overflow: hidden;
+}
+.content-wrap .cusel .jScrollArrowDown,
+.selectPop .cusel .jScrollArrowDown { /* стрелка вниз */
+    width: 25px;
+    height: 12px;
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: 3px;
+    cursor: pointer;
+    background-position: -21px -26px;
+    overflow: hidden;
+}
+.popUpContainer .selectWrap{
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+.popUpContainer .selectWrap label{
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 13px;
+    font-family:  "scada-regular-webfont";
+    font-weight: bold;
+}
+.popUpContainer .selectWrap label span{
+    color: #888888;
+    font-size: 11px;
+    font-weight: normal;
+    margin-right: 25px;
+    float: right;
+}
+.popUpContainer .hiddenBlok{
+
+}
+.buttonsBack{
+    background: #fff;
+}
+
+.inside{
+    min-width: 1150px;
+}
+
+.inside .site__layout {
+    width: 1150px;
+    float: left;
+    background: url("../img/aside-back.png") repeat-y;
+
+}
+
+.insideMenu{
+    width: 240px;
+    background: #303030;
+    font-family:  "scada-regular-webfont";
+    color: #fff;
+}
+.insideMenu hgroup{
+    padding: 18px 0 17px 29px;
+    background: #1b1b1b;
+}
+.insideMenu hgroup h1{
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+.insideMenu hgroup h2{
+    font-weight: normal;
+    font-size: 12px;
+}
+.insideMenu .userInfo{
+    overflow: hidden;
+    padding: 14px 0 0 30px;
+}
+.insideMenu .imgWrap{
+    float: left;
+    position: relative;
+    margin-right: 15px;
+}
+.insideMenu .imgWrap img{
+    display: block;
+}
+.insideMenu .imgWrap .imgAround{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+}
+.insideMenu .userInfo dl{
+    float: left;
+    width: 100px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.insideMenu .userInfo dt{
+    font-size: 11px;
+    padding-bottom: 7px;
+}
+.insideMenu .userInfo dd a{
+    color: #fff;
+    font-family: "scada-bold-webfont";
+}
+.insideMenu .userInfo dd a:hover{
+    color: #f7d42f;
+}
+.insideMenu .accInfo ul{
+    overflow: hidden;
+    padding: 7px 0 15px 30px;
+}
+.insideMenu .accInfo li{
+    float: left;
+    margin-right: 12px;
+}
+.insideMenu .accInfo li a{
+    color: #cccccc;
+    font-size: 11px;
+
+}
+.insideMenu .settingBut{
+    background: url("../img/settings.png") no-repeat;
+    padding-left: 17px;
+}
+.insideMenu a.settingBut:hover{
+    color: #f7d42f;
+    background: url("../img/settings-hover.png") no-repeat;
+}
+.insideMenu a.enterBut{
+    background: url("../img/enter.png") no-repeat  0 2px;
+    padding-left: 20px;
+}
+.insideMenu a.enterBut:hover{
+    background: url("../img/enter-hover.png") no-repeat  0 2px;
+    color: #f7d42f;
+}
+.insideMenu  .point{
+    background: #1b1b1b;
+    font-size: 12px;
+    padding: 20px 0 22px 32px;
+}
+.insideMenu  .point dt{
+    background: url("../img/point.png") no-repeat;
+    padding-left: 25px;
+    height: 15px;
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 8px;
+}
+.insideMenu  .point a{
+    color: #fff;
+    border-bottom: 1px dashed #fff;
+}
+.insideMenu  .point a:hover{
+    color: #f7d42f;
+    border-bottom: 1px dashed #f7d42f;
+}
+.insideMenu .menuBlock{
+    border-bottom: 3px solid #1b1b1b;
+    padding-top: 15px;
+}
+.insideMenu .menuBlock h3{
+    font-size: 13px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    line-height: 20px;
+    height: 20px;
+    font-family: "scada-bold-webfont";
+}
+.insideMenu .messageTopic{
+    background: url("../img/message.png") no-repeat left center;
+    padding-left: 25px;
+}
+.insideMenu .menuBlock .asideMenu{
+    margin-left: 30px;
+}
+.insideMenu .menuBlock .asideMenu a{
+    font-size: 12px;
+    color: #fff;
+}
+.insideMenu .menuBlock .asideMenu a:hover{
+    color: #f7d42f;
+}
+.insideMenu .menuBlock .asideMenu a.active{
+    color: #f7d42f;
+    display: block;
+    position: relative;
+    font-family: "scada-bold-webfont";
+}
+.insideMenu .menuBlock .asideMenu a sup{
+    color: #fff;
+    font-weight: normal;
+    margin: 0 2px;
+}
+.insideMenu .menuBlock .asideMenu a .newUnRead{
+    color: #333333;
+    border-radius: 3px;
+    background: #f7d42f;
+    padding: 0 3px;
+
+}
+.insideMenu .menuBlock .asideMenu a.active:after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../img/active-arrow.png");
+    width: 10px;
+    height: 17px;
+    content: "";
+}
+.insideMenu .menuBlock .asideMenu li{
+    margin-bottom: 15px;
+}
+.insideMenu .servisece{
+    background: url("../img/services.png") no-repeat  left center;
+    padding-left: 25px;
+}
+.insideMenu .objects{
+    background: url("../img/objects.png") no-repeat  left center;
+    padding-left: 20px;
+}
+.insideMenu .users{
+    background: url("../img/users.png") no-repeat  left center;
+    padding-left: 25px;
+}
+.insideMenu .statistics{
+    background: url("../img/statistic.png") no-repeat  left center;
+    padding-left: 25px;
+}
+.insideMenu .iGrajdCoy{
+    color: #979797;
+    font-size: 12px;
+    font-family: tahoma;
+    padding: 20px 20px 50px 30px;
+}
+ .blocksWrper > div{
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.pinkBlock{
+    background: #cc6666;
+}
+.greenBlock{
+    background: #009371;
+}
+ .orangeBlock{
+    background: #f7d42f;
+}
+ .whiteBlock{
+    border: 1px solid #d0d0d2;
+    background: #efefef;
+}
+ .grayBlock{
+    background: #d0d0d2;
+}
+.darkGrayBlock{
+    background: #333333;
+}
+.blackBlock{
+    background: #1b1b1b;
+}
+.blueBlock{
+    background: #3399cc;
+}
+.buttonsBlock{
+    overflow: hidden;
+    clear: both;
+    padding: 50px;
+}
+.buttonsBlock li{
+    float: left;
+    margin-right: 10px;
+}
+.blueButton{
+    width: 164px;
+    text-align: center;
+    color: #fff;
+    background: #3399cc;
+    font-size: 12px;
+}
+.blueButton:hover{
+    background: #0066cc;
+}
+.blueButton:active{
+    background: #0066cc;
+    box-shadow: inset 0 0 10px #004b96;
+}
+.greenButton{
+    width: 129px;
+    background: #009371;
+    color: #fff;
+    font-size: 12px;
+    border: none;
+}
+.greenButton:hover{
+    background: #669933;
+}
+.greenButton:active{
+    background: #669933;
+    box-shadow: inset 0 0 10px #0d2f02;
+}
+.grayButton{
+    width: 83px;
+    background: #d0d0d2;
+    color: #333333;
+    font-size: 12px;
+}
+.grayButton:hover{
+    background: #e6e4e7;
+}
+.grayButton:active{
+    background: #e6e4e7;
+    box-shadow: inset 0 0 10px #a9a7a9;
+}
+.pinkButton{
+    width: 94px;
+    background: #cc6666;
+    color: #fff;
+    font-size: 12px;
+}
+.pinkButton:hover{
+    background: #cc3300;
+}
+.pinkButton:active{
+    background: #cc3300;
+    box-shadow: inset 0 0 10px #942a25;
+}
+.cloudsWrap{
+    background: url("../img/cloud-back.png");
+    border: 3px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    width: 205px;
+    padding: 13px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 16px;
+}
+.justForDelete{
+    background: #bbbbbb;
+    padding: 40px;
+}
+.bottomArrow:after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -10px;
+    background: url("../img/arrow-cloud.png");
+    width: 20px;
+    height: 12px;
+}
+.leftArrow:after{
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 50%;
+    margin-top: -6px;
+    background: url("../img/left-cloud.png");
+    width: 12px;
+    height: 20px;
+}
+.rightArrow:after{
+    content: "";
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    margin-top: -10px;
+    background: url("../img/right-cloud.png");
+    width: 12px;
+    height: 20px;
+}
+.topArrow:after{
+    content: "";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    margin-left: -10px;
+    background: url("../img/top-cloud.png");
+    width: 20px;
+    height: 12px;
+}
+.rightSideBar{
+    width: 240px;
+    float: left;
+}
+.content-wrap{
+    float: right;
+    width: 880px;
+    font-family:  "scada-regular-webfont";
+}
+.content-wrap .topic{
+    font-size: 18px;
+    color: #333;
+    margin: 20px 0 17px 0;
+    font-family:  "scada-bold-webfont";
+}
+
+.content-wrap .topic sup{
+    font-weight: normal;
+    margin: 0 5px;
+}
+.content-wrap .tableWrap{
+    clear: both;
+}
+.content-wrap .tableWrap table{
+    color: #333333;
+    background: #ffffff;
+    font-size: 10px;
+    line-height: 12px;
+}
+.content-wrap .tableWrap table th{
+    border: 1px solid #d0d0d2;
+    font-size: 11px;
+    font-family: "scada-bold-webfont";
+    font-weight: normal;
+    color: #000;
+    height: 33px;
+    padding-left: 10px;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+.content-wrap .tableWrap tr:last-child td{
+    border-bottom: none;
+}
+
+.content-wrap .tableWrap table td{
+    border: 1px solid #d0d0d2;
+    padding: 10px;
+}
+
+.content-wrap .tableWrap th.tableNumb{
+    vertical-align: middle;
+}
+.content-wrap .tableWrap .tableNumb{
+    width: 8px;
+    max-width: 8px;
+    min-width: 8px;
+    vertical-align: top;
+}
+.content-wrap .tableWrap.atWork tr{
+    font-size: 11px;
+}
+.content-wrap .tableWrap .doneInPlan{
+    width: 85px;
+    max-width: 85px;
+    min-width: 85px;
+}
+.content-wrap .tableWrap.newProblem  .tableTopic{
+    width: 130px;
+    max-width: 130px;
+    min-width: 130px;
+}
+.content-wrap .tableWrap.atWork  .tableTopic{
+    width: 120px;
+    max-width: 120px;
+    min-width: 120px;
+}
+.content-wrap .tableWrap.rejectedTable  td{
+    font-size: 11px;
+}
+.content-wrap .tableWrap.rejectedTable  .tableTopic{
+    width: 110px;
+    max-width: 110px;
+    min-width: 110px;
+}
+.content-wrap .tableWrap.noClosedTable td{
+    font-size: 11px;
+}
+.content-wrap .tableWrap.hiddenTable td{
+    font-size: 11px;
+}
+.content-wrap .tableWrap.hiddenTable .tableBut{
+    width: 166px;
+    max-width: 166px;
+    min-width: 166px;
+}
+.content-wrap .tableWrap.hiddenTable .tableBut .buttonType{
+    float: left;
+    margin-left: 12px;
+    width: 66px;
+}
+.content-wrap .tableWrap.hiddenTable .tableAutor{
+    width: 115px;
+    max-width: 115px;
+    min-width: 115px;
+}
+.content-wrap .tableWrap.noClosedTable  .tableTopic{
+    width: 90px;
+    max-width: 90px;
+    min-width: 90px;
+}
+.content-wrap .tableWrap .tabelSended{
+    width: 50px;
+    min-width: 50px;
+    max-width: 50px;
+}
+.content-wrap .tableWrap.atWork  .tableCat{
+    width: 55px;
+    min-width: 55px;
+    max-width: 55px;
+}
+.content-wrap .tableWrap.rejectedTable  .tableCat{
+    width: 45px;
+    min-width: 45px;
+    max-width: 45px;
+}
+.content-wrap .tableWrap.atWork  .overdue,
+.content-wrap .tableWrap.rejectedTable  .overdue{
+    width: 40px;
+    min-width: 40px;
+    max-width: 40px;
+}
+.content-wrap .tableWrap.noClosedTable .tableSlujba{
+    width: 62px;
+    min-width: 62px;
+    max-width: 62px;
+}
+
+.content-wrap .tableWrap.allProblemsTable td{
+    font-size: 11px;
+}
+.content-wrap .tableWrap.allProblemsTable .tableTopic{
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+}
+.content-wrap .tableWrap .tableSlujba{
+     width: 40px;
+     min-width: 40px;
+     max-width: 40px;
+}
+.content-wrap .tableWrap.allProblemsTable .tableCat{
+    width: 66px;
+    min-width: 66px;
+    max-width: 66px;
+}
+.content-wrap .tableWrap .tableDone{
+    width: 55px;
+    min-width: 55px;
+    max-width: 55px;
+}
+.content-wrap .tableWrap.allProblemsTable .tableSlujba{
+    width: 60px;
+    min-width: 60px;
+    max-width: 60px;
+}
+.content-wrap .tableWrap .tableSend{
+    width: 55px;
+    min-width: 55px;
+    max-width: 55px;
+}
+.content-wrap .tableWrap .tableDenided{
+    width: 45px;
+    min-width: 45px;
+    max-width: 45px;
+}
+.content-wrap .tableWrap.rejectedTable .tableBut.bigBut{
+    width: 90px;
+    min-width: 90px;
+    max-width: 90px;
+}
+.content-wrap .tableWrap.rejectedTable .bigBut .blueButton{
+    width: 85px !important;
+    font-size: 11px;
+}
+.content-wrap .tableWrap .tableBut.bigBut{
+    width: 110px;
+    min-width: 110px;
+    max-width: 110px;
+}
+.content-wrap .tableWrap.noAnserTable td{
+    font-size: 11px;
+}
+.content-wrap .tableWrap.noAnserTable  .tableTopic{
+    width: 95px;
+    max-width: 95px;
+    min-width: 95px;
+}
+.content-wrap .tableWrap .tableTopic{
+    width: 117px;
+    max-width: 117px;
+    min-width: 117px;
+}
+.content-wrap .tableWrap .tableId{
+    width: 31px;
+    max-width: 31px;
+    min-width: 31px;
+}
+.content-wrap .tableWrap .inWrok{
+    width: 46px;
+    max-width: 46px;
+    min-width: 46px;
+}
+.content-wrap .tableWrap .tableRate{
+    width: 38px;
+    max-width: 38px;
+    min-width: 38px;
+}
+.content-wrap .tableWrap.newProblem .tableAddress{
+    width: 105px;
+    max-width: 105px;
+    min-width: 105px;
+}
+.content-wrap .tableWrap.rejectedTable .tableAddress{
+    width: 80px;
+    max-width: 80px;
+    min-width: 80px;
+}
+.content-wrap .tableWrap.noClosedTable .tableAddress{
+    width: 80px;
+    max-width: 80px;
+    min-width: 80px;
+}
+.content-wrap .tableWrap .tableAddress{
+    width: 85px;
+    max-width: 85px;
+    min-width: 85px;
+}
+.content-wrap .tableWrap .tableCom{
+    width: 37px;
+    max-width: 37px;
+    min-width: 37px;
+}
+.content-wrap .tableWrap.newProblem .tableStut{
+    width: 46px;
+    max-width: 46px;
+    min-width: 46px;
+}
+.content-wrap .tableWrap .tableStut{
+    width: 45px;
+    max-width: 45px;
+    min-width: 45px;
+}
+.content-wrap .tableWrap .tableCreate{
+    width: 44px;
+    max-width: 44px;
+    min-width: 44px;
+}
+.content-wrap .tableWrap.noClosedTable .tableCat{
+    width: 65px;
+    max-width: 65px;
+    min-width: 65px;
+}
+.content-wrap .tableWrap .tableCat{
+    width: 79px;
+    max-width: 79px;
+    min-width: 79px;
+}
+.content-wrap .tableWrap.newProblem .tableAutor{
+    width: 115px;
+    max-width: 115px;
+    min-width: 115px;
+}
+.content-wrap .tableWrap.atWork .tableAutor{
+    width: 105px;
+    max-width: 105px;
+    min-width: 105px;
+}
+.content-wrap .tableWrap.rejectedTable .tableAutor{
+    width: 105px;
+    max-width: 105px;
+    min-width: 105px;
+}
+.content-wrap .tableWrap .tableAutor{
+    width: 100px;
+    max-width: 100px;
+    min-width: 100px;
+}
+.content-wrap .tableWrap.atWork .tableBut{
+    width: 94px;
+    max-width: 94px;
+    min-width: 94px;
+}
+.content-wrap .tableWrap .tableBut{
+    width: 73px;
+    max-width: 73px;
+    min-width: 73px;
+    vertical-align: middle;
+}
+.content-wrap .tableWrap.newProblem td{
+    font-size: 11px;
+}
+.content-wrap .tableWrap table tbody tr:hover td{
+    background: #fefcf0;
+}
+.content-wrap .tableWrap .redText{
+    color: #cc6666;
+}
+.content-wrap .tableWrap .tableBut .redText{
+    padding-left: 12px;
+}
+.content-wrap .tableWrap .tableBut .blueButton{
+    width: 67px;
+    margin: 0 auto;
+}
+.blueButton span{
+    font-family: arial;
+}
+.content-wrap  .blueButton:visited{
+    color: #fff;
+}
+.content-wrap .openBlock.borderBottom{
+    border-bottom: 1px solid #d0d0d2;
+    border-top: none;
+}
+.content-wrap .openBlock{
+    background: #f0f8fc;
+    padding: 0 28px 18px 28px;
+    float: left;
+    width: 822px;
+    display: block;
+    border-top: 1px solid #d0d0d2;
+    border-right: 1px solid #d0d0d2;
+    border-left: 1px solid #d0d0d2;
+}
+.content-wrap .sended{
+    background: url("../img/check.png") no-repeat;
+    padding-left: 15px;
+    color: #009271;
+}
+.content-wrap .blockWrap{
+    float: left;
+    margin-right: 22px;
+}
+
+.content-wrap .blockWrap label{
+    display: block;
+    color: #333333;
+    margin-bottom: 9px;
+    font-family: "scada-bold-webfont";
+    font-size: 13px;
+}
+.content-wrap .firsWidth select,
+.content-wrap .firsWidth .cusel{
+    width: 254px !important;
+}
+.content-wrap .borderLine{
+    border-bottom: 1px solid #d0d0d2;
+    width: 100%;
+    float: left;
+    padding-bottom: 17px;
+}
+.content-wrap .openBlock .lineContainer{
+    width: 100%;
+    float: left;
+    padding-top: 18px;
+}
+.content-wrap .blockWrap .pinkButton{
+    margin-top: 23px;
+}
+.content-wrap .middleWidth select,
+.content-wrap .middleWidth .cusel{
+    width: 285px !important;
+}
+.content-wrap .buttonContainer{
+    margin-right: 0;
+}
+
+.checkContainer input[type=checkbox] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+.checkContainer label {
+    cursor: pointer;
+}
+.content-wrap .checkContainer{
+    margin-top: 13px;
+}
+.checkContainer label:before {
+    content: " ";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../img/nice-check.png);
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+}
+.checkContainer input[type=checkbox]:checked + label:before {
+    background-position: 0 -17px;
+}
+.checkContainer label:hover:before {
+    background-position: 0 -38px;
+}
+.checkContainer input[type=checkbox]:checked + label:hover:before {
+    background-position: 0 -17px;
+}
+.content-wrap .blockWrap .checkContainer label{
+    font-weight: normal;
+    font-size: 13px;
+
+}
+.content-wrap .blockWrap .checkContainer input{
+    float: left;
+}
+.content-wrap .complitButons{
+    float: right;
+}
+.content-wrap .complitButons .createAndSave{
+    width: 224px;
+    margin-right: 20px;
+}
+.content-wrap .complitButons li{
+    float: left;
+    margin-left: 15px;
+    margin-top: 7px;
+}
+.content-wrap .grayButton{
+    border: none;
+    font-size: 12px;
+    float: left;
+}
+.content-wrap .filter{
+    width: 822px;
+    background: #ffffff;
+    border: 1px solid #d0d0d2;
+    float: left;
+    padding: 15px 28px;
+    margin-bottom: 20px;
+}
+.content-wrap .filter .firsWidth{
+    float: left;
+}
+.content-wrap .filter .firsWidth label{
+    clear: both;
+    display: block;
+    font-size: 11px;
+    margin-bottom: 10px;
+    font-family: "scada-bold-webfont";
+}
+.content-wrap .filter .grayButton{
+    margin: 20px 0 0 20px;
+}
+.content-wrap .filter label{
+
+}
+.content-wrap .tableWrap table .overdue{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 60px;
+    max-width: 60px;
+    min-width: 60px;
+}
+.content-wrap .tableWrap .reapet{
+    color: #009271;
+}
+.content-wrap .tableWrap .noAnswer{
+    color: #cc6666;
+}
+.content-wrap .blockWrap .error{
+    color: #cc3300;
+    font-size: 11px;
+    padding-top: 5px;
+}
+.content-wrap .blockWrap .selectWrap textarea{
+    width: 809px;
+    padding: 5px;
+    height: 99px;
+    border-radius: 5px;
+    border: 1px solid #d0d0d2;
+    background: #f3f3f3;
+}
+.content-wrap .tableWrap .openStat{
+    color: #3399cc;
+}
+.content-wrap .tableWrap.noClosedTable .closeTable{
+    width: 60px;
+    max-width: 60px;
+    min-width: 60px;
+}
+.content-wrap .tableWrap .closeTable{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.content-wrap .newsContainer .userInfo,
+.content-wrap .openBlock .userInfo{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.content-wrap .newsContainer .imgWrap,
+.content-wrap .openBlock .imgWrap{
+    float: left;
+    position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.content-wrap .newsContainer .imgAround,
+.content-wrap .openBlock .imgAround{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content-wrap .newsContainer .userInfo dl,
+.content-wrap .openBlock .userInfo dl{
+    float: left;
+    width: 700px;
+    color: #525252;
+    font-size: 13px;
+
+    line-height: 15px;
+    margin-top: 15px;
+}
+.content-wrap .newsContainer .userInfo dt,
+.content-wrap .openBlock .userInfo dt{
+    float: left;
+    margin-right: 5px;
+}
+.content-wrap .newsContainer .userInfo dd a,
+.content-wrap .openBlock .userInfo dd a{
+    color: #525252;
+    text-decoration: underline;
+}
+.content-wrap .newsContainer .userInfo dd a:hover,
+.content-wrap .openBlock .userInfo dd a:hover{
+    text-decoration: none;
+}
+.content-wrap .openBlock .textWrap{
+    margin-bottom: 10px;
+}
+.content-wrap .openBlock .textWrap h3{
+    font-size: 11px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    font-family: "scada-bold-webfont";
+}
+.content-wrap .openBlock .textWrap p{
+    color: #525252;
+    font-size: 13px;
+    line-height: 18px;
+}
+.content-wrap .openBlock .textWrap dl{
+    overflow: hidden;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.content-wrap .openBlock .textWrap .noDate{
+    font-family: "scada-bold-webfont";
+    color: #000;
+}
+.content-wrap .openBlock .borderLine h3{
+    font-size: 14px;
+    font-family: "scada-bold-webfont";
+    margin-bottom: 20px;
+}
+.content-wrap .openBlock .textWrap dt{
+    font-family: "scada-bold-webfont";
+    float: left;
+    margin-right: 5px;
+}
+
+.content-wrap .tableWrap .bigBut .blueButton{
+    width: 100px !important;
+}
+.content-wrap  .lastTable{
+    border-bottom: 1px solid #d0d0d2;
+}
+
+.content-wrap .popUpWrap{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    display: none;
+}
+.content-wrap .popUpWrap .popUpContainer.tablePop{
+    width: 301px;
+    top: 120px;
+}
+.content-wrap .popUpWrap .tablePop .popUpForm{
+    overflow: hidden;
+}
+.content-wrap .popUpWrap .popUpContainer .buttonType{
+    float: left;
+    margin-bottom: 20px;
+}
+.content-wrap .popUpWrap .popUpContainer .wraper{
+    padding-top: 0px;
+}
+.content-wrap .inWork{
+    color: #ff5119;
+}
+.content-wrap .openFiolet{
+    color: #a351a4;
+}
+.content-wrap .checkBoxWraper{
+    border-radius: 5px;
+    border: 1px solid #d0d0d2;
+    overflow: hidden;
+    height: 28px;
+    width: 302px;
+    margin-top: 10px;
+    padding-left: 20px;
+
+}
+.content-wrap .checkBoxContainer{
+    float: left;
+    border-left: 1px solid #d0d0d2;
+    margin: -15px 0 -15px 20px;
+    height: 86px;
+    padding-left: 30px;
+}
+.content-wrap .checkBoxContainer .checkContainer{
+    margin-top: 6px;
+}
+.content-wrap .checkBoxContainer .checkContainer .openedShow{
+    color: #a351a4;
+}
+.content-wrap .checkBoxContainer .checkContainer .inWorkShow{
+    color: #ff5119;
+}
+.content-wrap .checkBoxContainer .checkContainer .doneShow{
+    color: #5c5c5c;
+}
+.content-wrap .checkBoxContainer .lableType{
+    font-family: "scada-bold-webfont";
+    font-size: 11px;
+    padding-top: 15px;
+}
+.content-wrap .openBlock .showButton{
+    font-family: "scada-bold-webfont";
+    color: #000;
+    float: left;
+    line-height: 30px;
+    width: 180px;
+}
+.content-wrap .openBlock .commentsBlock{
+    display: none;
+}
+.content-wrap .openBlock .hideComments{
+    display: none;
+}
+.content-wrap .openBlock .commentsBlock .textWrap{
+    float: left;
+    width: 740px;
+}
+.content-wrap .openBlock .commentsBlock .textWrap h3 span{
+    font-family: "scada-regular-webfont";
+    color: #525252;
+    font-size: 11px;
+}
+.content-wrap .openBlock .commentsBlock  .gallery{
+    margin-top: 20px;
+}
+.content-wrap .allServiceWrap{
+    /*overflow: hidden;*/
+}
+.content-wrap .allServiceWrap .serviceFilter{
+    background: #ffffff;
+    width: 304px;
+    border: 1px solid #d0d0d2;
+    border-right: none;
+    float: left;
+}
+.content-wrap .inputWrap.namber{
+    border: 1px solid #d0d0d2;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "scada-regular-webfont";
+    width: 399px;
+    height: 28px;
+    background: #fff;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+.content-wrap .namber .seccses{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    background: url("../img/check.png");
+    width: 10px;
+    height: 10px;
+}
+.content-wrap .searchService .inputWrap{
+    border: 1px solid #d0d0d2;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: "scada-regular-webfont";
+    width: 185px;
+    height: 28px;
+    float: left;
+    margin-right: 15px;
+}
+.content-wrap .inputWrap.namber input,
+.content-wrap .searchService .inputWrap input{
+    height: 28px;
+    padding: 0 5px;
+    width: 175px;
+    border: none;
+    background: none;
+}
+.content-wrap .inputWrap.namber input{
+    width: 370px;
+}
+.content-wrap .allServiceWrap .grayButton{
+    width: 60px;
+}
+.content-wrap .allServiceWrap label{
+    display: block;
+    color: #333333;
+    margin-bottom: 9px;
+    font-family: "scada-bold-webfont";
+    font-size: 11px;
+}
+.content-wrap .allServiceWrap .lineContainer{
+    padding: 11px 0 0 28px;
+    width: 100%;
+    float: left;
+}
+.content-wrap .allServiceWrap select,
+.content-wrap .allServiceWrap .cusel{
+    width: 187px !important;
+}
+.content-wrap .allServiceWrap .selectWrap{
+    float: left;
+    margin-right: 15px;
+}
+.content-wrap .allServiceWrap .countProblems{
+    float: right;
+    font-family: "scada-bold-webfont";
+    border-radius: 3px;
+    width: 253px;
+    margin: 15px 14px 15px 0;;
+    height: 30px;
+    line-height: 30px;
+}
+.content-wrap .allServiceWrap .rateUpDown{
+    float: right;
+    font-family: "scada-bold-webfont";
+    border-radius: 3px;
+    width: 183px;
+    margin: 15px 14px 15px 0;;
+    height: 30px;
+    line-height: 30px;
+}
+.content-wrap .allServiceWrap .countProblems span,
+.content-wrap .allServiceWrap .rateUpDown span{
+    background: url("../img/green-arrow.png") no-repeat right 5px;
+    padding-right: 15px;
+
+}
+.content-wrap .allServiceWrap .serviceShow{
+    clear: both;
+    float: left;
+    width: 100%;
+}
+.content-wrap .allServiceWrap .serviceShow dl{
+    float: left;
+    cursor: pointer;
+    width: 100%;
+    color: #333333;
+    font-size: 12px;
+    font-family: "scada-regular-webfont";
+    position: relative;
+}
+.content-wrap .allServiceWrap .serviceShow dl.active{
+    color: #fff;
+    background: #3399cc;
+}
+.content-wrap .allServiceWrap .serviceShow dl.active:after{
+    content: "";
+    background: url("../img/blue-active-arrow.png");
+    width: 12px;
+    height: 19px;
+    position: absolute;
+    top: 50%;
+    margin-top: -9px;
+    right: -11px;
+}
+.content-wrap .allServiceWrap .serviceShow dl.active:hover{
+    background: #3399cc;
+
+}
+.content-wrap .allServiceWrap .serviceShow dl.active dt{
+    border-right: 1px solid #5eafd7;
+    font-family: "scada-bold-webfont";
+}
+.content-wrap .allServiceWrap .serviceShow dl:hover{
+    background: #fefcef;
+}
+.content-wrap .allServiceWrap .serviceShow dt{
+    float: left;
+    width: 210px;
+    border-right: 1px solid #d0d0d2;
+    border-top: 1px solid #d0d0d2;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+.content-wrap .allServiceWrap .serviceShow dd{
+    float: left;
+    border-top: 1px solid #d0d0d2;
+    width: 53px;
+    padding-top: 15px;
+    padding-right: 10px;
+    text-align: right;
+    padding-bottom: 15px;
+
+}
+.content-wrap .openService{
+    width: 573px;
+    float: left;
+    padding-bottom: 10px;
+    border: 1px solid #d0d0d2;
+    background: #f0f8fc;
+}
+.content-wrap .openService.addObject{
+    width: 822px;
+    background: #ffffff;
+}
+.content-wrap .allServiceWrap .openService.addObject .borderLine{
+    width: 780px;
+}
+.content-wrap .openService > h2{
+    font-family: "scada-bold-webfont";
+    font-size: 18px;
+    margin: 15px 0 16px 19px;
+    color: #333333;
+}
+.content-wrap .openService .contentMenu{
+    overflow: hidden;
+    border-radius: 3px 3px 0 0;
+    width: 533px;
+}
+.content-wrap .openService .contentMenu li:first-child{
+    border-left: none;
+}
+.content-wrap .openService .contentMenu li{
+    float: left;
+    border-left: 1px solid #fff;
+}
+.content-wrap .openService .contentMenu li a{
+    width: 177px;
+    height: 30px;
+    display: block;
+    background: #d0d0d2;
+    color: #333333;
+    font-family: "scada-bold-webfont";
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+}
+.content-wrap .openService .contentMenu li a:hover{
+    background: #3399cc;
+    color: #fff;
+}
+.content-wrap .openService .contentMenu .active a{
+    background: #3399cc;
+    color: #fff;
+}
+.content-wrap .tabBlock .firstWidth select,
+.content-wrap  .tabBlock .firstWidth .cusel{
+    width: 256px !important;
+}
+.content-wrap .tabBlock .secondWidth select,
+.content-wrap .tabBlock .secondWidth .cusel{
+    width: 262px !important;
+}
+.content-wrap .openService .blockWrap{
+    margin-right: 0;
+}
+.content-wrap .allServiceWrap .openService .selectWrap{
+    margin-right: 0;
+}
+.content-wrap .allServiceWrap .openService .lineContainer{
+    padding-left: 0;
+}
+.content-wrap .allServiceWrap .openService .borderLine{
+    margin: 0 20px;
+    width: 533px;
+}
+.content-wrap .allServiceWrap .openService .lineContainer .blockWrap:first-child{
+    margin-right: 15px;
+}
+.content-wrap .allServiceWrap .openService .mapContainer{
+    border-radius: 3px;
+    border: 1px solid #d0d0d2;
+    position: relative;
+    width: 531px;
+}
+.content-wrap .allServiceWrap .openService .mapContainer img{
+    display: block;
+}
+.content-wrap .allServiceWrap .openService .searchMap{
+    position: absolute;
+    bottom: 10px;
+    left: 9px;
+}
+.content-wrap .openService .searchMap .inputWrap{
+    float: left;
+    border: 1px solid #d0d0d2;
+    background: #fff;
+    height: 28px;
+    width: 185px;
+
+}
+.content-wrap .openService .searchMap .inputWrap input{
+    padding: 0 5px;
+    width: 175px;
+    height: 28px;
+    border: none;
+    background: none;
+}
+.content-wrap .openService .searchMap .greenButton{
+    width: 60px;
+    line-height: 32px;
+    margin-left: 15px;
+    float: left;
+}
+.content-wrap .openService .inputWrap{
+    border: 1px solid #d0d0d2;
+    background: #fff;
+    height: 28px;
+    width: 124px;
+    border-radius: 3px;
+}
+.content-wrap .openService .inputWrap input{
+    padding: 0 5px;
+    width: 115px;
+    height: 28px;
+    border: none;
+    background: none;
+}
+.content-wrap .openService .inputWrap.area{
+    width: 168px;
+}
+.content-wrap .openService .marginRigth{
+    margin-right: 10px !important;
+}
+.content-wrap .openService .saveChanges{
+    float: left;
+    width: 168px;
+    margin-top: 20px;
+}
+.content-wrap .openService .lableType{
+    font-family: "scada-bold-webfont";
+    font-size: 12px;
+    color: #333333;
+    margin-bottom: 15px;
+}
+.content-wrap .openService .firstDay select,
+.content-wrap .openService .firstDay .cusel{
+    width: 132px !important;
+}
+.content-wrap .openService .longSelect select,
+.content-wrap .openService .longSelect .cusel{
+    width: 391px !important;
+}
+
+.content-wrap .openService .lastDay{
+    margin-top: 14px;
+    margin-right: 20px !important;
+}
+.content-wrap .openService .lastDay select,
+.content-wrap .openService .lastDay .cusel{
+    width: 136px !important;
+}
+.content-wrap .openService .firstTime select,
+.content-wrap .openService .firstTime .cusel{
+     width: 43px !important;
+}
+.content-wrap .openService .lastTime select,
+.content-wrap .openService .lastTime .cusel{
+    width: 46px !important;
+}
+.content-wrap .openService .firstTime .cuselFrameRight,
+.content-wrap .openService .lastTime .cuselFrameRight{
+    width: 20px !important;
+}
+.content-wrap .openService .box .blockWrap > span{
+    color: #d0d0d2;
+    float: left;
+    margin: 22px 5px 0 5px;
+}
+.content-wrap .openService .box label{
+    color: #999999;
+    margin-bottom: 5px;
+    font-size: 9px;
+}
+.content-wrap .openService .box .saveChanges{
+    margin-top: 5px;
+}
+.content-wrap .openService .box .addTerms{
+    width: 149px;
+}
+.content-wrap .openService .nameInput{
+    width: 391px;
+}
+.content-wrap .openService .nameInput input{
+    width: 381px;
+}
+.content-wrap .openService .emailInput{
+    width: 230px;
+    padding-right: 30px;
+    background: #fff url("../img/email.png") no-repeat 230px 5px;
+}
+.content-wrap .openService .emailInput input{
+    width: 220px;
+}
+.content-wrap .openService .phoneInput{
+    width: 254px;
+}
+.content-wrap .openService .phoneInput input{
+    width: 244px;
+}
+.content-wrap .openService .box .addWorker{
+    width: 161px !important;
+}
+.content-wrap .allServiceWrap .openService .lineContainer.noFirstMargin .blockWrap:first-child{
+    margin-right: 0;
+}
+.content-wrap .allServiceWrap .openService .lineContainer .deleteTime{
+    margin-top: 15px;
+    margin-left: 15px;
+    float: right;
+}
+.content-wrap .openService .marginType{
+    margin: 0 20px 0 20px;
+    padding-bottom: 15px;
+    overflow: hidden;
+    clear: both;
+}
+.content-wrap .allServiceWrap .openService .noLine{
+    border-bottom: none !important;
+}
+
+
+.content-wrap .allServiceWrap .openService .moreInfo,
+.content-wrap .allServiceWrap .openService .tooltip {
+    position: relative;
+    background: url("../img/information.png");
+    cursor: pointer;
+    display: inline-block;
+    width: 27px;
+    height: 28px;
+    text-decoration: none;
+    color: #222;
+    outline: none;
+    text-indent: -5000px;
+}
+.content-wrap .allServiceWrap .openService .moreInfo span,
+.content-wrap .allServiceWrap .openService .tooltip span {
+    visibility: hidden;
+    position: absolute;
+    bottom: 40px;
+    text-indent: 0px;
+    left: 50%;
+    z-index: 999;
+    width: 92px;
+    text-align: center;
+    margin-left: -56px;
+    padding: 10px;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.8);
+    color: #eeeeee;
+    font-size: 12px;
+    font-family: "scada-regular-webfont";
+}
+.content-wrap .allServiceWrap .openService .moreInfo:hover,
+.content-wrap .allServiceWrap .openService .tooltip:hover {
+    border: 0;
+}
+.content-wrap .allServiceWrap .openService .moreInfo:hover span,
+.content-wrap .allServiceWrap .openService .tooltip:hover span {
+    visibility: visible;
+}
+
+.content-wrap .allServiceWrap .openService .moreInfo span:after,
+.content-wrap .allServiceWrap .openService .tooltip span:after	{
+    content: "";
+    position: absolute;
+    z-index: 1000;
+    bottom: -8px;
+    left: 50%;
+    margin-left: -8px;
+    border-top: 8px solid #000;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 0;
+    opacity: 0.8;
+}
+.content-wrap .allServiceWrap .openService .tableWrap{
+    margin: 0 20px;
+}
+.content-wrap .allServiceWrap .openService .tableWrap td{
+    font-size: 11px;
+}
+.content-wrap .allServiceWrap .openService .typeFilter{
+    margin: 20px 0 0 8px;
+}
+.content-wrap .popUpWrap .popUpContainer.workList{
+    width: 679px;
+    top: 50px;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .blockWrap{
+    margin-right: 17px;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .lineContainer{
+    width: 650px;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .greenButton{
+    width: 66px;
+    font-size: 10px;
+    margin-top: 17px;
+    margin-bottom: 0;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .blueButton{
+    width: 106px;
+    margin-top: 19px;
+    margin-bottom: 0;
+}
+.content-wrap .popUpWrap .popUpContainer.workList  .saveWorkers{
+    float: right;
+    margin-right: 25px;
+    margin-top: 15px;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .cancelBut{
+    margin-top: 15px;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .borderLine{
+    margin: 0 25px;
+    width: 620px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .popUpForm{
+    overflow: hidden;
+}
+.content-wrap .popUpWrap .popUpContainer.workList label{
+    width: 100%;
+    margin: 0 0 4px 0;
+    float: none;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .inputWrap{
+    width: 90px;
+    margin: 0;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .inputWrap input{
+    width: 70px;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .inputWrap.nameInput{
+    width: 198px;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .inputWrap.nameInput input{
+    width: 178px;
+}
+
+.content-wrap .popUpWrap .popUpContainer.workList .doneWorkers .inputWrap{
+    border: none;
+    font-size: 11px;
+    color: #333333;
+    font-family: "scada-regular-webfont";
+    background: none;
+    padding: 0 10px;
+    height: 100%;
+    width: 75px;
+    margin-top: 17px;
+
+}
+
+.content-wrap .popUpWrap .popUpContainer.workList .doneWorkers label{
+    display: none;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .doneWorkers .inputWrap.nameInput{
+    width: 180px;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .changeBut,
+.content-wrap .popUpWrap .popUpContainer.workList .doneWorkers .applyBut{
+     display: none;
+}
+.content-wrap .popUpWrap .popUpContainer.workList .doneWorkers .changeBut,
+.content-wrap .popUpWrap .popUpContainer.workList .applyBut{
+    display: block;
+}
+.alwaysBlock{
+    display: block !important;
+}
+.content-wrap .contantMenuWrap{
+    border-radius: 3px;
+    overflow: hidden;
+    background: url("../img/menu-blue-line.png") no-repeat left bottom;
+    height: 30px;
+    padding-bottom: 6px;
+    width: 533px;
+    margin-left: 20px;
+}
+.content-wrap .condition{
+    color: #525252;
+    font-size: 12px;
+    padding-top: 15px;
+    clear: both;
+    line-height: 18px;
+}
+.content-wrap .condition a{
+    text-decoration: underline;
+    color: #525252;
+}
+.content-wrap .condition a:hover{
+    text-decoration: none;
+}
+.content-wrap .openService .openBlock{
+    width: 531px;
+    padding: 0 0 18px 0;
+    margin: 0 20px;
+}
+
+.content-wrap .allServiceWrap .openService .tableWrap .tableNumb{
+    width: 8px;
+    max-width: 8px;
+    min-width: 8px;
+}
+.content-wrap .allServiceWrap .openService .tableWrap .tableAddress{
+    width: 98px;
+    max-width: 98px;
+    min-width: 98px;
+}
+.content-wrap .allServiceWrap .openService .tableWrap .tableDescription{
+    width: 135px;
+    max-width: 135px;
+    min-width: 135px;
+}
+.content-wrap .allServiceWrap .openService .tableWrap .tableId{
+    width: 27px;
+    max-width: 27px;
+    min-width: 27px;
+}
+.content-wrap .allServiceWrap .openService .tableWrap .tableCreate{
+    width: 40px;
+    max-width: 40px;
+    min-width: 40px;
+}
+.content-wrap .allServiceWrap .openService .tableWrap .tableInWork{
+    width: 50px;
+    max-width: 50px;
+    min-width: 50px;
+}
+.content-wrap .tableWrap .tablePlan{
+    width: 102px;
+    min-width: 102px;
+    max-width: 102px;
+}
+.content-wrap .allServiceWrap .openService .tableWrap .tableInfo{
+    width: 27px;
+    max-width: 27px;
+    min-width: 27px;
+}
+.content-wrap .allServiceWrap .openService .openBlock .userInfo dl{
+    width: 410px;
+}
+
+
+
+.content-wrap .allServiceWrap .openService .openBlock .borderLine{
+    width: 495px;
+}
+.content-wrap .allServiceWrap .openService .openBlock .hideComments,
+.content-wrap .allServiceWrap .openService .openBlock .showComments{
+    width: 182px;
+}
+.content-wrap .allServiceWrap .openService .openBlock .commentsBlock .textWrap{
+    width: 400px;
+}
+.content-wrap .allServiceWrap .openService .openBlock .complitButons .cencelBut{
+    width: 202px;
+    margin-right: 20px;
+}
+.content-wrap .openService .inputWrap.longInput{
+    width: 399px;
+}
+/*.content-wrap .openService .inputWrap input{*/
+    /*width: 379px;*/
+/*}*/
+.content-wrap .reasons .borderTop,
+.content-wrap .delay .borderTop{
+    border-top: 1px solid #d0d0d2;
+    margin: 20px 0 0 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+.content-wrap .allServiceWrap .openService.addObject .lineContainer.borderTop{
+    border-top: 1px solid #d0d0d2;
+    margin: 0 20px;
+    width: 780px;
+}
+.content-wrap .allServiceWrap .openService.addObject .lineContainer.borderTop .complitButons .createAndSave{
+    margin-right: 0;
+}
+.content-wrap .allServiceWrap .openService .sendEmail{
+    width: 200px;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+.content-wrap .allServiceWrap .openService .sendEmail label{
+    font-family: "scada-regular-webfont";
+}
+
+.backContainer{
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.backContainer .popUpWrap{
+    background: none;
+}
+.backContainer .welcome{
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+}
+.backContainer .welcome h1{
+    font-family: "scada-bold-webfont";
+    font-weight: normal;
+    font-size: 26px;
+}
+.backContainer .welcome h2{
+    font-family: "scada-regular-webfont";
+    font-size: 12px;
+    font-weight: normal;
+}
+.backContainer .popUpContainer{
+    margin-top: 133px;
+    overflow: hidden;
+}
+.backContainer .popUpForm{
+    overflow: hidden;
+}
+.backContainer  .noLine{
+    overflow: hidden;
+    padding-bottom: 0;
+}
+.backContainer  .forgetPass{
+    color: #666;
+    font-size: 12px;
+    float: right;
+    text-decoration: underline;
+}
+.backContainer  .forgetPass:hover{
+    text-decoration: none;
+}
+.content-wrap  .sendMessage{
+    width: 251px;
+}
+.content-wrap .takeToJob{
+    width: 235px;
+}
+.content-wrap .orText{
+    padding: 10px 0 0 0;
+    display: inline-block;
+    color: #999999;
+    font-size: 12px;
+    font-family: "scada-regular-webfont";
+}
+.content-wrap .openBlock .borderLine .taketopic{
+    margin-bottom: 0;
+}
+.content-wrap .daysLeft{
+    padding: 31px 0 0 0;
+    display: inline-block;
+    color: #999999;
+    font-size: 12px;
+    font-family: "scada-regular-webfont";
+}
+.content-wrap .ansver{
+    border: 1px solid #d0d0d2;
+    background: #fff;
+    border-radius: 5px;
+    width: 809px;
+    height: 99px;
+    padding: 5px;
+}
+.content-wrap .complitButons.noMargin li{
+    margin: 0;
+}
+.content-wrap .messageBlock{
+    display: none;
+}
+.content-wrap .takeBlock{
+    display: none;
+}
+.content-wrap select{
+    height: 28px;
+}
+.problemsList li{
+    background: #ffffff;
+    border: 1px solid #d0d0d2;
+    position: relative;
+    padding: 20px 20px 20px 20px;
+    width: 838px;
+    margin-bottom: 24px;
+    float: left;
+}
+.problemType{
+    position: absolute;
+    top: -12px;
+    left: 20px;
+    font-family: "scada-bold-webfont";
+    font-size: 9px;
+    font-weight: normal;
+    text-transform: uppercase;
+    height: 22px;
+    line-height: 22px;
+    z-index: 10;
+    color: #333333;
+    padding: 0 10px;
+}
+.newProblemEmb{
+    background: #f7d42f;
+}
+.newProblemEmb:after{
+    content: "";
+    background: url("../img/yellow-left.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.newProblemEmb:before{
+    content: "";
+    background: url("../img/yellowright.png");
+    width: 4px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: -4px;
+}
+.noAnswerProblem{
+    background: #33cc66;
+}
+.noAnswerProblem:after{
+    content: "";
+    background: url("../img/green-left.png");
+    width: 4px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -4px;
+}
+.noAnswerProblem:before{
+    content: "";
+    background: url("../img/green-right.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+.deviationProblem{
+    background: #33ccff;
+}
+.deviationProblem:after{
+    content: "";
+    background: url("../img/blue-left.png");
+    width: 4px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -4px;
+}
+.deviationProblem:before{
+    content: "";
+    background: url("../img/blue-right.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+.problemType.needCloseProblem{
+    background: #ff3300;
+    color: #fff;
+}
+.needCloseProblem:after{
+    content: "";
+    background: url("../img/red-left.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.needCloseProblem:before{
+    content: "";
+    background: url("../img/red-right.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+.problemType.inWorkProblem{
+    background: #ff9933;
+    color: #fff;
+}
+.inWorkProblem:after{
+    content: "";
+    background: url("../img/orange-left.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.inWorkProblem:before{
+    content: "";
+    background: url("../img/orange-right.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+.problemType.usersProblem{
+    background: #2db3b5;
+    color: #fff;
+}
+.usersProblem:after{
+    content: "";
+    background: url("../img/light-blue-left.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.usersProblem:before{
+    content: "";
+    background: url("../img/light-blue-right.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+.problemType.usersProblem{
+    background: #2db3b5;
+    color: #fff;
+}
+.usersProblem:after{
+    content: "";
+    background: url("../img/light-blue-left.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.usersProblem:before{
+    content: "";
+    background: url("../img/light-blue-right.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+.problemType.usersProblem{
+    background: #2db3b5;
+    color: #fff;
+}
+.usersProblem:after{
+    content: "";
+    background: url("../img/light-blue-left.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.usersProblem:before{
+    content: "";
+    background: url("../img/light-blue-right.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+.problemType.slujbaProblem{
+    background: #6666cc;
+    color: #fff;
+}
+.slujbaProblem:after{
+    content: "";
+    background: url("../img/filoet-left.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.slujbaProblem:before{
+    content: "";
+    background: url("../img/fiolet-right.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+.objectProblem.objectProblem{
+    background: #ff0099;
+    color: #fff;
+}
+.objectProblem:after{
+    content: "";
+    background: url("../img/pink-left.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    left: -5px;
+}
+.objectProblem:before{
+    content: "";
+    background: url("../img/pink-right.png");
+    width: 5px;
+    height: 22px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+}
+.content-wrap .readMore{
+    width: 71px;
+    margin: 10px 0 0 0;
+    float: right;
+}
+.content-wrap .newsContainer .userInfo{
+    float: left;
+    width: 745px;
+}
+.content-wrap .newsContainer .userInfo dl{
+    width: 650px;
+}
+.content-wrap .newsContainer .typeContainer{
+    width: 650px;
+    float: left;
+}
+.content-wrap .newsContainer .typeContainer dl{
+    float: left;
+    width: 225px;
+}
+.content-wrap .newsContainer .typeContainer dl dd{
+    font-family: "scada-bold-webfont";
+}
+.content-wrap .newsContainer{
+    clear: both;
+    width: 100%;
+    float: left;
+}
+.content-wrap .newsContainer h3{
+    font-weight: normal;
+    color: #333333;
+    font-family: "scada-bold-webfont";
+    margin-bottom: 20px;
+}
+.content-wrap .problemType .userImage{
+    background: url("../img/user-icon.png") no-repeat 0 5px;
+    padding-left: 25px;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+}
+.content-wrap .problemType  .slujbaImage{
+    background: url("../img/slujbi-icon.png") no-repeat 0 5px;
+    padding-left: 25px;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+}
+.content-wrap .problemType .objectImage{
+    background: url("../img/objects-icon.png") no-repeat 0 3px;
+    padding-left: 25px;
+    display: block;
+    height: 22px;
+    line-height: 22px;
+}
+.content-wrap .info{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.content-wrap .info dl{
+    float: left;
+    width: 205px;
+}
+.content-wrap .info dt{
+    float: left;
+    color: #333333;
+    font-size: 12px;
+    font-family: "scada-bold-webfont";
+    margin-right: 5px;
+}
+.content-wrap .info dd{
+    float: left;
+    color: #333333;
+    font-size: 12px;
+    font-family: "scada-regular-webfont";
+
+}
+.content-wrap .openBlock .userInfo .workerList{
+    float: left;
+    width: 285px;
+}
+.content-wrap .openBlock .userInfo .workerList dt{
+    float: none;
+    font-family: "scada-bold-webfont";
+}
+.content-wrap .openBlock .days{
+    float: left;
+    font-family: "scada-bold-webfont";
+    font-size: 33px;
+    color: #333;
+    margin: 15px 0 0 50px;
+}
+.content-wrap .closeProblemBut{
+    width: 250px;
+}
+.content-wrap .removeDate{
+    width: 235px;
+}
+.content-wrap .gallery .closeBut:hover{
+    opacity: 0.8;
+}
+.content-wrap .gallery .closeBut{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: url("../img/remove-but.png");
+    width: 21px;
+    height: 20px;
+    text-indent: -5000px;
+    cursor: pointer;
+}
+.content-wrap .openBlock .gallery li{
+    position: relative;
+}
+.content-wrap .delay{
+    display: none;
+}
+.content-wrap .reasons{
+    display: none;
+}

@@ -1,0 +1,21 @@
+#top-menu-content ul li ul{
+	margin-top: 27px;
+}
+span{
+	letter-spacing: 0px !important;
+}
+#center-content-left, #center-content-right{
+	padding-top: 4px
+}
+#sostojanija{
+	margin-top: 7px;
+}
+#sostojanija span{
+	margin-top: -7px !important;
+}
+#top-menu-content ul li{
+	padding-right: 9px !important;
+}
+#o-nas{
+	padding-top: 38px;
+}

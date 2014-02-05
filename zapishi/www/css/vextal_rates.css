@@ -1,0 +1,93 @@
+
+.tarifWrap {
+    display: table-row;
+}
+.tarifWrap li {
+    width: auto;
+    display: table-cell;
+    text-align: center;
+    height: 50px;
+    padding-left: 20px;
+
+    vertical-align: bottom;
+}
+.tarifWrap li:first-child {
+    padding: 0;
+}
+.tarifBlock {
+    width: 1000px;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+
+.tarifBlock{
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    background: #fcfcfc;
+    box-shadow: 1px 0 3px #c8c8c8;
+    padding: 43px 0;
+    position: relative;
+}
+
+
+
+
+
+.tarifBlock h3{
+    color: #252b30;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.tarifPrice{
+    color: #efb562;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+.tarifBlock dl{
+    margin-bottom: 40px;
+}
+.tarifBlock dt{
+    color: #646f78;
+    font-size: 18px;
+}
+.tarifBlock dd{
+    color: #252b30;
+    font-weight: 700;
+    font-size: 18px;
+}
+.choose:hover{
+    opacity: 0.8;
+}
+.choose{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    background: #efb562;
+    display: block;
+    margin: 0 auto;
+    width: 182px;
+    height: 40px;
+    border-radius: 30px;
+    line-height: 40px;
+}
+.best:after{
+    content: "";
+    background: url("../img/best.png");
+    width: 101px;
+    height: 96px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+}
+.tarifContainer{
+    margin-bottom: 100px;
+}

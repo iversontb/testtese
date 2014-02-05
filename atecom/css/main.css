@@ -1,0 +1,935 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    content-wrap
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "HelveticaNeueCyr-Roman";
+    src: url("../fonts/helveticaneuecyr-roman.woff") format("woff");
+}
+/* --------------- /fonts --------------- */
+body{
+}
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    background-color: #090909;
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+
+    height: 100px;
+}
+.site__content {
+
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    z-index: 1;
+    height: 156px;
+}
+.header:before{
+    content: '';
+    position: absolute;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    width: 1000px;
+    height: 156px;
+    left: -17px;
+    top: 0;
+    z-index: 0;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 17px;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- navigation --------------- */
+.navigation{
+    position: relative;
+    display: inline-block;
+    top: 73px;
+    left: 222px;
+}
+.navigation a{
+    font-family: Tahoma;
+    font-size: 16px;
+    color: white;
+    text-decoration: underline;
+    margin-left: 32px;
+}
+.navigation a:first-child{
+    margin-left: 0;
+}
+.navigation a:hover{
+    text-decoration: none;
+}
+/* --------------- /navigation --------------- */
+
+/* --------------- header_phone --------------- */
+.header_phone{
+    position: absolute;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    font-style: normal;
+    font-family: "HelveticaNeueCyr-Roman";
+    top: 57px;
+    right: 0;
+}
+.header_phone span, .footer_phone span{
+    display: block;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 6px;
+}
+.header_phone a, .footer_phone a{
+    font-size: 12px;
+    color: #2694c8;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+.header_phone a:hover, .footer_phone a:hover{
+    text-decoration: none;
+}
+/* --------------- /header_phone --------------- */
+
+/* --------------- content-wrap --------------- */
+.content-wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- traffic --------------- */
+.traffic{
+    position: relative;
+    padding-top: 59px;
+    text-align: center;
+    padding-bottom: 57px;
+    z-index: 1;
+    margin-bottom: 19px;
+}
+.traffic:before{
+    content: '';
+    position: absolute;
+    background: url("../img/bkg_site.jpg") no-repeat;
+    width: 1000px;
+    height: 363px;
+    left: -17px;
+    top: 0;
+    z-index: 0;
+}
+.traffic li{
+    position: relative;
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 14px;
+}
+
+.traffic a{
+    display: inline-block;
+    padding-top: 204px;
+}
+.traffic a.auto{
+    background: url("../img/one.png") no-repeat center top;
+}
+.traffic a.container{
+    background: url("../img/two.png") no-repeat center top;
+}
+.traffic a.port{
+    background: url("../img/three.png") no-repeat center top;
+}
+.traffic a.customs{
+    background: url("../img/four.png") no-repeat center top;
+}
+.traffic span{
+    display: block;
+    background-color: white;
+    color: #2694c8;
+    font-family: Tahoma;
+    font-size: 14px;
+    text-decoration: underline;
+    padding-top: 13px;
+    padding-left: 14px;
+    padding-bottom: 14px;
+    padding-right: 14px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+.traffic a:hover span{
+    text-decoration: none;
+    color: white;
+    background-color: #2694c8;
+    border-top: 1px solid #39cae4;
+    border-bottom: 1px solid #196385;
+}
+/* --------------- /traffic --------------- */
+
+/* --------------- trust --------------- */
+.trust{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.trust h1{
+    text-align: left;
+    font-weight: normal;
+    color: #777777;
+    font-family: Tahoma;
+    font-size: 18px;
+    margin-left: 11px;
+    margin-bottom: 40px;
+}
+.trust ul li{
+    vertical-align: top;
+    display: inline-block;
+    color: #fefeff;
+    font-family: Tahoma;
+    font-size: 16px;
+    width: 201px;
+    padding-top: 77px;
+    margin-left: 18px;
+    margin-right: 18px;
+    line-height: 19px;
+}
+.trust ul li.network{
+    background: url("../img/trust1.png") no-repeat top center;
+}
+.trust ul li.loyalty_program{
+    background: url("../img/trust2.png") no-repeat top center;
+}
+.trust ul li.term{
+    background: url("../img/trust3.png") no-repeat top center;
+}
+.trust ul li.support_service{
+    background: url("../img/trust4.png") no-repeat top center;
+}
+/* --------------- /trust --------------- */
+
+/* --------------- news --------------- */
+.news{
+    position: relative;
+    font-family: Tahoma;
+    background-color: #616161;
+    padding-top: 21px;
+    padding-bottom: 25px;
+}
+.news:before{
+    content: '';
+    position: absolute;
+    background-color: #616161;
+    width: 1000px;
+    height: 100%;
+    left: -1000px;
+    top: 0;
+}
+.news:after{
+    content: '';
+    position: absolute;
+    background-color: #616161;
+    width: 1000px;
+    height: 100%;
+    right: -1000px;
+    top: 0;
+}
+.news h2{
+    font-size: 18px;
+    font-weight: normal;
+    color: #9d9d9d;
+    margin-left: 11px;
+    margin-bottom: 35px;
+}
+.news h2+div{
+    text-align: center;
+}
+.news section{
+    vertical-align: top;
+    text-align: left;
+    display: inline-block;
+    width: 203px;
+    margin-left: 16px;
+    margin-right: 17px;
+}
+.news section time{
+    display: inline-block;
+    font-size: 12px;
+    color: #9d9d9d;
+    background-color: #404041;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 7px;
+}
+.news section a{
+    display: inline-block;
+}
+.news section img{
+    margin-bottom: 8px;
+}
+.news section h3{
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 7px;
+    line-height: 16px;
+}
+.news section a:hover h3{
+    text-decoration: underline;
+}
+.news section p{
+    font-size: 12px;
+    color: #cdcdcd;
+    line-height: 18px;
+    width: 197px;
+}
+/* --------------- /news --------------- */
+
+/* --------------- footer --------------- */
+.footer {
+    min-width: 1000px;
+    overflow: hidden;
+    z-index: 2;
+    position: relative;
+    margin-top: -100px;
+    background-color: #090909;
+}
+.footer__layout {
+    position: relative;
+    padding-top: 34px;
+    padding-left: 16px;
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 17px;
+}
+/* --------------- /footer --------------- */
+
+/* --------------- request --------------- */
+.request{
+    display: inline-block;
+    margin-right: 86px;
+}
+.request span{
+    display: block;
+    margin-bottom: 29px;
+    font-family: Tahoma;
+    font-size: 20px;
+    color: #9d9d9d;
+}
+.request input[type="text"]{
+    display: block;
+    height: 16px;
+    width: 425px;
+    border: none;
+    background-color: #d8d8d8;
+    margin-bottom: 9px;
+    font-family: Tahoma;
+    font-size: 14px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 16px;
+}
+.request textarea{
+    display: block;
+    height: 160px;
+    width: 539px;
+    border: none;
+    background-color: #d8d8d8;
+    margin-bottom: 9px;
+    font-family: Tahoma;
+    font-size: 14px;
+    padding-top: 14px;
+    padding-right: 18px;
+    padding-left: 18px;
+}
+.request input[type="submit"]{
+    border: none;
+    background-color: #2694c8;
+    margin-bottom: 9px;
+    font-family: Tahoma;
+    font-size: 18px;
+    color: white;
+    border-top: 1px solid #39cae4;
+    border-bottom: 1px solid #196385;
+    padding-top: 10px;
+    padding-left: 27px;
+    padding-right: 28px;
+    padding-bottom: 12px;
+}
+.request input[type="submit"]:hover{
+    background-color: #178ac0;
+}
+.request+div{
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    margin-top: 5px;
+}
+/* --------------- /request --------------- */
+
+/* --------------- copyright --------------- */
+.copyright{
+    font-family: Tahoma;
+    font-size: 12px;
+    color: #9d9d9d;
+    margin-bottom: 11px;
+}
+/* --------------- /copyright --------------- */
+
+/* --------------- networks --------------- */
+.networks{
+    margin-bottom: 30px;
+}
+/* --------------- /networks --------------- */
+
+/* --------------- footer_phone --------------- */
+.footer_phone{
+    text-align: right;
+    vertical-align: top;
+    font-style: normal;
+    font-family: "HelveticaNeueCyr-Roman";
+}
+/* --------------- /footer_phone --------------- */
+
+/* --------------- siteoria --------------- */
+.siteoria{
+    position: absolute;
+    bottom: 21px;
+    right: 12px;
+    display: inline-block;
+}
+/* --------------- /siteoria --------------- */
+
+/* --------------- site_wrap --------------- */
+.site_wrap{
+    background-color: #616161;
+}
+.site_wrap header{
+    background-color: #1b1b1b;
+}
+.site_wrap header:before{
+    content: '';
+    position: absolute;
+    background-image: none;
+    background-color: #1b1b1b;
+    width: 1000px;
+    height: 422px;
+    left: -1000px;
+    top: 0;
+}
+.site_wrap header:after{
+    content: '';
+    position: absolute;
+    background-image: none;
+    background-color: #1b1b1b;
+    width: 1000px;
+    height: 422px;
+    right: -1000px;
+    top: 0;
+}
+/* --------------- /site_wrap --------------- */
+
+
+/* --------------- auto_transport --------------- */
+.auto_transport{
+    position: relative;
+    font-family: Tahoma;
+    color: #ffffff;
+    padding-top: 293px;
+    padding-left: 27px;
+    padding-right: 26px;
+    background: url("../img/bkg_avto.jpg") no-repeat;
+    width: 947px;
+    z-index: 2;
+    left: -16px;
+}
+.auto_transport h1{
+     font-size: 30px;
+     margin-bottom: 25px;
+     font-weight: normal;
+}
+.auto_transport h1 a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+.auto_transport h1 a:hover{
+    text-decoration: none;
+}
+.auto_transport h1+p{
+    font-size: 14px;
+    margin-bottom: 18px;
+    line-height: 18px;
+}
+.auto_transport h1+p span{
+    display: block;
+}
+.auto_transport h1+p+p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 22px;
+}
+
+.auto_transport ul{
+    margin-bottom: 43px;
+    margin-left: 1px;
+}
+.auto_transport ul li{
+    display: inline-block;
+    margin-right: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 26px;
+    background: url("../img/marker1.png") no-repeat center left;
+}
+/* --------------- /auto_transport --------------- */
+
+/* --------------- trucking --------------- */
+.trucking{
+    position: relative;
+    padding-bottom: 5px;
+    background-color: #1b1b1b;
+    margin-bottom: 19px;
+}
+.trucking:before{
+    content: '';
+    position: absolute;
+    background-color: #1b1b1b;
+    height: 100%;
+    width: 1000px;
+    top: 0;
+    left: -1000px;
+}
+.trucking:after{
+    content: '';
+    position: absolute;
+    background-color: #1b1b1b;
+    height: 100%;
+    width: 1000px;
+    top: 0;
+    right: -1000px;
+}
+.trucking dt{
+    position: relative;
+    font-size: 18px;
+    background-color: #616161;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+.trucking dt:before{
+    content: '';
+    position: absolute;
+    background-color: #616161;
+    height: 100%;
+    width: 1000px;
+    top: 0;
+    left: -1000px;
+}
+.trucking dt:after{
+    content: '';
+    position: absolute;
+    background-color: #616161;
+    height: 100%;
+    width: 1000px;
+    top: 0;
+    right: -1000px;
+    z-index: 1;
+}
+.trucking dt span{
+    font-weight: bold;
+}
+.trucking dd{
+    position: relative;
+    font-size: 14px;
+    background: url("../img/marker2.png") left center no-repeat;
+    margin-bottom: 22px;
+    padding-left: 27px;
+}
+
+.trucking+p{
+    font-size: 14px;
+    margin-bottom: 24px;
+    line-height: 16px;
+}
+/* --------------- /trucking --------------- */
+
+/* --------------- offers --------------- */
+.offers{
+    position: relative;
+    padding-bottom: 27px;
+    background-color: #1b1b1b;
+    font-size: 18px;
+    margin-bottom: 43px;
+}
+.offers:before{
+    content: '';
+    position: absolute;
+    background-color: #1b1b1b;
+    height: 100%;
+    width: 1000px;
+    top: 0;
+    left: -1000px;
+}
+.offers:after{
+    content: '';
+    position: absolute;
+    background-color: #1b1b1b;
+    height: 100%;
+    width: 1000px;
+    top: 0;
+    right: -1000px;
+}
+.offers dt{
+    position: relative;
+    background-color: #616161;
+    padding-bottom: 23px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+.offers  dt:before{
+    content: '';
+    position: absolute;
+    background-color: #616161;
+    height: 100%;
+    width: 1000px;
+    top: 0;
+    left: -1000px;
+}
+.offers  dt:after{
+    content: '';
+    position: absolute;
+    background-color: #616161;
+    height: 100%;
+    width: 1000px;
+    top: 0;
+    right: -1000px;
+    z-index: 1;
+}
+.offers dt+dd{
+    margin-top: 0;
+}
+.offers dd{
+    background: url("../img/marker2.png") left center no-repeat;
+    margin-top: 30px;
+    padding-left: 27px;
+}
+/* --------------- /offers --------------- */
+
+/* --------------- cost_calculation --------------- */
+.cost_calculation{
+    font-size: 18px;
+    padding-bottom: 38px;
+}
+.cost_calculation span{
+    font-weight: bold;
+}
+/* --------------- /cost_calculation --------------- */
+
+/* --------------- services --------------- */
+.services{
+    position: relative;
+    font-family: Tahoma;
+    color: #ffffff;
+}
+.services div{
+    position: relative;
+    padding-top: 291px;
+    padding-left: 24px;
+    background-color: #616161;
+    padding-bottom: 42px;
+    width: 976px;
+    left: -15px;
+}
+
+.services h1, .services h2{
+    font-size: 30px;
+    margin-bottom: 21px;
+    font-weight: normal;
+}
+.services h1 a, .services h2 a{
+    color: #ffffff;
+    text-decoration: underline;
+}
+.services h1 a:hover, .services h2 a:hover{
+    text-decoration: none;
+}
+.services p{
+    font-size: 14px;
+    margin-bottom: 18px;
+    line-height: 18px;
+}
+.services p span, .services p span{
+    display: block;
+}
+.services ul{
+    margin-left: 1px;
+    margin-top: 19px;
+}
+.services ul li{
+    display: inline-block;
+    margin-left: 36px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 26px;
+    background: url("../img/marker1.png") no-repeat center left;
+}
+.services ul li:first-child{
+    margin-left: 0;
+}
+/* --------------- /services --------------- */
+
+/* --------------- auto --------------- */
+.services .auto{
+    background: url("../img/bkg_avto.jpg") no-repeat 0px top;
+    top: 0;
+    z-index: 1;
+
+}
+
+/* --------------- /customs --------------- */
+
+/* --------------- container --------------- */
+.services .container{
+    background: url("../img/container.jpg") no-repeat 0px top;
+    top: 0;
+    z-index: 1;
+}
+.services .container:before{
+    content: '';
+    position: absolute;
+    background-color: #1b1b1b;
+    width: 1000px;
+    height: 266px;
+    left: -1000px;
+    top: 0;
+}
+.services .container:after{
+    content: '';
+    position: absolute;
+    background-color: #1b1b1b;
+    width: 1000px;
+    height: 266px;
+    right: -1000px;
+    top: 0;
+}
+/* --------------- /container --------------- */
+
+/* --------------- port --------------- */
+.services .port{
+    background: url("../img/port.jpg") no-repeat 0px top;
+    top: 0;
+    z-index: 1;
+}
+.services .port:before{
+    content: '';
+    position: absolute;
+    background-color: #1b1b1b;
+    width: 1000px;
+    height: 266px;
+    left: -1000px;
+    top: 0;
+}
+.services .port:after{
+    content: '';
+    position: absolute;
+    background-color: #1b1b1b;
+    width: 1000px;
+    height: 266px;
+    right: -1000px;
+    top: 0;
+}
+/* --------------- /port --------------- */
+
+/* --------------- customs --------------- */
+.services .customs{
+    background: url("../img/customs.jpg") no-repeat 0px top;
+    top: 0;
+    z-index: 1;
+}
+.services .customs:before{
+    content: '';
+    position: absolute;
+    background-color: #1b1b1b;
+    width: 1000px;
+    height: 266px;
+    left: -1000px;
+    top: 0;
+}
+.services .customs:after{
+    content: '';
+    position: absolute;
+    background-color: #1b1b1b;
+    width: 1000px;
+    height: 266px;
+    right: -1000px;
+    top: 0;
+}
+/* --------------- /customs --------------- */
+
+
+

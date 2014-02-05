@@ -1,0 +1,9 @@
+.header__nav a ,
+.about__product,
+.sub__menu,
+.price
+{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

@@ -1,0 +1,109 @@
+/* search */
+.search {
+    padding-top: 6px;
+    margin-bottom: 11px;
+}
+.search label{
+    display: block;
+    margin-bottom: 7px;
+}
+.search__text {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 601px;
+    height: 24px;
+    border: 1px solid #513912;
+    border-radius: 6px;
+    margin-right: 3px;
+}
+.search__send {
+    background: url("../img/search__send.png");
+    vertical-align: top;
+    width: 89px;
+    height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+}
+/* /search */
+
+/* search-result */
+.search-result > div {
+    padding-left: 9px;
+}
+.search-result > div a,
+.search-result > div a:visited{
+    text-decoration: underline;
+}
+.search-result > div a:hover {
+    text-decoration: none;
+}
+.search-result ul {
+    margin-bottom: 57px;
+    padding: 29px 14px 0 18px;
+}
+.search-result li {
+    padding-left: 7px;
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 15px;
+}
+.search-result__item {
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.search-result__item > a {
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+.search-result__item > a > img {
+    max-width: 100px;
+    max-height: 100px;
+}
+.search-result__item > div {
+    display: table-cell;
+    vertical-align: top;
+    padding-top: 26px;
+}
+.search-result__item > div > a,
+.search-result__item > div > a:visited {
+    color: #353535;
+    text-decoration: none;
+    width: 210px;
+    display: block;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.search-result__item > div > a:hover {
+    text-decoration: underline;
+}
+.search-result__item > div > span {
+    display: block;
+    font-size: 18px;
+    padding: 9px 0 5px;
+}
+.search-result__item > div > del {
+    font-size: 14px;
+}
+.search-result__more,
+.search-result__more:visited {
+    background: url("../img/cart__btn.png");
+    width: 135px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    color: #fff;
+    padding-top: 7px;
+    margin: 44px 0 0 195px;
+}
+.search-result__more:hover {
+    opacity: 0.9;
+}
+/* /search-result */

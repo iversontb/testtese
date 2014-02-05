@@ -1,0 +1,1595 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    main-menu
+
+    language
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd, 
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {    
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {                        
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            
+} 
+input, select, button, textarea {
+    margin: 0;                 
+    font-size: 100%;             
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;     
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {         
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+     list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;    
+}
+textarea {
+    resize:none; 
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus { 
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner { 
+    padding:0; 
+    border:0; 
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    color: #b7b7b7;
+}
+:-moz-placeholder {
+    color: #b7b7b7;
+}
+.placeholder {
+    color: #b7b7b7;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- b-content --------------- */
+.content {
+    font-size: 14px;
+}
+.content h1 {
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+.content h2 {
+    font-size: 140%;
+    margin-bottom: 15px;
+}
+.content h3 {
+    font-size: 130%;
+    margin-bottom: 12px;
+}
+.content h4 {
+    font-size: 120%;
+    margin-bottom: 10px;
+}
+.content h5 {
+    font-size: 110%;
+    margin-bottom: 10px;
+}
+.content h6 {
+    font-size: 100%;
+    margin-bottom: 10px;
+}
+.content p {
+    margin-bottom: 19px;
+    line-height: 17px;
+}
+.content ul {
+    list-style: disc;
+    margin: 0 15px 10px 15px;
+}
+.content ul ul {
+    margin: 10px 0 10px 25px;
+}
+.content ol {
+    list-style: decimal;
+    margin: 0 15px 10px 20px;
+}
+.content ol ol {
+    margin: 10px 0 10px 25px;
+}
+.content li {
+    margin-bottom: 5px;
+}
+.content table {
+    margin-bottom: 15px;
+    font-size: 100%;
+    width: auto;
+    border: 1px solid #000;
+}
+.content th,
+.content td {
+    border: 1px solid #000;
+    padding: 4px;
+    text-align: left;
+}
+.content th {
+    font-weight: bold;
+    text-align: center;
+}
+.content a,
+.content a font {
+    color: #7bc4ed;
+    text-decoration: underline;
+}
+
+.content a:hover,
+.content a:hover font {
+    color: #7bc4ed;
+    text-decoration: none;
+}
+.content a:active,
+.content a:active font {
+    color: #7bc4ed;
+}
+.content img[align=left] {
+    margin: 0 10px 10px 0;
+    float: left;
+}
+.content img[align=right] {
+    margin: 0 0 10px 10px;
+    float: right;
+}
+.content dl {
+    margin: 0 0 15px 0;
+}
+.content dt {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.content dd {
+    margin-bottom: 5px;
+}
+.content hr {
+    height: 1px;
+    border: none;
+    color: #aaa;
+    background: #aaa;
+    margin: 10px 0;
+    clear: both;
+}
+/* --------------- /b-content --------------- */
+
+/* --------------- fonts --------------- */
+@font-face
+{
+    font-family: pfdintextcomppro-regular;
+    src: url("../fonts/pfdintextcomppro-regular.eot");
+    src: url("../fonts/pfdintextcomppro-regulareot?#iefix") format("embedded-opentype"), url("../fonts/pfdintextcomppro-regular.woff") format("woff"), url("../fonts/pfdintextcomppro-regular.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: pfdintextcomppro-bold;
+    src: url("../fonts/pfdintextcomppro-bold.eot");
+    src: url("../fonts/pfdintextcomppro-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/pfdintextcomppro-bold.woff") format("woff"), url("../fonts/pfdintextcomppro-bold.ttf") format("truetype");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 980px;
+    font-family: arial;
+    overflow: hidden;
+    position: relative;
+}
+    .site:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 100px;
+    }
+.site__layout {
+    width: 980px;
+    margin: 0 auto;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 278px;
+    margin-bottom: 35px;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 61px;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- main-menu --------------- */
+.main-menu {
+    border: 4px double #bdd355;
+    overflow: hidden;
+    position: absolute;
+    top: 234px;
+    left: 0;
+    width: 972px;
+    overflow: hidden;
+}
+.main-menu__item:first-child{
+    border: none;
+}
+.main-menu__item{
+    float: left;
+    height: 37px;
+    border-left: 1px solid #bdd355;
+}
+.main-menu__lnk{
+    display: block;
+    height: 37px;
+    line-height: 37px;
+    font-family: pfdintextcomppro-bold;
+    text-decoration: underline;
+    color: #7bc4ed;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 0 26px;
+}
+.main-menu__lnk:hover{
+    color: #aac625;
+    text-decoration: underline;
+}
+.main-menu__item_active .main-menu__lnk{
+    cursor: default;
+    text-decoration: none;
+    color: #535353;
+}
+.main-menu__layout{
+    width: 978px;
+}
+/* --------------- /main-menu --------------- */
+.address{
+    position: absolute;
+    font-style: normal;
+    top: 48px;
+    left: 348px;
+    color: #c6c6c6;
+    font-size: 16px;
+
+}
+.phone{
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 11px;
+
+}
+.basketHead{
+    position: absolute;
+    top: 53px;
+    right: 0;
+}
+.basketCoun{
+    float: left;
+    background: url("../img/basket.png");
+    width: 35px;
+    height: 29px;
+    text-align: center;
+    color: #fff;
+    font-family: pfdintextcomppro-bold;
+    text-decoration: underline;
+    font-size: 14px;
+    cursor: default;
+    padding-top: 11px;
+}
+.basketHead dl{
+    float: left;
+    width: 164px;
+    margin-left: 7px;
+}
+.basketHead dt{
+    font-family: pfdintextcomppro-regular;
+    font-size: 16px;
+    color: #ff3d86;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+.basketHead dd{
+    margin-bottom: 3px;
+}
+.basketHead dd a:hover{
+    text-decoration: none;
+}
+.basketHead dd a{
+    color: #7bc4ed;
+    font-size: 13px;
+    text-decoration: underline;
+}
+.searchForm{
+    position: absolute;
+    top: 160px;
+    left: 0;
+}
+.searchForm .inputWrap{
+    background: #fff url("../img/search.png") no-repeat;
+    border: 3px solid #f1f0f0;
+    border-right: none;
+    border-radius: 3px 0 0 3px;
+    width: 904px;
+    float: left;
+    height: 39px;
+}
+.searchForm .inputWrap input{
+    padding: 0 10px 0 50px;
+    width: 844px;
+    height: 39px;
+    border: none;
+    font-size: 14px;
+    background: none;
+}
+.searchForm input[type="submit"]:hover{
+    opacity: 0.8;
+}
+.searchForm input[type="submit"]{
+    float: left;
+    border: 3px solid #ff3d86;
+    border-radius: 0 3px 3px 0;
+    width: 71px;
+    height: 44px;
+    color: #535353;
+    font-size: 16px;
+    font-family: pfdintextcomppro-bold;
+    background: #fff;
+}
+.topicType{
+    color: #ff3d86;
+    font-size: 18px;
+    font-family: pfdintextcomppro-regular;
+    text-transform: uppercase;
+    font-weight: normal;
+    overflow: hidden;
+}
+.topicType span{
+    padding-left: 10px;
+}
+.leftSideBar{
+    width: 203px;
+    margin-bottom: 50px;
+    float: left;
+}
+.asideMenu{
+    box-shadow: 0 5px 18px #e0e0e0;
+    padding-top: 25px;
+    margin-bottom: 43px;
+}
+.asideMenu li{
+    border-top: 1px solid #f1f0f0;
+    padding: 13px 0 12px 16px;
+}
+.asideMenu li a{
+    color: #000;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: pfdintextcomppro-regular;
+}
+.asideMenu li a:hover{
+    text-decoration: underline;
+    color: #c0cc86;
+}
+.asideMenu .topicType{
+    padding: 0 0 23px 19px;
+    overflow: hidden;
+}
+.selectProd{
+    border-top: 1px solid #f1f0f0;
+    border-bottom: 1px solid #f1f0f0;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+}
+.selectProd span{
+    background: url("../img/arrow.png") no-repeat right 9px;
+    text-transform: uppercase;
+    color: #000;
+    font-family: tahoma;
+    font-size: 16px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.producer .topicType{
+    height: 20px;
+    margin-bottom: 38px;
+    line-height: 20px;
+}
+.topicType img{
+    float: left;
+}
+.topicType span{
+    float: left;
+}
+.producer{
+    border-bottom: 1px dotted #d6d6d6;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+.goodsShow{
+    background: url("../img/bg.png");
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+}
+.imgGoods{
+    position: relative;
+    width: 203px;
+    height: 131px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.discountProcent{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 100px;
+    background: #ff5b53;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+}
+.new{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 100px;
+    background: #7bc4ed;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+}
+.sale{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    border-radius: 100px;
+    background: #ff3d86;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 11px;
+    color: #fff;
+}
+
+.discount .topicType{
+    margin-bottom: 36px;
+}
+.goodsShow a{
+    color: #7bc4ed;
+    font-size: 16px;
+    font-family: pfdintextcomppro-regular;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 15px;
+    margin-bottom: 5px;
+}
+.goodsShow > p{
+    color: #535353;
+    font-size: 16px;
+    font-family: pfdintextcomppro-regular;
+    margin: 0 15px 9px 15px;
+}
+.prices{
+    overflow: hidden;
+}
+.prices li{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.oldPrice{
+    color: #b7b7b7;
+    text-decoration: line-through;
+}
+.newPrice{
+    color: #aac625;
+    font-size: 16px;
+}
+.buyBut{
+    display: block;
+    background: #ff3d86;
+    font-family: pfdintextcomppro-bold;
+    color: #fff;
+    font-size: 18px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.buyBut:hover{
+    opacity: 0.8;
+}
+.content-wrap{
+    float: right;
+    width: 737px;
+}
+.content .crumbs{
+    list-style: none;
+    margin: -5px 0 37px 0;
+    overflow: hidden;
+    border: 4px solid #f6f6f6;
+    height: 52px;
+    line-height: 52px;
+    padding-left: 16px;
+}
+.content .crumbs li:first-child{
+    padding-left: 0;
+    background: none;
+}
+.content .crumbs li{
+    float: left;
+    color: #000;
+    background: url("../img/arrow2.png") no-repeat  0 22px;
+    padding-left: 12px;
+    font-size: 16px;
+    font-family: pfdintextcomppro-regular;
+    text-transform: uppercase;
+    margin-right: 6px;
+}
+.topicType2,
+.content .topicType2{
+    color: #ff3d86;
+    font-weight: normal;
+    font-family: pfdintextcomppro-regular;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 39px;
+}
+.data label,
+.enter label,
+.registration label{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: pfdintextcomppro-regular;
+    display: block;
+    margin-bottom: 18px;
+}
+.data label span,
+.registration label span{
+    color: #ff1e1e;
+}
+.inputWrap{
+    border: 4px solid #e9e9e9;
+    width: 342px;
+    height: 25px;
+}
+.inputWrap input{
+    width: 322px;
+    padding: 0 10px;
+    height: 25px;
+    color: #535353;
+    border: none;
+    background: none;
+    font-size: 14px;
+}
+.eBut:hover{
+    opacity: 0.8;
+}
+.eBut{
+    background: #ff3d86;
+    color: #fff;
+    font-family: pfdintextcomppro-bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    height: 44px;
+    width: 203px;
+    text-transform: uppercase;
+}
+.block{
+    float: left;
+    width: 350px;
+    border-right: 1px solid #f1f0f0;
+    padding-right: 18px;
+}
+.wraper{
+    overflow: hidden;
+    margin: 40px 0 0 0;
+}
+.lineContainer{
+    margin-bottom: 15px;
+    position: relative;
+}
+.enter .eBut,
+.registration .eBut{
+    float: right;
+    margin-top: 18px;
+}
+.block2{
+    float: right;
+    width: 350px;
+}
+.content .errorMessage{
+    position: absolute;
+    margin-bottom: 0;
+    bottom: -14px;
+    left: 0;
+    color: #dc2929;
+    font-size: 11px;
+}
+.error{
+    border-color: #fc6060;
+    background: #ffd9d9;
+}
+.content .forget{
+    float: left;
+    margin-top: 34px;
+    text-transform: uppercase;
+    font-family: pfdintextcomppro-regular;
+}
+.sortContainer{
+    border-bottom: 1px solid #f1f0f0;
+    width: 100%;
+    float: left;
+    border-top: 1px solid #f1f0f0;
+    margin: 0 0 36px 0;
+    padding: 13px 0 9px 0;
+}
+.content .sortType{
+    list-style: none;
+    margin: 0;
+    float: left;
+}
+.content .sortType li:first-child{
+    width: 90px;
+    margin-right: 0;
+}
+.content .sortType li{
+    float: left;
+    color: #525252;
+    width: 116px;
+    margin-right: 25px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-family: pfdintextcomppro-regular;
+    text-transform: uppercase;
+}
+.content .sortType li dl{
+    margin-bottom: 0;
+}
+.content .sortType li dt{
+    float: left;
+    font-weight: normal;
+}
+.content .sortType li dt{
+    float: left;
+}
+.content .paginator{
+    overflow: hidden;
+    float: right;
+}
+.content .paginator ul{
+    list-style: none;
+    margin: 0;
+}
+.content .paginator ul li{
+    float: left;
+    margin-left: 8px;
+    margin-bottom: 0;
+}
+.content .sortType .showPage{
+    width: 200px;
+    margin-right: 0;
+}
+.content .showType dd > span{
+    color: #525252;
+    text-decoration: none;
+    background: url("../img/arrow.png") no-repeat right 5px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.content .showType dd > span:hover{
+    color: #aac625;
+    background: url("../img/arrow3.png") no-repeat right 5px;
+}
+.content .prevPag{
+    display: block;
+    background: url("../img/pag-left.png") no-repeat;
+    width: 10px;
+    height: 7px;
+    text-indent: -5000px;
+    margin-top: 4px;
+}
+
+.content .nextPag{
+    display: block;
+    background: url("../img/pag-rigt.png") no-repeat;
+    width: 11px;
+    height: 7px;
+    text-indent: -5000px;
+    margin-top: 4px;
+}
+.content .paginator a{
+    font-size: 14px;
+    font-family: pfdintextcomppro-regular;
+    color: #7bc4ed;
+}
+.content .paginator a:hover{
+    text-decoration: underline;
+    color: #aac625;
+}
+.content .paginator a.active{
+    color: #525252;
+    text-decoration: none;
+}
+.content .catalogList{
+    list-style: none;
+    margin: 0;
+    width: 758px;
+}
+.content .catalogList > li{
+    width: 245px;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+.content .catalogList .imgGoods{
+    width: 245px;
+    height: 164px;
+}
+.content .catalogList .goodsShow{
+    background: #fff;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+.content .catalogList .prices{
+    list-style: none;
+    margin: 0 21px;
+}
+.content .catalogList .newPrice{
+    font-size: 21px;
+}
+.content .catalogList .buyBut{
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 202px;
+    margin: 0 auto;
+}
+.buyBlock{
+
+    padding: 10px 21px 0 21px;
+    box-shadow: 0 5px 10px #c2bfbf;
+    padding-bottom: 16px;
+    display: none;
+    z-index: 10;
+    position: absolute;
+    background: #fff;
+    bottom: -69px;
+    left: 0;
+    width: 203px;
+}
+.content .catalogList .goodsShow > p{
+    margin: 0 21px 9px 21px;
+}
+.content .catalogList .active .goodsShow{
+    padding-bottom: 9px;
+}
+.content .catalogList .goodsShow a{
+    padding: 0 21px;
+}
+.content .catalogList  .oldPrice{
+    font-size: 20px;
+}
+.content .catalogList > li.active{
+    box-shadow: 0 2px 10px #c2bfbf;
+    position: relative;
+}
+.content .catalogList > li.active .buyBlock{
+    display: block;
+}
+.content .catalogList > li.active .prices{
+    border-bottom: 1px dotted #a8a8a8;
+}
+.mainCatalog  > li.active .prices{
+    border-bottom: none !important;
+}
+.textWrap{
+    clear: both;
+    border-bottom: 1px dotted #d6d6d6;
+    border-top: 1px dotted #d6d6d6;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.textWrap p{
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
+}
+.fullWidth .content-wrap{
+    width: 980px;
+}
+.content .basketList{
+    list-style: none;
+    margin: 0 0 19px 0;
+    box-shadow: 0 2px 5px #cecdcd;
+}
+
+.content .basketList li{
+    overflow: hidden;
+}
+.imgWrap{
+    float: left;
+    width: 183px;
+    height: 180px;
+}
+.imgContainer{
+    width: 183px;
+    height: 180px;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+.basketDescript{
+    float: left;
+    width: 775px;
+}
+.content .goodsName{
+    text-transform: uppercase;
+    display: block;
+    font-family: pfdintextcomppro-regular;
+    margin: 25px 0 15px 0;
+    font-size: 18px;
+}
+
+.lineBlock{
+    overflow: hidden;
+    border-top: 1px solid #f1f0f0;
+    padding-top: 5px;
+    margin-bottom: 11px;
+    border-bottom: 1px solid #f1f0f0;
+}
+.lineBlock dl{
+    float: left;
+    margin-right: 85px;
+    margin-bottom: 0;
+}
+.lineBlock dl dt{
+    float: left;
+    font-weight: normal;
+    margin-top: 9px;
+    margin-right: 5px;
+}
+.lineBlock dl dd{
+    float: left;
+}
+.lineBlock dl dd li:first-child{
+    margin-top: 0;
+}
+.lineBlock dl dd li{
+    margin-top: 14px;
+}
+.lineBlock dl dd span{
+    float: left;
+    font-family: pfdintextcomppro-regular;
+    font-size: 18px;
+    margin: 6px 0 0 9px;
+}
+.content .check{
+    margin-bottom: 42px;
+}
+.priceForOne dt{
+    text-transform: uppercase;
+    color: #bcbcbc;
+    font-size: 16px;
+    font-family: pfdintextcomppro-regular;
+}
+.priceForOne dd{
+    font-size: 20px;
+    color: #aac625;
+    margin-top: 5px;
+}
+.basketCounts dt{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: pfdintextcomppro-regular;
+}
+.basketCounts .inputWrap{
+    width: 37px;
+    height: 25px;
+    margin-left: 3px;
+    float: left;
+}
+.basketCounts .inputWrap input{
+    width: 17px;
+    text-align: right;
+}
+.content .basketCounts ul{
+    float: left;
+    margin: 5px 0 0 11px;
+    list-style: none;
+}
+.content .up{
+    background: url("../img/up.png") no-repeat;
+    display: block;
+    text-indent: -5000px;
+    width: 9px;
+    height: 5px;
+}
+.content  .down{
+    background: url("../img/down.png") no-repeat;
+    display: block;
+    text-indent: -5000px;
+    width: 9px;
+    height: 5px;
+}
+.lineBlock > p{
+    float: right;
+    margin: 7px 0 0 0;
+    color: #aac625;
+    font-size: 22px;
+}
+.content .deleteBut{
+    background: url("../img/delete.png") no-repeat;
+    padding-left: 30px;
+    color: #878787;
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    font-family: pfdintextcomppro-regular;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.content .deleteBut:hover{
+    color: #da0c0c;
+    background: url("../img/delete-hover.png") no-repeat;
+}
+.basketTotal{
+    overflow: hidden;
+    border-bottom: 1px solid #aac625;
+    border-top: 1px solid #aac625;
+    margin-bottom: 36px;
+
+    padding-bottom: 7px;
+}
+.content .basketTotal dl{
+    float: right;
+    margin-bottom: 0;
+}
+.basketTotal dl dt{
+    float: left;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 16px;
+
+    font-family: pfdintextcomppro-regular;
+}
+.basketTotal dl dd{
+    float: left;
+    font-size: 20px;
+    color: #aac625;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.butGroup{
+    overflow: hidden;
+}
+.content .continion:hover{
+    opacity: 0.8;
+    color: #000;
+}
+.content .continion{
+    text-decoration: none;
+    font-family: pfdintextcomppro-bold;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 4px;
+    text-align: center;
+    float: left;
+    background: #bdc3c7;
+    width: 202px;
+    height: 44px;
+    line-height: 44px;
+    color: #000;
+}
+.content .buyBut{
+    color: #fff;
+    width: 202px;
+    border-radius: 4px;
+    float: right;
+    text-decoration: none;
+}
+.content .buyBut:hover{
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.content .addAdress{
+    font-size: 11px;
+    font-family: arial;
+}
+.data .eBut{
+    margin-top: 30px;
+}
+.leftBlock{
+    float: left;
+}
+.rightBlock{
+    float: right;
+    width: 476px;
+}
+.tableWrap table{
+    width: 475px;
+    border: none;
+}
+.tableWrap table td{
+    border: none;
+    font-size: 14px;
+    font-family: pfdintextcomppro-regular;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.tableWrap table th{
+    border: none;
+    text-align: left;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-family: pfdintextcomppro-regular;
+    font-weight: normal;
+    font-size: 15px;
+    border-bottom: 4px solid #f6f6f6;
+    padding-bottom: 15px;
+}
+.dontWorked{
+    color: #ff0000;
+}
+.summ{
+    color: #aac625;
+}
+.done{
+    color: #00bfc1;
+}
+.deleteRow{
+    display: block;
+    background: url("../img/delete-but.png");
+    width: 13px;
+    height: 13px;
+    text-indent: -5000px;
+}
+.butContainer{
+    text-align: center;
+}
+.gallWrap{
+    float: left;
+    width: 244px;
+}
+.content .preview{
+    list-style: none;
+    margin: 0;
+}
+.content .littlGall li{
+    float: left;
+}
+.content .littlGall li a{
+    display: block;
+}
+.content .littlGall li a:hover{
+    box-shadow: 0 0 10px #d4d4d4;
+}
+.imgBigWrap{
+    margin-bottom: 10px;
+}
+.gallDescription{
+    width: 465px;
+    float: right;
+}
+.content .gallDescription dl{
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.content .gallDescription dt{
+    float: left;
+    font-weight: normal;
+    color: #b7b7b7;
+    margin-right: 5px;
+    font-size: 16px;
+    font-family: pfdintextcomppro-regular;
+}
+.content .gallDescription dd{
+    float: left;
+    font-family: pfdintextcomppro-regular;
+    font-size: 16px;
+    margin: 0;
+}
+.content .gallDescription .priceForOne dt{
+    margin-top: 3px;
+}
+.content .gallDescription .priceForOne dd{
+    font-size: 20px;
+}
+.content .gallDescription .buyBut{
+    float: left;
+}
+.goodsBigWrap{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.socialContainer{
+    border-bottom: 1px solid #f1f0f0;
+    border-top: 1px solid #f1f0f0;
+    padding: 10px 0;
+    margin-bottom: 36px;
+}
+.content .tabs{
+    overflow: hidden;
+    list-style: none;
+    margin: 0 0 18px 0 !important;
+    border-bottom: 1px solid #f1f0f0;
+}
+.content .textDescription .tabs  li{
+    float: left;
+    height: 27px;
+    line-height: 27px;
+}
+.tabs li a{
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    height: 27px;
+    line-height: 27px;
+}
+.content .tabs li a.active{
+    border-top: 1px solid #f1f0f0;
+    position: relative;
+    padding-right: 14px;
+    background: #fff;
+    padding-bottom: 1px;
+}
+.content .tabs li a.active:after{
+    background: url("../img/slash.png");
+    width: 14px;
+    height: 30px;
+    position: absolute;
+    top: -1px;
+    right: 0;
+    content: "";
+}
+.tabs li a:hover{
+    color: #000;
+    text-decoration: underline;
+}
+.content .textDescription ul{
+    list-style: none;
+    margin: 0 0 18px 0;
+}
+.content .textDescription ul li{
+    line-height: 17px;
+    margin-bottom: 0;
+}
+.imgBox{
+    width: 732px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.content .textList{
+    list-style: none;
+    margin: 0;
+    display: block;
+    clear: both;
+}
+.content .textList > li{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.content .textList .imgGoods{
+    float: left;
+}
+.content .textList .textType{
+    float: right;
+    width: 525px;
+}
+.content .topicType3{
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.content .topicType3 a{
+    float: left;
+    margin-top: 6px;
+}
+.content .topicType3 .buyBut{
+    float: right;
+    width: 80px;
+    height: 30px;
+    margin-top: 0;
+    line-height: 30px;
+}
+.content .topicType3 .prices{
+    float: right;
+    margin: 6px 10px 0 0;
+    list-style: none;
+    white-space: nowrap;
+}
+.content .textType > p{
+    font-family: pfdintextcomppro-regular;
+    font-size: 16px;
+}
+.content .tabsBlock a.active{
+    color: #000;
+    text-decoration: none;
+}
+.showType2{
+    display: none;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -80px;
+    background: url("../img/bg.png");
+}
+.footer__layout {
+    width: 980px;
+    margin: 0 auto;
+    height: 80px;
+    position: relative;
+    font-family: arial;
+}
+.copy{
+    position: absolute;
+    color: #535353;
+    font-size: 14px;
+    top: 33px;
+    left: 0;
+}
+.footerAddress{
+    position: absolute;
+    color: #535353;
+    font-size: 14px;
+    top: 33px;
+    left: 377px;
+}
+.saitoria:hover{
+    opacity: 0.8;
+}
+.saitoria{
+    display: block;
+    background: url("../img/creaters.png");
+    width: 25px;
+    height: 37px;
+    text-indent: -5000px;
+}
+.creaters{
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+.creaters dt{
+    float: left;
+    font-size: 14px;
+    margin: 14px 10px 0 0;
+}
+.creaters dd{
+    float: left;
+}
+
+/* --------------- /footer --------------- */
+.blockType{
+    border-top: 1px dotted #d6d6d6;
+    border-bottom: 1px dotted #d6d6d6;
+    padding-top: 46px;
+    overflow: hidden;
+
+}
+
+.slideGallWrap{
+    margin-bottom: 40px;
+    position: relative;
+}
+.content .gallery ul{
+    list-style: none;
+    margin: 0;
+}
+.content .gallery li{
+    margin-bottom: 0;
+}
+.content .gallery .goodsShow{
+    background: #fff;
+    width: 245px;
+    padding-bottom: 0;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+    margin-bottom: 15px;
+}
+.blockMove{
+    width: 800px;
+}
+.content .gallery .prices{
+    margin-left: 15px;
+}
+.prev{
+    text-indent: -5000px;
+    padding: 0;
+    border: none;
+    background: url("../img/left-arrow.png");
+    width: 12px;
+    height: 20px;
+    margin-right: 20px;
+    float: right;
+}
+.prev:hover{
+    background: url("../img/left-arrow-hover.png");
+}
+.next{
+    text-indent: -5000px;
+    padding: 0;
+    border: none;
+    background: url("../img/right-gall.png");
+    width: 12px;
+    float: right;
+    height: 20px;
+}
+.next:hover{
+    background: url("../img/right-gall-hover.png");
+}
+.butGall{
+    overflow: hidden;
+    margin: 0 67px 30px 0;
+}
+.content .recomend{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #7bc4ed;
+    font-family: pfdintextcomppro-regular;
+    font-size: 13px;
+    float: right;
+    margin: 0 0 23px 0;
+}
+.content .noBorder{
+    border: none;
+}
+
+.slideGallWrap{
+    background: url("../img/bg.png");
+    height: 362px;
+    width: 737px;
+}
+.congradelation{
+    width: 441px;
+    height: 195px;
+    margin: 0 auto;
+    margin-top: 86px;
+}
+.content .congradelation p{
+    text-align: center;
+    font-family: pfdintextcomppro-bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.blockName{
+    border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    margin-bottom: 26px;
+}
+.content .blockName h2{
+    font-family: pfdintextcomppro-bold;
+    font-weight: normal;
+    text-align:  center;
+    margin-bottom: 0;
+    font-size: 38px;
+    text-transform: uppercase;
+}
+.content .blockName .asorti{
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    width: 450px;
+}
+.content .asorti span{
+    float: left;
+    color: #535353;
+    margin-bottom: 5px;
+    font-size: 18px;
+    margin-right: 11px;
+    text-transform: uppercase;
+    font-family: pfdintextcomppro-regular;
+}
+.content .congradelation .eBut{
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    width: 230px;
+    height: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+.content .slidesjs-play,
+.content .slidesjs-stop{
+    display: none !important;
+}
+.content .slidesjs-pagination{
+    list-style: none;
+    margin: 0;
+    position: absolute;
+    left: 319px;
+    bottom: 19px;
+}
+.content .slidesjs-pagination li{
+    float: left;
+    margin-left: 10px;
+}
+.content .slidesjs-pagination li a{
+    display: block;
+    background: url("../img/gall-dot.png");
+    width: 21px;
+    height: 21px;
+    text-indent: -5000px;
+}
+.content .slidesjs-pagination li a.active{
+    background: url("../img/active-gall.png");
+}
+
+
+.selectWrap{
+    position: relative;
+}
+.openContainer{
+    position: absolute;
+    top: 44px;
+    left: 0;
+    border: 2px solid #aac625;
+    padding: 2px;
+    background: #fff;
+    width: 100%;
+    display: none;
+
+}
+.openContainer span{
+    text-transform: uppercase;
+    font-family: pfdintextcomppro-regular;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.openContainer span:hover{
+    color: #fff;
+    background: #aac625;
+}
+.selectProd span:hover{
+    color: #aac625;
+}
+.showType dd{
+    position: relative;
+    float: left;
+}
+.sortContainer .openContainer{
+    top: 28px;
+}
+.sort dd{
+    width: 100px;
+
+}
+.content .sortType .sortWrap{
+    width: 162px;
+    margin-right: 0;
+}

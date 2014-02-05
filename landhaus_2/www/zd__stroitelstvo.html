@@ -1,0 +1,963 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>text</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=cyrillic-ext,cyrillic,latin' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/stroitelstvo.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/jquery.time-range.js"></script>
+    <script src="js/jquery.sort.js"></script>
+    <script src="js/jquery.hammer.min.js"></script>
+    <script src="js/jquery.ares.slider.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+
+    <!--[if  IE 9]>
+    <link rel="stylesheet" href="css/main.ie9.css" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+<!-- site -->
+<div class="site">
+
+<!-- site_wrap -->
+<div class="site_wrap">
+
+<!-- baner_top -->
+<div class="baner_top">
+    <img src="pic/pic1.jpg" width="1043" height="50" alt="">
+</div>
+<!-- /baner_top -->
+
+<!-- header -->
+<header class="header">
+
+    <!-- head_top -->
+    <div class="head_top">
+
+        <!-- center_block -->
+        <div class="center_block">
+
+            <!-- seatch_form -->
+            <form class="seatch_form">
+                <input type="search" placeholder="Поиск по сайту">
+                <input type="submit" class="search_but">
+            </form>
+            <!-- /seatch_form -->
+
+            <!-- head_top__menu -->
+            <div class="head_top__menu">
+                <a class="add_ad" href="#">Добавить объявление бесплатно</a>
+                <span class="enter_but"><a href="#">Войти</a> или <a href="#">зарегистрироваться</a></span>
+                <a class="favorit" href="#">Избранное</a>
+            </div>
+            <!-- /head_top__menu -->
+
+            <!-- aritcles_object -->
+            <dl class="aritcles_object">
+                <dt>Статьи</dt>
+                <dd> 2</dd>
+                <dt>Объекты </dt>
+                <dd>13</dd>
+            </dl>
+            <!-- /aritcles_object -->
+
+        </div>
+        <!-- /center_block -->
+
+    </div>
+    <!-- head_top -->
+
+    <!-- center_block -->
+    <div class="center_block">
+
+        <!-- logo -->
+        <h1 class="logo"><img src="img/logo.png" width="207" height="59" alt=""></h1>
+        <!-- /logo -->
+
+        <p class="slogan">На нашем сайте в подразделах купить, построить, жить и арендовать доступен поиск недвижимости. </p>
+
+        <!-- weather -->
+        <div class="weather">
+            <img src="pic/pic2.jpg" width="385" height="49" alt="">
+        </div>
+        <!-- /weather -->
+
+        <!-- main_menu -->
+        <nav class="main_menu">
+            <a href="#" class="menu_item1"><span>недвижимость</span></a>
+            <a href="#" class="menu_item2"><span>строительство</span></a>
+            <a href="#" class="menu_item3"><span>загородная жизнь</span></a>
+            <a href="#" class="menu_item4"><span>форум</span></a>
+            <a href="#">Рекламный пункт меню</a>
+        </nav>
+        <!-- /main_menu -->
+
+    </div>
+    <!-- /center_block -->
+
+
+
+</header>
+<!-- /header -->
+
+<!-- site__content -->
+<div class="site__content">
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+<!-- site_wrap -->
+<div class="site_wrap">
+
+
+
+
+<!-- sort_block -->
+<form action="#" class="sort_block">
+
+    <!-- deal -->
+    <div class="deal">
+        <span>Я хочу:</span>
+        <div class="sort_but type_deal">
+            <a href="#">Купить</a>
+            <a href="#" class="active">Снять</a>
+            <input type="hidden" value="2">
+        </div>
+        <div class="sort_but type_place">
+            <a href="#" class="house__sort">Дом</a>
+            <a href="#" class="flat__sort">Квартиру  </a>
+            <a href="#" class="place__sort active">Участок</a>
+            <input type="hidden" value="3">
+        </div>
+    </div>
+    <!-- /deal -->
+
+    <!-- price_sort -->
+    <div class="price_sort">
+
+
+        <label>Стоимость от</label>
+        <input type="text" id="minCost" value="0"  />
+        <label>до</label>
+        <input type="text" id="maxCost" value="5000"  />
+                                <span>тыс. руб.
+                                    за сотку</span>
+
+        <!-- sliderCont -->
+        <div class="sliderCont">
+            <div id="slider"></div>
+        </div>
+        <!-- /sliderCont -->
+
+
+
+    </div>
+    <!-- /price_sort -->
+
+    <!-- buts_add -->
+    <div class="buts_add">
+        <a href="#">Выбрать район</a>
+        <a href="#">Удаленность от КАД</a>
+    </div>
+    <!-- /buts_add -->
+
+    <!-- finish_block -->
+    <div class="finish_block">
+        <p class="sort_result">Найдено 365 объектов</p>
+        <input type="submit" class="e_but" value="Начать поиск">
+        <a href="#">Перейти к расширенному поиску</a>
+    </div>
+    <!-- /finish_block -->
+
+    <!-- show_type -->
+    <div class="show_type">
+        <a href="#" class="line_type active"></a>
+        <a href="#" class="block_type "></a>
+        <a href="#" class="map_type "></a>
+    </div>
+    <!-- show_type -->
+
+</form>
+<!-- /sort_block -->
+
+
+<!-- content_site -->
+<div class="content_site">
+
+<!-- slideWrap -->
+<div class="slideWrap" id="project">
+
+    <!-- ares-slider -->
+    <div class="ares-slider2">
+        <div class="ares-slider2__item">
+
+            <!-- gall_inside -->
+            <div class="gall_inside">
+                <img src="pic/pic7.jpg" width="727" height="397" alt="">
+
+                <div class="points_text">Меняем квартиру
+                    на загородный дом</div>
+            </div>
+            <!-- /gall_inside -->
+
+        </div>
+        <div class="ares-slider2__item">
+
+            <!-- gall_inside -->
+            <div class="gall_inside">
+                <img src="pic/pic7.jpg" width="727" height="397" alt="">
+
+                <div class="points_text">Меняем квартиру
+                    на загородный дом</div>
+            </div>
+            <!-- /gall_inside -->
+
+        </div>
+
+        <div class="ares-slider2__item">
+
+            <!-- gall_inside -->
+            <div class="gall_inside">
+                <img src="pic/pic7.jpg" width="727" height="397" alt="">
+
+                <div class="points_text">Меняем квартиру
+                    на загородный дом</div>
+            </div>
+            <!-- /gall_inside -->
+
+        </div>
+
+
+        <div class="ares-slider2__prev"></div>
+        <div class="ares-slider2__next"></div>
+    </div>
+    <!-- /ares-slider -->
+
+</div>
+<!-- /slideWrap -->
+
+<!-- content_site__left -->
+<div class="content_site__left">
+
+    <!-- articles__review -->
+    <div class="articles__review">
+        <h2>статьи</h2>
+
+        <div>
+            <ul>
+                <li><a href="#" class="articles__review__item1">Загородное строительство</a> </li>
+                <li><a href="#" class="articles__review__item2">Строительные материалы и технологии</a> </li>
+                <li><a href="#" class="articles__review__item3">Проектирование и дизайн</a> </li>
+                <li><a href="#" class="articles__review__item4">Отопление и водоснабжение</a> </li>
+                <li><a href="#" class="articles__review__item5">Вентиляция и кондиционирование</a> </li>
+                <li><a href="#" class="articles__review__item6">Инструменты и оборудование</a> </li>
+                <li><a href="#" class="articles__review__item7">Ландшафт</a> </li>
+            </ul>
+
+            <!-- articles__footer -->
+            <div class="articles__footer">
+                <a href="#">Умный дом</a>
+                <a href="#">Бассейны </a>
+                <a href="#">Электрика и освещение</a>
+                <a href="#">Печи и камины</a>
+                <a href="#">Сантехника</a>
+                <a href="#">Ограждения</a>
+                <a href="#">Окна и двери</a>
+                <a href="#">Системы безопасности</a>
+            </div>
+            <!-- /articles__footer -->
+
+        </div>
+
+    </div>
+    <!-- /articles__review -->
+
+    <!-- news -->
+    <div class="news">
+        <h2>новости</h2>
+
+        <div>
+            <!-- news__row -->
+            <div class="news__row">
+                <h3>Сегодня</h3>
+
+                <div>
+                    <p><a href="#">Озерный край: загородная недвижимость Выборгского района </a> </p>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+                </div>
+
+                <div>
+                    <p><a href="#">Горячая телефонная линия Росреестра по вопросам земельного контроля </a></p>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+                </div>
+
+                <div>
+                    <p><a href="#">Kоттеджные поселки: покупаем грамотно.</a></p>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+                </div>
+
+            </div>
+            <!-- /news__row -->
+
+            <!-- news__row -->
+            <div class="news__row">
+                <h3>Вчера</h3>
+
+                <div>
+                    <p><a href="#">«Сиверская мелодия»: можно строиться!</a></p>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+                </div>
+
+                <div>
+                    <p><a href="#">«Лукоморье» — финалист
+                        премии «Поселок года-2013»</a></p>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+                </div>
+
+                <div>
+                    <p><a href="#">Интерес к коттеджному поселку «Семь ручьев» растет</a></p>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+                </div>
+
+            </div>
+            <!-- /news__row -->
+
+            <a href="#" class="news__all">смотреть все новости</a>
+
+        </div>
+
+    </div>
+    <!-- /news -->
+
+
+
+
+
+
+</div>
+<!-- /content_site__left -->
+
+<!-- content_site__right -->
+<div class="content_site__right">
+
+
+    <!-- estate -->
+    <div class="estate estate_special">
+        <h2>спецпредложения</h2>
+
+        <div>
+
+            <!-- estate__block -->
+            <div class="estate__block">
+
+                <a href="#" class="estate__img"><img src="pic/estate1.jpg" width="202" height="133" alt=""></a>
+                <h4>Приморский район</h4>
+                                                <span>Коттедж 600 м с бассейном, 3 эт.
+    цоколь, кирпич, натуральный камень</span>
+                <ul>
+                    <li>142 500 т.р.</li>
+                    <li><a href="#">В избранное</a> </li>
+                </ul>
+            </div>
+            <!-- /estate__block -->
+
+            <!-- estate__block -->
+            <div class="estate__block">
+
+                <a href="#" class="estate__img"><img src="pic/estate1.jpg" width="202" height="133" alt=""></a>
+                <h4>Приморский район</h4>
+                                                <span>Коттедж 600 м с бассейном, 3 эт.
+    цоколь, кирпич, натуральный камень</span>
+                <ul>
+                    <li>142 500 т.р.</li>
+                    <li><a href="#">В избранное</a> </li>
+                </ul>
+            </div>
+            <!-- /estate__block -->
+
+            <a href="#" class="news__all">все популярные объекты</a>
+
+        </div>
+
+
+
+    </div>
+    <!-- /estate -->
+
+    <!-- exspert -->
+    <div class="exspert">
+        <h2>Колонка эксперта</h2>
+
+        <!-- exspert__info -->
+        <div class="exspert__info">
+
+            <img src="pic/exspert1.jpg" width="62" height="62" alt="">
+            <h3>Васильева
+                Эсмеральда Петровна</h3>
+                                        <span>Эксперт по застройке
+мелиорированных земель</span>
+        </div>
+        <!-- /exspert__info -->
+
+        <!-- exspert__text -->
+        <div class="exspert__text">
+            <p>Вывод третьей очереди поселка способствует строительству в «Янтарном бору» детского сада, мойки для машин и офиса для управляющей компании.
+                Также в арт-поселке предусмотрена зона отдыха с каскадным водопадом и детской игровой площадкой.
+                В пешей доступности от «Янтарного бора» Коркинское озеро. </p>
+            <a href="#" class="news__all">читать дальше</a>
+        </div>
+        <!-- /exspert__text -->
+
+    </div>
+    <!-- /exspert -->
+
+</div>
+<!-- /content_site__right -->
+
+
+
+</div>
+<!-- content_site -->
+
+<!-- site__right_aside -->
+<div class="site__right_aside">
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container">
+        <img src="pic/pic5.jpg" width="230" height="398" alt="">
+    </a>
+    <!-- /banner_container -->
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container2">
+        <img src="pic/pic6.jpg" width="230" height="120" alt="">
+    </a>
+    <!-- /banner_container -->
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container2">
+        <img src="pic/pic6.jpg" width="230" height="120" alt="">
+    </a>
+    <!-- /banner_container -->
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container2">
+        <img src="pic/pic6.jpg" width="230" height="120" alt="">
+    </a>
+    <!-- /banner_container -->
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container2">
+        <img src="pic/pic6.jpg" width="230" height="120" alt="">
+    </a>
+    <!-- /banner_container -->
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container2">
+        <img src="pic/pic6.jpg" width="230" height="120" alt="">
+    </a>
+    <!-- /banner_container -->
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container2">
+        <img src="pic/pic6.jpg" width="230" height="120" alt="">
+    </a>
+    <!-- /banner_container -->
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container2">
+        <img src="pic/pic6.jpg" width="230" height="120" alt="">
+    </a>
+    <!-- /banner_container -->
+
+</div>
+<!-- /site__right_aside -->
+
+</div>
+<!-- /site_wrap -->
+
+<!-- green__block -->
+<div class="green__block">
+
+    <!-- center_block -->
+    <div class="center_block">
+
+        <!-- buy-correct -->
+        <div class="buy-correct">
+            <img src="pic/green1.jpg" width="227" height="149" alt="">
+            <h2>покупаем правильно</h2>
+            <h3>Как правильно выбрать садовый инвентарь</h3>
+            <p>Вывод третьей очереди поселка способствует строительству в «Янтарном бору» детского сада, мойки для машин и офиса для управляющей компании. Также в арт-поселке предусмотрена зона отдыха с каскадным водопадом и детской игровой площадкой.
+            </p>
+
+            <!-- comment-reviews -->
+            <ul class="comment-reviews">
+                <li class="comment-reviews__views">30</li>
+                <li class="comment-reviews__comments">3</li>
+            </ul>
+            <!-- /comment-reviews -->
+
+        </div>
+        <!-- /buy-correct -->
+
+        <!-- videoblog -->
+        <div class="videoblog">
+            <h2>Видеоблог</h2>
+            <div class="videoblog__video">
+                <img src="pic/video1.jpg" width="202" height="133" alt="">
+            </div>
+            <h3>Мой адрес — коттеджный поселок</h3>
+            <p>Также в арт-поселке предусмотрена зона отдыха с каскадным водопадом и детской игровой площадкой. </p>
+            <a href="#" class="news__all">смотреть все видео</a>
+        </div>
+        <!-- /videoblog -->
+
+        <!-- videoblog__exposition -->
+        <div class="videoblog videoblog_exposition">
+            <h2>Выставки
+                и мероприятия</h2>
+
+            <!-- videoblog_exposition__container -->
+            <div class="videoblog_exposition__container">
+                <h3><a href="#">Озерный край: загородная недвижимость Выборгского района</a> </h3>
+                <time>25 июля 2013</time>
+            </div>
+            <!-- /videoblog_exposition__container -->
+
+            <!-- videoblog_exposition__container -->
+            <div class="videoblog_exposition__container">
+                <h3><a href="#">Озерный край: загородная недвижимость Выборгского района</a> </h3>
+                <time>25 июля 2013</time>
+            </div>
+            <!-- /videoblog_exposition__container -->
+
+            <!-- videoblog_exposition__container -->
+            <div class="videoblog_exposition__container">
+                <h3><a href="#">Озерный край: загородная недвижимость Выборгского района</a> </h3>
+                <time>25 июля 2013</time>
+            </div>
+            <!-- /videoblog_exposition__container -->
+            <a href="#" class="news__all">все выставки и мероприятия</a>
+
+        </div>
+        <!-- videoblog__exposition -->
+
+    </div>
+    <!-- /center_block -->
+
+</div>
+<!-- /green__block -->
+
+<!-- center_block -->
+<div class="center_block">
+
+    <!-- b-list -->
+    <div class="b-list">
+        <a href="#"><img src="pic/pic6.jpg" width="230" height="120" alt=""></a>
+        <a href="#"><img src="pic/pic6.jpg" width="230" height="120" alt=""></a>
+        <a href="#"><img src="pic/pic6.jpg" width="230" height="120" alt=""></a>
+        <a href="#"><img src="pic/pic6.jpg" width="230" height="120" alt=""></a>
+    </div>
+    <!-- /b-list -->
+
+    <!-- articles -->
+    <div class="articles">
+        <h2>Статьи</h2>
+
+        <!-- articles__popular -->
+        <div class="articles__popular">
+            <h3>Популярные</h3>
+
+            <!-- articles__main -->
+            <div class="articles__main">
+                <a href="#">
+                    <img src="pic/popular1.jpg" width="252" height="167" alt="">
+                </a>
+                <h4>Озерный край: загородная недвижимость Выборгского района</h4>
+                <time>25 июля 2013</time>
+            </div>
+            <!-- /articles__main -->
+
+            <!-- articles__list -->
+            <div class="articles__list">
+
+                <div>
+                    <a href="#" class="articles__img"><img src="pic/popular2.jpg" width="148" height="93" alt=""></a>
+                    <h4><a href="#">Меняем квартиру на загородный дом</a> </h4>
+                    <p>Начиная с середины апреля и вплоть до октября население Петербурга уменьшается. </p>
+                    <time>25 июля 2013</time>
+                </div>
+
+                <div>
+                    <a href="#"  class="articles__img"><img src="pic/popular2.jpg" width="148" height="93" alt=""></a>
+                    <h4><a href="#">Два крымских мэра названы
+                        «худшими отцами города»</a> </h4>
+                    <p>Начиная с середины апреля и вплоть до октября население Петербурга уменьшается. </p>
+                    <time>25 июля 2013</time>
+
+                </div>
+                <a href="#" class="news__all">все статьи</a>
+
+
+            </div>
+            <!-- /articles__list -->
+
+        </div>
+        <!-- /articles__popular -->
+
+        <!-- articles__new -->
+        <div class="articles__new">
+            <h3>Новые</h3>
+            <a href="#">Озерный край: загородная недвижимость Выборгского района </a>
+            <a href="#">Горячая телефонная линия Росреестра по вопросам земельного контроля</a>
+            <a href="#">Kоттеджные поселки: покупаем грамотно.</a>
+            <a href="#">Озерный край: загородная недвижимость Выборгского района </a>
+            <a href="#">Горячая телефонная линия Росреестра по вопросам земельного контроля</a>
+            <a href="#">Kоттеджные поселки: покупаем грамотно.</a>
+        </div>
+        <!-- /articles__new -->
+
+
+    </div>
+    <!-- /articles -->
+
+    <!-- questions -->
+    <div class="questions">
+        <h2>вопросы юристу</h2>
+
+        <!-- exspert -->
+        <div class="exspert">
+
+            <!-- exspert__info -->
+            <div class="exspert__info">
+
+                <img src="pic/exspert1.jpg" width="62" height="62" alt="">
+                <h3>Кропоткин
+                    Вячеслав Семенович</h3>
+                <span>Заслуженный юрист РФ</span>
+            </div>
+            <!-- /exspert__info -->
+
+            <!-- exspert__text -->
+            <div class="exspert__text">
+                <h3>Вопрос</h3>
+                <p>Скажите пожалуйста, в арт-поселке предусмотрена зона отдыха с каскадным водопадом и детской игровой площадкой?</p>
+            </div>
+            <!-- /exspert__text -->
+
+            <!-- exspert__text -->
+            <div class="exspert__text exspert__text_answer">
+                <h3>Ответ юриста</h3>
+                <p>Вывод третьей очереди поселка способствует строительству в «Янтарном бору» детского сада, мойки для машин и офиса для управляющей компании. Также в арт-поселке предусмотрена зона отдыха с каскадным водопадом и детской игровой площадкой.
+                </p>
+            </div>
+            <!-- /exspert__text -->
+
+
+
+        </div>
+        <!-- exspert -->
+
+        <a href="#" class="news__all">все вопросы юристу</a>
+
+    </div>
+    <!-- /questions -->
+
+
+</div>
+<!-- /center_block -->
+
+<!-- dark-gray -->
+<div class="dark-gray">
+
+    <!-- center_block -->
+    <div class="center_block">
+
+        <!-- forum -->
+        <div class="forum">
+            <h2>Форум</h2>
+            <div>
+                <h3>Новые темы</h3>
+
+                <!-- forum__block -->
+                <div class="forum__block">
+
+                    <a href="#">Озерный край: загородная недвижимость Выборгского района </a>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+
+                </div>
+                <!-- /forum__block -->
+
+                <!-- forum__block -->
+                <div class="forum__block">
+
+                    <a href="#">Горячая телефонная линия Росреестра по вопросам земельного контроля</a>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+
+                </div>
+                <!-- /forum__block -->
+
+                <!-- forum__block -->
+                <div class="forum__block">
+
+                    <a href="#">Kоттеджные поселки: покупаем грамотно.</a>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+
+                </div>
+                <!-- /forum__block -->
+
+            </div>
+
+            <div>
+                <h3>Популярные темы</h3>
+
+                <!-- forum__block -->
+                <div class="forum__block">
+
+                    <a href="#">Озерный край: загородная недвижимость Выборгского района </a>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+
+                </div>
+                <!-- /forum__block -->
+
+                <!-- forum__block -->
+                <div class="forum__block">
+
+                    <a href="#">Горячая телефонная линия Росреестра по вопросам земельного контроля</a>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+
+                </div>
+                <!-- /forum__block -->
+
+                <!-- forum__block -->
+                <div class="forum__block">
+
+                    <a href="#">Kоттеджные поселки: покупаем грамотно.</a>
+                    <!-- comment-reviews -->
+                    <ul class="comment-reviews">
+                        <li class="comment-reviews__views">30</li>
+                        <li class="comment-reviews__comments">3</li>
+                    </ul>
+                    <!-- /comment-reviews -->
+
+                </div>
+                <!-- /forum__block -->
+
+            </div>
+
+            <a href="#" class="news__all">перейти на форум</a>
+
+        </div>
+        <!-- /forum -->
+
+        <!-- documentation -->
+        <div class="documentation">
+            <h2>типовые документы</h2>
+
+            <!-- documentation__type -->
+            <div class="documentation__type">
+                <a href="#" class="documentation__file  documentation__file_pdf">Типовой договор на аренду земельного участка (.doc)</a>
+                <a href="#" class="documentation__file">Типовой документ купли продажи (.pdf)</a>
+            </div>
+            <!-- /documentation__type -->
+
+            <!-- documentation__type -->
+            <div class="documentation__type">
+                <a href="#" class="documentation__file  documentation__file_doc">Типовой договор на аренду земельного участка (.doc)</a>
+                <a href="#" class="documentation__file">Типовой документ купли продажи (.pdf)</a>
+            </div>
+            <!-- /documentation__type -->
+
+            <a href="#" class="news__all">все типовые документы</a>
+
+        </div>
+        <!-- /documentation -->
+
+        <a href="#" class="large-b"><img src="pic/banner-main1.jpg" width="974" height="100" alt=""></a>
+
+
+    </div>
+    <!-- /center_block -->
+
+</div>
+<!-- /dark-gray -->
+
+
+</div>
+<!-- /content-wrap -->
+
+</div>
+<!-- /site__content -->
+
+</div>
+<!-- /site_wrap -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+
+    <!-- site_wrap -->
+    <div class="site_wrap">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <!-- center_block -->
+            <div class="center_block">
+
+                <p class="copy">&copy; 2013 Загородный дом</p>
+
+                <a href="tel:88006234187" class="footer_tel">8 (800) 623 41 87</a>
+
+                <!-- social -->
+                <dl class="social">
+                    <dt>Контакты</dt>
+                    <dd><a href="#" class="facebook" title="facebook">facebook</a> </dd>
+                    <dd><a href="#" class="vkontakte" title="vkontakte">vkontekte</a> </dd>
+                    <dd><a href="#" class="youtube" title="youtube">youtube</a> </dd>
+                    <dd><a href="#" class="twitter" title="twitter">twitter</a> </dd>
+                </dl>
+                <!-- /social -->
+
+                <!-- footer_menu -->
+                <ul class="footer_menu">
+                    <li><a href="#">Недвижимость</a> </li>
+                    <li><a href="#">Статьи</a> </li>
+                    <li><a href="#">Реклама на сайте</a> </li>
+                    <li><a href="#">Строительство</a> </li>
+                    <li><a href="#">Новости</a> </li>
+                    <li><a href="#">О проекте</a> </li>
+                    <li><a href="#">Загородная жизнь</a> </li>
+                    <li><a href="#">Журнал</a> </li>
+                    <li><a href="#">Правила использования</a> </li>
+                    <li><a href="#">Форум</a> </li>
+                </ul>
+                <!-- /footer_menu -->
+
+                <!-- personal_menu -->
+                <div class="personal_menu">
+                    <a href="#">Избранное  <span>5</span></a>
+                    <a href="#">Блокнот</a>
+                    <a href="#">Стол заказов <span>3</span></a>
+                </div>
+                <!-- /personal_menu -->
+
+                <!-- footer_bottom -->
+                <div class="footer_bottom">
+
+                    <!-- counters -->
+                    <ul class="counters">
+                        <li><img src="pic/pic3.jpg" width="77" height="27" alt=""></li>
+                        <li><img src="pic/pic4.jpg" width="70" height="25" alt=""></li>
+                    </ul>
+                    <!-- /counters -->
+
+                    <!-- creaters -->
+                    <dl class="creaters">
+                        <dt><img src="img/creaters.png" width="56" height="10" alt=""></dt>
+                        <dd><a href="#">разработка сайта</a> </dd>
+                    </dl>
+                    <!-- /creaters -->
+
+                    <!-- footer_search -->
+                    <form class="footer_search">
+                        <input type="search" placeholder="Поиск по сайту">
+                        <input type="submit" class="footer_search_but">
+                    </form>
+                    <!-- footer_search -->
+
+
+
+                </div>
+                <!-- /footer_bottom -->
+
+            </div>
+            <!-- /center_block -->
+
+        </div>
+        <!-- /footer__layout -->
+
+
+    </div>
+    <!-- /site_wrap -->
+</footer>
+<!-- /footer -->
+
+
+
+</body>
+</html>

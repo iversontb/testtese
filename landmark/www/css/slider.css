@@ -1,0 +1,111 @@
+.gallery {
+    padding: 7px;
+    height: 177px;
+    width: 835px;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 101px;
+}
+.gallery > div {
+    overflow: hidden;
+    height: 177px;
+    width: 835px;
+    position: relative;
+}
+.gallery > div > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+.gallery > div > ul > li {
+    float: left;
+    padding: 0;
+    margin: 0 18px 0 0;
+    background: none;
+}
+.gallery > div > ul > li:first-child {
+    border-left: none;
+}
+.gallery a {
+    display: block;
+    overflow: hidden;
+    height: 163px;
+    width: 252px;
+    position: relative;
+    border: 7px solid #fff;
+}
+
+.gallery a:hover:after{
+    opacity: 1;
+}
+.gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 163px;
+    width: 252px;
+    z-index: 2;
+}
+.gallery a div {
+    position: absolute;
+    z-index: 3;
+    color: #565656;
+    left: 0;
+    width: 100%;
+    background: #d9dad9;
+    font-size: 18px;
+    padding: 12px 0 18px 19px;
+    -moz-transition: bottom 0.3s ease-in;
+    -o-transition: bottom 0.3s ease-in;
+    -webkit-transition: bottom 0.3s ease-in;
+    -ms-transition: bottom 0.3s ease-in;
+    transition: bottom 0.3s ease-in;
+}
+.gallery a:hover div {
+    height: auto;
+    bottom: 0 !important;
+}
+.gallery h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 292px;
+}
+.gallery p {
+    font-size: 16px;
+    width: 292px;
+}
+.gallery p span {
+    padding: 5px 0;
+    display: block;
+}
+.gallery a div > span {
+    position: absolute;
+    color: #62923e;
+    font-size: 18px;
+    background: url("../img/curensy.png") no-repeat right 2px;
+    right: 37px;
+    bottom: 10px;
+    padding-right: 19px;
+}
+.gallery__controls li {
+    float: left;
+    list-style: none;
+    background: none;
+    width: 18px;
+    height: 18px;
+    background: url("../img/gall-dot-not-active.png") 0 1px;
+    margin: 0 2px 0 3px;
+    cursor: pointer;
+}
+.gallery__controls li.active {
+    cursor: default;
+    background: url("../img/gall-dot-active.png");
+}
+.gallery__controls{
+    position: absolute;
+    top: 59px;
+    left: 50%;
+}

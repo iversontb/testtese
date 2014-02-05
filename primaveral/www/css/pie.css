@@ -1,0 +1,6 @@
+.search_doctor input[type="text"], .search_doctor input[type="submit"] {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+    position: relative;
+}
+

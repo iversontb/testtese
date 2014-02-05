@@ -1,0 +1,27 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "helveticaneue";
+    src: url("../font/helveticaneue.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ptsans-regular";
+    src: url("../font/ptsans-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ptsans-bold";
+    src: url("../font/ptsans-bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+.inside_block {
+    background: url("../img/content_bg.png") repeat;
+}
+.mainMenu section nav {
+    background: url("../img/nav_bg.png") repeat;
+}

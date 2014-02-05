@@ -1,0 +1,190 @@
+/* diagnostic */
+.diagnostic{
+    width: 327px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 35px;
+}
+.diagnostic h3{
+    color: #ff7900;
+    font-size: 20px;
+    margin-bottom: 22px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.diagnostic .nice-select{
+    width: 325px;
+}
+/* /diagnostic */
+
+/* sub-menu */
+.sub-menu{
+    background: url("../img/shadow.png") no-repeat bottom center;
+    padding-bottom: 20px;
+    width: 1000px;
+    margin-bottom: 22px;
+}
+.sub-menu li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.sub-menu li a{
+    color: #0046ad;
+    font-size: 12px;
+    position: relative;
+}
+.sub-menu li a:hover{
+    text-decoration: none;
+}
+.sub-menu li a.active{
+    color: #ff7900;
+}
+.sub-menu li a.active:after{
+    position: absolute;
+    top: 19px;
+    left: 50%;
+    background: url("../img/shadow-arrow.png");
+    width: 31px;
+    height: 14px;
+    margin-left: -15px;
+    content: "";
+}
+/* /sub-menu */
+
+
+
+.selecWrap{
+    margin-bottom: 13px;
+}
+/* diagnostic__result */
+.diagnostic__result a{
+    background: url("../img/dot-empty.png") no-repeat 0 4px;
+    padding-left: 20px;
+    color: #0046ad;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+}
+.diagnostic__result a:hover{
+    background: url("../img/dot.png") no-repeat  0 4px;
+    color: #ff7900;
+}
+.diagnostic__result{
+    padding-top: 11px;
+}
+.diagnostic__result li{
+    margin-bottom: 16px;
+}
+/* /diagnostic__result */
+
+/* vacanse-description */
+.vacanse-description{
+    display: inline-block;
+    vertical-align: top;
+    width: 594px;
+}
+.vacanse-description dt{
+    color: #ff7900;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+.vacanse-description dd{
+    background: url("../img/check.png") no-repeat;
+    padding-left: 20px;
+    line-height: 20px;
+    margin-bottom: 6px;
+}
+.vacanse-description h3{
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    color: #0046ad;
+    margin-bottom: 21px;
+    font-size: 20px;
+}
+/* /vacanse-description */
+
+.eBut{
+    border: none;
+    background: -webkit-linear-gradient(top, #ffa433, #fe7123);
+    background: -o-linear-gradient(top, #ffa433, #fe7123);
+    background: -moz-linear-gradient(top, #ffa433, #fe7123);
+    background: -ms-linear-gradient(top, #ffa433, #fe7123);
+    background: linear-gradient(top, #ffa433, #fe7123);
+    height: 36px;
+    width: 200px;
+    display: block;
+    text-decoration: none;
+    line-height: 36px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 0 0 #d5651d;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.eBut:hover{
+    background: -webkit-linear-gradient(top, #007fe6, #0045e4);
+    background: -o-linear-gradient(top, #007fe6, #0045e4);
+    background: -moz-linear-gradient(top, #007fe6, #0045e4);
+    background: -ms-linear-gradient(top, #007fe6, #0045e4);
+    background: linear-gradient(top, #007fe6, #0045e4);
+    text-shadow: 1px 0 0 #0a48b5;
+}
+
+/* person */
+.person span{
+    font-style: italic;
+    font-size: 12px;
+    font-family: arial;
+    color: #565656;
+    display: block;
+    margin-bottom: 5px;
+}
+.person  p{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ff7900;
+    font-family: 'Open Sans', sans-serif;
+}
+.person a{
+    display: block;
+    margin-bottom: 10px;
+}
+.person a:hover{
+    text-decoration: none;
+}
+
+.person__phone{
+    color: #0046ad;
+    font-size: 14px;
+    text-decoration: none;
+    background: url("../img/phone.png") no-repeat;
+    padding-left: 30px;
+    height: 16px;
+    line-height: 16px;
+}
+.person__mail{
+    color: #0046ad;
+    font-size: 14px;
+    background: url("../img/email.png") no-repeat;
+    padding-left: 30px;
+}
+.person__cartoon{
+    margin-bottom: 10px;
+}
+/* /person */
+
+/* diagnostic__town */
+.diagnostic__town h3{
+    display: inline-block;
+    margin-top: 3px;
+    margin-bottom: 0px;
+}
+.diagnostic__town .nice-select{
+    background: url("../img/select-back.png");
+    width: 199px;
+}
+/* /diagnostic__town */

@@ -1,0 +1,490 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    main-menu
+
+    language
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd, 
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {    
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {                        
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            
+} 
+input, select, button, textarea {
+    margin: 0;                 
+    font-size: 100%;             
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;     
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {         
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+     list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+    background: url("../img/bg.png");
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;    
+}
+textarea {
+    resize:none; 
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus { 
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner { 
+    padding:0; 
+    border:0; 
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Font Name";
+    src: url("../fonts/font.otf") format("opentype");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 980px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+    .site:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 200px;
+    }
+.site__layout {
+    width: 980px;
+    margin: 0 auto;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+
+    height: 245px;
+
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 89px;
+    margin-left: -176px;
+    left: 50%;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- main-menu --------------- */
+.main-menu {
+    position: absolute;
+    bottom: 30px;
+    left: 260px;
+}
+.main-menu__item{
+    float: left;
+    margin-right: 20px;
+}
+.main-menu__lnk{
+    text-transform: uppercase;
+    color: #fff;
+}
+.main-menu__lnk:visited{
+    color: #fff;
+}
+.main-menu__lnk:hover{
+    color: #cd9034;
+}
+.main-menu__item_active .main-menu__lnk{
+    color: #cd9034;
+}
+/* --------------- /main-menu --------------- */
+.content-wrap{
+    position: relative;
+}
+.contentMove.mainPage{
+    width: 948px !important;
+    border: 1px solid #f9ad3b;
+    background: #fff;
+    padding: 15px;
+}
+.gallery{
+    margin-bottom: 15px;
+}
+.contentMove{
+    border: 15px solid #fff;
+    padding: 50px;
+    overflow: hidden;
+}
+.contentMove h2{
+    color: #f9ad3b;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.contentMove p{
+    color: #fff;
+    margin-bottom: 20px;
+    line-height: 18px;
+    font-family: tahoma;
+    font-size: 13px;
+}
+.imgList{
+    overflow: hidden;
+    width: 1000px;
+}
+.imgList li{
+    float: left;
+    margin-right: 32px;
+    border: 1px solid #fff;
+}
+.imgList li img{
+    display: block;
+}
+.content-wrap > .active{
+    display: block;
+
+}
+.mainPage,
+.contactsPage,
+.galleryPage,
+.servicePage,
+.storyPage{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 850px !important;
+}
+.serviceList li{
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.imgWrap{
+    float: left;
+    border: 1px solid #fff;
+}
+.imgWrap img{
+    display: block;
+}
+.listText{
+    float: right;
+    width: 280px;
+}
+.listText h3{
+    color: #f9ad3b;
+    font-family: tahoma;
+    margin-bottom: 20px;
+}
+.listText p{
+    margin-bottom: 0;
+}
+
+.gallWrap{
+    overflow: hidden;
+    width: 900px;
+}
+.gallWrap li{
+    float: left;
+    border: 1px solid #fff;
+    margin-right: 19px;
+    margin-bottom: 19px;
+}
+.gallWrap li img{
+    display: block;
+}
+.gallWrap li a:hover{
+    opacity: 0.6;
+    transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+.address{
+    position: relative;
+    width: 300px;
+    float: left;
+    padding-bottom: 30px;
+}
+.address .social{
+    left: 0;
+    top: 150px;
+}
+.address address{
+    font-style: normal;
+}
+.address h2{
+    font-size: 18px;
+}
+.address p{
+    margin-bottom: 0;
+}
+.contactForm{
+    float: right;
+    margin-bottom: 50px;
+    width: 490px;
+}
+.contactForm .inputWrap{
+    width: 490px;
+    height: 34px;
+    border: 1px solid #f9ad3b;
+    background: #fff;
+    margin-bottom: 10px;
+}
+.contactForm .inputWrap input{
+    width: 470px;
+    padding: 0 10px;
+    height: 34px;
+    border: none;
+    background: none;
+}
+.contactForm textarea{
+    width: 470px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #f9ad3b;
+}
+.contactForm input[type="submit"]{
+    float: right;
+    border: none;
+    border: #fff;
+    color: #f9ad3b;
+    font-size: 14px;
+    margin-top: 10px;
+    height: 30px;
+}
+.contactForm input[type="submit"]:hover{
+    opacity: 0.8;
+}
+.mapContainer,
+#map{
+    width: 845px;
+    clear: both;
+    height: 420px;
+}
+div.sc_menu {
+    position: relative;
+    height: 145px;
+    overflow: auto;
+    width: 947px;
+    background: #1a1a1a;
+    padding-bottom: 15px;
+}
+ul.sc_menu {
+    display: block;
+    height: 126px;
+    /* max width here, for users without javascript */
+    width: 2500px;
+    padding: 15px 0 15px 15px;
+    /* removing default styling */
+    margin: 0;
+    list-style: none;
+}
+.sc_menu li {
+    display: block;
+    float: left;
+    padding: 0 4px;
+}
+.sc_menu a {
+    display: block;
+    text-decoration: none;
+}
+.sc_menu span {
+    display: none;
+    margin-top: 3px;
+
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.sc_menu a:hover span {
+    display: block;
+}
+.sc_menu img {
+    border: 1px #f9ad3b solid;
+
+}
+.sc_menu a:hover img {
+    filter:alpha(opacity=50);
+    opacity: 0.5;
+}
+
+
+/* Here are styles for the back button, don't look at them */
+#back {
+    display: block;
+    width: 947px;
+    text-align: center;
+    color: #003469;
+    font-size: 16px;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -173px;
+}
+.footer__layout {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+    height: 173px;
+}
+.copy{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+}
+.social{
+    position: absolute;
+    top: 15px;
+    width: 100px;
+    right: 0;
+}
+.social li{
+    float: left;
+    margin-right: 5px;
+}
+.social a{
+    display: block;
+    height: 16px;
+    width: 16px;
+    text-indent: -5000px;
+}
+.social a:hover{
+    opacity: 0.8;
+}
+.facebook{
+    background: url("../img/facebook.png");
+}
+.twitter{
+    background: url("../img/twitter.png");
+}
+.gplus{
+    background: url("../img/gplus.png");
+}
+/* --------------- /footer --------------- */

@@ -1,0 +1,126 @@
+.gallery {
+    background: rgba(164,161,163,0.34);
+    padding: 7px;
+    height: 478px;
+    width: 950px;
+    position: relative;
+}
+.gallery > div {
+    background: #fff;
+    overflow: hidden;
+    height: 478px;
+    width: 950px;
+    position: relative;
+}
+.gallery > div > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+.gallery > div > ul > li {
+    float: left;
+    border-left: 1px solid #f1f1f1;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+.gallery > div > ul > li:first-child {
+    border-left: none;
+}
+.gallery a {
+    display: block;
+    overflow: hidden;
+    height: 478px;
+    width: 316px;
+    position: relative;
+}
+.gallery a:after {
+    content: '';
+    background: url("../img/gallery__a.jpg");
+    height: 478px;
+    width: 316px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    -moz-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+    -webkit-transition: opacity 0.3s ease-in;
+    -ms-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+}
+.gallery a:hover:after{
+    opacity: 1;
+}
+.gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 478px;
+    width: 316px;
+    z-index: 2;
+}
+.gallery a div {
+    position: absolute;
+    z-index: 3;
+    color: #565656;
+    left: 0;
+    width: 100%;
+    background: #d9dad9;
+    font-size: 18px;
+    padding: 12px 0 18px 19px;
+    -moz-transition: bottom 0.3s ease-in;
+    -o-transition: bottom 0.3s ease-in;
+    -webkit-transition: bottom 0.3s ease-in;
+    -ms-transition: bottom 0.3s ease-in;
+    transition: bottom 0.3s ease-in;
+}
+.gallery a:hover div {
+    height: auto;
+    bottom: 0 !important;
+}
+.gallery h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 292px;
+}
+.gallery p {
+    font-size: 16px;
+    width: 292px;
+}
+.gallery p span {
+    padding: 5px 0;
+    display: block;
+}
+.gallery a div > span {
+    position: absolute;
+    color: #62923e;
+    font-size: 18px;
+    background: url("../img/curensy.png") no-repeat right 2px;
+    right: 37px;
+    bottom: 10px;
+    padding-right: 19px;
+}
+.gallery__controls li {
+    float: left;
+    list-style: none;
+    background: none;
+    width: 50px;
+    height: 6px;
+    background: #8aa89e;
+    margin: 0 2px 0 3px;
+    cursor: pointer;
+}
+.gallery__controls li.active {
+    cursor: default;
+    background: #92433e;
+}
+.gallery__controls{
+    position: absolute;
+    bottom: -31px;
+    left: 50%;
+}

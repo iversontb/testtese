@@ -1,0 +1,81 @@
+
+.news__gall__description__show{
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #565656;
+    margin: 15px 0 10px 0;
+}
+.news__gall__next{
+    background: url("../img/gall-but-sprite.png")  0 -63px;
+    width: 11px;
+    height: 16px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    border: none;
+    text-indent: -5000px;
+    cursor: pointer;
+
+}
+.news__gall__next:hover{
+    background-position: 0 -42px;
+}
+.news__gall__prev{
+    background: url("../img/gall-but-sprite.png") 0 -21px;
+    width: 11px;
+    height: 16px;
+    position: absolute;
+    top: 15px;
+    border: none;
+    left: 0;
+    cursor: pointer;
+    text-indent: -5000px;
+}
+.news__gall__prev:hover{
+    background-position: 0 0;
+}
+.news__gall__littlGall{
+    position: relative;
+    width: 260px;
+    overflow: hidden;
+
+}
+.about__list li .preview a{
+    display: block;
+    padding: 2px;
+
+}
+.about__list  li .preview li{
+    margin-right: 5px;
+}
+.about__list li .preview li:hover{
+    box-shadow: 0 0 5px #d1d1d1;
+}
+.about__list li  .preview a img{
+    margin-bottom: 0;
+}
+.news__gall__imgBigWrap img{
+    border-radius: 5px;
+    position: relative;
+}
+.preview{
+    overflow: hidden;
+    width: 240px;
+}
+.preview li{
+    float: left;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    list-style-type: none;
+}
+.preview li a{
+    display: block;
+    width: 73px;
+    height: 73px;
+    overflow: hidden;
+    border: 3px solid #fff7ef;
+}
+.preview li a:hover{
+    border: 3px solid #ed1c24;
+}

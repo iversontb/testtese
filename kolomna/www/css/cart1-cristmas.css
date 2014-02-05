@@ -1,0 +1,232 @@
+/* --------------- logo --------------- */
+.headBlack .logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: url("../img/logo6.png");
+    background-size: 100%;
+    width: 219px;
+    height: 20px;
+    text-indent: -5000px;
+}
+.headWhite .logo{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: url("../img/logo7.png");
+    background-size: 100%;
+    width: 219px;
+    height: 20px;
+    text-indent: -5000px;
+}
+/* --------------- /logo --------------- */
+.mainMenu{
+    left: 290px;
+}
+.cart_block{
+    background: #fff;
+    padding: 23px;
+    position: relative;
+    margin-bottom: 17px;
+    border-bottom: 2px solid #cccccc;
+}
+.order_info{
+    display: inline-block;
+    vertical-align: top;
+    width: 659px;
+}
+.order_info h2{
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* --------------- nice-select --------------- */
+.nice-select {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    line-height: 32px;
+    background: #fff;
+    border: 1px solid #cccccc;
+    width: 203px;
+    height: 32px;
+    border-radius: 0;
+    margin-bottom: 18px;
+}
+.nice-select__item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    padding-left: 5px;
+}
+.nice-select__item:after {
+    content: '';
+    width: 10px;
+    height: 7px;
+    background: url("../img/arrow4.png") no-repeat 0 bottom;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+    z-index: 10;
+    border-radius: 0 3px 3px 0;
+}
+.nice-select select {
+    z-index: 10;
+    position: relative;
+    width: 100%;
+    height: 32px;
+    cursor: pointer;
+}
+.nice-select__item{
+    font-size: 12px;
+    font-family: arial;
+    color: #0baed3;
+}
+/* --------------- /nice-select --------------- */
+.worning_date:after{
+    content: "";
+    position: absolute;
+    top: -8px;
+    line-height: 50%;
+    background: url("../img/arrow5.png");
+    width: 15px;
+    height: 8px;
+    margin-left: -7px;
+}
+.worning_date{
+    text-align: center;
+    white-space: pre-line;
+    color: #333333;
+    font-size: 11px;
+    background: #fae2b1;
+    position: relative;
+    border-bottom: 2px solid #e0c897;
+    width: 205px;
+
+    padding-bottom: 10px;
+}
+
+.select_date{
+    width: 170px;
+    display: inline-block;
+    margin-right: 78px;
+    vertical-align: top;
+	margin-top: 11px;
+	line-height: 26px;
+}
+
+.room_type{
+    display:  inline-block;
+    vertical-align: top;
+    width: 370px;
+}
+.room_type .nice-select {
+    width: 368px;
+}
+.checkbox_line{
+    margin-bottom: 10px;
+}
+.checkbox_line input{
+    display: inline-block;
+    margin-top: 3px;
+    vertical-align: top;
+    margin-right: 3px;
+}
+.checkbox_line label{
+    display: inline-block;
+    vertical-align: top;
+    width: 320px;
+}
+
+.servises{
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    color: #808080;
+    margin-left: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 15px;
+    padding-bottom: 50px;
+    margin-top: 25px;
+}
+.servises p{
+    padding-left: 30px;
+    margin-bottom: 10px;
+}
+.breakfast{
+    background: url("../img/coffe.png") no-repeat left center;
+}
+.freeWife{
+    background: url("../img/wifi.png") no-repeat left center;
+}
+.carParking{
+    background: url("../img/park.png") no-repeat left center;
+}
+.priceCart b{
+    font-weight: 800;
+}
+.priceCart{
+    position: absolute;
+    bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    right: 20px;
+    color: #333333;
+    font-size: 30px;
+}
+.order_places{
+    display: inline-block;
+    vertical-align: top;
+    width: 350px;
+}
+.order_places .nice-select{
+    width: 65px;
+
+}
+.order_places label{
+    display: inline-block;
+    vertical-align: top;
+    width: 90px;
+    font-size: 14px;
+    margin-top: 5px;
+    -webkit-text-stroke: 0.35px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+.order_places label span{
+    display: block;
+    font-weight: 400;
+    font-size: 11px;
+    color: #808080;
+}
+.marginPlus{
+    margin-left: 24px;
+}
+.afterPay p{
+    margin-bottom: 30px;
+    margin-top: 25px;
+}
+.afterPay .big_button{
+    /*-webkit-text-stroke: 0.35px;*/
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+.afterPay .big_button span{
+    background: url("../img/plus-but.png") no-repeat 0 4px;
+    padding-left: 15px;
+}
+.zagotovok{
+    display: none;
+}
+.footerMenu{
+    left: 160px;
+}

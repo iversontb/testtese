@@ -1,0 +1,578 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery.ares.multiple.slider.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="#" class="logo" title="на главную"><img src="img/logo.png" width="170" height="26" alt="FeoRoom.com"></a>
+            <!-- /logo -->
+
+            <!-- header__time -->
+            <div class="header__time">
+                Киев
+                <span>10:55</span>
+            </div>
+            <!-- /header__time -->
+
+            <!-- header__currency -->
+            <form class="header__currency">
+                <label>Валюта</label>
+                <select>
+                    <option value="1" selected>Рубли</option>
+                    <option value="2">Гривны</option>
+                    <option value="3">Доллары</option>
+                </select>
+            </form>
+            <!-- /header__currency -->
+
+            <!-- header__login -->
+            <a href="#" class="header__login">Вход для владельцев</a>
+            <!-- /header__login -->
+
+            <!-- header__about -->
+            <div class="header__about">
+                <h2>Отдых в феодосии</h2>
+                <p>Аренда и бронирование жилья.</p>
+                <p>Cнять посуточно квартиру, дом под ключ,
+                    гостиницу, элиг, частный сектор.</p>
+            </div>
+            <!-- /header__about -->
+
+            <!-- header__address -->
+            <address class="header__address">
+                <div class="header__address-phone">
+                    <a href="tel:+380955749015">+380-955-749-015</a>
+                    <a href="tel:+74955775757">+7 (495) 577-57-57</a>
+                    Звонки принимаются с 9:00 до 22:00
+                </div>
+                <a href="icq:241151096" class="header__address-icq">241151096</a>
+                <a href="skype:FEOROOM" class="header__address-skype">FEOROOM</a>
+                <dl>
+                    <dt>Пишите нам:</dt>
+                    <dd>
+                        <a href="#" class="header__address-vk"></a>
+                    </dd>
+                    <dd>
+                        <a href="#" class="header__address-od"></a>
+                    </dd>
+                    <dd>
+                        <a href="mailto:feoroom@gmail.com"></a>
+                    </dd>
+                </dl>
+            </address>
+            <!-- /header__address -->
+
+            <!-- header__favorites -->
+            <div class="header__favorites">
+                В избранном объектов
+                <span>10</span>
+            </div>
+            <!-- /header__favorites -->
+
+            <!-- header__menu -->
+            <nav class="header__menu">
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Бронирование</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Вопрос-ответ</a>
+                    </li>
+                    <li>
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /header__menu -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content site__content_clear">
+
+            <!-- search -->
+            <form class="search">
+                <span>В каталоге 210 объектов</span>
+                <input class="search__code" type="search" placeholder="по коду">
+                <input class="search__key" type="search" placeholder="по ключевому слову">
+                <input type="submit" value="">
+                <a href="#"></a>
+            </form>
+            <!-- /search -->
+
+            <!-- left-aside -->
+            <aside class="site__left">
+
+                <!-- filter -->
+                <form class="filter" action="php/filter.php">
+                    <h1>Поиск жилья</h1>
+
+                    <select>
+                        <option value="0">Населенный пункт</option>
+                        <option value="1">Феодосия</option>
+                    </select>
+
+                    <!-- filter__date -->
+                    <div class="filter__date">
+
+                        <!-- filter__date-start -->
+                        <div class="filter__date-start">
+                            <input type="text" placeholder="Заезд">
+                        </div>
+                        <!-- /filter__date-start -->
+
+                        <!-- filter__date-finish -->
+                        <div class="filter__date-finish">
+                            <input type="text" placeholder="Выезд">
+                        </div>
+                        <!-- filter__date-finish -->
+
+                    </div>
+                    <!-- /filter__date -->
+
+                    <select>
+                        <option value="0">Тип жилья</option>
+                        <option value="1">Поместье</option>
+                        <option value="2">Губерния</option>
+                        <option value="3">Волость</option>
+                    </select>
+
+                    <!-- filter__check-wrap -->
+                    <div class="filter__check-wrap">
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="room1">
+                            <label for="room1">1 комната</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="room2">
+                            <label for="room2">2 комнаты</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="room3">
+                            <label for="room3">3 и более комнат</label>
+                        </div>
+                    </div>
+                    <!-- /filter__check-wrap -->
+
+                    <select>
+                        <option value="0">Класс Жилья</option>
+                        <option value="1">Поместье</option>
+                        <option value="2">Губерния</option>
+                        <option value="3">Волость</option>
+                    </select>
+
+                    <!-- filter__select -->
+                    <div class="filter__select">
+                        <select>
+                            <option value="0">Этаж от</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select>
+                            <option value="0">Этаж до</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                    </div>
+                    <!-- /filter__select -->
+
+                    <!-- filter__check-wrap -->
+                    <div class="filter__check-wrap filter__check-wrap__bordered">
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="chk1">
+                            <label for="chk1">Интернет WI-FI</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="chk2">
+                            <label for="chk2">Кондиционер</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="chk3">
+                            <label for="chk3">Телевизор</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="chk4">
+                            <label for="chk4">Стиральная машина</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="chk5">
+                            <label for="chk5">Мироволновая печь</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="chk6">
+                            <label for="chk6">Утюг</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="chk7">
+                            <label for="chk7">Душевая кабина</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="chk8">
+                            <label for="chk8">Ванна</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="chk9">
+                            <label for="chk9">Балкон</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" class="niceCheck" id="chk10">
+                            <label for="chk10">Лифт</label>
+                        </div>
+                    </div>
+                    <!-- /filter__check-wrap -->
+
+                    <!-- filter__slider -->
+                    <div class="filter__slider" data-start="500" data-finish="10000" data-curent="5000">
+                        <input type="hidden" name="price" value="5000">
+                        <label>Цена за ночь, до:</label>
+                        <span><span>5000</span> грн</span>
+                        <div class="filter__slider__wrap"></div>
+                    </div>
+                    <!-- /filter__slider -->
+
+                    <!-- filter__slider -->
+                    <div class="filter__slider" data-start="1" data-finish="30" data-curent="20">
+                        <input type="hidden" name="persons" value="20">
+                        <label>Количество человек:</label>
+                        <span><span>20</span></span>
+                        <div class="filter__slider__wrap"></div>
+                    </div>
+                    <!-- /filter__slider -->
+
+                    <!-- filter__slider -->
+                    <div class="filter__slider" data-start="10" data-finish="10000" data-curent="5000">
+                        <input type="hidden" name="distance" value="5000">
+                        <label>Расстояние до моря:</label>
+                        <span><span>5000</span> м</span>
+                        <div class="filter__slider__wrap"></div>
+                    </div>
+                    <!-- /filter__slider -->
+
+                    <div class="filter__submit">
+                        <input type="submit" value="Найти">
+                    </div>
+
+                    <input type="hidden" class="filter__sorting" name="sorting">
+                    <input type="hidden" class="filter__page" name="sorting" value="1">
+
+                </form>
+                <!-- /filter -->
+
+                <!-- vk -->
+                <div class="vk">
+                    <img src="pic/vk.png" width="220" height="309" alt="">
+                </div>
+                <!-- /vk -->
+
+            </aside>
+            <!-- /left-aside -->
+
+            <!-- result -->
+            <div class="result">
+
+                <!-- result__count -->
+                <div class="result__count">Найдено объектов: <span>7</span></div>
+                <!-- /result__count -->
+
+                <!-- result__filter -->
+                <ul class="result__filter">
+                    <li class="active down" data-by="price"><span>Цена</span></li>
+                    <li class="down" data-by="distance"><span>Расстояние от моря</span></li>
+                </ul>
+                <!-- /result__filter -->
+
+                <!-- result__content -->
+                <ul class="result__content">
+
+                    <!-- result__card -->
+                    <li class="result__card">
+                        <a href="#">
+                            <h2>1-комнатная квартира, посуточно, Феодосия,
+                                бул. Старшинова, район Динамо</h2>
+                            <img src="pic/pic7.png" width="301" height="195" alt="">
+                        </a>
+                        <dl>
+                            <dt>Тип:</dt>
+                            <dd>Квартира</dd>
+                            <dt>Класс:</dt>
+                            <dd>стандарт</dd>
+                            <dt>Комнат:</dt>
+                            <dd>3</dd>
+                            <dt>Адрес:</dt>
+                            <dd>бул. Старшинова, 12</dd>
+                            <dt>Этаж / Этажность:</dt>
+                            <dd>1 / 9, лифт</dd>
+                            <dt>Расстояние до моря:</dt>
+                            <dd>750м.</dd>
+                        </dl>
+                        <span class="result__card-code">Код: 351</span>
+                        <a href="#" class="result__card-onmap"><span>На карте</span></a>
+                        <div class="result__card-price">
+                            от <span>1 500</span> р. / Сутки
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <!-- /result__card -->
+
+                    <!-- result__card -->
+                    <li class="result__card">
+                        <a href="#">
+                            <h2>1-комнатная квартира, посуточно, Феодосия,
+                                бул. Старшинова, район Динамо</h2>
+                            <img src="pic/pic7.png" width="301" height="195" alt="">
+                        </a>
+                        <dl>
+                            <dt>Тип:</dt>
+                            <dd>Квартира</dd>
+                            <dt>Класс:</dt>
+                            <dd>стандарт</dd>
+                            <dt>Комнат:</dt>
+                            <dd>3</dd>
+                            <dt>Адрес:</dt>
+                            <dd>бул. Старшинова, 12</dd>
+                            <dt>Этаж / Этажность:</dt>
+                            <dd>1 / 9, лифт</dd>
+                            <dt>Расстояние до моря:</dt>
+                            <dd>750м.</dd>
+                        </dl>
+                        <span class="result__card-code">Код: 351</span>
+                        <a href="#" class="result__card-onmap"><span>На карте</span></a>
+                        <div class="result__card-price">
+                            от <span>1 500</span> р. / Сутки
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <!-- /result__card -->
+
+                    <!-- result__card -->
+                    <li class="result__card">
+                        <a href="#">
+                            <h2>1-комнатная квартира, посуточно, Феодосия,
+                                бул. Старшинова, район Динамо</h2>
+                            <img src="pic/pic7.png" width="301" height="195" alt="">
+                        </a>
+                        <dl>
+                            <dt>Тип:</dt>
+                            <dd>Квартира</dd>
+                            <dt>Класс:</dt>
+                            <dd>стандарт</dd>
+                            <dt>Комнат:</dt>
+                            <dd>3</dd>
+                            <dt>Адрес:</dt>
+                            <dd>бул. Старшинова, 12</dd>
+                            <dt>Этаж / Этажность:</dt>
+                            <dd>1 / 9, лифт</dd>
+                            <dt>Расстояние до моря:</dt>
+                            <dd>750м.</dd>
+                        </dl>
+                        <span class="result__card-code">Код: 351</span>
+                        <a href="#" class="result__card-onmap"><span>На карте</span></a>
+                        <div class="result__card-price">
+                            от <span>1 500</span> р. / Сутки
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <!-- /result__card -->
+
+                    <!-- result__card -->
+                    <li class="result__card">
+                        <a href="#">
+                            <h2>1-комнатная квартира, посуточно, Феодосия,
+                                бул. Старшинова, район Динамо</h2>
+                            <img src="pic/pic7.png" width="301" height="195" alt="">
+                        </a>
+                        <dl>
+                            <dt>Тип:</dt>
+                            <dd>Квартира</dd>
+                            <dt>Класс:</dt>
+                            <dd>стандарт</dd>
+                            <dt>Комнат:</dt>
+                            <dd>3</dd>
+                            <dt>Адрес:</dt>
+                            <dd>бул. Старшинова, 12</dd>
+                            <dt>Этаж / Этажность:</dt>
+                            <dd>1 / 9, лифт</dd>
+                            <dt>Расстояние до моря:</dt>
+                            <dd>750м.</dd>
+                        </dl>
+                        <span class="result__card-code">Код: 351</span>
+                        <a href="#" class="result__card-onmap"><span>На карте</span></a>
+                        <div class="result__card-price">
+                            от <span>1 500</span> р. / Сутки
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <!-- /result__card -->
+
+                    <!-- result__card -->
+                    <li class="result__card">
+                        <a href="#">
+                            <h2>1-комнатная квартира, посуточно, Феодосия,
+                                бул. Старшинова, район Динамо</h2>
+                            <img src="pic/pic7.png" width="301" height="195" alt="">
+                        </a>
+                        <dl>
+                            <dt>Тип:</dt>
+                            <dd>Квартира</dd>
+                            <dt>Класс:</dt>
+                            <dd>стандарт</dd>
+                            <dt>Комнат:</dt>
+                            <dd>3</dd>
+                            <dt>Адрес:</dt>
+                            <dd>бул. Старшинова, 12</dd>
+                            <dt>Этаж / Этажность:</dt>
+                            <dd>1 / 9, лифт</dd>
+                            <dt>Расстояние до моря:</dt>
+                            <dd>750м.</dd>
+                        </dl>
+                        <span class="result__card-code">Код: 351</span>
+                        <a href="#" class="result__card-onmap"><span>На карте</span></a>
+                        <div class="result__card-price">
+                            от <span>1 500</span> р. / Сутки
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <!-- /result__card -->
+
+                    <!-- result__card -->
+                    <li class="result__card">
+                        <a href="#">
+                            <h2>1-комнатная квартира, посуточно, Феодосия,
+                                бул. Старшинова, район Динамо</h2>
+                            <img src="pic/pic7.png" width="301" height="195" alt="">
+                        </a>
+                        <dl>
+                            <dt>Тип:</dt>
+                            <dd>Квартира</dd>
+                            <dt>Класс:</dt>
+                            <dd>стандарт</dd>
+                            <dt>Комнат:</dt>
+                            <dd>3</dd>
+                            <dt>Адрес:</dt>
+                            <dd>бул. Старшинова, 12</dd>
+                            <dt>Этаж / Этажность:</dt>
+                            <dd>1 / 9, лифт</dd>
+                            <dt>Расстояние до моря:</dt>
+                            <dd>750м.</dd>
+                        </dl>
+                        <span class="result__card-code">Код: 351</span>
+                        <a href="#" class="result__card-onmap"><span>На карте</span></a>
+                        <div class="result__card-price">
+                            от <span>1 500</span> р. / Сутки
+                            <a href="#"></a>
+                        </div>
+                    </li>
+                    <!-- /result__card -->
+
+                </ul>
+                <!-- /result__content -->
+
+                <!-- result__pager -->
+                <ul class="result__pager">
+                    <li><a class="active" href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+                <!-- /result__pager -->
+
+                <!-- result__about -->
+                <div class="result__about">
+                    <img src="pic/feo.png" width="98" height="119" alt="">
+                    <p>Феодо́сия  — портовый и курортный город юга Украины у Чёрного моря на юго-восточном побережье
+                        Крыма. Феодосийский регион Крыма — территория, подчинённая Феодосийскому горсовету, включает в
+                        себя помимо собственно Феодосии ряд сёл и посёлков. Название Феодосия означает в переводе с
+                        греческого языка «Богом данная». В Средние века носила название Ка́фа</p>
+                </div>
+                <!-- /result__about -->
+
+            </div>
+            <!-- /result -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <!-- footer__pay -->
+            <dl class="footer__pay">
+                <dt>Варианты оплаты:</dt>
+                <dd><a href="#"><img src="pic/pay1.png" width="56" height="35" alt=""></a></dd>
+                <dd><a href="#"><img src="pic/pay2.png" width="56" height="35" alt=""></a></dd>
+                <dd><a href="#"><img src="pic/pay3.png" width="56" height="35" alt=""></a></dd>
+                <dd><a href="#"><img src="pic/pay4.png" width="56" height="35" alt=""></a></dd>
+            </dl>
+            <!-- /footer__pay -->
+
+            <!-- footer__copyright -->
+            <div class="footer__copyright">Все права защищены</div>
+            <!-- /footer__copyright -->
+
+            <!-- footer__counter -->
+            <ul class="footer__counter">
+                <li><a href="#"><img src="pic/counter1.png" width="88" height="31" alt=""></a></li>
+                <li><a href="#"><img src="pic/counter2.png" width="88" height="31" alt=""></a></li>
+            </ul>
+            <!-- /footer__counter -->
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

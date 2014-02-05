@@ -1,0 +1,480 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>text</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=cyrillic-ext,cyrillic,latin' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/economic.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/jquery.time-range.js"></script>
+    <script src="js/jquery.sort.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+
+    <!--[if  IE 9]>
+        <link rel="stylesheet" href="css/main.ie9.css" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+
+        <!-- site_wrap -->
+        <div class="site_wrap">
+
+            <!-- baner_top -->
+            <div class="baner_top">
+                <img src="pic/pic1.jpg" width="1043" height="50" alt="">
+            </div>
+            <!-- /baner_top -->
+
+            <!-- header -->
+            <header class="header">
+
+                <!-- head_top -->
+                <div class="head_top">
+
+                    <!-- center_block -->
+                    <div class="center_block">
+
+                        <!-- seatch_form -->
+                        <form class="seatch_form">
+                            <input type="search" placeholder="Поиск по сайту">
+                            <input type="submit" class="search_but">
+                        </form>
+                        <!-- /seatch_form -->
+
+                        <!-- head_top__menu -->
+                        <div class="head_top__menu">
+                            <a class="add_ad" href="#">Добавить объявление бесплатно</a>
+                            <span class="enter_but"><a href="#">Войти</a> или <a href="#">зарегистрироваться</a></span>
+                            <a class="favorit" href="#">Избранное</a>
+                        </div>
+                        <!-- /head_top__menu -->
+
+                        <!-- aritcles_object -->
+                        <dl class="aritcles_object">
+                            <dt>Статьи</dt>
+                            <dd> 2</dd>
+                            <dt>Объекты </dt>
+                            <dd>13</dd>
+                        </dl>
+                        <!-- /aritcles_object -->
+
+                    </div>
+                    <!-- /center_block -->
+
+                </div>
+                <!-- head_top -->
+
+                <!-- center_block -->
+                <div class="center_block">
+
+                    <!-- logo -->
+                    <a href="#" class="logo"><img src="img/logo.png" width="207" height="59" alt=""></a>
+                    <!-- /logo -->
+
+                    <p class="slogan">На нашем сайте в подразделах купить, построить, жить и арендовать доступен поиск недвижимости. </p>
+
+                    <!-- weather -->
+                    <div class="weather">
+                        <img src="pic/pic2.jpg" width="385" height="49" alt="">
+                    </div>
+                    <!-- /weather -->
+
+                    <!-- main_menu -->
+                    <nav class="main_menu">
+                        <a href="#" class="menu_item1"><span>недвижимость</span></a>
+                        <a href="#" class="menu_item2"><span>строительство</span></a>
+                        <a href="#" class="menu_item3"><span>загородная жизнь</span></a>
+                        <a href="#" class="menu_item4"><span>форум</span></a>
+                        <a href="#">Рекламный пункт меню</a>
+                    </nav>
+                    <!-- /main_menu -->
+
+                </div>
+                <!-- /center_block -->
+
+
+
+            </header>
+            <!-- /header -->
+
+            <!-- site__content -->
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- site_wrap -->
+                    <div class="site_wrap">
+
+
+
+
+                        <!-- sort_block -->
+                        <form action="#" class="sort_block">
+
+                            <!-- deal -->
+                            <div class="deal">
+                                <span>Я хочу:</span>
+                                <div class="sort_but type_deal">
+                                    <a href="#">Купить</a>
+                                    <a href="#" class="active">Снять</a>
+                                    <input type="hidden" value="2">
+                                </div>
+                                <div class="sort_but type_place">
+                                    <a href="#">Дом</a>
+                                    <a href="#">Квартиру  </a>
+                                    <a href="#" class="active">Участок</a>
+                                    <input type="hidden" value="3">
+                                </div>
+                            </div>
+                            <!-- /deal -->
+
+                            <!-- price_sort -->
+                            <div class="price_sort">
+
+
+                                <label>Стоимость от</label>
+                                <input type="text" id="minCost" value="0"  />
+                                <label>до</label>
+                                <input type="text" id="maxCost" value="5000"  />
+                                <span>тыс. руб.
+                                    за сотку</span>
+
+                                <!-- sliderCont -->
+                                <div class="sliderCont">
+                                    <div id="slider"></div>
+                                </div>
+                                <!-- /sliderCont -->
+
+
+
+                            </div>
+                            <!-- /price_sort -->
+
+                            <!-- buts_add -->
+                            <div class="buts_add">
+                                <a href="#">Выбрать район</a>
+                                <a href="#">Удаленность от КАД</a>
+                            </div>
+                            <!-- /buts_add -->
+
+                            <!-- finish_block -->
+                            <div class="finish_block">
+                                <p class="sort_result">Найдено 365 объектов</p>
+                                <input type="submit" class="e_but" value="Начать поиск">
+                                <a href="#">Перейти к расширенному поиску</a>
+                            </div>
+                            <!-- /finish_block -->
+
+                            <!-- show_type -->
+                            <div class="show_type">
+                                <a href="#" class="line_type active"></a>
+                                <a href="#" class="block_type "></a>
+                                <a href="#" class="map_type "></a>
+                            </div>
+                            <!-- show_type -->
+
+                        </form>
+                        <!-- /sort_block -->
+
+                        <!-- content_site -->
+                        <div class="content_site">
+
+                            <!-- breadcrumbs -->
+                            <nav class="breadcrumbs">
+                                <a href="#">Главная</a>
+                                <a href="#">Экспертное мнение</a>
+                                <a href="#">Недвижимость</a>
+                            </nav>
+                            <!-- /breadcrumbs -->
+
+
+                            <!-- dynamic -->
+                            <div class="dynamic">
+                                <h1>Динамка цен в ленинградской области</h1>
+                                <dl>
+                                    <dt class="active"><span>Первичный рынок</span></dt>
+                                    <dd>
+                                        <div class="graphik">
+                                            <img src="pic/graphik.jpg">
+                                        </div>
+                                        <div class="sort_but type_place">
+                                            <a href="#" class="active">Изменения за неделю</a>
+                                            <a href="#">Средняя цена за м<sup>2</sup></a>
+                                            <a href="#">Средняя цена за объект</a>
+                                            <input type="hidden" value="3">
+                                        </div>
+                                        <p>Сам дом построен по специальному проекту в 2009 году.  Новый 3х этажный
+                                            дом в поселке Новосаратовка. Рядом с домом имеется вся инфраструтура:
+                                            муниципальные школа и садик(отличный, сейчас туда ходит наш ребенок),
+                                            магазин с продуктами, аптека, свежие фрукты и овощи.
+                                        </p>
+                                        <p>Сам дом построен по специальному проекту в 2009 году.  Новый 3х этажный
+                                            дом в поселке Новосаратовка. Рядом с домом имеется вся инфраструтура:
+                                            муниципальные школа и садик(отличный, сейчас туда ходит наш ребенок),
+                                            магазин с продуктами, аптека, свежие фрукты и овощи.
+                                        </p>
+                                    </dd>
+
+                                    <dt><span>Вторничный рынок</span></dt>
+                                    <dd>
+                                        <div class="graphik">
+                                            <img src="pic/graphik.jpg">
+                                        </div>
+                                        <div class="sort_but type_place">
+                                            <a href="#">Изменения за неделю</a>
+                                            <a href="#">Средняя цена за м<sup>2</sup></a>
+                                            <a href="#" class="active">Средняя цена за объект</a>
+                                            <input type="hidden" value="3">
+                                        </div>
+                                        <p>Сам дом построен по специальному проекту в 2009 году.  Новый 3х этажный
+                                            дом в поселке Новосаратовка. Рядом с домом имеется вся инфраструтура:
+                                            муниципальные школа и садик(отличный, сейчас туда ходит наш ребенок),
+                                            магазин с продуктами, аптека, свежие фрукты и овощи.
+                                        </p>
+                                        <p>Сам дом построен по специальному проекту в 2009 году.  Новый 3х этажный
+                                            дом в поселке Новосаратовка. Рядом с домом имеется вся инфраструтура:
+                                            муниципальные школа и садик(отличный, сейчас туда ходит наш ребенок),
+                                            магазин с продуктами, аптека, свежие фрукты и овощи.
+                                        </p>
+                                        <p>Сам дом построен по специальному проекту в 2009 году.  Новый 3х этажный
+                                            дом в поселке Новосаратовка. Рядом с домом имеется вся инфраструтура:
+                                            муниципальные школа и садик(отличный, сейчас туда ходит наш ребенок),
+                                            магазин с продуктами, аптека, свежие фрукты и овощи.
+                                        </p>
+                                        <p>Сам дом построен по специальному проекту в 2009 году.  Новый 3х этажный
+                                            дом в поселке Новосаратовка. Рядом с домом имеется вся инфраструтура:
+                                            муниципальные школа и садик(отличный, сейчас туда ходит наш ребенок),
+                                            магазин с продуктами, аптека, свежие фрукты и овощи.
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- /dynamic -->
+
+                            <!-- dynamic__districts -->
+                            <div class="dynamic__districts">
+                                <h1>Динамка цен по районам ленинградской области</h1>
+                                <table>
+                                    <thead>
+                                        <th>Название района</th>
+                                        <th>Средняя цена за объект</th>
+                                        <th>Средняя цена за м<sup>2</sup></th>
+                                        <th>Изменения за неделю</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Пушкинский</td>
+                                            <td>10000</td>
+                                            <td>1500</td>
+                                            <td>+300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Адмиралтейский</td>
+                                            <td>12000</td>
+                                            <td>500</td>
+                                            <td>-10</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Пушкинский</td>
+                                            <td>10000</td>
+                                            <td>1500</td>
+                                            <td>+300</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Адмиралтейский</td>
+                                            <td>12000</td>
+                                            <td>500</td>
+                                            <td>-10</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <span><sup>*</sup>Цены указаны в рублях</span>
+                            </div>
+                            <!-- /dynamic__districts -->
+
+                        </div>
+                        <!-- /content_site -->
+
+                        <!-- site__right_aside -->
+                        <div class="site__right_aside">
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container">
+                                <img src="pic/pic5.jpg" width="230" height="398" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                        </div>
+                        <!-- /site__right_aside -->
+
+                    </div>
+                    <!-- /site_wrap -->
+
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+            <!-- /site__content -->
+
+        </div>
+        <!-- /site_wrap -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- site_wrap -->
+        <div class="site_wrap">
+
+            <!-- footer__layout -->
+            <div class="footer__layout">
+
+                <!-- center_block -->
+                <div class="center_block">
+
+                    <p class="copy">&copy; 2013 Загородный дом</p>
+
+                    <a href="tel:88006234187" class="footer_tel">8 (800) 623 41 87</a>
+
+                    <!-- social -->
+                    <dl class="social">
+                        <dt>Контакты</dt>
+                        <dd><a href="#" class="facebook" title="facebook">facebook</a> </dd>
+                        <dd><a href="#" class="vkontakte" title="vkontakte">vkontekte</a> </dd>
+                        <dd><a href="#" class="youtube" title="youtube">youtube</a> </dd>
+                        <dd><a href="#" class="twitter" title="twitter">twitter</a> </dd>
+                    </dl>
+                    <!-- /social -->
+
+                    <!-- footer_menu -->
+                    <ul class="footer_menu">
+                        <li><a href="#">Недвижимость</a> </li>
+                        <li><a href="#">Статьи</a> </li>
+                        <li><a href="#">Реклама на сайте</a> </li>
+                        <li><a href="#">Строительство</a> </li>
+                        <li><a href="#">Новости</a> </li>
+                        <li><a href="#">О проекте</a> </li>
+                        <li><a href="#">Загородная жизнь</a> </li>
+                        <li><a href="#">Журнал</a> </li>
+                        <li><a href="#">Правила использования</a> </li>
+                        <li><a href="#">Форум</a> </li>
+                    </ul>
+                    <!-- /footer_menu -->
+
+                    <!-- personal_menu -->
+                    <div class="personal_menu">
+                        <a href="#">Избранное  <span>5</span></a>
+                        <a href="#">Блокнот</a>
+                        <a href="#">Стол заказов <span>3</span></a>
+                    </div>
+                    <!-- /personal_menu -->
+
+                    <!-- footer_bottom -->
+                    <div class="footer_bottom">
+
+                        <!-- counters -->
+                        <ul class="counters">
+                            <li><img src="pic/pic3.jpg" width="77" height="27" alt=""></li>
+                            <li><img src="pic/pic4.jpg" width="70" height="25" alt=""></li>
+                        </ul>
+                        <!-- /counters -->
+
+                        <!-- creaters -->
+                        <dl class="creaters">
+                            <dt><img src="img/creaters.png" width="56" height="10" alt=""></dt>
+                            <dd><a href="#">разработка сайта</a> </dd>
+                        </dl>
+                        <!-- /creaters -->
+
+                        <!-- footer_search -->
+                        <form class="footer_search">
+                            <input type="search" placeholder="Поиск по сайту">
+                            <input type="submit" class="footer_search_but">
+                        </form>
+                        <!-- footer_search -->
+
+
+
+                    </div>
+                    <!-- /footer_bottom -->
+
+                </div>
+                <!-- /center_block -->
+
+            </div>
+            <!-- /footer__layout -->
+
+
+        </div>
+        <!-- /site_wrap -->
+    </footer>
+    <!-- /footer -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,795 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    content-wrap
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	font-size: 100%;
+	background-color: transparent;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: xx-small;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "myriadpro-bold";
+    src: url("../fonts/myriadpro-bold.woff") format("woff");
+}
+@font-face {
+    font-family: "myriadpro-regular";
+    src: url("../fonts/myriadpro-regular.woff") format("woff");
+}
+@font-face {
+    font-family: "767659";
+    src: url("../fonts/767659.woff") format("woff");
+}
+@font-face {
+    font-family: "myriadpro-cond";
+    src: url("../fonts/myriadpro-cond.woff") format("woff");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+
+    min-width: 1074px;
+    max-width: 1236px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    padding: 0 32px;
+    font-family: myriadpro-regular;
+}
+
+.site__content {
+    display: table;
+    width: 100%;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 124px;
+
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+	position: absolute;
+	top: 30px;
+	left: 10px;
+}
+/* --------------- /logo --------------- */
+.slogan{
+	position: absolute;
+	top: 57px;
+	left: 360px;
+	font-weight: normal;
+	color: #898489;
+	font-size: 16px;
+}
+.addressBlock{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fafafa;
+}
+.addressBlock{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding-right: 32px;
+    padding-left: 28px;
+    padding-top: 20px;
+    padding-bottom: 8px;
+    font-family: '767659';
+}
+.addressBlock dd a.direct{
+    font-size: 13px;
+}
+.addressBlock dl{
+    overflow: hidden;
+}
+
+.addressBlock dt{
+	float: left;
+	width: 117px;
+	font-size: 12px;
+	margin-top: 2px;
+}
+.addressBlock dd{
+    float: left;
+}
+.addressBlock dd a{
+	color: #1e1ee4;
+	font-size: 14px;
+}
+.addressBlock dd a:hover{
+    text-decoration: underline;
+}
+.logInBut{
+	color: #1e1ee4;
+	font-size: 16px;
+	font-family: myriadpro-regular;
+	float: right;
+    text-decoration: underline;
+    padding-bottom: 2px;
+}
+.logInBut:hover{
+    text-decoration: none;
+}
+.menuWrap{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #1f85ab;
+    height: 31px;
+}
+.mainMenu{
+    padding-left: 148px;
+}
+.mainMenu a{
+    color: #fff;
+    font-size: 15px;
+    line-height: 31px;
+    display: inline-block;
+    padding: 0 10px;
+    margin-left: -4px;
+}
+
+.mainMenu a:hover{
+    background: #1d2e6b ;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease;
+
+}
+.mainMenu a:active{
+    background: #1f71cf;
+    -webkit-transition-property: background;
+    -webkit-transition-duration: 0.1s;
+    -webkit-transition-timing-function: ease;
+}
+.mainMenu .active{
+    background: #3392ff;
+    cursor: default;
+}
+.signUp{
+    position: absolute;
+    top: 8px;
+    right: 56px;
+    font-family: '767659';
+    color: #fff;
+    text-decoration: underline;
+}
+.insideText .blue {
+    color: #15285C;
+}
+.insideText h3 {
+    color: #15285c;
+    font-size: 22px;
+    display: block;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.insideText h2 {
+    color: #709ec0;
+    font-size: 1.25em;
+}
+.insideText .title2 {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 15px 0;
+}
+.insideText p{
+    font: 14px sans-serif;
+    margin: 10px 0;
+    line-height: 20px;
+}
+.insideText ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.insideText ul li{
+    margin: 10px 0;
+}
+.insideText a:active,
+.insideText a:visited{
+    color: #1e1ee4;
+}
+/* --------------- content-wrap --------------- */
+.content-wrap {
+    display: table-cell;
+    vertical-align: top;
+    width: 100%;
+
+}
+/* --------------- /content-wrap --------------- */
+.contantBlock{
+	margin-left: 0px;
+	margin-right: 356px;
+}
+.signUpBlock{
+    background: #449ec0;
+    border-bottom: 1px solid #5392a9;
+    padding: 18px 0;
+    margin-top: 16px;
+    margin-bottom: 47px;
+    position: relative;
+    height: 42px;
+}
+.signUpBlock:after{
+    position: absolute;
+    background: url("../img/banner-image.png") no-repeat;
+    width: 93px;
+    height: 102px;
+    content: "";
+    top: -10px;
+    left: 0;
+}
+.motto{
+    text-align: center;
+    width: 450px;
+    vertical-align: top;
+    display: inline-block;
+}
+.motto h3{
+    color: #fff;
+    font-size: 25px;
+    font-weight: normal;
+}
+.motto span{
+	color: #FFFFFF;
+	font-size: 14px;
+}
+.SignUpBut{
+	display: inline-block;
+	vertical-align: top;
+	width: 108px;
+	height: 35px;
+	border-radius: 10px;
+	position: relative;
+	background: #ffb502;
+	text-align: center;
+	color: #000084;
+	font-size: 18px;
+	font-family: myriadpro-bold;
+	padding-top: 2px;
+	letter-spacing: -1px;
+}
+.SignUpBut:hover{
+	background: #ffc73f;
+	-webkit-transition-property: background;
+	-webkit-transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease;
+	color: #000084;
+}
+.SignUpBut span{
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: 0;
+    display: block;
+    font-family: myriadpro-regular;
+}
+.signUpBlock .wraper{
+    float: right;
+    margin-right: 36px;
+}
+.tabsWrap{
+    margin-bottom: 20px;
+}
+.textContainer h2{
+    font-weight: normal;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.textContainer p{
+    font-size: 15px;
+    color: #b0a4b0;
+    line-height: 18px;
+}
+.rightSideBar{
+    width: 305px;
+    background: #fafafa;
+    float: right;
+    padding-top: 16px;
+}
+.listType{
+    margin-right: 40px;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+.listType li{
+    margin-bottom: 10px;
+}
+.listType span{
+    display: block;
+    padding-left: 25px;
+    height: 30px;
+    line-height: 30px;
+}
+.irangeFlag{
+    position: relative;
+    background: #feb101;
+}
+.irangeFlag:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -15px;
+    background: url("../img/flag.png");
+    width: 15px;
+    height: 30px;
+}
+.brangeFlag{
+    position: relative;
+    background: #8ee1fe;
+}
+.brangeFlag:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -15px;
+    background: url("../img/flag2.png");
+    width: 15px;
+    height: 30px;
+}
+.listType2{
+    margin-left: 29px;
+}
+.listType2 li{
+    background: url("../img/arrow2.png") no-repeat left center;
+    padding-left: 20px;
+}
+.changeBlock{
+    margin: 20px 0 20px 27px;
+}
+.listType2 a{
+    display: block;
+    width: 197px;
+    height: 41px;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 23px;
+    box-shadow: 2px 2px 5px #474747;
+    color: #c2c2c3;
+    font-family: "767659";
+    padding-top: 9px;
+    font-size: 14px;
+}
+.listType2 a:hover span{
+    text-decoration: none;
+}
+.listType2 a span{
+    display: block;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.fioletBut{
+    background: #7f79b9;
+}
+.blueBut{
+    background: #4aa9eb;
+}
+.fpoBlock{
+    border: 1px solid #000;
+    width: 241px;
+    height: 65px;
+    margin: 0 0 10px 27px;
+}
+.ezBookSay{
+    width: 240px;
+    overflow: hidden;
+    margin-left: 27px;
+    background: #3990ae;
+}
+.ezBookHead{
+    background: #43a8f0;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-family: myriadpro-cond;
+    font-size: 22px;
+    letter-spacing: -1px;
+    border-bottom: 1px solid #135070;
+}
+.unswerWrap{
+    float: left;
+    width: 132px;
+    margin: 5px 15px 0 10px;
+    font-style: italic;
+}
+.ezBookSay p{
+    color: #d3e4ea;
+    font-size: 18px;
+}
+.unswerWrap span{
+    color: #000;
+    font-size: 12px;
+}
+.tabBlock{
+    display: block;
+    width: 480px;
+    height: 260px;
+    float: right;
+    display: none;
+}
+.tabsMenu{
+    margin-right: 489px;
+    background: #8d7e7d;
+}
+.tabsWrap{
+    overflow: hidden;
+}
+.tabsMenu a{
+	display: block;
+	background: url("../img/but-back.png");
+	height: 30px;
+	border-bottom: 1px solid #8d7e7d;
+	border-right: 1px solid #8d7e7d;
+
+	line-height: 30px;
+	color: #000084;
+	font-family: myriadpro-regular;
+	font-size: 14px;
+	padding: 0 11px;
+	position: relative;
+	margin-bottom: 2px;
+}
+.tabsMenu a:hover{
+    color: #fff;
+    background: #1d2e6b;
+}
+.tabsMenu a.active{
+    background: url("../img/but-active.png");
+}
+.tabsMenu a:after{
+    content: "";
+    position: absolute;
+    top: 9px;
+    right: 4px;
+    background: url("../img/arrow.png");
+    width: 12px;
+    height: 13px;
+}
+#webinar-red-box {
+    background: #449ec0;
+    box-shadow: inset 2px 2px 5px #808080;
+    height: 80px;
+    padding-top: 20px;
+    padding-left: 25px;
+    color: #fff;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 34px;
+}
+.bold {
+    font-weight: bold;
+}
+table#webinar-list .left {
+    font-size: 16px;
+    width: 150px;
+    padding: 0px 20px 20px 0px;
+}
+table#webinar-list .right {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+table#webinar-list a:hover{
+    text-decoration: none;
+}
+table#webinar-list a, table#webinar-list a:visited {
+    color: #ff0000;
+    text-decoration: underline;
+}
+.modal {
+    margin: 50px auto 0 auto;
+    border: 2px solid #fdb739;
+    background-color: #fff;
+    margin-top: 10px;
+    width: 700px;
+}
+.modal .title {
+    background: #4b4b4b;
+    padding: 10px 15px;
+}
+.modal .title h3 {
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.modal .title {
+	background: #1f85ab;
+	padding: 10px 15px;
+}
+.pad20 {
+    padding: 20px;
+}
+.modal table label{
+    display: block;
+}
+.modal table input{
+    margin-bottom: 10px;
+}
+#wrap{
+    padding: 26px;
+    overflow: hidden;
+}
+.tabBlock  a{
+    color: #000066 !important;
+}
+.webinra{
+    font-family: myriadpro-regular;
+    border: 2px solid #fdb739;
+    margin-top: 20px;
+}
+.webinra #webinar-list{
+    margin-left: 10px;
+}
+.webinra #webinar-red-box{
+    margin-top: 0;
+}
+.webinarPage .slogan{
+    left: 262px;
+}
+.webinarPage .header{
+    height: 80px;
+}
+.webinarPage .site{
+    width: 500px;
+    max-width: 500px;
+
+    padding: 0;
+    min-width: 500px;
+}
+.contactPage .site{
+    width: 704px;
+    min-width: 704px;
+    padding: 0;
+    max-width: 704px;
+}
+.webinarPage .footer{
+    width: 500px;
+    max-width: 500px;
+    background: #449ec0;
+    padding: 0;
+    min-width: 500px;
+    border-top: none;
+}
+.webinarPage .footer .copy{
+    color: #fff;
+    font-size: 14px;
+    top: 45px;
+    font-family: myriadpro-regular;
+    right: 47px;
+}
+.webinarPage .footer .footer__layout{
+    border: none;
+}
+
+/* --------------- footer --------------- */
+.contactPage .header{
+    width: 704px;
+    margin: 0 auto;
+    height: 80px;
+}
+.contactPage .footer {
+    width: 704px;
+    min-width: 704px;
+    max-width: 704px;
+}
+.footer {
+    z-index: 2;
+    position: relative;
+    min-width: 936px;
+    max-width: 1236px;
+
+    margin: 0 auto;
+    padding: 0 32px;
+    margin-top: 20px;
+}
+.footer__layout {
+	width: 100%;
+	height: 82px;
+	border-top: 2px solid #b0a4b0;
+	position: relative;
+	padding-top: 15px;
+}
+.footerLogo{
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+.copy{
+    position: absolute;
+    top: 15px;
+    color: #b6b7bb;
+    font-size: 10px;
+    font-family: myriadpro-bold;
+    right: 0;
+}
+.footerMenu{
+    margin: 0 auto;
+    width: 400px;
+
+    margin-top: 20px;
+}
+.footerMenu li{
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    margin-bottom: 5px;
+    color: #b0a4b0;
+}
+.footerMenu li a:hover{
+    text-decoration: underline;
+}
+.footerMenu li a{
+    color: #b0a4b0;
+    margin-right: 10px;
+    font-size: 15px;
+    font-family: myriadpro-regular;
+}
+.margineLeft{
+    margin-left: 34px;
+}
+/* --------------- /footer --------------- */
+.modal table .radioWrap label{
+    display: inline-block;
+    vertical-align: top;
+
+}
+.radioWrap input{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 1px;
+}
+.lableType{
+    display: block;
+    margin-bottom: 10px;
+}

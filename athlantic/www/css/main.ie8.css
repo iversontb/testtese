@@ -1,0 +1,15 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "helveticaneue";
+    src: url("../fonts/helveticaneue.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pfcentroslabproblack";
+    src: url("../fonts/pfcentroslabpro-black.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

@@ -1,0 +1,358 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>Text</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/toningImage.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.slider.js"></script>
+    <script src="js/jquery.toningImage.js"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            if(!$.browser.msie)
+            {
+                // переводим фото в черно-белый вид
+                $(".logotype").load(function(){
+                    $(this).jToningImage();
+                });
+            }
+            else // кастяль для IE
+            {
+                if($(".logotype")[0].complete == true) $(".logotype").jToningImage();
+                else  $(".logotype").one('load', function(){$(".logotype").jToningImage();});
+            }
+
+            //цепляем обработчик события ховер
+            $(".brand li").hover(function(){
+                        $(this).find('.toiningImgNew').fadeOut(50);
+                    },
+                    function(){
+                        $(this).find('.toiningImgNew').fadeIn(50);
+                    });
+
+        });
+    </script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- enter -->
+            <div class="enter">
+                <!-- logo -->
+                <a href="#" title="На главную" class="logo"><img src="pic/logo.jpg" width="241" height="57" alt="logo"></a>
+                <!-- /logo -->
+                <form action="#" method="get">
+                    <input type="text" name="login" placeholder="Логин:">
+                    <input type="password" name="pass" placeholder="*********">
+                    <input type="submit" name="butt" value=" ">
+                </form>
+                <a href="#">Регистрация</a>
+                <a href="#">Забыли пароль</a>
+            </div>
+            <!-- /enter -->
+
+            <!-- menu -->
+            <div class="menu">
+
+                <!-- navigation -->
+                <nav class="navigation">
+                    <ul>
+                        <li class="active"><a href="#">Главная</a></li>
+                        <li><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Продукция</a></li>
+                        <li><a href="#">Обучение</a></li>
+                        <li><a href="#">Выставки</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <!-- /navigation -->
+
+                <!-- search -->
+                <form class="search">
+                    <input type="text" name="search" placeholder="Поиск">
+                    <input type="submit" name="but" value=" ">
+                </form>
+                <!-- /search -->
+
+            </div>
+            <!-- /menu -->
+
+            <table>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>c 25.10.13</th>
+                        <th>c 26.10.13</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="valuta">Доллар США</th>
+                        <td>31,6618</td>
+                        <td class="up">31,6775</td>
+                    </tr>
+                    <tr>
+                        <th class="valuta">ЕвроЕвро</th>
+                        <td>43,7249</td>
+                        <td class="up">43,7625</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- order_call -->
+            <div class="order_call">
+                <span>+7(343)384-44-44</span>
+                <a href="#">Заказать звонок</a>
+            </div>
+            <!-- /order_call -->
+
+            <!-- basket -->
+            <dl class="basket">
+                <dt>Ваш заказ:</dt>
+                <dd><span>0 товаров</span><span>0 рублей</span></dd>
+            </dl>
+            <!-- /basket -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- brand -->
+                <ul class="brand">
+                    <li><a href="#"><img class="logotype" src="pic/logotype1.png" width="129" height="32" alt="logotype1"></a></li>
+                    <li><a href="#"><img class="logotype" src="pic/logotype2.png" width="125" height="20" alt="logotype2"></a></li>
+                    <li><a href="#"><img class="logotype" src="pic/logotype.png" width="145" height="34" alt="logotype4"></a> </li>
+                    <li><a href="#"><img class="logotype" src="pic/logotype5.png" width="124" height="45" alt="logotype5"></a></li>
+                    <li><a href="#"><img class="logotype" src="pic/logotype6.png" width="118" height="53" alt="logotype6"></a></li>
+                    <li><a href="#"><img class="logotype" src="pic/logotype7.png" width="121" height="59" alt="logotype7"></a></li>
+                </ul>
+                <!-- /brand -->
+
+                <!-- bread_crumbs -->
+                <nav class="bread_crumbs">
+                    <a href="#">Главная</a>
+                    <a href="#">Каталог</a>
+                    <span>Combi Luxtia Turn Lx360 TA</span>
+                </nav>
+                <!-- /bread_crumbs -->
+
+                <!-- aside -->
+                <aside>
+                    <div>
+                        <img src="pic/pic1.jpg" width="224" height="93" alt="sehon">
+                        <span>Категории</span>
+                    </div>
+                    <ul class="category">
+                        <li><a href="">Ausbeul-Werkzeuge</a></li>
+                        <li><a href="">Ausbeulhämmer</a></li>
+                        <li><a href="">Ausbeulhebel</a></li>
+                        <li><a href="">Dolly Ausbeul Set</a></li>
+                        <li><a href="">Gleithammer</a></li>
+                        <li><a href="">Handfäuste</a></li>
+                    </ul>
+                    <ul class="subcategory">
+                        <li><a href="">De- und Montagewerkzeuge</a></li>
+                        <li><a href="">Blechbearbeitungs-Werkzeuge</a></li>
+                        <li><a href="">Karosseriesägen</a></li>
+                        <li><a href="">Schweißpunktlöser</a></li>
+                    </ul>
+                </aside>
+                <!-- /aside -->
+
+                <!-- content -->
+                <div class="content">
+
+                <!-- text -->
+                <div class="text">
+
+                    <h1>Пример заголовка H1</h1>
+                    <p>Сча́стье — эмоциональное состояние (чувство), при котором человек испытывает внутреннюю удовлетворённость условиями своего существования, полноту и осмысленность жизни и осуществление своего назначения. Полное счастье для сознательного человека пока невозможно, ибо для этого сначала надо достичь Главной цели человечества ГЦЧ) , т.е. обеспечения возможно более длительного и счастливого его существования. Может ли нормальный человек быть полностью счастлив, если знает, что где-то есть миллионы голодных и несчастных? Строго говоря, древнегреческое слово счастье — «эвдемония» (eudaimonia, eu — добро, daimon — божество)</p>
+
+                    <h2>Пример заголовка H2</h2>
+                    <p>Сча́стье — эмоциональное состояние (чувство), при котором человек испытывает внутреннюю удовлетворённость условиями своего существования, полноту и осмысленность жизни и осуществление своего назначения. Полное счастье для сознательного человека пока невозможно, ибо для этого сначала надо достичь Главной цели человечества ГЦЧ) , т.е. обеспечения возможно более длительного и счастливого его существования. Может ли нормальный человек быть полностью счастлив, если знает, что где-то есть миллионы голодных и несчастных? Строго говоря, древнегреческое слово счастье — «эвдемония» (eudaimonia, eu — добро, daimon — божество)</p>
+
+                    <h3>Пример заголовка H3</h3>
+                    <p>Сча́стье — эмоциональное состояние (чувство), при котором человек испытывает внутреннюю удовлетворённость условиями своего существования, полноту и осмысленность жизни и осуществление своего назначения. Полное счастье для сознательного человека пока невозможно, ибо для этого сначала надо достичь Главной цели человечества ГЦЧ) , т.е. обеспечения возможно более длительного и счастливого его существования. Может ли нормальный человек быть полностью счастлив, если знает, что где-то есть миллионы голодных и несчастных? Строго говоря, древнегреческое слово счастье — «эвдемония» (eudaimonia, eu — добро, daimon — божество)</p>
+
+                    <ul>
+                        <li><span>Полное счастье для сознательного человека пока невозможно, ибо.</span></li>
+                        <li><span>Полное счастье для сознательного человека пока невозможно, ибо.</span></li>
+                        <li><span>Полное счастье для сознательного человека пока невозможно, ибо.</span></li>
+                    </ul>
+
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>Название</th>
+                            <th>Описание</th>
+                            <th>Кол-во</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Тестовое название</td>
+                            <td>Тестовое описание информации</td>
+                            <td>12 штук</td>
+                        </tr>
+                        <tr>
+                            <td>Тестовое название</td>
+                            <td>Тестовое описание информации</td>
+                            <td>12 штук</td>
+                        </tr>
+                        <tr>
+                            <td>Тестовое название</td>
+                            <td>Тестовое описание информации</td>
+                            <td>12 штук</td>
+                        </tr>
+                        <tr>
+                            <td>Тестовое название</td>
+                            <td>Тестовое описание информации</td>
+                            <td>12 штук</td>
+                        </tr>
+                        <tr>
+                            <td>Тестовое название</td>
+                            <td>Тестовое описание информации</td>
+                            <td>12 штук</td>
+                        </tr>
+                        <tr>
+                            <td>Тестовое название</td>
+                            <td>Тестовое описание информации</td>
+                            <td>12 штук</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                    <dl>
+                        <dt>Страница:</dt>
+                        <dd><a href="#">1</a> </dd>
+                        <dd><a href="#">2</a> </dd>
+                        <dd><a href="#">3</a> </dd>
+                        <dd><a href="#">4</a> </dd>
+                        <dd><a href="#">5</a> </dd>
+                        <dd><a href="#">6</a> </dd>
+                        <dd><a href="#">7</a> </dd>
+                    </dl>
+
+                    <h2>Форма контактов</h2>
+                    <form action="#" id="order">
+                        <p>Сча́стье — эмоциональное состояние (чувство), при котором человек испытывает внутреннюю удовлетворённость условиями своего существования, полноту и осмысленность жизни и осуществление своего назначения. Полное счастье для сознательного человека пока невозможно, ибо для этого сначала надо достичь Главной цели человечества ГЦЧ) , т.е. обеспечения возможно более длительного и счастливого его существования. Может ли нормальный человек быть полностью счастлив, если знает, что где-то есть миллионы голодных и несчастных? Строго говоря, древнегреческое слово счастье — «эвдемония» (eudaimonia, eu — добро, daimon — божество)</p>
+
+                        <div class="contact">
+                            <fieldset>
+                                <label class="necessarily" for="name">Ваша Фамилия:</label>
+                                <input type="text" id="name" name="name">
+
+                            </fieldset>
+                            <fieldset>
+                                <label class="necessarily" for="mail">E-mail:</label>
+                                <input type="email" name="mail" id="mail">
+
+                            </fieldset>
+                            <fieldset>
+                                <label class="necessarily" for="phone">Телефон:</label>
+                                <input type="tel" name="phone" id="phone">
+
+                            </fieldset>
+                            <fieldset>
+                                <label for="sms">Сообщение:</label>
+                                <textarea name="sms" id="sms"></textarea>
+
+                            </fieldset>
+                            <div class="button">
+                                <input type="submit" value="Отправить">
+                                <input type="reset" value="Сброс">
+                            </div>
+                        </div>
+
+                    </form>
+
+                    <h2>Обтекание фото</h2>
+                    <p class="images"><img src="pic/img1.jpg" width="151" height="100" alt="">Сча́стье — эмоциональное состояние (чувство), при котором человек испытывает внутреннюю удовлетворённость условиями своего существования, полноту и осмысленность жизни и осуществление своего назначения. Полное счастье для сознательного человека пока невозможно, ибо для этого сначала надо достичь Главной цели человечества ГЦЧ) , т.е. обеспечения возможно более длительного и счастливого его существования. Может ли нормальный человек быть полностью</p>
+
+                    <h2>Текст с фоном</h2>
+                    <p class="fon">Сча́стье — эмоциональное состояние (чувство), при котором человек испытывает внутреннюю удовлетворённость условиями своего существования, полноту и осмысленность жизни и осуществление своего назначения. Полное счастье для сознательного человека пока невозможно, ибо для этого сначала надо достичГлавной цели человечества ГЦЧ)  т.е. обеспечения возможно более длительного и счастливого его</p>
+
+                    <h2>Нумерованный список</h2>
+                    <ol>
+                        <li>Сча́стье — эмоциональное состояние (чувство), при котором человек удовлетвор счастлив,</li>
+                        <li>Сча́стье — эмоциональное состояние (чувство), при котором человек удовлетвор счастлив,</li>
+                        <li>Сча́стье — эмоциональное состояние (чувство), при котором человек удовлетвор счастлив,</li>
+                    </ol>
+
+                </div>
+                <!-- /text -->
+
+                </div>
+                <!-- /content -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <!-- footer__menu -->
+            <ul class="footer__menu">
+                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Продукция</a></li>
+                <li><a href="#">Обучение</a></li>
+                <li><a href="#">Выставки</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <!-- footer__menu -->
+
+            <address>&copy;  2013 г. Екатеринбург, ул. Энгельса, 36, 11 этаж,<span>телефон +7 (343) 384-44-44</span></address>
+
+            <!-- social_networks -->
+            <div class="social_networks">
+                <a href="#" class="vk"></a>
+                <a href="#" class="facebook"></a>
+                <a href="#" class="twitter"></a>
+                <a href="#" class="odnoklassniki"></a>
+
+            </div>
+            <!-- /social_networks -->
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

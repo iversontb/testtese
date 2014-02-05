@@ -1,0 +1,317 @@
+body{
+    background: #f5f5f5 url("../img/12thigth-head.jpg") no-repeat   center top;
+}
+.header{
+    margin-bottom: 68px;
+    -webkit-transform: translateZ(0);
+}
+.preview{
+    width: 964px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.preview img{
+    padding-bottom: 20px;
+}
+.preview p{
+    line-height: 19px;
+    padding: 0 69px;
+    margin-bottom: 32px;
+}
+.priceBlock > span{
+    font-size: 36px;
+}
+.priceBlock > span > span{
+    font-weight: 800;
+}
+.priceBlock .big_button{
+    margin: 0 auto;
+    margin-top: 9px;
+}
+.mapBox{
+    height: 348px;
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    margin-bottom: 53px;
+    position: relative;
+}
+.simpleMenu{
+    overflow: hidden;
+    margin-bottom: 33px;
+}
+.simpleMenu li{
+    float: left;
+    width: 33%;
+}
+.simpleMenu li .active{
+    border-bottom: 2px solid #0baed3;
+    color: #0baed3;
+}
+.dayNamber{
+    text-align: center;
+    width: 62px;
+    height: 52px;
+    color: #f5f5f5;
+    border-radius: 100px;
+    background: #0baed3;
+    font-size: 28px;
+    font-weight: 800;
+    padding-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 23px;
+}
+.dayNamber span{
+    display: block;
+    font-weight: 400;
+    font-size: 11px;
+}
+.eventsWraper{
+    display: inline-block;
+    vertical-align: top;
+    width: 873px;
+    margin-top: 22px;
+    position: relative;
+}
+.lineHave{
+    position: relative;
+}
+.lineHave:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 22px;
+    width: 2px;
+    height: 100%;
+    background: #d9d9d9;
+}
+.evenTime{
+    margin-bottom: 60px;
+
+}
+.timeWolk{
+    display: inline-block;
+    vertical-align: top;
+    color: #333333;
+    font-weight: 700;
+    background: #f5f5f5;
+    font-size: 17px;
+    margin-right: 26px;
+    position: relative;
+    z-index: 1;
+    padding: 5px 0;
+    -webkit-transform: translateZ(0);
+    border: none;
+    border-color: #f5f5f5;
+}
+.eventDiscribe{
+    display: inline-block;
+    vertical-align: top;
+    width: 790px;
+}
+.eventText{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 540px;
+	padding-right: 20px;
+}
+.eventDiscribe img{
+    display: inline-block;
+    vertical-align: top;
+
+}
+.eventDiscribe a:hover img{
+    opacity: 0.8;
+}
+.eventDiscribe a:after:hover img{
+    opacity: 0.8;
+}
+.eventDiscribe a:hover:after img{
+    opacity: 0.8;
+}
+.eventText h3{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.eventText .look{
+    font-size: 14px;
+    display: inline;
+    position: relative;
+}
+.eventText p{
+    font-size: 14px;
+    line-height: 21px;
+}
+.eventText .pointer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    text-indent: -5000px;
+}
+.bigImgContainer{
+    text-align: center;
+    margin-bottom: 35px;
+    height: 380px;
+}
+.hotelLive p{
+    line-height: 21px;
+    margin-bottom: 48px;
+}
+.listType2{
+    font-size: 15px;
+    text-align: center;
+    font-family: intro;
+    overflow: hidden;
+    margin-bottom: 61px;
+}
+.listType2 li{
+    float: left;
+    width: 33%;
+    padding-top: 80px;
+    line-height: 17px;
+    -webkit-text-stroke: 0.35px;
+}
+.listType2 li span{
+    display: block;
+
+}
+.wi_fi{
+    background: url("../img/wi-fi.png") no-repeat top center;
+    background-size: 59px 48px;
+}
+.parking{
+    background: url("../img/parking.png") no-repeat top center;
+    background-size: 60px;
+}
+.regTime{
+    background: url("../img/reg-time.png") no-repeat top center;
+    background-size: 60px;
+}
+.condicioner{
+    background: url("../img/conditioner.png") no-repeat top center;
+    background-size: 60px;
+}
+.fen{
+    background: url("../img/fen.png") no-repeat  center 10px;
+    background-size: 57px 44px;
+}
+.noSmoking{
+    background: url("../img/no-smoking.png") no-repeat top center;
+    background-size: 60px;
+}
+.coffi{
+    background: url("../img/coffy.png") no-repeat top center;
+    background-size: 56px 59px;
+}
+.menuMix{
+    background: url("../img/menu.png") no-repeat top center;
+    background-size: 42px 56px;
+}
+.vine{
+    background: url("../img/vine.png") no-repeat top center;
+    background-size: 34px 54px;
+}
+.procentType{
+    background: #0baed3;
+    color: #fff;
+    text-align: center;
+    height: 62px;
+    width: 62px;
+    font-size: 20px;
+    font-weight: 800;
+    border-radius: 100px;
+    line-height: 62px;
+    vertical-align: top;
+    display: inline-block;
+    margin-right: 13px;
+}
+.plcaeDescription{
+    display: inline-block;
+    vertical-align: top;
+    width: 883px;
+    position: relative;
+    margin-top: 20px;
+}
+.plcaeDescription > .pointer{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+}
+.plcaeDescription h3{
+    font-size: 26px;
+    margin-bottom: 9px;
+}
+.plcaeDescription p{
+    line-height: 21px;
+    font-size: 14px;
+    margin-bottom: 19px;
+}
+.slideBut:hover{
+    color: #e6512c;
+    text-decoration: underline;
+}
+.slideBut{
+    color: #0baed3;
+    text-decoration: underline;
+    padding-right: 13px;
+}
+.upArrow{
+    background: url("../img/up-arrow.png") no-repeat right 5px;
+    background-size: 7px 8px;
+}
+.upArrow:hover{
+    background: url("../img/up-arrow-hover.png") no-repeat right 5px;
+    background-size: 7px 8px;
+}
+.downArrow{
+    background: url("../img/down-arrow.png") no-repeat right 5px;
+    background-size: 7px 8px;
+}
+.downArrow:hover{
+    background: url("../img/down-arrow-hover.png") no-repeat right 5px;
+    background-size: 7px 8px;
+}
+.interestingPlace .headBlock{
+    margin-left: 80px;
+}
+.phone{
+    background: url("../img/phone.png") no-repeat 0 3px;
+    -webkit-appearance: none;
+}
+.interestingPlace .headBlock .pointer{
+    float: left;
+    margin-top: 5px;
+    margin-right: 37px;
+}
+.interestingPlace .headBlock .time{
+    margin-right: 38px;
+}
+
+.more:after {
+    position: absolute;
+    content: "";
+    background: url("../img/blue_arrow.png") 0 2px no-repeat;
+    background-size: 100%;
+    width: 13px;
+    top: 12px;
+    right: -18px;
+    height: 10px;
+    margin-left: 4px;
+}
+.hottelText{
+    overflow: hidden;
+}
+.hottelText li:first-child{
+    margin-left: 0;
+}
+.hottelText li{
+    float: left;
+    width: 48%;
+    margin-left: 20px;
+}

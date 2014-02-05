@@ -1,0 +1,83 @@
+.girls {
+    position: relative;
+    height: 300px;
+    margin-left: 62px;
+}
+.rooms {
+    position: relative;
+    height: 300px;
+    margin-left: 59px;
+}
+.ares-slider > ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.girls .ares-slider_item {
+    position: absolute;
+    left: -1000px;
+    top: 0;
+}
+.rooms .ares-slider_item {
+    position: absolute;
+    left: -1000px;
+    top: 40px;
+}
+.rooms .ares-slider_item img {
+    width: 300px;
+    height: 197px;
+    border-radius: 3px;
+}
+.girls .ares-slider_item img {
+    width: 300px;
+    height: 300px;
+    border-radius: 220px;
+}
+.rooms .ares-slider_item span {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    color: #f83851;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+.girls .ares-slider_item a > span {
+    background: url("../img/girl__name.png");
+    width: 263px;
+    height: 84px;
+    position: absolute;
+    top: 197px;
+    left: 19px;
+    color: #fefefe;
+    font-size: 30px;
+    font-family: Georgia, sans-serif;
+    font-style: italic;
+    text-align: center;
+    padding-top: 20px;
+}
+.girls .ares-slider_item span span {
+    display: block;
+    font-size: 16px;
+}
+
+.ares-slider__next,
+.ares-slider__prev {
+    position: absolute;
+    content: '';
+    background: url("../img/gall-bat.png");
+    width: 68px;
+    height: 68px;
+    top: 122px;
+    cursor: pointer;
+}
+.ares-slider__prev {
+    left: -44px;
+}
+.ares-slider__next {
+    background-position: 0 bottom;
+    right: 17px;
+}

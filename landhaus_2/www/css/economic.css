@@ -1,0 +1,126 @@
+/* --------------- dynamic --------------- */
+.dynamic {
+    margin-left: -5px;
+}
+.dynamic h1 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+.dynamic dl {
+    position: relative;
+}
+.dynamic dt {
+    display: inline-block;
+    font-size: 12px;
+    font-family: "PT Sans";
+    font-weight: 700;
+    color: #a63b3b;
+    text-transform: uppercase;
+    padding: 15px 22px 10px 22px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+.dynamic dt span {
+    border-bottom: 1px dashed #a63b3b;
+    display: block;
+}
+.dynamic dt.active {
+    color: #000;
+    background: #fff;
+    border-left-color: #e3e1df;
+    border-right-color: #e3e1df;
+}
+.dynamic dt.active + dd {
+    display: block;
+}
+.dynamic dt.active span {
+    border: none;
+}
+.dynamic dt {
+    cursor: pointer;
+}
+.dynamic dd {
+    background: #fff;
+    display: none;
+    position: absolute;
+    top: 37px;
+    left: 0;
+    width: 726px;
+    border: 1px solid #e3e1df;
+    border-top: none;
+    padding-bottom: 43px;
+    box-shadow: 0 1px 0 rgba( 226, 226, 226, 0.4 );
+}
+.dynamic .graphik {
+    height: 440px;
+}
+.dynamic .type_place {
+    width: 521px;
+    margin: 0 0 28px 22px;
+}
+.dynamic .type_place a {
+    font-size: 14px;
+    padding: 0 19px;
+    vertical-align: top;
+}
+.dynamic p {
+    font-size: 14px;
+    font-family: "PT Sans";
+    line-height: 21px;
+    padding: 0 10px 0 20px;
+}
+/* --------------- /dynamic --------------- */
+
+/* --------------- dynamic__districts --------------- */
+.dynamic__districts {
+    margin-left: -5px;
+}
+.dynamic__districts h1 {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.dynamic__districts table {
+    width: 634px;
+    margin-bottom: 18px;
+}
+.dynamic__districts th {
+    font-family: "PT Sans";
+    font-size: 12px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #c5ded6;
+    padding-bottom: 13px;
+    text-align: center;
+}
+.dynamic__districts tbody tr:nth-child(odd) {
+    background: #fff;
+}
+.dynamic__districts tbody tr:nth-child(even) {
+    background: #eeedec;
+}
+.dynamic__districts td {
+    text-align: right;
+    padding: 11px 8px 10px 9px;
+}
+.dynamic__districts td:nth-child(1) {
+    text-align: left;
+}
+.dynamic__districts span {
+    font-size: 12px;
+    font-family: "PT Sans";
+    color: #8d8c8c;
+    padding-left: 10px;
+    position: relative;
+}
+.dynamic__districts sup {
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: 2px;
+}
+/* --------------- /dynamic__districts --------------- */

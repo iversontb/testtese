@@ -1,0 +1,92 @@
+/* delivery */
+.delivery {
+    padding: 14px 19px 0 11px;
+}
+.delivery__address {
+    border-bottom: 1px solid #629d2d;
+    padding-bottom: 15px;
+    padding-left: 4px;
+    margin-bottom: 10px;
+}
+.delivery__address h2{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.delivery__address input {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0 5px;
+    width: 279px;
+    height: 24px;
+    border-radius: 6px;
+    border: 1px solid #d1d1d1;
+}
+.delivery__address fieldset{
+    padding: 0 0 0 74px;
+    margin-bottom: 8px;
+}
+.delivery__address label {
+    display: inline-block;
+    vertical-align: top;
+    width: 61px;
+    padding-top: 5px;
+}
+.delivery__payment {
+    padding-left: 4px;
+    margin-bottom: 20px;
+}
+.delivery__payment h2{
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+.niceRadio {
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    cursor: pointer;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-top: 15px;
+    border: 1px solid #d1d1d1;
+}
+.radioChecked {
+    background: url("../img/radio.png") no-repeat center center;
+}
+.niceRadio input {
+    margin-left: -17px;
+}
+.delivery__payment label {
+    display: inline-block;
+    vertical-align: top;
+    width: 147px;
+    height: 51px;
+    border: 1px solid #aaa;
+}
+.delivery__payment label img {
+    display: block;
+}
+.delivery__payment > div {
+    padding-left: 90px;
+}
+.delivery__payment > div > div {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 64px;
+    margin-bottom: 10px;
+}
+.delivery__order {
+    text-transform: uppercase;
+    background: url("../img/delivery__order.png");
+    width: 135px;
+    height: 27px;
+    border: none;
+    color: #fff;
+    margin-left: 276px;
+}
+.delivery__order:hover {
+    opacity: 0.9;
+}
+/* /delivery */

@@ -1,0 +1,640 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    aside-left
+
+    content-wrap
+
+    breadcrumbs
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 308px;
+}
+.site__content {
+    display: table;
+    width: 1000px;
+    margin: 0 auto;
+}
+.site__title {
+    color: #dc1f26;
+    font-size: 26px;
+    font-weight: 800;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 37px;
+    font-family: 'Open Sans', sans-serif;
+}
+.site__title > span {
+    background: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    padding-right: 15px;
+}
+.site__title:after {
+    content: '';
+    background: #cfd7de;
+    width: 100%;
+    position: absolute;
+    top: 12px;
+    z-index: 1;
+    left: 0;
+    height: 1px;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 120px;
+    width: 1000px;
+    margin: 0 auto;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 24px;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- menu --------------- */
+.menu {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: absolute;
+    left: 296px;
+    top: 56px;
+    letter-spacing: 1px;
+}
+.menu a,
+.menu a:visited,
+.menu span {
+    color: #242021;
+    margin-right: 40px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    -webkit-transition: color .3s ease-in;
+    -moz-transition: color .3s ease-in;
+    -o-transition: color .3s ease-in;
+    -ms-transition: color .3s ease-in;
+    transition: color .3s ease-in;
+}
+.menu .active{
+    margin-top: -10px;
+    cursor: default;
+}
+.menu a:hover {
+    color: #dc1f26;
+}
+.menu .active:after {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: #d91a21;
+    position: absolute;
+    top: -46px;
+    left: 0;
+}
+
+
+/* --------------- /menu --------------- */
+
+/* --------------- phone --------------- */
+.phone {
+    font-style: normal;
+    font-size: 22px;
+    color: #262223;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    right: -1px;
+    top: 50px;
+}
+.phone > span {
+    font-weight: 300;
+}
+/* --------------- /phone --------------- */
+
+/* --------------- aside-left --------------- */
+.aside-left {
+    display: table-cell;
+    vertical-align: top;
+    width: 228px;
+    padding-bottom: 50px;
+}
+/* --------------- /aside-left --------------- */
+
+/* --------------- submenu --------------- */
+.submenu {
+    padding-top: 7px;
+    margin-bottom: 45px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+}
+.submenu li {
+    border-bottom: 1px solid #dce2e7;
+}
+.submenu li div {
+    display: none;
+}
+.submenu li.active div {
+    display: block;
+}
+.submenu li div a {
+    padding-left: 38px !important;
+}
+.submenu a,
+.submenu a:visited,
+.submenu span {
+    display: block;
+    padding: 9px 0 11px 18px;
+    color: #000;
+    -webkit-transition: color .3s ease-in, background .3s ease-in;
+    -moz-transition: color .3s ease-in, background .3s ease-in;
+    -o-transition: color .3s ease-in, background .3s ease-in;
+    -ms-transition: color .3s ease-in, background .3s ease-in;
+    transition: color .3s ease-in, background .3s ease-in;
+    cursor: pointer;
+}
+.submenu a:hover,
+.submenu span:hover {
+    background: #dc1f26;
+    color: #fff;
+    border-color: #d95057;
+}
+/* --------------- /submenu --------------- */
+
+/* --------------- aside-left --------------- */
+.order {
+    background: #f1f4f7;
+    border: 1px solid;
+    border-right: none;
+    border-top-color: #f8fafb;
+    border-left-color: #eff2f5;
+    border-bottom-color: #d7dadd;
+}
+.order > h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 20px;
+    font-size: 19px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.order fieldset {
+    position: relative;
+}
+.order fieldset div {
+    color: #df3b42;
+}
+.order fieldset > input,
+.order fieldset > textarea {
+    border: 1px solid #cfd7de;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: "Trebuchet MS";
+    line-height: 17px;
+    height: 36px;
+    width: 152px;
+    padding: 0 17px;
+    margin-bottom: 11px;
+    margin-left: 18px;
+    margin-right: 18px;
+}
+.order fieldset > textarea {
+    height: 109px;
+    margin-bottom: 9px;
+    padding: 10px 17px;
+}
+.order .placeholder {
+    color: #999999;
+}
+.order ::-webkit-input-placeholder { /* Ð´Ð»Ñ webkit Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ð¾Ð² */
+    color: #999999;
+}
+.order :-moz-placeholder { /* Ð´Ð»Ñ Ð±Ñ€Ð°ÑƒÐ·ÐµÑ€Ð¾Ð² mozilla */
+    color: #999999;
+}
+.order > span {
+    font-style: italic;
+    font-size: 12px;
+    font-family: "Trebuchet MS";
+    color: #999999;
+    display: block;
+    padding-left: 19px;
+    line-height: 16px;
+    margin-bottom: 23px;
+}
+.order > span > span {
+    color: #df3b42;
+}
+.order > p > span {
+    display: block;
+    color: #de343a;
+    text-align: center;
+    margin-bottom: 7px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.order > p {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    line-height: 17px;
+    margin-bottom: 15px;
+}
+.order > input {
+    background: #de343a;
+    display: block;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 19px;
+    width: 196px;
+    height: 50px;
+    margin-left: 14px;
+    margin-bottom: 16px;
+}
+.order > input:hover {
+    background: #e2494e;
+}
+/* --------------- /aside-left --------------- */
+
+/* --------------- content-wrap --------------- */
+.content-wrap {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 68px;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- breadcrumbs --------------- */
+.breadcrumbs {
+    cursor: default;
+    height: 23px;
+    padding-top: 20px;
+    margin-bottom: 38px;
+    font-family: 'Open Sans', sans-serif;
+}
+.breadcrumbs a,
+.breadcrumbs a:visited {
+    font-size: 12px;
+    color: #949da5;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    text-decoration: underline;
+    margin-right: 25px;
+}
+.breadcrumbs a:hover {
+    text-decoration: none;
+}
+.breadcrumbs a:after {
+    position: absolute;
+    content: '>';
+    text-decoration: none !important;
+    top: 0;
+    right: -17px;
+}
+.breadcrumbs span {
+    font-size: 12px;
+    color: #949da5;
+    display: inline-block;
+    vertical-align: top;
+}
+/* --------------- /breadcrumbs --------------- */
+
+/* --------------- page-navigator --------------- */
+.page-navigator {
+    position: relative;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 134px;
+}
+.page-navigator div {
+    display: inline-block;
+}
+.page-navigator a,
+.page-navigator a:visited {
+    font-size: 16px;
+    color: #000;
+    display: inline-block;
+    width: 35px;
+    padding: 9px 0;
+    text-align: center;
+}
+.page-navigator a:hover {
+    color: #e13d43;
+    background: #f1f4f7;
+}
+.page-navigator a.first-page,
+li > a.last-page {
+    width: 60px;
+    color: #e13d43;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.page-navigator a.first-page:hover,
+.page-navigator a.last-page:hover {
+    text-decoration: none;
+    background: none;
+}
+.page-navigator span {
+    display: inline-block;
+    width: 33px;
+    padding: 8px 0;
+    background: #f1f4f7;
+    border: 1px solid #b8c1c8;
+}
+/* --------------- /page-navigator --------------- */
+
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -308px;
+    background: #1b1d2c url("../img/footer-back.png") no-repeat center top;
+}
+.footer__layout {
+    width: 1000px;
+    height: 308px;
+    margin: 0 auto;
+    position: relative;
+}
+.footer_logo img {
+    display: block;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 167px;
+    height: 107px;
+}
+.footer-navigator {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    position: absolute;
+    left: 18px;
+    top: 47px;
+}
+.footer-navigator a,
+.footer-navigator a:visited {
+    color: #fff;
+    margin-right: 48px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+.footer-navigator a:hover {
+    color: #f1494f;
+}
+.footer__layout a.button_cabinet,
+.footer__layout a.button_back_call {
+    display: inline-block;
+    position: absolute;
+    width: 210px;
+    height: 22px;
+    top: 39px;
+    right: 0;
+    color: #fff;
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    background: #f1494f;
+    border-radius: 3px;
+}
+.footer__layout a.button_back_call {
+    background: #43486c;
+    top: 202px;
+}
+.footer__layout a.button_cabinet:hover {
+    background: #d14348;
+}
+.footer__layout a.button_back_call:hover {
+    background: #343853;
+}
+.copyright {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 113px;
+    left: 228px;
+}
+.copyright span {
+    font-size: 14px;
+    margin-bottom: 23px;
+}
+.footer__layout address {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    color: #fff;
+    position: absolute;
+    top: 152px;
+    left: 228px;
+}
+.footer__layout address dl {
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+.footer__layout address dl dt {
+    float: left;
+    clear: both;
+    font-weight: bold;
+    padding-right: 6px;
+}
+.footer__layout address dl dd {
+    float: left;
+}
+.footer__layout address dl dd a {
+    color: #acb3e4;
+    text-decoration: underline;
+}
+.footer__layout address dl dd a:hover {
+    text-decoration: none;
+}
+.footer__layout address dt.e-mail,
+.footer__layout address dd.e-mail {
+    padding-top: 20px;
+}
+.footer__layout address dd.e-mail > a {
+    color: #fff;
+    text-decoration: none;
+}
+.footer__layout address dd.e-mail > a:hover {
+    text-decoration: underline;
+}
+
+/* --------------- /footer --------------- */

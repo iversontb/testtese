@@ -1,0 +1,40 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/opensans-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Open Sans Light";
+    src: url("../fonts/opensans-light.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans Italic";
+    src: url("../fonts/opensans-italic.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "opensans-semibolditalic";
+    src: url("../fonts/opensans-semibolditalic.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/roboto-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "dinpro-bold";
+    src: url("../fonts/dinpro-bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

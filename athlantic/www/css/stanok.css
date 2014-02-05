@@ -1,0 +1,56 @@
+.site__content{
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.site__content .all{
+    font-size: 17px;
+    color: #448ccb;
+    text-decoration: underline;
+    display: inline-block;
+    padding-top: 45px;
+}
+.site__content h3{
+    font-family: pfcentroslabproblack;
+    font-size: 32px;
+    color: #131313;
+    padding-top: 15px;
+    width: 565px;
+    line-height: 39px;
+}
+.site__content .stanok{
+    padding-top: 26px;
+}
+.product{
+    width: 100%;
+    border-bottom: solid 2px #bc301b;
+    padding-right: 20px;
+    padding-top: 37px;
+}
+.product a{
+    display: inline-block;
+    font-size: 18px;
+    color: #bc301b;
+    padding-left: 17px;
+    padding-right: 21px;
+    line-height: 38px;
+    text-decoration: none;
+}
+.product span{
+    border-bottom: dotted 1px #ebc0ba;
+}
+.product .active{
+    background-color: #bc301b;
+    color: #ffffff;
+}
+.product span:hover{
+    border-bottom: none;
+}
+.product .active span{
+    border-bottom: none;
+}
+.site__content p{
+    font-size: 16px;
+    color: #131313;
+    padding-top: 25px;
+    line-height: 24px;
+}

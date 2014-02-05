@@ -1,0 +1,47 @@
+/* --------------- novosti --------------- */
+.novosti {
+    margin-bottom: 38px;
+    font-family: 'Open Sans', sans-serif;
+}
+.novosti div {
+    border-bottom: 1px solid #f1f4f7;
+    position: relative;
+    font-size: 12px;
+    padding-top: 23px;
+}
+.novosti div:first-child {
+    padding-top: 0;
+}
+.novosti h2 {
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+.novosti time {
+    color: #dc1f26;
+    display: block;
+    margin-bottom: 15px;
+}
+.novosti p {
+    line-height: 20px;
+    margin-bottom: 9px;
+}
+.novosti div > img {
+    float: left;
+    clear: both;
+    margin-right: 21px;
+}
+.novosti a {
+    color: #dc1f26;
+    text-decoration: underline;
+    display: inline-block;
+    margin-bottom: 35px;
+}
+.novosti a:after {
+    content: '\A0\3E';
+    top: 0;
+    right: 0;
+}
+.novosti a:hover {
+    text-decoration: none;
+}
+/* --------------- /novosti --------------- */

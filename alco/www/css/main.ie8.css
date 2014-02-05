@@ -1,0 +1,9 @@
+/* css for ltie8 */
+.menu {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#442e0e', endColorstr='#714f1c',GradientType=0 ); /* IE6-8 */
+}
+.footer__search-text,
+.delivery__address INPUT,
+.main-cart__count INPUT {
+    line-height: 24px;
+}

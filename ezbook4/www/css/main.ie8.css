@@ -1,0 +1,30 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "myriadpro-cond";
+    src: url("../fonts/myriadpro-cond.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "767659";
+    src: url("../fonts/767659.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "myriadpro-regular";
+    src: url("../fonts/myriadpro-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "myriadpro-bold";
+    src: url("../fonts/myriadpro-bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+.ezBookHead{
+    font-size: 17px;
+}
+/* --------------- /fonts --------------- */

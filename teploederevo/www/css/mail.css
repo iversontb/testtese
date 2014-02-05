@@ -1,0 +1,84 @@
+.wrap_inside {
+    width: 100%;
+    float: left;
+    padding-top: 29px;
+}
+.left_aside {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+}
+.left_aside ol li {
+    margin-bottom: 21px;
+}
+.left_aside ol li a:hover {
+    text-decoration: none;
+}
+.left_aside ol li a {
+    color: #69b295;
+    font-size: 18px;
+    text-decoration: underline;
+    font-family: Times New Roman;
+}
+.left_aside ol li.active a {
+    text-decoration: none;
+    cursor: default;
+}
+.inside_content {
+    width: 700px;
+    padding-left: 124px;
+    color: #9f683f;
+    display: inline-block;
+    vertical-align: top;
+}
+h1 {
+    color: #75b79c;
+    font-size: 20px;
+    font-family: Times New Roman;
+    text-align: center;
+    font-weight: normal;
+}
+.inside_content h2 {
+    font-size: 14px;
+    font-weight: normal;
+    padding: 4px 0 17px 0;
+}
+.inside_content p {
+    font-size: 12px;
+}
+.mail_form {
+    padding-top: 36px;
+}
+.mail_form .wrap_input {
+    margin-bottom: 33px;
+}
+.mail_form input {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.mail_form label {
+    font-size: 14px;
+    font-weight: normal;
+    display: inline-block;
+    vertical-align: top;
+}
+.mail_form label.active {
+    color: #69b295;
+}
+.mail_form p {
+    line-height: 20px;
+    padding: 10px 0 0 23px;
+}
+form .save:hover {
+    opacity: 0.8;
+}
+form .save {
+    color: #fff;
+    width: 200px;
+    height: 41px;
+    border: none;
+    font-size: 14px;
+    background: #69b295;
+    margin: 4px 0 20px 0;
+}

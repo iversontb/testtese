@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+
+    <link rel="stylesheet" type="text/css" href="css/coin-slider-styles.css" />
+
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.7.2.custom.css">
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!--<script src="js/jquery-1.8.3.min.js"></script>-->
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+
+    <script type="text/javascript" src="js/coin-slider.min.js"></script>
+    <!--<script type="text/javascript" src="js/jquery.ui-slider.js"></script>-->
+    <script src="js/jquery.main.js"></script>
+
+
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+<!-- site -->
+<div class="site inside">
+<div class="site__layout">
+<!-- header -->
+<header class="header">
+
+    <!-- logo -->
+    <h1 class="logo"><a href="index.html" title="main"> <img src="img/logo.png" height="85" width="334" alt="Первый туристический бренд-шоп "></a></h1>
+    <!-- /logo -->
+
+    <!-- searchForm -->
+    <form class="searchForm" method="post" action="#">
+        <div class="inputWrap">
+            <input type="text" placeholder="Поиск тура">
+        </div>
+        <dl>
+            <dt>Например:</dt>
+            <dd><a href="#">Таиланд</a></dd>
+        </dl>
+    </form>
+    <!-- /searchForm -->
+
+    <div class="address">
+        <address>
+            <p><span>+7  812</span>777-0-999</p>
+            <a href="#">Заказать звонок</a>
+        </address>
+    </div>
+
+    <!-- main-menu -->
+    <nav class="main-menu">
+        <ol class="main-menu__layout">
+            <li class="main-menu__item"><a class="main-menu__lnk" href="#">Туры</a></li>
+            <li class="main-menu__item"><a class="main-menu__lnk" href="#">Яхты</a></li>
+            <li class="main-menu__item"><a class="main-menu__lnk" href="#">Отели</a></li>
+            <li class="main-menu__item"><a class="main-menu__lnk" href="#">Элитные предложения</a></li>
+            <li class="main-menu__item"><a class="main-menu__lnk" href="#">Чудеса света</a></li>
+            <li class="main-menu__item"><a class="main-menu__lnk" href="#">Страна месяца</a></li>
+            <li class="main-menu__item"><a class="main-menu__lnk" href="#">Бренды</a></li>
+            <li class="main-menu__item special"><a class="main-menu__lnk " href="#">Отобранные</a></li>
+        </ol>
+    </nav>
+    <!-- /main-menu -->
+
+</header>
+<!-- /header -->
+
+<div class="site__content">
+
+<!-- leftSideBar -->
+<aside class="leftSideBar">
+
+    <!-- choose -->
+    <form class="choose" method="post" action="#">
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label class="widthLabel">Откуда</label>
+            <div class="selectWrap">
+                <select>
+                    <option>Санкт-Петербург</option>
+                    <option>Санкт-Петербург</option>
+                    <option>Санкт-Петербург</option>
+                    <option>Санкт-Петербург</option>
+                </select>
+            </div>
+        </div>
+        <!-- /lineContainer -->
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label class="widthLabel">Куда</label>
+            <div class="selectWrap">
+                <select>
+                    <option>Италия</option>
+                    <option>Италия</option>
+                    <option>Италия</option>
+                    <option>Италия</option>
+                    <option>Италия</option>
+                </select>
+            </div>
+            <a href="#" class="helpSelect">помочь выбрать отдых</a>
+        </div>
+        <!-- /lineContainer -->
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label class="widthLabel">Когда</label>
+            <div class="blockWrap">
+                <div class="inputWrap">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="blockWrap">
+                <div class="selectWrap plusMinus">
+                    <select class="littleSelect">
+                        <option>± 2 дня</option>
+                        <option>± 2 дня</option>
+                        <option>± 2 дня</option>
+                        <option>± 2 дня</option>
+                        <option>± 2 дня</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <!-- /lineContainer -->
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label class="littleLabel">от</label>
+            <div class="blockWrap">
+                <div class="selectWrap">
+                    <select class="littleSelect">
+                        <option>7 дней</option>
+                        <option>7 дней</option>
+                        <option>7 дней</option>
+                        <option>7 дней</option>
+                        <option>7 дней</option>
+                    </select>
+                </div>
+            </div>
+            <label class="littleLabel">до</label>
+            <div class="blockWrap">
+                <div class="selectWrap">
+                    <select class="littleSelect">
+                        <option>17 дней</option>
+                        <option>17 дней</option>
+                        <option>17 дней</option>
+                        <option>17 дней</option>
+                        <option>17 дней</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        <!-- /lineContainer -->
+
+        <!-- lineContainer -->
+        <div class="lineContainer">
+            <label class="priceLabel">Цена до</label>
+            <div class="blockWrap">
+                <div class="inputWrap">
+                    <input type="text" id="minCost" value="0"/>
+                </div>
+            </div>
+            <span>P</span>
+
+            <input type="text" id="maxCost" value="1000" hidden=""/>
+            <div id="slider3"></div>
+
+        </div>
+        <!-- /lineContainer -->
+
+        <div class="buttonWrap">
+            <input type="submit" value="Подобрать" class="getBut">
+        </div>
+
+    </form>
+    <!-- /choose -->
+
+</aside>
+<!-- /leftSideBar -->
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+    <h2 class="topicType">Туры в Италию</h2>
+
+    <!-- tableWrap -->
+    <div class="">
+        <table>
+            <thead>
+            <tr>
+                <th>Вылет</th>
+                <th>Прилёт</th>
+                <th>Отель</th>
+                <th class="rightAligne">Длительность</th>
+                <th class="rightAligne">Стоимость</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>05.04</td>
+                <td>13.04</td>
+                <td>
+                    <a href="#">Mirador</a>
+                    <ul>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                    </ul>
+                </td>
+                <td class="rightAligne">8 дней, 7 ночей</td>
+                <td class="rightAligne">16 484 руб.</td>
+            </tr>
+            <tr>
+                <td>05.04</td>
+                <td>13.04</td>
+                <td>
+                    <a href="#">Mirador</a>
+                    <ul>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                    </ul>
+                </td>
+                <td class="rightAligne">8 дней, 7 ночей</td>
+                <td class="rightAligne">16 484 руб.</td>
+            </tr>
+            <tr>
+                <td>05.04</td>
+                <td>13.04</td>
+                <td>
+                    <a href="#">Mirador</a>
+                    <ul>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                    </ul>
+                </td>
+                <td class="rightAligne">8 дней, 7 ночей</td>
+                <td class="rightAligne">16 484 руб.</td>
+            </tr>
+            <tr>
+                <td>05.04</td>
+                <td>13.04</td>
+                <td>
+                    <a href="#">Mirador</a>
+                    <ul>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                    </ul>
+                </td>
+                <td class="rightAligne">8 дней, 7 ночей</td>
+                <td class="rightAligne">16 484 руб.</td>
+            </tr>
+            <tr>
+                <td>05.04</td>
+                <td>13.04</td>
+                <td>
+                    <a href="#">Mirador</a>
+                    <ul>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                    </ul>
+                </td>
+                <td class="rightAligne">8 дней, 7 ночей</td>
+                <td class="rightAligne">16 484 руб.</td>
+            </tr>
+            <tr>
+                <td>05.04</td>
+                <td>13.04</td>
+                <td>
+                    <a href="#">Mirador</a>
+                    <ul>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                    </ul>
+                </td>
+                <td class="rightAligne">8 дней, 7 ночей</td>
+                <td class="rightAligne">16 484 руб.</td>
+            </tr>
+            <tr>
+                <td>05.04</td>
+                <td>13.04</td>
+                <td>
+                    <a href="#">Mirador</a>
+                    <ul>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                    </ul>
+                </td>
+                <td class="rightAligne">8 дней, 7 ночей</td>
+                <td class="rightAligne">16 484 руб.</td>
+            </tr>
+            <tr>
+                <td>05.04</td>
+                <td>13.04</td>
+                <td>
+                    <a href="#">Mirador</a>
+                    <ul>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                    </ul>
+                </td>
+                <td class="rightAligne">8 дней, 7 ночей</td>
+                <td class="rightAligne">16 484 руб.</td>
+            </tr>
+            <tr>
+                <td>05.04</td>
+                <td>13.04</td>
+                <td>
+                    <a href="#">Mirador</a>
+                    <ul>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                    </ul>
+                </td>
+                <td class="rightAligne">8 дней, 7 ночей</td>
+                <td class="rightAligne">16 484 руб.</td>
+            </tr>
+            <tr>
+                <td>05.04</td>
+                <td>13.04</td>
+                <td>
+                    <a href="#">Mirador</a>
+                    <ul>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                        <li class="star"><span>star</span></li>
+                    </ul>
+                </td>
+                <td class="rightAligne">8 дней, 7 ночей</td>
+                <td class="rightAligne">16 484 руб.</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- /tableWrap -->
+
+    <div class="paginatorWrap">
+        <ul class="nextPrev">
+            <li><a href="#">← Предыдущая</a></li>
+            <li><a href="#">Следующая →</a></li>
+        </ul>
+        <ul class="paginator">
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">8</a></li>
+            <li><a href="#">9</a></li>
+            <li><a href="#">10</a></li>
+        </ul>
+    </div>
+
+</div>
+<!-- /content-wrap -->
+
+</div>
+</div>
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <!-- footerNav -->
+        <nav class="footerNav">
+            <ol>
+                <li><a href="#">Агенствам</a></li>
+                <li><a href="#">Договор</a></li>
+                <li><a href="#">Сотрудничество</a></li>
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Реклама</a></li>
+                <li><a href="#">Связь</a></li>
+            </ol>
+        </nav>
+        <!-- /footerNav -->
+
+        <!-- footerAddres -->
+        <div class="footerAddres">
+            <address>
+                <dl>
+                    <dt>Адрес:</dt>
+                    <dt><a href="#">ул. Маяковского 2 и Невский пр. 94  </a></dt>
+                </dl>
+                <dl>
+                    <dt>Телефон: </dt>
+                    <dt>+7 (812) 327-32-20;</dt>
+                </dl>
+                <dl>
+                    <dt>Почта:</dt>
+                    <dt><a href="mailto:mail@starsoftravel.ru">mail@starsoftravel.ru.</a></dt>
+                </dl>
+                <p>Работаем с 7 утра до 22 вечера.</p>
+            </address>
+        </div>
+        <!-- /footerAddres -->
+
+        <p class="copy">2013 © «Звёзды путешествий» —
+            туристический бренд-шоп в России</p>
+
+        <ul class="social">
+            <li><a href="#" class="facebook" title="facebook">facebook</a></li>
+            <li><a href="#" class="twitter" title="twitter">twitter</a></li>
+            <li><a href="#" class="vkontakte" title="vkontakte">vkontakte</a></li>
+        </ul>
+
+        <dl class="creaters">
+            <dt>Создание сайта</dt>
+            <dd><a href="#" class="saitpria">saitoria</a> </dd>
+        </dl>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

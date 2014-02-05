@@ -1,0 +1,57 @@
+/* warranty */
+.warranty{
+    position: relative;
+    top: 43px;
+    left: 165px;
+    padding-bottom: 86px;
+    width: 626px;
+    height: 627px;
+}
+.warranty.active {
+    cursor: pointer;
+}
+.warranty ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.warranty ul > .after {
+    content: '';
+    z-index: 1;
+    background: url("../img/warranty-circle.png");
+    width: 364px;
+    height: 363px;
+    position: absolute;
+    top: 132px;
+    left: 132px;
+    -webkit-transition: -webkit-transform .3s ease-in;
+    -moz-transition: -moz-transform .3s ease-in;
+    -o-transition: -o-transform .3s ease-in;
+    -ms-transition: -ms-transform .3s ease-in;
+    transition: transform .3s ease-in;
+}
+.warranty li {
+    position: absolute;
+
+    width: 250px;
+    height: 222px;
+    z-index: 2;
+    overflow: hidden;
+    display: none;
+    top: 213px;
+    left: 201px;
+}
+.warranty li h2{
+    font-size: 22px;
+    color: #ff7900;
+    line-height: 26px;
+    font-weight: normal;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 11px;
+}
+.warranty li p {
+    line-height: 20px;
+}
+/* /warranty */

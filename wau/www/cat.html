@@ -1,0 +1,900 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <title>title</title>
+    <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,600&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/select.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery.jcarousel.min.js"></script>
+    <script src="js/cat.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+    <!-- site -->
+    <div class="site inner_site">
+
+        <div class="site__layout">
+
+            <!-- header -->
+            <header class="header">
+
+                <!-- header_inner -->
+                <div class="header_inner">
+
+                    <!-- wrap_logo -->
+                    <div class="wrap_logo">
+                        <a href="#" title="На главную" class="logo"><img src="img/logo.png" width="98" height="48" alt=""></a>
+                    </div>
+                    <!-- /wrap_logo -->
+
+                    <!-- logo_title -->
+                    <span class="logo_title">ДИСКОНТНЫЙ СЕРВИС</span>
+                    <!-- /logo_title -->
+
+                    <!-- registration -->
+                    <form class="registration" action="#">
+                        <input type="text" placeholder="Логин"/>
+                        <input type="password" placeholder="Пароль"/>
+                        <input type="submit" value="Войти"/>
+                        <a href="#">Регистрация</a>
+
+                        <!-- networks -->
+                        <div class="networks">
+                            <a class="vk" title="Vkontakte" href="#">Vkontakte</a>
+                            <a class="fb" title="Facebook" href="#">Facebook</a>
+                            <a class="ok" title="Одноклассники" href="#">Одноклассники</a>
+                        </div>
+                        <!-- /networks -->
+
+                    </form>
+                    <!-- /registration -->
+                </div>
+                <!-- /header_inner -->
+
+                <!-- wrap_menu -->
+                <div class="wrap_menu">
+
+                    <!-- main-menu -->
+                    <nav class="main-menu">
+                        <a href="#">Выбрать сертификат</a>
+                        <a href="#">Погасить Сертификат</a>
+                        <a href="#">Как работает сервис</a>
+                        <a href="#">Каталог  партнеров</a>
+                        <a href="#">Контакты</a>
+                        <a class="drop_down" href="#">Помощь</a>
+                    </nav>
+                    <!-- /main-menu -->
+
+                </div>
+                <!-- /wrap_menu -->
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- wrap_filter -->
+                    <div class="wrap_filter">
+
+                        <!-- filter -->
+                        <div class="filter">
+
+                            <!-- wp_money -->
+                            <div class="wp_money">
+                                <label>WP =</label>
+                                <select name="" id="">
+                                    <option value="">31 руб.</option>
+                                    <option value="">0 y.e. </option>
+                                </select>
+                            </div>
+                            <!-- wp_money -->
+
+                            <!-- bread_crumbs -->
+                            <ol class="bread_crumbs">
+                                <li><a href="#">Главная</a></li>
+                                <li><span>Выбор сертификата</span></li>
+                            </ol>
+                            <!-- /bread_crumbs -->
+
+                            <!-- form_filter -->
+                            <form class="form_filter" action="#">
+
+                                <dl>
+                                    <dt>Показать: </dt>
+                                    <dd class="active">сначала дешевые</dd>
+                                    <dd> сначала дорогие</dd>
+                                </dl>
+
+                                <label><input type="checkbox" checked/>Дисконт</label>
+
+                                <select>
+                                    <option value="">Выберите категорию</option>
+                                    <option value="">Путешествия</option>
+                                    <option value="">Электроника</option>
+                                    <option value="">Для детей</option>
+                                </select>
+
+                                <button class="clear_filter">сбросить фильтр</button>
+
+                                <select>
+                                    <option value="">Выберите страну</option>
+                                    <option value="">Путешествия</option>
+                                </select>
+
+                                <select>
+                                    <option value="Выберите город">Выберите город</option>
+                                    <option value="">Путешествия</option>
+                                </select>
+
+                            </form>
+                            <!-- /form_filter -->
+
+                        </div>
+                        <!-- /filter -->
+
+                    </div>
+                    <!-- /wrap_filter -->
+
+                    <!-- cat_brand -->
+                    <div class="cat_brand">
+                        <ul id="mycarousel3" class="new_inner__list jcarousel-skin">
+                            <li>
+                                <a href="#"><img src="img/br1.png" width="145" height="90" alt=""/></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/br2.png" width="159" height="90" alt=""/></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/br3.png" width="193" height="90" alt=""/></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/br4.png" width="121" height="90" alt=""/></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/br5.png" width="147" height="90" alt=""/></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="img/br6.png" width="192" height="90" alt=""/></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /cat_brand -->
+
+                    <!-- wrap_product_list -->
+                    <div class="wrap_product_list">
+
+                        <!-- product_list -->
+                        <div class="product_list">
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer offer_discount">
+
+                                <h3>Электронный сертификат</h3>
+                                <a class="wrap_img" href="#"><img width="226" height="134" alt="" src="pic/pic1.png"></a>
+                                <dl class="town"><dt>Город:</dt><dd>Москва</dd></dl>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_premium -->
+                                <div class="wrap_premium">
+
+                                    <!-- open_price -->
+                                    <div class="open_price"><a href="#">Открыть цену</a></div>
+                                    <!-- /open_price -->
+
+                                    <!-- red_block -->
+                                    <a href="#" class="red_block">
+                                        за <span>3,00 WP</span>
+                                    </a>
+                                    <!-- /red_block -->
+
+                                    <!-- blue_block -->
+                                    <a href="#" class="blue_block">
+                                        за <span>1,00 WP</span>
+                                    </a>
+                                    <!-- /blue_block -->
+
+                                    <a class="prem_link" href="#">Как стать premium?</a>
+                                </div>
+                                <!-- /wrap_premium -->
+
+                                <!-- bottom_info -->
+                                <div class="bottom_info">У Вас будет 10 сек.,
+                                    чтобы купить этот лот</div>
+                                <!-- /bottom_info -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+                                <a class="wrap_img" href="#"><img width="226" height="134" alt="" src="pic/pic1.png"></a>
+                                <dl class="town"><dt>Город:</dt><dd>Москва</dd></dl>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>???</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_premium -->
+                                <div class="wrap_premium">
+
+                                    <!-- open_price -->
+                                    <div class="open_price"><a href="#">Открыть цену</a></div>
+                                    <!-- /open_price -->
+
+                                    <!-- red_block -->
+                                    <a href="#" class="red_block">
+                                        за <span>3,00 WP</span>
+                                    </a>
+                                    <!-- /red_block -->
+
+                                    <!-- blue_block -->
+                                    <a href="#" class="blue_block">
+                                        за <span>1,00 WP</span>
+                                    </a>
+                                    <!-- /blue_block -->
+
+                                    <a class="prem_link" href="#">Как стать premium?</a>
+                                </div>
+                                <!-- /wrap_premium -->
+
+                                <!-- bottom_info -->
+                                <div class="bottom_info">У Вас будет 10 сек.,
+                                    чтобы купить этот лот</div>
+                                <!-- /bottom_info -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+                                <a class="wrap_img" href="#"><img width="226" height="134" alt="" src="pic/pic1.png"></a>
+                                <dl class="town"><dt>Город:</dt><dd>Москва</dd></dl>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>???</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_premium -->
+                                <div class="wrap_premium">
+
+                                    <!-- open_price -->
+                                    <div class="open_price"><a href="#">Открыть цену</a></div>
+                                    <!-- /open_price -->
+
+                                    <!-- red_block -->
+                                    <a href="#" class="red_block">
+                                        за <span>3,00 WP</span>
+                                    </a>
+                                    <!-- /red_block -->
+
+                                    <!-- blue_block -->
+                                    <a href="#" class="blue_block">
+                                        за <span>1,00 WP</span>
+                                    </a>
+                                    <!-- /blue_block -->
+
+                                    <a class="prem_link" href="#">Как стать premium?</a>
+                                </div>
+                                <!-- /wrap_premium -->
+
+                                <!-- bottom_info -->
+                                <div class="bottom_info">У Вас будет 10 сек.,
+                                    чтобы купить этот лот</div>
+                                <!-- /bottom_info -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+                                <a class="wrap_img" href="#"><img width="226" height="134" alt="" src="pic/pic1.png"></a>
+                                <dl class="town"><dt>Город:</dt><dd>Москва</dd></dl>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>???</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_premium -->
+                                <div class="wrap_premium">
+
+                                    <!-- open_price -->
+                                    <div class="open_price"><a href="#">Открыть цену</a></div>
+                                    <!-- /open_price -->
+
+                                    <!-- red_block -->
+                                    <a href="#" class="red_block">
+                                        за <span>3,00 WP</span>
+                                    </a>
+                                    <!-- /red_block -->
+
+                                    <!-- blue_block -->
+                                    <a href="#" class="blue_block">
+                                        за <span>1,00 WP</span>
+                                    </a>
+                                    <!-- /blue_block -->
+
+                                    <a class="prem_link" href="#">Как стать premium?</a>
+                                </div>
+                                <!-- /wrap_premium -->
+
+                                <!-- bottom_info -->
+                                <div class="bottom_info">У Вас будет 10 сек.,
+                                    чтобы купить этот лот</div>
+                                <!-- /bottom_info -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+                                <a class="wrap_img" href="#"><img width="226" height="134" alt="" src="pic/pic1.png"></a>
+                                <dl class="town"><dt>Город:</dt><dd>Москва</dd></dl>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>???</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_premium -->
+                                <div class="wrap_premium">
+
+                                    <!-- open_price -->
+                                    <div class="open_price"><a href="#">Открыть цену</a></div>
+                                    <!-- /open_price -->
+
+                                    <!-- red_block -->
+                                    <a href="#" class="red_block">
+                                        за <span>3,00 WP</span>
+                                    </a>
+                                    <!-- /red_block -->
+
+                                    <!-- blue_block -->
+                                    <a href="#" class="blue_block">
+                                        за <span>1,00 WP</span>
+                                    </a>
+                                    <!-- /blue_block -->
+
+                                    <a class="prem_link" href="#">Как стать premium?</a>
+                                </div>
+                                <!-- /wrap_premium -->
+
+                                <!-- bottom_info -->
+                                <div class="bottom_info">У Вас будет 10 сек.,
+                                    чтобы купить этот лот</div>
+                                <!-- /bottom_info -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+                                <a class="wrap_img" href="#"><img width="226" height="134" alt="" src="pic/pic1.png"></a>
+                                <dl class="town"><dt>Город:</dt><dd>Москва</dd></dl>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>???</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_premium -->
+                                <div class="wrap_premium">
+
+                                    <!-- open_price -->
+                                    <div class="open_price"><a href="#">Открыть цену</a></div>
+                                    <!-- /open_price -->
+
+                                    <!-- red_block -->
+                                    <a href="#" class="red_block">
+                                        за <span>3,00 WP</span>
+                                    </a>
+                                    <!-- /red_block -->
+
+                                    <!-- blue_block -->
+                                    <a href="#" class="blue_block">
+                                        за <span>1,00 WP</span>
+                                    </a>
+                                    <!-- /blue_block -->
+
+                                    <a class="prem_link" href="#">Как стать premium?</a>
+                                </div>
+                                <!-- /wrap_premium -->
+
+                                <!-- bottom_info -->
+                                <div class="bottom_info">У Вас будет 10 сек.,
+                                    чтобы купить этот лот</div>
+                                <!-- /bottom_info -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+                                <a class="wrap_img" href="#"><img width="226" height="134" alt="" src="pic/pic1.png"></a>
+                                <dl class="town"><dt>Город:</dt><dd>Москва</dd></dl>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>???</span>
+                                    </div>
+                                    <!-- /price -->
+
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_premium -->
+                                <div class="wrap_premium">
+
+                                    <!-- open_price -->
+                                    <div class="open_price"><a href="#">Открыть цену</a></div>
+                                    <!-- /open_price -->
+
+                                    <!-- red_block -->
+                                    <a href="#" class="red_block">
+                                        за <span>3,00 WP</span>
+                                    </a>
+                                    <!-- /red_block -->
+
+                                    <!-- blue_block -->
+                                    <a href="#" class="blue_block">
+                                        за <span>1,00 WP</span>
+                                    </a>
+                                    <!-- /blue_block -->
+
+                                    <a class="prem_link" href="#">Как стать premium?</a>
+                                </div>
+                                <!-- /wrap_premium -->
+
+                                <!-- bottom_info -->
+                                <div class="bottom_info">У Вас будет 10 сек.,
+                                    чтобы купить этот лот</div>
+                                <!-- /bottom_info -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+                                <a class="wrap_img" href="#"><img width="226" height="134" alt="" src="pic/pic1.png"></a>
+                                <dl class="town"><dt>Город:</dt><dd>Москва</dd></dl>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>???</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_premium -->
+                                <div class="wrap_premium">
+
+                                    <!-- open_price -->
+                                    <div class="open_price"><a href="#">Открыть цену</a></div>
+                                    <!-- /open_price -->
+
+                                    <!-- red_block -->
+                                    <a href="#" class="red_block">
+                                        за <span>3,00 WP</span>
+                                    </a>
+                                    <!-- /red_block -->
+
+                                    <!-- blue_block -->
+                                    <a href="#" class="blue_block">
+                                        за <span>1,00 WP</span>
+                                    </a>
+                                    <!-- /blue_block -->
+
+                                    <a class="prem_link" href="#">Как стать premium?</a>
+                                </div>
+                                <!-- /wrap_premium -->
+
+                                <!-- bottom_info -->
+                                <div class="bottom_info">У Вас будет 10 сек.,
+                                    чтобы купить этот лот</div>
+                                <!-- /bottom_info -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                        </div>
+                        <!-- /product_list -->
+
+                        <!-- more_offers -->
+                        <div class="more_offers">
+                            <span>Показать больше предложений</span>
+                        </div>
+                        <!-- /more_offers -->
+
+                    </div>
+                    <!-- /wrap_product_list -->
+
+                    <!-- wrap_completed_transaction -->
+                    <div class="wrap_completed_transaction">
+
+                        <!-- completed_transaction -->
+                        <div class="completed_transaction">
+                            <a class="link_more" href="#">Посмотреть все</a>
+                            <h2>ЗАВЕРШЕННЫЕ СДЕЛКИ </h2>
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_price -->
+                                <div class="wrap_bought">
+                                    <dl><dt>Купил:</dt><dd>Никита Путинцев</dd></dl>
+                                    <i>Поздравляем со скидкой!</i>
+                                    <a href="#">История понижения</a>
+                                </div>
+                                <!-- wrap_price -->
+
+                                <!-- discount -->
+                                <div class="discount">
+                                    Экономия
+                                    <span>8,5%</span>
+                                </div>
+                                <!-- /discount -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_price -->
+                                <div class="wrap_bought">
+                                    <dl><dt>Купил:</dt><dd>Никита Путинцев</dd></dl>
+                                    <i>Поздравляем со скидкой!</i>
+                                    <a href="#">История понижения</a>
+                                </div>
+                                <!-- wrap_price -->
+
+                                <!-- discount -->
+                                <div class="discount">
+                                    Экономия
+                                    <span>8,5%</span>
+                                </div>
+                                <!-- /discount -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_price -->
+                                <div class="wrap_bought">
+                                    <dl><dt>Купил:</dt><dd>Никита Путинцев</dd></dl>
+                                    <i>Поздравляем со скидкой!</i>
+                                    <a href="#">История понижения</a>
+                                </div>
+                                <!-- wrap_price -->
+
+                                <!-- discount -->
+                                <div class="discount">
+                                    Экономия
+                                    <span>8,5%</span>
+                                </div>
+                                <!-- /discount -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                            <!-- wrap_offer -->
+                            <div class="wrap_offer">
+
+                                <h3>Электронный сертификат</h3>
+
+                                <!-- wrap_price -->
+                                <div class="wrap_price">
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Номинал  WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                    <!-- price -->
+                                    <div class="price">
+                                        <span>Продано WP</span>
+                                        <span>100 000,00</span>
+                                    </div>
+                                    <!-- /price -->
+
+                                </div>
+                                <!-- /wrap_price -->
+
+                                <!-- wrap_price -->
+                                <div class="wrap_bought">
+                                    <dl><dt>Купил:</dt><dd>Никита Путинцев</dd></dl>
+                                    <i>Поздравляем со скидкой!</i>
+                                    <a href="#">История понижения</a>
+                                </div>
+                                <!-- wrap_price -->
+
+                                <!-- discount -->
+                                <div class="discount">
+                                    Экономия
+                                    <span>8,5%</span>
+                                </div>
+                                <!-- /discount -->
+
+                            </div>
+                            <!-- /wrap_offer -->
+
+                        </div>
+                        <!-- /completed_transaction -->
+
+                    </div>
+                    <!-- /wrap_completed_transaction -->
+
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- wrap_footer_menu -->
+        <div class="wrap_footer_menu">
+            <div class="footer_menu">
+                <a href="#">Выбрать сертификат</a>
+                <a href="#">Погасить сертификат</a>
+                <a href="#">Как работает сервис</a>
+                <a href="#">Каталог партнеров</a>
+                <a href="#">Контакты</a>
+
+                <!-- footer_project -->
+                <dl class="footer_project">
+                    <dt>Наши проекты:</dt>
+                    <dd><a href="#"><img title="wautour" src="img/wautour.png" width="58" height="25" alt=""/></a></dd>
+                    <dd><a href="#"><img title="waucard" src="img/waucard.png" width="58" height="25" alt=""/></a></dd>
+                </dl>
+                <!-- /footer_project -->
+
+            </div>
+        </div>
+        <!-- /wrap_footer_menu -->
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <!-- footer_text -->
+            <div class="footer_text">&copy; 2013 WAU | All rights reserved | При перепечатке материалов ссылка на источник обязательна.</div>
+            <!-- footer_text -->
+
+            <!-- created -->
+            <a class="created" title="siteoria" href="#"><img src="img/siteoria.png" width="104" height="47" alt=""/></a>
+            <!-- /created -->
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

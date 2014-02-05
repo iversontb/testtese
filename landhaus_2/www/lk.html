@@ -1,0 +1,623 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>text</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=cyrillic-ext,cyrillic,latin' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/lk.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/jquery.time-range.js"></script>
+    <script src="js/jquery.sort.js"></script>
+    <script src="js/jquery.hammer.min.js"></script>
+    <script src="js/jquery.ares.slider.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+
+    <!--[if  IE 9]>
+        <link rel="stylesheet" href="css/main.ie9.css" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+
+        <!-- site_wrap -->
+        <div class="site_wrap">
+
+            <!-- baner_top -->
+            <div class="baner_top">
+                <img src="pic/pic1.jpg" width="1043" height="50" alt="">
+            </div>
+            <!-- /baner_top -->
+
+            <!-- header -->
+            <header class="header">
+
+                <!-- head_top -->
+                <div class="head_top">
+
+                    <!-- center_block -->
+                    <div class="center_block">
+
+                        <!-- seatch_form -->
+                        <form class="seatch_form">
+                            <input type="search" placeholder="Поиск по сайту">
+                            <input type="submit" class="search_but">
+                        </form>
+                        <!-- /seatch_form -->
+
+                        <!-- head_top__menu -->
+                        <div class="head_top__menu">
+                            <a class="add_ad" href="#">Добавить объявление бесплатно</a>
+                            <span class="enter_but"><a href="#">Войти</a> или <a href="#">зарегистрироваться</a></span>
+                            <a class="favorit" href="#">Избранное</a>
+                        </div>
+                        <!-- /head_top__menu -->
+
+                        <!-- aritcles_object -->
+                        <dl class="aritcles_object">
+                            <dt>Статьи</dt>
+                            <dd> 2</dd>
+                            <dt>Объекты </dt>
+                            <dd>13</dd>
+                        </dl>
+                        <!-- /aritcles_object -->
+
+                    </div>
+                    <!-- /center_block -->
+
+                </div>
+                <!-- head_top -->
+
+                <!-- center_block -->
+                <div class="center_block">
+
+                    <!-- logo -->
+                    <h1 class="logo"><img src="img/logo.png" width="207" height="59" alt=""></h1>
+                    <!-- /logo -->
+
+                    <p class="slogan">На нашем сайте в подразделах купить, построить, жить и арендовать доступен поиск недвижимости. </p>
+
+                    <!-- weather -->
+                    <div class="weather">
+                        <img src="pic/pic2.jpg" width="385" height="49" alt="">
+                    </div>
+                    <!-- /weather -->
+
+                    <!-- main_menu -->
+                    <nav class="main_menu">
+                        <a href="#" class="menu_item1"><span>недвижимость</span></a>
+                        <a href="#" class="menu_item2"><span>строительство</span></a>
+                        <a href="#" class="menu_item3"><span>загородная жизнь</span></a>
+                        <a href="#" class="menu_item4"><span>форум</span></a>
+                        <a href="#">Рекламный пункт меню</a>
+                    </nav>
+                    <!-- /main_menu -->
+
+                </div>
+                <!-- /center_block -->
+
+
+
+            </header>
+            <!-- /header -->
+
+            <!-- site__content -->
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- site_wrap -->
+                    <div class="site_wrap">
+
+
+
+
+                        <!-- sort_block -->
+                        <form action="#" class="sort_block">
+
+                            <!-- deal -->
+                            <div class="deal">
+                                <span>Я хочу:</span>
+                                <div class="sort_but type_deal">
+                                    <a href="#">Купить</a>
+                                    <a href="#" class="active">Снять</a>
+                                    <input type="hidden" value="2">
+                                </div>
+                                <div class="sort_but type_place">
+                                    <a href="#" class="house__sort">Дом</a>
+                                    <a href="#" class="flat__sort">Квартиру  </a>
+                                    <a href="#" class="place__sort active">Участок</a>
+                                    <input type="hidden" value="3">
+                                </div>
+                            </div>
+                            <!-- /deal -->
+
+                            <!-- price_sort -->
+                            <div class="price_sort">
+
+
+                                <label>Стоимость от</label>
+                                <input type="text" id="minCost" value="0"  />
+                                <label>до</label>
+                                <input type="text" id="maxCost" value="5000"  />
+                                <span>тыс. руб.
+                                    за сотку</span>
+
+                                <!-- sliderCont -->
+                                <div class="sliderCont">
+                                    <div id="slider"></div>
+                                </div>
+                                <!-- /sliderCont -->
+
+
+
+                            </div>
+                            <!-- /price_sort -->
+
+                            <!-- buts_add -->
+                            <div class="buts_add">
+                                <a href="#">Выбрать район</a>
+                                <a href="#">Удаленность от КАД</a>
+                            </div>
+                            <!-- /buts_add -->
+
+                            <!-- finish_block -->
+                            <div class="finish_block">
+                                <p class="sort_result">Найдено 365 объектов</p>
+                                <input type="submit" class="e_but" value="Начать поиск">
+                                <a href="#">Перейти к расширенному поиску</a>
+                            </div>
+                            <!-- /finish_block -->
+
+                            <!-- show_type -->
+                            <div class="show_type">
+                                <a href="#" class="line_type active"></a>
+                                <a href="#" class="block_type "></a>
+                                <a href="#" class="map_type "></a>
+                            </div>
+                            <!-- show_type -->
+
+                        </form>
+                        <!-- /sort_block -->
+
+
+                        <!-- content_site -->
+                        <div class="content_site">
+
+                            <!-- breadcrumbs -->
+                            <nav class="breadcrumbs">
+                                <a href="#">Главная</a>
+                                <span>Личный кабинет</span>
+                            </nav>
+                            <!-- /breadcrumbs -->
+
+                            <!-- personal__content -->
+                            <div class="personal__content">
+
+                                <div>
+
+                                    <!-- personal__content__block -->
+                                    <div class="personal__content__block">
+                                        <h2 class="personal__title personal__title_profile">Профиль</h2>
+
+                                        <dl class="personal__data">
+                                            <dt>Дата регистрации</dt>
+                                            <dd><time>24 октября 2012</time></dd>
+                                            <dt>Статус</dt>
+                                            <dd>Частное лицо/Агент</dd>
+                                            <dt>Имя</dt>
+                                            <dd>Николай</dd>
+                                            <dt>Фамилия</dt>
+                                            <dd>Аксеновский</dd>
+                                            <dt>Название агентства</dt>
+                                            <dd>ОАО “Кивенаппа”</dd>
+                                        </dl>
+
+                                        <a href="#" class="lk__but lk__but_edit">Редактировать профиль</a>
+
+                                    </div>
+                                    <!-- /personal__content__block -->
+
+                                    <!-- personal__content__block -->
+                                    <div class="personal__content__block">
+                                        <a href="#" class="personal__content_show-all">Смотреть все</a>
+                                        <h2 class="personal__title personal__title_favorite">Избранное</h2>
+
+                                        <ul class="favorit__list">
+                                            <li><a href="#" class="favorit__list__objects">10 <span>объектов</span></a> </li>
+                                            <li><a href="#" class="favorit__list__articles">3 <span>статьи</span></a> </li>
+                                        </ul>
+
+
+                                    </div>
+                                    <!-- /personal__content__block -->
+
+                                    <!-- personal__content__block -->
+                                    <div class="personal__content__block">
+                                        <h2 class="personal__title personal__title_looked">Просмотренные объявления</h2>
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+
+                                        <a href="#" class="personal__content_show-all">Смотреть все</a>
+
+
+                                    </div>
+                                    <!-- /personal__content__block -->
+
+                                </div>
+
+                                <div>
+
+                                    <!-- personal__content__block -->
+                                    <div class="personal__content__block">
+
+                                        <a href="#" class="personal__content_show-all">Смотреть все</a>
+
+                                        <h2 class="personal__title personal__title_my-message">Мои объявления</h2>
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Дом, Лодельнопольский район, 265 000 т.р.</a>
+                                            <dl>
+                                                <dt>Опубликовано</dt>
+                                                <dd><time>13 мая 2012 18:59</time></dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+                                        <a href="#" class="lk__but lk__but_edd">Добавить</a>
+                                        <a href="#" class="lk__but lk__but_download">Загрузить пакетом</a>
+
+
+                                    </div>
+                                    <!-- /personal__content__block -->
+
+                                    <!-- personal__content__block -->
+                                    <div class="personal__content__block">
+
+                                        <a href="#" class="personal__content_show-all">Смотреть все</a>
+
+                                        <h2 class="personal__title personal__title_order-table">Стол заказов</h2>
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Заявка № 32221112</a>
+                                            <dl>
+                                                <dt><time>13 мая 2012 18:59</time></dt>
+                                                <dd><a href="#">Хочу купить земельный участок</a> </dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+                                        <!-- personal__notice -->
+                                        <div class="personal__notice">
+                                            <a href="#">Заявка № 32221112</a>
+                                            <dl>
+                                                <dt><time>13 мая 2012 18:59</time></dt>
+                                                <dd><a href="#">Хочу купить земельный участок</a> </dd>
+                                            </dl>
+                                        </div>
+                                        <!-- personal__notice -->
+
+
+
+
+                                    </div>
+                                    <!-- /personal__content__block -->
+
+
+                                    <!-- personal__content__block -->
+                                    <div class="personal__content__block">
+
+                                        <a href="#" class="personal__content_show-all">Смотреть все</a>
+
+                                        <h2 class="personal__title personal__title_note">Блокнот</h2>
+
+                                        <!-- personal__note-block -->
+                                        <div class="personal__note-block">
+                                            <time>17 мая 2013</time>
+                                            <div class="personla__note-time">
+                                                17:50
+                                            </div>
+                                            <a href="#">Фьюжн полифигурно трансформирует дискретный кризис жанра, благодаря широким мелодическим скачкам...</a>
+                                        </div>
+                                        <!-- /personal__note-block -->
+
+                                        <!-- personal__note-block -->
+                                        <div class="personal__note-block">
+                                            <div class="personla__note-time">
+                                                17:50
+                                            </div>
+                                            <a href="#">Фьюжн полифигурно трансформирует дискретный кризис жанра, благодаря широким мелодическим скачкам...</a>
+                                        </div>
+                                        <!-- /personal__note-block -->
+
+                                        <a href="#" class="lk__but lk__but_edd lk__but_edd lk__but_create">Создать заметку</a>
+
+                                    </div>
+                                    <!-- /personal__content__block -->
+
+                                    <!-- personal__content__block -->
+                                    <div class="personal__content__block">
+
+
+                                        <h2 class="personal__title personal__title_help">Помощь специалиста</h2>
+
+                                        <!-- personal__helper -->
+                                        <form class="personal__helper" action="#">
+                                            <p>Если у вас возникли вопросы относительно пользования сайтом в целом или Личным Кабинетом, то вы можете обратиться к нашим специалистам с помощью формы ниже. Ответ будет выслан на ваш email указанный при регистрации на сайте</p>
+                                            <textarea></textarea>
+                                            <a href="#" class="lk__but lk__but_edd lk__but_edd lk__but_attach">Прикрепить файл</a>
+                                            <input type="submit" value="Отправить" class="e_but">
+                                        </form>
+                                        <!-- personal__helper -->
+
+                                    </div>
+                                    <!-- /personal__content__block -->
+
+
+                                </div>
+
+
+                            </div>
+                            <!-- /personal__content -->
+
+                        </div>
+                        <!-- content_site -->
+
+                        <!-- site__right_aside -->
+                        <div class="site__right_aside">
+
+                            <!-- personal__menu -->
+                            <div class="personal__menu">
+                                <a href="#" class="active">Профиль</a>
+                                <a href="#">Мои объявления</a>
+                                <a href="#">Стол заказов</a>
+                                <a href="#">Избранное</a>
+                                <a href="#">Просмотренные объявления</a>
+                                <a href="#">Блокнот</a>
+                                <a href="#">Помощь специалиста</a>
+                            </div>
+                            <!-- /personal__menu -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container">
+                                <img src="pic/pic5.jpg" width="230" height="398" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <div class="vkontakte__container">
+                                <img src="pic/vkontakte.jpg" width="230" height="270" alt="">
+                            </div>
+
+                        </div>
+                        <!-- /site__right_aside -->
+
+                    </div>
+                    <!-- /site_wrap -->
+
+
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+            <!-- /site__content -->
+
+        </div>
+        <!-- /site_wrap -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- site_wrap -->
+        <div class="site_wrap">
+
+            <!-- footer__layout -->
+            <div class="footer__layout">
+
+                <!-- center_block -->
+                <div class="center_block">
+
+                    <p class="copy">&copy; 2013 Загородный дом</p>
+
+                    <a href="tel:88006234187" class="footer_tel">8 (800) 623 41 87</a>
+
+                    <!-- social -->
+                    <dl class="social">
+                        <dt>Контакты</dt>
+                        <dd><a href="#" class="facebook" title="facebook">facebook</a> </dd>
+                        <dd><a href="#" class="vkontakte" title="vkontakte">vkontekte</a> </dd>
+                        <dd><a href="#" class="youtube" title="youtube">youtube</a> </dd>
+                        <dd><a href="#" class="twitter" title="twitter">twitter</a> </dd>
+                    </dl>
+                    <!-- /social -->
+
+                    <!-- footer_menu -->
+                    <ul class="footer_menu">
+                        <li><a href="#">Недвижимость</a> </li>
+                        <li><a href="#">Статьи</a> </li>
+                        <li><a href="#">Реклама на сайте</a> </li>
+                        <li><a href="#">Строительство</a> </li>
+                        <li><a href="#">Новости</a> </li>
+                        <li><a href="#">О проекте</a> </li>
+                        <li><a href="#">Загородная жизнь</a> </li>
+                        <li><a href="#">Журнал</a> </li>
+                        <li><a href="#">Правила использования</a> </li>
+                        <li><a href="#">Форум</a> </li>
+                    </ul>
+                    <!-- /footer_menu -->
+
+                    <!-- personal_menu -->
+                    <div class="personal_menu">
+                        <a href="#">Избранное  <span>5</span></a>
+                        <a href="#">Блокнот</a>
+                        <a href="#">Стол заказов <span>3</span></a>
+                    </div>
+                    <!-- /personal_menu -->
+
+                    <!-- footer_bottom -->
+                    <div class="footer_bottom">
+
+                        <!-- counters -->
+                        <ul class="counters">
+                            <li><img src="pic/pic3.jpg" width="77" height="27" alt=""></li>
+                            <li><img src="pic/pic4.jpg" width="70" height="25" alt=""></li>
+                        </ul>
+                        <!-- /counters -->
+
+                        <!-- creaters -->
+                        <dl class="creaters">
+                            <dt><img src="img/creaters.png" width="56" height="10" alt=""></dt>
+                            <dd><a href="#">разработка сайта</a> </dd>
+                        </dl>
+                        <!-- /creaters -->
+
+                        <!-- footer_search -->
+                        <form class="footer_search">
+                            <input type="search" placeholder="Поиск по сайту">
+                            <input type="submit" class="footer_search_but">
+                        </form>
+                        <!-- footer_search -->
+
+
+
+                    </div>
+                    <!-- /footer_bottom -->
+
+                </div>
+                <!-- /center_block -->
+
+            </div>
+            <!-- /footer__layout -->
+
+
+        </div>
+        <!-- /site_wrap -->
+    </footer>
+    <!-- /footer -->
+
+
+
+</body>
+</html>

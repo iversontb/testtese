@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS ltie10 */
+
+@font-face
+{
+    font-family: hortensia;
+    src: url("../fonts/hortensia.eot");
+    src: url("../fonts/hortensia.eot?#iefix") format("embedded-opentype"), url("../fonts/hortensia.woff") format("woff"), url("../fonts/hortensia.ttf") format("truetype");
+}
+
+
+    .popContainer,
+    A.showLiteBox,
+    .prevnextWrap,
+    .stuffstitle TD A:visited,
+    .stuffstitle TD A,
+    .coin-slider H2,
+    H2,
+    .clickHere,
+    .discount H2,
+    .articleGoods DT,
+    .buttonColor .confirm,
+    .color H2,
+    .footerPhone,
+    .social A,
+    .footerMenu A,
+    .buyForm LABEL,
+    .total .totalWord,
+    .basketCrumbs LI,
+    .topic1,
+    .coin-slider H2,
+    .callUs .phone,
+    .buyButton,
+    .container H3,
+    .selectColor H3,
+    .goodsWrap H2,
+    .subMenuWrap H2,
+    .subMenuWrap UL,
+    .mainAccard > LI > SPAN,
+    .main-menu A:visited,
+    .main-menu A,
+    .main-menu LI A:visited,
+    .main-menu LI A,
+    .basket,
+    INPUT, SELECT, BUTTON, TEXTAREA,
+    INPUT[type="text"], INPUT[type="password"], TEXTAREA, INPUT[type="email"], INPUT[type="phone"], INPUT[type="number"],
+    .discountbanner .txt div,
+    .discountbanner .txt a,
+    .discountbanner .time,
+    .phoneWrap{
+        font-family: hortensia !important;
+    }
+
+
+

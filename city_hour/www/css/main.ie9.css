@@ -1,0 +1,5 @@
+.body:after {
+    filter: none;
+    background: url("../img/aside-back.png") repeat-x;
+
+}

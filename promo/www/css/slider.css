@@ -1,0 +1,47 @@
+/* --------------- ares-slider --------------- */
+.ares-slider {
+    margin: 0 auto;
+    width: 592px;
+    height: 325px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 83px;
+}
+.ares-slider a{
+    width: 592px;
+    height: 325px;
+    display: inline-block;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: #fff;
+}
+.ares-slider img {
+    display: block;
+}
+.ares-slider__prev {
+    position: absolute;
+    content: '';
+    background: url("../img/prev.png")no-repeat center;
+    width: 65px;
+    height: 185px;
+    top: 50%;
+    margin-top: -93px;
+    left: 0;
+    cursor: pointer;
+}
+.ares-slider__next{
+    position: absolute;
+    content: '';
+    background: url("../img/next_slide.png") no-repeat center;
+    width: 65px;
+    height: 185px;
+    top: 50%;
+    margin-top: -93px;
+    right: 0;
+    cursor: pointer;
+}
+/* --------------- /slider --------------- */

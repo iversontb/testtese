@@ -1,0 +1,227 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/modernizr-1.7.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/cusel-min-2.5.js"></script>	
+	<script src="js/jquery-ui-1.9.1.custom.min.js"></script>	
+	<script src="js/calendar.js"></script>		
+	<script src="js/jquery.main.js"></script>
+
+
+	<!--[if lte IE 7]> 
+		<link rel="stylesheet" href="css/main-ie7.css" />
+	<![endif]-->
+
+	
+</head>
+<body>
+	
+	<!--popUp-->
+	<div class="popUp">
+	
+		<!--orderForm-->
+		<form action="#" method="post" class="orderForm">
+		
+			<div class="closeButton" title="close">close</div>
+		
+			<h2>Заказать мероприятие</h2>
+			
+			<div class="lineContainer">
+				<label for="fio">ФИО</label>
+				<div class="inputWrap">
+					<input id="fio" required type="text">
+				</div>
+			</div>
+			
+			<div class="lineContainer">
+				<label for="phone">Телефон для связи</label>
+				<div class="inputWrap">
+					<input id="phone" required type="text">
+				</div>
+			</div>
+			
+			<div class="lineContainer">
+				<label for="email">E-mail</label>
+				<div class="inputWrap">
+					<input id="email" required type="email">
+				</div>
+			</div>	
+			
+			<div class="lineContainer">
+				
+				<div class="block">
+					<label>Тип мероприятия</label>
+					<div class="selectWrap longSelect">
+						<select required id="idSelect" name="nameSelect">
+							<option value=""></option>
+							<option value="значение option 1">текст option 1</option>
+							<option value="значение option N">текст option N</option>
+							<option value="значение option 1">текст option 1</option>
+							<option value="значение option N">текст option N</option>		
+							<option value="значение option 1">текст option 1</option>
+							<option value="значение option N">текст option N</option>
+							<option value="значение option 1">текст option 1</option>
+							<option value="значение option N">текст option N</option>	
+						</select>
+					</div>
+				</div>
+				
+				<div class="block gestNumber">
+					<label>Кол-во гостей</label>
+					<div class="selectWrap smallSelect">
+						<select required id="idSelect2" name="nameSelect2">
+							<option value=""></option>
+							<option value="50"> 50</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+				</div>	
+							
+			</div>	
+			
+				
+			<div class="lineContainer">
+				
+				<div class="block paddingStyle">
+					<label>Дата мероприятия</label>
+					<div class="inputWrap">
+						<input type="text" id="date1">
+					</div>
+				</div>
+			</div>	
+			
+			<div class="lineContaner capchWrap">
+				<div class="capcha">
+					<img src="pic/pic2.png" height="42" width="118" alt="">
+				</div>
+				<div class="inputWrap">
+					<input required type="text">
+					<span class="green">введите код, указанный на картинке</span>
+				</div>
+				<input type="submit" class="e-Button" value="">
+			</div>		
+							
+		</form>
+		<!--/orderForm-->
+		
+	</div>
+	<!--/popUp-->
+	
+	<!--Main Wrap-->
+	<div class="mainWrap">
+			
+		<!--Main Header-->
+		<header class="mainHeader">
+			<h1><a href="index.html" title="main"><img src="img/logo2.png" height="185" width="294" alt="the one event" class="logo"></a></h1>
+			
+			<!--mainMenu-->
+			<nav class="mainMenu">
+				<ol>
+					<li><a class="servises active" href="#">Услуги</a></li>
+					<li><a class="photoVideo" href="#">Фото и видео</a></li>
+					<li><a class="discount" href="#">Акции</a></li>
+					<li><a class="contacts" href="#">Контакты</a></li>															
+				</ol>
+			</nav>
+			<!--/mainMenu-->
+			
+			<!--social-->
+			<ul class="social">
+				<li><a href="#" class="facebook" title="facebook">facebook</a></li>
+				<li><a href="#" class="youtube" title="youtube">youtube</a></li>
+				<li><a href="#" class="twitter" title="twitter">twitter</a></li>
+				<li><a href="#" class="vkontakte" title="vkontakte">vkontakte</a></li>												
+			</ul>
+			<!--/social-->
+			
+			<!--ourContats-->
+			<address class="ourContats">
+				<div class="phoneWrap">
+					<p>+7 (495)<span> 721 0391</span></p>
+					<p>+7 (495)<span> 721 0309</span></p>
+				</div>
+				<a href="mailto:askme@thatone.ru" class="email">askme@thatone.ru</a>
+			</address>
+			<!--/ourContats-->
+			
+			<a href="#" class="order">Заказать мероприятие</a>
+			
+			<!--subMenu-->
+			<nav class="subMenu">
+				<ol>
+					<li><a href="#">Конференции </a></li>
+					<li><a href="#">Корпоративы</a></li>
+					<li><a href="#">Тимбилдинг</a></li>
+					<li><a href="#" class="active">Свадьбы </a></li>
+					<li><a href="#">вечеринки</a></li>
+					<li><a href="#">Мальчишники и девичники</a></li>
+					<li><a href="#">Детские праздники</a></li>
+					<li><a href="#">Дни рождения</a></li>
+				</ol>
+			</nav>
+			<!--/subMenu-->
+
+		</header>
+		<!--/Main Header-->
+					
+		<!--Content Wrap-->
+		<div class="contentWrap">
+			<!--mainContent-->
+			<div class="mainContent">
+			
+				<article class="content">
+					<h1>Свадьбы</h1>
+					<p>Каждое торжество должно быть незабываемым и ярким. И, безусловно, все должно быть красиво и притягательно, ведь  это обязательное условие. Именно поэтому ресторан “Дар”, расположенный в самом центре Уфы, приглашает вас провести любые торжества, от персональных праздников и свадеб до корпоративных мероприятий.</p>
+					<p>Ведь для этого созданы все условия, которые сделают мероприятие незабываемым и ярким воспоминанием. Просторный светлый банкетный зал, авторский дизайн, вкусные и полезные блюда в широком ассортименте, услужливый персонал и доступные цены – все это атмосфера праздника и беззаботности в ресторане “Дар”!</p>
+					<p>В нашем ресторане два банкетных зала, поэтому вы всегда сможете выбрать понравившийся по интерьеру и вместимости (есть возможность организовать торжество для групп до 30 и до 100 человек). Вам также не придется беспокоиться и о дополнительном оформлении банкетного зала, поскольку наши талантливые дизайнеры украсят его для любого тематического мероприятия, например свадьбы.</p>
+					<img src="pic/pic3.jpg" height="259" width="413" alt="">
+					<ul class="listStyle">
+						<li> Каждое торжество должно быть незабываемым и ярким. И, безусловно, все должно быть красиво и притягательно.</li>
+						<li> Каждое торжество должно быть незабываемым и ярким. И, безусловно, все должно быть красиво и притягательно.</li>
+						<li> Каждое торжество должно быть незабываемым и ярким. И, безусловно, все должно быть красиво и притягательно.</li>
+						<li> Каждое торжество должно быть незабываемым и ярким. И, безусловно, все должно быть красиво и притягательно.</li>
+						<li> Каждое торжество должно быть незабываемым и ярким. И, безусловно, все должно быть красиво и притягательно.</li>
+					</ul>
+					<h2>В нашем ресторане два банкетных зала.</h2>
+					<p>Ведь для этого созданы все условия, которые сделают мероприятие незабываемым и ярким воспоминанием. Просторный светлый банкетный зал, авторский дизайн, вкусные и полезные блюда в широком ассортименте, услужливый персонал и доступные цены – все это атмосфера праздника и беззаботности в ресторане “Дар”!</p>
+					<p> В нашем ресторане два банкетных зала, поэтому вы всегда сможете выбрать понравившийся по интерьеру и вместимости (есть возможность организовать торжество для групп до 30 и до 100 человек). </p>
+				</article>
+
+			</div>
+			<!--/mainContent-->
+													
+		</div>
+		<!--/Content Wrap-->
+					
+					
+					
+		</div>
+		<!--/Main Wrap-->
+		
+		<!--Main Footer-->
+		<footer class="mainFooter">
+		
+			<div class="insideFooter">
+				<p class="copy">&copy; 2012, « ThatOne Event».
+Все права защищены.</p>
+				<ul class="counters">
+					<li><img src="img/counter.png" height="27" width="90" alt=""></li>
+					<li><img src="img/counter.png" height="27" width="90" alt=""></li>					
+				</ul>
+				
+				<dl class="creaters">
+					<dt>Разработка сайта:</dt>
+					<dd><a href="#" class="sitoria">saitoria</a></dd>
+				</dl>
+				
+			</div>
+
+		</footer>
+			<!--/Main Footer-->
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* --------------- ares-slider --------------- */
+.ares-slider1 {
+    margin: 0 auto;
+    width: 1280px;
+    height: 564px;
+    position: relative;
+    margin-bottom: 40px;
+    left: -157px;
+    top: 5px;
+}
+
+.ares-slider1 .ares-slider1__item{
+    width: 1280px;
+    height: 564px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.ares-slider1 img {
+    display: block;
+}
+.ares-slider1__next,
+.ares-slider1__prev {
+    position: absolute;
+    content: '';
+    background: url("../img/slides.png") no-repeat;
+    width: 48px;
+    height: 48px;
+    top: 50%;
+    margin-top: -20px;
+    left: 50px;
+    cursor: pointer;
+
+}
+.ares-slider1__next {
+    background-position: right 0;
+    left: auto;
+    right: 50px;
+}
+.ares-slider1__points {
+    display: none;
+    position: relative;
+    top: 395px;
+}
+.ares-slider1__points li {
+    width: 10px;
+    height: 10px;
+    float: left;
+    background: #969696;
+    border-radius: 10px;
+    box-shadow: inset 0 3px 3px #616161;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.ares-slider1__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider1__points li.active {
+    box-shadow: none;
+    background: #ee3535;
+    cursor: default;
+}
+/* --------------- /slider --------------- */

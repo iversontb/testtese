@@ -1,0 +1,22 @@
+FontName (HeliosCondThin-Italic)
+FullName (HeliosCondThin Italic)
+AppleName (HeliosCondThin-Italic)
+FamilyName (HeliosCondThin)
+Version (001.001)
+isFixedPitch false
+CharacterSet (custom)
+Encoding (SpecificEncoding)
+Pi true
+ItalicAngle -12
+CapHeight 726
+UnderlinePosition -90
+UnderlineThickness 58
+StemWidth 56
+Serif false
+MSMenuName (HeliosCondThin)
+VPMenuName (HeliosCondThin)
+WORDMenuName (HeliosCondThin)
+VPStyle (I)
+WindowsCharSet 200
+WindowsFirstChar 32
+WindowsLastChar 255

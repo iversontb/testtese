@@ -1,0 +1,66 @@
+/* --------------- ares-slider --------------- */
+.ares-slider {
+    height: 141px;
+    position: relative;
+    margin-bottom: 8px;
+}
+.ares-slider .ares-slider-item{
+    height: 168px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.ares-slider img {
+    display: block;
+}
+
+.ares-slider__next, .ares-slider__prev {
+    position: absolute;
+    content: '';
+    background: url("../img/arrow4.png") no-repeat center center #dddddd;
+    width: 7px;
+    height: 11px;
+    top: 143px;
+    right: 19px;
+    cursor: pointer;
+    padding: 11px;
+}
+.ares-slider__next {
+    background: url("../img/arrow5.png") no-repeat center center #dddddd;
+    left: auto;
+    right: -10px;
+}
+.ares-slider__next:hover, .ares-slider__prev:hover{
+    background-color: #8bbfe1;
+}
+.ares-slider__points {
+    display: none;
+    position: relative;
+    top: 268px;
+    background: rgba(0,0,0,0.4);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+}
+.ares-slider__points li {
+    width: 15px;
+    height: 15px;
+    float: left;
+    background: url("../img/points.png");
+    margin-left: 8px;
+    cursor: pointer;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li.active {
+    background: url("../img/points_act.png");
+    cursor: default;
+}
+.ares-slider__points li:hover{
+    background: url("../img/points_act.png");
+}
+/* --------------- /slider --------------- */

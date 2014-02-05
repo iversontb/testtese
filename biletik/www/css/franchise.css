@@ -1,0 +1,94 @@
+/* --------------- header --------------- */
+.header:before{
+    display: none;
+}
+/* --------------- /header --------------- */
+
+/* --------------- site__content --------------- */
+.site__content{
+    background-color: #ffffff;
+    margin-top: -62px;
+}
+/* --------------- /site__content --------------- */
+
+/* --------------- content-wrap --------------- */
+.content-wrap{
+    padding-top: 90px;
+    padding-bottom: 53px;
+    z-index: 1;
+}
+.content-wrap h1{
+    font-family: "Days";
+    font-size: 36px;
+    color: #212121;
+    margin-bottom: 38px;
+}
+.content-wrap p{
+    font-family: arial;
+    font-size: 16px;
+    color: #212121;
+    line-height: 24px;
+    word-spacing: -2px;
+    margin-bottom: 41px;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- ticket --------------- */
+.content-wrap .ticket{
+    position: relative;
+    font-family: "Days";
+    font-size: 21px;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 28px;
+    margin-left: 405px;
+    margin-bottom: 50px;
+}
+.content-wrap .ticket:before{
+    content: '';
+    position: absolute;
+    background: url("../img/tic.png") no-repeat;
+    width: 430px;
+    height: 275px;
+    left: -440px;
+    top: -36px;
+}
+.content-wrap .ticket span{
+    display: inline;
+    color: #f5872c;
+}
+/* --------------- /ticket --------------- */
+
+/* --------------- video --------------- */
+.content-wrap .video{
+    margin-bottom: 42px;
+}
+/* --------------- /video --------------- */
+
+/* --------------- info --------------- */
+.content-wrap p span{
+    display: block;
+}
+/* --------------- /info --------------- */
+
+/* --------------- /franchise --------------- */
+.content-wrap .franchise{
+    font-family: "Days";
+    font-size: 25px;
+    color: #f5872c;
+    border-left: 6px solid #f5872c;
+    text-transform: uppercase;
+    margin-top: 50px;
+    padding-left: 28px;
+    width: 860px;
+    line-height: 32px;
+    margin-bottom: 37px;
+}
+.content-wrap .franchise span{
+    color: #000000;
+    display: inline;
+}
+.content-wrap .franchise .price{
+    display: inline-block;
+}
+/* --------------- /franchise --------------- */

@@ -1,0 +1,37 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "PFBeauSansPro";
+    src: url("../fonts/pfbeausanspro-reg.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "NeoSansCyr";
+    src: url("../fonts/neo_sans_cyr_regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Myriad Pro";
+    src: url("../fonts/myriadpro-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/pt_sans.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PFDinDisplayPro";
+    src: url("../fonts/pfdindisplaypro-light.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+
+.enter form input[type="text"], .enter form input[type="password"], .search input[type="text"]{
+    line-height: 25px;
+}

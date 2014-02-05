@@ -1,0 +1,129 @@
+.goodsGall{
+    display: inline-block;
+    vertical-align: top;
+    border: 2px dotted #9f683f;
+    width: 438px;
+    height: 368px;
+    margin-bottom: 37px;
+}
+.goodDescript{
+    width: 497px;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 15px;
+    padding-top: 18px;
+    margin-bottom: 37px;
+}
+.goodDescript h2{
+    font-size: 20px;
+    margin-bottom: 22px;
+    letter-spacing: 1px;
+}
+.recomend dt{
+    margin-top: 2px;
+}
+.goodDescript .goodsPriceBlock .oldPrice{
+    border-left: 1px solid #9f683f;
+    border-right: none;
+}
+.goodDescript .newPrice,
+.goodDescript  .oldPrice{
+    font-size: 20px;
+}
+.goodsPriceBlock{
+    border-top: 1px dotted #b89650;
+    border-bottom: 1px dotted #b89650;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    margin-bottom: 13px;
+}
+.recomend{
+    margin-bottom: 27px;
+}
+.priceIn,
+.deliveryPrice{
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 35px;
+}
+.countGoods input[type="text"]{
+    text-align: center;
+    border: 1px solid #9f683f;
+    width: 103px;
+    height: 29px;
+    margin-left: 8px;
+    color: #5cac8d;
+    font-size: 14px;
+}
+.addToBasket:hover{
+    opacity: 0.8;
+}
+.addToBasket{
+    border: none;
+    background: #5cac8d;
+    color: #fff;
+    width: 250px;
+    height: 50px;
+    font-family: "times new roman";
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    margin-right: 7px;
+}
+.message{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    width: 230px;
+    line-height: 22px;
+    margin-top: 5px;
+}
+.lineContainer{
+    margin-bottom: 39px;
+}
+.descriptionText{
+    width: 438px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+.descriptionText h4{
+    border-bottom: 1px dotted #a98438;
+    font-size: 18px;
+    padding-bottom: 17px;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+.descriptionText p{
+    margin-bottom: 12px;
+    line-height: 22px;
+}
+.descriptionText a{
+    text-decoration: underline;
+    color: #9f683f;
+    font-size: 12px;
+}
+.characterization{
+    display: inline-block;
+    vertical-align: top;
+    width: 237px;
+}
+.characterization h4{
+    font-size: 18px;
+    padding-bottom: 17px;
+    font-weight: normal;
+}
+.characterization dl{
+    border-top: 1px dotted #a98438;
+    padding-top: 17px;
+    padding-bottom: 14px;
+}
+
+.characterization dd,
+.characterization dt{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+}

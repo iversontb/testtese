@@ -1,0 +1,39 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "ptsans";
+    src: url("../font/ptsans.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "ptsans_bold";
+    src: url("../fonts/ptsans_bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "roboto-bold";
+    src: url("../fonts/roboto-medium.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "roboto-medium";
+    src: url("../fonts/roboto-medium.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "roboto-light";
+    src: url("../fonts/roboto-light.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "roboto-regular";
+    src: url("../fonts/roboto-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

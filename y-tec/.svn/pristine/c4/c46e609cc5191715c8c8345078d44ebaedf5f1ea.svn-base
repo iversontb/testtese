@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+    <script src="js/jquery.main.gall.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site indexPage">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <h1 class="logo"><img src="img/logo.png" width="204" height="71" alt="Y-tec чтобы сайт приносил доход"></h1>
+            <!-- /logo -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <a href="#">О компании</a>
+                <a href="#">Услуги</a>
+                <span class="active" href="#">Портфолио</span>
+                <a href="#">Контакты</a>
+            </nav>
+            <!-- menu -->
+
+            <!-- phone -->
+            <address class="phone"><span>(495)</span> 662-47-92</address>
+            <!-- /phone -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <div class="slideWrap">
+
+                    <!-- sliderContainer -->
+                    <div class="sliderContainer">
+
+
+                        <!-- container -->
+                        <div class="container">
+                            <div id="slides">
+                                <a href="#" class="contBox">
+                                    <img src="pic/gall-pic1.png" alt="" width="1000" height="362" />
+                                </a>
+                                <a href="#" class="contBox">
+                                    <img src="pic/gall-pic1.png" alt="" width="1000" height="362" />
+                                </a>
+                                <a href="#" class="contBox">
+                                    <img src="pic/gall-pic1.png" alt="" width="1000" height="362" />
+                                </a>
+                                <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+                                <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+                            </div>
+                        </div>
+                        <!-- /container -->
+
+                    </div>
+                    <!-- /sliderContainer -->
+
+                </div>
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

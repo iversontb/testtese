@@ -1,0 +1,133 @@
+/* --------------- doctor --------------- */
+.doctor{
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+.doctor h1{
+    font-family: "PT Sans";
+    font-size: 24px;
+    color: #000000;
+    font-weight: normal;
+    margin-bottom: 7px;
+}
+.doctor h2{
+    font-family: arial;
+    font-size: 12px;
+    color: #737373;
+    margin-bottom: 18px;
+}
+.doctor span{
+    width: 325px;
+    vertical-align: top;
+    font-family: arial;
+    font-size: 14px;
+    color: #000000;
+    display: inline-block;
+    margin-bottom: 11px;
+    line-height: 21px;
+}
+.doctor span>span{
+    display: block;
+    margin-bottom: 0;
+}
+.doctor img+span{
+    font-weight: bold;
+}
+.doctor img{
+    float: left;
+    margin-top: 6px;
+    margin-right: 37px;
+
+}
+.doctor ul{
+    margin-bottom: 45px;
+}
+.doctor ul li{
+    font-family: arial;
+    font-size: 14px;
+    color: #000000;
+    background: url("../img/marker.png") 2px 4px no-repeat;
+    padding-left: 30px;
+    margin-bottom: 21px;
+    line-height: 21px;
+}
+/* --------------- /doctor --------------- */
+
+/* --------------- sign_up --------------- */
+.sign_up{
+    margin-bottom: 43px;
+    margin-top: 16px;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 9px;
+    padding-right: 26px;
+    display: inline-block;
+    vertical-align: top;
+    font-family: arial;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: bold;
+    background: rgb(220,189,220);
+    background: -moz-linear-gradient(top,  rgba(220,189,220,1) 0%, rgba(195,142,196,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(220,189,220,1)), color-stop(100%,rgba(195,142,196,1)));
+    background: -webkit-linear-gradient(top,  rgba(220,189,220,1) 0%,rgba(195,142,196,1) 100%);
+    background: -o-linear-gradient(top,  rgba(220,189,220,1) 0%,rgba(195,142,196,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(220,189,220,1) 0%,rgba(195,142,196,1) 100%);
+    background: linear-gradient(to bottom,  rgba(220,189,220,1) 0%,rgba(195,142,196,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dcbddc', endColorstr='#c38ec4',GradientType=0 );
+    border-radius: 5px;
+    border-bottom: 2px solid #785779;
+}
+.sign_up:hover{
+    background: rgb(219,173,219);
+    background: -moz-linear-gradient(top,  rgba(219,173,219,1) 0%, rgba(188,107,191,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(219,173,219,1)), color-stop(100%,rgba(188,107,191,1)));
+    background: -webkit-linear-gradient(top,  rgba(219,173,219,1) 0%,rgba(188,107,191,1) 100%);
+    background: -o-linear-gradient(top,  rgba(219,173,219,1) 0%,rgba(188,107,191,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(219,173,219,1) 0%,rgba(188,107,191,1) 100%);
+    background: linear-gradient(to bottom,  rgba(219,173,219,1) 0%,rgba(188,107,191,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbaddb', endColorstr='#bc6bbf',GradientType=0 );
+}
+/* --------------- /sign_up --------------- */
+
+/* --------------- certificates --------------- */
+.certificates{
+    margin-left: -19px;
+}
+.certificates>dt{
+    cursor: pointer;
+    font-family: "PT Sans";
+    font-size: 21px;
+    color: #ffffff;
+    padding-top: 12px;
+    padding-left: 23px;
+    padding-bottom: 16px;
+    background: url("../img/arrow_down.png") no-repeat 591px center #1e1e81;
+}
+.certificates dd dl{
+    font-family: arial;
+    font-size: 14px;
+    color: #000000;
+}
+.certificates dd dl dt time{
+    font-weight: bold;
+}
+.certificates>dd{
+    padding-left: 38px;
+    padding-top: 43px;
+    padding-bottom: 12px;
+    background-color: #f4f4f9;
+    padding-right: 50px;
+    display: none;
+}
+.certificates>dt.active{
+    background: url("../img/arrow_up.png") no-repeat 591px center #1e1e81;
+}
+.certificates dd dl dt{
+    margin-bottom: 3px;
+}
+.certificates dd dl dd{
+    margin-bottom: 25px;
+    line-height: 21px;
+}
+/* --------------- /certificates --------------- */

@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
+    <script src="js/jquery.map.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+</head>
+<body class="body_site">
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header site_header" style="background-image: url(img/header3.jpg); ">
+
+            <!-- logo -->
+            <a href="#" class="logo"><img src="pic/logo.png" width="132" height="36" alt="logo"></a>
+            <!-- /logo -->
+
+            <!-- slogan -->
+            <div class="slogan">
+                <p>Крупнейшая строительная компания Красноярска.</p>
+                <p>Более 200 выполненных проектов!</p>
+            </div>
+            <!-- /slogan -->
+
+            <!-- call -->
+            <address class="call">
+                <div class="number_phone"><span>+7 (391)</span><span>272-97-90</span></div>
+                <span>Звонок по Россиии бесплатный</span>
+                <a href="#" class="order_call">Заказать звонок!</a>
+            </address>
+            <!-- /call -->
+
+            <!-- navigation -->
+            <nav class="navigation">
+                <a href="#">Главная</a>
+                <a href="#">Услуги</a>
+                <a href="#">Готовые решения</a>
+                <a href="#">Лицензии и отзывы</a>
+                <a href="#">Фотогалерея</a>
+                <a href="#">Новости</a>
+                <a class="active" href="#">Контакты</a>
+            </nav>
+            <!-- /navigation -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- contacts -->
+                <div class="contacts">
+
+                   <address>
+                       <span>г. Красноярск, ул. Шахтеров, 16а/2,</span>
+                       <span>660075, Россия, Красноярский край</span>
+                       <div>
+                           <span>Пишите нам на:</span>
+                           <a href="mailto:po-stroim@mail.ru">po-stroim@mail.ru</a>
+                       </div>
+                   </address>
+
+                    <!-- work_time -->
+                    <div class="work_time">
+                        <span class="number_phone">+7 (391)<span>272-97-90</span></span>
+                        <span>Звонок по Россиии бесплатный</span>
+                        <span>Часы приема звонков и клиентов в офисе:</span>
+                        <dl>
+                            <dt>пн-пт</dt>
+                            <dd>с 10.00 до 19.00</dd>
+                            <dt>сб-вс</dt>
+                            <dd>с 10.00 до 17.00</dd>
+                        </dl>
+                    </div>
+                    <!-- /work_time -->
+
+                    <!-- map__wrap -->
+                    <div class="map__wrap" id="map" data-lat="55.76" data-lang="37.64" data-zoom="15">
+                        <ul>
+                            <li>
+                                <div class="map__baloon">
+                                    <a href="#" class="map__baloon-link">Решение, OOO, инженерно-строительная компания</a>
+                                    <span>Шахтеров, 16a/2</span>
+                                    <ul>
+                                        <li>(391) 255 25 25</li>
+                                        <li>(391) 255 25 25</li>
+                                        <li>(391) 255 25 25</li>
+                                    </ul>
+                                    <dl class="map__baloon-today">
+                                        <dt>Сегодня выходной</dt>
+                                        <dd>Закрыто. Откроется в понедельник</dd>
+                                    </dl>
+                                    <a href="#" class="map__baloon-review">Написать отзыв на Флампе</a>
+                                    <dl class="map__baloon-payment">
+                                        <dt>Оплата</dt>
+                                        <dd><a href="#" class="map__baloon-pay1"></a></dd>
+                                        <dd><a href="#" class="map__baloon-pay2"></a></dd>
+                                    </dl>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /map__wrap -->
+
+                </div>
+                <!-- /contacts -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout site__footer">
+
+            <div>
+                <!-- first_step -->
+                <div class="first_step">
+                    <span>Сделайте первый шаг!</span>
+                    <span>Оставьте заявку нам<span>или позвоните:</span></span>
+                </div>
+                <!-- /first_step -->
+
+                <!-- number_phone -->
+                <span class="number_phone">+7 (391) <span>272-97-90</span></span>
+                <!-- /number_phone -->
+
+
+            <!-- adds -->
+                <address class="adds">
+                    <span class="country">Россия, Красноярский край,<span>г. Красноярск, ул. Шахтеров, 16а/2</span></span>
+
+                    <!-- map-->
+                    <a href="#" class="map">показать карту проезда</a>
+                    <!-- /map-->
+
+                </address>
+                <!-- /adds-->
+            </div>
+
+            <form action="#">
+                    <input type="text" name="name" placeholder="Имя">
+                    <input type="text" name="phone" placeholder="Телефон">
+                    <input type="text" name="email" placeholder="E-mail">
+                    <textarea cols="58" rows="6" placeholder="Опишите задачу или вопрос..."></textarea>
+                    <input type="submit" value="Отправить">
+            </form>
+
+            <!-- copyright -->
+            <p class="copyright">Все права защищены © 2013, компания «Решение»</p>
+            <!-- /copyright-->
+
+            <!-- siteoria-->
+            <a href="#" class="siteoria"><img src="pic/siteoria.png" width="122" height="56" alt="сайтория"></a>
+            <!-- /siteoria -->
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

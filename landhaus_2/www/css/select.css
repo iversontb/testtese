@@ -1,0 +1,52 @@
+/* --------------- nice-select --------------- */
+.nice-select {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 28px;
+    width: 211px;
+    background: #fff;
+    color: #000;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #b0ada8;
+    border-radius: 3px;
+}
+.nice-select__item {
+    position: absolute;
+    height: 28px;
+    top: 0;
+    left: 0;
+    right: 27px;
+    z-index: 1;
+    line-height: 26px;
+    padding: 0 0 0 9px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 13px;
+    color: #000;
+}
+.nice-select__item:after {
+    content: '';
+    width: 26px;
+    height: 26px;
+    background: url("../img/select_button.png") no-repeat 0 bottom;
+    position: absolute;
+    top: 0;
+    right: -26px;
+    z-index: 10;
+    border-left: solid 1px #b0ada8;
+}
+.nice-select select {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 27px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* --------------- /nice-select --------------- */

@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="#" class="logo"><img src="img/logo2.png" width="301" height="81" alt="maker-gold"></a>
+            <!-- /logo -->
+
+
+            <!-- enter_account -->
+            <div class="enter_account">
+                <img src="pic/avatar.png" width="50" height="50" alt="avatar">
+                <div>
+                    <h2>Здравствуйте!</h2>
+                    <span class="name">Александра Алексеева</span>
+                    <span class="mail">(mail@gmail.com)</span>
+                    <a href="#" class="exit">Выход</a>
+                </div>
+            </div>
+            <!-- /enter_account -->
+
+            <!-- menu -->
+            <div class="menu">
+
+                <!-- navigation -->
+                <nav class="navigation">
+                    <ul>
+                        <li title="главная" class="home">
+                            <a href="#"></a>
+                        </li>
+                        <li>
+                            <a href="#">О проекте</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Форум</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Маркетинг</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Форум</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Вопросы</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Форум</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Партнеры</a>
+                            <ul>
+                                <li>
+                                    <a href="#">Контакты</a>
+                                </li>
+                                <li>
+                                    <a href="#">Форум</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /navigation -->
+
+                <!-- search -->
+                <form class="search">
+                    <label for="text">поиск</label><input type="text" name="search" id="text">
+                    <input type="submit" value=" " name="go">
+                </form>
+                <!-- /search -->
+
+            </div>
+            <!-- /menu -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- profile -->
+                <div class="profile">
+                    <h1>ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ</h1>
+                    <div class="profile_wrap">
+
+                        <!-- side_menu -->
+                        <aside class="side_menu">
+
+                            <!-- profile_control -->
+                            <ul class="profile_control">
+                                <li class="edit">
+                                    <a href="#">Редактировать данные</a>
+                                </li>
+                                <li class="info">
+                                    <a class="active" href="#">Информация</a>
+                                </li>
+                                <li class="team">
+                                    <a href="#">Команда</a>
+                                </li>
+                                <li class="finance">
+                                    <a href="#">Финансы</a>
+                                </li>
+                                <li class="settings">
+                                    <a href="#">Настройки</a>
+                                </li>
+                                <li class="support">
+                                    <a href="#">Поддержка</a>
+                                </li>
+                            </ul>
+                            <!-- /profile_control -->
+
+                            <!-- status -->
+                            <ul class="status">
+                                <li class="balance">
+                                    <a href="#">0.00 RUB</a>
+                                </li>
+                                <li class="count_people">
+                                    <a href="#">1 чел.</a>
+                                </li>
+                                <li class="message">
+                                    <a href="#">0 сообщ.</a>
+                                </li>
+                            </ul>
+                            <!-- /status -->
+
+                        </aside>
+                        <!-- /side_menu -->
+
+                        <!-- general_info -->
+                        <div class="general_info">
+                            <h2>ОБЩАЯ ИНФОРМАЦИЯ</h2>
+                            <a class="description" href="#">описание</a>
+
+                            <!-- info_status -->
+                            <ul class="info_status">
+                                <li>
+                                    <span>ТАРИФ</span>
+                                    <span class="info_status_tariff">200 RUB</span>
+                                    <span class="note">основной</span>
+                                    <span class="tariff_number">#1</span>
+                                </li>
+                                <li class="not_paid">
+                                    <span>СТАТУС</span>
+                                    <span class="info_status_status">НЕ ОПЛАЧЕН</span>
+                                    <span class="note">продлить</span>
+                                </li>
+                                <li>
+                                    <span>ОПЛАЧЕНО ДО:</span>
+                                    <span class="info_status_payment">СРОК ЗАВЕРШЕН</span>
+                                    <span class="note">...</span>
+                                </li>
+                            </ul>
+                            <!-- /info_status -->
+
+                            <!-- cash_status -->
+                            <ul class="cash_status">
+                                <li class="expenditure">Расход:<span>200.00 RUB</span></li>
+                                <li class="income">доход:<span>0.00 RUB</span></li>
+                                <li class="referrals">РЕФЕРАЛОВ:<span>1 чел.</span></li>
+                            </ul>
+                            <!-- /cash_status -->
+
+                            <!-- profile_info -->
+                            <ul class="profile_info">
+                                <li class="credentials">
+                                    <h2>Учётные данные:</h2>
+                                    <dl>
+                                        <dt>ID в системе:</dt>
+                                        <dd>284845</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>псевдоним:</dt>
+                                        <dd>west-moskva</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>почта/логин:</dt>
+                                        <dd>webgrand@bk.ru</dd>
+                                    </dl>
+                                    <a href="#">Дополнительная информация</a>
+                                </li>
+                                <li class="your_team">
+                                    <h2>Ваша команда:</h2>
+                                    <dl>
+                                        <dt>рефссылка:</dt>
+                                        <dd><a href="#">http://mymoneymaker.ru/?afIzG7N5</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>google -</dt>
+                                        <dd>используйте Google для защиты своей ссылки и статистики</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>личных приглашений:</dt>
+                                        <dd>1 шт.</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>получено переливом:</dt>
+                                        <dd>0 шт.</dd>
+                                    </dl>
+                                    <a href="#">Материалы</a>
+                                </li>
+                                <li class="financial_performance">
+                                    <h2>Финансовые показатели:</h2>
+                                    <dl>
+                                        <dt>номер кошелька:</dt>
+                                        <dd>U3101639</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>всего заработано:</dt>
+                                        <dd>0.00 RUB</dd>
+                                    </dl>
+                                    <ul>
+                                        <li>
+                                            <dl>
+                                                <dt>текущий статус:</dt>
+                                                <dd>ТАРИФ НЕ ОПЛАЧЕН</dd>
+                                            </dl>
+                                        </li>
+                                        <li>
+                                            <dl>
+                                                <dt>тариф оплачен до:</dt>
+                                                <dd>ПРОСРОЧЕНО</dd>
+                                            </dl>
+                                        </li>
+                                    </ul>
+                                    <a href="#">Заполнить реквизиты</a>
+                                </li>
+                                <li class="other_information">
+                                    <h2>Прочая информация:</h2>
+                                    <dl>
+                                        <dt>ваш пригласитель:</dt>
+                                        <dd>alex017 (<a href="mailto:alex7090608@gmail.com">alex7090608@gmail.com</a>)</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>ваш куратор:</dt>
+                                        <dd>alex017 (<a href="mailto:alex7090608@gmail.com">alex7090608@gmail.com</a>)</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>квалификация (Q):</dt>
+                                        <dd>НЕ ВЫПОЛНЕНА</dd>
+                                    </dl>
+
+                                    <a href="#">Контакты</a>
+                                </li>
+                            </ul>
+                            <!-- /profile_info -->
+
+                        </div>
+                        <!-- /general_info -->
+
+                    </div>
+                </div>
+                <!-- /profile -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <!-- footer_menu -->
+            <div class="footer_menu">
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">О проекте</a>
+                    </li>
+                    <li>
+                        <a href="#">Маркетинг</a>
+                    </li>
+                    <li>
+                        <a href="#">Вопросы</a>
+                    </li>
+                    <li>
+                        <a href="#">Партнеры</a>
+                    </li>
+                </ul>
+                <!-- /footer_menu -->
+
+                <!-- counter -->
+                <div class="counter"><img src="pic/counter.jpg" width="88" height="31" alt="counter"></div>
+                <!-- /counter -->
+
+            </div>
+
+
+            <div class="copyright">
+
+                <!-- footer_logo -->
+                <a href="#" class="footer_logo"><img src="pic/logo1.png" width="354" height="67" alt="logo"></a>
+                <!-- footer_logo -->
+
+                <p>Copyright &copy; 2013 - <a href="#">Maker Gold.ru</a></p>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

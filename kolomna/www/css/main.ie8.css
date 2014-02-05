@@ -1,0 +1,13 @@
+/* css for ltie8 */
+@font-face {
+    font-family: "intro";
+    src: url("../fonts/intro.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "proximanova-reg";
+    src: url("../fonts/proximanova-reg.eot");
+    font-weight: normal;
+    font-style: normal;
+}

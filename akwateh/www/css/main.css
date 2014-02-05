@@ -1,0 +1,123 @@
+.sub_nav{
+    clear: both;
+    overflow: hidden;
+    margin: 0 20px 20px 20px;
+}
+.sub_nav li{
+    float: left;
+    margin: 0;
+    list-style: none;
+    width: 326;
+    text-align: center;
+}
+.sub_nav li a{
+    color: #203d79;
+    white-space: pre-line;
+    font-size: 16px;
+    display: block;
+    background: url("../img/not-active-but.png");
+    width: 323px;
+    height: 75px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding-top: 18px;
+}
+.sub_nav li a.active{
+    color: #245f31;
+    background: url("../img/active-but.png");
+}
+
+.wraper{
+    width: 805px;
+    float: left;
+}
+
+.wraper #featured{
+    width: 805px;
+}
+
+
+.wraper .roundabout-holder      {
+
+    width:450px;
+    height:200px;
+
+}
+.wraper .roundabout-moveable-item    {
+    height:200px;
+    width:450px;
+
+}
+
+.wraper .grid_12{
+    width: 777px;
+}
+.wraper .quicknav.alpha{
+    width: 145px;
+}
+.wraper .quicknavgrid_3{
+    width: 156px;
+}
+.right_aside{
+    float: right;
+    width: 203px;
+}
+
+.right_aside > a{
+    display: block;
+    width: 202px;
+    height: 206px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #f1f1f1;
+}
+.right_aside > a:hover{
+    border: none;
+    padding: 1px;
+    background: url("../img/hover-block.png");
+
+}
+.quicknavgrid_3 h4{
+    margin-bottom: 10px;
+}
+.quicknavgrid_3 p{
+    margin-bottom: 0px;
+}
+.quicknavgrid_3 p + p{
+    margin-bottom: 0;
+}
+.quicknavgrid_3 p + p img{
+    margin-bottom: 0;
+}
+.aside_block{
+    padding: 20px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 206px;
+}
+.aside_block h2{
+    font-size: 19px;
+    color: #000;
+    margin-bottom: 15px;
+}
+.aside_block span{
+    font-size: 11px;
+    color: #5e5e5e;
+    line-height: 18px;
+}
+.item1{
+    background: url("../img/img1.png") no-repeat center 107px;
+}
+.item2{
+    background: url("../img/img2.png") no-repeat center 107px;
+}
+.item3{
+    background: url("../img/img3.png") no-repeat center 107px;
+}
+.roundabout-moveable-item{
+    margin-left: 0;
+}
+.wraper .quicknavgrid_3:hover{
+    box-shadow: inset 2px 2px 5px #a5a5a5;
+}

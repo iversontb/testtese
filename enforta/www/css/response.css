@@ -1,0 +1,253 @@
+/*
+    response
+
+    tabs
+
+    file
+
+*/
+/* response */
+.response{
+    padding-top: 36px;
+    padding-bottom: 20px;
+}
+.response h1{
+    font-size: 20px;
+    color: #ff7900;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    padding-left: 244px;
+    margin-bottom: 22px;
+}
+.response__input,
+.response textarea{
+    border: 1px solid #e2e2e2;
+    border-top-width: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 27px;
+    background: url("../img/search__text.png") repeat-x;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 3px;
+    padding: 0 5px;
+}
+.response textarea {
+    width: 410px;
+    height: 75px;
+    resize: none;
+    padding: 11px;
+}
+.response__mail {
+    width: 470px;
+}
+.response fieldset {
+    margin-bottom: 12px;
+    position: relative;
+}
+.response fieldset > label {
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 236px;
+    margin: 8px 6px 0 0;
+}
+.response__err > label {
+    color: #cf0000 !important;
+}
+.response > fieldset > span {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 7px;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.response .response__err > input{
+    border-color: #cf0000 !important;
+}
+.response .response__err:after {
+    content: 'Заполните поле.';
+    color: #cf0000;
+    margin-top: 8px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 7px;
+}
+.response__code {
+    width: 54px;
+    margin-right: 5px;
+}
+.response__phone {
+    width: 383px;
+}
+.response__name {
+    width: 411px;
+}
+.response__city {
+    width: 470px;
+}
+.response .nice-select{
+    width: 464px;
+}
+.response .nice-select__item {
+    color: #000;
+}
+.response__send {
+    height: 36px;
+    background: url("../img/response__btn.png");
+    position: relative;
+    margin-left: 245px;
+    text-shadow: 0 1px 0 #d5621c;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 0 24px;
+    border: none;
+}
+.response__send:hover {
+    background-position: 0 -38px;
+    text-shadow: 0 1px 0 #0a48b5;
+}
+.response__send:active {
+    background-position: 0 bottom;
+}
+.response .resume label {
+    margin-left: -248px;
+    margin-right: 37px;
+}
+.response ::-webkit-input-placeholder {
+    color: #aaa;
+    font-size: 11px;
+}
+.response :-moz-placeholder {
+    color: #aaa;
+    font-size: 11px;
+}
+.response .placeholder {
+    color: #aaa;
+    font-size: 11px;
+}
+.response :-ms-input-placeholder {
+    color: #aaa;
+    font-size: 11px;
+}
+/* /response */
+
+/* tabs */
+.tabs {
+    width: 468px;
+    border: 1px solid #e4e4e4;
+    border-radius: 3px;
+    padding-top: 62px;
+    position: relative;
+    margin-left: 245px;
+    margin-bottom: 19px;
+}
+.tabs__btn {
+    color: #565656;
+    position: absolute;
+    background: url("../img/tabs__btn.png");
+    padding-top: 12px;
+    height: 25px;
+    width: 234px;
+    border: 1px solid #e4e4e4;
+    border-right: none;
+    border-top: none;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    text-align: center;
+}
+.tabs__btn:first-child {
+    border-left: none;
+    left: 0;
+    border-right: 1px solid #e4e4e4;
+}
+.tabs__btn.active {
+    border: none;
+    background: none;
+}
+.tabs__content {
+    display: none;
+}
+.tabs__content.active {
+    display: block;
+}
+/* /tabs */
+
+/* file */
+.file{
+    padding: 9px 0 28px 38px;
+    position: relative;
+}
+.file__load {
+    background: #e7e7e7;
+    width: 390px;
+    height: 36px;
+    border-radius: 3px;
+    position: relative;
+    overflow: hidden;
+}
+.file__load > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/loading.png");
+    width: 0;
+    height: 36px;
+}
+.file__btn {
+    background: url("../img/file__btn.png");
+    position: absolute;
+    top: 9px;
+    left: 38px;
+    text-shadow: 0 1px 0 #0a48b5;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+
+}
+.file__btn:hover {
+    background-position: 0 -38px;
+    text-shadow: 0 1px 0 #d5621c;
+}
+.file__btn:active {
+    background-position: 0 bottom;
+}
+.file > span {
+    position: absolute;
+    top: 13px;
+    right: 41px;
+    font-size: 11px;
+    color: #afafaf;
+    font-style: italic;
+}
+.file > span span {
+    display: block;
+    padding-top: 7px;
+}
+.qq-upload-list {
+    display: none;
+}
+.qq-upload-button {
+    padding: 12px 24px 0;
+    height: 24px;
+}
+.file__info {
+    display: none;
+    color: #565656;
+    font-size: 12px;
+    padding: 10px 0 0 98px;
+}
+.file__remove {
+    background: url("../img/file__remove.png") no-repeat 1px 4px;
+    color: #cf0000;
+    text-decoration: underline;
+    margin-left: 12px;
+    padding-left: 11px;
+    cursor: pointer;
+}
+.file__remove:hover {
+    text-decoration: none;
+}
+/* /file */

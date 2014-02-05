@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="js/jPlane.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+
+
+
+    <script src="js/jquery.main.js"></script>
+
+
+
+
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+    <!--[if  IE 7]>
+    <link rel="stylesheet" href="css/main.ie7.css" />
+    <![endif]-->
+    <script>
+        $(function(){
+
+            var params = {
+                changedEl: ".selectWrap select",
+                visRows: 5,
+                scrollArrows: false
+            }
+            cuSel(params);
+
+        } );
+
+
+    </script>
+</head>
+<body>
+<!-- site -->
+<div class="site">
+    <div class="site__layout">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <h1 class="logo"><img src=""></h1>
+            <!-- /logo -->
+
+            <!-- main-menu -->
+            <nav class="main-menu">
+                <ol class="main-menu__layout">
+                    <li class="main-menu__item main-menu__item_active"><span class="main-menu__lnk">Меню</span></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Меню</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Меню</a></li>
+                </ol>
+            </nav>
+            <!-- /main-menu -->
+
+            <!-- language -->
+            <div class="language">
+                <ul class="language__layout">
+                    <li class="language__item language__item_active"><span class="language__lnk">RU</span></li>
+                    <li class="language__item"><a class="language__lnk" href="#">KZ</a></li>
+                    <li class="language__item"><a class="language__lnk" href="#">EN</a></li>
+                </ul>
+            </div>
+            <!-- /language -->
+
+        </header>
+        <!-- /header -->
+
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!--—BEGIN popUpContainer -->
+                <div class="popUpContainer selectPop">
+
+                    <!--—BEGIN popUpForm -->
+                    <form method="post" action="#" class="popUpForm">
+
+                        <!--—BEGIN formHead -->
+                        <div class="formHead">
+                            <h2>Ваше местоположение?</h2>
+                            <div class="closeBut" title="close">close</div>
+                        </div>
+                        <!--—END formHead -->
+
+                        <!--—BEGIN exemple -->
+                        <div class="exemple">
+                            <p>Проблемы какого города вас волнуют? <a href="javascript:void(0)">Петропавлоск-Камчатский</a></p>
+                        </div>
+                        <!--—END exemple -->
+
+
+
+                        <!--—BEGIN wraper -->
+                        <div class="wraper">
+
+                            <!--—BEGIN selectWrap -->
+                            <div class="selectWrap">
+                                <label for="idSelect">Страна</label>
+                                <select id="idSelect" name="nameSelect">
+                                    <option value="Укажите страну">Укажите страну</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                </select>
+                            </div>
+                            <!--—END selectWrap -->
+
+                            <!--—BEGIN selectWrap -->
+                            <div class="selectWrap hiddenBlok">
+                                <label for="idSelect2">Город <span>Московская область, Коломенский район</span></label>
+                                <select id="idSelect2" name="nameSelect2">
+                                    <option value="Введите город">Введите город</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Казахстан">Казахстан</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Казахстан">Казахстан</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Казахстан">Казахстан</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                </select>
+                            </div>
+
+                            <!--—BEGIN selectWrap -->
+                            <div class="selectWrap hiddenBlok">
+                                <label for="idSelect3">Область</label>
+                                <select id="idSelect3" name="nameSelect3">
+                                    <option value="Московская">Московская</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Казахстан">Казахстан</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Казахстан">Казахстан</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Казахстан">Казахстан</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                </select>
+                            </div>
+                            <!--—END selectWrap -->
+
+                            <!--—BEGIN selectWrap -->
+                            <div class="selectWrap hiddenBlok">
+                                <label for="idSelect4">Район</label>
+                                <select id="idSelect4" name="nameSelect3">
+                                    <option value="Ленинский">Ленинский</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Казахстан">Казахстан</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Казахстан">Казахстан</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Казахстан">Казахстан</option>
+                                    <option value="Россия">Россия</option>
+                                    <option value="Россия">Россия</option>
+                                </select>
+                            </div>
+                            <!--—END selectWrap -->
+
+                            <div class="error">
+                                <p>Выберите свой город!</p>
+                            </div>
+
+
+                            <input type="submit" value="Выбрать" class="buttonType fiolet size4">
+
+                        </div>
+                        <!--—END wraper -->
+
+
+                    </form>
+                    <!--—END popUpForm -->
+
+                </div>
+                <!--—END popUpContainer -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+    </div>
+</div>
+<!-- /site -->
+
+
+</body>
+</html>

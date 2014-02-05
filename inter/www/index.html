@@ -1,0 +1,407 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+        <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <div class="site__layout">
+            <!-- header -->
+            <header class="header">
+
+                <!-- logo -->
+                <a href="#" class="logo"><img src="img/logo.png"></a>
+                <!-- /logo -->
+
+                <!-- main-menu -->
+                <nav class="main-menu">
+                  <img class="point1" src="img/point.png" width="6" height="6" alt="">
+                  <img class="point2" src="img/point.png" width="6" height="6" alt="">
+                    <ol class="main-menu__layout">
+                        <li class="main-menu__item main-menu__item_active"><span class="main-menu__lnk">О магазине</span></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Каталог</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Доставка <span>и оплата</span></a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                    </ol>
+                </nav>
+                <!-- /main-menu -->
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+                  <!-- gallery -->
+                  <div class="gallery">
+                    <img src="img/pic_gallery.jpg" alt="">
+                  </div>
+                  <!-- /gallery -->
+                  <div class="content_menu">
+                    <div class="category_menu">
+                      <ol>
+                        <li><a class="category_menu1" href="">Строительные материалы</a></li>
+                        <li><a class="category_menu2" href="">Окна</a></li>
+                        <li><a class="category_menu3" href="">Электрика, "Умный Дом"</a></li>
+                        <li><a class="category_menu4" href="">Сантехника</a></li>
+                        <li><a class="category_menu5" href="">Отделочные материалы</a></li>
+                        <li><a class="category_menu6" href="">Мебель</a></li>
+                        <li><a class="category_menu7" href="">Свет</a></li>
+                        <li><a class="category_menu8" href="">Техника</a></li>
+                      </ol>
+                    </div>
+                    <div class="category_menu">
+                      <ol>
+                        <li><a class="category_menu11" href="">Предметы декорирования</a></li>
+                        <li><a class="category_menu12" href="">Посуда</a></li>
+                        <li><a class="category_menu13" href="">Подарки</a></li>
+                        <li><a class="category_menu14" href="">Товары для детей</a></li>
+                        <li><a class="category_menu15" href="">Все для загородной жизни</a></li>
+                        <li><a class="category_menu16" href="">Снабжение коммерческих помещений</a></li>
+                        <li><a class="category_menu17" href="">Услуги</a></li>
+                        <li><a class="category_menu18" href="">Сотрудничество</a></li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="left_aside">
+
+                    <div class="moduletable-search">
+                      <script type="text/javascript">
+                        function isEmptyValue(value){
+                          var pattern = /\S/;
+                          return ret = (pattern.test(value)) ? (true) : (false);
+                        }
+                      </script>
+                      <form name="searchForm" method="post" action="#" onsubmit="return isEmptyValue(jQuery('#jshop_search').val())">
+                        <input type="hidden" name="setsearchdata" value="1">
+                        <input type="hidden" name="category_id" value="0">
+                        <input type="hidden" name="search_type" value="any">
+                        <input placeholder="Поиск по сайту..." type="text" class="inputbox" name="search" id="jshop_search" value>
+                        <input class="button" style="width: 34px; height: 31px;" type="submit" value="">
+                      </form>
+                    </div>
+                    <div class="in_cart">
+                      <h2>В корзине</h2>
+                      <table width="100%">
+                        <tr>
+                          <td style="width: 50px; line-height: 18px;"> Кафельная плитка Neon Glass </td>
+                          <td style="vertical-align: bottom; text-align: right">10.000 руб.</td>
+                        </tr>
+                        <tr>
+                          <td style="width: 50px; line-height: 18px;padding-top: 19px;">Электрочайник белый арт. 0522154</td>
+                          <td style="padding-top: 19px; vertical-align: bottom; text-align: right">12.000 руб.</td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr style="border-top: 1px dashed #7c747e;">
+                          <td class="total">
+                            <!-- <span id = "jshop_quantity_products">0</span>&nbsp;Товары -->
+                            <span id="jshop_quantity_products">Итоговая &nbsp;&nbsp;&nbsp;&nbsp;сумма:&nbsp;</span>&nbsp;
+                          </td>
+                          <td style="vertical-align: bottom; text-align: right">
+                            <span id="jshop_summ_product">22000 руб.</span>
+                          </td>
+                        </tr>
+                        <tr><td>&nbsp;</td></tr>
+                        <tr>
+                          <td colspan="2" align="left" class="goto_cart">
+                            <br>
+                            <a href="#"> Перейти в корзину</a>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="news">
+                      <h2>Новости</h2>
+
+                      <div class="news_content">
+                        <div class="tittle">Интерьер в стиле кантри</div>
+                        <div class="date">06.07.2013</div>
+                        Жить в большом, полном
+                        красок и впечатлений городе,
+                        всегда нескучно и
+                        захватывающе. Но
+                        наступает момент, когда
+                        хочется ...
+                      </div>
+                      <div class="news_content">
+                        <div class="tittle">Интерьер в стиле кантри</div>
+                        <div class="date">06.07.2013</div>
+                        Жить в большом, полном
+                        красок и впечатлений городе,
+                        всегда нескучно и
+                        захватывающе. Но
+                        наступает момент, когда
+                        хочется ...
+                      </div>
+
+                      <a class="all_news" href="">Все новости</a>
+                    </div>
+                    <a class="link" href=""></a>
+                  </div>
+                  <div class="right_aside">
+                    <h2>Акционные товары</h2>
+
+                    <div class="list_products">
+                      <table class="product productitem_1">
+                        <tr>
+                          <td class="image">
+                            <div class="image_block">
+                              <div class="product_label">
+                                <img src="img/img1.png" width="157" height="176" alt="New">
+                              </div>
+                              <a href="#">
+                                <!--<img class="#" alt="Описание товара">-->
+                              </a></div>
+                            <div class="name">
+                              <a href="#">Этажерка на 4 ящика</a>
+                            </div>
+                            <div class="description">
+                            </div>
+                            <div class="jshop_price">
+                              <span>3500 руб.</span>
+                            </div>
+                            </br>
+                            <div class="buttons">
+                              <a class="button_buy" href="#">Купить</a> &nbsp;
+
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="list_products">
+                      <table class="product productitem_2">
+                        <tr>
+                          <td class="image">
+                            <div class="image_block">
+                              <div class="product_label">
+                                <img src="img/img2.png" width="195" height="177" alt="New">
+                              </div>
+                              <a href="#">
+                                <!--<img class="#" alt="Описание товара">-->
+                              </a></div>
+                            <div class="name">
+                              <a href="#">Люстра на 8 ламп черная</a>
+                            </div>
+                            <div class="description">
+                            </div>
+                            <div class="jshop_price">
+                              <span>3500 руб.</span>
+                            </div>
+                            </br>
+                            <div class="buttons">
+                              <a class="button_buy" href="#">Купить</a> &nbsp;
+
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="list_products">
+                      <table class="product productitem_3">
+                        <tr>
+                          <td class="image">
+                            <div class="image_block">
+                              <div class="product_label">
+                                <img src="img/img3.png" width="196" height="162" alt="New">
+                              </div>
+                              <a href="#">
+                                <!--<img class="#" alt="Описание товара">-->
+                              </a></div>
+                            <div class="name">
+                              <a href="#">Картина "Фрегаты, морской бой", в раме 50х60 см.</a>
+                            </div>
+                            <div class="description">
+                            </div>
+                            <div class="jshop_price">
+                              <span>3500 руб.</span>
+                            </div>
+                            </br>
+                            <div class="buttons">
+                              <a class="button_buy" href="#">Купить</a> &nbsp;
+
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="list_products">
+                      <table class="product productitem_4">
+                        <tr>
+                          <td class="image">
+                            <div class="image_block">
+                              <div class="product_label">
+                                <img src="img/img7.png" width="214" height="176" alt="New">
+                              </div>
+                              <a href="#">
+                                <!--<img class="#" alt="Описание товара">-->
+                              </a></div>
+                            <div class="name">
+                              <a href="#">Чайник "Марин"</a>
+                            </div>
+                            <div class="description">
+                            </div>
+                            <div class="jshop_price">
+                              <span>3500 руб.</span>
+                            </div>
+                            </br>
+                            <div class="buttons">
+                              <a class="button_buy" href="#">Купить</a> &nbsp;
+
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="list_products">
+                      <table class="product productitem_5">
+                        <tr>
+                          <td class="image">
+                            <div class="image_block">
+                              <div class="product_label">
+                                <img src="img/img8.png" width="193" height="176" alt="New">
+                              </div>
+                              <a href="#">
+                                <!--<img class="#" alt="Описание товара">-->
+                              </a></div>
+                            <div class="name">
+                              <a href="#">Зеркало GOLD S</a>
+                            </div>
+                            <div class="description">
+                            </div>
+                            <div class="jshop_price">
+                              <span>3500 руб.</span>
+                            </div>
+                            </br>
+                            <div class="buttons">
+                              <a class="button_buy" href="#">Купить</a> &nbsp;
+
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="list_products">
+                      <table class="product productitem_6">
+                        <tr>
+                          <td class="image">
+                            <div class="image_block">
+                              <div class="product_label">
+                                <img src="img/img9.png" width="189" height="173" alt="New">
+                              </div>
+                              <a href="#">
+                                <!--<img class="#" alt="Описание товара">-->
+                              </a></div>
+                            <div class="name">
+                              <a href="#">Зеркало Luna</a>
+                            </div>
+                            <div class="description">
+                            </div>
+                            <div class="jshop_price">
+                              <span>3500 руб.</span>
+                            </div>
+                            </br>
+                            <div class="buttons">
+                              <a class="button_buy" href="#">Купить</a> &nbsp;
+
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    <h2>Популярные товары каталога </h2>
+                    <a class="view_products" href="">наиболее просматриваемые</a>
+                    <div class="list_products">
+                      <div class="block_item">
+                        <div class="item_image">
+                          <a href="#">
+                            <img src="img/img7.png" width="214" height="173" alt="">
+                          </a>
+                        </div>
+                        <div class="item_name">
+                          <a href="#">Чайник "Марин"</a>
+                        </div>
+                        <div class="item_price">
+                          3500 руб.        </div>
+                      </div>
+                    </div>
+                    <div class="list_products">
+                      <div class="block_item">
+                        <div class="item_image">
+                          <a href="#">
+                            <img src="img/img8.png" width="193" height="176" alt="">
+                          </a>
+                        </div>
+                        <div class="item_name">
+                          <a href="#">Зеркало GOLD S</a>
+                        </div>
+                        <div class="item_price">
+                          3500 руб.        </div>
+                      </div>
+                    </div>
+                    <div class="list_products">
+                      <div class="block_item">
+                        <div class="item_image">
+                          <a href="#">
+                            <img src="img/img9.png" width="189" height="173" alt="">
+                          </a>
+                        </div>
+                        <div class="item_name">
+                          <a href="#">Зеркало Luna</a>
+                        </div>
+                        <div class="item_price">
+                          3500 руб.        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="banners">
+                    <img src="img/banner1.png" width="125" height="54" alt="">
+                    <img src="img/banner2.png" width="120" height="55" alt="">
+                    <img src="img/banner3.png" width="149" height="55" alt="">
+                    <img src="img/banner4.png" width="180" height="55" alt="">
+                    <img src="img/banner5.png" width="107" height="55" alt="">
+                  </div>
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+          <nav class="footer_nav">
+            <ol>
+              <li><a href="#">О магазине</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ol>
+          </nav>
+          <div class="footer_address">
+            www.in-interior.ru (c) 2013
+          </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

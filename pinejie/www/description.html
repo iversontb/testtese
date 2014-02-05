@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.localscroll.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script type="text/javascript">
+        $(function($) {
+            $.localScroll({
+                duration: 1000,
+                hash: false });
+        });
+    </script>
+    <script src="js/jquery.main.js"></script>
+
+    <script type="text/javascript">$(document).ready(function(){
+        $(window).scroll(function () {if ($(this).scrollTop() > 0) {$('#scroller').fadeIn();} else {$('#scroller').fadeOut();}});
+        $('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 400); return false;});
+    });</script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+
+
+</head>
+<body class="inside">
+<!-- site -->
+<div class="site">
+    <div class="site__layout">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="index.html" title="Главная страница" class="logo"><img src="img/logo.png" height="209" width="593" alt=""></a>
+            <!-- /logo -->
+
+            <!-- main-menu -->
+            <nav class="main-menu">
+                <ol class="main-menu__layout">
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Главная</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Фотоальбомы </a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Туристу</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Новости</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Блог</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                    <li class="main-menu__item"><a class="main-menu__lnk" href="#">Доска объявлений</a></li>
+                </ol>
+            </nav>
+            <!-- /main-menu -->
+
+
+        </header>
+        <!-- /header -->
+
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- content -->
+                <div class="content">
+
+                    <!-- landContainer -->
+                    <div class="landContainer">
+
+                        <!-- landHref -->
+                        <div class="landHref">
+                            <a href="#" class="bottomPin">Нижнее Пинежье</a>
+                            <a href="#" class="middlePin">Среднее Пинежье</a>
+                            <a href="#" class="topPin">Верхнее Пинежье</a>
+                            <a href="#" class="petrovaCity">Петрова</a>
+                            <a href="#" class="chakopaCity">Чакопа</a>
+                            <a href="#" class="tryfanovaCuty">Труфанова</a>
+                            <a href="#" class="shotogorkaCity">Шотогорка</a>
+                        </div>
+                        <!-- /landHref -->
+
+                        <!-- searchForm -->
+                        <form action="#" method="post" class="searchForm">
+
+                            <div class="inputWrap">
+                                <input type="text">
+                            </div>
+                            <input type="submit" value="Поиск" class="eBut">
+                        </form>
+                        <!-- /searchForm -->
+
+                        <!-- newsList -->
+                        <ul class="newsList">
+                            <li>
+                                <div class="imgWrap">
+                                    <img src="pic/pic1.jpg" height="67" width="101" alt="">
+                                </div>
+                                <a href="#">27 июня 2013 в День молодежи в Карпогорах состоялся благотворительный концерт.</a>
+                            </li>
+                            <li><a href="#">27 ИЮНЯ 2013 в Пинежская молодежь поделилась опытом 	реализации проектов</a></li>
+                            <li><a href="#">Пинежский район будет сотрудничать с норвежскими 	    коммунами</a></li>
+                        </ul>
+                        <!-- /newsList -->
+
+                        <!-- weatherBlock -->
+                        <div class="weatherBlock">
+
+                            <!-- upBlock -->
+                            <div class="upBlock">
+
+                                <div class="waterImage">
+                                    <img src="pic/pic2.png" height="133" width="143" alt="">
+                                </div>
+
+                                <span class="degreas">+28<sup>с</sup></span>
+                            </div>
+                            <!-- /upBlock -->
+
+                            <div class="townSelectWrap">
+                                <a href="#" class="townSelect">с.Пинега</a>
+                                <ul class="openList">
+                                    <li><a href="#" id="0">с. Пинег1</a></li>
+                                    <li><a href="#" id="1">с. Пинег2</a></li>
+                                    <li><a href="#" id="2">с. Пинег3</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /weatherBlock -->
+
+                        <!-- socialContainer -->
+                        <div class="socialContainer">
+                            <script type="text/javascript" src="//yandex.st/share/share.js"
+                                    charset="utf-8"></script>
+                            <div class="yashare-auto-init" data-yashareL10n="ru"
+                                 data-yashareType="none" data-yashareQuickServices="vkontakte,facebook,twitter,gplus"
+
+                                    ></div>
+
+                        </div>
+                        <!-- /socialContainer -->
+
+                        <!-- guide -->
+                        <div class="guide">
+                            <p class="topicType">Путеводитель</p>
+                            <ul>
+                                <li><a href="#">Пинежье</a></li>
+                                <li><a href="#" class="see">Что посмотреть</a></li>
+                                <li><a href="#" class="stop">Где остановиться</a></li>
+                                <li><a href="#" class="way">Как добраться</a></li>
+                                <li><a href="#">Словарь пинежской говори</a></li>
+                            </ul>
+                        </div>
+                        <!-- /guide -->
+
+                    </div>
+                    <!-- /landContainer -->
+
+                    <!-- headDescription -->
+                    <div class="headDescription">
+
+                        <div class="headDescInside">
+                            <dl>
+                                <dt>Сейчас вы просматриваете:</dt>
+                                <dd>Пинежье</dd>
+                            </dl>
+                        </div>
+
+                    </div>
+                    <!-- /headDescription -->
+
+                    <!-- decriptionContainer -->
+                    <div class="decriptionContainer">
+
+                        <div class="descriptionInside">
+
+                            <ul class="descriptionMenu">
+                                <li><a href="#about">О Пинежье</a></li>
+                                <li><a href="#history">Историческая справка</a></li>
+                                <li><a href="#photogallery">Фотогалерея</a></li>
+                                <li><a href="#turists">Туристам</a></li>
+                            </ul>
+
+                            <article class="descriptionContent">
+                                <h2 id="about">О Пинежье</h2>
+                                <p>Пинежье – один из родников Русского Севера, сохранивший в себе силу русской культуры, культурные корни своих предков.</p>
+                                <p>Пинежье – это еще тот Русский Север, куда до сих пор с неспокойной душой паломники идут взглянуть на сохранившее в себе истоки русской культуры, наследие предков и ответить на вопрос: кто мы? откуда мы?</p>
+                                <p>Можно ли найти еще такое место, где до сих пор сами деревни являются музеями под открытым небом, где из поколения в поколение поются народные песни, а бабушкины сарафаны служат по прямому значению, где прошлое и нынешнее переплелось так, что является вечно живым и единым.</p>
+                                <p>Веками сохраняемые и передаваемые из уст в уста – от бабушек к внукам – былины и песни; особый пинежский говор, сохранившийся с XII века и дошедший до нас; нравственные устои – уважение к ребенку и почтение к усопшему; древние традиции – от ухоженных погостов до праздников всей деревней – будь то престольных или народных – вот та духовная сила, которая объединяет и роднит пинежан.</p>
+                                <p>Северная природа – с крещенскими морозами и летней жарой – не терпит фальши. Быть может, поэтому на Пинежье стоят сработанные простыми мужиками в прошлых веках избы; без единого гвоздя по воле народа построенные церкви. И стоят они на самых высоких красивых берегах Пинеги памятниками деревянного зодчества, отражаясь в ее быстрых водах, они как корабли прошлого плывут во времени. На Пинежье реализуются комплексные программы развития сельского, паломнического и экстремального туризма.</p>
+                                <p>О Пинежье говорят: «К Пинежью привязываешься сразу, расстаешься с грустью и запоминаешь навсегда».</p>
+                                <ul class="photoShow">
+                                    <li><a href="#"><img src="pic/pic4.jpg" height="305" width="441" alt=""></a></li>
+                                    <li><a href="#"><img src="pic/pic5.jpg" height="305" width="441" alt=""></a></li>
+                                </ul>
+                                <h2 id="history">Историческая справка</h2>
+                                <p>Заселение людьми Пинежья уходит в далекое прошлое. На Явроньге, притоке реки Юлы, впадающей в Пинегу, археологами обнаружено мезолитическое поселение - стоянка древнего человека, датируемая IX - VII вв. тыс. до н. э.</p>
+                                <p>Позднее Пинежье заселяют племена, пришедшие сюда с юга, из Волго-Окского междуречья, носящие собирательное имя - «Чудь белоглазая».  И это было не просто прозвище или кличка. По преданиям это была природная особенность людей чуди: радужная оболочка зрачка у них была белой и как бы сливалась с белком глаза.</p>
+                                <p>Раньше в народе говорили, что люди чуди были ловкими охотниками и меткими стрелками, белке в глаз попадали, а шкурки не портили.</p>
+                                <p>Но слухи о сказочных пушных и рыбных богатствах «полунощных стран», как в старину называли север, издавна привлекали новгородских промысловых людей. Нелегко добирались в северные края первые русские землепроходцы.</p>
+                                <p>Дремучие леса, болота, многочисленные реки преграждали им дорогу: «путь…не проходим пропастьми, снегом и лесом» - отмечает древняя Несторовская летопись. И, тем не менее, уже с XI в. на Пинегу приходят новгородцы.</p>
+                                <p>Освоение ими Пинежья проходило многие десятилетия и даже века. И, хотя у нас нет точных сведений, но из уст в уста передается молва, что чудь жестоко сопротивлялась им. Уже в наше время около поселка Пинега, деревень Немнюги, Кевролы, Суры археологи находят стрелы, копья, секиры.</p>
+                                <p>Считается, что новгородцы шли с устья реки Пинега, но не достигли верховья и в районе притоков Выи и Пинежки «белоглазая чудь» осталась, затем она ассимилировалась с московскими поселенцами, которые шли на Пинегу с юга. В XII в. (в 1137 г.) в уставе князя Святослава Ольговича в составе Новгородских владений перечисляются пинежские поселения Кевроль и Пинега.</p>
+                                <p>Таким образом, к 1137г. река Пинега в ее нижнем и среднем течении была под административным управлением Великого Новгорода и заселялась русскими людьми - новгородцами. В XV в. (в 1471 г.)</p>
+                                <ul class="photoShow">
+                                    <li><a href="#"><img src="pic/pic4.jpg" height="305" width="441" alt=""></a></li>
+                                    <li><a href="#"><img src="pic/pic5.jpg" height="305" width="441" alt=""></a></li>
+                                </ul>
+                                <p>Новгород уступил Москве пинежские земли. Но пинежский воевода не сразу сдался московским князьям. По преданию, в районе уездного города Кевроль произошли довольно сильные бои, новгородские дружины были разбиты, и Пинежье стало составной частью Русского государства. Население вошло в состав «черного крестьянства», которое платило государству оброк за пользование землей.</p>
+                                <p>На Пинежье не стало боярского, как и не было затем и помещичьего землевладения. И это на генетическом уровне породило свободолюбие северного народа. В 1616 г. был образован Кеврольский уезд, который охватывал всю территорию бассейна реки Пинеги с притоками.</p>
+                                <p>Центром уезда стал город Кевроль, находился он примерно на месте нынешней деревни Немнюги, расположенной на высоком берегу реки Пинега. Постепенно вешние воды прокладывали новое русло для Пинеги. Кевроль оказалась в стороне от основного транспортного пути.</p>
+                                <p>Это явилось одной из причин переноса центра Пинежского края. Указом Екатерины II в 1780г. был образован Пинежский уезд с центром в городе Пинеге (ранее погост Пинежский волок).</p>
+                                <p>Пинежье при царизме было местом ссылки лиц, не угодных власть имущим. Здесь провел последние годы жизни любимец царевны Софьи князь Василий Васильевич Голицын (похоронен в Красногорском мужском монастыре).</p>
+                                <p>В Пинежском уезде провели ссылку К.Е. Ворошилов, А.И. Рыков, будущий писатель Серафимович и многие другие деятели революционного движения. 15 июля 1929 году при районировании Северного края на территории Сурской, Карпогорской и Пинежской волостей бывшего Пинежского уезда образовано два района: Карпогорский и Пинежский. Через 30 лет, в 1959 году они вновь были объединены в единый Пинежский район с центром в селе Карпогоры.</p>
+                                <ul class="photoShow">
+                                    <li><a href="#"><img src="pic/pic4.jpg" height="305" width="441" alt=""></a></li>
+                                    <li><a href="#"><img src="pic/pic5.jpg" height="305" width="441" alt=""></a></li>
+                                </ul>
+
+                                <h2 id="photogallery">Фотогалерея</h2>
+                                <ul class="photoGallery">
+                                    <li><a href="#"><img src="pic/pic6.jpg" height="211" width="297" alt=""></a></li>
+                                    <li><a href="#"><img src="pic/pic6.jpg" height="211" width="297" alt=""></a></li>
+                                    <li><a href="#"><img src="pic/pic6.jpg" height="211" width="297" alt=""></a></li>
+                                    <li><a href="#"><img src="pic/pic6.jpg" height="211" width="297" alt=""></a></li>
+                                    <li><a href="#"><img src="pic/pic6.jpg" height="211" width="297" alt=""></a></li>
+                                    <li><a href="#"><img src="pic/pic6.jpg" height="211" width="297" alt=""></a></li>
+                                </ul>
+
+                                <h2 id="turists">Туристам</h2>
+                                <div class="turistBlock">
+                                    <div class="block">
+                                        <p class="topicType2">Пинежский район. Справочная информация для туристов. </p>
+                                        <p>Телефонный код района: 81856</p>
+                                        <p>Мобильная связь: "Мегафон", "Теле2", "МТС"</p>
+                                        <p>(в с. Карпогоры и п. Пинега) </p>
+                                    </div>
+                                    <div class="block">
+                                        <p class="topicType2">Транспортное сообщение:</p>
+                                        <p>Железнодорожный транспорт Архангельск - ст. Карпогоры (Пассажирские)    </p>
+                                        <p>Автотранспорт (частный) Архангельск - с. Карпогоры   </p>
+                                        <p>Автотранспорт (общественный, пригородный) Архангельск - п. Пинега  </p>
+                                    </div>
+                                </div>
+
+                                <div class="mapContainer">
+                                    <p>Автомобильная дорога Архангельск — Карпогоры действует круглый год, но весной и после продолжительных дождей пригодна только для
+                                        движения автомобилей повышенной проходимости. На дороге два пересечения с рекой Пинега: у пос. Паленьга (Холмогорский район)
+                                        и у пос. Ясный (Пинежский район). Зимой там организованы ледовые переправы, летом - понтонный мост.</p>
+                                    <div class="map">
+                                        <img src="pic/pic7.jpg" height="425" width="916" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="lineBlock">
+                                    <p>Справочная автовокзала - 2-11-50</p>
+                                    <p>Экстренная помощь: Единая Дежурно-Диспетчерская Служба - 2-28-01, Служба спасения - 01, Милиция - 2-16-02  Скорая помощь - 03</p>
+                                </div>
+
+                                <div class="lineBlock">
+                                    <p class="grayType">В районе нет пункта обмены валют.<p>
+                                    <p  class="grayType">В летний сезон рекомендуется запастись средствами от укусов насекомых.</p>
+                                    <p>Услуги автосервиса - 2-22-55, 2-16-30 (с 9.00 до 18.00)</p>
+                                </div>
+
+                                <div class="littleBlock">
+                                    <p>Гостиницы и отели:</p>
+                                    <p>Гостиница «Комфорт» Архангельская область,  Пинежский район, п. Пинега, ул. Первомайская, 53 Тел.: 8(818-56)  4-23-41</p>
+                                    <p>Лесной отель «Голубино» Архангельск, пр. Московский, 25, Тел.: (8182) 66-88-13, 66-88-94, E-mail: <a href="mailto:golubino2@rambler.ru">golubino2@rambler.ru</a>, <a href="http: www.golubino.com">http: www.golubino.com</a>    </p>
+                                </div>
+
+                                <p>Вы можете перейти в категорию <a href="#"><i>«Туристу»</i></a> для получение более подробной информации.</p>
+
+                            </article>
+
+
+
+                        </div>
+
+                    </div>
+                    <!-- /decriptionContainer -->
+
+                </div>
+                <!-- /content -->
+
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+    </div>
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <a href="#" class="vkontakte" title="vkontakte">vkontakte</a>
+        <p class="copy">copyright © www.pinezhye.info Все права защищены.
+            Использование материалов сайта возможно только с разрешения администрации.</p>
+        <a href="#" class="creaters">saitoria</a>
+
+
+    </div>
+</footer>
+<!-- /footer -->
+<div id="scroller" class="b-top" style="display: none;"><span class="b-top-but">наверх</span></div>
+</body>
+</html>

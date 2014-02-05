@@ -1,0 +1,590 @@
+@charset "utf-8";
+/*
+	main styles
+	version: 12.01.2013
+	
+	Style to null
+	
+	Main Wrap
+	
+	Main Header
+	
+	Content Wrap
+	
+	content
+	
+	index
+	
+
+	
+	Main Footer
+	
+*/
+
+
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;                              
+	vertical-align: baseline;          
+	background: transparent;      
+	font-size: 100%;              
+}
+a {                                      	    
+	margin:0;
+	padding:0;
+	font-size:100%;
+	vertical-align:baseline;
+	background:transparent;
+}
+table {						
+	border-collapse: collapse; 
+	border-spacing: 0;
+}
+td, td img {
+	vertical-align: top;
+} 
+input, select, button, textarea {
+	margin: 0; 				
+	font-size: 100%; 	
+}
+input[type="text"], input[type="password"], textarea {
+	padding: 0; 		
+	-webkit-appearance: none;
+}
+input[type="search"]{
+	-webkit-appearance: none;	
+	border: none;
+}
+input[type="checkbox"] { 		
+	vertical-align: bottom;
+}
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display:block;
+}
+nav ul {
+	 list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+	overflow-y: scroll; 
+}
+body {
+	line-height: 1;
+	background: #fff;
+	color: #000;
+	text-align: left;
+	font: 14px Arial, Helvetica, sans-serif;
+}
+input, select, button, textarea {
+	font-family: Arial, Helvetica, sans-serif;
+}
+label, input[type="button"], input[type="submit"], button {
+	cursor: pointer; 
+}
+a, a:visited { 
+	color: #287fc3;
+	text-decoration: underline;
+}
+a:hover {
+	color: #287fc3;
+	text-decoration: none;
+}
+a:focus, a:active {
+	color: #287fc3;
+	text-decoration: underline;
+}
+
+.popUpContainer{
+	width: 531px;
+	position: absolute;
+	top: 50px;
+	left: 50%;
+	margin-left: -265.5px;
+	background: url(../img/pop-up-back.jpg);
+	border-radius: 10px;
+	color: #fff;	
+}
+.closeButton{
+	background: url(../img/close-button.png);
+	width: 24px;
+	height: 21px;
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	top: 17px;
+	right: 14px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-indent: -5000px;
+}
+.closeButton:hover{
+	opacity: 0.8;
+}
+.popUpContainer h2{
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+	margin-bottom: 18px;
+	text-shadow:0 1px 1px #000;
+	background: url(../img/topic-line.png) repeat-x bottom left;
+	padding: 15px 0 13px 0;
+}
+.popUpContainer textarea{
+	width: 443px;
+	height: 116px;
+	padding: 5px;
+	color: #666666;
+	border: none;
+}
+.container{
+	padding: 0 40px;
+	position: relative;
+}
+.erorrInp,
+.error{
+	color: #fff;
+	background: #c45c2d;
+	font-size: 12px;
+	height: 25px;
+	line-height: 25px;
+	width: 140px;
+	text-align: center;
+	position: absolute;
+	top: 50px;
+	right: -145px;
+	display: none;
+}
+.erorrInp:after,
+.error:after{
+	content: "";
+	position: absolute;
+	background: url(../img/arrow.png);
+	width: 8px;
+	height: 25px;
+	top: 0;
+	left: 0;
+}
+.popUpContainer label{
+	line-height: 18px;
+	display: block;
+	padding-bottom: 8px;
+}
+.buttonList{
+	list-style: none;
+	overflow: hidden;
+	padding: 17px 0;
+}
+.buttonList li{
+	float: left;
+	margin-right: 32px;
+}
+.buttonList a{
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+}
+.buttonList a:hover{
+	border-bottom: none;
+}
+.inputWrap{
+	border: 1px solid #404042;
+	background: url(../img/you-tube.png) no-repeat #fff;
+	width: 416px;
+	height: 25px;
+	position: relative;
+	float: left;
+}
+.lineContainer{
+	overflow: hidden;
+	margin-bottom: 13px;
+}
+.inputWrap input{
+	border: none;
+	background: none;
+	padding-left: 50px;
+	padding-right: 18px;
+	height: 25px;
+	width: 348px;
+	color: #666666;
+	font-size: 11px;
+}
+.clearButton{
+	position: absolute;
+	cursor: pointer;
+	background: url(../img/clear-button.png);
+	width: 17px;
+	height: 17px;
+	top: 4px;
+	right: 5px;
+	text-indent: -5000px;
+
+}
+
+.e-Button:hover{
+	background: url(../img/hover-button.png);
+}
+.e-Button:active{
+	background: url(../img/pressed-button.png);
+}
+.addButton:hover,
+.clearButton:hover{
+	opacity: 0.8;
+}
+.addButton{
+	float: right;
+	background: url(../img/plus-button.png);
+	width: 30px;
+	height: 27px;
+	display: block;
+	border: none;
+	text-indent: -5000px;
+}
+.longInput{
+	width: 449px;
+	background: #fff;
+}
+.longInput input{
+	width: 433px;
+	padding: 0 8px 0 8px;
+}
+
+.type_file ::-webkit-input-placeholder {color:#fff;}
+.type_file :-moz-placeholder {color:#fff;}
+
+
+
+.type_file { /* блок-родитель, внутри которого будут позиционироваться остальные элементы для реализации стильного поля выбора файлов */
+	position: relative;
+	height: 27px;
+	width: 415px;
+	float: left;
+}
+.inputFile { /* поле type="file" */
+	position: absolute; /* абсолютное позиционирование, чтобы можно было совместить поле и блок с оформлением */
+	top: 0;
+	left: 0;
+	z-index: 20; /* z-слой должен быть больше, чем у блока с оформлением */
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); /* делаем поле абсолютно прозрачным */
+	-moz-opacity: 0;
+	-khtml-opacity: 0;
+	opacity: 0;
+	cursor: pointer;
+	height: 27px;
+	width: 376px; /* задаем ширину для всех браузеров. Для firefox подбираем значение параметра size в поле */
+}
+.fonTypeFile { /* блок с оформлением */
+	width: 104px; /* размеры картинки для оформления */
+	height: 27px;
+	background: url(../img/review.png) no-repeat; /* картинка оформления поля */
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	z-index: 1; /* z-слой меньше, чем у поля выбора файла */
+}
+.type_file:hover .fonTypeFile{
+	opacity: 0.8;
+}
+.inputFileVal { /* поле, в котором будет показан результат выбора файла */
+	position: absolute;
+	top: 7px;
+	left: 110px;
+	color: #fff;
+	font-size: 11px;
+	z-index: 2;
+	width: 275px;
+	background: none;
+	border: none;
+}
+.e-Button{
+	background: url(../img/button-back.png);
+	height: 27px;
+	border: 1px solid #000;
+	border-radius: 3px;
+	line-height: 23px;
+	font-size: 13px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	float: right;
+	margin: 10px 0 20px 0;
+	padding: 0 40px;
+	color: #333333;
+	text-shadow: 0 1px 0 #fff;
+}
+
+
+
+
+/*---------------------filter-------------------*/
+.filterPop{
+	width: 745px;
+	margin-left: -372.5px;
+}
+.filterPop .container{
+	padding: 0 32px;
+	position: relative;
+	overflow: hidden;
+}
+.filterPop h2{
+	text-align: left;
+	padding-left: 32px;
+	overflow: hidden;
+}
+.filterPop h2 span{
+	float: left;
+}
+.filterPop h2 ul{
+	float: left;
+	list-style: none;
+	margin-left: 31px;
+	margin-top: -2px;	
+}
+.filterPop h2 ul li{
+	float: left;
+	margin-right: 20px;
+}
+.filterPop h2 ul li a{
+	font-size: 13px;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dotted #fff;
+}
+.filterPop h2 ul li a:hover{
+	border-bottom: none;
+}
+.selected{
+	overflow: hidden;
+	background: url(../img/topic-line.png) bottom left repeat-x;
+	font-size: 11px;
+	padding-bottom: 19px;
+	padding-left: 32px;
+	margin-top: -2px;
+	margin-bottom: 33px;
+}
+.selected dt{
+	float: left;
+	font-weight: bold;
+	margin-right: 5px;
+}
+.selected dd{
+	float: left;
+	margin-right: 3px;
+}
+.selected dd span{
+	background: url(../img/close-selected.png) no-repeat 0 4px;
+	padding-left: 10px;
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+}
+.selected dd span span{
+	display: none;
+}
+.selected dd span:hover{
+	background: url(../img/close-selected-hover.png) no-repeat 0 4px;
+}
+.categoryWrap{
+	width: 255px; 
+	float: left;
+}
+.subCategory{
+	float: left;
+	width: 419px;
+	background: #ececec;
+	border-top: 1px solid #000;
+	border-radius: 5px;
+}
+.categoryWrap .active{
+	background: #ececec;
+	border-radius: 5px 0 0 5px;
+	width: 245px;
+	z-index: 20;
+	border-top: 1px solid #000;
+	position: relative;
+}
+.categoryWrap .active:after{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -5px;
+	background: #ececec;
+	width: 15px;
+	height: 32px;
+}
+.categoryWrap .active label{
+	color: #000;
+	border-bottom: 1px dashed #000;
+}
+.radioContainer{
+	width: 245px;
+	float: left;
+	padding: 6px 0 7px 10px;
+}
+.radioContainer input[type="checkbox"],
+.radioContainer input[type="radio"]{
+	float: left;
+	margin-top: 3px;
+	margin-right: 7px;
+}
+.radioContainer label{
+	color: #fff;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	float: left;
+	border-bottom: 1px dashed #fff;
+	padding-bottom: 0;
+}
+.emptySub{
+	text-align: center;
+	color: #000;
+	font-size: 18px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding: 0 80px;
+	vertical-align: middle;
+	display: table-cell;
+}
+.filterPop .footerCont{
+	background: url(../img/topic-line.png) repeat-x;
+	margin-top: 27px;
+	padding-top: 23px;
+	padding-bottom: 27px;
+}
+.footerCont .radioContainer{
+	float: left;
+}
+.footerCont .newCat{
+	float: left;
+	color: #fff;
+	text-decoration: none;
+	border-bottom: 1px dashed #fff;
+	font-size: 13px;
+	margin: 8px 0 0 53px;
+}
+.newCat:hover{
+	color: #fff;
+	border: none;
+}
+.footerCont .e-Button{
+	margin: 4px 8px 0 0;
+	padding: 0 39px;
+}
+
+.subCategory ul{
+	list-style: none;
+	padding: 7px 5px 0 14px;
+	float: left;
+	width: 185px;
+}
+.listWrap{
+	display: none;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+.subCategory .radioContainer label{
+	color: #333333;
+	border-bottom: none;
+	font-size: 13px;
+	width: 155px;
+	font-weight: normal;
+}
+.subCategory ul li{
+
+}
+.subCategory ul li .radioContainer{
+	padding-bottom: 2px;
+}
+
+/*-----------------------create--------------------*/
+.propouse{
+	background: url(../img/topic-line.png) repeat-x bottom left;
+	color: #fff;
+	font-style: italic;
+	font-size: 13px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding: 0 90px 17px 90px;
+	margin-top: -8px;
+	margin-bottom: 21px;
+}
+.propouseForm .block{
+	margin-bottom: 21px;
+}
+.propouseForm label{
+	float: left;
+	width: 140px;
+}
+.propouseForm .inputWrap{
+	background: #fff;
+	width: 309px;
+	height: 22px;
+	float: left;
+}
+.propouseForm .inputWrap input{
+	padding: 0 5px;
+	height: 22px;
+	width: 299px;
+}
+.propouseForm textarea{
+	float: left;
+	width: 299px;
+	height: 116px;
+	padding: 5px;
+}
+.block{
+	position: relative;
+	float: left;
+	width: 100%;
+}
+.block .erorrInp,
+.block .error{
+	top: 0;
+	right: -195px;
+	width: 150px;
+	display: none;
+}
+
+
+/*----------------------------freinds_add---------------*/
+.friendsAdd{
+	overflow: hidden;
+	list-style: none;
+	margin: 0 0 20px 21px;
+}
+.friendsAdd li{
+	float: left;
+	margin-left: 15px;
+}
+
+/*--------------------------share---------------*/
+.shareList{
+	overflow: hidden;
+	list-style: none;
+	margin: 0 0 20px 21px;
+}
+.shareList li{
+	float: left;
+	margin-left: 32px;
+}
+.share .e-Button{
+	margin-right: 55px;
+}
+
+.secsessAdd{
+	padding: 0 0 20px 53px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}

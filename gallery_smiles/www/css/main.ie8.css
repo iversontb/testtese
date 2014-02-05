@@ -1,0 +1,15 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "PT Sans";
+    src: url("../font/pt_sans.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "helvetica-medium";
+    src: url("../font/helveticaneuecyr-medium.eott");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

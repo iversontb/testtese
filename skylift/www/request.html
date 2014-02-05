@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/request.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.select.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <h1 class="logo"><img src=""></h1>
+            <!-- /logo -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+            <aside></aside>
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- bread_crumb -->
+                <nav class="bread_crumbs">
+                    <a href="#">Главная</a>
+                    <a href="#">Оформление заказа</a>
+                </nav>
+                <!-- /bread_crumb -->
+
+                <!-- chip_basket -->
+                <a class="chip_basket" href="#">1 единица техники</a>
+                <!-- /chip_basket -->
+
+                <h1>Оформление заказа</h1>
+
+                <!-- request -->
+                <form class="request" method="get" action="#">
+
+                    <!-- data -->
+                    <div class="data">
+                        <label><input type="radio" name="vat"><span>Без НДС (физическое лицо)</span></label>
+                        <label> <input type="radio" name="vat"><span>С НДС (юридическое лицо)</span></label>
+                        <p>Данные представителя компании, принимающий технику на объекте</p>
+                        <input type="text" name="name" placeholder="Имя и фамилия">
+                        <input type="text" name="phone" placeholder="Контактный телефон">
+                        <input type="text" name="email" placeholder="Электронная почта">
+                    </div>
+                    <!-- /data -->
+
+                    <!-- aerial-platform -->
+                    <div class="aerial-platform">
+                            <p>Автовышка ПСС-131.18Э</p>
+                            <dl>
+                                <dt>Место работы</dt>
+                                <dd><label><input type="radio" name="place">Москва в пределах ТТК и МКАД</label></dd>
+                                <dd><label><input type="radio" name="place">Москва в пределах ТТК и Садового кольца</label></dd>
+                                <dd><label><input type="radio" name="place">Москва в пределах Садового кольца</label></dd>
+                                <dd><label><input type="radio" name="place">За пределами МКАД</label></dd>
+                            </dl>
+                            <dl>
+                                <dt>Цена работы</dt>
+                                <dd>1800 руб. смена</dd>
+                                <dd>650 руб. час</dd>
+                                <dd>300 руб. киллометр</dd>
+                            </dl>
+
+                        <!-- adds -->
+                            <div class="adds">
+                                <input type="text" name="address" placeholder="Адрес объекта">
+                                <input type="text" name="kilometers" placeholder="Км от Москвы">
+                            </div>
+                        <!-- /adds -->
+
+                        <!-- work -->
+                        <div class="work">
+                            <input type="text" name="address" placeholder="Адрес объекта">
+                            <div class="date"><input type="text" name="date" placeholder="Дата начала работ"></div>
+                                <select>
+                                    <option>Время работы</option>
+                                    <option>8.00</option>
+                                    <option>9.00</option>
+                                    <option>10.00</option>
+                                    <option>11.00</option>
+                                    <option>12.00</option>
+                                    <option>13.00</option>
+                                    <option>14.00</option>
+                                </select>
+                            <span class="rent">Минимальное время аренды составляет 8 часов за смену (7 часов работы и 1 час подачи машины к месту проведения работ).</span>
+                        </div>
+                        <!-- /work -->
+
+                    </div>
+                    <!-- /aerial-platform -->
+
+                    <!-- add -->
+                    <a href="#" class="add">Добавить технику</a>
+                    <!-- /add -->
+
+                    <!-- cost -->
+                    <div class="cost">
+                        <h2>Рассчет стоимости</h2>
+                        <dl>
+                            <dt>Сумма за смены</dt>
+                            <dd>2800</dd>
+                            <dt>Сумма за дополнительные часы</dt>
+                            <dd>30000</dd>
+                            <dt>Сумма рублей за километраж</dt>
+                            <dd>13 300</dd>
+                            <dt>Сумма НДС</dt>
+                            <dd>2500</dd>
+                            <dt class="cost__price">Общая сумма</dt>
+                            <dd class="cost__price"><span>34 000</span> руб</dd>
+                        </dl>
+                    </div>
+                    <!-- /cost -->
+
+                    <!-- send -->
+                    <input type="submit" class="send" value="Отправить заявку">
+                    <!-- /send -->
+
+                </form>
+                <!-- /request -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

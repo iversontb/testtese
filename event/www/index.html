@@ -1,0 +1,252 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/modernizr-1.7.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/cusel-min-2.5.js"></script>	
+	<script src="js/jquery-ui-1.9.1.custom.min.js"></script>	
+	<script src="js/calendar.js"></script>		
+	<script src="js/jquery.main.js"></script>
+
+
+	<!--[if lte IE 7]> 
+		<link rel="stylesheet" href="css/main-ie7.css" />
+	<![endif]-->
+
+	
+</head>
+<body>
+	
+	<!--popUp-->
+	<div class="popUp">
+	
+		<!--orderForm-->
+		<form action="#" method="post" class="orderForm">
+		
+			<div class="closeButton" title="close">close</div>
+		
+			<h2>Заказать мероприятие</h2>
+			
+			<div class="lineContainer">
+				<label for="fio">ФИО</label>
+				<div class="inputWrap">
+					<input id="fio" required type="text">
+				</div>
+			</div>
+			
+			<div class="lineContainer">
+				<label for="phone">Телефон для связи</label>
+				<div class="inputWrap">
+					<input id="phone" required type="text">
+				</div>
+			</div>
+			
+			<div class="lineContainer">
+				<label for="email">E-mail</label>
+				<div class="inputWrap">
+					<input id="email" required type="email">
+				</div>
+			</div>	
+			
+			<div class="lineContainer">
+				
+				<div class="block">
+					<label>Тип мероприятия</label>
+					<div class="selectWrap longSelect">
+						<select required id="idSelect" name="nameSelect">
+							<option value=""></option>
+							<option value="значение option 1">текст option 1</option>
+							<option value="значение option N">текст option N</option>
+							<option value="значение option 1">текст option 1</option>
+							<option value="значение option N">текст option N</option>		
+							<option value="значение option 1">текст option 1</option>
+							<option value="значение option N">текст option N</option>
+							<option value="значение option 1">текст option 1</option>
+							<option value="значение option N">текст option N</option>	
+						</select>
+					</div>
+				</div>
+				
+				<div class="block gestNumber">
+					<label>Кол-во гостей</label>
+					<div class="selectWrap smallSelect">
+						<select required id="idSelect2" name="nameSelect2">
+							<option value=""></option>
+							<option value="50"> 50</option>
+							<option value="10">10</option>
+						</select>
+					</div>
+				</div>	
+							
+			</div>	
+			
+			<div class="lineContainer">
+				
+				<div class="block paddingStyle">
+					<label>Дата мероприятия</label>
+					<div class="inputWrap">
+						<input type="text" id="date1">
+					</div>
+				</div>
+			</div>		
+			
+			<div class="lineContaner capchWrap">
+				<div class="capcha">
+					<img src="pic/pic2.png" height="42" width="118" alt="">
+				</div>
+				<div class="inputWrap">
+					<input required type="text">
+					<span class="green">введите код, указанный на картинке</span>
+				</div>
+				<input type="submit" class="e-Button" value="">
+			</div>		
+							
+		</form>
+		<!--/orderForm-->
+		
+	</div>
+	<!--/popUp-->
+	
+	<!--Main Wrap-->
+	<div class="mainWrap">
+			
+		<!--Main Header-->
+		<header class="mainHeader">
+			<h1><a href="index.html"></a> <img src="img/logo.png" height="176" width="288" alt="the one event" class="logo"></a></h1>
+			
+			<!--mainMenu-->
+			<nav class="mainMenu">
+				<ol>
+					<li><a class="servises" href="#"><span>Услуги</span></a></li>
+					<li><a class="photoVideo" href="#"><span>Фото и видео</span></a></li>
+					<li><a class="discount" href="#"><span>Акции</span></a></li>
+					<li><a class="contacts" href="#"><span>Контакты</span></a></li>															
+				</ol>
+			</nav>
+			<!--/mainMenu-->
+			
+			<!--social-->
+			<ul class="social">
+				<li><a href="#" class="facebook" title="facebook">facebook</a></li>
+				<li><a href="#" class="youtube" title="youtube">youtube</a></li>
+				<li><a href="#" class="twitter" title="twitter">twitter</a></li>
+				<li><a href="#" class="vkontakte" title="vkontakte">vkontakte</a></li>												
+			</ul>
+			<!--/social-->
+			
+			<!--ourContats-->
+            <div class="ourContats">
+                <address>
+                    <div class="phoneWrap">
+                        <p><a href="tel:+7 (495) 721 0391">+7 (495)<span> 721 0391</span></a></p>
+                        <p><a href="tel:+7 (495) 721 0391">+7 (495)<span> 721 0391</span></a></p>
+                    </div>
+                    <a href="mailto:askme@thatone.ru" class="email">askme@thatone.ru</a>
+                </address>
+            </div>
+			<!--/ourContats-->
+			
+			<a href="#" class="order">Заказать мероприятие</a>
+			
+			<!--subMenu-->
+			<nav class="subMenu">
+				<ol>
+					<li><a href="#">Доп услуги</a></li>
+					<li><a href="#">Конференции </a></li>
+					<li><a href="#">Корпоративы</a></li>
+					<li><a href="#">Тимбилдинг</a></li>
+					<li><a href="#">Свадьбы </a></li>
+					<li><a href="#">вечеринки</a></li>
+					<li><a href="#">Мальчишники и девичники</a></li>
+					<li><a href="#">Детские праздники</a></li>
+					<li><a href="#">Дни рождения</a></li>
+				</ol>
+			</nav>
+			<!--/subMenu-->
+
+		</header>
+		<!--/Main Header-->
+					
+		<!--Content Wrap-->
+		<div class="contentWrap">
+			<!--mainContent-->
+			<div class="mainContent">
+			
+				<!--mainGallWrap-->
+				<div class="mainGallWrap">
+				
+					<button class="prev">prev</button>
+					<button class="next">next</button>
+				
+					<div class="gallery">
+						<div class="gallWraper">
+							<div class="gallInside leftSide">
+									<a href="#">
+										<img src="pic/pic1.jpg" height="413" width="726" alt="">
+									</a>	
+									<div class="gallDescrption">
+										<h2>Организация свадеб.</h2>
+										<p>Организация деловых мероприятий – это не просто встреча людей, а четко просчитанный механизм, который решает сформулированные задачи вне зависимости от формата</p>
+									</div>												
+							</div>
+							<div class="gallInside active">
+									<a href="#">
+										<img src="pic/pic1.jpg" height="413" width="726" alt="">
+										<div class="gallDescrption">
+											<h2>Организация свадеб.</h2>
+											<p>Организация деловых мероприятий – это не просто встреча людей, а четко просчитанный механизм, который решает сформулированные задачи вне зависимости от формата</p>
+										</div>
+									</a>				
+							</div>
+							<div class="gallInside rightSide">
+									<a href="#">
+										<img src="pic/pic1.jpg" height="413" width="726" alt="">
+									</a>		
+									<div class="gallDescrption">
+										<h2>Организация свадеб.</h2>
+										<p>Организация деловых мероприятий – это не просто встреча людей, а четко просчитанный механизм, который решает сформулированные задачи вне зависимости от формата</p>
+									</div>											
+							</div>
+						</div>
+					</div>
+													
+				</div>
+				<!--/mainGallWrap-->
+
+			</div>
+			<!--/mainContent-->
+													
+		</div>
+		<!--/Content Wrap-->
+					
+					
+					
+		</div>
+		<!--/Main Wrap-->
+		
+		<!--Main Footer-->
+		<footer class="mainFooter">
+		
+			<div class="insideFooter">
+				<p class="copy">&copy; 2012, « ThatOne Event».
+Все права защищены.</p>
+				<ul class="counters">
+					<li><img src="img/counter.png" height="27" width="90" alt=""></li>
+					<li><img src="img/counter.png" height="27" width="90" alt=""></li>					
+				</ul>
+				
+				<dl class="creaters">
+					<dt>Разработка сайта:</dt>
+					<dd><a href="http://xn--80aqcukcj1i.xn--p1ai/" class="sitoria">saitoria</a></dd>
+				</dl>
+				
+			</div>
+
+		</footer>
+			<!--/Main Footer-->
+
+</body>
+</html>

@@ -1,0 +1,498 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    content-wrap
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    background: #f2f8f8;
+    z-index: 1;
+    position: relative;
+}
+body:after{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -470px;
+    width: 340px;
+    height: 100%;
+    background: #fcffff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #fcffff 0%, #f2f8f8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcffff), color-stop(100%,#f2f8f8));
+    background: -webkit-linear-gradient(top,  #fcffff 0%,#f2f8f8 100%);
+    background: -o-linear-gradient(top,  #fcffff 0%,#f2f8f8 100%);
+    background: -ms-linear-gradient(top,  #fcffff 0%,#f2f8f8 100%);
+    background: linear-gradient(to bottom,  #fcffff 0%,#f2f8f8 100%);
+    content: "";
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 44px;
+    text-align: center;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+.site:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    content: "";
+    background: #8069d4; /* Old browsers */
+    background: -moz-linear-gradient(left,  #8069d4 0%, #55c5e0 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#8069d4), color-stop(100%,#55c5e0));
+    background: -webkit-linear-gradient(left,  #8069d4 0%,#55c5e0 100%);
+    background: -o-linear-gradient(left,  #8069d4 0%,#55c5e0 100%);
+    background: -ms-linear-gradient(left,  #8069d4 0%,#55c5e0 100%);
+    background: linear-gradient(to right,  #8069d4 0%,#55c5e0 100%);
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+
+    height: 33px;
+}
+.site_inside{
+    display: table-cell;
+    vertical-align: middle;
+
+}
+.site__content {
+    min-height: 450px;
+}
+/* --------------- /site --------------- */
+
+/* --------------- site__wraper --------------- */
+.site__wraper{
+    width: 940px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* --------------- /site__wraper --------------- */
+
+
+/* --------------- header --------------- */
+.header {
+    position: absolute;
+    top: 31px;
+    left: 130px;
+    z-index: 20;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- site__aside --------------- */
+.site__aside{
+    width: 340px;
+    float: left;
+    position: relative;
+    z-index: 20;
+    padding-top: 216px;
+}
+/* --------------- /site__aside --------------- */
+
+/* --------------- get_app --------------- */
+.get_app{
+    font-weight: 300;
+    text-align: center;
+    color: #5b5b5b;
+    font-size: 16px;
+}
+.get_app .get_app__free{
+    margin: 0 auto;
+    display: block;
+    width: 240px;
+    height: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    background: #01ce9b;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.get_app  .get_app__free:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+.get_app p{
+    padding: 0 55px;
+    line-height: 20px;
+    margin-bottom: 14px;
+}
+.get_app a:hover{
+    text-decoration: underline;
+}
+.get_app a{
+    color: #7979d6;
+    font-size: 16px;
+}
+/* --------------- /get_app --------------- */
+
+/* --------------- content-wrap --------------- */
+.content-wrap {
+    width: 600px;
+    float: right;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- user --------------- */
+.user{
+    width: 340px;
+    margin: 0 0 0 139px;
+    text-align: center;
+    color: #5b5b5b;
+    display: none;
+    font-size: 14px;
+    font-size: 300;
+    padding-top: 6px;
+}
+.user__img{
+    width: 104px;
+    height: 104px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 4px solid #dfeded;
+    border-radius: 100px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.user__img img{
+    display: block;
+    width: 96px;
+    height: 96px;
+    border-radius: 100px;
+}
+.user h3{
+    font-weight: 400;
+    margin-bottom: 9px;
+    font-size: 30px;
+}
+.user p{
+    margin-bottom: 45px;
+}
+.user dt{
+    margin-bottom: 12px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #d3dede;
+}
+.user dd{
+    border-bottom: 1px solid #d3dede;
+    padding-bottom: 12px;
+    margin-bottom: 50px;
+
+}
+.user dd span{
+    background: url("../img/target.png") no-repeat left center;
+    line-height: 19px;
+    padding-left: 25px;
+    font-size: 18px;
+    color: #3d4655;
+}
+.time{
+    margin-bottom: 16px;
+}
+.time span{
+    color: #3d4655;
+    background: url("../img/time.png") no-repeat left center;
+    line-height: 19px;
+    padding-left: 25px;
+    font-size: 18px;
+}
+.place a:hover{
+    text-decoration: underline;
+}
+.place a{
+    background: url("../img/pointer.png") no-repeat left center;
+    line-height: 20px;
+    color: #3d4655;
+    font-size: 18px;
+    padding-left: 25px;
+}
+/* --------------- /user --------------- */
+
+/* --------------- shared_page --------------- */
+
+.shared_page:after{
+    display: none;
+}
+.shared_page .header{
+    left: 50%;
+    margin-left: -40px;
+    top: 41px !important;
+}
+.shared_page .content-wrap{
+    width: 100%;
+    padding-top: 240px;
+    padding-bottom: 48px;
+    float: none;
+}
+.meeting_block{
+    background: url("../img/meeting.png") no-repeat;
+    height: 156px;
+    text-align: left;
+    overflow: hidden;
+    margin-bottom: 39px;
+    display: none;
+}
+.meetinger_info{
+    float: left;
+
+    width: 50%;
+
+}
+.meetinger_info .user__img{
+    display: inline-block;
+    vertical-align: top;
+}
+.about_user{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 26px;
+    margin-right: 23px;
+    width: 260px;
+
+}
+.about_user h3{
+    color: #3d4655;
+    font-size: 30px;
+    margin-bottom: 9px;
+
+    font-weight: 400;
+}
+.about_user p{
+    font-size: 14px;
+    font-weight: 300;
+
+    color: #5b5b5b;
+}
+.left_user{
+    float: right;
+    margin: 26px 61px 0 0;
+    text-align: right;
+}
+.right_user{
+    float: left;
+    margin: 26px 0 0 58px;
+}
+.right_user .user__img{
+    margin-right: 21px;
+}
+.shared_page .meeting_info{
+    overflow: hidden;
+}
+.shared_page .meeting_info div{
+    float: left;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 50%;
+}
+.shared_page .meeting_info .time{
+    text-align: right;
+}
+.shared_page .meeting_info .place{
+    text-align: left;
+    padding-left: 75px;
+}
+.shared_page .copy{
+    text-align: center;
+    padding-left: 0;
+}
+.shared_page .site__aside{
+    padding-top: 0;
+    float: none;
+    width: auto;
+}
+.content_show{
+    background:  #f2f8f8 url("../img/waiting-CH.gif") no-repeat center;
+}
+.content_show .site{
+    display: none;
+}
+.content_show:after{
+    display: none;
+}
+/* --------------- /shared_page --------------- */
+
+
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: -33px;
+    color: #9f9f9f;
+    font-size: 12px;
+}
+.footer__layout {
+    width: 940px;
+    position: relative;
+    height: 33px;
+    margin: 0 auto;
+}
+.copy{
+    padding-left: 125px;
+}
+/* --------------- /footer --------------- */

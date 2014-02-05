@@ -1,0 +1,14 @@
+.more,
+.order,
+.send,
+.data input[type="text"],
+.aerial-platform p,
+.aerial-platform,
+.adds input[type="text"],
+.work input[type="text"],
+.parameter tbody tr:hover td,
+.nice-select{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

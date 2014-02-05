@@ -1,0 +1,564 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    main-menu
+
+    language
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd, 
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {    
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {                        
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            
+} 
+input, select, button, textarea {
+    margin: 0;                 
+    font-size: 100%;             
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;     
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {         
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+     list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;    
+}
+textarea {
+    resize:none; 
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus { 
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner { 
+    padding:0; 
+    border:0; 
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 960px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+    .site:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 81px;
+    }
+.site__layout {
+    width: 960px;
+    margin: 0 auto;
+}
+/* --------------- /site --------------- */
+.index{
+    background: url("../img/bady-back.jpg") no-repeat top center;
+}
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 162px;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 23px;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- main-menu --------------- */
+.main-menu {
+    position: absolute;
+    top: 24px;
+    left: 383px;
+}
+.main-menu__layout{
+    float: left;
+    margin-right: 53px;
+}
+.main-menu__layout a{
+    color: #0276c0;
+    text-decoration: underline;
+}
+.main-menu__layout a:hover{
+    text-decoration: none;
+}
+.main-menu__item_active a{
+    color: #333333;
+    text-decoration: none;
+    cursor: default;
+}
+.main-menu__item{
+    margin-bottom: 10px;
+}
+
+/* --------------- /main-menu --------------- */
+.address{
+    position: absolute;
+    top: 22px;
+    right: 0;
+}
+.address address{
+    font-style: normal;
+}
+.address p{
+    color: #333333;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: tahoma;
+}
+.address p span{
+    font-weight: normal;
+    font-size: 16px;
+    color: #ff5604;
+}
+.email{
+    background: url("../img/email.png") no-repeat 0 1px;
+    padding-left: 25px;
+    color: #0276c0;
+    text-decoration: underline;
+    font-size: 12px;
+    height: 17px;
+    float: left;
+    margin: 10px 0 0 4px;
+    line-height: 15px;
+}
+.email:hover{
+    text-decoration: none;
+}
+.proection{
+    overflow: hidden;
+    margin-top: 376px;
+    margin-left: 9px;
+    width: 1030px;
+}
+.proection li{
+    float: left;
+    width: 166px;
+    font-family: tahoma;
+    margin-right: 91px;
+}
+.proection li h2{
+    color: #333;
+    margin-left: 7px;
+    line-height: 18px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.proection li p{
+    color: #666666;
+    font-size: 12px;
+    line-height: 19px;
+    margin-left: 7px;
+}
+.proection li a{
+    text-decoration: underline;
+    color: #0276c0;
+    font-size: 11px;
+    padding-left: 9px;
+}
+.proection li a:hover{
+    text-decoration: none;
+}
+.imgWrap{
+    margin-bottom: 15px;
+}
+.textWrap{
+    overflow: hidden;
+    margin: 22px 0 0 0;
+}
+.text{
+    float: left;
+    width: 610px;
+    font-family: tahoma;
+}
+.leftSideBar h3,
+.clients h2,
+.text h1{
+    font-style: italic;
+    color: #333333;
+    font-size: 15px;
+    font-family: tahoma;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 9px;
+}
+.text p{
+    color: #666666;
+    font-size: 12px;
+    line-height: 21px;
+    margin-bottom: 20px;
+}
+.clients{
+    float: right;
+    width: 308px;
+}
+.clients ul{
+    overflow: hidden;
+}
+.clients li{
+    float: left;
+    margin-bottom: 15px;
+}
+.clients > a:hover{
+    text-decoration: none;
+}
+.clients > a{
+    text-decoration: underline;
+    color: #0276c0;
+    font-family: tahoma;
+    font-size: 11px;
+}
+.inside .content-wrap{
+    float: right;
+    width: 735px;
+}
+.leftSideBar{
+    width: 180px;
+    float: left;
+}
+.asideMenu li{
+    margin-bottom: 5px;
+}
+.asideMenu a{
+    text-decoration: underline;
+    color: #0276c0;
+    font-size: 12px;
+    font-family: tahoma;
+}
+.asideMenu a:hover{
+    text-decoration: none;
+}
+.imgContainer img{
+    display: block;
+}
+.imgContainer{
+    border: 1px solid #000;
+    float: left;
+    margin-bottom: 15px;
+}
+.projectInfo{
+    width: 186px;
+    float: right;
+    padding: 10px 15px;
+    background: #fcfee0;
+    font-family: tahoma;
+}
+.projectInfo dt{
+    font-weight: bold;
+    color: #666666;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+.projectInfo dd{
+    color: #999999;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.projectContainer{
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.projectAbout{
+    float: left;
+    width: 500px;
+}
+.projectAbout .text{
+    width: 100%;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -81px;
+    border-top: 1px solid #f3f3f3;
+}
+.footer__layout {
+    width: 960px;
+    margin: 0 auto;
+    background: url("../img/footer-back.jpg") no-repeat 150px top;
+    height: 81px;
+    position: relative;
+
+}
+.copy{
+    color: #676767;
+    font-size: 12px;
+    font-family: tahoma;
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+.footer__layout .address{
+    top: 20px;
+    left: 385px;
+}
+.creaters{
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.creaters dt{
+    float: left;
+    color: #676767;
+    margin-top: 23px;
+    margin-right: 5px;
+    font-size: 12px;
+    font-family: tahoma;
+}
+.creaters dd{
+    float: left;
+    
+}
+.saitoria{
+    display: block;
+    text-indent: -5000px;
+    background: url("../img/creaters.png");
+    width: 131px;
+    height: 66px;
+}
+.saitoria:hover{
+    opacity: 0.8;
+}
+/* --------------- /footer --------------- */
+
+/* --------------- gallery --------------- */
+
+.gallery {
+    padding-bottom: 62px;
+    position: relative;
+}
+.gallery__layout {
+    width: 373px;
+    height: 270px;
+    margin: 0 auto;
+    position: relative;
+}
+.gallery_inner .gallery__layout {
+    width: 282px;
+    height: 226px;
+}
+.gallery__item {
+    position: absolute;
+    width: 373px;
+    height: 270px;
+    top: 0;
+    left: 0;
+    background: #fff;
+    overflow: hidden;
+}
+.gallery_inner .gallery__item {
+    width: 282px;
+    height: 226px;
+}
+.gallery__lnk,
+.gallery__lnk:visited {
+    text-align: center;
+    display: block;
+    text-decoration: underline;
+    color: #2580c4;
+    font-size: 14px;
+    line-height: 16px;
+}
+.gallery_inner .gallery__lnk,
+.gallery_inner .gallery__lnk:visited {
+    text-align: left;
+}
+.gallery__lnk:hover {
+    text-decoration: none;
+}
+.gallery__lnk img {
+    margin-bottom: 50px;
+}
+.gallery_inner .gallery__lnk img {
+    margin-bottom: 10px;
+}
+.gallery__lnk span {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: underline;
+    width: 260px;
+    font-size: 14px;
+}
+.gallery_inner .gallery__lnk span {
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: underline;
+    width: 260px;
+    padding-left: 16px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.gallery_inner dl {
+    font-size: 11px;
+    padding-left: 16px;
+}
+.gallery_inner dt {
+    font-weight: bold;
+    display: inline-block;
+    vertical-align: top;
+}
+.gallery_inner dd {
+    display: inline-block;
+    vertical-align: top;
+}
+.gallery__lnk:hover span {
+    text-decoration: none;
+}
+.gallery__slider {
+    width: 272px;
+    padding: 0 24px;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -160px;
+    background: url("../img/gallery__slider.png");
+}
+.btn-right {
+    height: 20px;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.btn-left {
+    height: 20px;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.ui-slider {
+    height: 20px;
+}
+.ui-slider-handle {
+
+}
+
+/* --------------- /gallery --------------- */

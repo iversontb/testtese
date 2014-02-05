@@ -1,0 +1,115 @@
+/* --------------- header --------------- */
+.header:before{
+    display: none;
+}
+/* --------------- /header --------------- */
+
+/* --------------- site__content --------------- */
+.site__content{
+    background-color: #ffffff;
+    margin-top: -62px;
+}
+/* --------------- /site__content --------------- */
+
+/* --------------- content-wrap --------------- */
+.content-wrap{
+    padding-top: 90px;
+    padding-bottom: 53px;
+    z-index: 1;
+}
+.content-wrap h1{
+    font-family: "Days";
+    font-size: 36px;
+    color: #212121;
+    margin-bottom: 38px;
+}
+.content-wrap p{
+    font-family: arial;
+    font-size: 16px;
+    color: #212121;
+    line-height: 24px;
+    word-spacing: -2px;
+    margin-bottom: 47px;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- video --------------- */
+.content-wrap .video{
+    margin-bottom: 30px;
+}
+/* --------------- /video --------------- */
+
+
+/* --------------- today --------------- */
+.content-wrap .today{
+    font-family: "Days";
+    font-size: 25px;
+    color: #f5872c;
+    margin-bottom: 33px;
+    border-left: 6px solid #f5872c;
+    line-height: 32px;
+    padding-left: 28px;
+}
+/* --------------- /today --------------- */
+
+/* --------------- reclame_on_the_tickets --------------- */
+.content-wrap .reclame_on_the_tickets{
+    position: relative;
+    margin-bottom: 46px;
+}
+.content-wrap .reclame_on_the_tickets:before{
+    content: '';
+    position: absolute;
+    background: url("../img/tic.png") no-repeat;
+    width: 430px;
+    height: 275px;
+    top: 34px;
+    left: -31px;
+}
+.content-wrap .reclame_on_the_tickets dt{
+    font-family: "Days";
+    font-size: 24px;
+    color: #212121;
+    margin-bottom: 43px;
+}
+.content-wrap .reclame_on_the_tickets{
+    line-height: 30px;
+
+}
+.content-wrap .reclame_on_the_tickets dd{
+    font-family: "Arial";
+    font-size: 16px;
+    color: #212121;
+    background: url("../img/marker1.png") left 8px no-repeat;
+    margin-left: 421px;
+    padding-left: 20px;
+}
+/* --------------- /reclame_on_the_tickets --------------- */
+
+/* --------------- products --------------- */
+.content-wrap .products dt{
+    font-family: "Days";
+    font-size: 24px;
+    color: #212121;
+    line-height: 29px;
+    width: 838px;
+    margin-bottom: 54px;
+}
+.content-wrap .products dd{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 22px;
+}
+.content-wrap .products dd{
+    font-family: "Arial";
+    font-size: 16px;
+    color: #212121;
+    background: url("../img/marker2.png") no-repeat left 1px;
+    margin-bottom: 9px;
+    padding-left: 32px;
+    padding-top: 3px;
+    padding-bottom: 12px;
+    height: 20px;
+    width: 262px;
+}
+/* --------------- /products --------------- */

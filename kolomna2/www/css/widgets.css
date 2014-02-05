@@ -1,0 +1,175 @@
+
+.bigWidget{
+    background: url("../img/big-widget-back.png");
+    background-size: 100%;
+    width: 964px;
+    height: 251px;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 126px;
+}
+.discountProcent{
+    position: absolute;
+    background: url("../img/procent-back.png");
+    width: 83px;
+    height: 28px;
+    background-size: 100%;
+    text-align: center;
+    line-height: 28px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+    top: 23px;
+    left: 0;
+}
+.discountProcentBlue{
+    position: absolute;
+    background: url("../img/blue-discount-back.png");
+    width: 83px;
+    height: 28px;
+    background-size: 100%;
+    text-align: center;
+    line-height: 28px;
+    color: #0baed3;
+    font-size: 18px;
+    font-weight: 800;
+    top: 23px;
+    right: 0;
+}
+.whiteSide{
+
+    float: left;
+    width: 50%;
+    padding-top: 16px;
+    position: relative;
+}
+.bigWidget p{
+    padding: 0 50px;
+    color: #333333;
+    line-height: 18px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.widgetPrice{
+    font-size: 26px;
+    font-weight: 800;
+}
+.widgetPrice span{
+    font-weight: 400;
+}
+.bigWidget .big_button{
+    margin: 0 auto;
+    margin-top: 12px;
+    margin-bottom: 14px;
+}
+.littleWidget .look{
+    font-size: 13px;
+}
+.littleWidget .more:after{
+    margin-top: 2px;
+}
+.bigWidget .look{
+    margin: 0 auto;
+    font-size: 13px;
+
+}
+.bigWidget .more:after{
+    margin-top: 2px;
+}
+.whiteSide > img{
+    margin-bottom: 9px;
+}
+.blueSide{
+    width: 50%;
+    float: left;
+    position: relative;
+    padding-top: 16px;
+    color: #fff;
+
+}
+.blueSide p{
+    color: #fff;
+}
+.blueSide .look{
+    color: #fff;
+}
+.blueSide .look:hover{
+    color: #e5512c;
+}
+.blueSide .more:after{
+    background: url("../img/arrow3.png") no-repeat;
+    background-size: 100%;
+    margin-top: 4px;
+}
+.blueSide .more:hover:after{
+    position: absolute;
+    content: "";
+    background: url("../img/red_arrow.png") 0 2px  no-repeat;
+    background-size: 100%;
+    width: 13px;
+    height: 10px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+.littleWidget{
+    background: url("../img/little-widget.png");
+    background-size: 100%;
+    width: 964px;
+    height: 161px;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    margin-bottom: 23px;
+}
+.littleWidget .whiteSide{
+    width: 382px;
+    padding-left: 100px;
+}
+.littleWidget .whiteSide p{
+    line-height: 18px;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+.littleWidget .calendar:hover{
+    text-decoration: none;
+}
+.littleWidget .calendar{
+    background: url("../img/blue-calendar.png") no-repeat;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-left: 76px;
+    display: block;
+    color: #fff;
+
+}
+
+.littleWidget .clientType {
+    margin-left: 74px;
+    margin-top: 20px;
+}
+.littleWidget .clientType:first-child{
+
+}
+.littleWidget .clientType .wraper > span{
+   color: #fff;
+}
+.littleWidget  .wraper{
+    float: left;
+    margin-right: 14px;
+}
+.littleWidget .marginLeft{
+    margin-left: 10px;
+}
+.littleWidget .widgetPrice{
+    float: left;
+    font-size: 36px;
+    margin: 5px 27px 0 72px;
+
+}
+.littleWidget .big_button{
+    float: left;
+    margin-top: 4px;
+}

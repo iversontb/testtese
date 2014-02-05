@@ -1,0 +1,86 @@
+/* --------------- prodvizhenie --------------- */
+.prodvizhenie {
+    margin-bottom: 42px;
+    font-family: 'Open Sans', sans-serif;
+}
+.prodvizhenie div {
+    border-bottom: 1px solid #f1f4f7;
+    position: relative;
+    font-size: 12px;
+    padding-bottom: 24px;
+    margin-bottom: 23px;
+}
+.prodvizhenie div:first-child {
+    padding-top: 0;
+}
+.prodvizhenie h2 {
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+.prodvizhenie p {
+    line-height: 18px;
+}
+.prodvizhenie div > img {
+    float: left;
+    clear: both;
+    margin-right: 21px;
+}
+/* --------------- /prodvizhenie --------------- */
+
+/* --------------- learn_more --------------- */
+.learn_more {
+    margin-bottom: 165px;
+}
+.learn_more a {
+    display: block;
+    position: relative;
+    border: 3px solid #de343a;
+    height: 90px;
+    font-family: 'Open Sans', sans-serif;
+}
+.learn_more a:after {
+    content: '';
+    background: url("../img/presentation_after.jpg");
+    width: 42px;
+    height: 96px;
+    position: absolute;
+    top: -3px;
+    right: -42px;
+}
+.learn_more span {
+    font-size: 19px;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    margin: 16px 0 0 119px;
+}
+.learn_more a:hover span:before {
+    display: none;
+}
+.learn_more span:before {
+    content: '';
+    background: #000;
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+}
+.learn_more span > span {
+    color: #dc1f26;
+    display: inline-block;
+    position: relative;
+    margin-left: 0;
+}
+.learn_more span > span:before {
+    content: '';
+    background: #dc1f26;
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 2px;
+}
+/* --------------- /learn_more --------------- */

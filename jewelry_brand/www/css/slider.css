@@ -1,0 +1,57 @@
+/* --------------- ares-slider --------------- */
+.ares-slider {
+    margin: 0 auto;
+    width: 980px;
+    height: 533px;
+    position: relative;
+    text-align: center;
+}
+.ares-slider a{
+    width: 980px;
+    height: 533px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.ares-slider img {
+    display: block;
+}
+.ares-slider__next,
+.ares-slider__prev {
+    position: absolute;
+    content: '';
+    background: url("../img/slides.png");
+    width: 21px;
+    height: 40px;
+    top: 50%;
+    margin-top: -20px;
+    left: -20px;
+    cursor: pointer;
+
+}
+.ares-slider__next {
+    background-position: right 0;
+    left: auto;
+    right: -20px;
+}
+.ares-slider__points {
+    display: inline-block;
+    position: relative;
+    top: 472px;
+}
+.ares-slider__points li {
+    float: left;
+    background: url("../img/pagin_50ba86df06b5a.png") no-repeat;
+    width: 24px;
+    height: 25px;
+    cursor: pointer;
+}
+.ares-slider__points li.active, .ares-slider__points li:hover {
+    background: url("../img/act_pagin.png") no-repeat;
+    width: 24px;
+    height: 25px;
+    cursor: pointer;
+}
+/* --------------- /slider --------------- */

@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="js/jPlane.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+
+
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.gallery.js"></script>
+
+
+
+
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+    <!--[if  IE 7]>
+    <link rel="stylesheet" href="css/main.ie7.css" />
+    <![endif]-->
+
+
+</head>
+<body>
+<!-- site -->
+<div class="site inside">
+<div class="site__layout">
+
+<div class="site__content">
+
+<aside class="rightSideBar">
+
+    <!-- insideMenu -->
+    <div class="insideMenu">
+
+        <hgroup>
+            <h1>iGrajdanin</h1>
+            <h2>Система управления городом</h2>
+        </hgroup>
+
+        <!-- accInfo -->
+        <div class="accInfo">
+            <div class="userInfo">
+                <div class="imgWrap">
+                    <img src="pic/pic3.jpg" height="58" width="58" alt="">
+                    <div class="imgAround"><img src="img/photo-araund.png" height="58" width="58" alt=""></div>
+
+                </div>
+                <dl>
+                    <dt>Диспетчер:</dt>
+                    <dd><a href="javascript:void(0)">Андропов Юрий Владимирович </a></dd>
+                </dl>
+            </div>
+            <ul>
+                <li><a class="settingBut" href="javascript:void(0)">Настройки</a></li>
+                <li><a class="enterBut" href="javascript:void(0)">Выйти</a></li>
+            </ul>
+        </div>
+        <!-- /accInfo -->
+
+        <!-- point -->
+        <dl class="point">
+            <dt>Населенный пункт:</dt>
+            <dd><a href="javascript:void(0)">Усть-Джигутинский район</a></dd>
+        </dl>
+        <!-- /point -->
+
+        <!-- menuBlock -->
+        <div class="menuBlock">
+            <h3 class="messageTopic">Сообщения о проблемах</h3>
+
+            <!-- asideMenu -->
+            <nav class="asideMenu">
+                <ol>
+                    <li><a href="javascript:void(0)">Все проблемы<sup>2</sup></a></li>
+                    <li><a class="active" href="javascript:void(0)">Новые проблемы<sup class="newUnRead">+3</sup><sup>2</sup></a></li>
+                    <li><a href="javascript:void(0)">Проблемы без ответа<sup>213</sup></a></li>
+                    <li><a href="javascript:void(0)">Требующие закрытия<sup>2334</sup></a></li>
+                    <li><a href="javascript:void(0)">Отклоненные проблемы<sup>45</sup></a></li>
+                    <li><a href="javascript:void(0)">Просроченные проблемы</a></li>
+                    <li><a href="javascript:void(0)">Скрытые проблемы</a></li>
+                </ol>
+            </nav>
+            <!-- /asideMenu -->
+
+        </div>
+        <!-- /menuBlock -->
+
+        <!-- menuBlock -->
+        <div class="menuBlock">
+            <h3 class="servisece">Службы</h3>
+
+            <!-- asideMenu -->
+            <nav class="asideMenu">
+                <ol>
+                    <li><a href="javascript:void(0)">Список служб</a></li>
+                    <li><a href="javascript:void(0)">Создать службу</a></li>
+                    <li><a href="javascript:void(0)">Список сотрудников</a></li>
+                    <li><a href="javascript:void(0)">Добавить сотрудника службы</a></li>
+                </ol>
+            </nav>
+            <!-- /asideMenu -->
+
+        </div>
+        <!-- /menuBlock -->
+
+        <!-- menuBlock -->
+        <div class="menuBlock">
+            <h3 class="objects">Объекты</h3>
+
+            <!-- asideMenu -->
+            <nav class="asideMenu">
+                <ol>
+                    <li><a href="javascript:void(0)">Список объектов</a></li>
+                    <li><a href="javascript:void(0)">Добавить объект</a></li>
+                    <li><a href="javascript:void(0)">Добавить список работ</a></li>
+                </ol>
+            </nav>
+            <!-- /asideMenu -->
+
+        </div>
+        <!-- /menuBlock -->
+
+        <!-- menuBlock -->
+        <div class="menuBlock">
+            <h3 class="users">Пользователи</h3>
+
+            <!-- asideMenu -->
+            <nav class="asideMenu">
+                <ol>
+                    <li><a href="javascript:void(0)">Все пользователи системы</a></li>
+                    <li><a href="javascript:void(0)">Отослать приглашение</a></li>
+                    <li><a href="javascript:void(0)">Рассылка сообщений</a></li>
+                </ol>
+            </nav>
+            <!-- /asideMenu -->
+
+        </div>
+        <!-- /menuBlock -->
+
+        <!-- menuBlock -->
+        <div class="menuBlock">
+            <h3 class="statistics">Статистика и отчеты</h3>
+
+            <!-- asideMenu -->
+            <nav class="asideMenu">
+                <ol>
+                    <li><a href="javascript:void(0)">Вся статистика</a></li>
+                    <li><a href="javascript:void(0)">Создать отчет</a></li>
+                </ol>
+            </nav>
+            <!-- /asideMenu -->
+
+        </div>
+        <!-- /menuBlock -->
+        <p class="iGrajdCoy">&copy; iGragdanin.ru</p>
+    </div>
+    <!-- /insideMenu -->
+</aside>
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+<!--—BEGIN popUpWrap -->
+<div class="popUpWrap">
+
+    <!--—BEGIN popUpContainer -->
+    <div class="popUpContainer workList">
+
+        <!--—BEGIN popUpForm -->
+        <form method="post" action="#" class="popUpForm">
+
+            <!--—BEGIN formHead -->
+            <div class="formHead">
+                <h2>Список работ</h2>
+                <div class="closeBut" title="close">close</div>
+            </div>
+            <!--—END formHead -->
+
+            <!--—BEGIN wraper -->
+            <div class="wraper noLine noLine2">
+
+                <div class="borderLine">
+                    <div class="lineContainer">
+
+                        <div class="blockWrap">
+                            <label>Наименование</label>
+                            <div class="inputWrap nameInput">
+                                <input class="text">
+                            </div>
+                        </div>
+                        <div class="blockWrap">
+                            <label>Старт</label>
+                            <div class="inputWrap startInput">
+                                <input class="text">
+                            </div>
+                        </div>
+                        <div class="blockWrap ">
+                            <label>Окончание </label>
+                            <div class="inputWrap finishInput">
+                                <input class="text">
+                            </div>
+                        </div>
+
+                        <div class="blockWrap">
+                            <a href="javascript:void(0)" class="buttonType greenButton size4 applyBut">Применить</a>
+                            <a href="javascript:void(0)" class="buttonType greenButton size4 changeBut">Изменить</a>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="borderLine doneWorkers">
+                    <div class="lineContainer">
+                        <div class="blockWrap">
+                            <label>Наименование</label>
+                            <div class="inputWrap nameInput">
+                                Бетономешалка мешает бетон, а тупой рабочий пьет самогон
+                            </div>
+                        </div>
+                        <div class="blockWrap">
+                            <label>Старт</label>
+                            <div class="inputWrap startInput">
+                                28.12.12
+                            </div>
+                        </div>
+                        <div class="blockWrap">
+                            <label>Окончание </label>
+                            <div class="inputWrap finishInput">
+                                28.12.12
+                            </div>
+                        </div>
+                        <div class="blockWrap">
+                            <a href="javascript:void(0)" class="buttonType greenButton size4 changeBut">Изменить</a>
+                            <a href="javascript:void(0)" class="buttonType greenButton size4 applyBut">Применить</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="borderLine">
+                    <div class="lineContainer">
+
+                        <div class="blockWrap">
+                            <a href="javascript:void(0)" class="buttonType blueButton size4 addWorkList"><span>+</span>Добавить</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <a href="javascript:void(0)" class="buttonType gray size1 cancelBut">Отмена</a>
+                <a href="javascript:void(0)" class="buttonType fiolet size1 saveWorkers">Сохранить</a>
+
+            </div>
+            <!--—END wraper -->
+
+
+        </form>
+        <!--—END popUpForm -->
+
+
+    </div>
+    <!--—END popUpContainer -->
+</div>
+<!--—END popUpWrap -->
+<h2 class="topic">Контакты и сотрудники</h2>
+
+<!-- allServiceWrap -->
+<div class="allServiceWrap">
+
+
+<!-- openService -->
+<div class="openService addObject">
+
+
+<!-- tabBlock -->
+<div class="tabBlock firstBlock">
+
+<!--borderLine-->
+<div class="borderLine">
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <label>Полное наименование</label>
+            <div class="inputWrap longInput">
+                <input type="text">
+            </div>
+
+        </div>
+        <!--/blockWrap-->
+
+    </div>
+    <!--/lineContainer-->
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <label>Сокращенное наименование</label>
+            <div class="inputWrap">
+                <input type="text">
+            </div>
+
+        </div>
+        <!--/blockWrap-->
+
+    </div>
+    <!--/lineContainer-->
+
+</div>
+<!--/borderLine-->
+
+<!--borderLine-->
+<div class="borderLine">
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+            <!--—BEGIN selectWrap -->
+            <div class="selectWrap firstWidth">
+                <label for="idSelect5">Категория</label>
+                <select id="idSelect5" name="nameSelect5">
+                    <option value="Дорожные работы">Дорожные работы</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <!--—END selectWrap -->
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+            <!--—BEGIN selectWrap -->
+            <div class="selectWrap firstWidth">
+                <label for="idSelect11">Тип организации</label>
+                <select id="idSelect11" name="nameSelect11">
+                    <option value="Дорожные работы">Дорожные работы</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <!--—END selectWrap -->
+
+        </div>
+        <!--/blockWrap-->
+
+
+
+    </div>
+    <!--/lineContainer-->
+
+</div>
+<!--/borderLine-->
+
+<!--borderLine-->
+<div class="borderLine">
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <label>Адрес</label>
+
+        <!--mapContainer-->
+        <div class="mapContainer">
+
+            <img src="pic/pic10.jpg" height="192" width="531" alt="">
+
+            <!--searchMap-->
+            <div class="searchMap">
+                <div class="inputWrap">
+                    <input type="text" placeholder="Поиск по улице">
+                </div>
+                <input type="submit" value="Поиск" class="buttonType greenButton size4">
+            </div>
+            <!--/searchMap-->
+
+        </div>
+        <!--/mapContainer-->
+
+    </div>
+    <!--/lineContainer-->
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <!--—BEGIN selectWrap -->
+            <div class="selectWrap firstWidth">
+                <label for="idSelect12">Выбор улицы</label>
+                <select id="idSelect12" name="nameSelect12">
+                    <option value="Выберите улицу">Выберите улицу</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <!--—END selectWrap -->
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--blockWrap-->
+        <div class="blockWrap marginRigth">
+
+            <label>Номер дома</label>
+
+            <div class="inputWrap">
+                <input type="text">
+            </div>
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <label>Корпус</label>
+
+            <div class="inputWrap">
+                <input type="text">
+            </div>
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--lineContainer-->
+        <div class="lineContainer">
+
+            <!--blockWrap-->
+            <div class="blockWrap marginRigth">
+
+                <label>Широта</label>
+
+                <div class="inputWrap">
+                    <input type="text">
+                </div>
+
+            </div>
+            <!--/blockWrap-->
+
+            <!--blockWrap-->
+            <div class="blockWrap">
+
+                <label>Долгота</label>
+
+                <div class="inputWrap">
+                    <input type="text">
+                </div>
+
+            </div>
+            <!--/blockWrap-->
+
+
+
+        </div>
+        <!--/lineContainer-->
+
+        <a href="javascript:void(0)" class="buttonType greenButton size4 saveChanges">Сохранить изменения</a>
+
+
+
+    </div>
+    <!--/lineContainer-->
+
+</div>
+<!--/borderLine-->
+
+
+
+<!--borderLine-->
+<div class="borderLine">
+
+<!--box-->
+<div class="box">
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <p class="lableType">Режим работы</p>
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <!--—BEGIN selectWrap -->
+            <div class="selectWrap firstDay">
+                <label for="idSelect13">ДНИ НЕДЕЛИ</label>
+                <select id="idSelect13" name="nameSelect13">
+                    <option value="Понедельник">Понедельник</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <!--—END selectWrap -->
+            <span>-</span>
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <!--—BEGIN selectWrap -->
+            <div class="selectWrap lastDay">
+                <select id="idSelect15" name="nameSelect15">
+                    <option value="Понедельник">Воскресенье</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <!--—END selectWrap -->
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <!--—BEGIN selectWrap -->
+            <div class="selectWrap firstTime">
+                <label for="idSelect14">ЧЧ</label>
+                <select id="idSelect14" name="nameSelect14">
+                    <option value="Понедельник">9</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <!--—END selectWrap -->
+            <span>:</span>
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <!--—BEGIN selectWrap -->
+            <div class="selectWrap lastTime">
+                <label for="idSelect16">ММ</label>
+                <select id="idSelect16" name="nameSelect16">
+                    <option value="Понедельник">9</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <!--—END selectWrap -->
+            <span>-</span>
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <!--—BEGIN selectWrap -->
+            <div class="selectWrap firstTime">
+                <label for="idSelect17">ЧЧ</label>
+                <select id="idSelect17" name="nameSelect17">
+                    <option value="Понедельник">9</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <!--—END selectWrap -->
+            <span>:</span>
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <!--—BEGIN selectWrap -->
+            <div class="selectWrap lastTime">
+                <label for="idSelect18">ММ</label>
+                <select id="idSelect18" name="nameSelect18">
+                    <option value="Понедельник">9</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                </select>
+            </div>
+            <!--—END selectWrap -->
+
+        </div>
+        <!--/blockWrap-->
+
+
+
+
+
+    </div>
+    <!--/lineContainer-->
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+            <a href="javascript:void(0)" class="buttonType blueButton size4 addTerms"><span>+</span> Добавить условия</a>
+        </div>
+        <!--/blockWrap-->
+
+    </div>
+    <!--/lineContainer-->
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+            <a href="javascript:void(0)" class="buttonType greenButton size4 saveChanges">Сохранить изменения</a>
+        </div>
+        <!--/blockWrap-->
+
+    </div>
+    <!--/lineContainer-->
+
+</div>
+<!--/box-->
+
+</div>
+<!--/borderLine-->
+
+
+<!--borderLine-->
+<div class="borderLine">
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <label>Директор</label>
+            <div class="inputWrap nameInput">
+                <input type="text">
+            </div>
+
+        </div>
+        <!--/blockWrap-->
+    </div>
+    <!--/lineContainer-->
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <label>Почта</label>
+            <div class="inputWrap emailInput">
+                <input type="text">
+            </div>
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+
+            <label>Телефон</label>
+            <div class="inputWrap phoneInput">
+                <input type="text">
+            </div>
+
+        </div>
+        <!--/blockWrap-->
+
+        <!--blockWrap-->
+        <div class="blockWrap sendEmail">
+            <div class="checkContainer">
+                <input type="checkbox" id="test-check5" />
+                <label for="test-check5">Отправить уведомление о регистрации на почту</label>
+            </div>
+        </div>
+        <!--/blockWrap-->
+
+    </div>
+    <!--/lineContainer-->
+
+</div>
+<!--/borderLine-->
+
+<!--borderLine-->
+<div class="borderLine noLine">
+
+    <!--copyBlock-->
+    <div class="copyBlock">
+
+        <!--lineContainer-->
+        <div class="lineContainer">
+
+            <!--blockWrap-->
+            <div class="blockWrap">
+
+                <label>Сотрудник</label>
+                <div class="inputWrap nameInput">
+                    <input type="text">
+                </div>
+
+            </div>
+            <!--/blockWrap-->
+
+            <!--blockWrap-->
+            <div class="blockWrap buttonContainer">
+                <a href="javascript:void(0)" class="buttonType pinkButton size4 deleteWorker">Удалить</a>
+            </div>
+            <!--/blockWrap-->
+
+        </div>
+        <!--/lineContainer-->
+
+        <!--lineContainer-->
+        <div class="lineContainer">
+
+            <!--blockWrap-->
+            <div class="blockWrap">
+
+                <label>Почта</label>
+                <div class="inputWrap emailInput">
+                    <input type="text">
+                </div>
+
+            </div>
+            <!--/blockWrap-->
+
+            <!--blockWrap-->
+            <div class="blockWrap">
+
+                <label>Телефон</label>
+                <div class="inputWrap phoneInput">
+                    <input type="text">
+                </div>
+
+            </div>
+            <!--/blockWrap-->
+
+            <!--blockWrap-->
+            <div class="blockWrap sendEmail">
+                <div class="checkContainer">
+                    <input type="checkbox" id="test-check4" />
+                    <label for="test-check4">Отправить уведомление о регистрации на почту</label>
+                </div>
+            </div>
+            <!--/blockWrap-->
+
+        </div>
+        <!--/lineContainer-->
+
+    </div>
+    <!--/copyBlock-->
+
+
+
+</div>
+<!--/borderLine-->
+
+<!--box-->
+<div class="box marginType">
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+            <a href="javascript:void(0)" class="buttonType blueButton size4 addWorkerService"><span>+</span> Добавить сотрудника</a>
+        </div>
+        <!--/blockWrap-->
+
+    </div>
+    <!--/lineContainer-->
+
+    <!--lineContainer-->
+    <div class="lineContainer">
+
+        <!--blockWrap-->
+        <div class="blockWrap">
+            <a href="javascript:void(0)" class="buttonType greenButton size4 saveChanges">Сохранить изменения</a>
+        </div>
+        <!--/blockWrap-->
+
+    </div>
+    <!--/lineContainer-->
+</div>
+<!--/box-->
+
+
+<!--lineContainer-->
+<div class="lineContainer borderTop">
+
+    <ul class="complitButons">
+        <li><a href="javascript:void(0)" class="buttonType size4 greenButton createAndSave">Создать и сохранить организацию</a></li>
+    </ul>
+
+</div>
+<!--/lineContainer-->
+
+
+</div>
+<!-- /tabBlock -->
+
+</div>
+<!-- /openService -->
+
+</div>
+<!-- allServiceWrap -->
+
+
+
+
+</div>
+<!-- /content-wrap -->
+
+</div>
+</div>
+</div>
+<!-- /site -->
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+        <h1>footer</h1>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

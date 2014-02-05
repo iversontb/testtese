@@ -1,0 +1,69 @@
+/* --------------- ares-slider --------------- */
+.ares-slider {
+    width: 633px;
+    height: 356px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+.ares-slider a{
+    width: 633px;
+    height: 356px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    background: #fff;
+}
+.ares-slider img {
+    display: block;
+}
+.ares-slider__next{
+    position: absolute;
+    content: '';
+    background: url("../img/slider__arrow1.png") no-repeat center;
+    width: 21px;
+    height: 40px;
+    top: 50%;
+    margin-top: -38px;
+    right: -42px;
+    cursor: pointer;
+}
+.ares-slider__prev {
+    position: absolute;
+    content: '';
+    background: url("../img/slider__arrow2.png") no-repeat center;
+    width: 21px;
+    height: 40px;
+    top: 50%;
+    margin-top: -38px;
+    left: -42px;
+    cursor: pointer;
+}
+.ares-slider__points {
+    display: inline-block;
+    position: relative;
+    top: 395px;
+}
+.ares-slider__points li {
+    width: 9px;
+    height: 9px;
+    float: left;
+    background: #969696;
+    border-radius: 9px;
+    box-shadow: inset 0 3px 3px #616161;
+    margin-left: 8px;
+    cursor: pointer;
+    list-style-type: none;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li.active {
+    box-shadow: none;
+    background: #ee3535;
+    cursor: default;
+}
+/* --------------- /slider --------------- */

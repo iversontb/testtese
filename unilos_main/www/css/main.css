@@ -1,0 +1,18 @@
+/*.column-center{*/
+    /*width: 550px;*/
+/*}*/
+.colum_right{
+    float: right !important;
+    margin-right: 0 !important;
+}
+.b-menu-main{
+    margin-top: -48px !important;
+    padding: 25px 12px 10px !important;
+}
+
+.column .b-menu-main.margin_none{
+    margin-top: 0 !important;
+}
+.models__list ul{
+    margin: 0 !important;
+}

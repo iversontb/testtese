@@ -1,0 +1,94 @@
+.logosGall,
+#flsGallery {
+    overflow: hidden;
+    width: 1024px;
+    height: 209px;
+    position: relative;
+    z-index: 20;
+    float: left;
+}
+.logosGall:after,
+#flsGallery:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../img/shadow-left.png");
+    width: 101px;
+    height: 209px;
+    z-index: 30;
+}
+.logosGall:before,
+#flsGallery:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background:  url("../img/shadow-right.png");
+    width: 125px;
+    height: 209px;
+    z-index: 100;
+}
+
+#flsGallery li{
+    list-style: none;
+    height: 209px;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 5px;
+    overflow: hidden;
+}
+.flsGalleryInner {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#btnPrev:hover,
+#btnNext:hover{
+    opacity: 0.8;
+}
+.prev,
+.next,
+#btnPrev,
+#btnNext {
+    width: 10px;
+    height: 16px;
+    background: url(../img/arrows.png) no-repeat;
+    cursor: pointer;
+    position: absolute;
+    border: none;
+    text-indent: -5000px;
+    padding: 0;
+
+}
+.next,
+#btnNext{
+    top: 50%;
+    right: 10px;
+    z-index: 300;
+    margin-top: -8px;
+}
+.prev,
+#btnPrev {
+    background-position: 0 -48px;
+    top: 50%;
+    left: 10px;
+    z-index: 300;
+    margin-top: -8px;
+}
+
+#btnPrev.disabled{
+    background-position:  0 -16px;
+    cursor: default;
+}
+#btnNext.disabled{
+    background-position: 0 -32px;
+    cursor: default;
+}
+.gallery li{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    height: 209px;
+    float: none !important;
+}

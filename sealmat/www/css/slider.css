@@ -1,0 +1,99 @@
+
+.slideWrap{
+    height: 150px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 119px;
+}
+.ares-slider2 {
+    width: 1000px;
+    margin: 0 auto;
+    height: 150px;
+    position: relative;
+}
+.ares-slider2__item {
+    width: 1000px;
+    height: 150px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: none;
+    z-index: 1;
+}
+.ares-slider2__item > img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+.ares-slider2__next{
+    background: url("../img/gall-right.png");
+
+}
+.ares-slider2__prev{
+    background: url("../img/gall-left.png");
+}
+
+
+
+.ares-slider2__next,
+.ares-slider2__prev {
+    position: absolute;
+    content: '';
+    width: 27px;
+    height: 38px;
+    top: 21px;
+    cursor: pointer;
+    background-size: 100%;
+    opacity: .8;
+    z-index: 2;
+}
+.ares-slider2__prev {
+    left: -2px;
+
+}
+.ares-slider2__prev:hover{
+    opacity: 0.8;
+}
+.ares-slider2__next {
+
+    right: -1px;
+}
+.ares-slider2__next:hover{
+    opacity: 0.8;
+
+}
+.ares-slider__points {
+    display: inline-block;
+    position: relative;
+    top: 118px;
+
+    z-index: 4;
+}
+.ares-slider__points li {
+    width: 28px;
+    height: 28px;
+    float: left;
+    background: url("../img/dot.png");
+    border-radius: 14px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li.active {
+    box-shadow: none;
+    background: url("../img/active-dot.png");
+    cursor: default;
+}
+
+.ares-slider2__item p{
+    color: #fff;
+    font-size: 35px;
+    text-align: center;
+    line-height: 40px;
+    padding: 0 39px;
+    text-shadow: 2px 2px 2px #d08660;
+}

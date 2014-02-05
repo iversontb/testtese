@@ -1,0 +1,22 @@
+.discount input.button,
+.content li,
+.content li p,
+.sale a,
+.info > div > div > div,
+.info-next > div > div > div,
+.comment p,
+.price p a,
+.footer p,
+.gallery p {
+    display: inline;
+}
+.discount input.button {
+    position: relative;
+}
+.gallery p {
+    zoom: 1;
+    position: relative;
+}
+.popup>.discount>input.button {
+    margin-left: 179px;
+}

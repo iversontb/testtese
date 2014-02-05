@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="#" class="logo" title="на главную"><img src="img/logo.png" width="170" height="26" alt="FeoRoom.com"></a>
+            <!-- /logo -->
+
+            <!-- header__time -->
+            <div class="header__time">
+                Киев
+                <span>10:55</span>
+            </div>
+            <!-- /header__time -->
+
+            <!-- header__currency -->
+            <form class="header__currency">
+                <label>Валюта</label>
+                <select>
+                    <option value="1" selected>Рубли</option>
+                    <option value="2">Гривны</option>
+                    <option value="3">Доллары</option>
+                </select>
+            </form>
+            <!-- /header__currency -->
+
+            <!-- header__login -->
+            <a href="#" class="header__login">Вход для владельцев</a>
+            <!-- /header__login -->
+
+            <!-- header__about -->
+            <div class="header__about">
+                <h2>Отдых в феодосии</h2>
+                <p>Аренда и бронирование жилья.</p>
+                <p>Cнять посуточно квартиру, дом под ключ,
+                    гостиницу, элиг, частный сектор.</p>
+            </div>
+            <!-- /header__about -->
+
+            <!-- header__address -->
+            <address class="header__address">
+                <div class="header__address-phone">
+                    <a href="tel:+380955749015">+380-955-749-015</a>
+                    <a href="tel:+74955775757">+7 (495) 577-57-57</a>
+                    Звонки принимаются с 9:00 до 22:00
+                </div>
+                <a href="icq:241151096" class="header__address-icq">241151096</a>
+                <a href="skype:FEOROOM" class="header__address-skype">FEOROOM</a>
+                <dl>
+                    <dt>Пишите нам:</dt>
+                    <dd>
+                        <a href="#" class="header__address-vk"></a>
+                    </dd>
+                    <dd>
+                        <a href="#" class="header__address-od"></a>
+                    </dd>
+                    <dd>
+                        <a href="mailto:feoroom@gmail.com"></a>
+                    </dd>
+                </dl>
+            </address>
+            <!-- /header__address -->
+
+            <!-- header__favorites -->
+            <div class="header__favorites">
+                В избранном объектов
+                <span>10</span>
+            </div>
+            <!-- /header__favorites -->
+
+            <!-- header__menu -->
+            <nav class="header__menu">
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Бронирование</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Вопрос-ответ</a>
+                    </li>
+                    <li>
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /header__menu -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- application -->
+            <form class="application">
+                <div>
+                    <h1>Оформление заявки на бронирование</h1>
+                    <fieldset>
+                        <label class="important" for="name">Контактное лицо</label>
+                        <input type="text" id="name">
+                    </fieldset>
+                    <fieldset>
+                        <label for="city">Город</label>
+                        <input id="city" type="text">
+                    </fieldset>
+                    <fieldset>
+                        <label for="phone" class="important">Телефон</label>
+                        <input id="phone" type="tel">
+                    </fieldset>
+                    <fieldset>
+                        <label for="mail" class="important">E-mail</label>
+                        <input id="mail" type="email">
+                    </fieldset>
+                    <fieldset>
+                        <label for="skype">Skype</label>
+                        <input id="skype" type="text">
+                    </fieldset>
+                    <fieldset>
+                        <label for="message" class="important">Комментарий</label>
+                        <textarea id="message" placeholder="Напишите ваши пожелания, количество взрослых, детей (возраст). Пожелания
+                        по спальным местам, доп. местам.
+                        Укажите время вашего приезда и отъезда. Нужен ли трансфер?"></textarea>
+                    </fieldset>
+
+                    <!-- application__antispam -->
+                    <fieldset class="application__antispam">
+                        <label for="capcha" class="important">Анти-спам</label>
+                        <div>
+                            <span>6+17 =</span>
+                            <input id="capcha" type="text">
+                            <span>Введите ответ в форму</span>
+                        </div>
+                    </fieldset>
+                    <!-- /application__antispam -->
+
+                    <div>
+                        <input type="checkbox" class="niceCheck" id="agreement">
+                        <label for="agreement">Отправляя заявку на бронирование, вы
+                            подтверждаете, что принимаете условия
+                            нашего <a href="#">соглашения</a></label>
+                    </div>
+
+                    <!-- application__submit -->
+                    <div class="application__submit">
+                        <input type="submit" value="Отправить заявку">
+                    </div>
+                    <!-- /application__submit -->
+
+                </div>
+                <div>
+                    <h2>Информация по бронированию</h2>
+
+                    <!-- application__info -->
+                    <div class="application__info">
+
+                        <!-- card__code -->
+                        <dl class="card__code">
+                            <dt>Код объекта:</dt>
+                            <dd>1021</dd>
+                        </dl>
+                        <!-- card__code -->
+
+                        <!-- application__title -->
+                        <a class="application__title" href="#">
+                            Мини гостиница «Ботаника», Феодосия,
+                            ул. Профсоюзная
+                            <img src="pic/pic8.png" width="67" height="67" alt="">
+                        </a>
+                        <!-- /application__title -->
+
+                        <!-- dates -->
+                        <div class="dates" data-price="150" data-busy="2014.01.05-2014.01.18::2014.01.25-2014.02.03">
+                            <input type="text" class="dates__start" placeholder="Дата въезда">
+                            <input type="text" class="dates__finish" placeholder="Дата въезда">
+                            <span class="dates__count">Всего ночей <span>10</span></span>
+                        </div>
+                        <!-- /dates -->
+
+                        <!-- application__price -->
+                        <div class="application__price">
+                            <dl>
+                                <dt>Выбранные номера:</dt>
+                                <dd>
+                                    <span>Стандартный номер люкс 2+1, 1 этаж</span>
+                                    <span>5 000 грн</span>
+                                </dd>
+                                <dd>
+                                    <span>Стандартный номер люкс 2+1, 1 этаж</span>
+                                    <span>5 000 грн</span>
+                                </dd>
+                                <dd>
+                                    <span>Стандартный номер люкс 2+1, 1 этаж</span>
+                                    <span>5 000 грн</span>
+                                </dd>
+                            </dl>
+                            <p class="application__result">Итого: <span>15 000 грн.</span></p>
+                            <p>Сумма предоплаты 500 грн.</p>
+                            <p>Оставшаяся сумма 14 500 грн. ( оплачивается при вселении)</p>
+                        </div>
+                        <!-- /application__price -->
+
+                        <!-- application__atention -->
+                        <div class="application__atention">
+                            <span>Внимание! </span>
+                            Спецслужбы не могут оставить Перрена в покое — новый министр нашёл досье на высокого
+                            блондина, заведённое Бернаром Миланом, и следуя подсказке капитана Камбрэ, подозревающего
+                            Тулуза в фарсе с высоким блондином и убийстве Милана, приказывает полковнику Тулузу
+                            представить ему «суперагента».
+                        </div>
+                        <!-- application__atention -->
+
+                    </div>
+                    <!-- application__info -->
+
+                </div>
+            </form>
+            <!-- /application -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <!-- footer__pay -->
+            <dl class="footer__pay">
+                <dt>Варианты оплаты:</dt>
+                <dd><a href="#"><img src="pic/pay1.png" width="56" height="35" alt=""></a></dd>
+                <dd><a href="#"><img src="pic/pay2.png" width="56" height="35" alt=""></a></dd>
+                <dd><a href="#"><img src="pic/pay3.png" width="56" height="35" alt=""></a></dd>
+                <dd><a href="#"><img src="pic/pay4.png" width="56" height="35" alt=""></a></dd>
+            </dl>
+            <!-- /footer__pay -->
+
+            <!-- footer__copyright -->
+            <div class="footer__copyright">Все права защищены</div>
+            <!-- /footer__copyright -->
+
+            <!-- footer__counter -->
+            <ul class="footer__counter">
+                <li><a href="#"><img src="pic/counter1.png" width="88" height="31" alt=""></a></li>
+                <li><a href="#"><img src="pic/counter2.png" width="88" height="31" alt=""></a></li>
+            </ul>
+            <!-- /footer__counter -->
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

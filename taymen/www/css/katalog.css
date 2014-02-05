@@ -1,0 +1,167 @@
+/* --------------- fishing_copy --------------- */
+.site{
+    z-index: 3;
+}
+.fishing_copy h1, .fishing_copy h2{
+    position: relative;
+    padding-top: 6px;
+    border-top: 3px solid #ffd800;
+    display: inline-block;
+    font-family: "Tahoma";
+    font-weight: normal;
+    font-size: 18px;
+    color: #888888;
+    padding-right: 13px;
+
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.fishing_copy h1:before{
+    content: '';
+    position: absolute;
+    background: url("../img/arrow.png") no-repeat;
+    width: 8px;
+    height: 12px;
+    right: 0;
+    top: 10px;
+}
+.catalog-product__title span{
+    position: relative;
+    text-decoration: underline;
+    font-family: tahoma;
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 8px;
+    line-height: 17px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.catalog-product__title span:hover{
+    text-decoration: none;
+}
+.catalog-product ul{
+    position: relative;
+    z-index: 1;
+}
+.catalog-product ul li{
+    position: relative;
+    border-top: none;
+    border-bottom: none;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.catalog-product li:hover{
+    z-index: 10;
+}
+.catalog-product:hover{
+    z-index: 10;
+}
+.catalog-product li:hover:before{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 4px;
+    background: #77b5dd;
+    top: 0;
+    left: 0px;
+    z-index: 5;
+}
+.catalog-product li:hover:after{
+    content: '';
+    position: absolute;
+    height: 300px;
+    width: 4px;
+    background: #77b5dd;
+    top: 0;
+    right: 0px;
+    z-index: 5;
+}
+.catalog-product li:hover .context_menu{
+    display: block;
+    position: absolute;
+}
+.catalog-product li:hover .context_menu li{
+    z-index: 10;
+}
+
+
+.bordered > div:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 36px;
+    width: 1px;
+    background: #e0e0e0;
+    z-index: 0;
+}
+/* --------------- /fishing_copy --------------- */
+
+/* --------------- context_menu --------------- */
+.catalog-product .context_menu{
+    display: none;
+    position: relative;
+    background: #ffffff;
+    margin-left: 0px;
+    margin-top: -3px;
+    z-index: 4;
+    padding-left: 12px;
+    border-top: 4px solid #f6f6f6;
+    border-bottom: 4px solid #77b5dd;
+    padding-top: 18px;
+    padding-bottom: 13px;
+}
+.catalog-product .context_menu:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #77b5dd;
+    bottom: 0;
+    left: 0;
+}
+.catalog-product .context_menu:after{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background: #77b5dd;
+    bottom: 0;
+    right: 0;
+}
+.catalog-product .context_menu li:hover{
+    border: none;
+}
+.catalog-product .context_menu li{
+    position: relative;
+    width: 141px;
+    border-top: none;
+    vertical-align: top;
+    margin-bottom: 4px;
+    display: block;
+    border: none;
+    padding-right: 10px;
+}
+.catalog-product .context_menu li:before{
+    display: none;
+}
+.catalog-product .context_menu li:after{
+    display: none;
+}
+.catalog-product .context_menu li a{
+    position: relative;
+    font-family: "Tahoma";
+    font-size: 14px;
+    color: #a6a6a6;
+    text-decoration: underline;
+
+}
+.catalog-product .context_menu li a:hover{
+    color: #64a3ca;
+}
+.catalog-product .context_menu li a:before{
+    display: none;
+}
+/* --------------- /context_menu --------------- */

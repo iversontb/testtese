@@ -1,0 +1,42 @@
+/* --------------- content-wrap --------------- */
+.content-wrap h2, .content-wrap h1{
+    margin-bottom: 7px;
+}
+.content-wrap p{
+    line-height: 22px;
+    margin-bottom: 22px;
+    padding-left: 5px;
+    letter-spacing: 1px;
+}
+.content-wrap .dental{
+    margin-top: -9px;
+    margin-left: 2px;
+}
+.content-wrap .dental li{
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 8px;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- veneers --------------- */
+.dental_plate{
+    position: relative;
+    padding-top: 9px;
+    padding-left: 34px;
+    margin-bottom: 41px;
+}
+.dental_plate:before{
+    content: '';
+    position: absolute;
+    background: url("../img/adds_border.png") no-repeat;
+    width: 784px;
+    height: 1px;
+    top: -21px;
+    right: -12px;
+}
+.dental_plate:first-child:before{
+    display: none;
+}
+/* --------------- /veneers --------------- */
+

@@ -1,0 +1,10 @@
+.aboutBlockInside, .sub_menu a {
+    position: relative;
+    behavior: url(css/pie.htc);
+    zoom: 1;
+}
+.wrap_banner, .inside_block, .wrap_item, .wrap_objects .wrap_img, .wrap_objects .wrap_img span, .wrap_item .item_info time.interval_time {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

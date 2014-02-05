@@ -1,0 +1,6 @@
+.menu, .search input#text,
+.info_status{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

@@ -1,0 +1,7 @@
+.main-menu__lnk,
+.calculator,
+.services a{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

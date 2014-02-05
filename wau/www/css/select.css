@@ -1,0 +1,57 @@
+/* --------------- nice-select --------------- */
+.nice-select {
+    font-weight: 300;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    line-height: 16px;
+    overflow: hidden;
+    width: 192px;
+    height: 31px;
+    border: 1px solid #b4b4b4;
+    border-radius: 2px;
+    color: #444444;
+    margin-right: 11px;
+}
+.nice-select__item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 7px 0 0 14px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 14px;
+}
+.nice-select__item:after {
+    content: '';
+    width: 24px;
+    height: 31px;
+    background: url("../img/select_button.png") no-repeat 0 bottom;
+    position: absolute;
+    top: 0;
+    right: 7px;
+    z-index: 10;
+    border-radius: 0 3px 3px 0;
+}
+.nice-select select {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 31px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.nice-select select option {
+    font-size: 14px;
+    color: #444444;
+    height: 30px;
+    padding: 8px 0 0 13px;
+    border-top: 1px solid #b4b4b4;
+}
+/* --------------- /nice-select --------------- */

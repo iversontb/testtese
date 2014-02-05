@@ -1,0 +1,135 @@
+.ares-slider {
+    position: relative;
+    height: 60px;
+    margin: 0px;
+    padding: 0 50px;
+}
+.ares-slider > ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+.ares-slider_item {
+    position: absolute;
+    left: -1000px;
+}
+.ares-slider_item > img {
+    width: 100%;
+}
+.ares-slider_item > h3{
+    color: #3c444e;
+    font-size: 14px;
+}
+.ares-slider_item dl {
+    overflow: hidden;
+}
+.ares-slider_item  dt,
+.ares-slider_item dd{
+    float: left;
+}
+.ares-slider_item dt {
+    clear: both;
+}
+
+.ares-slider__next{
+    position: absolute;
+    content: '';
+    background: url("../img/gall-sprite.png") 0 -261px;
+    width: 38px;
+    height: 37px;
+    top: 50%;
+    margin-top: -20px;
+    right: 0;
+    cursor: pointer;
+}
+.ares-slider__prev {
+    position: absolute;
+    content: '';
+    background: url("../img/gall-sprite.png")  0 -87px;
+    width: 38px;
+    height: 37px;
+    top: 50%;
+    margin-top: -20px;
+    left: 0;
+    cursor: pointer;
+}
+
+.ares-slider__next:hover{
+    background: url("../img/gall-sprite.png") 0 -174px;
+}
+.ares-slider__prev:hover{
+    background: url("../img/gall-sprite.png") 0 0;
+}
+.imgwrap{
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+}
+
+.next{
+    position: absolute;
+    content: '';
+    background: url("../img/red-gall-right.png");
+    width: 38px;
+    height: 37px;
+    top: 50%;
+    margin-top: -36px;
+    right: 0;
+    cursor: pointer;
+    text-indent: -5000px;
+    border: none;
+    opacity: 0.5;
+}
+.prev{
+    position: absolute;
+    content: '';
+    background: url("../img/red-gall-left.png") ;
+    width: 38px;
+    height: 37px;
+    top: 50%;
+    margin-top: -36px;
+    left: 0;
+    cursor: pointer;
+    text-indent: -5000px;
+    opacity: 0.5;
+    border: none;
+}
+.next:hover,
+.prev:hover{
+    opacity: 1;
+}
+.historyGall{
+    position: relative;
+    padding-bottom: 38px;
+}
+.gallery{
+    width: 821px;
+    color: #fff;
+    font-style: italic;
+    line-height: 21px;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    left: 103px !important;
+}
+.more:visited{
+    color: #fff;
+}
+.more:hover{
+    opacity: 0.8;
+}
+.more{
+    float: right;
+    color: #fff;
+    font-size: 12px;
+    background: #f1494f;
+    border-radius: 5px;
+    width: 124px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: normal;
+}

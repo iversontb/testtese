@@ -1,0 +1,25 @@
+.reviewsContainer{
+    width: 70%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-right: 50px;
+}
+.reviewsContainer h3{
+    color: #2c343a;
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+.reviewsContainer h4{
+    color: #2c343a;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 28px;
+}
+.reviewsContainer .soonReview{
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 20px;
+}

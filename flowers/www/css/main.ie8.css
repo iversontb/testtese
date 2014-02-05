@@ -1,0 +1,30 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "heinrichscript";
+    src: url("../fonts/heinrichscript.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+.buy__btn1:hover{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.buy__btn2:hover{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.opt__btn:hover{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.tel__btn1:hover{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.plus:hover{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.minus:hover{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}
+.more__info:hover{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+}

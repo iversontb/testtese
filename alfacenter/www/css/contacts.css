@@ -1,0 +1,61 @@
+/*
+    main styles
+    version: 12.10.2013
+
+    contact
+
+*/
+
+.bkg{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+}
+/*----------- contact ------------*/
+.contact{
+    position: absolute;
+    left: 406px;
+    top: 49px;
+    width: 227px;
+    padding: 26px 39px;
+    z-index: 5;
+    background-color: rgba(0,0,0,0.8);
+}
+.contact h3{
+    font-size: 24px;
+    color: #ffffff;
+    padding-bottom: 28px;
+    font-weight: normal;
+}
+.contact address{
+    font-size: 16px;
+    color: #ffffff;
+    padding-bottom: 22px;
+    font-style: normal;
+    line-height: 23px;
+}
+.contact p{
+    font-size: 16px;
+    color: #ffffff;
+    padding-bottom: 30px;
+    line-height: 27px;
+}
+.contact p span{
+    font-size: 24px;
+}
+.contact a{
+    font-size: 16px;
+    color: #f2bc78;
+    text-decoration: underline;
+    display: block;
+    padding-bottom: 17px;
+}
+.contact a:hover{
+    text-decoration: none;
+}
+.contact span{
+    font-size: 16px;
+    color: #ffffff;
+}
+/*----------- /contact ------------*/

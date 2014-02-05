@@ -1,0 +1,32 @@
+/* faceBlock */
+.faceBlock__foto-container{
+    display: inline-block;
+    vertical-align: top;
+    width: 234px;
+
+}
+.faceBlock__foto-block{
+    margin-bottom: 26px;
+}
+
+.faceBlock__face-text{
+    width: 675px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 39px;
+}
+.faceBlock__face-text p{
+    font-family: arial;
+    font-size: 12px;
+    margin-bottom: 17px;
+    line-height: 21px;
+}
+
+.faceBlock__face-text h4{
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ff7900;
+    font-family: 'Open Sans', sans-serif;
+}
+/* /faceBlock */

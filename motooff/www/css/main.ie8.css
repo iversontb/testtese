@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "pt_regular";
+    src: url("../fonts/pfdintextcomppro-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pts_regular";
+    src: url("../fonts/pts55f.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "europe_demi";
+    src: url("../fonts/europedemi.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pts_bold";
+    src: url("../fonts/pts75f.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+.info{
+    background: #6d6d6d url("../img/grad.png") repeat-x;
+}
+.banner__img{
+    position: relative;
+    z-index: 10;
+}
+.small__banner p{
+    position: relative;
+    z-index: 5;
+}
+.price__form .search2 , .search__wrap .search{
+    line-height: 28px;
+}

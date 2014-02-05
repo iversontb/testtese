@@ -1,0 +1,452 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/modernizr-1.7.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+	<script type="text/javascript" src="js/cusel.js"></script>
+	<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+	
+
+
+
+	<!--[if lt IE 10]>
+			 <link rel="stylesheet" href="css/pie.css" />
+			 <link rel="stylesheet" href="css/main-ie.css" />
+	<![endif]-->
+	<!--[if lte IE 7]> 
+			<link rel="stylesheet" href="css/main-ie7.css" />
+	<![endif]-->
+	<!--[if lt IE 9]> 
+			<link rel="stylesheet" href="css/main-ie7-8.css" />
+	<![endif]-->
+	
+</head>
+<body>
+	<!--Main Wrap-->
+	<div class="mainWrap">
+			
+		<!--Main Header-->
+		<div class="mainHeader">
+
+			<!--topWraper-->
+			<div class="topWraper">
+				
+				<!--headWrap-->
+				<div class="headWrap">
+					<h1><img class="logo" src="img/logo.png" height="30" width="89" alt="fly"></h1>
+					<ol class="haedMenu">
+						<li><a href="#">Авиабилеты</a></li>
+						<li><a href="#">ЖД билеты</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Помошь</a></li>
+					</ol>
+					<a href="#" class="enter">Вход</a>
+					<address>
+						<p>+7 (495) <strong>933-09-43</strong></p>
+						<span>Заказ жд и авиабилетов</span>
+					</address>
+					<ul class="consultation">
+						<li><a href="#">Перезвонить</a></li>
+						<li><a href="#">Задать вопрос</a></li>
+					</ul>
+				</div>
+				<!--/headWrap-->
+				
+			</div>
+			<!--/topWraper-->
+			
+			<div class="souping">
+				
+			</div>
+			
+			<!--bottomHead-->
+			<div class="bottomHead">
+			
+				<!--bottomHeadWrap-->
+				<div class="bottomHeadWrap">
+					
+					<h2>Поиск авиабилетов</h2>
+					
+					<!--ticketSort-->
+					<form action="#" name="f" class="ticketSort">
+						
+						<!--sortWraper-->
+						<div class="sortWraper">
+							
+							<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+							
+							<!--lineContainer-->
+							<div class="lineContainer">
+								<div class="inputContainer">
+									<label for="searchfrom">Город вылета:</label>
+									<div class="inputWrap outCity">
+										<input type="text" id="searchfrom" name="input">
+										<div class="comeInfo">
+											<span>RU, MOV</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="inputContainer">
+									<label for="searchto">Город прилета:</label>
+									<div class="inputWrap inCity">
+										<input type="text" id="searchto" name="input">
+										<div class="comeInfo">
+											<span>RU, GOJ</span>
+										</div>
+									</div>
+								</div>	
+									
+								<div class="inputContainer">
+									<label for="searchdate">Дата вылета:</label>
+									<div class="inputWrap outDate">
+										<input type="text" id="searchdate" name="input">
+									</div>
+								</div>	
+									
+								<div class="inputContainer">
+									<div class="bigCheckWrap">
+											<input id="activeTo" type="checkbox" class="niceCheck" tabindex="1">
+										<label for="activeTo">Вылет обратно:</label>
+									</div>
+									<div class="inputWrap toDate">
+										<input type="text" id="searchdateTo"  name="input">
+									</div>
+								</div>	
+																										
+							</div>
+							<!--/lineContainer-->
+							
+							<!--lineContainer-->
+							<div class="lineContainer selectLine">
+								<div class="inputContainer">
+									<div class="selectWrap">
+										<select id="idSelect" name="nameSelect">
+											<option value="Эконом класс">Эконом класс</option>
+											<option value="Эконом класс">Эконом класс</option>
+											<option value="Эконом класс">Эконом класс</option>
+											<option value="Эконом класс">Эконом класс</option>
+										</select>
+									</div>
+								</div>
+								<div class="inputContainer">
+									<label for="idSelect2">Взрослых:</label>
+									<div class="selectWrap littleSelect">
+										<select id="idSelect2" name="nameSelect">
+											<option value="10">10</option>
+											<option value="10">10</option>
+											<option value="10">10</option>
+											<option value="10">10</option>
+										</select>
+									</div>
+								</div>
+								<div class="inputContainer">
+									<label for="idSelect3">Детей до 12 лет:</label>
+									<div class="selectWrap littleSelect">
+										<select id="idSelect3" name="nameSelect">
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+										</select>
+									</div>
+								</div>	
+								<div class="inputContainer">
+									<label for="idSelect4">Младенцев до 2 лет:</label>
+									<div class="selectWrap littleSelect">
+										<select id="idSelect4" name="nameSelect">
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+										</select>
+									</div>
+								</div>													
+								<a class="fullSearch" href="#">Расширенный поиск</a>
+							</div>
+							<!--lineContainer-->
+							
+						</div>
+						<!--/sortWraper-->
+						
+						<input type="submit" value="НАЙТИ БИЛЕТЫ">
+						
+					</form>
+					<!--ticketSort-->
+					
+				</div>
+				<!--/bottomHeadWrap-->
+				
+			</div>
+			<!--/bottomHead-->
+
+			
+		</div>
+		<!--/Main Header-->
+					
+		<!--Content Wrap-->
+		<div class="contentWrap">
+			<!--mainContent-->
+			<div class="mainContent">
+				
+				<!--content-->
+				<div class="content">
+					
+					<h2 class="flight">Расписание рейса Аэрофтот SU 757</h2>
+					
+					<!--crumb-->
+					<ul class="crumb">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Россия</a></li>
+						<li><a href="#">Москва</a></li>																		
+						<li><a href="#">Шереметьево</a></li>
+						<li><a href="#">Аэрофлот</a></li>		
+						<li>SU 757</li>										
+					</ul>
+					<!--/crumb-->
+				
+					<!--flyCompany-->
+					<div class="flyCompany">
+						
+						<div class="block">
+							<p>Авиакомпания:</p>
+							<ul>
+								<li><a href="#">Аэрофлот</a></li>
+							</ul>
+						</div>
+						
+						<div class="block">
+							<p>Рейс:</p>
+							<ul>
+								<li><a href="#">SU 757</a></li>
+							</ul>
+						</div>
+						
+						<div class="block">
+							<p>Обратный рейс:</p>
+							<ul>
+								<li><a href="#">SU 756</a></li>
+							</ul>
+						</div>
+						
+						<div class="companyImage">
+							<img src="img/pic/pic1.png" height="43" width="200" alt="">
+						</div>				
+						
+					</div>
+					<!--/flyCompany-->
+					
+					<!--conteiner-->
+					<div class="conteiner">
+						<div class="block">
+							<p>Направление:</p>
+							<ul>
+								<li><a href="#">Москва (Шереметьево) </a></li>
+								<li><a href="#">Симферополь</a></li>
+							</ul>
+						</div>
+						<div class="block">
+							<p>Destination:</p>
+							<ul>
+								<li><a href="#">Moscow (Sheremetyevo)</a></li>
+								<li><a href="#">Simferopol</a></li>
+							</ul>
+						</div>
+					
+					</div>
+					<!--/conteiner-->
+					
+					<!--conteiner-->
+					<div class="conteiner type1">
+						<h2>Расписание</h2>
+						<dl class="schedule">
+							<dt>Вылет:</dt>
+							<dd>18:20</dd>
+						</dl>
+						<dl class="schedule">
+							<dt>Прилет:</dt>
+							<dd>20:20 <i>местное</i></dd>
+						</dl>
+						<dl class="schedule">
+							<dt>Время в пути:</dt>
+							<dd>02:00 </dd>
+						</dl>
+						<dl class="schedule">
+							<dt>Дни недели:</dt>
+							<dd>Пн, Вт, Ср, Чт, Пт</dd>
+						</dl>			
+						<dl class="schedule">
+							<dt>Навигация:</dt>
+							<dd>11 января — 26 августа</dd>
+						</dl>																							
+					</div>
+					<!--/conteiner-->
+					
+					<!--conteiner-->
+					<div class="conteiner type1">
+						<h2>Дополнительная информация</h2>
+						<p>Расстояние - 1200 км, разница во времени - 2 ч, без питания, перелет осуществляется в ночное время суток.
+Генирится любой СЕО текст произвольной длины</p>
+					</div>
+					<!--/conteiner-->
+					
+					<!--conteiner-->
+					<div class="conteiner">
+						<div class="block">
+							<a href="#" class="e-Button">Найти билеты</a>
+						</div>
+						<p class="priceTicket">Стоимость билета эконом классав одну сторону на 27.12.2012<span>3 500 <i>руб</i></span></p>
+					</div>
+					<!--/conteiner-->
+					
+					<!--conteiner-->
+					<div class="conteiner">
+						
+						<!--block-->
+						<div class="block aboutPlane">
+							
+							<div class="aboutHead">
+								<p>Самолет:</p>
+								<a href="#">Boeing 737</a>
+							</div>
+							
+							<div class="descriptionWrap">
+								<dl>
+									<dt>Тип:</dt>
+									<dd>пассажирский</dd>
+								</dl>
+								<dl>
+									<dt>Разработчик:</dt>
+									<dd>Airbus</dd>
+								</dl>
+								<dl>
+									<dt>Международный код:</dt>
+									<dd>AB4</dd>
+								</dl>																
+								<dl>
+									<dt>Длина:</dt>
+									<dd>44.84 м</dd>
+								</dl>
+								<dl>
+									<dt>Размах крыльев:</dt>
+									<dd>53.62 м</dd>
+								</dl>
+								<dl>
+									<dt>Высота:</dt>
+									<dd>16.53 м</dd>
+								</dl>
+								<dl>
+									<dt>Крейсерская скорость:</dt>
+									<dd>880 км\ч</dd>
+								</dl>		
+								<dl>
+									<dt>Дальность полета:</dt>
+									<dd>3700 км</dd>
+								</dl>	
+								<dl>
+									<dt>Количество пассажиров:</dt>
+									<dd>336</dd>
+								</dl>	
+								<dl class="moreServices">
+									<dt>Дополнительно:</dt>
+									<dd>Телевизор, Интернет.</dd>
+								</dl>																																																
+							</div>
+							
+						</div>
+						<!--/block-->
+						
+						<!--block-->
+						<div class="block ariBus">
+							<div class="airSits">
+								<img src="img/pic/pic2.jpg" height="243" width="453" alt="">
+							</div>
+							<ul>
+								<li><img src="img/pic/pic3.jpg" height="90" width="145" alt=""></li>
+								<li><img src="img/pic/pic3.jpg" height="90" width="145" alt=""></li>
+								<li><img src="img/pic/pic3.jpg" height="90" width="145" alt=""></li>																
+							</ul>
+						</div>
+						<!--/block-->
+						
+						<div class="mapContainer">
+							<img src="img/pic/pic4.jpg" height="300" width="720" alt="">
+						</div>
+						
+					</div>	
+					<!--/conteiner-->		
+					
+					<!--conteiner-->
+					<div class="conteiner">		
+						<ul class="cities">
+							<li>
+								<a href="#"><img src="img/pic/pic6.jpg" height="149" width="345" alt=""></a>
+								<p><span>Текст -</span>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </p>
+							</li>
+							<li>
+								<a href="#"><img src="img/pic/pic5.jpg" height="149" width="345" alt=""></a>
+								<p><span>Текст -</span>Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст Текст </p>
+							</li>							
+						</ul>
+					</div>	
+					<!--/conteiner-->	
+					
+					<!--conteiner-->
+					<div class="conteiner type1">		
+						<h2>Оставить отзыв</h2>
+						<form action="#" class="review">
+							<div class="lineContainer">
+								<label>Имя:</label>
+								<div class="inputWrap">
+									<input type="text">
+								</div>
+							</div>	
+							<div class="lineContainer">
+								<label>Имя:</label>
+								<div class="inputWrap">
+									<input type="text">
+								</div>
+							</div>	
+							<label>Отзыв о рейсе:</label>
+							<div class="textareaWrap">
+								<textarea></textarea>
+							</div>	
+							<input type="submit" class="e-Button" value="Оставить отзыв">
+						</form>			
+					</div>	
+					<!--/conteiner-->	
+										
+				
+				</div>
+				<!--/content-->
+				<div class="rigktSideBar">
+					<img src="img/pic/aside-pic.jpg" height="1411" width="241" alt="">
+				</div>
+					
+			</div>
+			<!--/mainContent-->
+			
+
+													
+		</div>
+		<!--/Content Wrap-->
+					
+					
+					
+		</div>
+		<!--/Main Wrap-->
+		
+		<!--Main Footer-->
+		<div class="mainFooter">
+			<img src="img/pic/footer-pic.jpg" height="111" width="1000" alt="">
+		</div>
+			<!--/Main Footer-->
+
+</body>
+</html>

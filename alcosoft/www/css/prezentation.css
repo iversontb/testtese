@@ -1,0 +1,28 @@
+.black_container{
+    background: url("../img/back-black-big.jpg");
+    height: 400px;
+}
+.prezentation_text{
+    color: #fff;
+}
+.prezentation_text b{
+    font-weight: 700;
+}
+.prezentation_text p{
+    font-size: 21px;
+    margin-bottom: 21px;
+    line-height: 24px;
+}
+.prezentation_text > span{
+    display: block;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 17px;
+}
+.fead_back textarea{
+    height: 239px;
+}
+.eBut{
+    width: 236px;
+    margin-top: 30px;
+}

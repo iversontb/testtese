@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/GauraMap-AddObject-1.css" />
+    <link rel="stylesheet" href="css/select.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.niceradio.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery.time_line.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+<!-- site -->
+<div class="site">
+<!-- header -->
+<header class="header">
+
+    <!-- header_inside -->
+    <div class="header_inside">
+
+        <!-- logo -->
+        <a href="#" title="На главную" class="logo"><img src="img/logo.png" width="233" height="66" alt=""></a>
+        <!-- /logo -->
+
+        <a href="#" class="town_select"><span>Выберите город</span></a>
+
+        <!-- main_menu -->
+        <nav class="main_menu">
+            <a href="#">О проекте</a>
+            <a href="#">Знания</a>
+            <a href="#">Карта</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <!-- main_menu -->
+
+        <!-- autorization_block -->
+        <div class="autorization_block">
+            <a href="#">Зарегистрироваться</a>
+            <a href="#" class="enter_but">Войти</a>
+        </div>
+        <!-- /autorization_block -->
+
+    </div>
+    <!-- /header_inside -->
+
+</header>
+<!-- /header -->
+
+<!-- site__content -->
+<div class="site__content">
+
+    <!-- content-wrap -->
+    <div class="content-wrap">
+
+        <!-- inside_block -->
+        <div class="inside_block">
+
+            <!-- add_object -->
+            <form action="#" class="add_object" novalidate>
+                <h2 class="topic_type">Добавление нового объекта – Шаг 1</h2>
+
+                <!-- line_container -->
+                <div class="line_container radio_wrap">
+                    <label>Тип объекта <span>*</span></label>
+
+                    <!-- radio_container -->
+                    <div class="radio_container">
+
+                        <!-- radio_line -->
+                        <div class="radio_line">
+                            <label for="myradio1">Группа духовного общения</label>
+                            <input type="radio" class="niceRadio" name="myradio" id="myradio1" tabindex="1" checked="checked"/>
+
+                            <!-- pointer_container -->
+                            <div class="pointer_container">
+                                <div class="little_pointer green_little_pointer">pointer</div>
+
+                                <!-- pointer_text -->
+                                <div class="pointer_text">Бхакти-Врикша, Нама-Хата,
+                                    Кураторская группа и т.д.
+                                </div>
+                                <!-- /pointer_text -->
+
+                            </div>
+                            <!-- /pointer_container -->
+
+                        </div>
+                        <!-- /radio_line -->
+
+                        <!-- radio_line -->
+                        <div class="radio_line">
+                            <label for="myradio2">Организация</label>
+                            <input type="radio" class="niceRadio" name="myradio" id="myradio2" tabindex="2" />
+
+                            <!-- pointer_container -->
+                            <div class="pointer_container">
+                                <div class="little_pointer blue_little_pointer">pointer</div>
+
+                                <!-- pointer_text -->
+                                <div class="pointer_text">Бхакти-Врикша, Нама-Хата,
+                                    Кураторская группа и т.д.
+                                </div>
+                                <!-- /pointer_text -->
+
+                            </div>
+                            <!-- /pointer_container -->
+                        </div>
+                        <!-- /radio_line -->
+
+                        <!-- radio_line -->
+                        <div class="radio_line">
+                            <label for="myradio3">Клуб</label>
+                            <input type="radio" class="niceRadio" name="myradio" id="myradio3" tabindex="2" />
+
+                            <!-- pointer_container -->
+                            <div class="pointer_container">
+                                <div class="little_pointer fiolet_little_pointer">pointer</div>
+
+                                <!-- pointer_text -->
+                                <div class="pointer_text">Бхакти-Врикша, Нама-Хата,
+                                    Кураторская группа и т.д.
+                                </div>
+                                <!-- /pointer_text -->
+
+                            </div>
+                            <!-- /pointer_container -->
+                        </div>
+                        <!-- /radio_line -->
+
+                        <!-- radio_line -->
+                        <div class="radio_line">
+                            <label for="myradio4">Ресторан или кафе</label>
+                            <input type="radio" class="niceRadio" name="myradio" id="myradio4" tabindex="2" />
+
+                            <!-- pointer_container -->
+                            <div class="pointer_container">
+                                <div class="little_pointer pink_little_pointer">pointer</div>
+
+                                <!-- pointer_text -->
+                                <div class="pointer_text">Бхакти-Врикша, Нама-Хата,
+                                    Кураторская группа и т.д.
+                                </div>
+                                <!-- /pointer_text -->
+
+                            </div>
+                            <!-- /pointer_container -->
+                        </div>
+                        <!-- /radio_line -->
+
+                        <!-- radio_line -->
+                        <div class="radio_line">
+                            <label for="myradio5">Событие, мероприятие или другое</label>
+                            <input type="radio" class="niceRadio" name="myradio" id="myradio5" tabindex="2" />
+
+                            <!-- pointer_container -->
+                            <div class="pointer_container">
+                                <div class="little_pointer orange_little_pointer">pointer</div>
+
+                                <!-- pointer_text -->
+                                <div class="pointer_text">Бхакти-Врикша, Нама-Хата,
+                                    Кураторская группа и т.д.
+                                </div>
+                                <!-- /pointer_text -->
+
+                            </div>
+                            <!-- /pointer_container -->
+                        </div>
+                        <!-- /radio_line -->
+
+                    </div>
+                    <!-- /radio_container -->
+
+                </div>
+                <!-- line_container -->
+
+
+                <!-- line_container -->
+                <div class="line_container">
+                    <label>Название объекта <span>*</span></label>
+
+                    <!-- input_container -->
+                    <div class="input_container">
+                        <input class="requaired" type="text" >
+                        <p class="error_input_text">Введите название объекта</p>
+                    </div>
+                    <!-- /input_container -->
+
+                </div>
+                <!-- line_container -->
+
+                <!-- line_container -->
+                <div class="line_container">
+                    <label>Эл. почта  <span>*</span></label>
+
+                    <!-- input_container -->
+                    <div class="input_container">
+                        <input class="requaired" type="email" id="email">
+                        <p class="error_input_text">Введите Email</p>
+                    </div>
+                    <!-- /input_container -->
+
+                </div>
+                <!-- line_container -->
+
+                <!-- line_container -->
+                <div class="line_container">
+                    <label>Телефон <span>*</span></label>
+
+                    <!-- input_container -->
+                    <div class="input_container">
+                        <input class="requaired" type="text" >
+                        <p class="error_input_text">Введите номер телефона</p>
+                    </div>
+                    <!-- /input_container -->
+
+                </div>
+                <!-- line_container -->
+
+                <!-- line_container -->
+                <div class="line_container">
+                    <label>Веб-сайт</label>
+
+                    <!-- input_container -->
+                    <div class="input_container">
+                        <input type="text" >
+                    </div>
+                    <!-- /input_container -->
+
+                </div>
+                <!-- line_container -->
+
+                <!-- line_container -->
+                <div class="line_container object_line">
+                    <label>Об объекте</label>
+
+                    <!-- input_container -->
+                    <div class="input_container">
+                        <textarea></textarea>
+                    </div>
+                    <!-- /input_container -->
+
+                </div>
+                <!-- line_container -->
+
+
+                <!-- line_container -->
+                <div class="line_container check_box_wrap">
+                    <label>Режим работы <span>*</span></label>
+
+                    <!-- check_box_container -->
+                    <div class="check_box_container">
+                        <!-- input_container -->
+                        <div class="check_box_line">
+                            <label for="11">ПН</label>
+                            <input class="niceCheck" id="11" type="checkbox" name="ch1" />
+
+
+                            <!-- time_line -->
+                            <div class="time_line">
+                                <span>c</span>
+                                <select>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                                <span>до</span>
+                                <select>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                            </div>
+                            <!-- /time_line -->
+
+
+                        </div>
+                        <!-- /input_container -->
+
+                        <!-- input_container -->
+                        <div class="check_box_line">
+                            <label for="12">ВТ</label>
+                            <input class="niceCheck" id="12" type="checkbox" name="ch1" />
+
+                            <!-- time_line -->
+                            <div class="time_line">
+                                <span>c</span>
+                                <select>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                                <span>до</span>
+                                <select>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                            </div>
+                            <!-- /time_line -->
+
+
+                        </div>
+                        <!-- /input_container -->
+
+                        <!-- input_container -->
+                        <div class="check_box_line">
+                            <label for="13">СР</label>
+                            <input class="niceCheck" id="13" type="checkbox" name="ch1" />
+
+                            <!-- time_line -->
+                            <div class="time_line">
+                                <span>c</span>
+                                <select>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                                <span>до</span>
+                                <select>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                            </div>
+                            <!-- /time_line -->
+
+
+                        </div>
+                        <!-- /input_container -->
+
+                        <!-- input_container -->
+                        <div class="check_box_line">
+                            <label for="14">ЧТ</label>
+                            <input class="niceCheck" id="14" type="checkbox" name="ch1" />
+
+                            <!-- time_line -->
+                            <div class="time_line">
+                                <span>c</span>
+                                <select>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                                <span>до</span>
+                                <select>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                            </div>
+                            <!-- /time_line -->
+
+
+                        </div>
+                        <!-- /input_container -->
+
+                        <!-- input_container -->
+                        <div class="check_box_line">
+                            <label for="15">ПТ</label>
+                            <input class="niceCheck" id="15" type="checkbox" name="ch1" />
+
+                            <!-- time_line -->
+                            <div class="time_line">
+                                <span>c</span>
+                                <select>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                                <span>до</span>
+                                <select>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                            </div>
+                            <!-- /time_line -->
+
+
+                        </div>
+                        <!-- /input_container -->
+
+                        <!-- input_container -->
+                        <div class="check_box_line">
+                            <label for="16">СБ</label>
+                            <input class="niceCheck" id="16" type="checkbox" name="ch1" />
+
+                            <!-- time_line -->
+                            <div class="time_line">
+                                <span>c</span>
+                                <select>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                                <span>до</span>
+                                <select>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                            </div>
+                            <!-- /time_line -->
+
+
+                        </div>
+                        <!-- /input_container -->
+
+                        <!-- input_container -->
+                        <div class="check_box_line">
+                            <label for="17">ВС</label>
+                            <input class="niceCheck" id="17" type="checkbox" name="ch1" />
+
+                            <!-- time_line -->
+                            <div class="time_line">
+                                <span>c</span>
+                                <select>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                                <span>до</span>
+                                <select>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>18:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                    <option>9:00</option>
+                                </select>
+                            </div>
+                            <!-- /time_line -->
+
+
+                        </div>
+                        <!-- /input_container -->
+                    </div>
+                    <!-- /check_box_container -->
+
+
+
+                </div>
+                <!-- line_container -->
+
+                <!-- line_container -->
+                <div class="line_container">
+                    <label>Начало <span>*</span></label>
+
+                    <div class="date_select">
+                        <select  class="date_select">
+                            <option>Выберите дату</option>
+                            <option>Выберите дату</option>
+                            <option>Выберите дату</option>
+                            <option>Выберите дату</option>
+                            <option>Выберите дату</option>
+                        </select>
+                    </div>
+                    <select>
+                        <option>00:00</option>
+                        <option>18:00</option>
+                        <option>00:00</option>
+                        <option>18:00</option>
+                        <option>00:00</option>
+                        <option>18:00</option>
+                    </select>
+
+                </div>
+                <!-- line_container -->
+
+                <!-- line_container -->
+                <div class="line_container">
+                    <label>Окончание <span>*</span></label>
+
+                    <div class="date_select">
+                        <select >
+                            <option>21 января 2013</option>
+                            <option>Выберите дату</option>
+                            <option>Выберите дату</option>
+                            <option>Выберите дату</option>
+                            <option>Выберите дату</option>
+                        </select>
+                    </div>
+                    <select>
+                        <option>00:00</option>
+                        <option>18:00</option>
+                        <option>00:00</option>
+                        <option>18:00</option>
+                        <option>00:00</option>
+                        <option>18:00</option>
+                    </select>
+
+                </div>
+                <!-- /line_container -->
+
+                <div class="add_object_footer">
+                    <input class="next_step_but" type="submit" value="Следующий шаг">
+                </div>
+
+
+
+            </form>
+            <!-- add_object -->
+
+        </div>
+        <!-- /inside_block -->
+
+    </div>
+    <!-- /content-wrap -->
+
+</div>
+<!-- /site__content -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <a href="#" class="footer_logo"></a>
+
+        <!-- footer_menu -->
+        <nav class="footer_menu">
+            <a href="#">О проекте</a>
+            <a href="#">Знания</a>
+            <a href="#">Карта</a>
+            <a href="#">Контакты</a>
+        </nav>
+        <!-- /footer_menu -->
+
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

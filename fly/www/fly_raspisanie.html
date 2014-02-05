@@ -1,0 +1,489 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/modernizr-1.7.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+	<script type="text/javascript" src="js/cusel.js"></script>
+	<script src="js/jquery-ui-1.9.1.custom.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+	
+
+
+
+	<!--[if lt IE 10]>
+			 <link rel="stylesheet" href="css/pie.css" />
+			 <link rel="stylesheet" href="css/main-ie.css" />
+	<![endif]-->
+	<!--[if lte IE 7]> 
+			<link rel="stylesheet" href="css/main-ie7.css" />
+	<![endif]-->
+	<!--[if lt IE 9]> 
+			<link rel="stylesheet" href="css/main-ie7-8.css" />
+	<![endif]-->
+	
+</head>
+<body>
+	<!--Main Wrap-->
+	<div class="mainWrap">
+			
+		<!--Main Header-->
+		<div class="mainHeader">
+
+			<!--topWraper-->
+			<div class="topWraper">
+				
+				<!--headWrap-->
+				<div class="headWrap">
+					<h1><img class="logo" src="img/logo.png" height="30" width="89" alt="fly"></h1>
+					<ol class="haedMenu">
+						<li><a href="#">Авиабилеты</a></li>
+						<li><a href="#">ЖД билеты</a></li>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Помошь</a></li>
+					</ol>
+					<a href="#" class="enter">Вход</a>
+					<address>
+						<p>+7 (495) <strong>933-09-43</strong></p>
+						<span>Заказ жд и авиабилетов</span>
+					</address>
+					<ul class="consultation">
+						<li><a href="#">Перезвонить</a></li>
+						<li><a href="#">Задать вопрос</a></li>
+					</ul>
+				</div>
+				<!--/headWrap-->
+				
+			</div>
+			<!--/topWraper-->
+			
+			<div class="souping">
+				
+			</div>
+			
+			<!--bottomHead-->
+			<div class="bottomHead">
+			
+				<!--bottomHeadWrap-->
+				<div class="bottomHeadWrap">
+					
+					<h2>Поиск авиабилетов</h2>
+					
+					<!--ticketSort-->
+					<form action="#" name="f" class="ticketSort">
+						
+						<!--sortWraper-->
+						<div class="sortWraper">
+							
+							<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+							
+							<!--lineContainer-->
+							<div class="lineContainer">
+								<div class="inputContainer">
+									<label for="searchfrom">Город вылета:</label>
+									<div class="inputWrap outCity">
+										<input type="text" id="searchfrom" name="inaput">
+										<div class="comeInfo">
+											<span>RU, MOV</span>
+										</div>
+									</div>
+								</div>
+								
+								<div class="inputContainer">
+									<label for="searchto">Город прилета:</label>
+									<div class="inputWrap inCity">
+										<input type="text" id="searchto" name="inpddut">
+										<div class="comeInfo">
+											<span>RU, GOJ</span>
+										</div>
+									</div>
+								</div>	
+									
+								<div class="inputContainer">
+									<label for="searchdate">Дата вылета:</label>
+									<div class="inputWrap outDate">
+										<input type="text" id="searchdate" name="inpsaut">
+									</div>
+								</div>	
+									
+								<div class="inputContainer">
+									<div class="bigCheckWrap">
+											<input id="activeTo" type="checkbox" class="niceCheck" tabindex="1">
+										<label for="activeTo">Вылет обратно:</label>
+									</div>
+									<div class="inputWrap toDate">
+										<input type="text" id="searchdateTo"  name="inpsut">
+									</div>
+								</div>	
+																										
+							</div>
+							<!--/lineContainer-->
+							
+							<!--lineContainer-->
+							<div class="lineContainer selectLine">
+								<div class="inputContainer">
+									<div class="selectWrap">
+										<select id="idSelect" name="nameSelect">
+											<option value="Эконом класс">Эконом класс</option>
+											<option value="Эконом класс">Эконом класс</option>
+											<option value="Эконом класс">Эконом класс</option>
+											<option value="Эконом класс">Эконом класс</option>
+										</select>
+									</div>
+								</div>
+								<div class="inputContainer">
+									<label for="idSelect2">Взрослых:</label>
+									<div class="selectWrap littleSelect">
+										<select id="idSelect2" name="nameSelect">
+											<option value="10">10</option>
+											<option value="10">10</option>
+											<option value="10">10</option>
+											<option value="10">10</option>
+										</select>
+									</div>
+								</div>
+								<div class="inputContainer">
+									<label for="idSelect3">Детей до 12 лет:</label>
+									<div class="selectWrap littleSelect">
+										<select id="idSelect3" name="nameSelect">
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+										</select>
+									</div>
+								</div>	
+								<div class="inputContainer">
+									<label for="idSelect4">Младенцев до 2 лет:</label>
+									<div class="selectWrap littleSelect">
+										<select id="idSelect4" name="nameSelect">
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+											<option value="нет">нет</option>
+										</select>
+									</div>
+								</div>													
+								<a class="fullSearch" href="#">Расширенный поиск</a>
+							</div>
+							<!--lineContainer-->
+							
+						</div>
+						<!--/sortWraper-->
+						
+						<input type="submit" value="НАЙТИ БИЛЕТЫ">
+						
+					</form>
+					<!--ticketSort-->
+					
+				</div>
+				<!--/bottomHeadWrap-->
+				
+			</div>
+			<!--/bottomHead-->
+
+			
+		</div>
+		<!--/Main Header-->
+					
+		<!--Content Wrap-->
+		<div class="contentWrap">
+			<!--mainContent-->
+			<div class="mainContent">
+				
+				<!--content-->
+				<div class="content">
+					
+					<h2 class="flight">Расписание авиарейсов из Москвы (Шереметьево)</h2>
+					
+					<!--crumb-->
+					<ul class="crumb">
+						<li><a href="#">Главная</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Россия</a></li>
+						<li><a href="#">Москва</a></li>																		
+						<li>Шереметьево</li>
+					</ul>
+					<!--/crumb-->
+				
+					<!--flyCompany-->
+					<div class="flyCompany">
+						
+						<!--teableHead-->
+						<div class="teableHead">
+							<form class="tableForm" action="#">
+							<!--lineContainer-->
+							<div class="lineContainer firstLine">
+								<div class="inputContainer">
+									<label for="raceName">Авиакомпания или рейс:</label>
+									<div class="inputWrap">
+										<input type="text" id="raceName"  name="input">
+									</div>
+								</div>
+								
+								<div class="inputContainer">
+									<label for="way">Направление:</label>
+									<div class="selectWrap">
+										<select  name="nameSelect" id="way">
+											<option value="Симферополь">Симферополь</option>
+											<option value="Симферополь">Симферополь</option>
+											<option value="Симферополь">Симферополь</option>
+											<option value="Симферополь">Симферополь</option>
+										</select>
+									</div>
+								</div>
+									
+																								
+							</div>
+							<!--/lineContainer-->
+							
+							<!--lineContainer-->
+							<div class="lineContainer secondLine">
+								<div class="inputContainer ">
+									<label for="timeGo">Дата вылета:</label>
+									<div class="inputWrap timeGo">
+										<input type="text" id="timeGo" name="input">
+										<span class="calnd"></span>
+									</div>
+								</div>
+								
+								
+								<div class="inputContainer">
+									<label>День вылета:</label>
+									<div class="selectWrap">
+										<select  name="nameSelect">
+											<option value="Понедельник">Понедельник</option>
+											<option value="Понедельник">Понедельник</option>
+											<option value="Понедельник">Понедельник</option>
+											<option value="Понедельник">Понедельник</option>
+										</select>
+									</div>
+								</div>
+								<div class="inputContainer">
+									<label>Время вылета:</label>
+									<div class="selectWrap">
+										<select  name="nameSelect">
+											<option value="Любое">Любое</option>
+											<option value="Любое">Любое</option>
+											<option value="Любое">Любое</option>
+											<option value="Любое">Любое</option>
+										</select>
+									</div>
+								</div>
+								<input type="submit" class="e-Button" value="Применить фильтр">
+							</div>
+							<!--lineContainer-->							
+							</form>
+						</div>
+						<!--/teableHead-->
+						
+						<!--riseFly-->
+						<div class="riseFly">
+							<table>
+								<thead>
+									<tr>
+										<th>Направление</th>
+										<th>Код компании</th>
+										<th>Рейс</th>
+										<th>Период</th>
+										<th>Вылет</th>
+										<th>Прилет</th>
+										<th>В пути</th>
+										<th></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><a href="#">Симферополь</a></td>
+										<td><a href="#">AF</a></td>
+										<td><a href="#">3456</a></td>
+										<td><p>12.11— 26.12</p><span>пн, вт, ср, чт</span></td>
+										<td>03:25</td>
+										<td>04:45</td>
+										<td>1:20</td>
+										<td><a href="#" class="e-Button">Найти</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Симферополь</a></td>
+										<td><a href="#">AF</a></td>
+										<td><a href="#">3456</a></td>
+										<td><p>12.11— 26.12</p><span>пн, вт, ср, чт</span></td>
+										<td>03:25</td>
+										<td>04:45</td>
+										<td>1:20</td>
+										<td><a href="#" class="e-Button">Найти</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Симферополь</a></td>
+										<td><a href="#">AF</a></td>
+										<td><a href="#">3456</a></td>
+										<td><p>12.11— 26.12</p><span>пн, вт, ср, чт</span></td>
+										<td>03:25</td>
+										<td>04:45</td>
+										<td>1:20</td>
+										<td><a href="#" class="e-Button">Найти</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Симферополь</a></td>
+										<td><a href="#">AF</a></td>
+										<td><a href="#">3456</a></td>
+										<td><p>12.11— 26.12</p><span>пн, вт, ср, чт</span></td>
+										<td>03:25</td>
+										<td>04:45</td>
+										<td>1:20</td>
+										<td><a href="#" class="e-Button">Найти</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Симферополь</a></td>
+										<td><a href="#">AF</a></td>
+										<td><a href="#">3456</a></td>
+										<td><p>12.11— 26.12</p><span>пн, вт, ср, чт</span></td>
+										<td>03:25</td>
+										<td>04:45</td>
+										<td>1:20</td>
+										<td><a href="#" class="e-Button">Найти</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Симферополь</a></td>
+										<td><a href="#">AF</a></td>
+										<td><a href="#">3456</a></td>
+										<td><p>12.11— 26.12</p><span>пн, вт, ср, чт</span></td>
+										<td>03:25</td>
+										<td>04:45</td>
+										<td>1:20</td>
+										<td><a href="#" class="e-Button">Найти</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Симферополь</a></td>
+										<td><a href="#">AF</a></td>
+										<td><a href="#">3456</a></td>
+										<td><p>12.11— 26.12</p><span>пн, вт, ср, чт</span></td>
+										<td>03:25</td>
+										<td>04:45</td>
+										<td>1:20</td>
+										<td><a href="#" class="e-Button">Найти</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Симферополь</a></td>
+										<td><a href="#">AF</a></td>
+										<td><a href="#">3456</a></td>
+										<td><p>12.11— 26.12</p><span>пн, вт, ср, чт</span></td>
+										<td>03:25</td>
+										<td>04:45</td>
+										<td>1:20</td>
+										<td><a href="#" class="e-Button">Найти</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Симферополь</a></td>
+										<td><a href="#">AF</a></td>
+										<td><a href="#">3456</a></td>
+										<td><p>12.11— 26.12</p><span>пн, вт, ср, чт</span></td>
+										<td>03:25</td>
+										<td>04:45</td>
+										<td>1:20</td>
+										<td><a href="#" class="e-Button">Найти</a></td>
+									</tr>																																																																								
+								</tbody>
+							</table>
+						</div>
+						<!--/riseFly-->
+						
+						<!--paginationWrap-->
+						<div class="paginationWrap">
+							
+							<button class="nextButton">next</button>
+							<button class="prevButton">prev</button>
+							<div class="parent">
+								<ul>
+									<li><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li>4</li>
+									<li><a href="#">5</a></li>
+									<li>...</li>
+									<li><a href="#">10</a></li>
+									<li><a href="#">11</a></li>
+									<li><a href="#">12</a></li>
+									<li><a href="#">13</a></li>																																																					
+								</ul>
+							</div>
+
+						</div>
+						<!--/paginationWrap-->
+						
+					</div>
+					<!--/flyCompany-->
+					
+					<!--conteiner-->
+					<div class="conteiner">
+						<div class="textWrap">
+							<img src="img/pic/pic6.jpg" height="149" width="345" alt="">
+							<p><b>Москва —</b> важный туристический центр России; Московский Кремль, Красная площадь, Новодевичий монастырь и Церковь Вознесения 
+в Коломенском входят в список Всемирного наследия ЮНЕСКО. Она является также важнейшим транспортным узлом. Город обслуживают 5 аэропортов, 9 железнодорожных вокзалов, 3 речных порта (имеется речное сообщение с морями бассейнов Атлантического Важный туристический центр России; Московский Кремль, Красная площадь, Новодевичий монастырь и Церковь Вознесения в Коломенском входят в список Всемирного наследия ЮНЕСКО. Она является также важнейшим транспортным узлом. Город обслуживают 5 аэропортов, 9 железнодорожных вокзалов, 3 речных порта (имеется речное сообщение с морями бассейнов Атлантического и Северного Ледовитого океанов). С 1935 года в Москве работает метрополитен.</p>
+						</div>
+					
+					</div>
+					<!--/conteiner-->
+					
+					<!--conteiner-->
+					<div class="conteiner">
+						<div class="block type2">
+							<h2>Как заказать авиабилеты
+Москва - Нижний Новгород</h2>
+							<ul class="listCounter">
+								<li>
+									<span class="counter">1</span>
+									<p>Выберите предполагаемые <strong>даты полёта</strong> в форме вверху страницы</p>
+								</li>
+								<li>
+									<span class="counter">2</span>
+									<p>Если необходимо, выберите число пассажиров и условия подбора билетов</p>
+								</li>
+								<li>
+									<span class="counter">3</span>
+									<p>После этого нажмите кнопку "<strong>НАЙТИ БИЛЕТЫ</strong>" справа от формы.</p>
+								</li>																
+							</ul>
+							<p>Вы увидите наличие и цены на <a href="#">авиабилеты</a> на выбранные Вами даты. Если Вы нашли нужный вам вариант, заполните онлайн форму заказа и бронирования авиабилетов, и выберите удобную Вам форму оплаты. После оплаты мы вышлем маршрутную квитанцию электронного билета на Ваш E-Mail. </p>
+						</div>
+						<div class="block type2">
+							<h2>Наша система поддерживает следующие виды оплаты:</h2>
+							<img src="img/pic/pic7.jpg" height="84" width="311" alt="">
+							<p class="redItalic">Если Вам удобнее заказать билеты по телефону, позвоните нам и наши операторы помогут Вам  сделать заказ: <span>+7 (495) 933-09-43.</span></p>
+							<p>У нас Вы можете заказать жд билеты Москва - Нижний Новгород с доставкой на дом или в офис (только по Москве и МО).</p>
+						</div>
+					</div>
+					<!--/conteiner-->					
+					
+
+				
+				</div>
+				<!--/content-->
+				<div class="rigktSideBar">
+					<img src="img/pic/aside-pic.jpg" height="1411" width="241" alt="">
+				</div>
+					
+			</div>
+			<!--/mainContent-->
+			
+
+													
+		</div>
+		<!--/Content Wrap-->
+					
+					
+					
+		</div>
+		<!--/Main Wrap-->
+		
+		<!--Main Footer-->
+		<div class="mainFooter">
+			<img src="img/pic/footer-pic.jpg" height="111" width="1000" alt="">
+		</div>
+			<!--/Main Footer-->
+
+</body>
+</html>

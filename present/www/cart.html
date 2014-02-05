@@ -1,0 +1,207 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <title>title</title>
+    <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/cart.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+        <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <div class="site__layout">
+
+            <!-- header -->
+            <header class="header">
+
+                <!-- logo -->
+                <a href="#" class="logo" title="На главную"><img src="img/logo.png" width="244" height="94" alt=""></a>
+                <!-- /logo -->
+
+                <!-- address -->
+                <div class="address">
+                    <span class="tel">+7 (495) 435 436 547</span>
+                    <a href="#">Заказать звонок</a>
+                    <a href="#">Онлайн консультант</a>
+                </div>
+                <!-- /address -->
+
+                <!-- search -->
+                <form class="search" action="#">
+                    <input type="text" placeholder="Поиск по сайту"/>
+                </form>
+                <!-- /search -->
+
+                <!-- cart -->
+                <div class="cart">
+                    <a href="#">Корзина</a>
+                    <dl>
+                        <dt>Товаров:</dt>
+                        <dd class="count">3</dd>
+                        <dd class="price">30 000 Р</dd>
+                    </dl>
+                </div>
+                <!-- /cart -->
+
+                <!-- main-menu -->
+                <nav class="main-menu">
+                    <ol class="main-menu__layout">
+                        <li class="main-menu__item main-menu__item_active"><span class="main-menu__lnk">Каталог</span></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Герои</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Доставка</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Оплата</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                    </ol>
+                </nav>
+                <!-- /main-menu -->
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- content -->
+                    <div class="content">
+
+                        <!-- bread_crumbs -->
+                        <ol class="bread_crumbs">
+                            <li><a href="#">Главная</a></li>
+                            <li><span>Корзина</span></li>
+                        </ol>
+                        <!-- /bread_crumbs -->
+
+                       <h2>Корзина</h2>
+
+                        <!-- cart_form -->
+                        <form class="cart_form" action="#">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th>Товары</th>
+                                    <th>Цена за 1 шт.</th>
+                                    <th>Количество</th>
+                                    <th>Общая цена</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="first_item">
+                                        <div class="wrap_img"><img src="img/img6.png" width="94" height="94" alt=""/></div>
+                                        <div class="product_info">
+                                            <a href="#">Милый жираф</a>
+                                            <p>Лучший друг для вашего малыша</p>
+                                        </div>
+                                        <a class="delete" href="#"><span>Удалить</span></a>
+                                    </td>
+                                    <td class="nice_color">500 Р</td>
+                                    <td>
+                                        <div class="wrap_qty">
+
+                                            <input type="text" value="2"/>
+                                            <span class="qty_up"></span>
+                                            <span class="qty_down"></span>
+                                        </div>
+                                    </td>
+                                    <td class="nice_color">1 000 Р</td>
+                                </tr>
+                                <tr>
+                                    <td class="first_item">
+                                        <div class="wrap_img"><img src="img/img6.png" width="94" height="94" alt=""/></div>
+                                        <div class="product_info">
+                                            <a href="#">Милый жираф</a>
+                                            <p>Лучший друг для вашего малыша</p>
+                                        </div>
+                                        <a class="delete" href="#"><span>Удалить</span></a>
+                                    </td>
+                                    <td class="nice_color">500 Р</td>
+                                    <td>
+                                        <div class="wrap_qty">
+
+                                            <input type="text" value="2"/>
+                                            <span class="qty_up"></span>
+                                            <span class="qty_down"></span>
+                                        </div>
+                                    </td>
+                                    <td class="nice_color">1 000 Р</td>
+                                </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- wrap_total -->
+                            <div class="wrap_total">
+
+                                <!-- total -->
+                                <div class="total">
+                                    <dl>
+                                        <dt>Общая сумма заказа:</dt>
+                                        <dd>1 500 Р</dd>
+                                    </dl>
+                                    <a href="#"><span>Пересчитать стоимость</span></a>
+                                </div>
+                                <!-- /total -->
+
+                                <!-- input -->
+                                <input type="submit" value="ОФОРМИТЬ ЗАКАЗ"/>
+                                <!-- /input -->
+
+                            </div>
+                            <!-- /wrap_total -->
+
+                        </form>
+                        <!-- /cart_form -->
+
+                    </div>
+                    <!-- /content -->
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <!-- footer_menu -->
+            <ol class="footer_menu">
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Герои</a></li>
+                <li><a href="#">Оплата</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О нас</a></li>
+            </ol>
+            <!-- /footer_menu -->
+
+            <!-- network -->
+            <div class="network">
+                <img src="img/network.png" width="373" height="30" alt=""/>
+            </div>
+            <!-- /network -->
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

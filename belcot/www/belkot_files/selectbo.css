@@ -1,0 +1,138 @@
+.selectbox {
+	vertical-align: middle;
+	cursor: pointer;
+}
+.selectbox .select {
+	width: 228px;
+	height: 24px;
+	padding: 7px 45px 0 10px;
+	font: 10pt 'Open Sans';
+	color: #B4BBCA;
+
+	background: #f5f5f5 url(http://bel-kot.com/images/select.png) repeat-x;
+
+}
+.selectbox .select:hover {
+
+}
+.selectbox .select:active {
+
+}
+.selectbox.focused .select {
+
+}
+.selectbox .select .text {
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.selectbox .trigger {
+
+}
+.selectbox .trigger .arrow {
+
+}
+.selectbox:hover .arrow {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.selectbox .dropdown {
+
+}
+.selectbox li {
+	padding: 5px 10px 6px;
+	color: #231F20;
+width: 261px;
+left: 3px;
+position: relative;
+background:none;
+background-color:#B4BBCA;
+}
+.selectbox li.selected {
+	background: #A3ABB1;
+	color: #FFF;
+}
+.selectbox li:hover {
+	background: #08C;
+	color: #FFF;
+}
+.selectbox li.disabled {
+	color: #AAA;
+}
+.selectbox li.disabled:hover {
+	background: none;
+}
+
+/*-------------------mini----------------------------*/
+
+.selectbox_m {
+	vertical-align: middle;
+	cursor: pointer;
+text-align:left;
+}
+.selectbox_m .select {
+	width: 128px;
+left:-1px;
+	height: 24px;
+	padding: 7px 45px 0 10px;
+	font: 10pt 'Open Sans';
+	color: #B4BBCA;
+
+	background: #f5f5f5 url(http://bel-kot.com/images/select_m.png) repeat-x;
+
+}
+.selectbox_m .select:hover {
+
+}
+.selectbox_m .select:active {
+
+}
+.selectbox_m.focused .select {
+
+}
+.selectbox_m .select .text {
+	display: block;
+	width: 100%;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.selectbox_m .trigger {
+
+}
+.selectbox_m .trigger .arrow {
+
+}
+.selectbox_m:hover .arrow {
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+.selectbox_m .dropdown {
+
+}
+.selectbox_m li {
+	padding: 5px 10px 6px;
+	color: #231F20;
+width: 261px;
+left: 3px;
+position: relative;
+background:none;
+background-color:#B4BBCA;
+}
+.selectbox_m li.selected {
+	background: #A3ABB1;
+	color: #FFF;
+}
+.selectbox_m li:hover {
+	background: #08C;
+	color: #FFF;
+}
+.selectbox_m li.disabled {
+	color: #AAA;
+}
+.selectbox_m li.disabled:hover {
+	background: none;
+}
+#call_me_input{float: left; width: 360px; height: 25px; margin-top: 2px; border: 1px solid #B4BBCA; padding: 0 10px; color: #B4BBCA;}

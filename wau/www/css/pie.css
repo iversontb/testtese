@@ -1,0 +1,18 @@
+.clear_filter, .wrap_video .wrap_img, .wrap_video span, .form_login input[type="text"], .form_login input[type="password"],
+.form_login input[type="submit"], .table_title, .about_us, .wrap_partner, .right_wrap a, .info__center_content,
+.info__right, .info__right .update, .wrap_product, .wrap_product .review .wrap_img, .product_price .price_block,
+.product_price .wrap_premium .red_block, .product_price .wrap_premium .blue_block, .form_review input[type="text"],
+.form_review input[type="submit"], .top_info__item .info_count, .wrap_offer .red_block, .registration input[type="text"],
+.registration input[type="password"], .registration input[type="submit"], .ares-slider2__item .video_inner,
+.ares-slider2__item .slider_info a, .content table, input.search, .clear_filter, .wrap_video .wrap_img,
+.wrap_video span, .form_login input[type="submit"] {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+    position: relative;
+}
+.wrap_registration a, .form_login, .popup, .wrap_tabs .info-nav li, .info__center .copy_link, .wrap_offer,
+.wrap_offer .blue_block, .wrap_registration a, .form_login, .form_login input[type="text"], .form_login input[type="password"] {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

@@ -1,0 +1,20 @@
+.sub__menu__top,
+.sub__menu_bottom,
+.product img,
+.active,
+.callOrder,
+.buy__btn1,
+.buy__btn2,
+.text1,
+.opt__btn,
+.text2,
+.tel__btn1,
+.product__also img,
+.counter1,
+.text3,
+.more__info
+{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

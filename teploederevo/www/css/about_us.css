@@ -1,0 +1,55 @@
+h1, h2 {
+    color: #9f683f;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Times New Roman;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    padding: 0 0 28px 0;
+    text-transform: uppercase;
+}
+.about_us {
+    padding: 20px 0;
+    overflow: hidden;
+    margin-bottom: 19px;
+}
+.wrap_img {
+    float: left;
+    margin-right: 18px;
+}
+p {
+    color: #9f683f;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 19px;
+}
+.info_block h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.info_block {
+    margin-bottom: 57px;
+}
+p.thanks {
+    font-family: Times New Roman;
+    font-size: 20px;
+}
+.contacts {
+    margin-bottom: 58px;
+}
+.contacts h2 {
+    padding-bottom: 8px;
+}
+.contacts p {
+    margin-bottom: 8px;
+}
+.contacts p a:hover {
+    text-decoration: none;
+}
+.contacts p a {
+    color: #69b295;
+    text-decoration: underline;
+}

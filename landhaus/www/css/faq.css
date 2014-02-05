@@ -1,0 +1,29 @@
+/* --------------- faq --------------- */
+.faq dl {
+    background: #ffeec1;
+    line-height: 21px;
+    border: 1px solid #e3e1df;
+    border-top: none;
+    box-shadow: 0 1px 0 rgba( 226, 226, 226, 0.4 );
+    padding: 18px 0 20px 21px;
+}
+.faq dt {
+    font-size: 14px;
+    font-family: "PT Sans";
+    text-decoration: underline;
+    padding: 0 200px 10px 0;
+    cursor: pointer;
+}
+.faq dt.faq__active {
+    text-decoration: none;
+}
+.faq dd {
+    display: none;
+    color: #522913;
+    font-size: 14px;
+    font-family: "PT Sans";
+    border-left: 5px solid #e0cba3;
+    margin: 12px 0px 29px 0;
+    padding: 0 10px 0 28px;
+}
+/* --------------- /faq --------------- */

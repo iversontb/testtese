@@ -1,0 +1,24 @@
+body#index #search form#search_form input.in_txt{margin-left:-83px;}
+body#index #search form#search_form input.submit{margin-left:57px; margin-top:-20px;}
+/*
+#search.not_main form#search_form input.in_txt{margin:-20px 0 0 0px;}
+#search.not_main form#search_form input.submit{margin:-25px 0 0 151px;}*/
+#search.not_main form#search_form input.in_txt{margin:-1px 0px 0 -83px;} 
+#search.not_main form#search_form input.submit{margin:-20px 0 0 67px;}
+#search.not_main div{ height:1px;}
+/*#save_prais{margin:110px 0 0 -83px;}*/
+#slogan { padding-left:5px;}
+
+#prais{margin-left:386px; margin-right:0px; }
+
+span#top_menu span.active{padding-top: 0px; margin-bottom:5px;}
+SPAN#top_menu SPAN.active SPAN{margin-bottom:-8px; padding-top:8px;}
+div#news ul li.paper span.detail{margin-left:575px;float:none;}
+ul#left_list li span.cat{padding-left:10px;}
+#title_bc{margin:0px 0 18px 0px;}
+
+/*#fly {height: 154px;position: fixed;top:50%;right:3%; z-index: 3;}*/
+
+table#calculate_goods tbody tr td input{padding: 3px 6px 0px;}
+
+

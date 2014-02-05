@@ -1,0 +1,352 @@
+.container{
+    width: 20%;
+    display: inline-block;
+    vertical-align: top;
+}
+.container > img{
+    display: block;
+    box-shadow: 0 3px 5px #adadad;
+    margin-bottom: 15px;
+}
+.gallList{
+
+}
+.gallList li img{
+    display: block;
+    box-shadow: 0 0 5px #adadad;
+    margin-bottom: 15px;
+}
+.gallList li{
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin-left: -4px;
+    padding-right: 15px;
+    padding-left: 4px;
+    -webkit-box-sizing: border-box;
+}
+
+.containerMenu a span{
+    color: #000;
+}
+.containerMenu a.active,
+.containerMenu a:hover{
+    background: url("../img/shadow.png") no-repeat bottom left;
+    background-size:  100% 14px;
+}
+.containerMenu a{
+    display: block;
+    color: #2f75af;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+.typeOfCmoer{
+    display: inline-block;
+    color: #fff;
+    padding: 3px 10px;
+    font-size: 10px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+.description .typeOfCmoer{
+    margin-bottom: 15px;
+}
+.orange{
+    background: #efd662;
+}
+.blue{
+    background: #1b87a2;
+}
+.green{
+    background: #a1ef62;
+}
+.description{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+.bigLikes .moreInfo:hover{
+
+    text-decoration: underline;
+}
+.bigLikes .moreInfo{
+    display: inline-block;
+    color: #2f75af;
+    font-size: 14px;
+    background: none;
+    vertical-align: top;
+    text-decoration: none;
+    margin: 3px 0 0 10px;
+}
+.workTime dl{
+    color: #646f78;
+    margin-bottom: 25px;
+}
+.workTime dl:first-child dt{
+    display: block;
+    font-weight: 400;
+}
+.workTime dl:first-child dd{
+    display: block;
+    font-size: 38px;
+    color: #252b30;
+}
+.workTime dl dt{
+    display: inline-block;
+    font-weight: 800;
+}
+.workTime dl dd{
+    display: inline-block;
+}
+.bigLikes{
+    margin-bottom: 20px;
+}
+a.mapShow{
+    font-weight: normal;
+    background: url("../img/pointer2.png") no-repeat;
+    padding-left: 25px;
+    line-height: 29px;
+    display: inline-block;
+    color: #2f75af;
+    margin-left: 10px;
+    font-weight: 700;
+}
+.mapShow:hover{
+    text-decoration: underline;
+}
+.tabs li{
+    display: inline-block;
+    vertical-align: top;
+}
+.tabs a{
+    color: #2f75af;
+    font-weight: 800;
+    font-size: 14px;
+    padding: 5px 10px 0 0;
+}
+.tabs a:hover{
+    color: #4f4f4f;
+}
+.tabs a.active{
+    color: #4f4f4f;
+}
+.tabBlock address{
+    font-style: normal;
+}
+.tabBlock{
+    color: #646f78;
+    font-size: 14px;
+}
+.tabBlock dl{
+    overflow: hidden;
+    height: 29px;
+    line-height: 29px;
+}
+.tabBlock dl dt{
+    float: left;
+    margin-right: 5px;
+}
+.tabBlock dl dd{
+    font-weight: 800;
+}
+.tabBlock a:hover{
+    text-decoration: underline;
+}
+.tabBlock a{
+    color: #2f75af;
+    line-height: 29px;
+    font-weight: 800;
+    text-decoration: none;
+}
+.payType{
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.payType li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.descriptionText{
+    margin-bottom: 50px;
+}
+.descriptionText img{
+    display: block;
+    margin-bottom: 20px;
+}
+.descriptionText h3{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 20px;
+}
+.descriptionText p{
+    color: #646f78;
+    font-size: 18px;
+    line-height: 21px;
+}
+.soonReview h3{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 23px;
+    color: #2c343a;
+    margin-bottom: 22px;
+}
+.posentLike{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.posentLike li{
+    float: left;
+    margin-left: 10px;
+}
+.posentLike li a{
+    color: #1a1f22;
+    font-size: 18px;
+    padding-left: 25px;
+    display: inline-block;
+    line-height: 20px;
+}
+.posentLike li a:hover{
+    text-decoration: underline;
+}
+.upLike{
+    background: url("../img/finger-up.png") no-repeat;
+}
+.downLike{
+    background: url("../img/fingr-down.png") no-repeat;
+}
+.headBlock{
+    color: #1a1f22;
+    font-size: 18px;
+    position: relative;
+    padding-right: 136px;
+}
+.headBlock span{
+    color: #9ba4aa;
+}
+.soonReview{
+    margin-bottom: 20px;
+}
+.soonReview p{
+    color: #646f78;
+    font-size: 14px;
+    line-height: 18px;
+}
+.soonReview p a:hover{
+    text-decoration: underline;
+}
+.soonReview p a{
+    color: #0073b2;
+}
+.soonReview  .userName{
+    font-style: italic;
+    color: #a8b4bd;
+    margin: 10px 0;
+}
+.reviewAnswer{
+    border-left: 5px solid #cbc6bd;
+    margin: 0 0 34px 46px;
+    padding-left: 10px;
+}
+.reviewAnswer h4{
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.reviewAnswer p{
+    color: #7f7155;
+    font-size: 14px;
+}
+.rewiewsBlock{
+    width: 28%;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.rewiewsBlock .topicType {
+    margin-bottom: 19px;
+}
+.totalMark{
+    position: relative;
+    color: #1a1f22;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+.totalMark .likes{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.markType{
+    color: #1a1f22;
+    font-size: 18px;
+}
+.markTypeLine{
+    position: relative;
+    font-size: 14px;
+    color: #646f78;
+    margin: 7px 0;
+}
+.markTypeLine .likes{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.leaveReviewsForm > a:hover{
+    text-decoration: underline;
+}
+.leaveReviewsForm > a{
+    font-size: 14px;
+    color: #2f75af;
+}
+.closedBlock{
+    position: relative;
+    margin-bottom: 50px;
+}
+.closedBlock:before{
+    content: "";
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    background: url("../img/closed.png");
+    width: 243px;
+    height: 231px;
+    margin-left: -121px;
+}
+.closedBlock:after{
+    position: absolute;
+    top: 0;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+    background: url("../img/opacity.png");
+}
+.description .takePart:hover{
+    opacity: 0.8;
+}
+.description .takePart{
+    text-align: center;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 30px;
+    background: #efb562;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}

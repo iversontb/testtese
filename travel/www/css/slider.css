@@ -1,0 +1,14 @@
+.newColection .viewer {
+    overflow:hidden;
+    position:relative;
+    width: 941px;
+}
+.newColection .content-conveyor {
+    position:relative;
+}
+.newColection .ui-corner-all{
+    border-radius: 0 !important;
+    margin-left: 22px;
+    width: 941px;
+    margin-bottom: 25px;
+}

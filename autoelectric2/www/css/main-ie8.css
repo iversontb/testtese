@@ -1,0 +1,16 @@
+.discount fieldset>input {    
+    line-height: 30px;
+}
+input.button {
+    position: relative;
+}
+.discount {
+    border: 6px solid #f2857a;
+}
+.sale a {
+    position: relative;
+    height: 25px;
+}
+.popup, .callback {
+    background: url("../img/ie_black_light.png");
+}

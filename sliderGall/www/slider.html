@@ -1,0 +1,79 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>jQuery UI Slider</title>
+    <link rel="stylesheet" type="text/css" href="jqueryui/css/smoothness/jquery-ui-1.7.2.custom.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+  </head>
+  <body>
+    <div id="sliderContent" class="ui-corner-all">	
+      <h2>Some well known galactic nebulae and their vital statistics</h2>		
+      <div class="viewer ui-corner-all">
+        <div class="content-conveyor ui-helper-clearfix">
+
+          <div class="item">
+            <img src="images/omega.jpg" alt="Omega Nebula">
+
+          </div>
+
+          <div class="item">
+            <img src="images/rosette.jpg" alt="Rosette Nebula">
+
+          </div>
+          
+          <div class="item">
+            <img src="images/ring.jpg" alt="Ring Nebula">
+
+          </div>
+
+          <div class="item">
+            <img src="images/tarantula.jpg" alt="Tarantula Nebula">
+
+          </div>
+
+          <div class="item">
+            <img src="images/triangulum.jpg" alt="Triangulum Nebula">
+
+          </div>
+
+          <div class="item">
+            <img src="images/eagle.jpg" alt="Eagle Nebula">
+
+          </div>
+
+          <div class="item">
+            <img src="images/crab.jpg" alt="Crab Nebula">
+
+          </div>
+          
+        </div>
+      </div>
+      <div id="slider2"></div>
+    </div>
+    <script type="text/javascript" src="jqueryui/js/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="jqueryui/js/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript">
+      $(function() {
+        
+		//vars
+		var conveyor = $(".content-conveyor", $("#sliderContent")),
+		item = $(".item", $("#sliderContent"));
+		
+		//set length of conveyor
+		conveyor.css("width", item.length * parseInt(item.css("width")));
+				
+        //config
+        var sliderOpts = {
+		  max: (item.length * parseInt(item.css("width"))) - parseInt($(".viewer", $("#sliderContent")).css("width")),
+          slide: function(e, ui) { 
+            conveyor.css("left", "-" + ui.value + "px");
+          }
+        };
+
+        //create slider
+        $("#slider2").slider(sliderOpts);
+      });
+    </script>
+  </body>
+</html>

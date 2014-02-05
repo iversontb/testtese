@@ -1,0 +1,113 @@
+
+.slideWrap2{
+    height: 600px;
+    width: 964px;
+    margin: 0 auto;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    margin-top: 60px;
+}
+.ares-slider {
+    width: 964px;
+    margin: 0 auto;
+    height: 600px;
+    position: relative;
+}
+.ares-slider__item {
+    width: 964px;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: none;
+    z-index: 1;
+}
+.ares-slider__item > img {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 50%;
+}
+
+.ares-slider__prev{
+    background-position: 0 0;
+}
+
+
+
+.ares-slider__next,
+.ares-slider__prev {
+    position: absolute;
+    content: '';
+    width: 18px;
+    height: 44px;
+    top: 188px;
+    cursor: pointer;
+    background: url("../img/gall-sprite2.png");
+    background-size: 100%;
+    opacity: .8;
+    z-index: 2;
+}
+.ares-slider__prev {
+    right: 1px;
+    background-position: 0 113px;
+}
+.ares-slider__prev:hover{
+    background-position: 0 44px;
+}
+.ares-slider__next {
+    left: 1px;
+    background-position: 0 0px;
+}
+.ares-slider__next:hover{
+    background-position: 0 182px;
+}
+.ares-slider .ares-slider__points {
+    display: inline-block;
+    position: relative;
+    top: 345px;
+    display: none;
+    z-index: 4;
+}
+.ares-slider__points li {
+    width: 14px;
+    height: 14px;
+    float: left;
+    background: #fff;
+    border-radius: 14px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li.active {
+    box-shadow: none;
+    background: #0baed3;
+    cursor: default;
+}
+
+
+.gallText{
+    width: 760px;
+    margin: 0 auto;
+    color: #fff;
+    z-index: 10;
+    text-align: center;
+    position: relative;
+    height: 600px;
+    margin-top: 169px;
+}
+.gallText h2{
+    font-size: 40px;
+    margin-bottom: 31px;
+}
+.gallText p{
+    font-size: 15px;
+    width: 536px;
+    line-height: 25px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}

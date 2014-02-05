@@ -1,0 +1,1191 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    main-menu
+
+    language
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd, 
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {    
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {                        
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            
+} 
+input, select, button, textarea {
+    margin: 0;                 
+    font-size: 100%;             
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;     
+    font: 12px "gabriola", Helvetica, sans-serif;
+}
+input[type="checkbox"] {         
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+     list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    background: url("../img/back.jpg");
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: "gabriola", Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;    
+}
+textarea {
+    resize:none; 
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus { 
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner { 
+    padding:0; 
+    border:0; 
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+    font-family: tahoma;
+}
+:-moz-placeholder {
+    color: #000;
+    font-family: tahoma;
+}
+.placeholder {
+    color: #000;
+    font-family: tahoma;
+}
+/* --------------- /Style to null --------------- */
+
+#path {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 981px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+    .site:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 300px;
+    }
+.site__layout {
+    width: 981px;
+    margin: 0 auto;
+}
+/* --------------- /site --------------- */
+
+@font-face {
+    font-family: "gabriola";
+    src: url("../fonts/gabriola.eot");
+    src: url("../fonts/gabriola.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/gabriola.woff") format("woff"),
+    url("../fonts/gabriola.ttf") format("truetype");
+}
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    padding-top: 20px;
+}
+.phoneWrap{
+    font-family: "gabriola";
+    color: #79a52c;
+    font-size: 41px;
+    font-style: normal;
+    margin: 0 0 0 280px;
+}
+.phoneWrap a{
+    color: #79a52c;
+}
+.basket{
+    position:  absolute;
+    top: 15px;
+    right: 0;
+    background: url("../img/order.png") no-repeat;
+    padding-left: 112px;
+    font-family: "gabriola";
+}
+.basket h4{
+    font-size: 34px;
+    color: #444444;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.basket a{
+    font-size: 24px;
+    color: #02869b;
+    text-decoration: underline;
+    padding-left: 5px;
+}
+.basket a:hover{
+    text-decoration: none;
+}
+.basket a.doneOreder{
+    display: block;
+    background: url("../img/order-button.png");
+    width: 195px;
+    padding: 0;
+    height: 57px;
+    margin-top: 25px;
+    text-indent: -5000px;
+}
+.doneOreder:hover{
+    opacity: 0.8;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- main-menu --------------- */
+.main-menu {
+    overflow: hidden;
+    margin: 50px 0 25px 0;
+}
+.main-menu li{
+    float: left;
+    margin-right: 57px;
+}
+.main-menu li a{
+    color: #02869b;
+    text-decoration: underline;
+    font-size: 30px;
+    font-family: "gabriola";
+}
+.main-menu li a:hover{
+    text-decoration: none;
+}
+/* --------------- /main-menu --------------- */
+.mainAccard > li{
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.mainAccard >li > a{
+    display: block;
+    background: #e6e6e6;
+    height: 60px;
+    text-align: center;
+    color: #7b612a;
+    font-size: 38px;
+    font-family: "gabriola";
+    position: relative;
+    line-height: 60px;
+    border-radius: 5px;
+}
+.mainAccard >li > a:after{
+    content: "";
+    background: #efb51f;
+    width: 12px;
+    border-radius: 5px 0 0 5px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mainAccard >li > a:hover{
+    color: #d86a43;
+}
+.mainAccard a:hover:after{
+    background: #d86a43;
+}
+.mainAccard >li > a:hover span{
+    background: url("../img/hover-arrow.png") no-repeat right 32px;
+}
+.mainAccard >li > a span{
+    background: url("../img/arrow.png") no-repeat right 32px;
+    padding-right: 50px;
+}
+.subMenuWrap img{
+    display: block;
+    float: right;
+}
+
+.subMenuWrap{
+    display: none;
+}
+.subMenuWrap ul{
+    float: left;
+    margin-left: 35px;
+    font-family: "gabriola";
+}
+.subMenuWrap h2{
+    color: #d86a43;
+    font-weight: normal;
+    font-size: 50px;
+    font-family: "gabriola";
+
+}
+.subMenuWrap ul a{
+    color: #02869b;
+    font-size: 25px;
+    text-decoration: underline;
+}
+.subMenuWrap ul a:hover{
+    text-decoration: none;
+}
+.leftSideBar{
+    width: 282px;
+    float: left;
+}
+.leftSideBar .mainAccard >li > a{
+    font-size: 28px;
+    text-align: left;
+    padding-left: 30px;
+}
+.leftSideBar .mainAccard >li  .subMenuWrap h2{
+    font-size: 28px;
+}
+.leftSideBar .subMenuWrap li{
+    margin-bottom: 10px;
+}
+.leftSideBar .subMenuWrap a.active{
+    text-decoration: none;
+    color: #535353;
+}
+.insideType1 .content-wrap{
+    float: left;
+    width: 423px;
+    margin-left: 25px;
+}
+.insideType2  .content-wrap{
+    float: right;
+    width: 681px;
+}
+.insideType3  .content-wrap{
+    float: left;
+    width: 734px;
+}
+.crumbs{
+    overflow: hidden;
+}
+.crumbs li{
+    float: left;
+    font-size: 12px;
+    color: #5e5e5e;
+    margin-right: 5px;
+}
+.crumbs li a{
+    font-family: tahoma;
+    text-decoration: underline;
+    color: #02869b;
+    font-size: 12px;
+    padding-right: 5px;
+}
+.goodsWrap h2{
+    font-family: "gabriola";
+    color: #535353;
+    font-weight: normal;
+    margin-bottom: 5px;
+    font-size: 28px;
+}
+.gallery{
+    overflow: hidden;
+}
+.gallery li{
+    float: left;
+}
+.gallery li a:hover{
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+}
+.imgBigWrap{
+    margin-bottom: 20px;
+}
+.gallWrap{
+    margin-top: 30px;
+}
+.checkBox {
+    overflow: hidden;
+    margin-bottom: 13px;
+    height: 22px;
+}
+.checkBox input{
+    float: left;
+    margin-right: 5px;
+}
+.checkBox label{
+    float: left;
+    color: #3d3d3d;
+    font-size: 14px;
+    font-family: tahoma;
+    margin-top: 3px;
+}
+.niceRadio {
+    width: 22px;
+    height: 22px;
+    float: left;
+    cursor: pointer;
+    background: url(../img/nice-check.png);
+    overflow: hidden;
+    margin-right: 5px;
+}
+.radioChecked {
+    background-position: 0 -22px;
+}
+.niceRadio input {
+    margin-left: -15px;
+}
+.descriptionBlock{
+    overflow: hidden;
+    margin-top: 20px;
+}
+.checkBox.active label{
+    font-size: 18px;
+    color: #79a52c;
+    margin-top: 1px;
+}
+.sizeBlock{
+    float: left;
+    margin-top: 15px;
+}
+.imgSize{
+    float: right;
+}
+.selectColor{
+    clear: both;
+    margin-bottom: 20px;
+}
+.selectBlock{
+    width: 49px;
+    height: 49px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.arrow{
+    background: url("../img/arrow.png");
+    width: 18px;
+    height: 12px;
+    position: absolute;
+    top: 20px;
+    left: 15px;
+
+}
+.selectColor ul{
+    overflow: hidden;
+}
+.selectColor li{
+    width: 211px;
+    float: left;
+}
+.selectColor li p{
+    color: #535353;
+    font-family: tahoma;
+    font-size: 13px;
+}
+.selectColor li a{
+    text-decoration: underline;
+    color: #02869b;
+    font-size: 12px;
+    font-family: tahoma;
+    white-space: pre-line;
+}
+.selectColor li a:hover{
+    text-decoration: none;
+}
+.selectColor h3{
+    font-size: 28px;
+    font-family: "gabriola";
+    font-weight: normal;
+    color: #454545;
+    margin: 10px 0;
+}
+.container{
+    position: relative;
+    border-radius: 5px;
+    padding: 12px;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 30px;
+}
+.container h3{
+    position: absolute;
+    background: url("../img/back.jpg");
+    top: -15px;
+    left: -1px;
+    padding: 0 5px;
+    font-family: "gabriola";
+    color: #505050;
+    font-size: 28px;
+    font-weight: normal;
+}
+.riceWrap .container{
+    float: left;
+}
+.price{
+    background: url("../img/money.png") no-repeat;
+    padding-left: 55px;
+    font-family: tahoma;
+    padding-top: 5px;
+}
+.oldPrice{
+    margin-left: 35px;
+    color: #858484;
+    text-decoration: line-through;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.price ul{
+    overflow: hidden;
+}
+.price ul li{
+    float: left;
+    color: #90bb3c;
+    font-size: 18px;
+}
+.price ul li:first-child{
+    color: #858484;
+    font-size: 14px;
+}
+.price ul li:first-child span{
+    padding-top: 5px;
+    display: block;
+}
+.buyButton{
+    background: url("../img/buttonback.png");
+    height: 44px;
+    display: block;
+    border-radius: 5px;
+    font-family: "gabriola";
+    font-size: 31px;
+    color: #fff;
+    line-height: 44px;
+    padding: 0 20px;
+    margin-bottom: 5px;
+}
+.buyButton:hover{
+    opacity: 0.8;
+}
+.buttonsWrap{
+    float: right;
+}
+.opt{
+    text-decoration: underline;
+    color: #02869b;
+}
+.opt:hover{
+    text-decoration: none;
+}
+.descriptionText{
+    clear: both;
+    font-size: 12px;
+    font-family: tahoma;
+    color: #454545;
+}
+.descriptionText p{
+    margin-bottom: 10px;
+    line-height: 18px;
+}
+.rightSideBar{
+    width: 223px;
+    float: right;
+    padding-top: 10px;
+}
+.delivery{
+    background: url("../img/delivery.png") no-repeat 0 15px;
+    padding-left: 100px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.assembly{
+    background: url("../img/asambley.png") no-repeat 0 15px;
+    padding-left: 85px;
+    padding-top: 35px;
+    min-height: 49px;
+    padding-bottom: 10px;
+}
+.assembly p{
+    color: #535353;
+    font-size: 14px;
+    font-family: tahoma;
+}
+.delivery p{
+    color: #535353;
+    font-size: 16px;
+    font-family: tahoma;
+}
+.assembly span,
+.delivery span{
+    color: #79a52c;
+    font-size: 18px;
+    font-family: tahoma;
+}
+.payment ul{
+    overflow: hidden;
+    width: 300px;
+}
+.payment ul li{
+    float: left;
+    margin: 10px 0;
+    margin-right: 6px;
+}
+.payment p{
+    color: #535353;
+    font-size: 14px;
+    font-family: tahoma;
+}
+.callUs{
+    background: url("../img/phone.png") no-repeat;
+    padding-left: 55px;
+    margin-top: 10px;
+}
+.callUs p{
+    color: #535353;
+    font-family: tahoma;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.callUs .phone{
+    color: #79a52c;
+    font-family: "gabriola";
+    font-size: 22px;
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+.callUs a{
+    border-bottom: 1px dashed #02869b;
+    color: #02869b;
+    font-size: 14px;
+    font-family: tahoma;
+}
+.callUs a:hover{
+    border-bottom: none;
+}
+.propouse{
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 10px;
+}
+.propouse li{
+    margin-bottom: 20px;
+}
+.propouse a h2{
+    text-decoration: underline;
+    color: #02869b;
+    font-size: 14px;
+    font-family: tahoma;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.propouse a:hover h2{
+    text-decoration: none;
+}
+.propouse p{
+    color: #82ab3a;
+    font-size: 16px;
+    font-family: tahoma;
+}
+.topic1{
+    font-family: "gabriola";
+    color: #535353;
+    font-size: 28px;
+    font-weight: normal;
+
+}
+.coin-slider h2{
+    font-family: "gabriola";
+    color: #535353;
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+.coin-slider ul{
+    overflow: hidden;
+    margin-left: 30px;
+}
+.coin-slider ul li{
+    float: left;
+    color: #90bb3c;
+    font-size: 22px;
+}
+.coin-slider .oldPrice{
+    margin: 0;
+    margin-top: 2px;
+    font-size: 18px;
+}
+.coin-slider .buyButton{
+    padding: 0;
+    width: 138px;
+    text-align: center;
+    color: #fff;
+    font-size: 25px;
+    margin: 30px 0 0 35px;
+}
+.sort{
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 13px 0;
+}
+.sort li{
+    float: left;
+    margin-left: 22px;
+}
+.sort li a{
+    color: #02869b;
+    font-family: tahoma;
+    padding: 0;
+    margin: 7px 10px;
+    display: block;
+    font-size: 14px;
+    border-bottom: 1px dashed #02869b;
+}
+.sort li a:hover{
+    border: none;
+}
+.sort li a.active{
+    background: #e0e0e0;
+    color: #535353;
+    border: none;
+    padding: 7px 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+.goodsList{
+    overflow: hidden;
+    width: 800px;
+    margin: 30px 0;
+}
+.goodsList li{
+    float: left;
+    text-align: center;
+    margin: 0 62px 30px 0;
+}
+.goodsList li a{
+    text-decoration: none;
+}
+.goodsList li a h2{
+    color: #02869b;
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: underline;
+}
+.goodsList li a:hover h2{
+    text-decoration: none;
+}
+.goodsList li p{
+    color: #535353;
+    font-size: 18px;
+    font-family: tahoma;
+}
+.basketCrumbs{
+    overflow: hidden;
+    margin: 30px 0 30px 0;
+}
+.basketCrumbs li{
+    float: left;
+    font-size: 28px;
+    font-family: "gabriola";
+    margin-right: 10px;
+    cursor: default;
+}
+.home{
+    background: url("../img/home.png");
+    width: 31px;
+    height: 25px;
+    display: block;
+    text-indent: -5000px;
+    float: left;
+    margin-right: 10px;
+}
+.home:hover{
+    opacity: 0.8;
+}
+.imgWrap{
+    float: left;
+}
+.shortDescript{
+    float: left;
+    width: 130px;
+    margin-left: 30px;
+}
+.shortDescript a{
+    color: #02869b;
+    font-family: tahoma;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.shortDescript a:hover{
+    text-decoration: none;
+}
+.shortDescript p{
+    color: #505050;
+    font-family: tahoma;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.shortDescript ul{
+    overflow: hidden;
+}
+.shortDescript li{
+    float: left;
+    margin-right: 10px;
+}
+.priceContainer{
+    float: left;
+    padding-top: 32px;
+    margin-left: 15px;
+}
+.priceContainer .oldPrice{
+    margin-left: 0;
+    margin-bottom: 0;
+}
+.priceContainer p{
+    color: #90bb3c;
+    font-size: 22px;
+}
+.priceContainer .oldPrice{
+    font-size: 14px;
+    color: #858484;
+}
+.overflower{
+    overflow: hidden;
+}
+.count{
+    float: left;
+    padding: 27px 0 0 30px;
+}
+.count .inputWrap{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    position: relative;
+    background: url("../img/input-back.png");
+    width: 54px;
+    height: 44px;
+}
+.count .inputWrap input{
+    border: none;
+    background: none;
+    height: 44px;
+    width: 37px;
+    text-align: center;
+    font-family: tahoma;
+    font-size: 22px;
+    color: #535353;
+}
+.plus{
+    cursor: pointer;
+    background: url("../img/plus.png");
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    text-indent: -5000px;
+    top: 8px;
+    right: 7px;
+}
+.minus{
+    cursor: pointer;
+    background: url("../img/minus.png");
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    top: 28px;
+    right: 7px;
+    text-indent: -5000px;
+}
+.plus:hover,
+.minus:hover{
+    opacity: 0.6;
+}
+.totalPrice{
+    color: #90bb3c;
+    font-size: 22px;
+    padding-top: 40px;
+    margin-left: 30px;
+    float: left;
+}
+.deleteGoods{
+    float: right;
+    background: url("../img/delete.png");
+    width: 26px;
+    height: 30px;
+    text-indent: -5000px;
+    cursor: pointer;
+    margin: 35px 15px 0 0;
+}
+.deleteGoods:hover{
+    opacity: 0.6;
+}
+.total{
+    background: #efefef;
+    overflow: hidden;
+}
+.total .totalWord{
+    float: left;
+    color: #535353;
+    font-size: 28px;
+    font-family: "gabriola";
+    margin: 2px 85px 0 220px;
+}
+.economy{
+    float: left;
+    margin: 0 52px 0 0;
+    color: #535353;
+    font-size: 15px;
+    font-family: tahoma;
+}
+.totalCount{
+    float: left;
+    font-size: 22px;
+    color: #535353;
+    font-family: tahoma;
+    margin-top: 5px;
+}
+.calculPrice{
+    float: right;
+    color: #90bb3c;
+    font-size: 22px;
+    margin: 5px 65px 0 0;
+    font-family: tahoma;
+}
+.buyForm{
+    overflow: hidden;
+}
+.buyForm .lineContainer{
+    width: 100%;
+    float: left;
+    margin-bottom: 13px;
+}
+.buyForm .inputWrap{
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    position: relative;
+    background: url("../img/input-back.png");
+    width: 257px;
+    height: 44px;
+    float: left;
+}
+.buyForm .inputWrap input{
+    border: none;
+    background: none;
+    height: 44px;
+    width: 237px;
+    padding: 0 10px;
+    font-family: tahoma;
+    font-size: 12px;
+    color: #535353;
+}
+.buyForm label{
+    color: #535353;
+    font-size: 26px;
+    font-family: "gabriola";
+    float: left;
+    margin: 12px 11px 0 11px;
+}
+.buyForm .lableWidth{
+    width: 180px;
+    margin: 12px 0 0 0;
+}
+.buyForm .lineContainer  .address{
+    width: 549px;
+}
+.saveBlock{
+    border-radius: 5px;
+    clear: both;
+    overflow: hidden;
+    border: 1px solid #90bb3c;
+}
+.saveBlock .topic1{
+    margin: 10px 0 10px 20px;
+}
+.autorization{
+    float: left;
+    border-radius: 5px;
+    border: 1px solid #c5bfbe;
+    width: 275px;
+    height: 45px;
+    font-family: tahoma;
+    padding-top: 10px;
+    text-align: center;
+    margin: 0 25px 20px 20px;
+}
+.autorization a{
+    border-bottom: 1px dashed #02869b;
+    color: #02869b;
+}
+.autorization a:hover{
+    border: none;
+}
+.autorization p{
+    font-size: 12px;
+    color: #868686;
+    margin-top: 5px;
+}
+.saveBlock label{
+    margin-top: 15px;
+}
+.saveBlock .inputWrap{
+    margin-top: 5px;
+}
+.buyIt{
+    border: none;
+    background: url("../img/buyIt.png");
+    width: 252px;
+    height: 50px;
+    text-indent: -5000px;
+}
+.buyIt:hover{
+    opacity: 0.8;
+}
+.buttonsCont{
+    float: right;
+    margin-top: 30px;
+}
+.buttonsCont li{
+    float: left;
+    margin-left: 20px;
+}
+.buttonsCont li a{
+    color: #02869b;
+    float: left;
+    margin-top: 17px;
+    text-decoration: underline;
+}
+.buttonsCont li a:hover{
+    text-decoration: none;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -266px;
+}
+.footer__layout {
+    width: 981px;
+    margin: 0 auto;
+    position: relative;
+    height: 266px;
+    overflow: hidden;
+}
+.askUs{
+    width: 236px;
+    float: left;
+}
+.askUs .inputWrap{
+    border: 1px solid #d8d8d8;
+    width: 236px;
+    height: 44px;
+    border-radius: 5px;
+    background: url("../img/input-back.png");
+    margin-bottom: 16px;
+}
+.askUs .inputWrap input{
+    width: 216px;
+    padding: 0 10px;
+    border: none;
+    height: 44px;
+    background: none;
+    font-size: 14px;
+    font-family: tahoma;
+}
+.askUs textarea{
+    padding: 10px;
+    width: 216px;
+    height: 72px;
+    border: 1px solid #d8d8d8;
+    border-radius: 5px;
+    background: url("../img/input-back.png");
+    font-size: 14px;
+    margin-bottom: 19px;
+    font-family: tahoma;
+}
+.askButton{
+    background: url("../img/ask-button.png");
+    width: 236px;
+    height: 45px;
+    padding: 0;
+    border: none;
+    text-indent: -5000px;
+}
+.askButton:hover{
+    opacity: 0.8;
+}
+.footerMenu{
+    float: left;
+    margin-left: 50px;
+}
+.footerMenu li{
+    margin-bottom: 15px;
+}
+.footerMenu a{
+    text-decoration: underline;
+    color: #02869b;
+    font-size: 24px;
+    font-family: "gabriola";
+}
+.footerMenu a:hover{
+    text-decoration: none;
+}
+.social{
+    float: left;
+    margin: 10px 0 0 66px;
+}
+.social li{
+    margin-bottom: 18px;
+}
+.social a{
+    display: block;
+    width: 45px;
+    height: 45px;
+    padding-left: 60px;
+    line-height: 45px;
+    color: #454545;
+    font-size: 34px;
+    font-family: "gabriola";
+}
+.saitoria:hover,
+.social a:hover{
+    opacity: 0.8;
+}
+.twitter{
+    background: url("../img/twitter.png") no-repeat;
+}
+.facebook{
+    background: url("../img/facbook.png") no-repeat;
+}
+.vkontakte{
+    background: url("../img/vkontakte.png") no-repeat;
+}
+.footerPhone{
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+.footerPhone a{
+    font-family: "gabriola";
+    color: #79a52c;
+    font-size: 41px;
+}
+.saitoria{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    background: url("../img/saitoria.png");
+    width: 144px;
+    height: 67px;
+    text-indent: -5000px;
+}
+.copy{
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    font-family: tahoma;
+    font-size: 12px;
+}
+
+/* --------------- /footer --------------- */

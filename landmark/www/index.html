@@ -1,0 +1,475 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/weater.gall.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jcarousellite_1.0.1.pack.js"></script>
+    <script src="js/jquery.instagramm.js"></script>
+    <script src="js/jquery.slider.js"></script>
+    <!--<script src="js/jquery.weather.js"></script>-->
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="index.html" title="На главную" class="logo"><img src="img/logo.png" width="314" height="547" alt=""></a>
+            <!-- /logo -->
+
+            <!-- language -->
+            <div class="language">
+                <a href="#">ENG</a>
+                <a href="#" class="active">РУС</a>
+            </div>
+            <!-- /language -->
+
+            <!-- mainMenu -->
+            <nav class="mainMenu">
+                <a href="#">Новости</a>
+                <a href="#">Instagram</a>
+                <a href="#">Услуги</a>
+                <a href="#">Бронирование</a>
+            </nav>
+            <!-- /mainMenu -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- insideBlock -->
+                <div class="insideBlock">
+
+                    <h3 class="topicType">Погода в Рованием</h3>
+
+                    <!-- quote -->
+                    <blockquote class="quote">
+                        Ветер в Рованием имеет … несущие сухую морозную погоду в город, а … держится дождливая и пасмурная погода, а температура воздуха сильно изменчива. …
+                    </blockquote>
+                    <!-- /quote -->
+
+                    <!-- wateherGall -->
+                    <div class="wateherGall">
+
+                        <!--<button class="prev">Влево</button>-->
+                        <button class="next">Вправо</button>
+
+                        <!-- wateherGallCont -->
+                        <div class="wateherGallCont">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="active"><span>18 июля,</span> Понедельник</span>
+                                        <span class="degree">+3</span>
+                                        <img src="pic/pic1.png" width="28" height="24" alt="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span><span>19 июля</span>, Понедельник</span>
+                                        <span class="degree">+3</span>
+                                        <img src="pic/pic1.png" width="28" height="24" alt="">
+                                    </a>
+                                </li>
+                                <li class="lastTemp">
+                                    <a href="#">
+                                        <span><span>20 июля</span>, Понедельник</span>
+                                        <span class="degree">+3</span>
+                                        <img src="pic/pic1.png" width="28" height="24" alt="">
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- /wateherGallCont -->
+
+                    </div>
+                    <!-- /wateherGall -->
+
+
+                    <!-- newsBlock -->
+                    <div class="newsBlock">
+
+                        <h3 class="topicType2">Новости отеля</h3>
+
+                        <div class="orangeLine"></div>
+
+                        <!-- leftNews -->
+                        <div class="leftNews">
+
+                            <!-- newsContainer -->
+                            <div class="newsContainer">
+
+
+                                <div class="dateContainer">
+                                    11. 12.
+                                    <span>2012</span>
+                                </div>
+
+
+                                <img src="pic/pic2.jpg" width="223" height="150" alt="">
+                                <p>Посол США в России назвал процесс над.Посол США в России назвал процесс над.Посол США в России назвал процесс над.Посол США в России назвал процесс над.</p>
+                                <a href="#" class="moreDetaile">Подробнее</a>
+                            </div>
+                            <!-- /newsContainer -->
+
+                        </div>
+                        <!-- /leftNews -->
+
+                        <!-- rightNews -->
+                        <div class="rightNews">
+
+                            <!-- newsContainer -->
+                            <div class="newsContainer">
+
+                                <div class="dateContainer">
+                                    11. 12.
+                                    <span>2012</span>
+                                </div>
+
+                                <img src="pic/pic2.jpg" width="223" height="150" alt="">
+                                <p>Посол США в России назвал процесс над.Посол США в России назвал процесс над.Посол США в России назвал процесс над.Посол США в России назвал процесс над.</p>
+                                <a href="#" class="moreDetaile">Подробнее</a>
+                            </div>
+                            <!-- /newsContainer -->
+
+                            <!-- newsContainer -->
+                            <div class="newsContainer lastPos">  <!--ДЛЯ ПОСЛЕДНЕЙ НОВОСТИ ДОБАВЛЯЕМ КЛАСС LASTPOS ЧТО БЫ ПРАВИЛЬНО РИСОВАЛАСЬ ОРАНЖЕВАЯ ЛИНИЯ-->
+
+                                <div class="dateContainer ">
+                                    11. 12.
+                                    <span>2012</span>
+                                </div>
+
+                                <img src="pic/pic2.jpg" width="223" height="150" alt="">
+                                <p>Посол США в России назвал процесс над.Посол США в России назвал процесс над.Посол США в России назвал процесс над.Посол США в России назвал процесс над.</p>
+                                <a href="#" class="moreDetaile">Подробнее</a>
+                            </div>
+                            <!-- /newsContainer -->
+
+
+                        </div>
+                        <!-- /rightNews -->
+
+                    </div>
+                    <!-- /newsBlock -->
+
+
+                    <!-- instagramBlock -->
+                    <div class="instagramBlock">
+
+                        <h3><span>Мы в Instagram</span></h3>
+
+
+                        <button class="prevInst">Влево</button>
+                        <button class="nextInst">Вправо</button>
+
+                        <!-- instagrammGallery -->
+                        <div class="instagrammGallery">
+                            <ul>
+                                <li>
+                                    <div class="bloks">
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bloks">
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="bloks">
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                        <a href="#"><img src="pic/pic3.jpg" width="165" height="165" alt=""></a>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!-- /instagrammGallery -->
+
+                    </div>
+                    <!-- /instagramBlock -->
+
+                    <!-- benefits -->
+                    <div class="benefits">
+
+                        <div class="orangeLine2"></div>
+
+                        <h3 class="topicType3">Наши преимущества</h3>
+
+                        <!-- benefitsBlocks -->
+                        <div class="benefitsBlocks paddingLeft firstBeefit">
+                            <img src="img/pic1.png" width="808" height="330" alt="">
+                            <div class="benefitsText">
+                                <h3>Текст о снегоходах. </h3>
+                                <p>В нашей реке нереститься семга. Не далеко от отеля есть пляж. 
+                                    Отель очень удобно расположен на федеральной трассе. </p>
+                                <a href="#" class="more">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- /benefitsBlocks -->
+
+                        <!-- benefitsBlocks -->
+                        <div class="benefitsBlocks paddingRight">
+                            <img src="img/pic2.png" width="509" height="482" alt="">
+                            <div class="benefitsText">
+                                <h3>Не далеко от отеля есть пляж. </h3>
+                                <p>В нашей реке нереститься семга. Не далеко от отеля есть пляж. 
+                                    Отель очень удобно расположен на федеральной трассе. </p>
+                                <a href="#" class="more">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- /benefitsBlocks -->
+
+
+                        <!-- benefitsBlocks -->
+                        <div class="benefitsBlocks paddingLeft">
+                            <img src="img/pic3.png" width="579" height="518" alt="">
+                            <div class="benefitsText">
+                                <h3>Текст о саунах. </h3>
+                                <p>В нашей реке нереститься семга. Не далеко от отеля есть пляж. 
+                                    Отель очень удобно расположен на федеральной трассе. </p>
+                                <a href="#" class="more">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- /benefitsBlocks -->
+
+
+                        <!-- benefitsBlocks -->
+                        <div class="benefitsBlocks paddingRight">
+                            <img src="img/pic4.png" width="450" height="424" alt="">
+                            <div class="benefitsText">
+                                <h3>Текст о рыбалке. </h3>
+                                <p>В нашей реке нереститься семга. Не далеко от отеля есть пляж. 
+                                    Отель очень удобно расположен на федеральной трассе. </p>
+                                <a href="#" class="more">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- /benefitsBlocks -->
+
+
+
+                        <!-- benefitsBlocks -->
+                        <div class="benefitsBlocks paddingLeft">
+                            <img src="img/pic5.png" width="462" height="436" alt="">
+                            <div class="benefitsText">
+                                <h3>Текст о велосипедах.</h3>
+                                <p>В нашей реке нереститься семга. Не далеко от отеля есть пляж. 
+                                    Отель очень удобно расположен на федеральной трассе. </p>
+                                <a href="#" class="more">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- /benefitsBlocks -->
+
+
+                        <!-- benefitsBlocks -->
+                        <div class="benefitsBlocks paddingRight">
+                            <img src="img/pic6.png" width="494" height="377" alt="">
+                            <div class="benefitsText">
+                                <h3>Текст о зайцах и белках.</h3>
+                                <p>В нашей реке нереститься семга. Не далеко от отеля есть пляж. 
+                                    Отель очень удобно расположен на федеральной трассе. </p>
+                                <a href="#" class="more">Подробнее</a>
+                            </div>
+                        </div>
+                        <!-- /benefitsBlocks -->
+
+                    </div>
+                    <!-- /benefits -->
+
+
+
+                </div>
+                <!-- /insideBlock -->
+
+
+                <!-- gallWrap -->
+                <div class="sliderContainer">
+
+                    <div class="insideBlock">
+
+                        <!-- gallery -->
+                        <div class="gallery gall1">
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <img src="pic/pic7.jpg" width="252" height="163" alt="">
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="pic/pic7.jpg" width="252" height="163" alt="">
+
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="pic/pic7.jpg" width="252" height="163" alt="">
+
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <img src="pic/pic7.jpg" width="252" height="163" alt="">
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="pic/pic7.jpg" width="252" height="163" alt="">
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="pic/pic7.jpg" width="252" height="163" alt="">
+
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /gallery -->
+
+
+                    </div>
+
+                </div>
+                <!-- /gallWrap -->
+
+                <!-- booking -->
+                <form class="booking">
+                    <h2>Бронирование</h2>
+
+                    <label for="name">Имя</label>
+                    <input id="name" type="text">
+                    <label for="lastname">Фамилия</label>
+                    <input id="lastname" type="text">
+                    <label for="email">Email</label>
+                    <input id="email" type="text">
+                    <label for="phone">Телефон</label>
+                    <input id="phone" type="text">
+
+                    <!-- block -->
+                    <div class="block margineNone">
+                        <label>Прибытие</label>
+                        <div class="inputConteiner">
+                            <span>день</span>
+                            <input type="text">
+                        </div>
+                        <div class="inputConteiner">
+                            <span>мес</span>
+                            <input type="text">
+                        </div>
+                        <div class="inputConteiner">
+                            <span>год</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <!-- /block -->
+
+                    <!-- block -->
+                    <div class="block">
+                        <label>Отдъезд</label>
+                        <div class="inputConteiner">
+                            <span>день</span>
+                            <input type="text">
+                        </div>
+                        <div class="inputConteiner">
+                            <span>мес</span>
+                            <input type="text">
+                        </div>
+                        <div class="inputConteiner margineNone">
+                            <span>год</span>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <!-- /block -->
+
+                    <div class="formBottom">
+                        <div class="inputConteiner">
+                            <label for="count">Количество
+                                человек</label>
+                            <input id="count" type="text">
+                        </div>
+                        <input type="submit" class="eBut" value="Отправить">
+                    </div>
+
+                </form>
+                <!-- /booking -->
+
+
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <p class="copy">&copy; ООО «LANDMARK TRAVEL», 2013</p>
+            <dl class="creaters">
+                <dt>РАЗРАБОТКА САЙТА:</dt>
+                <dd><a href="#" class="saitoria">saitoria</a> </dd>
+            </dl>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

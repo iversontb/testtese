@@ -1,0 +1,104 @@
+
+.news__gall__description__show{
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    color: #565656;
+    margin: 15px 0 10px 0;
+}
+.news__gall__next{
+    background: url("../img/arrow_right.jpg") no-repeat left top;
+    width: 67px;
+    height: 67px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    border: none;
+    text-indent: -5000px;
+    cursor: pointer;
+
+}
+.news__gall__next:hover{
+    background-position: 0 -42px;
+}
+.news__gall__prev{
+    background: url("../img/arrow_left.jpg") no-repeat left top;
+    width: 67px;
+    height: 67px;
+    position: absolute;
+    top: 15px;
+    border: none;
+    left: 0;
+    cursor: pointer;
+    text-indent: -5000px;
+}
+.news__gall__prev:hover{
+    background-position: 0 0;
+}
+.news__gall__littlGall{
+    position: relative;
+    width: 225px;
+    display: inline-block;
+}
+.news__gall__imgBigWrap{
+    display: inline-block;
+}
+.about__list li .preview a{
+    display: block;
+    padding: 2px;
+
+}
+.about__list  li .preview li{
+    margin-right: 5px;
+}
+.about__list li .preview li:hover{
+    box-shadow: 0 0 5px #d1d1d1;
+}
+.about__list li  .preview a img{
+    margin-bottom: 0;
+}
+.news__gall__imgBigWrap img{
+    position: relative;
+}
+.preview{
+    overflow: hidden;
+    width: 209px;
+    margin-left: -2px;
+}
+.prev{
+    background: url("../img/left-but.png");
+    width: 67px;
+    height: 67px;
+    text-indent: -5000px;
+    border: none;
+    position: absolute;
+    top: 2px;
+    right: 14px;
+}
+.next{
+    background: url("../img/right-but.png");
+    width: 67px;
+    height: 67px;
+    text-indent: -5000px;
+    border: none;
+    position: absolute;
+    top: 73px;
+    right: 14px;
+}
+.preview li{
+    float: left;
+    width: 142px !important;
+}
+.preview li a{
+    float: left;
+    width: 67px;
+    height: 67px;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+.preview li a:hover{
+    border: 2px solid #3636a7;
+}
+.preview li a.active{
+    border: 2px solid #3636a7;
+}

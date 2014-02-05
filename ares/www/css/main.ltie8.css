@@ -1,0 +1,50 @@
+.e-mainMenu_header > li,
+.b-window_index,
+.e-social li,
+.b-window_contactInfo,
+.b-window_contactForm,
+.e-team__item {
+	//display: inline;
+}
+.b-window_index {
+	//margin-left: 50px;
+}
+.e-mainMenu_header > li.nth1{
+    width: 126px;
+    background-position: -127px 0;
+}
+.e-mainMenu_header > li.nth1:active {
+    width: 126px;
+    background-position: -127px -61px;
+}
+.e-mainMenu_header > li.active.nth1{
+    background-position: -127px -122px;
+}
+.e-mainMenu_header > li.nth2 {
+    width: 127px;
+    background-position: -255px 0;
+}
+.e-mainMenu_header > li.nth2:active {
+    width: 127px;
+    background-position: -255px -61px;
+}
+.e-mainMenu_header > li.active.nth2 {
+    background-position: -255px -122px;
+}
+.e-mainMenu_header > li.active.nth3 {
+    background-position: -385px -122px;
+}
+.e-mainMenu_header > li.nth3 {
+    width: 128px;
+    background-position: -385px 0;
+}
+.e-mainMenu_header > li.nth3:active {
+    width: 128px;
+    background-position: -385px -61px;
+}
+.e-inputText input {
+	line-height: 20px;
+}
+.e-preload {
+	background-color: #fff;	
+}

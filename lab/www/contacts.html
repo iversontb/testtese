@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+<!-- site -->
+<div class="site insideSite2">
+    <div class="site__layout">
+        <!-- header -->
+        <header class="header">
+
+            <!-- headInside -->
+            <div class="headInside">
+
+                <!-- logo -->
+                <a href="index.html" title="Main" class="logo"><img src="img/logo.png"></a>
+                <!-- /logo -->
+
+                <!-- main-menu -->
+                <nav class="main-menu">
+                    <ol class="main-menu__layout">
+                        <li class="main-menu__item"><a href="#" class="main-menu__lnk">Об ASKLab</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Опыт</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Услуги </a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Решения</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                    </ol>
+                </nav>
+                <!-- /main-menu -->
+
+                <!-- language -->
+                <div class="language">
+                    <ul class="language__layout">
+                        <li class="language__item language__item_active"><span class="language__lnk">Ru</span></li>
+                        <li class="language__item"><a class="language__lnk" href="#">En</a></li>
+                    </ul>
+                </div>
+                <!-- /language -->
+
+            </div>
+            <!-- /headInside -->
+
+        </header>
+        <!-- /header -->
+
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- content -->
+                <div class="content">
+
+                    <!-- address -->
+                    <address class="address">
+                        <p class="topicType2">Контакты</p>
+                        <p>ООО «АСК Лаборатория»</p>
+                        <p> 199034, г. Санкт-Петербург, В.О., 16-я линия, д. 7</p>
+                        <p>Тел./факс: (812) 448-53-52</p>
+                        <p>E-mail: mail@ask-lab.com</p>
+                    </address>
+                    <!-- /address -->
+
+                    <!-- contactsForm -->
+                    <form action="#" method="post" class="contactsForm">
+
+                        <div class="formHead">
+                            <h4>Оставить заявку</h4>
+                            <p><span>*</span>-Обязательно для заполнения</p>
+                        </div>
+
+                        <div class="lineContainer">
+                            <div class="blockWrap">
+                                <label>Контактное лицо<span>*</span></label>
+                                <div class="inputWrap">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="blockWrap">
+                                <label>Организация</label>
+                                <div class="inputWrap">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lineContainer">
+                            <div class="blockWrap">
+                                <label>Контактный телефон</label>
+                                <div class="inputWrap">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="blockWrap">
+                                <label>Электронная почта<span>*</span></label>
+                                <div class="inputWrap">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="lineContainer longWidth">
+                            <label>Тема<span>*</span></label>
+                            <div class="inputWrap">
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="lineContainer">
+                            <label>Текст заявки<span>*</span></label>
+                            <textarea class="textareaType"></textarea>
+                        </div>
+
+                        <div class="lineContainer">
+                            <label>Прикрепить файлы</label>
+                            <div class="type_file">
+                                <input type="file" size="28" class="inputFile" onchange='document.getElementById("fileName").value=this.value' />
+                                <div class="fonTypeFile"></div>
+                                <input type="text" class="inputFileVal" readonly="readonly" id="fileName" />
+                            </div>
+
+                        </div>
+
+                        <div class="lineContainer capchaContainer">
+                            <span class="codeText">Введите защитный код, чтобы отправить письмо</span>
+                            <div class="capcha">
+                                <img src="pic/pic13.jpg" height="33" width="103">
+                            </div>
+                            <div class="inputWrap">
+                                <input type="text">
+                            </div>
+                            <input type="submit" value="Отправить" class="moreBut">
+                        </div>
+
+                    </form>
+                    <!-- /contactsForm -->
+
+                </div>
+                <!-- /content -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+    </div>
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <p class="copy">© ООО «АСК Лаборатория» 2005-2013 – Все права защищены.</p>
+
+        <ul class="footerMenu">
+            <li><a href="#">Об ASKLab</a></li>
+            <li><a href="#">Опыт </a></li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">Решения</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

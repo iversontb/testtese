@@ -1,0 +1,142 @@
+/* --------------- content-wrap --------------- */
+.content-wrap h1{
+    font-family: "Verdana";
+    font-size: 24px;
+    color: #252525;
+    font-weight: normal;
+    margin-bottom: 19px;
+}
+.content-wrap h1+span{
+    font-family: "Verdana";
+    font-size: 12px;
+    color: #272727;
+    font-weight: bold;
+    margin-bottom: 32px;
+    display: inline-block;
+}
+.content-wrap p{
+    font-family: "Arial";
+    font-size: 14px;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+.content-wrap .phone{
+     font-family: "Arial";
+     font-size: 14px;
+     font-weight: bold;
+     color: #1c1c1c;
+     display: inline-block;
+     margin-bottom: 10px;
+ }
+
+/* --------------- /content-wrap --------------- */
+
+/* --------------- bread_crumbs --------------- */
+.bread_crumbs{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.bread_crumbs a{
+    font-family: "Verdana";
+    font-size: 12px;
+    color: #ee740c;
+    text-decoration: underline;
+    background: url("../img/arrow.png") no-repeat left center;
+    padding-left: 14px;
+}
+.bread_crumbs a:first-child{
+    background: none;
+    padding-left: 0;
+}
+.bread_crumbs a:hover{
+    text-decoration: none;
+}
+/* --------------- /bread_crumbs --------------- */
+
+/* --------------- chip_basket --------------- */
+.chip_basket{
+    font-family: "Arial";
+    font-size: 12px;
+    color: #373737;
+    text-decoration: underline;
+    background: url("../img/chip_basket.png") no-repeat left 0;
+    float: right;
+    margin-top: 4px;
+    padding-left: 29px;
+    display: inline-block;
+    height: 18px;
+}
+.chip_basket:hover{
+    text-decoration: none;
+}
+/* --------------- /chip_basket --------------- */
+
+/* --------------- parameter --------------- */
+.parameter{
+    line-height: 40px;
+    margin-bottom: 31px;
+    width: 100%;
+}
+.parameter thead th{
+    font-family: "Verdana";
+    font-size: 12px;
+    color: #252525;
+    text-align: left;
+    padding-left: 17px;
+    padding-right: 5px;
+    width: 78px;
+    line-height: 21px;
+}
+.parameter thead th span{
+    font-family: "Verdana";
+    font-size: 12px;
+    font-weight: normal;
+    color: #252525;
+    text-align: center;
+    padding-bottom: 14px;
+    display: inline-block;
+}
+.parameter tbody td{
+    font-family: "Verdana";
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: middle;
+    padding-left: 13px;
+    width: 78px;
+    line-height: 42px;
+    border-right: 1px solid #ffffff;
+    background: #eeeeee;
+}
+.parameter tbody td span{
+    font-size: 12px;
+}
+.parameter tbody tr:nth-child(odd) td{
+     background-color: #fef6ed;
+ }
+.parameter tbody tr:nth-child(even) td{
+    background-color: #fdf0e1;
+}
+.parameter tbody tr:hover td{
+    background-color: #f55c00;
+}
+.parameter tbody tr:hover td:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.parameter tbody tr:hover td:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.parameter+span{
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: bold;
+    color: #cf3232;
+    margin-bottom: 26px;
+    display: inline-block;
+}
+/* --------------- /parameter --------------- */
+

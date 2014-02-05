@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.hammer.min.js"></script>
+    <script src="js/jquery.ares.slider.js"></script>
+    <script src="js/jquery.radio.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('a[href*=#]').bind("click", function(e){
+                var anchor = $(this);
+                $('html, body').stop().animate({
+                    scrollTop: $(anchor.attr('href')).offset().top - 60
+                }, 1000);
+                e.preventDefault();
+            });
+            return false;
+        });
+    </script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="#" class="logo"><img src="img/logo.png" width="50" height="49" alt=""></a>
+            <!-- /logo -->
+
+            <!-- main_menu -->
+            <nav class="main_menu">
+                <a href="#project" class="active">Проекты  </a>
+                <a href="#clients">Клиенты и партнеры </a>
+                <a href="#servises">Услуги</a>
+                <a href="#about">О нас</a>
+                <a href="#kontakts">Контакты</a>
+            </nav>
+            <!-- main_menu -->
+
+            <!-- social -->
+            <dl class="social">
+                <dt>Мы в
+                    соцсетях</dt>
+                <dd><a href="#" class="facebook" title="facebook">facebook</a> </dd>
+                <dd><a href="#" class="mail" title="mail">mail</a> </dd>
+            </dl>
+            <!-- /social -->
+
+            <!-- language -->
+            <div class="language">
+                <a href="#" class="active">Рус</a>
+                <a href="#">Eng</a>
+                <a href="#">Frn</a>
+            </div>
+            <!-- language -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- slideWrap -->
+                <div class="slideWrap" id="project">
+
+                    <!-- ares-slider -->
+                    <div class="ares-slider2">
+                        <div class="ares-slider2__item">
+
+                            <!-- gall_inside -->
+                            <div class="gall_inside">
+                                <a href="#" class="slider_logo"><img src="img/gall-logo.png" width="169" height="175" alt=""></a>
+                                <a href="#"><img src="pic/pic1.png" width="763" height="440" alt=""></a>
+                                <div class="gall_footer">
+                                    <h2>Cargentum</h2>
+                                    <p class="gall_slogan">Мы создаём интерактивные сайты и программные интерфейсы, приятные глазу и удобные в использовании. </p>
+                                    <a href="#">www.cargentum.ru</a>
+                                </div>
+                                <div class="points_text">Black Morgan
+                                    Automotive</div>
+                            </div>
+                            <!-- /gall_inside -->
+
+                        </div>
+                        <div class="ares-slider2__item">
+
+                            <!-- gall_inside -->
+                            <div class="gall_inside">
+                                <a href="#" class="slider_logo"><img src="img/gall-logo.png" width="169" height="175" alt=""></a>
+                                <a href="#"><img src="pic/pic1.png" width="763" height="440" alt=""></a>
+                                <div class="gall_footer">
+                                    <h2>Cargentum</h2>
+                                    <p class="gall_slogan">Мы создаём интерактивные сайты и программные интерфейсы, приятные глазу и удобные в использовании. </p>
+                                    <a href="#">www.cargentum.ru</a>
+                                </div>
+                                <div class="points_text">Mercedes Benz
+                                    Club Russia</div>
+                            </div>
+                            <!-- /gall_inside -->
+
+                        </div>
+                        <div class="ares-slider2__item">
+
+                            <!-- gall_inside -->
+                            <div class="gall_inside">
+                                <a href="#" class="slider_logo"><img src="img/gall-logo.png" width="169" height="175" alt=""></a>
+                                <a href="#"><img src="pic/pic1.png" width="763" height="440" alt=""></a>
+                                <div class="gall_footer">
+                                    <h2>Cargentum</h2>
+                                    <p class="gall_slogan">Мы создаём интерактивные сайты и программные интерфейсы, приятные глазу и удобные в использовании. </p>
+                                    <a href="#">www.cargentum.ru</a>
+                                </div>
+                                <div class="points_text">Bentley
+                                    Club Russia</div>
+                            </div>
+                            <!-- /gall_inside -->
+
+                        </div>
+
+                        <div class="ares-slider2__item">
+
+                            <!-- gall_inside -->
+                            <div class="gall_inside">
+                                <a href="#" class="slider_logo"><img src="img/gall-logo.png" width="169" height="175" alt=""></a>
+                                <a href="#"><img src="pic/pic1.png" width="763" height="440" alt=""></a>
+                                <div class="gall_footer">
+                                    <h2>Cargentum</h2>
+                                    <p class="gall_slogan">Мы создаём интерактивные сайты и программные интерфейсы, приятные глазу и удобные в использовании. </p>
+                                    <a href="#">www.cargentum.ru</a>
+                                </div>
+                                <div class="points_text">Cargentum
+                                    Magazine</div>
+                            </div>
+                            <!-- /gall_inside -->
+
+                        </div>
+
+                        <div class="ares-slider2__item">
+
+                            <!-- gall_inside -->
+                            <div class="gall_inside">
+                                <a href="#" class="slider_logo"><img src="img/gall-logo.png" width="169" height="175" alt=""></a>
+                                <a href="#"><img src="pic/pic1.png" width="763" height="440" alt=""></a>
+                                <div class="gall_footer">
+                                    <h2>Cargentum</h2>
+                                    <p class="gall_slogan">Мы создаём интерактивные сайты и программные интерфейсы, приятные глазу и удобные в использовании. </p>
+                                    <a href="#">www.cargentum.ru</a>
+                                </div>
+                                <div class="points_text">Porsche
+                                    Club Russia</div>
+                            </div>
+                            <!-- /gall_inside -->
+
+                        </div>
+
+                        <div class="ares-slider2__item">
+
+                            <!-- gall_inside -->
+                            <div class="gall_inside">
+                                <a href="#" class="slider_logo"><img src="img/gall-logo.png" width="169" height="175" alt=""></a>
+                                <a href="#"><img src="pic/pic1.png" width="763" height="440" alt=""></a>
+                                <div class="gall_footer">
+                                    <h2>Cargentum</h2>
+                                    <p class="gall_slogan">Мы создаём интерактивные сайты и программные интерфейсы, приятные глазу и удобные в использовании. </p>
+                                    <a href="#">www.cargentum.ru</a>
+                                </div>
+                                <div class="points_text">Rolls Royce
+                                    Club Russia</div>
+                            </div>
+                            <!-- /gall_inside -->
+
+                        </div>
+
+                        <div class="ares-slider2__prev"></div>
+                        <div class="ares-slider2__next"></div>
+                    </div>
+                    <!-- /ares-slider -->
+
+                </div>
+                <!-- /slideWrap -->
+
+
+                <!-- line_container -->
+                <div class="line_container">
+
+                    <!-- inside_block -->
+                    <div class="inside_block">
+
+                        <!-- mini_nav -->
+                        <div class="mini_nav">
+
+                        </div>
+                        <!-- /mini_nav -->
+
+                        <span class="down_arrow">down</span>
+
+
+                    </div>
+                    <!-- /inside_block -->
+
+
+                </div>
+                <!-- /line_container -->
+
+
+                <!-- inside_block -->
+                <div class="inside_block">
+
+                    <h2 class="topic_type" id="clients">Клиенты и
+                       партнеры</h2>
+
+                    <!-- table_wrap -->
+                    <table class="table_wrap">
+                        <tbody>
+                            <tr>
+                                <td><a href="#"><img src="pic/pic1-1.png" width="61" height="102" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic2.png" width="110" height="84" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic3.png" width="151" height="56" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic4.png" width="134" height="89" alt=""></a> </td>
+
+                            </tr>
+                            <tr>
+                                <td><a href="#"><img src="pic/pic5.png" width="71" height="82" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic6.png" width="158" height="41" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic7.png" width="178" height="17" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic8.png" width="87" height="50" alt=""></a> </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#"><img src="pic/pic9.png" width="86" height="54" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic10.png" width="121" height="71" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic11.png" width="111" height="70" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic12.png" width="150" height="62" alt=""></a> </td>
+                            </tr>
+                            <tr>
+                                <td><a href="#"><img src="pic/pic13.png" width="126" height="33" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic14.png" width="141" height="40" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic15.png" width="132" height="34" alt=""></a> </td>
+                                <td><a href="#"><img src="pic/pic16.png" width="137" height="13" alt=""></a> </td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- /table_wrap -->
+
+
+                    <p class="our_clients">Среди наших клиентов более <a href="#">25 компаний</a> </p>
+
+                    <span class="down_arrow">down</span>
+
+
+                </div>
+                <!-- /inside_block -->
+
+                <!-- black_block -->
+                <div class="black_block">
+
+                    <!-- inside_block -->
+                    <div class="inside_block">
+
+                        <h2 class="topic_type2" id="about">О нас</h2>
+
+
+
+                        <!-- about_text -->
+                        <ul class="about_text">
+                            <li>
+                                <p><span>Наша компания основана в 2005 году.</span>
+                                И, на протяжении всего этого времени,   является крупнейшим и самым популярным сообществом, объединяющим владельцев автомобилей Mercedes-Benz, Porsche, Bentley, Ferrari, Rolls-Royce, Aston Martin.  Ежедневно сайт посещают более 15 000 человек, большая часть которых, владельцы новых автомобилей, не старше 3х лет, таких марок как Bentley, Porsche, Mercedes-Benz, Ferrari, Maserati, Rolls-Royce. Это более 5 000 000 показов, размещенной на сайте, рекламы ежемесячно. Пользователи этих проектов - это владельцы собственного бизнеса, топ-менеджеры, индивидуальные предпринимали. </p>
+                                <p>
+                                    <a href="#" class="pdf">Скачать презентацию
+                                    Blackmorgangroup</a>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Основные часть посетителей — граждане РФ, преимущественно жители Москвы и Санкт-Петербурга. Наиболее активная часть сайта — форум, включает 150 подразделов, где на данный момент зарегистрированно более 80 000 человек. Наши сайты — это идеальная рекламная площадка для представления и продвижения товаров и услуг премиального сегмента. Из 15 000 уникальных посетителей каждый день более 8 000 пришли на сайте впервые.</p>
+                                <p>Клуб активно участвует в продвижении и усилении бренда Mercedes Benz, Bentley, Porsche на российском рынке. Клиентами проекта уже являются Лукойл, Mansory, Brabus, Spyker, Automagnus, Autolehmann, Konig Motor Club, 3M, Leroy Merlin, МБ-Измайлово, ЦПИ СБ, Авилон, Rolls-Royce Geneve, Aston Martin Geneve, Порше Руссланд. Мы приглашаем Вас к сотрудничеству и готовы предложить размещение баннерной рекламы на сайте или любые другие виды рекламы.</p>
+                            </li>
+                        </ul>
+                        <!-- /about_text -->
+
+                        <span class="down_arrow">down</span>
+
+
+                    </div>
+                    <!-- /inside_block -->
+
+                </div>
+                <!-- /black_block -->
+
+                <!-- inside_block -->
+                <div class="inside_block">
+
+                    <h2 class="topic_type" id="servises">Наши
+                        услуги</h2>
+
+                    <!-- service_list -->
+                    <ul class="service_list">
+                        <li class="item1">
+                            <h3>Рекламные
+                                компании </h3>
+                            <span>Баннерная реклама, контекстная реклама, вирусная реклама, SMO, SEO, offline продвижение</span>
+                        </li>
+                        <li class="item2">
+                            <h3>Дизайн и разработка
+                                сайтов, фирменные стили</h3>
+                            <span>Качественно и стильно. Говно не делаем. Дорого.</span>
+                        </li>
+                        <li class="item3">
+                            <h3>Дизайн и разработка приложений</h3>
+                            <span>Приложения для iphone\iPad и иногда для Adroid</span>
+                        </li>
+                        <li class="item4">
+                            <h3>Продакшн</h3>
+                            <span>Фото, видео, креатив, защита информации, family office</span>
+                        </li>
+                    </ul>
+                    <!-- /service_list -->
+
+
+
+
+                </div>
+                <!-- /inside_block -->
+
+
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <!-- our_contakts -->
+            <div class="our_contakts">
+                <h2  id="kontakts"> Наши
+                    контакты</h2>
+
+                <a href="tel:+79099780222" class="phone">+7 (909) 978 0 222</a>
+                <a href="mailto:support@benzclub.ru" class="email">support@benzclub.ru</a>
+                <a href="#" class="facebook" title="facebook">facebook</a>
+                <p class="copy">© 2013 Black Morgan Group
+                    Royal Automotive Fleet</p>
+            </div>
+            <!-- /our_contakts -->
+
+            <!-- contact_form -->
+            <form action="#" class="contact_form">
+
+                <!-- inputs_line -->
+                <div class="inputs_line">
+                    <input type="text" class="name" placeholder="Имя ">
+                    <input type="email" class="email" placeholder="E-mail">
+                    <input type="text" class="form_phone" placeholder="Телефон">
+                </div>
+                <!-- /inputs_line -->
+
+                <textarea placeholder="Текст сообщения"></textarea>
+
+                <!-- footer_form -->
+                <div class="footer_form">
+
+                    <div><input type="radio" class="niceRadio" name="myradio" id="myradio1" tabindex="1" checked="checked"/> <label for="myradio1">Вопросы</label></div>
+                    <div><input type="radio" class="niceRadio" name="myradio" id="myradio2" tabindex="2" /> <label for="myradio2">Сделать заказ</label></div>
+
+                    <input type="submit" class="e_but" value="Отправить">
+
+
+                </div>
+                <!-- /footer_form -->
+
+            </form>
+            <!-- /contact_form -->
+
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

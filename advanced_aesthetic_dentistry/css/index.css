@@ -1,0 +1,96 @@
+/* --------------- interview --------------- */
+.interview{
+    display: inline-block;
+    width:790px;
+    vertical-align: top;
+    word-spacing: 2px;
+    margin-bottom: 41px;
+}
+.interview img{
+    float: left;
+    margin-right: 8px;
+}
+.interview h1{
+    font-family:'HeliosThin';
+    font-size: 30px;
+    color:#5c4108;
+    margin-bottom: 17px;
+}
+.interview p{
+    width:539px;
+    display: inline-block;
+    font-family: 'Arial';
+    font-size: 12px;
+    color:#5f5f5f;
+    line-height: 20px;
+    margin-top: 7px;
+}
+.interview h2{
+    font-size: 16px;
+    font-family: 'Arial';
+    color:#5f5f5f;
+    font-weight: normal;
+}
+/* --------------- /interview --------------- */
+
+/* --------------- contact_us --------------- */
+.contact_us{
+    display: inline-block;
+    width: 790px;
+}
+.contact_us h2{
+    font-family:'HeliosThin';
+    font-size: 30px;
+    color:#5c4108;
+    margin-bottom: 18px;
+    margin-top: -4px;
+    word-spacing: 3px;
+}
+.contact_us img{
+    float: left;
+    margin-right: 9px;
+}
+.contact_us form{
+    display: inline-block;
+    margin-left: 3px;
+    position: relative;
+}
+.contact_us form input, .contact_us form textarea{
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    background-color: #f2ebd7;
+    font-family: arial;
+    font-size: 12px;
+    color: #636363;
+}
+.contact_us form input{
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 186px;
+    height: 45px;
+    margin-bottom: 3px;
+}
+.contact_us form textarea{
+    padding: 10px 15px;
+    width: 300px;
+    height: 73px;
+    margin-top: -48px;
+}
+.contact_us form .send{
+    background: url("../img/but.png") repeat-x left top;
+    font-family: arial;
+    font-size: 14px;
+    color: #ecd3b5;
+    position: absolute;
+    right: 0;
+    top: 103px;
+    width: 180px;
+}
+.contact_us form .send:hover{
+    background-position: 0 -47px;
+}
+.contact_us form .send:active {
+    background-position: 0 bottom;
+}
+/* --------------- /contact_us --------------- */

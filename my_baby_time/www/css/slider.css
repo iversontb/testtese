@@ -1,0 +1,95 @@
+.gallery {
+    background: #f6f6f6;
+    padding: 5px;
+    height: 311px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 479px;
+    position: relative;
+}
+.gallery > div {
+    overflow: hidden;
+    height: 311px;
+    width: 479px;
+    position: relative;
+}
+.gallery > div > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+.gallery > div > ul > li {
+    float: left;
+    border-left: 1px solid #f1f1f1;
+    padding: 0;
+    margin: 0 19px 0 0;
+    background: none;
+}
+.gallery > div > ul > li:first-child {
+    border-left: none;
+}
+.gallery .gallery__wraper{
+    overflow: hidden;
+    height: 264px;
+    width: 226px;
+    position: relative;
+}
+.gallery .gallery__wraper:after {
+    content: '';
+    /*background: url("../img/gallery__a.jpg");*/
+    height: 226px;
+    width: 264px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    -moz-transition: opacity 0.3s ease-in;
+    -o-transition: opacity 0.3s ease-in;
+    -webkit-transition: opacity 0.3s ease-in;
+    -ms-transition: opacity 0.3s ease-in;
+    transition: opacity 0.3s ease-in;
+}
+.gallery a:hover:after{
+    opacity: 1;
+}
+.gallery a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 214px;
+    width: 224px;
+    z-index: 2;
+}
+.gallery img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 214px;
+    width: 224px;
+    z-index: 2;
+}
+
+.gallery__controls li {
+    float: left;
+    list-style: none;
+    background: none;
+    width: 12px;
+    height: 12px;
+    background: url("../img/dot.png");
+    margin: 0 2px 0 3px;
+    cursor: pointer;
+}
+.gallery__controls li.active {
+    cursor: default;
+    background: url("../img/active-dot.png");
+    margin-top: -1px;
+}
+.gallery__controls{
+    position: absolute;
+    bottom: 18px;
+    left: 50%;
+}

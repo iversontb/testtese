@@ -1,0 +1,6 @@
+.searchForm .inputWrap,
+.main-menu{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

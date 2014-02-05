@@ -1,0 +1,22 @@
+FontName (HeliosBlack-Italic)
+FullName (HeliosBlack Italic)
+AppleName (HeliosBlack-Italic)
+FamilyName (HeliosBlack)
+Version (004.001)
+isFixedPitch false
+CharacterSet (custom)
+Encoding (SpecificEncoding)
+Pi true
+ItalicAngle -12
+CapHeight 720
+UnderlinePosition -90
+UnderlineThickness 58
+StemWidth 50
+Serif false
+MSMenuName (HeliosBlack)
+VPMenuName (HeliosBlack)
+WORDMenuName (HeliosBlack)
+VPStyle (I)
+WindowsCharSet 200
+WindowsFirstChar 32
+WindowsLastChar 255

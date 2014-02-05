@@ -1,0 +1,59 @@
+/* CSS Document */
+
+.banerInfo {	
+	z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '<i class="banerInfoafter"></i>'));		
+}
+
+.banerInfoafter{
+	background: url(../img/yellow-gall-arrow.png);
+	width: 41px;
+	height: 14px;
+	position: absolute;
+	top: -14px;
+	left: 272px;
+}
+.bosses {	
+	z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '<i class="bossesafter"></i>'));		
+}
+
+.bossesafter{
+	background: url(../img/blue-gall-arrow.png);
+	width: 41px;
+	height: 14px;
+	position: absolute;
+	top: -14px;
+	left: 630px;
+}
+.places {	
+	z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '<i class="placesafter"></i>'));		
+}
+
+.placesafter{
+
+	background: url(../img/checkArrow.png);
+	width: 37px;
+	height: 24px;
+	position: absolute;
+	top: -24px;
+	left: 454px;
+}
+
+.markerDiscriber {	
+	z-index: expression(runtimeStyle.zIndex = 1, insertAdjacentHTML('afterBegin', '<i class="markerDiscriberafter"></i>'));		
+}
+.markerDiscriberafter{
+	content: "";
+	background: url(../img/hover-arrow.png);
+	width: 9px;
+	height: 11px;
+	position: absolute;
+	bottom: -11px;
+	left: 0;
+}
+.infoContainer > ul > li{
+	margin-right: 30px;
+}
+.infoContainer > ul > li a{
+	white-space: nowrap;
+	line-height: 25px;
+}

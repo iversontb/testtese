@@ -1,0 +1,155 @@
+/* --------------- expert --------------- */
+.expert{
+    margin-bottom: 75px;
+    margin-left: -6px;
+    padding-top: 12px;
+}
+.expert h1{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+/* --------------- /expert --------------- */
+
+/* --------------- expert__opinions --------------- */
+
+.expert__opinions li{
+    margin-bottom: 18px;
+}
+.expert__opinions .expert__paginator{
+    margin-top: 31px;
+    margin-left: 3px;
+}
+.expert__opinions li .content__b{
+    margin-bottom: -5px;
+    margin-top: -2px;
+}
+/* --------------- /expert__opinions --------------- */
+
+/* --------------- expert__avatar --------------- */
+.expert__avatar{
+    position: relative;
+    width: 116px;
+    display: inline-block;
+    margin-right: 35px;
+    padding-left: 102px;
+    padding-top: 2px;
+}
+.expert__avatar img{
+    border: 1px solid #d9d8d7;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+.expert__avatar h2{
+    font-weight: 700;
+    font-size: 14px;
+    color: #353535;
+    margin-bottom: 6px;
+    line-height: 17px;
+}
+.expert__avatar>span{
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    color: #656565;
+    line-height: 15px;
+    font-style: italic;
+}
+.expert__avatar dl{
+    font-weight: 400;
+    font-size: 12px;
+    color: #212121;
+    line-height: 14px;
+    margin-bottom: 5px;
+}
+.expert__avatar dl dt{
+    color: #656565;
+}
+/* --------------- /expert__avatar --------------- */
+
+/* --------------- expert__rating --------------- */
+.expert__rating {
+    background: url("../img/img44.png") no-repeat left top;
+    width: 74px;
+    height: 15px;
+    padding: 0;
+    margin-bottom: 6px;
+}
+.expert__rating>div {
+    background: url("../img/img43.png") no-repeat left top;
+    width: 74px;
+    height: 15px;
+}
+/* --------------- /expert__rating --------------- */
+
+/* --------------- expert__opinion --------------- */
+.expert__opinion {
+    position: relative;
+    width: 430px;
+    display: inline-block;
+    vertical-align: top;
+    color: #212121;
+    font-size: 14px;
+    line-height: 21px;
+    border: 1px solid #e3e1df;
+    border-top: none;
+    padding: 13px 20px 26px 20px;
+    background-color: #ffffff;
+}
+
+.expert__opinion:after{
+    content: '';
+    position: absolute;
+    background: url("../img/img32.png") no-repeat;
+    width: 22px;
+    height: 24px;
+    left: -22px;
+    top: 15px;
+}
+.expert__opinion div{
+    padding-bottom: 13px;
+    margin-bottom: 12px;
+    border-bottom: 1px dotted #9e9e9e;
+}
+.expert__opinion div p{
+    margin-bottom: 7px;
+}
+.expert__opinion div .expand{
+    display: inline-block;
+    font-size: 12px;
+    color: #777777;
+    text-decoration: underline;
+    margin-left: 15px;
+}
+.expert__opinion div .expand:hover{
+    text-decoration: none;
+}
+.expert__opinion div>span{
+    display: block;
+    font-size: 12px;
+    color: #777777;
+    line-height: 20px;
+}
+.expert__opinion div>span>a{
+    color: #777777;
+    text-decoration: underline;
+}
+.expert__opinion div>span>a:hover{
+    text-decoration: none;
+}
+.expert__opinion .expert__more{
+    position: absolute;
+    bottom: 9px;
+    right: 27px;
+    font-size: 12px;
+    color: #212121;
+    text-decoration: underline;
+    font-style: italic;
+}
+.expert__opinion .expert__more:hover{
+    text-decoration: none;
+}
+/* --------------- /questions1__text --------------- */

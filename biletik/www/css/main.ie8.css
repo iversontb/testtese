@@ -1,0 +1,21 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Days";
+    src: url("../fonts/days.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/pt_sans.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "PT Sans-Bold";
+    src: url("../fonts/pt_sans_bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

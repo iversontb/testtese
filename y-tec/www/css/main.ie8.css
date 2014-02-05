@@ -1,0 +1,15 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "helveticaneue";
+    src: url("../font/helveticaneue.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+.ares-slider__points li.active{
+    background: url("../img/dot-active.png");
+}
+.ares-slider__points li{
+    background: url("../img/dot.png");
+}

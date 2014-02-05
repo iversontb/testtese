@@ -1,0 +1,25 @@
+.description{
+    width: 79%;
+    padding-right: 0;
+}
+.serviseBlock{
+    margin-bottom: 50px;
+}
+.serviseBlock a{
+    font-weight: 700;
+    color: #252b30;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.serviseBlock a:hover{
+    text-decoration: underline;
+}
+.serviseBlock p{
+    color: #646f78;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}

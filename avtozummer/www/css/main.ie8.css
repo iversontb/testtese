@@ -1,0 +1,21 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "pfdintextcomppro-regular";
+    src: url("../fonts/pfdintextcomppro-regular.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pfdintextcondpro-bold";
+    src: url("../fonts/pfdintextcondpro-bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pts55f";
+    src: url("../fonts/pts55f.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */

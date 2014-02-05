@@ -1,0 +1,400 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    main-menu
+
+    language
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd, 
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, 
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, 
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {    
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {                        
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            
+} 
+input, select, button, textarea {
+    margin: 0;                 
+    font-size: 100%;             
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;     
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {         
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+     list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+    background: #231e19;
+    border-top: 9px solid #ff0000;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;    
+}
+textarea {
+    resize:none; 
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus { 
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner { 
+    padding:0; 
+    border:0; 
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "helvetica_ce_bold-webfont";
+    src: url("../fonts/helvetica_ce_bold-webfont.eot");
+    src: url("../fonts/helvetica_ce_bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/helvetica_ce_bold-webfont.woff") format("woff"),
+    url("../fonts/helvetica_ce_bold-webfont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "helvetica_ce_regular-webfont";
+    src: url("../fonts/helvetica_ce_regular-webfont.eot");
+    src: url("../fonts/helvetica_ce_regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/helvetica_ce_regular-webfont.woff") format("woff"),
+    url("../fonts/helvetica_ce_regular-webfont.ttf") format("truetype");
+}
+
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    overflow: hidden;
+    min-width: 964px;
+    position: relative;
+    z-index: 1;
+}
+    .site:after {
+        content: '';
+        display: block;
+        clear: both;
+        width: 100%;
+        height: 48px;
+    }
+.site__layout {
+    width: 964px;
+    margin: 0 auto;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 44px;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- main-menu --------------- */
+.main-menu {
+    height: 44px;
+}
+.main-menu li:first-child{
+    background: none;
+}
+.main-menu li{
+    float: left;
+    height: 44px;
+    background: url("../img/menu-line.png") no-repeat 0 5px;
+}
+.inside .main-menu li a{
+    padding: 0 28px;
+}
+.main-menu li a{
+    display: block;
+    height: 44px;
+    font-family: "helvetica_ce_bold-webfont";
+    color: #fff;
+    font-size: 19px;
+    line-height: 44px;
+    padding: 0 37px;
+}
+.main-menu li a.active{
+    background: #a2834f;
+    margin-left: 1px;
+}
+.main-menu li a:hover{
+    color: #ff0000;
+}
+/* --------------- /main-menu --------------- */
+
+.site__content{
+    background: #fff url("../img/mits-subaru.jpg") no-repeat bottom right;
+    padding: 28px 29px 35px 31px;
+    width: 904px;
+    float: left;
+    box-shadow: 5px 5px 5px #0f0d0b;
+}
+.addressWrap{
+    background: #514232;
+    color: #fff;
+    font-size: 16px;
+    height: 55px;
+    margin-bottom: 12px;
+    overflow: hidden;
+}
+.addressWrap address{
+    font-style: normal;
+    font-family: "helvetica_ce_regular-webfont";
+}
+
+.addressWrap ul{
+    overflow: hidden;
+}
+.addressWrap ul li:first-child{
+    border: none;
+}
+.addressWrap ul li{
+    float: left;
+    border-left: 1px solid #fff;
+    padding: 0 5px 0 10px;
+    margin: 9px 0;
+    line-height: 18px;
+    width: 285px;
+}
+.addressWrap dt{
+    float: left;
+    color: #d8af63;
+    margin-right: 5px;
+}
+.bigBan img{
+    display: block;
+}
+.bigBan{
+    margin-bottom: 2px;
+}
+.addressWrap dd a{
+    color: #fff;
+}
+.addressWrap dd a:hover{
+    text-decoration: underline;
+}
+.imgContainer{
+    padding: 7px;
+    background: #dcd9d6;
+    display: block;
+    float: left;
+}
+.imgContainer:hover{
+    box-shadow: 2px 2px 10px #706d6f;
+}
+.imgContainer img{
+    display: block;
+}
+.textWrap{
+    width: 100%;
+    float: left;
+    font-family: "helvetica_ce_regular-webfont";
+    margin-bottom: 17px;
+}
+.imgWrap{
+    float: left;
+    margin-right: 25px;
+}
+.textContainer{
+    padding: 15px 0 0 0;
+}
+.textContainer p{
+    margin-bottom: 20px;
+}
+.textContainer p a{
+    color: #0047ae;
+}
+.textContainer p a:hover{
+    color: #ff0000;
+}
+.optionsList{
+    overflow: hidden;
+    clear: both;
+    width: 920px;
+}
+.optionsList li{
+    display: inline-block;
+    width: 275px;
+    background: #edebea;
+    vertical-align: top;
+    font-family: "helvetica_ce_regular-webfont";
+    font-size: 14px;
+    padding: 12px 7px;
+    margin-right: 12px;
+}
+.optionsList li a{
+    color: #0047ae;
+}
+.optionsList li a:hover{
+    color: #ff0000;
+}
+.optionsList li dl{
+    font-family: "helvetica_ce_bold-webfont";
+    color: #514232;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.optionsList li dt{
+    margin-bottom: 4px;
+}
+.optionsList li dl h2{
+    font-weight: normal;
+    color: #514232;
+    font-size: 16px;
+}
+.optionsList li p{
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+.imgList{
+    width: 950px;
+    float: left;
+    margin:  19px 0 13px 0;
+}
+.imgList li{
+    float: left;
+    margin-right: 20px;
+}
+.inside .site__content{
+    padding-bottom: 200px;
+}
+.imgWrap .optionsList{
+    width: 100%;
+}
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    margin-top: -48px;
+}
+.footer__layout {
+    width: 964px;
+    margin: 0 auto;
+    height: 48px;
+}
+.copy{
+    color: #fff;
+    font-family: "helvetica_ce_regular-webfont";
+    font-size: 14px;
+    margin-top: 15px;
+}
+/* --------------- /footer --------------- */

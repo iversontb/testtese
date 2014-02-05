@@ -1,0 +1,12 @@
+/* css for ltie8 */
+.popup_inner form input[type="text"] {
+    padding-top: 8px;
+}
+.wrap_popup {
+    background: url("../img/opacity.png") repeat;
+}
+.popup_inner form input[type="submit"]:hover, .wrap_new form .wrap_input input[type="submit"]:hover,
+.header_top ol li a img:hover, .header_right input[type="submit"]:hover, .ares-slider2__next:hover, .ares-slider2__prev:hover,
+.wrap_btn a:hover, .wrap_delivery_info a:hover {
+    filter: alpha(opacity=80);
+}

@@ -1,0 +1,22 @@
+FontName (HeliosCond-Bold-Italic)
+FullName (HeliosCond Bold Italic)
+AppleName (HeliosCond-Bold-Italic)
+FamilyName (HeliosCond)
+Version (004.001)
+isFixedPitch false
+CharacterSet (custom)
+Encoding (SpecificEncoding)
+Pi true
+ItalicAngle -12
+CapHeight 722
+UnderlinePosition -40
+UnderlineThickness 40
+StemWidth 123
+Serif false
+MSMenuName (HeliosCond)
+VPMenuName (HeliosCond)
+WORDMenuName (HeliosCond)
+VPStyle (T)
+WindowsCharSet 200
+WindowsFirstChar 32
+WindowsLastChar 255

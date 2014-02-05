@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/slider.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.hammer.min.js"></script>
+    <script src="js/jquery.ares.slider.js"></script>
+    <script src="js/tween-max.min.js"></script>
+    <script src="js/jquery.ares.multiple.slider.js"></script>
+    <script type="text/javascript"
+            src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBK1MQEuyEX3CahWKYx7au2yb6RHcF3K-w&sensor=true">
+    </script>
+    <script src="js/jquery.map.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- head_inside -->
+            <div class="head_inside">
+
+                <!-- logo -->
+                <a href="#" class="logo"><img src="img/logo.png" width="592" height="143" alt=""></a>
+                <!-- /logo -->
+
+                <!-- main_menu -->
+                <div class="main_menu">
+                    <a href="#" class="main_menu__item1">Савелевская<span>Близко к метро</span></a>
+                    <a href="#"  class="main_menu__item2">Круглосуточно<span>Работаем 24 часа в день</span></a>
+                    <a href="#"  class="main_menu__item3">Без интима<span>Строгое правило!</span></a>
+                    <div class="phone main_menu__item4"><a href="tel:+74956433127">+7 (495) 643-31-27</a> <a href="#">заказать обратный звонок</a></div>
+                </div>
+                <!-- main_menu -->
+
+            </div>
+            <!-- /head_inside -->
+
+            <!-- nav_block -->
+            <div class="nav_block">
+
+                <!-- nav_inside -->
+                <div class="nav_inside">
+                    <a href="#" class="active"><span>Массажистки</span></a>
+                    <a href="#"><span>Интерьеры </span></a>
+                    <a href="#"><span>Программы</span></a>
+                    <a href="#"><span> Контакты</span></a>
+
+
+                    <a href="#" class="guest_book">Гостевая книга</a>
+
+                </div>
+                <!-- /nav_inside -->
+
+
+            </div>
+            <!-- /nav_block -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- inside_block -->
+                <div class="inside_block">
+
+                    <!-- discount -->
+                    <div class="discount">
+
+                        <!-- discount_image -->
+                        <div class="discount_image">
+                            <img src="pic/pic1.jpg" width="340" height="340" alt="">
+                        </div>
+                        <!-- /discount_image -->
+
+                        <!-- discount_image -->
+                        <form action="#" class="discount_form">
+                            <h2>Акция!</h2>
+                            <p>Оставьте Ваши контактные данные в форме ниже и мы
+                                пришлём Вам промо код, который нужно будет сказать
+                                менеджеру при посещении массажного салона</p>
+                            <label>Ваше имя</label>
+                            <input type="text">
+                            <label>Ваш email адрес</label>
+                            <input type="email">
+                            <span>Мы не передаём контаткные данные трьетьим лицам
+и не присылаем спам</span>
+                            <input type="submit" value="Получить скидку" class="e_but">
+                        </form>
+                        <!-- /discount_image -->
+
+                    </div>
+                    <!-- /discount -->
+
+                </div>
+                <!-- /inside_block -->
+
+                <!-- gray_block -->
+                <div class="gray_block">
+
+                    <!-- inside_block -->
+                    <div class="inside_block">
+
+                        <h2 class="topic_type"><span>Почему стоит к нам приехать?</span></h2>
+
+                        <!-- reason_come -->
+                        <ul class="reason_come">
+
+                            <li class="reason_item1">
+                                <h3>Более 15 мастеров в
+                                    смену</h3>
+                                <p>большой выбор каждый день!</p>
+                            </li>
+                            <li class="reason_item2">
+                                <h3>Реальные фото и
+                                    видео мастеров</h3>
+                                <p>всё по честному! Без обмана!</p>
+                            </li>
+                            <li class="reason_item3">
+                                <h3>Все комнаты оснащены
+                                    душевыми кабинами</h3>
+                                <p>Вы принимаете душ прямо в комнате!</p>
+                            </li>
+                            <li class="reason_item4">
+                                <h3>100% гарантия
+                                    возврата</h3>
+                                <p>если наш мастер не сможет снять у Вас
+                                    напряжение, накопившееся за рабочую
+                                    неделю, то мы вернём Вам деньги!</p>
+                            </li>
+                            <li class="reason_item5">
+                                <h3>Высокий уровень
+                                    чистоты в салоне</h3>
+                                <p>Вам предложат одноразовую
+                                    простыню, одноразовое или белое
+                                    махровое полотенце на выбор.</p>
+                            </li>
+                            <li class="reason_item6">
+                                <h3>Мы не воруем время,
+                                    которое Вы оплатили</h3>
+                                <p>время визита отсчитывается после
+                                    Вашего выхода из душа.</p>
+                            </li>
+                            <li class="reason_item7">
+                                <h3>Охраняемая парковка</h3>
+                                <p>на ней всегда найдётся место для
+                                    Вашего автомобиля и за ним будут
+                                    следить.</p>
+                            </li>
+                            <li class="reason_item8">
+                                <h3>7 массажных
+                                    кабинетов</h3>
+                                <p>Это значит, что в любое время в нашем
+                                    салоне для Вас будет свободное место!</p>
+                            </li>
+                            <li class="reason_item9">
+                                <h3>Visa, MasterCard,
+                                    Maestro</h3>
+                                <p>Visa, MasterCard,
+                                    Maestro</p>
+                            </li>
+
+                        </ul>
+                        <!-- /reason_come -->
+
+                        <p class="slogan">90% гостей возвращаются к нам снова!</p>
+
+                    </div>
+                    <!-- /inside_block -->
+
+                </div>
+                <!-- /gray_block -->
+
+
+                <!-- inside_block -->
+                <div class="inside_block">
+
+                    <!-- slideWrap -->
+                    <div class="slideWrap">
+
+                        <!-- ares-slider -->
+                        <div class="ares-slider2">
+                            <div class="ares-slider2__item">
+                                <img src="pic/pic2.jpg" width="940" height="402" alt="">
+                            </div>
+                            <div class="ares-slider2__item">
+                                <img src="pic/pic2.jpg" width="940" height="402" alt="">
+                            </div>
+                            <div class="ares-slider2__item">
+                                <img src="pic/pic2.jpg" width="940" height="402" alt="">
+                            </div>
+                            <div class="ares-slider2__item">
+                                <img src="pic/pic2.jpg" width="940" height="402" alt="">
+                            </div>
+
+
+                            <div class="ares-slider2__prev"></div>
+                            <div class="ares-slider2__next"></div>
+                        </div>
+                        <!-- /ares-slider -->
+
+                    </div>
+                    <!-- /slideWrap -->
+
+                </div>
+                <!-- /inside_block -->
+
+
+                <!-- gray_block -->
+                <div class="gray_block">
+
+                    <!-- inside_block -->
+                    <div class="inside_block">
+
+                        <h2 class="topic_type"><span>Наши мастера</span></h2>
+
+                        <!-- slide_container -->
+                        <div class="slide_container">
+
+                            <!-- ares-multiple-slider -->
+                            <div class="ares-slider girls">
+                                <ul>
+                                    <li class="ares-slider_item">
+                                        <a href="#">
+                                            <img src="pic/girl.jpg" width="220" height="220" alt="">
+                                            <span>Травиата</span>
+                                        </a>
+                                    </li>
+                                    <li class="ares-slider_item">
+                                        <a href="#">
+                                            <img src="pic/girl.jpg" width="220" height="220" alt="">
+                                            <span>Виалета<span>девушка недели</span></span>
+                                        </a>
+                                    </li>
+                                    <li class="ares-slider_item">
+                                        <a href="#">
+                                            <img src="pic/girl.jpg" width="220" height="220" alt="">
+                                            <span>Травиата</span>
+                                        </a>
+                                    </li>
+                                    <li class="ares-slider_item">
+                                        <a href="#">
+                                            <img src="pic/girl.jpg" width="220" height="220" alt="">
+                                            <span>Виалета<span>девушка недели</span></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="ares-slider__prev"></div>
+                                <div class="ares-slider__next"></div>
+                            </div>
+                            <!-- ares-multiple-slider -->
+
+                        </div>
+                        <!-- slide_container -->
+
+
+                    </div>
+                    <!-- /inside_block -->
+
+                </div>
+                <!-- /gray_block -->
+
+                <!-- inside_block -->
+                <div class="inside_block">
+
+
+
+                    <a href="#" class="review_but">Отзывы наших клиентов</a>
+
+                    <h2 class="topic_type2"><span>Интерьеры массажных комнат</span></h2>
+
+
+                    <!-- slide_container -->
+                    <div class="slide_container interier">
+                        <!-- ares-multiple-slider -->
+                        <div class="ares-slider rooms">
+                            <ul>
+                                <li class="ares-slider_item">
+                                    <a href="#">
+                                        <span>Палата №1</span>
+                                        <img src="pic/room.jpg" width="220" height="143" alt="">
+                                    </a>
+                                </li>
+                                <li class="ares-slider_item">
+                                    <a href="#">
+                                        <span>Палата №2</span>
+                                        <img src="pic/room.jpg" width="220" height="143" alt="">
+                                    </a>
+                                </li>
+                                <li class="ares-slider_item">
+                                    <a href="#">
+                                        <span>Палата №3</span>
+                                        <img src="pic/room.jpg" width="220" height="143" alt="">
+                                    </a>
+                                </li>
+                                <li class="ares-slider_item">
+                                    <a href="#">
+                                        <span>Палата №4</span>
+                                        <img src="pic/room.jpg" width="220" height="143" alt="">
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="ares-slider__prev"></div>
+                            <div class="ares-slider__next"></div>
+                        </div>
+                        <!-- ares-multiple-slider -->
+                    </div>
+                    <!-- slide_container -->
+
+
+
+
+                </div>
+                <!-- /inside_block -->
+
+                <!-- gray_block -->
+                <div class="gray_block">
+
+                    <!-- inside_block -->
+                    <div class="inside_block">
+
+                        <h2 class="topic_type"><span>Как мы работаем?</span></h2>
+
+                        <!-- steps_menu -->
+                        <ul class="steps_menu">
+                            <li class="step_item1">Вы звоните и записываетесь на определённое время</li>
+                            <li class="step_item2">Вам выдают одноразовые тапочки и на выбор одноразовое или махровое полотенце</li>
+                            <li class="step_item3">Вас провожают в комнату и знакомят с массажистками</li>
+                            <li class="step_item4">Прямо в комнате, Вы принимаете душ. Мы предоставим Вам одноразовую мочалку и хорошего качества гели</li>
+                            <li class="step_item5">Вы ложитесь, полностью расслабляетесь, а мастер делает Вам массаж</li>
+                            <li class="step_item6">На выходе Вы получаете море эмоций, хорошее самочувствие и дободушную улыбку от нашего менеджера</li>
+                        </ul>
+                        <!-- /steps_menu -->
+
+
+                    </div>
+                    <!-- /inside_block -->
+
+                </div>
+                <!-- /gray_block -->
+
+                <!-- inside_block -->
+                <div class="inside_block">
+
+                    <!-- programm_block -->
+                    <div class="programm_block">
+                        <h2 class="topic_type2"><span>Массажные программы</span></h2>
+
+                        <h3>Класический массаж</h3>
+
+                        <!-- prices -->
+                        <div class="programs_menu prices">
+                            <a href="#" class="active"><span>до 3000 р.</span></a>
+                            <a href="#"><span>до 6000 р.</span></a>
+                            <a href="#"><span>до 10000 р.</span></a>
+                            <a href="#"><span>от 10000 р.</span></a>
+                        </div>
+                        <!-- prices -->
+
+                        <!-- prices -->
+                        <div class="programs_menu persons">
+                            <a href="#" class="active"><span>от 1 до 3 часов</span></a>
+                            <a href="#"><span>до 4 часов</span></a>
+                            <a href="#"><span>до 6 часов</span></a>
+                            <a href="#"><span>от 6 часов</span></a>
+                        </div>
+                        <!-- prices -->
+
+
+                        <h3>Тайский массаж</h3>
+
+                        <!-- prices -->
+                        <div class="programs_menu prices">
+                            <a href="#" class="active"><span>до 3000 р.</span></a>
+                            <a href="#"><span>до 6000 р.</span></a>
+                            <a href="#"><span>до 10000 р.</span></a>
+                            <a href="#"><span>от 10000 р.</span></a>
+                        </div>
+                        <!-- prices -->
+
+                        <!-- prices -->
+                        <div class="programs_menu persons">
+                            <a href="#" class="active"><span>от 1 до 3 часов</span></a>
+                            <a href="#"><span>до 4 часов</span></a>
+                            <a href="#"><span>до 6 часов</span></a>
+                            <a href="#"><span>от 6 часов</span></a>
+                        </div>
+                        <!-- prices -->
+
+                    </div>
+                    <!-- /programm_block -->
+
+                    <!-- massage_type -->
+                    <div class="massage_type">
+
+                        <div>
+                            <img src="pic/pic5.png" width="300" height="300" alt="">
+
+                            <!-- massage_text -->
+                            <div class="massage_text">
+                                <h3><a href="#">Арома-оил массаж</a></h3>
+                                <p>Курс  арома- ойл (ароматизированного) масляного массажа поможет Вам избавиться от бессонницы и стресса, вылечить простудные заболевания, забыть об общей усталости, прийти в тонус.</p>
+                                <p class="hide_text">Смысл такого массажа состоит в том, что мешочки с различными  целебными травами разглаживают,  освежают и омолаживают кожу, улучшают работу сальных желез.Смысл такого массажа состоит в том, что мешочки с различными  целебными травами разглаживают,  освежают и омолаживают кожу, улучшают работу сальных желез.</p>
+
+                                <p class="price">3000 р.</p>
+                                <p><b>1 час</b> по длительности</p>
+                            </div>
+                            <!-- /massage_text -->
+
+                        </div>
+
+                        <div>
+                            <img src="pic/pic6.png" width="300" height="300" alt="">
+
+                            <!-- massage_text -->
+                            <div class="massage_text">
+                                <h3><a href="#">Массаж лица с применением травяных мешочков</a></h3>
+                                <p>Смысл такого массажа состоит в том, что мешочки с различными  целебными травами разглаживают,  освежают и омолаживают кожу, улучшают работу сальных желез.</p>
+                                <p class="hide_text">Смысл такого массажа состоит в том, что мешочки с различными  целебными травами разглаживают,  освежают и омолаживают кожу, улучшают работу сальных желез.Смысл такого массажа состоит в том, что мешочки с различными  целебными травами разглаживают,  освежают и омолаживают кожу, улучшают работу сальных желез.</p>
+
+
+                                <p class="price">2000 р.</p>
+                                <p><b>30 минут</b> по длительности</p>
+                            </div>
+                            <!-- /massage_text -->
+                        </div>
+
+                        <div>
+                            <img src="pic/pic7.png" width="300" height="300" alt="">
+
+                            <!-- massage_text -->
+                            <div class="massage_text">
+                                <h3><a href="#">Традиционный тайский массаж</a></h3>
+                                <p >При правильном воздействии на них можно устранить преграды на пути потоков жизненной энергии и предотвратить её застой, вызывающий различные заболевания.</p>
+                                <p class="hide_text">Смысл такого массажа состоит в том, что мешочки с различными  целебными травами разглаживают,  освежают и омолаживают кожу, улучшают работу сальных желез.Смысл такого массажа состоит в том, что мешочки с различными  целебными травами разглаживают,  освежают и омолаживают кожу, улучшают работу сальных желез.</p>
+
+                                <p class="price">2500 р.</p>
+                                <p><b>2 часа</b> по длительности</p>
+                            </div>
+                            <!-- /massage_text -->
+                        </div>
+
+                    </div>
+                    <!-- /massage_type -->
+
+                    <h2 class="topic_type2"><span>Где мы находимся?</span></h2>
+
+                </div>
+                <!-- /inside_block -->
+
+                <div id="map_canvas" style="width:100%; height:341px"></div>
+
+               
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <p class="copy">
+                <span>2014 © <b>«Мир массажа»</b></span>
+                Эротический массаж в Москве, метро Савелевская, строго без интима!
+            </p>
+
+            <div class="footer_phone">
+                <a href="tel:+74956433127">+7 (495) <b>643-31-27</b></a>
+                <a href="#">заказать обратный звонок</a>
+            </div>
+
+            <dl class="creaters">
+                <dt>Создание продающих сайтов
+                    </dt>
+                <dd><a href="#">abardacha.ru</a> </dd>
+            </dl>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

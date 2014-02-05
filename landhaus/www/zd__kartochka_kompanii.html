@@ -1,0 +1,551 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>text</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=cyrillic-ext,cyrillic,latin' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/search-result.css" />
+    <link rel="stylesheet" href="css/questions_inner.css" />
+
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/jquery.time-range.js"></script>
+    <script src="js/jquery.sort.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.plus-minus.js"></script>
+
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+
+    <!--[if  IE 9]>
+        <link rel="stylesheet" href="css/main.ie9.css" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+
+        <!-- site_wrap -->
+        <div class="site_wrap">
+
+            <!-- baner_top -->
+            <div class="baner_top">
+                <img src="pic/pic1.jpg" width="1043" height="50" alt="">
+            </div>
+            <!-- /baner_top -->
+
+            <!-- header -->
+            <header class="header">
+
+                <!-- header__top -->
+                <div class="head_top">
+
+                    <!-- center_block -->
+                    <div class="center_block">
+
+                        <!-- seatch_form -->
+                        <form class="seatch_form">
+                            <input type="search" placeholder="Поиск по сайту">
+                            <input type="submit" class="search_but">
+                        </form>
+                        <!-- /seatch_form -->
+
+                        <!-- head_top__menu -->
+                        <div class="head_top__menu">
+                            <a class="add_ad" href="#">Добавить объявление бесплатно</a>
+                            <span class="enter_but"><a href="#">Войти</a> или <a href="#">зарегистрироваться</a></span>
+                            <a class="favorit" href="#">Избранное</a>
+                        </div>
+                        <!-- /head_top__menu -->
+
+                        <!-- aritcles_object -->
+                        <dl class="aritcles_object">
+                            <dt>Статьи</dt>
+                            <dd> 2</dd>
+                            <dt>Объекты </dt>
+                            <dd>13</dd>
+                        </dl>
+                        <!-- /aritcles_object -->
+
+                    </div>
+                    <!-- /center_block -->
+
+                </div>
+                <!-- head_top -->
+
+                <!-- center_block -->
+                <div class="center_block">
+
+                    <!-- logo -->
+                    <a href="#" class="logo"><img src="img/logo.png" width="207" height="59" alt=""></a>
+                    <!-- /logo -->
+
+                    <p class="slogan">На нашем сайте в подразделах купить, построить, жить и арендовать доступен поиск недвижимости. </p>
+
+                    <!-- weather -->
+                    <div class="weather">
+                        <img src="pic/pic2.jpg" width="385" height="49" alt="">
+                    </div>
+                    <!-- /weather -->
+
+                    <!-- main_menu -->
+                    <nav class="main_menu">
+                        <a href="#" class="menu_item1"><span>недвижимость</span></a>
+                        <a href="#" class="menu_item2"><span>строительство</span></a>
+                        <a href="#" class="menu_item3"><span>загородная жизнь</span></a>
+                        <a href="#" class="menu_item4"><span>форум</span></a>
+                        <a href="#">Рекламный пункт меню</a>
+                    </nav>
+                    <!-- /main_menu -->
+
+                </div>
+                <!-- /center_block -->
+
+
+
+            </header>
+            <!-- /header -->
+
+            <!-- site__content -->
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- site_wrap -->
+                    <div class="site_wrap">
+
+                        <!-- sort_block -->
+                        <form action="#" class="sort_block">
+
+                            <!-- deal -->
+                            <div class="deal">
+                                <span>Я хочу:</span>
+                                <div class="sort_but type_deal">
+                                    <a href="#">Купить</a>
+                                    <a href="#" class="active">Снять</a>
+                                    <input type="hidden" value="2">
+                                </div>
+                                <div class="sort_but type_place">
+                                    <a href="#">Дом</a>
+                                    <a href="#">Квартиру  </a>
+                                    <a href="#" class="active">Участок</a>
+                                    <input type="hidden" value="3">
+                                </div>
+                            </div>
+                            <!-- /deal -->
+
+                            <!-- price_sort -->
+                            <div class="price_sort">
+
+
+                                <label>Стоимость от</label>
+                                <input type="text" id="minCost" value="0"  />
+                                <label>до</label>
+                                <input type="text" id="maxCost" value="5000"  />
+                                <span>тыс. руб.
+                                    за сотку</span>
+
+                                <!-- sliderCont -->
+                                <div class="sliderCont">
+                                    <div id="slider"></div>
+                                </div>
+                                <!-- /sliderCont -->
+
+                            </div>
+                            <!-- /price_sort -->
+
+                            <!-- buts_add -->
+                            <div class="buts_add">
+                                <a href="#">Выбрать район</a>
+                                <a href="#">Удаленность от КАД</a>
+                            </div>
+                            <!-- /buts_add -->
+
+                            <!-- finish_block -->
+                            <div class="finish_block">
+                                <p class="sort_result">Найдено 365 объектов</p>
+                                <input type="submit" class="e_but" value="Начать поиск">
+                                <a href="#">Перейти к расширенному поиску</a>
+                            </div>
+                            <!-- /finish_block -->
+
+                            <!-- show_type -->
+                            <div class="show_type">
+                                <a href="#" class="line_type active"></a>
+                                <a href="#" class="block_type "></a>
+                                <a href="#" class="map_type "></a>
+                            </div>
+                            <!-- show_type -->
+
+                        </form>
+                        <!-- /sort_block -->
+
+                        <!-- content_site -->
+                        <div class="content_site">
+
+                            <!-- breadcrumbs -->
+                            <nav class="breadcrumbs">
+                                <a href="#">Главная</a>
+                                <a href="#">Недвижимость</a>
+                                <a href="#">Котеджные поселки</a>
+                                <span>Карточка компании</span>
+                            </nav>
+                            <!-- /breadcrumbs -->
+
+                            <!-- company -->
+                            <div class="company">
+                                <img src="pic/pic35.png" width="228" height="228" alt="pic">
+                                <h1>ООО Кивенапа</h1>
+
+                                <!-- company__description -->
+                                <ul class="company__description">
+                                    <li>
+                                        <dl>
+                                            <dt>Рейтинг компании:</dt>
+                                            <dd>
+                                                <!-- company__rating -->
+                                                <div class="company__rating"><div style="width: 71%;"></div></div>
+                                                <!-- /company__rating -->
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Статус авторизации:</dt>
+                                            <dd class="logged">авторизован</dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Адрес:</dt>
+                                            <dd>8-ая Парковая, д. 10</dd>
+
+                                        </dl>
+                                        <dl>
+                                            <dt>Телефон:</dt>
+                                            <dd>7 555 096 94 25</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Сайт:</dt>
+                                            <dd><a href="#">kivennapa.ru</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li>
+                                        <dl>
+                                            <dt>Коттеджные поселки:</dt>
+                                            <dd><a href="#">Кивенапа Юг</a>, <a href="#">Кивенапа Север</a></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                                <!-- /company__description -->
+
+                                <!-- company__links -->
+                                <div class="company__links">
+                                    <a class="company__favorites" href="#">В избранное</a>
+                                    <a class="company__print" href="#">Печать</a>
+                                </div>
+                                <!-- /company__links -->
+
+                            </div>
+                            <!-- /company -->
+
+                            <!-- about_company -->
+                            <div class="about_company">
+                                <h2>описание компании</h2>
+                                <p>Новый 3х этажный дом в поселке Новосаратовка. Рядом с домом имеется вся инфраструтура: муниципальные школа и садик(отличный, сейчас туда ходит наш ребенок), магазин с продуктами, аптека, свежие фрукты и овощи.</p>
+                                <p>Сам дом построен по специальному проекту в 2009 году.  Новый 3х этажный дом в поселке Новосаратовка. Рядом с домом имеется вся инфраструтура: муниципальные школа и садик(отличный, сейчас туда ходит наш ребенок), магазин с продуктами, аптека, свежие фрукты и овощи.
+                                    Сам дом построен по специальному проекту. Новый 3х этажный дом в поселке Новосаратовка. Рядом с домом имеется вся инфраструтура: муниципальные школа и садик(отличный, сейчас туда ходит наш ребенок), магазин с продуктами, аптека, свежие фрукты и овощи. Сам дом построен по специальному проекту.</p>
+                            </div>
+                            <!-- /about_company -->
+
+                            <!-- contacting_links -->
+                            <div class="contacting_links">
+                                <a class="contacting__share" href="#">Поделится с друзьями</a>
+                                <a class="contacting__complain" href="#">Пожаловаться на объявление</a>
+                                <a class="contacting__company" href="#">Связаться с компанией</a>
+                                <a class="contacting__back" href="#">Вернуться к списку компаний</a>
+                            </div>
+                            <!-- /contacting_links -->
+
+                            <!-- cottage -->
+                            <div class="cottage">
+                                <h2>Коттеджные поселки продавца</h2>
+
+                                <!-- cottage__villages -->
+                                <ul class="cottage__villages">
+                                    <li>
+                                        <a href="#">
+                                            <img src="pic/pic43.png" width="202" height="133" alt="village">
+                                            <span>Кивенапа-Север</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="pic/pic44.png" width="202" height="133" alt="village">
+                                            <span>Кивенапа-Юг</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="pic/pic45.png" width="202" height="133" alt="village">
+                                            <span>Кивенапа</span>
+                                        </a>
+                                    </li>
+                                    <li class="cottage__all">
+                                        <a href="#">Смотреть все объекты</a>
+                                    </li>
+                                </ul>
+                                <!-- cottage__villages -->
+
+                            </div>
+                            <!-- /cottage -->
+
+                            <!-- comments -->
+                            <div class="comments">
+                                <h2>Комментарии</h2>
+
+                                <!-- comments__item -->
+                                <div class="comments__item">
+                                    <h3>Майкл</h3>
+                                    <img src="pic/comments1.png" width="64" height="64" alt="">
+                                    <time datetime="2014">Bчера, 16:00</time>
+                                    <span>#2</span>
+                                    <p>Новый 3х этажный дом в поселке Новосаратовка. Рядом с домом имеется вся
+                                        инфраструтура: муниципальные школа и садик(отличный, сейчас туда ходит наш
+                                        ребенок), магазин с продуктами, аптека, свежие фрукты и овощи.</p>
+
+                                    <!-- plus-minus -->
+                                    <div class="plus-minus">
+                                        <input type="button" class="plus-minus__plus" value=" ">
+                                        <input type="text" value="1">
+                                        <input type="button" class="plus-minus__minus" value=" ">
+                                    </div>
+                                    <!-- /plus-minus -->
+
+                                </div>
+                                <!-- /comments__item -->
+
+                                <!-- comments__item -->
+                                <div class="comments__item">
+                                    <h3>Майкл</h3>
+                                    <img src="pic/comments2.png" width="64" height="64" alt="">
+                                    <time datetime="2014">Bчера, 16:00</time>
+                                    <span>#2</span>
+                                    <p>Магазин с продуктами, аптека, свежие фрукты и овощи.</p>
+
+                                    <!-- plus-minus -->
+                                    <div class="plus-minus">
+                                        <input type="button" class="plus-minus__plus" value=" ">
+                                        <input type="text" value="1">
+                                        <input type="button" class="plus-minus__minus" value=" ">
+                                    </div>
+                                    <!-- /plus-minus -->
+
+                                </div>
+                                <!-- /comments__item -->
+
+                                <!-- comments__add -->
+                                <a class="comments__add" href="#">Авторизоваться и оставить комментарий</a>
+                                <!-- /comments__add -->
+
+                            </div>
+                            <!-- /comments -->
+
+                        </div>
+                        <!-- content_site -->
+
+                        <!-- site__right_aside -->
+                        <div class="site__right_aside">
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container">
+                                <img src="pic/pic5.jpg" width="230" height="398" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+                                <img src="pic/pic6.jpg" width="230" height="120" alt="">
+                            </a>
+                            <!-- /banner_container -->
+
+                            <!-- editor-choice -->
+                            <div class="editor-choice">
+                                <h2>Выбор редакции</h2>
+                                <a href="#">"Лукоморье" - финалист премии "Поселок года - 2013"</a>
+                                <a href="#">"Лукоморье" - финалист премии "Поселок года - 2013"</a>
+                                <a href="#">"Лукоморье" - финалист премии "Поселок года - 2013"</a>
+                            </div>
+                            <!-- /editor-choice -->
+
+                            <!-- banner_container -->
+                            <a href="#" class="banner_container2">
+
+                                <!-- text-banner -->
+                                <div class="text-banner">
+                                    <h2>Внутренний баннер</h2>
+                                    <p>с возможностью добавления текста</p>
+                                </div>
+                                <!-- /text-banner -->
+
+                            </a>
+                            <!-- /banner_container -->
+
+                        </div>
+                        <!-- /site__right_aside -->
+
+                    </div>
+                    <!-- /site_wrap -->
+
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+            <!-- /site__content -->
+
+        </div>
+        <!-- /site_wrap -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- site_wrap -->
+        <div class="site_wrap">
+
+            <!-- footer__layout -->
+            <div class="footer__layout">
+
+                <!-- center_block -->
+                <div class="center_block">
+
+                    <p class="copy">&copy; 2013 Загородный дом</p>
+
+                    <a href="tel:88006234187" class="footer_tel">8 (800) 623 41 87</a>
+
+                    <!-- social -->
+                    <dl class="social">
+                        <dt>Контакты</dt>
+                        <dd><a href="#" class="facebook" title="facebook">facebook</a> </dd>
+                        <dd><a href="#" class="vkontakte" title="vkontakte">vkontekte</a> </dd>
+                        <dd><a href="#" class="youtube" title="youtube">youtube</a> </dd>
+                        <dd><a href="#" class="twitter" title="twitter">twitter</a> </dd>
+                    </dl>
+                    <!-- /social -->
+
+                    <!-- footer_menu -->
+                    <ul class="footer_menu">
+                        <li><a href="#">Недвижимость</a> </li>
+                        <li><a href="#">Статьи</a> </li>
+                        <li><a href="#">Реклама на сайте</a> </li>
+                        <li><a href="#">Строительство</a> </li>
+                        <li><a href="#">Новости</a> </li>
+                        <li><a href="#">О проекте</a> </li>
+                        <li><a href="#">Загородная жизнь</a> </li>
+                        <li><a href="#">Журнал</a> </li>
+                        <li><a href="#">Правила использования</a> </li>
+                        <li><a href="#">Форум</a> </li>
+                    </ul>
+                    <!-- /footer_menu -->
+
+                    <!-- personal_menu -->
+                    <div class="personal_menu">
+                        <a href="#">Избранное  <span>5</span></a>
+                        <a href="#">Блокнот</a>
+                        <a href="#">Стол заказов <span>3</span></a>
+                    </div>
+                    <!-- /personal_menu -->
+
+                    <!-- footer_bottom -->
+                    <div class="footer_bottom">
+
+                        <!-- counters -->
+                        <ul class="counters">
+                            <li><img src="pic/pic3.jpg" width="77" height="27" alt=""></li>
+                            <li><img src="pic/pic4.jpg" width="70" height="25" alt=""></li>
+                        </ul>
+                        <!-- /counters -->
+
+                        <!-- creaters -->
+                        <dl class="creaters">
+                            <dt><img src="img/creaters.png" width="56" height="10" alt=""></dt>
+                            <dd><a href="#">разработка сайта</a> </dd>
+                        </dl>
+                        <!-- /creaters -->
+
+                        <!-- footer_search -->
+                        <form class="footer_search">
+                            <input type="search" placeholder="Поиск по сайту">
+                            <input type="submit" class="footer_search_but">
+                        </form>
+                        <!-- footer_search -->
+
+
+
+                    </div>
+                    <!-- /footer_bottom -->
+
+                </div>
+                <!-- /center_block -->
+
+            </div>
+            <!-- /footer__layout -->
+
+
+        </div>
+        <!-- /site_wrap -->
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

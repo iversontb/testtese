@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/range.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script type="text/javascript" src="js/jquery.checkbox.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/slider-range.js"></script>
+
+
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+
+
+<!-- site -->
+<div class="site">
+
+<!-- message -->
+<div class="message">
+    Срочное сообщение, которое сообщает о каком-то <a href="#">событии!</a>
+    <a href="#" class="close" title="close">close</a>
+</div>
+<!-- /message -->
+
+<!-- header -->
+<header class="header inner_header">
+
+    <!-- header_top -->
+    <div class="header_top">
+
+        <div class="block_inside">
+
+            <!-- logo -->
+            <a href="#" title="На главную" class="logo"><img src="img/logo.png" width="175" height="47" alt=""></a>
+            <!-- /logo -->
+
+
+            <!-- wrap_mainMenu -->
+            <div class="wrap_mainMenu">
+                <table class="mainMenu">
+                    <tbody>
+                    <tr>
+                        <td><a href="tel:702-33-22" class="phone">702-33-22</a></td>
+
+                        <td><a href="#">Битвы</a></td>
+                        <td><a href="#">Купить скидку</a></td>
+                        <td><a href="#" class="instagram">instagram</a></td>
+                        <td><form class="header_search" action="#"><input type="text"/></form></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //wrap_mainMenu -->
+
+        </div>
+
+    </div>
+    <!-- /header_top -->
+
+    <!-- header_banner -->
+    <div class="header_banner"><img src="img/header_banner.jpg" height="150" alt=""/></div>
+    <!-- /header_banner -->
+
+    <!-- subMenu -->
+    <nav class="subMenu">
+        <ol id="nav">
+            <li><a href="#" class="active"><div>Выберите ресторан</div></a></li>
+            <li><a href="#"><div>Посмотрите меню</div></a></li>
+            <li><a href="#"><div>Сделайте заказ</div></a></li>
+            <li><a href="#" class="lastMenu"><div>Встречайте курьера</div></a></li>
+        </ol>
+    </nav>
+    <!-- /subMenu -->
+
+</header>
+<!-- /header -->
+
+<!-- site__content -->
+<div class="site__content">
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+<!-- grayBlock -->
+<div class="grayBlock">
+    <!-- wrapBox -->
+    <div class="wrapBox">
+
+        <!-- leftSide -->
+        <aside class="leftSide">
+
+            <!-- search -->
+            <form action="#" method="post" class="search">
+                <input type="text" placeholder="Поиск по названию">
+                <input type="submit">
+            </form>
+            <!-- /search -->
+
+            <!-- help -->
+            <dl class="help">
+                <dt>Помощь: </dt>
+                <dd><span>8 (812) </span>702-33-22</dd>
+            </dl>
+            <!-- /help -->
+
+            <!-- sortForm -->
+            <form class="sortForm" action="#" method="post">
+
+                <!-- checkBoxContainer -->
+                <div class="checkBoxContainer">
+
+
+                    <div class="lineContainer">
+
+                        <input id="1" class="niceCheck"  type="checkbox" name="ch1" />
+                        <label for="1">Все рестораны</label>
+                    </div>
+
+                    <div class="lineContainer">
+                        <input id="2" class="niceCheck" type="checkbox" name="ch1" />
+                        <label for="2">Европейская кухня</label>
+                    </div>
+
+                    <div class="lineContainer">
+                        <input class="niceCheck" id="3" type="checkbox" name="ch1" />
+                        <label for="3">Русская кухня</label>
+                    </div>
+
+                    <div class="lineContainer">
+                        <input class="niceCheck" id="4" type="checkbox" name="ch1" />
+                        <label for="4">Восточная кухня</label>
+                    </div>
+
+                    <div class="lineContainer">
+                        <input class="niceCheck" id="5" type="checkbox" name="ch1" />
+                        <label for="5">Китайская и японская</label>
+                    </div>
+
+                    <div class="lineContainer">
+                        <input class="niceCheck" id="6" type="checkbox" name="ch1" />
+                        <label for="6">Бургеры</label>
+                    </div>
+
+                    <div class="lineContainer">
+                        <input class="niceCheck" id="7" type="checkbox" name="ch1" />
+                        <label for="7">Пицца</label>
+                    </div>
+
+                    <div class="lineContainer">
+                        <input class="niceCheck" id="9" type="checkbox" name="ch1" />
+                        <label for="9">Суши</label>
+                    </div>
+
+                    <div class="lineContainer">
+                        <input class="niceCheck" id="10" type="checkbox" name="ch1" />
+                        <label for="10">Пироги</label>
+                    </div>
+
+                    <div class="lineContainer">
+                        <input class="niceCheck" id="11" type="checkbox" name="ch1" />
+                        <label for="11">Шашлыки</label>
+                    </div>
+
+                    <div class="lineContainer">
+                        <input class="niceCheck" id="12" type="checkbox" name="ch1" />
+                        <label for="12">Полезная еда</label>
+                    </div>
+
+                </div>
+                <!-- /checkBoxContainer -->
+
+                <p class="topicType2">Средний чек</p>
+
+                <div class="maxWrap">
+                    <span class="minPoint">200 Р</span>
+                    <span class="maxPoint">5000 Р</span>
+                </div>
+                <div id="slider"></div>
+
+                <input type="text" id="amount">
+
+
+                <!-- asideMenu -->
+                <div class="asideMenu">
+                    <a href="#" class="active">Все рестораны</a>
+
+                    <div class="butonsWrap">
+                        <a href="#">Все рестораны</a>
+                        <a href="#">Все рестораны</a>
+                        <a href="#">Все рестораны</a>
+                    </div>
+
+                </div>
+                <!-- /asideMenu -->
+
+                <!-- asideMenu -->
+                <div class="asideMenu">
+                    <a href="#"  class="active" >Любая кухня</a>
+                    <div class="butonsWrap">
+                        <a href="#">Все рестораны</a>
+                        <a href="#">Все рестораны</a>
+                        <a href="#">Все рестораны</a>
+                    </div>
+                </div>
+                <!-- /asideMenu -->
+
+                <!-- asideMenu -->
+                <div class="asideMenu">
+                    <a href="#"  class="active">Любое блюдо</a>
+                    <div class="butonsWrap">
+                        <a href="#">Все рестораны</a>
+                        <a href="#">Все рестораны</a>
+                        <a href="#">Все рестораны</a>
+                    </div>
+                </div>
+                <!-- /asideMenu -->
+
+                <!-- asideMenu -->
+                <div class="asideMenu">
+                    <a href="#"  class="active">Все особенности</a>
+                    <div class="butonsWrap">
+                        <a href="#">Все рестораны</a>
+                        <a href="#">Все рестораны</a>
+                        <a href="#">Все рестораны</a>
+                    </div>
+                </div>
+                <!-- /asideMenu -->
+
+            </form>
+            <!-- /sortForm -->
+
+        </aside>
+        <!-- /leftSide -->
+
+        <!-- contentBlock -->
+        <div class="contentBlock">
+
+            <!-- ypurPlace -->
+            <div class="ypurPlace">
+
+                <!-- changePlace -->
+                <form action="#" method="post" class="changePlace">
+                    <!-- lineContainer -->
+                    <div class="lineContainer">
+                        <span class="stationName">Ваша станция метро</span>
+                        <!-- mapPlace -->
+                        <span href="#" class="mapPlace">
+
+                            <span>карта доставки</span>
+
+                            <!-- mapContainer -->
+                            <div class="mapContainer">
+                                <div class="map">
+                                    <img src="pic/pic15.jpg" width="549" height="420" alt="">
+                                </div>
+                                <span><span class="redBlock"></span>Бесплатная доставка от 600р,на меньшую сумму доставка 210р. с 11:00 до 23:00</span>
+                                <span><span class="blueBlock"></span>Бесплатная доставка от 600р,на меньшую сумму доставка 210р. с 11:00 до 23:00</span>
+                                <span><span class="yellowBlock"></span>Доставка от 3000р(бесплатная) с 11.00 до 23.00</span>
+                                <span><span class="greenBlock"></span>	Бесплатная доставка от 600р,на меньшую сумму доставка 210р. с 11:00 до 23:00</span>
+                            </div>
+                            <!-- /mapContainer -->
+
+                        </span>
+                        <!-- /mapPlace -->
+                    </div>
+                    <!-- /lineContainer -->
+                    <!-- asideMenu -->
+                    <div class="asideMenu">
+                        <a href="#"  class="active" >Любая кухня</a>
+                        <div class="butonsWrap">
+                            <a href="#">Все рестораны</a>
+                            <a href="#">Все рестораны</a>
+                            <a href="#">Все рестораны</a>
+                        </div>
+                    </div>
+                    <!-- /asideMenu -->
+
+                    <!-- yourTown -->
+                    <dl class="yourTown">
+                        <dt>Ваш город: </dt>
+                        <dd><a href="#"><span>Санкт-Петербург</span></a> </dd>
+                    </dl>
+                    <!-- /yourTown -->
+
+                    <input type="submit" class="eBut" value="Готово">
+
+
+                </form>
+                <!-- /changePlace -->
+
+                <!-- mapInfo -->
+                <div class="mapInfo">
+                    <div class="map">
+                        <img src="pic/pic10.jpg" width="100%" height="163">
+                    </div>
+
+                    <!-- mapAnswer -->
+                    <div class="mapAnswer">
+                        <b>134 Ресторана</b> с доставкой на Адмиралтейскую
+                    </div>
+                    <!-- /mapAnswer -->
+
+                </div>
+                <!-- /mapInfo -->
+
+
+
+            </div>
+            <!-- /ypurPlace -->
+
+            <!-- crumbs -->
+            <div class="crumbs">
+                <a href="#">Главная </a>
+                <a href="#">Каталог ресторанов </a>
+                <span>Адмиралтейская</span>
+            </div>
+            <!-- /crumbs -->
+
+
+            <!-- magazineBlock -->
+            <div class="magazineBlock">
+
+                <!-- magazinePlace -->
+                <div class="magazinePlace">
+
+                    <a href="#">
+                        <img src="pic/pic11.jpg" width="148" height="149" alt="">
+                    </a>
+                    <address>Лидерсовский бул., 17
+                        Невский просп. 85
+                        Краснова 47а</address>
+                    <a href="#">все адреса</a>
+
+                </div>
+                <!-- /magazinePlace -->
+
+                <!-- magazineDelivery -->
+                <div class="magazineDelivery">
+
+                    <h2><a href="#">Доставка Ростикс KFC</a> </h2>
+                    <p>Бургеры и курица из Кентукки. Острые куриные крылышки, куски курицы, бургеры с курицей: твистер, зингер,
+                        боксмастер, картошка фри с доставкой.</p>
+
+                    <div class="wrapBlock">
+                        <!-- foodType -->
+                        <div class="foodType">
+                            <a href="#">Фаст-фуд</a>,
+                            <a href="#">сытная</a>,
+                            <a href="#">вегетарианская</a>,
+                            <a href="#">бургеры</a>,
+                            <a href="#">салаты</a>,
+                            <a href="#">напитки</a>
+                        </div>
+                        <!-- /foodType -->
+
+                        <p class="freeDelivery">Бесплатная доставка от 500 P</p>
+                    </div>
+
+                    <!-- payType -->
+                    <dl class="payType">
+                        <dt >Варианты оплаты:</dt>
+                        <dd ><span class="pay1">Оплата по карте
+                            на сайте</span> </dd>
+                        <dd ><span  class="pay2">Оплата по карте
+                            курьеру</span> </dd>
+                        <dd><span class="pay3">Сбербанк квитанция</span> </dd>
+
+                    </dl>
+                    <!-- /payType -->
+
+                    <!-- infoForClient -->
+                    <div class="infoForClient">
+                        <div class="info1">
+                            Время заказа
+                            <span>09:00 - 22:00</span>
+                        </div>
+                        <div class="info2">
+                            Время доставки
+                            <span>60-90 мин.</span>
+                        </div>
+                        <div class="info3">
+                            Стоимость доставки
+                            <span>350 P</span>
+                        </div>
+                        <div class="info4">
+                            Минимальная сумма
+                            <span>300 P</span>
+                        </div>
+                    </div>
+                    <!-- /infoForClient -->
+
+
+                </div>
+                <!-- /magazineDelivery -->
+
+            </div>
+            <!-- /magazineBlock -->
+
+            <!-- magazineBlock -->
+            <div class="magazineBlock">
+
+                <!-- magazinePlace -->
+                <div class="magazinePlace">
+
+                    <a href="#">
+                        <img src="pic/pic11.jpg" width="148" height="149" alt="">
+                    </a>
+                    <address>Лидерсовский бул., 17
+                        Невский просп. 85
+                        Краснова 47а</address>
+                    <a href="#">все адреса</a>
+
+                </div>
+                <!-- /magazinePlace -->
+
+                <!-- magazineDelivery -->
+                <div class="magazineDelivery">
+
+                    <h2><a href="#">Доставка Ростикс KFC</a> </h2>
+                    <p>Бургеры и курица из Кентукки. Острые куриные крылышки, куски курицы, бургеры с курицей: твистер, зингер,
+                        боксмастер, картошка фри с доставкой.</p>
+
+                    <div class="wrapBlock">
+                        <!-- foodType -->
+                        <div class="foodType">
+                            <a href="#">Фаст-фуд</a>,
+                            <a href="#">сытная</a>,
+                            <a href="#">вегетарианская</a>,
+                            <a href="#">бургеры</a>,
+                            <a href="#">салаты</a>,
+                            <a href="#">напитки</a>
+                        </div>
+                        <!-- /foodType -->
+
+                        <p class="freeDelivery">Бесплатная доставка от 500 P</p>
+                    </div>
+
+                    <!-- payType -->
+                    <dl class="payType">
+                        <dt >Варианты оплаты:</dt>
+                        <dd ><span class="pay1">Оплата по карте
+                            на сайте</span> </dd>
+                        <dd ><span  class="pay2">Оплата по карте
+                            курьеру</span> </dd>
+                        <dd><span class="pay3">Сбербанк квитанция</span> </dd>
+
+                    </dl>
+                    <!-- /payType -->
+
+
+                    <!-- infoForClient -->
+                    <div class="infoForClient">
+                        <div class="info1">
+                            Время заказа
+                            <span>09:00 - 22:00</span>
+                        </div>
+                        <div class="info2">
+                            Время доставки
+                            <span>60-90 мин.</span>
+                        </div>
+                        <div class="info3">
+                            Стоимость доставки
+                            <span>350 P</span>
+                        </div>
+                        <div class="info4">
+                            Минимальная сумма
+                            <span>300 P</span>
+                        </div>
+                    </div>
+                    <!-- /infoForClient -->
+
+
+                </div>
+                <!-- /magazineDelivery -->
+
+            </div>
+            <!-- /magazineBlock -->
+
+            <!-- magazineBlock -->
+            <div class="magazineBlock">
+
+                <!-- magazinePlace -->
+                <div class="magazinePlace">
+
+                    <a href="#">
+                        <img src="pic/pic11.jpg" width="148" height="149" alt="">
+                    </a>
+                    <address>Лидерсовский бул., 17
+                        Невский просп. 85
+                        Краснова 47а</address>
+                    <a href="#">все адреса</a>
+
+                </div>
+                <!-- /magazinePlace -->
+
+                <!-- magazineDelivery -->
+                <div class="magazineDelivery">
+
+                    <h2><a href="#">Доставка Ростикс KFC</a> </h2>
+                    <p>Бургеры и курица из Кентукки. Острые куриные крылышки, куски курицы, бургеры с курицей: твистер, зингер,
+                        боксмастер, картошка фри с доставкой.</p>
+
+                    <div class="wrapBlock">
+                        <!-- foodType -->
+                        <div class="foodType">
+                            <a href="#">Фаст-фуд</a>,
+                            <a href="#">сытная</a>,
+                            <a href="#">вегетарианская</a>,
+                            <a href="#">бургеры</a>,
+                            <a href="#">салаты</a>,
+                            <a href="#">напитки</a>
+                        </div>
+                        <!-- /foodType -->
+
+                        <p class="freeDelivery">Бесплатная доставка от 500 P</p>
+                    </div>
+
+                    <!-- payType -->
+                    <dl class="payType">
+                        <dt >Варианты оплаты:</dt>
+                        <dd ><span class="pay1">Оплата по карте
+                            на сайте</span> </dd>
+                        <dd ><span  class="pay2">Оплата по карте
+                            курьеру</span> </dd>
+                        <dd><span class="pay3">Сбербанк квитанция</span> </dd>
+
+                    </dl>
+                    <!-- /payType -->
+
+                    <!-- infoForClient -->
+                    <div class="infoForClient">
+                        <div class="info1">
+                            Время заказа
+                            <span>09:00 - 22:00</span>
+                        </div>
+                        <div class="info2">
+                            Время доставки
+                            <span>60-90 мин.</span>
+                        </div>
+                        <div class="info3">
+                            Стоимость доставки
+                            <span>350 P</span>
+                        </div>
+                        <div class="info4">
+                            Минимальная сумма
+                            <span>300 P</span>
+                        </div>
+                    </div>
+                    <!-- /infoForClient -->
+
+
+                </div>
+                <!-- /magazineDelivery -->
+
+            </div>
+            <!-- /magazineBlock -->
+
+            <!-- magazineBlock -->
+            <div class="magazineBlock">
+
+                <!-- magazinePlace -->
+                <div class="magazinePlace">
+
+                    <a href="#">
+                        <img src="pic/pic11.jpg" width="148" height="149" alt="">
+                    </a>
+                    <address>Лидерсовский бул., 17
+                        Невский просп. 85
+                        Краснова 47а</address>
+                    <a href="#">все адреса</a>
+
+                </div>
+                <!-- /magazinePlace -->
+
+                <!-- magazineDelivery -->
+                <div class="magazineDelivery">
+
+                    <h2><a href="#">Доставка Ростикс KFC</a> </h2>
+                    <p>Бургеры и курица из Кентукки. Острые куриные крылышки, куски курицы, бургеры с курицей: твистер, зингер,
+                        боксмастер, картошка фри с доставкой.</p>
+
+                    <div class="wrapBlock">
+                        <!-- foodType -->
+                        <div class="foodType">
+                            <a href="#">Фаст-фуд</a>,
+                            <a href="#">сытная</a>,
+                            <a href="#">вегетарианская</a>,
+                            <a href="#">бургеры</a>,
+                            <a href="#">салаты</a>,
+                            <a href="#">напитки</a>
+                        </div>
+                        <!-- /foodType -->
+
+                        <p class="freeDelivery">Бесплатная доставка от 500 P</p>
+                    </div>
+
+                    <!-- payType -->
+                    <dl class="payType">
+                        <dt >Варианты оплаты:</dt>
+                        <dd ><span class="pay1">Оплата по карте
+                            на сайте</span> </dd>
+                        <dd ><span  class="pay2">Оплата по карте
+                            курьеру</span> </dd>
+                        <dd><span class="pay3">Сбербанк квитанция</span> </dd>
+
+                    </dl>
+                    <!-- /payType -->
+
+
+                    <!-- infoForClient -->
+                    <div class="infoForClient">
+                        <div class="info1">
+                            Время заказа
+                            <span>09:00 - 22:00</span>
+                        </div>
+                        <div class="info2">
+                            Время доставки
+                            <span>60-90 мин.</span>
+                        </div>
+                        <div class="info3">
+                            Стоимость доставки
+                            <span>350 P</span>
+                        </div>
+                        <div class="info4">
+                            Минимальная сумма
+                            <span>300 P</span>
+                        </div>
+                    </div>
+                    <!-- /infoForClient -->
+
+
+                </div>
+                <!-- /magazineDelivery -->
+
+            </div>
+            <!-- /magazineBlock -->
+
+
+            <div class="parent">
+                <ul>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li>4</li>
+                    <li><a href="#">5</a></li>
+                    <li><a href="#">6</a></li>
+                </ul>
+            </div>
+
+
+
+
+        </div>
+        <!-- /contentBlock -->
+
+    </div>
+    <!-- /wrapBox -->
+
+</div>
+<!-- /grayBlock -->
+
+</div>
+<!-- /content-wrap -->
+
+</div>
+<!-- /site__content -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <!-- footerMenu -->
+        <ul class="footerMenu">
+
+            <li>
+                <a href="#">Доставка</a>
+            </li>
+            <li>
+                <a href="#">О компании</a>
+            </li>
+            <li>
+                <a href="#">Оплата</a>
+            </li>
+            <li>
+                <a href="#">Варианты оплаты</a>
+            </li>
+            <li>
+                <a href="#">Сотрудничество   </a>
+            </li>
+            <li>
+                <a href="#">Блог</a>
+            </li>
+            <li>
+                <a href="#">Рвбота у нас</a>
+            </li>
+            <li>
+                <a href="#">Отзывы и предложения </a>
+            </li>
+        </ul>
+        <!-- /footerMenu -->
+
+        <address class="address">197343, г. Санкт-Петербург, ул. Сердобольская д.7 Телефон <b>(812) 702-33-32</b></address>
+
+        <p class="copy">&copy; FastEda 2008-2013  <i>Все упомянутые на сайте тоговые марки принадлежат их уважаемым владельцам.
+            ООО «Провизия», ОГРН 1099847000109, ИНН 7839414284</i></p>
+
+        <dl class="creaters">
+            <dt>Дизайн сайта:</dt>
+            <dd><a href="#">сайтория.рф</a> </dd>
+        </dl>
+
+        <div class="social">
+            <a href="#" title="vkontakte" class="vkontakte">vkontakte</a>
+            <a href="#" title="facebook" class="facebook">facebook</a>
+            <a href="#" title="twitter" class="twitter">twitter</a>
+        </div>
+
+        <div class="stores">
+            <a href="#" class="appstore" title="appstore">appstore</a>
+            <a href="#" class="androidMarket" title="androidMarket">androidMarket</a>
+        </div>
+
+        <a href="#" class="upButton">Наверх</a>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

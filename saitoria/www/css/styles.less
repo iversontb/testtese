@@ -1,0 +1,134 @@
+/* Prototypes */
+.opacity(@value) {
+    -webkit-opacity: @value;
+     -khtml-opacity: @value;
+       -moz-opacity: @value;
+        -ms-opacity: @value;
+         -o-opacity: @value;
+            opacity: @value;
+    @opperc: @value * 100;
+    -ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(opacity=@{opperc})";
+    filter: ~"alpha(opacity=@{opperc})";
+}
+.box-shadow(...) {
+    -webkit-box-shadow: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+       -moz-box-shadow: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+        -ms-box-shadow: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+         -o-box-shadow: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+            box-shadow: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+}
+.transform(...) {
+    -webkit-transform: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+       -moz-transform: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+        -ms-transform: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+         -o-transform: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+            transform: ~`"@{arguments}".replace(/[\[\]]/g, '')`;
+}
+.transition-duration(@value) {
+    -webkit-transition-duration: @value;
+     -khtml-transition-duration: @value;
+       -moz-transition-duration: @value;
+        -ms-transition-duration: @value;
+         -o-transition-duration: @value;
+            transition-duration: @value;
+}
+.transition-delay(@value) {
+    -webkit-transition-delay: @value;
+     -khtml-transition-delay: @value;
+       -moz-transition-delay: @value;
+        -ms-transition-delay: @value;
+         -o-transition-delay: @value;
+            transition-delay: @value;
+}
+.transition-property(@property) {
+    -webkit-transition-property: @property;
+       -moz-transition-property: @property;
+        -ms-transition-property: @property;
+         -o-transition-property: @property;
+            transition-property: @property;
+}
+.transition-timing-function(@timing-function) {
+    -webkit-transition-timing-function: @timing-function;
+       -moz-transition-timing-function: @timing-function;
+        -ms-transition-timing-function: @timing-function;
+         -o-transition-timing-function: @timing-function;
+            transition-timing-function: @timing-function;
+}
+
+/* Default transition timing function */
+.navbar-nav > li > a,
+.navbar-nav > li > a .number,
+.testimonials,
+.services .item .graphic > .hover,
+.team .item,
+.team .item .social > li > a,
+.portfolio .item > .overlay,
+.resp-vtabs .resp-tabs-list li,
+.social-icons > a > img {
+    .transition-timing-function(cubic-bezier(0.13, 0.71, 0.30, 0.94));
+}
+
+/* Header, holds the navigation */
+.navbar-nav > li > a,
+.navbar-nav > li > a .number {
+    .transition-duration(1.5s);
+}
+.navbar-nav > li.active > a,
+.navbar-nav > li > a:hover .number,
+.portfolio .item > .overlay {
+    .transition-duration(0.35s);
+}
+
+/* Testimonials slider */
+.testimonials:not(.instant) {
+    .transition-property(height);
+    .transition-duration(0.35s);
+}
+
+/* Services section */
+.services .item .graphic > .hover {
+    .opacity(0);
+    .transform(scale(0, 0));
+    .transition-duration(1.5s);
+}
+.services .item:hover .graphic > .hover,
+.resp-vtabs .resp-tabs-list li {
+    .transition-duration(0.35s);
+}
+.services .item:hover .graphic > .hover {
+    .opacity(1);
+    .transform(scale(1));
+}
+
+/* Team section */
+.team .item {
+    .transition-duration(1.5s);
+}
+.team .item:hover {
+    .transition-duration(0.35s);
+}
+.team .item:hover .image {
+    .transition-duration(1s);
+    .transition-delay(0.2s);
+    .transform(rotateY(360deg));
+}
+.team .item .social > li > a {
+    .transition-duration(1.5s);
+}
+.team .item .social > li > a:hover {
+    .transition-duration(0.35s);
+}
+
+/* Portfolio section */
+.portfolio .flex-direction-nav a.flex-next,
+.portfolio .flex-direction-nav a.flex-prev {
+    .opacity(1);
+}
+
+/* Remove box shadow */
+.portfolio.flexslider,
+.flexslider.mini,
+.flexslider.mini .flex-control-paging li a,
+.flexslider.mini .flex-control-paging li a.flex-active {
+    .box-shadow(none);
+}

@@ -1,0 +1,447 @@
+body {
+    background: #f5f5f5 ;
+}
+.headBlack{
+    background: #3b3b3b;
+    margin-bottom: 0;
+}
+.site__content{
+    margin-top: 0;
+}
+/* --------------- logo --------------- */
+.headBlack .logo {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: url("../img/logo6.png") no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 19px;
+    text-indent: -5000px;
+}
+.headWhite .logo{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background: url("../img/logo7.png") no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 18px;
+    text-indent: -5000px;
+}
+
+.lineHave.notFullLine:after{
+    height: 68%;
+}
+/* --------------- /logo --------------- */
+
+.bayBut{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 106px;
+    height: 24px;
+    line-height: 25px;
+    border-radius: 15px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+.headBlack .bayBut{
+    color: #fff;
+    border: 2px solid #fff;
+
+}
+.gallKnowMore:hover{
+    color: #0baed3;
+    border: 2px solid #0baed3;
+}
+.headBlack .bayBut:hover,
+.headWhite .bayBut:hover{
+    color: #e6512c;
+    border: 2px solid #e6512c;
+
+}
+.headWhite .bayBut{
+    color: #333333;
+    border: 2px solid #333333;
+}
+.mainMenu{
+    left: 278px;
+}
+.headBlack .mainMenu a{
+    margin-right: 43px;
+}
+.headWhite .mainMenu a {
+    margin-right: 43px;
+}
+.slideWrap2{
+    position: relative;
+    background: url("../img/preloader.GIF") no-repeat center;
+}
+.gallKnowMore{
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 175px;
+    height: 35px;
+    line-height: 36px;
+    border-radius: 30px;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.slideWrap2 .downBut{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    z-index: 20;
+    margin-left: -22px;
+}
+.ticketCristmas{
+    background: url("../img/ticket.png");
+    width: 964px;
+    height: 161px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 58px;
+}
+.party_name{
+    width: 650px;
+    padding: 0 30px;
+    float: left;
+    text-align: center;
+    margin-top: 16px;
+}
+.party_name h2{
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 18px;
+}
+
+.party_name h1{
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+.party_name span{
+    background: #0baed3;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    padding: 4px 39px;
+}
+.numbersBlock{
+    position: relative;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.numbersBlock:after{
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    height: 0;
+    content: "";
+}
+.numbersBlock__item{
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+    vertical-align: top;
+    padding-top: 143px;
+    line-height: 22px;
+}
+.year{
+    background: url("../img/year.png") no-repeat top center;
+    background-size: 120px;
+
+}
+.river{
+    background: url("../img/rivers.png") no-repeat top center;
+    background-size: 120px;
+}
+.cherches{
+    background: url("../img/cherches.png") no-repeat top center;
+    background-size: 120px;
+}
+.distance{
+    background: url("../img/distance.png") no-repeat top center;
+    background-size: 120px;
+}
+.partyMap{
+    border-bottom: 1px solid #d9d9d9;
+    border-top: 1px solid #d9d9d9;
+    margin-bottom: 40px;
+}
+.partyMap img{
+    display: block;
+}
+.downBut{
+    display: block;
+    margin: 0 auto;
+    background: url("../img/down-arrow-sprite.png");
+    width: 44px;
+    height: 18px;
+    background-size: 44px;
+    text-indent: -5000px;
+    margin-bottom: 43px;
+}
+.downBut:hover{
+    background-position: 0 18px;
+}
+.party_coust{
+    float: right;
+    width: 225px;
+    padding-top: 26px;
+    text-align: center;
+}
+.party_price{
+    color: #fff;
+    font-size: 36px;
+}
+.party_price span{
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    display: block;
+}
+.party_coust .big_button{
+    margin: 0 auto;
+    margin-top: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+.programmWrap .simpleMenu li{
+    width: 50%;
+}
+.programmWrap .program{
+    color: #e6512c;
+    border-bottom: 2px solid #e6512c;
+}
+.programmWrap .program:hover{
+    color: #e6512c;
+    border-bottom: 2px solid #e6512c;
+}
+
+.tripBlock{
+    background: #d2eaf0;
+    padding: 15px 15px 0 15px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.tripBlock__left{
+    float: left;
+    width: 40%;
+    color: #333333;
+    font-size: 14px;
+}
+.tripBlock__right{
+    float: right;
+    width: 55%;
+    color: #333333;
+    font-size: 14px;
+}
+.tripBlock span{
+    padding-left: 30px;
+    display: inline-block;
+    min-height: 24px;
+    margin-bottom: 10px;
+    padding-top: 3px;
+
+}
+.tripBlock  .trip_ponter{
+    background: url("../img/trip-pointer.png") no-repeat 7px 0;
+    background-size: 13px 22px;
+}
+.tripBlock  .trip_phone{
+    background: url("../img/trip-phone.png") no-repeat;
+    background-size: 26px 17px;
+}
+.tripBlock  .trip_planet{
+    background: url("../img/trip-planet.png") no-repeat 3px 0;
+    background-size: 20px;
+}
+.tripBlock  .trip_list{
+    background: url("../img/trip-list.png") no-repeat 3px 0;
+    background-size: 18px;
+    padding-top: 0;
+}
+.tripBlock  .trip_time{
+    background: url("../img/trip-time.png") no-repeat;
+    background-size: 24px;
+    padding-top: 5px;
+}
+
+.eventText p{
+    margin-bottom: 30px;
+}
+.hideBlock:hover{
+    text-decoration: none;
+}
+.hideBlock{
+    background: url("../img/up-arrow.png") no-repeat  right 6px;
+    background-size: 7px 8px;
+    padding-right: 10px;
+    color: #0baed3;
+    font-size: 14px;
+   text-decoration: underline;
+}
+.hideBlock:hover{
+    color: #e6512c;
+    background: url("../img/up-arrow-hover.png") no-repeat  right 6px;
+    background-size: 7px 8px;
+
+}
+.attantion{
+    background: url("../img/attantion.png");
+    width: 800px;
+    height: 156px;
+    color: #fff;
+    padding: 30px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.attantion h2{
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.attantion p{
+    line-height: 18px;
+}
+.attantion p a:hover{
+    text-decoration: none;
+}
+.attantion p a{
+    color: #fff;
+    text-decoration: underline;
+}
+.footerMenu{
+    left: 160px;
+}
+.ares-slider2__item > img{
+    left: 50%;
+}
+.tabBlock{
+    display: none;
+}
+.firstTabBlock{
+    display: block;
+}
+
+
+.gallPlace{
+    display: inline-block;
+    vertical-align: top;
+    width: 226px;
+    height: 150px;
+}
+.gallPlace li:first-child{
+    display: block;
+}
+.gallPlace li{
+    position: relative;
+    display: block;
+    display: none;
+}
+.gallPlace a:after{
+    background: url("../img/photo.png");
+    width: 70px;
+    height: 54px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -27px 0 0 -35px;
+    content: "";
+}
+.topicType{
+    margin-top: 34px;
+}
+
+
+
+
+.eventText  .moreText{
+    display: inline-block;
+    margin-bottom: 50px;
+    width: 78px !important;
+}
+.eventText  .moreText:after{
+    top: 9px;
+}
+.hideBlock{
+    display: none;
+    margin-bottom: 50px;
+}
+.eventText  .hideBlock{
+    background-position: right 3px;
+}
+.eventText p{
+    margin-bottom: 16px;
+}
+
+
+
+.popup{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    display: none;
+}
+.popupBack{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    background: rgba(0,0,0,0.5);
+}
+.popupContainer{
+    background: #fff;
+    padding: 62px;
+    z-index: 10;
+    position: relative;
+    width: 676px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+.popupContainer h2{
+    font-family: intro;
+    font-weight: normal;
+    -webkit-text-stroke: 0.35px;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+.popupContainer h3{
+    color: #0baed3;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.popupContainer p{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+.closeDoc:hover{
+    text-decoration: none;
+}
+.butContainer {
+    text-align: center;
+}
+.closeDoc{
+
+    color: #0baed3;
+    text-decoration: underline;
+}

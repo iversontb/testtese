@@ -1,0 +1,765 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    content-wrap
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #c7c4bb;
+}
+:-moz-placeholder {
+    color: #c7c4bb;
+}
+.placeholder {
+    color: #c7c4bb;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Font Name";
+    src: url("../fonts/font.woff") format("woff");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- body --------------- */
+body{
+    background: url("../img/bkg_site.jpg") repeat left top;
+}
+body:before{
+    content: '';
+    position: absolute;
+    background: url("../img/bkg_header.png") no-repeat center top;
+    width: 100%;
+    height: 490px;
+}
+body:after{
+    content: '';
+    position: absolute;
+    background: url("../img/bkg_why_we.png") no-repeat center top;
+    width: 100%;
+    height: 333px;
+    top: 811px;
+}
+/* --------------- /body --------------- */
+
+/* --------------- site --------------- */
+.site {
+    margin: 0 auto;
+    width: 936px;
+    min-height: 100%;
+    min-width: 1000px;
+    position: relative;
+    z-index: 1;
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 100px;
+}
+.site__content {
+
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+    height: 490px;
+    margin-bottom: 21px;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 267px;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- slogan --------------- */
+.slogan{
+    font-family: "Tahoma";
+    font-size: 18px;
+    color: #eac546;
+    margin-top: 47px;
+    margin-left: 31px;
+    display: inline-block;
+}
+/* --------------- /slogan --------------- */
+
+/* --------------- phone --------------- */
+.phone{
+    display: inline-block;
+    position: absolute;
+    right: 71px;
+    top: 24px;
+    font-family: "Tahoma";
+}
+.phone span:first-child{
+    font-size: 23px;
+    color: #eac546;
+    vertical-align: bottom;
+    margin-top: 28px;
+    margin-right: 21px;
+}
+.phone span{
+    font-size: 34px;
+    color: #7ecd9a;
+    display: inline-block;
+    vertical-align: top;
+    word-spacing: 3px;
+}
+.phone .order_call{
+    position: absolute;
+    top: 37px;
+    right: 7px;
+    font-size: 12px;
+    color: #eac546;
+    text-decoration: underline;
+}
+.phone .order_call:hover{
+    text-decoration: none;
+}
+/* --------------- /phone --------------- */
+
+/* --------------- pop_up --------------- */
+.pop_up{
+    background: #ffffff;
+    position: fixed;
+    left: 50%;
+    margin-left: -130px;
+    z-index: 20;
+    top: 100px;
+    width: 260px;
+    padding: 30px;
+    border-radius: 6px;
+    display: none;
+}
+.pop_up .close{
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    width: 21px;
+    height: 22px;
+    background: url("../img/close.png") no-repeat;
+    cursor: pointer;
+}
+.pop_up h2{
+    font-family: "Arial";
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 19px;
+    text-align: center;
+}
+.pop_up span{
+    font-family: "Tahoma";
+    font-size: 14px;
+    color: #126730;
+    margin-bottom: 34px;
+    text-align: center;
+}
+.pop_up form input[type="text"]{
+    display: block;
+    margin-top: 5px;
+    box-shadow: 0px 1px 5px 0px #c7c4bb inset;
+    height: 40px;
+    width: 240px;
+    margin-bottom: 11px;
+    margin-right: 29px;
+    border-radius: 6px;
+    background: #f8f7f5;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: Arial;
+    color: #000000;
+}
+.pop_up form input[type="submit"] {
+    border: none;
+    position: relative;
+    font-family: "Arial";
+    font-size: 30px;
+    color: #2b2213;
+    font-style: italic;
+    background: rgb(241,203,85);
+    background: -moz-linear-gradient(top, rgba(241,203,85,1) 0%, rgba(251,177,28,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,203,85,1)), color-stop(100%,rgba(251,177,28,1)));
+    background: -webkit-linear-gradient(top, rgba(241,203,85,1) 0%,rgba(251,177,28,1) 100%);
+    background: -o-linear-gradient(top, rgba(241,203,85,1) 0%,rgba(251,177,28,1) 100%);
+    background: -ms-linear-gradient(top, rgba(241,203,85,1) 0%,rgba(251,177,28,1) 100%);
+    background: linear-gradient(to bottom, rgba(241,203,85,1) 0%,rgba(251,177,28,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1cb55', endColorstr='#fbb11c',GradientType=0 );
+    border-top: 1px solid #f7e19e;
+    border-bottom: 1px solid #694a0c;
+    border-right: 1px solid #9e7215;
+    border-radius: 5px;
+    margin-top: 17px;
+    padding-top: 8px;
+    padding-left: 43px;
+    padding-bottom: 8px;
+    padding-right: 43px;
+}
+.pop_up form input[type="submit"]:hover{
+    background: rgb(239,191,45);
+    background: -moz-linear-gradient(top,  rgba(239,191,45,1) 0%, rgba(249,167,2,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(239,191,45,1)), color-stop(100%,rgba(249,167,2,1)));
+    background: -webkit-linear-gradient(top,  rgba(239,191,45,1) 0%,rgba(249,167,2,1) 100%);
+    background: -o-linear-gradient(top,  rgba(239,191,45,1) 0%,rgba(249,167,2,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(239,191,45,1) 0%,rgba(249,167,2,1) 100%);
+    background: linear-gradient(to bottom,  rgba(239,191,45,1) 0%,rgba(249,167,2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efbf2d', endColorstr='#f9a702',GradientType=0 );
+}
+/* --------------- /pop_up --------------- */
+
+/* --------------- content-wrap --------------- */
+.content-wrap {
+    padding-top: 10px;
+    width: 100%;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- send_request --------------- */
+.send_request{
+    margin-bottom: 31px;
+}
+.send_request h2{
+     font-family: "Arial";
+     font-size: 30px;
+     color: #000000;
+     font-style: italic;
+     font-weight: normal;
+     margin-bottom: 19px;
+     text-align: center;
+}
+.send_request p{
+    font-family: "Tahoma";
+    font-size: 14px;
+    color: #126730;
+    margin-bottom: 34px;
+    text-align: center;
+}
+.send_request form{
+    margin-left: 32px;
+    display: inline-block;
+    vertical-align: top;
+}
+.send_request form div{
+    font-family: "Tahoma";
+    font-size: 12px;
+    color: #000000;
+    display: inline-block;
+    vertical-align: top;
+}
+.send_request form input[type="text"]{
+    display: block;
+    margin-top: 5px;
+    border: 1px solid #818181;
+    height: 18px;
+    width: 308px;
+    margin-bottom: 17px;
+    margin-right: 29px;
+}
+.send_request form textarea{
+    display: block;
+    border: 1px solid #818181;
+    margin-top: 5px;
+    width: 308px;
+    height: 126px;
+    margin-right: 35px;
+}
+.send_request .send{
+    display: inline-block;
+    font-family: "Arial";
+    font-size: 30px;
+    color: #2b2213;
+    font-style: italic;
+    border-top: 1px solid #f5e3a6;
+    border-bottom: 1px solid #6b4401;
+    border-right: 1px solid #a06a08;
+    border-radius: 5px;
+    width: 241px;
+    height: 96px;
+    padding-top: 30px;
+    text-align: center;
+    margin-top: 16px;
+    box-shadow: -1px 17px 12px -13px #5a5140;
+    background: rgb(238,207,101);
+    background: -moz-linear-gradient(top,  rgba(238,207,101,1) 0%, rgba(254,161,4,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,207,101,1)), color-stop(100%,rgba(254,161,4,1)));
+    background: -webkit-linear-gradient(top,  rgba(238,207,101,1) 0%,rgba(254,161,4,1) 100%);
+    background: -o-linear-gradient(top,  rgba(238,207,101,1) 0%,rgba(254,161,4,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(238,207,101,1) 0%,rgba(254,161,4,1) 100%);
+    background: linear-gradient(to bottom,  rgba(238,207,101,1) 0%,rgba(254,161,4,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eecf65', endColorstr='#fea104',GradientType=0 );
+
+}
+.send_request .send:hover{
+    background: rgb(237,189,33);
+    background: -moz-linear-gradient(top,  rgba(237,189,33,1) 0%, rgba(255,123,0,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,189,33,1)), color-stop(100%,rgba(255,123,0,1)));
+    background: -webkit-linear-gradient(top,  rgba(237,189,33,1) 0%,rgba(255,123,0,1) 100%);
+    background: -o-linear-gradient(top,  rgba(237,189,33,1) 0%,rgba(255,123,0,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(237,189,33,1) 0%,rgba(255,123,0,1) 100%);
+    background: linear-gradient(to bottom,  rgba(237,189,33,1) 0%,rgba(255,123,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edbd21', endColorstr='#ff7b00',GradientType=0 );
+
+}
+/* --------------- /send_request --------------- */
+
+/* --------------- why_we --------------- */
+.why_we{
+    position: relative;
+    padding-top: 17px;
+    margin-bottom: 85px;
+}
+.why_we h2{
+    position: relative;
+    margin-left: 188px;
+    font-family: "Arial";
+    font-size: 33px;
+    color: #ffffff;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+.why_we ul{
+    position: relative;
+    margin-left: 21px;
+    margin-right: 93px;
+    counter-reset: li;
+}
+.why_we ul li:before{
+    content: '0' counter(li);
+    counter-increment: li;
+    font-family: "Arial";
+    font-size: 36px;
+    color: #ffca15;
+    font-style: italic;
+    vertical-align: middle;
+    margin-right: 23px;
+}
+.why_we ul li{
+    font-family: "Tahoma";
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    vertical-align: middle;
+    border-top: 1px solid #90b04e;
+    padding-left: 38px;
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+.why_we ul li:first-child{
+    border-top: none;
+    padding-top: 0;
+}
+/* --------------- /why_we --------------- */
+
+/* --------------- callback --------------- */
+.callback{
+    margin-bottom: 85px;
+    position: relative;
+    z-index: 4;
+}
+.callback h2{
+    font-family: "Arial";
+    font-size: 30px;
+    color: #000000;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.callback form{
+    position: relative;
+    display: inline-block;
+}
+.callback form div{
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Tahoma";
+    font-size: 12px;
+    color: #000000;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 200px;
+}
+.callback form div input[type="text"]{
+    display: block;
+    margin-top: 5px;
+    border: 1px solid #818181;
+    height: 18px;
+    width: 308px;
+    margin-bottom: 11px;
+    margin-right: 14px;
+}
+.callback form input[type="submit"]{
+    border: none;
+    position: relative;
+    font-family: "Arial";
+    font-size: 30px;
+    color: #2b2213;
+    font-style: italic;
+    background: rgb(241,203,85);
+    background: -moz-linear-gradient(top,  rgba(241,203,85,1) 0%, rgba(251,177,28,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(241,203,85,1)), color-stop(100%,rgba(251,177,28,1)));
+    background: -webkit-linear-gradient(top,  rgba(241,203,85,1) 0%,rgba(251,177,28,1) 100%);
+    background: -o-linear-gradient(top,  rgba(241,203,85,1) 0%,rgba(251,177,28,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(241,203,85,1) 0%,rgba(251,177,28,1) 100%);
+    background: linear-gradient(to bottom,  rgba(241,203,85,1) 0%,rgba(251,177,28,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1cb55', endColorstr='#fbb11c',GradientType=0 );
+    border-top: 1px solid #f7e19e;
+    border-bottom: 1px solid #694a0c;
+    border-right: 1px solid #9e7215;
+    border-radius: 5px;
+    margin-top: 17px;
+    padding-top: 11px;
+    padding-left: 25px;
+    padding-bottom: 17px;
+    padding-right: 24px;
+}
+.callback form input[type="submit"]:hover{
+    background: rgb(239,191,45);
+    background: -moz-linear-gradient(top,  rgba(239,191,45,1) 0%, rgba(249,167,2,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(239,191,45,1)), color-stop(100%,rgba(249,167,2,1)));
+    background: -webkit-linear-gradient(top,  rgba(239,191,45,1) 0%,rgba(249,167,2,1) 100%);
+    background: -o-linear-gradient(top,  rgba(239,191,45,1) 0%,rgba(249,167,2,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(239,191,45,1) 0%,rgba(249,167,2,1) 100%);
+    background: linear-gradient(to bottom,  rgba(239,191,45,1) 0%,rgba(249,167,2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efbf2d', endColorstr='#f9a702',GradientType=0 );
+}
+.callback form:after{
+    content: '';
+    position: absolute;
+    background: url("../img/phone.png") no-repeat;
+    width: 87px;
+    height: 147px;
+    top: -79px;
+    right: -42px;
+}
+.callback form:before{
+    content: '';
+    position: absolute;
+    background: url("../img/shadow.png") no-repeat;
+    width: 165px;
+    height: 15px;
+    bottom: -1px;
+    right: 8px;
+}
+/* --------------- /callback --------------- */
+
+/* --------------- reviews --------------- */
+.reviews{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    margin-bottom: 3px;
+}
+.reviews:before{
+    position: absolute;
+    content: '';
+    background: url("../img/bkg_reviews.png") no-repeat left top;
+    width: 1068px;
+    height: 385px;
+    z-index: 0;
+    top: -124px;
+    left: -97px;
+}
+.reviews h2{
+    position: relative;
+    font-family: "Arial";
+    font-size: 30px;
+    color: #ffffff;
+    font-style: italic;
+    font-weight: normal;
+    margin-bottom: 22px;
+}
+.reviews h2+div:before{
+    background: none;
+}
+.reviews>div:before{
+    position: absolute;
+    content: '';
+    background: url("../img/separator.png") no-repeat left top;
+    width: 222px;
+    height: 169px;
+    top: -4px;
+    left: -114px;
+}
+.reviews>div{
+    position: relative;
+    display: inline-block;
+    width: 340px;
+    text-align: left;
+    padding-left: 56px;
+    padding-right: 30px;
+}
+.reviews div span{
+    font-family: "Arial";
+    font-size: 18px;
+    color: #ffffff;
+    font-style: italic;
+    margin-bottom: 16px;
+    display: inline-block;
+}
+.reviews div .stars{
+    background: url("../img/unactive.png") no-repeat left top;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    width: 75px;
+    height: 17px;
+    margin-left: 178px;
+    padding: 0;
+}
+.reviews div .stars>div{
+    background: url("../img/active.png") no-repeat left top;
+    width: 75px;
+    height: 17px;
+}
+.reviews div p{
+    font-family: "Tahoma";
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 18px;
+}
+/* --------------- /reviews --------------- */
+
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    width: 936px;
+    margin: 0 auto;
+}
+.footer__layout {
+    width: 100%;
+    height: 100px;
+}
+/* --------------- /footer --------------- */
+
+/* --------------- social_networks --------------- */
+.social_networks{
+    position:absolute;
+    top: 5px;
+    left: 20px;
+}
+.social_networks a{
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-left: 10px;
+    transition: all 0.1s ease-in 0.1s;
+    -webkit-transition: all 0.1s ease-in 0.1s;
+    -o-transition: all 0.1s ease-in 0.1s;
+    -moz-transition: all 0.1s ease-in 0.1s;
+}
+
+.social_networks a:first-child{
+    margin-left: 0;
+}
+.social_networks a.twitter{
+    background: url("../img/social.png") left top no-repeat;
+}
+.social_networks a.vk{
+    background: url("../img/social.png") -62px top no-repeat;
+}
+.social_networks a.facebook{
+    background: url("../img/social.png") -125px top no-repeat;
+}
+
+.social_networks a:hover{
+    position: relative;
+    top: -2px;
+}
+/* --------------- /social_networks --------------- */
+
+/* --------------- up --------------- */
+.up{
+    cursor: pointer;
+    margin-left: 380px;
+    padding-left: 59px;
+    padding-top: 13px;
+    padding-bottom: 16px;
+    padding-right: 59px;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    font-style: italic;
+    color: #453215;
+    font-size: 24px;
+    background: rgb(254,197,32);
+    background: -moz-linear-gradient(top,  rgba(254,197,32,1) 0%, rgba(226,135,1,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,197,32,1)), color-stop(100%,rgba(226,135,1,1)));
+    background: -webkit-linear-gradient(top,  rgba(254,197,32,1) 0%,rgba(226,135,1,1) 100%);
+    background: -o-linear-gradient(top,  rgba(254,197,32,1) 0%,rgba(226,135,1,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(254,197,32,1) 0%,rgba(226,135,1,1) 100%);
+    background: linear-gradient(to bottom,  rgba(254,197,32,1) 0%,rgba(226,135,1,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fec520', endColorstr='#e28701',GradientType=0 );
+    border-top: 1px solid #fede7e;
+    border-bottom: 1px solid #a05f01;
+    border-radius: 4px;
+    border-right: 1px solid #bc7806;
+}
+.up:hover{
+    background: rgb(255,166,33);
+    background: -moz-linear-gradient(top,  rgba(255,166,33,1) 0%, rgba(224,87,2,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,166,33,1)), color-stop(100%,rgba(224,87,2,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,166,33,1) 0%,rgba(224,87,2,1) 100%);
+    background: -o-linear-gradient(top,  rgba(255,166,33,1) 0%,rgba(224,87,2,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,166,33,1) 0%,rgba(224,87,2,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,166,33,1) 0%,rgba(224,87,2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa621', endColorstr='#e05702',GradientType=0 );
+}
+/* --------------- /up --------------- */
+
+/* --------------- number_phone --------------- */
+.number_phone{
+    display: inline-block;
+    position: absolute;
+    font-family: Tahoma;
+    font-size: 30px;
+    color: #1e1f1f;
+    top: 14px;
+    right: 14px;
+}
+/* --------------- /number_phone --------------- */

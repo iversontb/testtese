@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+    <script src="js/tween-max.min.js"></script>
+    <script src="js/jquery.path.js"></script>
+
+    <script src="js/jquery.main.js"></script>
+
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+
+    <script>
+
+        $(function(){
+            $('.deleteGoods').click( function(){
+                var butPosTop = $(this).offset().top;
+                var butPosLeft = $(this).offset().left;
+                $('.popDelete').css({'top':butPosTop, 'left':butPosLeft});
+                $('.popDelete').fadeIn();
+            });
+            $('.yesBut, .noBut').click( function(){
+                $('.popDelete').fadeOut();
+                return false;
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+<!-- site -->
+<div class="site">
+
+<div class="popDelete popContainer">
+    <p>Вы уверены?</p>
+    <ul class="butContainer">
+        <li><a href="#" class="yesBut">Да</a></li>
+        <li><a href="#" class="noBut">Нет</a></li>
+    </ul>
+</div>
+
+
+
+<div class="site__layout">
+<!-- header -->
+<header class="header">
+
+    <!-- logo -->
+    <h1 class="logo"><a href="index.html" title="main"><img src="img/logo.png" height="30" width="151" alt="mebel"></a></h1>
+    <!-- /logo -->
+
+    <div class="phoneWrap">
+        <address>
+            <a href="tel:+7 (812) 000-00-00">+7 (812) 000-00-00</a>
+        </address>
+    </div>
+
+
+
+
+
+</header>
+<!-- /header -->
+
+<div class="site__content insideType3">
+
+    <ul class="basketCrumbs">
+        <li><a href="#" class="home" title="home">home</a>></li>
+        <li>Ваша корзина</li>
+    </ul>
+    <h2 class="topic1">Мои покупки</h2>
+
+    <aside class="rightSideBar">
+
+        <!-- container -->
+        <div class="container">
+
+            <h3>Доставка </h3>
+
+            <div class="delivery">
+                <p>к 24.03.2013</p>
+                <span>Бесплатно!</span>
+            </div>
+
+        </div>
+        <!-- /container -->
+
+        <!-- container -->
+        <div class="container">
+
+            <h3>Сборка </h3>
+
+            <div class="assembly">
+                <p>В день доставки</p>
+                <span>Бесплатно!</span>
+            </div>
+
+        </div>
+        <!-- /container -->
+
+        <!-- container -->
+        <div class="container">
+
+            <h3>Есть вопросы? </h3>
+
+            <div class="callUs">
+                <p>Сразу звоните!</p>
+                <p>
+                    <a href="tel:+7 (812) 000-00-00" class="phone">+7 (812) 000-00-00</a>
+                </p>
+                <a href="#">Заказ звонка</a>
+            </div>
+
+        </div>
+        <!-- /container -->
+
+
+
+    </aside>
+<!-- content-wrap -->
+<div class="content-wrap">
+
+    <!-- basketContainer -->
+    <div class="basketContainer">
+
+    <div class="tableWrap">
+        <table>
+            <tbody>
+                <tr>
+                    <td class="imgtable">
+                        <!-- imgWrap -->
+                        <div class="imgWrap">
+                            <img src="pic/pic10.jpg" height="94" width="188" alt="">
+                        </div>
+                        <!-- /imgWrap -->
+                    </td>
+                    <td class="desriptionTable">
+                        <!-- shortDescript -->
+                        <div class="shortDescript">
+                            <p><a href="#">Кожанный диван
+                                «Дофин»</a></p>
+                            <p>100 x 202 х 85 см.</p>
+                            <ul>
+                                <li><img src="pic/pic12.jpg" height="28" width="28" alt=""></li>
+                                <li><img src="pic/pic11.jpg" height="28" width="28" alt=""></li>
+                            </ul>
+                        </div>
+                        <!-- /shortDescript -->
+                    </td>
+                    <td class="priceTable">
+                        <!-- priceContainer -->
+                        <div class="priceContainer">
+                            <p class="oldPrice">13 400 P</p>
+                            <p>11 625 P</p>
+                        </div>
+                        <!-- /priceContainer -->
+                    </td>
+                    <td class="countTable">
+                        <!-- count -->
+                        <div class="count">
+                            <div class="inputWrap">
+                                <input type="text" value="1">
+                                <span class="plus">+</span>
+                                <span class="minus">-</span>
+                            </div>
+                        </div>
+                        <!-- /count -->
+                    </td>
+                    <td class="totalPriceTable">
+                        <!-- totalPrice -->
+                        <div class="totalPrice">
+                            <p>11 625 P</p>
+                        </div>
+                        <!-- /totalPrice -->
+                    </td>
+                    <td class="deleteGoodsTable">
+                        <span class="deleteGoods">delete</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="tableWrap">
+        <table>
+            <tbody>
+            <tr>
+                <td class="imgtable">
+                    <!-- imgWrap -->
+                    <div class="imgWrap">
+                        <img src="pic/pic10.jpg" height="94" width="188" alt="">
+                    </div>
+                    <!-- /imgWrap -->
+                </td>
+                <td class="desriptionTable">
+                    <!-- shortDescript -->
+                    <div class="shortDescript">
+                        <p><a href="#">Кожанный диван
+                            «Дофин»</a></p>
+                        <p>100 x 202 х 85 см.</p>
+                        <ul>
+                            <li><img src="pic/pic12.jpg" height="28" width="28" alt=""></li>
+                            <li><img src="pic/pic11.jpg" height="28" width="28" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- /shortDescript -->
+                </td>
+                <td class="priceTable">
+                    <!-- priceContainer -->
+                    <div class="priceContainer">
+                        <p class="oldPrice">13 400 P</p>
+                        <p>11 625 P</p>
+                    </div>
+                    <!-- /priceContainer -->
+                </td>
+                <td class="countTable">
+                    <!-- count -->
+                    <div class="count">
+                        <div class="inputWrap">
+                            <input type="text" value="1">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </div>
+                    </div>
+                    <!-- /count -->
+                </td>
+                <td class="totalPriceTable">
+                    <!-- totalPrice -->
+                    <div class="totalPrice">
+                        <p>11 625 P</p>
+                    </div>
+                    <!-- /totalPrice -->
+                </td>
+                <td class="deleteGoodsTable">
+                    <span class="deleteGoods">delete</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="tableWrap">
+        <table>
+            <tbody>
+            <tr>
+                <td class="imgtable">
+                    <!-- imgWrap -->
+                    <div class="imgWrap">
+                        <img src="pic/pic10.jpg" height="94" width="188" alt="">
+                    </div>
+                    <!-- /imgWrap -->
+                </td>
+                <td class="desriptionTable">
+                    <!-- shortDescript -->
+                    <div class="shortDescript">
+                        <p><a href="#">Кожанный диван
+                            «Дофин»</a></p>
+                        <p>100 x 202 х 85 см.</p>
+                        <ul>
+                            <li><img src="pic/pic12.jpg" height="28" width="28" alt=""></li>
+                            <li><img src="pic/pic11.jpg" height="28" width="28" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- /shortDescript -->
+                </td>
+                <td class="priceTable">
+                    <!-- priceContainer -->
+                    <div class="priceContainer">
+                        <p class="oldPrice">13 400 P</p>
+                        <p>11 625 P</p>
+                    </div>
+                    <!-- /priceContainer -->
+                </td>
+                <td class="countTable">
+                    <!-- count -->
+                    <div class="count">
+                        <div class="inputWrap">
+                            <input type="text" value="1">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </div>
+                    </div>
+                    <!-- /count -->
+                </td>
+                <td class="totalPriceTable">
+                    <!-- totalPrice -->
+                    <div class="totalPrice">
+                        <p>11 625 P</p>
+                    </div>
+                    <!-- /totalPrice -->
+                </td>
+                <td class="deleteGoodsTable">
+                    <span class="deleteGoods">delete</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+    <div class="tableWrap">
+        <table>
+            <tbody>
+            <tr>
+                <td class="imgtable">
+                    <!-- imgWrap -->
+                    <div class="imgWrap">
+                        <img src="pic/pic10.jpg" height="94" width="188" alt="">
+                    </div>
+                    <!-- /imgWrap -->
+                </td>
+                <td class="desriptionTable">
+                    <!-- shortDescript -->
+                    <div class="shortDescript">
+                        <p><a href="#">Кожанный диван
+                            «Дофин»</a></p>
+                        <p>100 x 202 х 85 см.</p>
+                        <ul>
+                            <li><img src="pic/pic12.jpg" height="28" width="28" alt=""></li>
+                            <li><img src="pic/pic11.jpg" height="28" width="28" alt=""></li>
+                        </ul>
+                    </div>
+                    <!-- /shortDescript -->
+                </td>
+                <td class="priceTable">
+                    <!-- priceContainer -->
+                    <div class="priceContainer">
+                        <p class="oldPrice">13 400 P</p>
+                        <p>11 625 P</p>
+                    </div>
+                    <!-- /priceContainer -->
+                </td>
+                <td class="countTable">
+                    <!-- count -->
+                    <div class="count">
+                        <div class="inputWrap">
+                            <input type="text" value="1">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </div>
+                    </div>
+                    <!-- /count -->
+                </td>
+                <td class="totalPriceTable">
+                    <!-- totalPrice -->
+                    <div class="totalPrice">
+                        <p>11 625 P</p>
+                    </div>
+                    <!-- /totalPrice -->
+                </td>
+                <td class="deleteGoodsTable">
+                    <span class="deleteGoods">delete</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+
+        <!-- container -->
+        <div class="container total">
+            <p class="totalWord">Итого:</p>
+            <div class="economy">
+                <p>экономия </p>
+                <p><strong>8570 P</strong></p>
+            </div>
+            <div class="totalCount">
+                3
+            </div>
+            <div class="calculPrice">
+                36 730 P
+            </div>
+        </div>
+        <!-- /container -->
+
+        <form action="#" method="post" class="buyForm">
+
+            <div class="lineContainer">
+                <label class="lableWidth">Отправка на адрес: </label>
+                <div class="inputWrap address">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="lineContainer">
+                <label class="lableWidth">Отчитаться на:</label>
+                <div class="inputWrap">
+                    <input type="text">
+                </div>
+                <label>и</label>
+                <div class="inputWrap">
+                    <input type="text">
+                </div>
+            </div>
+
+            <div class="saveBlock">
+                <h2 class="topic1">Чтобы сохранить историю заказов:</h2>
+                <div class="autorization">
+                    <a href="#">Авторизуйтесь</a>
+                    <p>Введенные данные не пропадут</p>
+                </div>
+                <label>или задайте </label>
+                <div class="inputWrap">
+                    <input type="text">
+                </div>
+            </div>
+
+            <ul class="buttonsCont">
+                <li><a href="#">Вернуться к покупкам</a></li>
+                <li><input type="submit" class="buyIt"></li>
+            </ul>
+
+        </form>
+
+
+    </div>
+    <!-- /basketContainer -->
+
+</div>
+<!-- /content-wrap -->
+
+
+
+</div>
+</div>
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <form action="#" method="post" class="askUs">
+            <div class="inputWrap">
+                <input type="text" placeholder="E-mail">
+            </div>
+            <textarea placeholder="Ваш вопрос"></textarea>
+            <input type="submit" class="askButton">
+        </form>
+
+        <ul class="footerMenu">
+            <li><a href="#">Вопрос-ответ</a></li>
+            <li><a href="#">О доставке</a></li>
+            <li><a href="#">Возврат товара</a></li>
+            <li><a href="#">О магазине</a></li>
+            <li><a href="#">Написать письмо</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+
+        <ul class="social">
+            <li><a href="#" title="twitter" class="twitter">twitter</a> </li>
+            <li><a href="#" title="facebook" class="facebook">facebook</a> </li>
+            <li><a href="#" title="vkontakte" class="vkontakte">vkontakte</a> </li>
+        </ul>
+
+        <div class="footerPhone">
+            <address>
+                <a href="tel:+7 (812) 000-00-00">+7 (812) 000-00-00</a>
+            </address>
+        </div>
+
+        <a href="http://xn--80aqcukcj1i.xn--p1ai/" class="saitoria">saitoria</a>
+
+        <p class="copy">&copy;ДаЁЖ Мебель  Все права защищены</p>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

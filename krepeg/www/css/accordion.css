@@ -1,0 +1,114 @@
+#accordion {
+	width:220px;
+    background: #fff;
+    border-radius: 0 0 15px 15px;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+#accordion > li.active {
+    background:  none repeat scroll 0 0 #ED1C24;
+}
+#accordion > li{
+    font-family: Tahoma;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 16px;
+    background: #851015;
+    cursor: pointer;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+    padding: 0;
+    color: #fff;
+    margin: 0;
+}
+#accordion > li > span {
+    height: 35px;
+    display: block;
+    padding-left: 16px;
+    line-height: 30px;
+    font-size: 15px;
+    font-family: "gothaprobol";
+}
+#accordion > li:last-child {
+    border: none;
+}
+#accordion li > ul > li {
+    padding-bottom: 4px;
+}
+#accordion > li > ul{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+#accordion ul li ul li ul {
+    padding: 0;
+}
+#accordion ul li ul li ul li {
+    padding: 4px 0 10px 53px;
+}
+#accordion li ul li ul li ul li:first-child {
+    border: none;
+}
+#accordion li ul li {
+    padding: 0;
+}
+#accordion li ul li, #accordion li ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+#accordion .second {
+    margin: 0;
+    padding: 0;
+	background: #ed1c24;
+    display: block;
+}
+#accordion li ul li a span {
+    display: block;
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 16px;
+    background: none repeat scroll 0 0 #ED1C24;
+    display: block;
+    height: 36px;
+    line-height: 30px;
+}
+#accordion .second ul {
+    margin: 0;
+}
+#accordion .second span {
+    height: 28px;
+    display: block;
+    padding-left: 16px;
+    line-height: 28px;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+}
+#accordion li ul li ul li:first-child {
+    border: none;
+}
+#accordion li ul li ul li {
+    border-top: 1px solid #db4349;
+}
+#accordion .second li a span {
+    font-size: 12px;
+    padding: 0 0 0 24px;
+    height: 28px;
+    background: url("../img/point.png") 15px center no-repeat #d81a21;
+    line-height: 28px;
+}
+#accordion .second li a {
+    color: #fff;
+    text-decoration: none;
+}
+#accordion li.active li{
+	text-indent:0;
+}
+#accordion li li{
+	font-weight: normal;
+	background:none;
+	border:0;
+    margin: 0;
+}

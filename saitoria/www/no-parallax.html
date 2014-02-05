@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="shortcut icon" href="./img/favicon.ico">
+
+        <title>BizNex | Multi-Purpose Parallax Landing Page</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- FontAwesome for the awesome social icons -->
+        <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        
+        <!-- Easy Responsive Tabs plugin -->
+        <link href="./css/easy-responsive-tabs.css" rel="stylesheet">
+        
+        <!-- The awesome FlexSlider plugin -->
+        <link href="./flexslider/flexslider.css" rel="stylesheet">
+        
+        <!-- The awesome Nivo-Lightbox plugin -->
+        <link href="./nivo-lightbox/nivo-lightbox.css" rel="stylesheet">
+        <link href="./nivo-lightbox/themes/default/default.css" rel="stylesheet">
+        
+        <!-- Custom styles -->
+        <link href="./css/styles.css" rel="stylesheet">
+        <link href="./css/assets.css" rel="stylesheet">
+        <link href="./css/screen-small.css" rel="stylesheet" media="screen and (min-width: 768px)">
+        <link href="./css/screen-medium.css" rel="stylesheet" media="screen and (min-width: 992px)">
+        <link href="./css/screen-large.css" rel="stylesheet" media="screen and (min-width: 1200px)">
+        
+        <!-- IE8 -->
+        <!--[if lt IE 9]>
+            <link href="./css/ie8.css" rel="stylesheet">
+        <![endif]-->
+        
+        <!-- LESS styles -->
+        <link href="./css/styles.less" rel="stylesheet/less" type="text/css" />
+        
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="./js/html5shiv.js"></script>
+            <script src="./js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <!-- Navigational bar -->
+                <div class="navbar">
+                    <!-- Logo and responsive navigation toggle -->
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><img src="./img/navbar-toggle.png" alt="" /></a>
+                        <a href="./" class="logo"><img src="./img/logo.png" alt="" /></a>
+                    </div>
+                </div>
+                
+                <!-- Collapsable navigation -->
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="#home"><span class="number">01</span>Home</a></li>
+                        <li><a href="#about"><span class="number">02</span>About</a></li>
+                        <li><a href="#team"><span class="number">03</span>Team</a></li>
+                        <li><a href="#services"><span class="number">04</span>Services</a></li>
+                        <li><a href="#portfolio"><span class="number">05</span>Portfolio</a></li>
+                        <li><a href="#blog"><span class="number">06</span>Blog</a></li>
+                        <li><a href="#contact"><span class="number">07</span>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Main slider -->
+        <div id="home" class="slider">
+            <div class="slide">
+                <img src="./assets/slider-1.jpg" class="image" alt="" />
+                <div class="content">
+                    <div class="h1">We are creative design agency</div>
+                    <div class="h2">We understand your project challenges & deliver it the right way!</div>
+                    <a href="#" onclick="$.scrollTo({left:0,top:Math.max(0,$('#about').offset().top-$('.navbar').height())},{duration:1000,easing:$.bez([0.13,0.71,0.30,0.94])});" class="button button-red">Learn more</a>
+                    <img src="./assets/slider-or.png" class="or" alt="" />
+                    <a href="#" onclick="$.scrollTo({left:0,top:Math.max(0,$('#services').offset().top-$('.navbar').height())},{duration:1000,easing:$.bez([0.13,0.71,0.30,0.94])});" class="button button-green">Buy services</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./assets/slider-2.jpg" class="image" alt="" />
+                <div class="content">
+                    <div class="h1">We give the best support to our clients</div>
+                    <a href="#" onclick="$.scrollTo({left:0,top:Math.max(0,$('#contact').offset().top-$('.navbar').height())},{duration:1000,easing:$.bez([0.13,0.71,0.30,0.94])});" class="button button-red">Get in touch</a>
+                    <img src="./assets/slider-or.png" class="or" alt="" />
+                    <a href="#" onclick="$.scrollTo({left:0,top:Math.max(0,$('#services').offset().top-$('.navbar').height())},{duration:1000,easing:$.bez([0.13,0.71,0.30,0.94])});" class="button button-green">Buy services</a>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="./assets/slider-3.jpg" class="image" alt="" />
+                <div class="content">
+                    <div class="h2">WE DO BIZNEX TO</div>
+                    <div class="h1">Achieve success in business</div>
+                    <a href="#" onclick="$.scrollTo({left:0,top:Math.max(0,$('#process').offset().top-$('.navbar').height())},{duration:1000,easing:$.bez([0.13,0.71,0.30,0.94])});" class="button button-red">How we do it</a>
+                    <img src="./assets/slider-or.png" class="or" alt="" />
+                    <a href="#" onclick="$.scrollTo({left:0,top:Math.max(0,$('#services').offset().top-$('.navbar').height())},{duration:1000,easing:$.bez([0.13,0.71,0.30,0.94])});" class="button button-green">Buy services</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scalable websites section -->
+        <section class="blue asset-scalable">
+            <div class="overlay">
+                <div class="semi-arrow"></div>
+            </div>
+            <div class="container compact">
+                <h3>WE BUILD<br />SCALABLE WEBSITES</h3>
+                <p>Mauris consequat semper arcu. Nulla at erat<br />adipiscing enim ullam quis ligula elementum<br />lectus varius aliq uet vestibulum.</p>
+                <a href="#" class="button button-small">Learn more</a>
+                <img src="./assets/scalable-trails.png" class="trails" alt="" />
+                <img src="./assets/scalable-devices.png" class="devices" alt="" />
+            </div>
+        </section>
+        
+        <!-- About us section -->
+        <section id="about" class="light">
+            <div class="container compact">
+                <h1>About us</h1>
+                <p class="align-center">Mauris consequat semper arcu. Nulla at erat adipiscing enim ullam quis ligula elementum lectus varius aliquet vestibulum sed donec semper interdum risus ipsum sed.</p>
+                <img src="./assets/about-us.png" class="asset-about-us-image" alt="" />
+            </div>
+        </section>
+        
+        <!-- The process section -->
+        <section id="process" class="red asset-after-about-us">
+            <div class="overlay"></div>
+            <div class="container compact">
+                <h1>The process</h1>
+                <div class="services clearfix">
+                    <div class="item">
+                        <h2>Design</h2>
+                        <div class="graphic">
+                            <div class="hover"></div>
+                            <img src="./assets/services-design.png" alt="" />
+                        </div>
+                        <div class="bottom"></div>
+                        <div class="content">Aenean vel lectus acd orcife element tincidunt.</div>
+                    </div>
+                    <div class="arrow"></div>
+                    <div class="item">
+                        <h2>Develop</h2>
+                        <div class="graphic">
+                            <div class="hover"></div>
+                            <img src="./assets/services-develop.png" alt="" />
+                        </div>
+                        <div class="bottom"></div>
+                        <div class="content">Aenean vel lectus acd orcife element tincidunt.</div>
+                    </div>
+                    <div class="arrow"></div>
+                    <div class="item">
+                        <h2>Deliver</h2>
+                        <div class="graphic">
+                            <div class="hover"></div>
+                            <img src="./assets/services-deliver.png" alt="" />
+                        </div>
+                        <div class="bottom"></div>
+                        <div class="content">Aenean vel lectus acd orcife element tincidunt.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Meet our team section -->
+        <section id="team" class="light">
+            <div class="container compact">
+                <h1>Meet our team</h1>
+                <p class="align-center">We are a disciplined team of designers, developers, marketing specialists and much more...</p>
+                <div class="row team">
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="item">
+                            <img src="./assets/team-1.png" class="image" alt="" />
+                            <div class="name">John Doe</div>
+                            <div class="title">Digital Artist</div>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/enFusionThemes" class="facebook"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/enFusionThemes" class="twitter"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
+                                <li><a href="#" class="linkedin"><i class="icon-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="item">
+                            <img src="./assets/team-2.png" class="image" alt="" />
+                            <div class="name">Ellisa James</div>
+                            <div class="title">Designer</div>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/enFusionThemes" class="facebook"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/enFusionThemes" class="twitter"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
+                                <li><a href="#" class="linkedin"><i class="icon-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="item bottom">
+                            <img src="./assets/team-3.png" class="image" alt="" />
+                            <div class="name">Kevin Thomas</div>
+                            <div class="title">Creative Director</div>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/enFusionThemes" class="facebook"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/enFusionThemes" class="twitter"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
+                                <li><a href="#" class="linkedin"><i class="icon-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-6">
+                        <div class="item bottom">
+                            <img src="./assets/team-4.png" class="image" alt="" />
+                            <div class="name">Vanessa Paul</div>
+                            <div class="title">Developer</div>
+                            <ul class="social">
+                                <li><a href="https://www.facebook.com/enFusionThemes" class="facebook"><i class="icon-facebook"></i></a></li>
+                                <li><a href="https://twitter.com/enFusionThemes" class="twitter"><i class="icon-twitter"></i></a></li>
+                                <li><a href="#" class="dribbble"><i class="icon-dribbble"></i></a></li>
+                                <li><a href="#" class="linkedin"><i class="icon-linkedin"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- The experience section -->
+        <section class="yellow">
+            <div class="overlay">
+                <div class="arrow"></div>
+            </div>
+            <div class="container compact">
+                <h1>The experience</h1>
+                <p class="align-center">Sed et erat. Sed quis turpis vitae lectus vehicula ulla tristique ipsum in quam. Aenean facilisis ullamcorper diam.</p>
+                <div class="row counters">
+                    <div class="col-lg-2 col-md-2 col-sm-4">
+                        <div class="counter">
+                            <div class="left"><img src="./img/counter-left.png" alt="" /></div>
+                            <div class="right"><img src="./img/counter-right.png" alt="" /></div>
+                            <div class="value" data-value="80%">0%</div>
+                        </div>
+                        <div class="title">Responsive design</div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4">
+                        <div class="counter">
+                            <div class="left"><img src="./img/counter-left.png" alt="" /></div>
+                            <div class="right"><img src="./img/counter-right.png" alt="" /></div>
+                            <div class="value" data-value="90%">0%</div>
+                        </div>
+                        <div class="title">Photoshop</div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4">
+                        <div class="counter">
+                            <div class="left"><img src="./img/counter-left.png" alt="" /></div>
+                            <div class="right"><img src="./img/counter-right.png" alt="" /></div>
+                            <div class="value" data-value="75%">0%</div>
+                        </div>
+                        <div class="title">HTML / CSS</div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4">
+                        <div class="counter">
+                            <div class="left"><img src="./img/counter-left.png" alt="" /></div>
+                            <div class="right"><img src="./img/counter-right.png" alt="" /></div>
+                            <div class="value" data-value="80%">0%</div>
+                        </div>
+                        <div class="title">Web design</div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4">
+                        <div class="counter">
+                            <div class="left"><img src="./img/counter-left.png" alt="" /></div>
+                            <div class="right"><img src="./img/counter-right.png" alt="" /></div>
+                            <div class="value" data-value="40%">0%</div>
+                        </div>
+                        <div class="title">SEO</div>
+                    </div>
+                    <div class="col-lg-2 col-md-2 col-sm-4">
+                        <div class="counter">
+                            <div class="left"><img src="./img/counter-left.png" alt="" /></div>
+                            <div class="right"><img src="./img/counter-right.png" alt="" /></div>
+                            <div class="value" data-value="50%">0%</div>
+                        </div>
+                        <div class="title">Photography</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Our services section -->
+        <section id="services" class="light">
+            <div class="container compact">
+                <h1>Our services</h1>
+                <p class="align-center">Mauris consequat semper arcu. Nulla at erat adipiscing enim ullam quis ligula elementum lectus varius aliquet vestibulum sed donec semper interdum risus ipsum sed.</p>
+                <div class="vertical-tabs">
+                    <ul class="resp-tabs-list">
+                        <li>Web design<span class="number">01</span></li>
+                        <li>Responsive design<span class="number">02</span></li>
+                        <li>Mobile marketing<span class="number">03</span></li>
+                        <li>App development<span class="number">04</span></li>
+                        <li>Social media<span class="number">05</span></li>
+                        <li>Customer support<span class="number">06</span></li>
+                    </ul>
+                    <div class="resp-tabs-container">
+                        <div>
+                            <h4>Web design</h4>
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu sa liquet vestibulum. Morbi magna arcu, pharetra eu, interdum quis, sedblandit acorci. Praesent aliquet fem entum magna.</p>
+                            <p><img src="./assets/services.png" style="max-width:100%;" alt="" /></p>
+                        </div>
+                        <div>
+                            <h4>Responsive design</h4>
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu sa liquet vestibulum. Morbi magna arcu, pharetra eu, interdum quis, sedblandit acorci. Praesent aliquet fem entum magna.</p>
+                            <img src="./assets/services.png" style="max-width:100%;" alt="" />
+                        </div>
+                        <div>
+                            <h4>Mobile marketing</h4>
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu sa liquet vestibulum. Morbi magna arcu, pharetra eu, interdum quis, sedblandit acorci. Praesent aliquet fem entum magna.</p>
+                            <img src="./assets/services.png" style="max-width:100%;" alt="" />
+                        </div>
+                        <div>
+                            <h4>App development</h4>
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu sa liquet vestibulum. Morbi magna arcu, pharetra eu, interdum quis, sedblandit acorci. Praesent aliquet fem entum magna.</p>
+                            <img src="./assets/services.png" style="max-width:100%;" alt="" />
+                        </div>
+                        <div>
+                            <h4>Social media</h4>
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu sa liquet vestibulum. Morbi magna arcu, pharetra eu, interdum quis, sedblandit acorci. Praesent aliquet fem entum magna.</p>
+                            <img src="./assets/services.png" style="max-width:100%;" alt="" />
+                        </div>
+                        <div>
+                            <h4>Customer support</h4>
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu sa liquet vestibulum. Morbi magna arcu, pharetra eu, interdum quis, sedblandit acorci. Praesent aliquet fem entum magna.</p>
+                            <img src="./assets/services.png" style="max-width:100%;" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How can we help section -->
+        <section class="green asset-mini-slider">
+            <div class="overlay">
+                <div class="arrow"></div>
+            </div>
+            <div class="container compact">
+                <h1>How can we help</h1>
+                <p class="align-center">Sed et erat. Sed quis turpis vitae lectus vehicula ulla tristique ipsum in quam. Aenean facilisis ullamcorper diam.</p>
+                <br />
+                <div class="flexslider mini">
+                    <ul class="slides">
+                        <li class="slide">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <img src="./assets/slider-device.png" alt="" />
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <h3 class="align-left">BizneX Solutions</h3>
+                                    <p>Mauris consequat semper arcu. Nulla at erat adipiscing enim ullam quis ligula elementum lectus varius aliq uet vestibulum. Fusce mattis, lectus ut semper rhoncus nulla:</p>
+                                    <ul class="list">
+                                        <li>Ut vitae metus. Nunc neque.</li>
+                                        <li>Integer fringilla. Integer faucibus augue.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <img src="./assets/slider-device.png" alt="" />
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <h3 class="align-left">BizneX Solutions</h3>
+                                    <p>Mauris consequat semper arcu. Nulla at erat adipiscing enim ullam quis ligula elementum lectus varius aliq uet vestibulum. Fusce mattis, lectus ut semper rhoncus nulla:</p>
+                                    <ul class="list">
+                                        <li>Ut vitae metus. Nunc neque.</li>
+                                        <li>Integer fringilla. Integer faucibus augue.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <img src="./assets/slider-device.png" alt="" />
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <h3 class="align-left">BizneX Solutions</h3>
+                                    <p>Mauris consequat semper arcu. Nulla at erat adipiscing enim ullam quis ligula elementum lectus varius aliq uet vestibulum. Fusce mattis, lectus ut semper rhoncus nulla:</p>
+                                    <ul class="list">
+                                        <li>Ut vitae metus. Nunc neque.</li>
+                                        <li>Integer fringilla. Integer faucibus augue.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio section -->
+        <section id="portfolio" class="light no-bottom-padding">
+            <div class="container compact">
+                <h1>Portfolio</h1>
+                <p class="align-center">Some companies, we helped making their brand stand-out!</p>
+            </div>
+            <div class="portfolio flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="item">
+                            <img src="./assets/portfolio-1.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-1.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/portfolio-2.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-2.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="./assets/portfolio-3.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-3.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/portfolio-4.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-4.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="./assets/portfolio-5.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-5.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/portfolio-6.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-6.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="./assets/portfolio-7.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-7.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/portfolio-8.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-8.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="./assets/portfolio-9.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-9.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/portfolio-10.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-10.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="./assets/portfolio-1.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-1.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/portfolio-2.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-2.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="./assets/portfolio-3.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-3.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/portfolio-4.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-4.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="./assets/portfolio-5.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-5.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/portfolio-6.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-6.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="./assets/portfolio-7.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-7.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/portfolio-8.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-8.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item">
+                            <img src="./assets/portfolio-9.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-9.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./assets/portfolio-10.png" alt="" />
+                            <div class="overlay">
+                                <span class="title">Biznex website</span>
+                                <span class="subtitle">Logo / <em>web design</em> / development</span>
+                                <span class="likes"><img src="./img/likes.png" alt="" />56 likes</span>
+                                <a href="./assets/portfolio-10.png" data-lightbox-gallery="portfolio" class="zoom"><img src="./img/spacer.gif" alt="" /></a>
+                                <a href="#" class="link"><img src="./img/spacer.gif" alt="" /></a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <!-- Blog posts section -->
+        <section id="blog" class="blue">
+            <div class="overlay">
+                <div class="semi-arrow"></div>
+            </div>
+            <div class="container compact">
+                <h1>Blog posts</h1>
+                <p class="align-center">Nullam quis ligula elementum lectus varius aliquet. In sagittis, eros ut faucibus Morbi tincidunt nulla sit amet ipsum.</p>
+                <div class="posts">
+                    <div class="post">
+                        <img src="./assets/post-1.jpg" class="image" alt="" />
+                        <div class="content">
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu saliquet vestibulum. Morbi magna arcu, ph aretra eu, interdum quis, sedblandit acorci. Praesent aliquet fementum magna. Aliquam at erat. In hac habitasse platea dictumst. Curabitur lacul urna, consectetuer at, laoreet consequat, hendrerit vel, erat. Integer posuere vulputate leo ...</p>
+                        </div>
+                        <div class="align-center">
+                            <a href="#" class="button button-small">Full story</a>
+                        </div>
+                        <a href="#" class="line">
+                            <img src="./img/blog-type-camera.png" class="type" alt="" />
+                            <span class="title">Aenean sit amet turpis non</span>
+                            <span class="date">25 Sep</span>
+                        </a>
+                    </div>
+                    <div class="post">
+                        <img src="./assets/post-2.jpg" class="image" alt="" />
+                        <div class="content">
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu saliquet vestibulum. Morbi magna arcu, ph aretra eu, interdum quis, sedblandit acorci. Praesent aliquet fementum magna. Aliquam at erat. In hac habitasse platea dictumst. Curabitur lacul urna, consectetuer at, laoreet consequat, hendrerit vel, erat. Integer posuere vulputate leo ...</p>
+                        </div>
+                        <div class="align-center">
+                            <a href="#" class="button button-small">Full story</a>
+                        </div>
+                        <a href="#" class="line">
+                            <img src="./img/blog-type-video.png" class="type" alt="" />
+                            <span class="title">Fusce id justo quis odio</span>
+                            <span class="date">23 Sep</span>
+                        </a>
+                    </div>
+                    <div class="post">
+                        <img src="./assets/post-3.jpg" class="image" alt="" />
+                        <div class="content">
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu saliquet vestibulum. Morbi magna arcu, ph aretra eu, interdum quis, sedblandit acorci. Praesent aliquet fementum magna. Aliquam at erat. In hac habitasse platea dictumst. Curabitur lacul urna, consectetuer at, laoreet consequat, hendrerit vel, erat. Integer posuere vulputate leo ...</p>
+                        </div>
+                        <div class="align-center">
+                            <a href="#" class="button button-small">Full story</a>
+                        </div>
+                        <a href="#" class="line">
+                            <img src="./img/blog-type-link.png" class="type" alt="" />
+                            <span class="title">Integer et orci set id</span>
+                            <span class="date">06 Sep</span>
+                        </a>
+                    </div>
+                    <div class="post">
+                        <img src="./assets/post-4.jpg" class="image" alt="" />
+                        <div class="content">
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu saliquet vestibulum. Morbi magna arcu, ph aretra eu, interdum quis, sedblandit acorci. Praesent aliquet fementum magna. Aliquam at erat. In hac habitasse platea dictumst. Curabitur lacul urna, consectetuer at, laoreet consequat, hendrerit vel, erat. Integer posuere vulputate leo ...</p>
+                        </div>
+                        <div class="align-center">
+                            <a href="#" class="button button-small">Full story</a>
+                        </div>
+                        <a href="#" class="line">
+                            <img src="./img/blog-type-article.png" class="type" alt="" />
+                            <span class="title">Vivamus ligula mauris blandit eu</span>
+                            <span class="date">25 Aug</span>
+                        </a>
+                    </div>
+                    <div class="post">
+                        <img src="./assets/post-5.jpg" class="image" alt="" />
+                        <div class="content">
+                            <p>Mauris consequat semper arcu. Nulla at er atadipiscing enim ullam quis ligula elemen tumlectus variu saliquet vestibulum. Morbi magna arcu, ph aretra eu, interdum quis, sedblandit acorci. Praesent aliquet fementum magna. Aliquam at erat. In hac habitasse platea dictumst. Curabitur lacul urna, consectetuer at, laoreet consequat, hendrerit vel, erat. Integer posuere vulputate leo ...</p>
+                        </div>
+                        <div class="align-center">
+                            <a href="#" class="button button-small">Full story</a>
+                        </div>
+                        <a href="#" class="line">
+                            <img src="./img/blog-type-picture.png" class="type" alt="" />
+                            <span class="title">Bis cursus neque at arcu sed</span>
+                            <span class="date">14 Aug</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact us section -->
+        <section id="contact" class="light no-bottom-padding">
+            <h1>Contact us</h1>
+            <div class="contact-line">
+                <div class="left"><p>13, 2 Elizabeth ST,<br />Melbourne, Victoria 3000, Australia</p></div>
+                <div class="right"><p>+1 2340 12345<br />hello@enfusionthemes.com</p></div>
+                <img src="./img/contact-line-arrow.png" class="arrow" alt="" />
+            </div>
+            <div class="container compact">
+                <p class="align-center">We'd love to hear from you! Send us a message using the form below.</p>
+                <form action="./contact.php" target="hidden" method="post" class="contact-form row">
+                    <div class="col-lg-6 col-md-6">
+                        <input type="text" name="name" value="" placeholder="NAME" /><br />
+                        <input type="text" name="email" value="" placeholder="EMAIL" /><br />
+                        <input type="text" name="subject" value="" placeholder="SUBJECT" />
+                        <div class="result"></div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <textarea name="message" placeholder="MESSAGE"></textarea><br />
+                        <div class="align-right">
+                            <button type="submit" class="button button-small">SEND MESSAGE</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="map"></div>
+        </section>
+        
+        <!-- Subscribe section -->
+        <div class="subscribe">
+            <p>Enter your email address for latest updated!</p>
+            <form action="./subscribe.php" target="hidden" method="post">
+                <input type="text" name="email" placeholder="YOUR EMAIL ADDRESS" value="" />
+                <button type="submit" class="button button-small">Subscribe</button>
+            </form>
+            <div class="result"></div>
+        </div>
+        
+        <!-- Back to top arrow -->
+        <a href="#home" class="to-top"><img src="./img/to-top.png" alt="" /></a>
+        
+        <!-- Footer section -->
+        <footer>&copy; COPYRIGHTS 2013, BIZNEX. All rights reserved.</footer>
+        
+        <!-- Hidden iframe for submitting forms -->
+        <iframe src="about:blank" name="hidden" class="hide"></iframe>
+        
+        <!-- Load jQuery -->
+        <script src="./js/jquery.min.js"></script>
+        
+        <!-- ECMAScript 5 compatibility shims for legacy JavaScript engines -->
+        <script src="./js/es5-shim.min.js"></script>
+        
+        <!-- LESS CSS -->
+        <script src="./js/less.min.js"></script>
+        
+        <!-- Twitter Bootstrap -->
+        <script src="./js/bootstrap.min.js"></script>
+        
+        <!-- Modernizr (custom build to detect touch devices) -->
+        <script src="./js/modernizr.js"></script>
+
+        <!-- Cubic bezier easing for jquery animate -->
+        <script src="./js/jquery.bez.min.js"></script>
+        
+        <!-- scrollTo plugin for auto scrolling from navigation -->
+        <script src="./js/jquery.scrollTo.min.js"></script>
+        
+        <!-- Easy Responsive Tabs plugin -->
+        <script src="./js/easyResponsiveTabs.js"></script>
+        
+        <!-- The awesome FlexSlider plugin -->
+        <script src="./flexslider/jquery.flexslider-min.js"></script>
+        
+        <!-- The awesome Nivo-Lightbox plugin -->
+        <script src="./nivo-lightbox/nivo-lightbox.min.js"></script>
+        
+        <!-- Google Maps -->
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        
+        <!-- Custom scripts -->
+        <script src="./js/styles.js"></script>
+    </body>
+</html>

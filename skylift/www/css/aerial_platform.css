@@ -1,0 +1,125 @@
+/* --------------- content-wrap --------------- */
+.content-wrap h1{
+    font-family: "Verdana";
+    font-size: 24px;
+    color: #252525;
+    font-weight: normal;
+    margin-bottom: 24px;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- bread_crumbs --------------- */
+.bread_crumbs{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.bread_crumbs a{
+    font-family: "Verdana";
+    font-size: 12px;
+    color: #ee740c;
+    text-decoration: underline;
+    background: url("../img/arrow.png") no-repeat left center;
+    padding-left: 14px;
+}
+.bread_crumbs a:first-child{
+    background: none;
+    padding-left: 0;
+}
+.bread_crumbs a:hover{
+    text-decoration: none;
+}
+/* --------------- /bread_crumbs --------------- */
+
+/* --------------- chip_basket --------------- */
+.chip_basket{
+    font-family: "Arial";
+    font-size: 12px;
+    color: #373737;
+    text-decoration: underline;
+    background: url("../img/chip_basket.png") no-repeat left 0;
+    float: right;
+    margin-top: 4px;
+    padding-left: 29px;
+    display: inline-block;
+    height: 18px;
+}
+.chip_basket:hover{
+    text-decoration: none;
+}
+/* --------------- /chip_basket --------------- */
+
+/* --------------- aerial_platform --------------- */
+.aerial_platform{
+    display: inline-block;
+    border: 1px solid #e7e7e7;
+    padding-top: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-bottom: 9px;
+    text-align: center;
+    margin-right: 18px;
+    margin-bottom: 18px;
+}
+.aerial_platform a{
+    display: inline-block;
+}
+.aerial_platform a:first-child:hover span{
+    text-decoration: none;
+}
+.aerial_platform img {
+    display: block;
+    margin-bottom: 13px;
+}
+.aerial_platform span{
+    display: block;
+    font-family: "Arial";
+    font-size: 14px;
+    color: #f3840b;
+    text-decoration: underline;
+    margin-bottom: 17px;
+}
+.aerial_platform a:visited{
+    color: #ffffff;
+}
+/* --------------- /aerial_platform --------------- */
+
+/* --------------- more --------------- */
+.aerial_platform .more{
+    margin-bottom: 0;
+    text-decoration: none;
+    font-family: "Verdana";
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 19px;
+    border: 1px solid #f5850e;
+    height: 34px;
+    padding-left: 32px;
+    padding-right: 32px;
+    line-height: 36px;
+    box-shadow: 0 3px 2px #ffc366 inset;
+    background: rgb(254,154,0);
+    background: -moz-linear-gradient(top,  rgba(254,154,0,1) 0%, rgba(243,123,2,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,154,0,1)), color-stop(100%,rgba(243,123,2,1)));
+    background: -webkit-linear-gradient(top,  rgba(254,154,0,1) 0%,rgba(243,123,2,1) 100%);
+    background: -o-linear-gradient(top,  rgba(254,154,0,1) 0%,rgba(243,123,2,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(254,154,0,1) 0%,rgba(243,123,2,1) 100%);
+    background: linear-gradient(to bottom,  rgba(254,154,0,1) 0%,rgba(243,123,2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe9a00', endColorstr='#f37b02',GradientType=0 );
+}
+.aerial_platform .more:hover{
+    background: rgb(252,151,0);
+    background: -moz-linear-gradient(top,  rgba(252,151,0,1) 0%, rgba(242,78,2,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,151,0,1)), color-stop(100%,rgba(242,78,2,1)));
+    background: -webkit-linear-gradient(top,  rgba(252,151,0,1) 0%,rgba(242,78,2,1) 100%);
+    background: -o-linear-gradient(top,  rgba(252,151,0,1) 0%,rgba(242,78,2,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(252,151,0,1) 0%,rgba(242,78,2,1) 100%);
+    background: linear-gradient(to bottom,  rgba(252,151,0,1) 0%,rgba(242,78,2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc9700', endColorstr='#f24e02',GradientType=0 );
+    box-shadow: 0px 3px 2px #fbb74e inset;
+}
+.aerial_platform .more:active{
+    box-shadow: none;
+}
+/* --------------- /more --------------- */

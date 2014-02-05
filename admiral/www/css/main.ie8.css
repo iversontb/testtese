@@ -1,0 +1,19 @@
+/* css for ltie8 */
+@font-face {
+    font-family: "pfagoraslabpro-bold";
+    src: url("../fonts/pfagoraslabpro-bold.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pfagoraslabpro-reg";
+    src: url("../fonts/pfagoraslabpro-reg.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "pfagoraslabpro-medium";
+    src: url("../fonts/pfagoraslabpro-medium.eot");
+    font-weight: normal;
+    font-style: normal;
+}

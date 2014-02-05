@@ -1,0 +1,190 @@
+.site:after {
+    height: 347px;
+}
+.header_inner {
+    height: 107px;
+    z-index: 1;
+}
+.header_inner .head_top {
+    height: 63px;
+}
+.header_inner .phone {
+    left: 223px;
+    top: 18px;
+    font-family: Trebuchet MS;
+}
+.header_inner dt {
+    color: #3B4255;
+    font-size: 24px;
+    font-weight: 700;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 7px;
+}
+.header_inner dt span {
+    color: #EF4B23;
+}
+.header_inner dd {
+    display: inline-block;
+    vertical-align: top;
+}
+.header_inner .orange_but {
+    font-size: 11px;
+    height: 37px;
+    right: 20px;
+    top: 11px;
+    width: 219px;
+    line-height: 37px;
+}
+.program_site .content-wrap {
+    width: 697px;
+    padding-right: 10px;
+}
+.site__right_aside {
+    display: inline-block;
+    vertical-align: top;
+    width: 210px;
+    background: url("../img/aside_bg.png") repeat-x #fff;
+    box-shadow: 1px 2px 2px #d5d9dc;
+    padding: 0 0 10px 18px;
+}
+h1 {
+    font-size: 24px;
+    color: #3b4255;
+    text-transform: uppercase;
+    font-family: "ptsans_bold";
+    margin-bottom: 7px;
+}
+.bread_crumbs {
+    height: 27px;
+    border-top: 1px solid #dbe2e7;
+    border-bottom: 1px solid #dbe2e7;
+    margin-bottom: 15px;
+    padding-top: 9px;
+}
+.bread_crumbs li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    padding-right: 10px;
+}
+.bread_crumbs a:hover {
+    text-decoration: none;
+}
+.bread_crumbs a:after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -10px;
+    background: url("../img/crumb_bg.png") right top no-repeat;
+    width: 6px;
+    height: 6px;
+}
+.bread_crumbs a {
+    position: relative;
+    color: #169fd3;
+    text-decoration: underline;
+}
+.bread_crumbs span {
+    color: #3b4255;
+    cursor: default;
+}
+.primavera_info {
+    font-family: "ptsans";
+    margin-bottom: 34px;
+}
+.primavera_info h2 {
+    color: #0075a1;
+    font-family: "ptsans_bold";
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+.primavera_info p {
+    font-family: "ptsans";
+    font-size: 13px;
+    color: #3b4255;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.list:first-child {
+    margin-left: 0;
+}
+.list {
+    width: 206px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 35px;
+}
+.list_item {
+    font-family: "ptsans";
+    color: #3b4255;
+    margin-bottom: 16px;
+}
+.list_item h3 {
+    text-align: center;
+    font-family: "ptsans_bold";
+    font-size: 16px;
+    white-space: pre-line;
+    margin-bottom: 12px;
+    line-height: 17px;
+}
+.list_item p {
+    font-family: "ptsans";
+    font-size: 12px;
+    line-height: 20px;
+}
+.site__right_aside a:hover {
+    text-decoration: underline;
+}
+.site__right_aside a {
+    margin-bottom: 5px;
+    display: block;
+    line-height: 18px;
+    padding: 20px 0 20px 94px;
+    font-family: "ptsans_bold";
+    color: #3b4255;
+    font-size: 14px;
+    white-space: pre-line;
+    text-transform: uppercase;
+}
+.site__right_aside a span {
+    display: block;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+a.menu1 {
+    background: url("../img/icon1.png") 0 center no-repeat;
+}
+a.menu2 {
+    background: url("../img/icon2.png") 0 center no-repeat;
+}
+a.menu3 {
+    background: url("../img/icon3.png") 0 center no-repeat;
+}
+a.menu4 {
+    background: url("../img/icon4.png") 0 center no-repeat;
+}
+a.menu5 {
+    background: url("../img/icon5.png") 0 center no-repeat;
+}
+a.menu6 {
+    background: url("../img/icon6.png") 19px center no-repeat;
+}
+a.menu7 {
+    background: url("../img/icon7.png") 9px center no-repeat;
+}
+a.menu8 {
+    background: url("../img/icon8.png") 11px center no-repeat;
+}
+a.menu9 {
+    background: url("../img/icon9.png") 19px center no-repeat;
+}
+a.menu10 {
+    background: url("../img/icon10.png") 13px center no-repeat;
+}
+a.menu11 {
+    background: url("../img/icon11.png") 0 center no-repeat;
+}
+a.menu12 {
+    background: url("../img/icon12.png") 0 center no-repeat;
+}

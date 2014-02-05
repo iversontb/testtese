@@ -1,0 +1,44 @@
+/* --------------- ares-slider --------------- */
+.ares-slider {
+    margin: 0 auto 40px;
+    width: 734px;
+    height: 362px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+.ares-slider .contBox {
+    width: 737px;
+    height: 362px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.ares-slider img {
+    display: block;
+}
+
+.ares-slider__points {
+    display: inline-block;
+    position: relative;
+    bottom: -333px;
+}
+.ares-slider__points li {
+    width: 18px;
+    height: 18px;
+    float: left;
+    background: #fff;
+    border-radius: 18px;
+    margin-left: 22px;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li.active {
+    cursor: default;
+}
+/* --------------- /slider --------------- */

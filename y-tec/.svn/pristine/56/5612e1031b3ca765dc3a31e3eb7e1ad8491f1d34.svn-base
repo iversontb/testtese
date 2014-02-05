@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400,300,600,700,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/podrazdel2.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="#" class="logo" title="на главную"><img src="img/logo.png" width="204" height="71" alt="Y-tec чтобы сайт приносил доход"></a>
+            <!-- /logo -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <a href="#">О компании</a>
+                <a href="#">Услуги</a>
+                <span class="active" href="#">Портфолио</span>
+                <a href="#">Контакты</a>
+            </nav>
+            <!-- menu -->
+
+            <!-- phone -->
+            <address class="phone"><span>(495)</span> 662-47-92</address>
+            <!-- /phone -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- aside-left -->
+            <aside class="aside-left">
+
+                <!-- aside-left -->
+                <aside class="aside-left">
+
+                    <!-- submenu -->
+                    <nav class="submenu">
+                        <a href="#">Сайты</a>
+                        <span>Баннеры</span>
+                        <a href="#">Продвижение сайтовты</a>
+                        <a href="#">Реклама сайтов</a>
+                        <a href="#">Копирайтинг</a>
+                    </nav>
+                    <!-- /submenu -->
+
+                    <!-- order -->
+                    <form action="#" class="order" id="order">
+                        <h2>Оформить заявку</h2>
+                        <fieldset>
+                            <input type="text" id="name" name="name" placeholder="Ваше имя">
+                            <input type="tel" name="phone" id="phone" placeholder="Ваш телефон">
+                            <input type="email" name="mail" id="mail" placeholder="E-mail">
+                            <textarea type="text" name="sms" id="sms" placeholder="Если у вас есть комментарии или вопросы, вы можете написать их тут"></textarea>
+                        </fieldset>
+                        <span>Поля, отмеченные звёздочкой <span>*</span>, обязательны для заполнения</span>
+                        <p><span>Отправьте заявку</span>и мы свяжемся с вами в ближайшее время!</p>
+                        <input type="submit" value="Отправить">
+                    </form>
+                    <!-- /order -->
+
+                </aside>
+                <!-- /aside-left -->
+
+            </aside>
+            <!-- /aside-left -->
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- breadcrumbs -->
+                <nav class="breadcrumbs">
+                    <a href="#">Хлебные крошки</a>
+                    <span>Хлебные крошки</span>
+                </nav>
+                <!-- /breadcrumbs -->
+
+                <!-- podrazdel2 -->
+                <div class="podrazdel2">
+
+                    <!-- site__title -->
+                    <h1 class="site__title"><span>Цены на создание сайта</span></h1>
+                    <!-- /site__title -->
+
+                    <!-- podrazdel2__sertificat -->
+                    <div class="podrazdel2__sertificat">
+                        <img src="pic/sertificat.jpg" width="155" height="167" alt="">
+                        <h2>Мы поставляем качественный трафик!</h2>
+                        <dl>
+                            <dt class="podrazdel2__title">Преимущества работы с нами:</dt>
+                            <dd class="podrazdel2__title">Y-tec - профессиональное агентство
+                                по работе с Яндекс.Директом</dd>
+                            <dd>Y-Tec с 2008 года является партнером Яндекса</dd>
+                            <dd>Мы в курсе всех нововведений и технологий показов рекламы</dd>
+                            <dd>В нашем штате 6 профессиональных аттестованных специалистов </dd>
+                        </dl>
+
+                        <p><span>0% комиссии!</span>Ведение рекламной кампании без абонентской платы! </p>
+
+                        <dl>
+                            <dt>Уникальная система экономии бюджета</dt>
+                            <dd>Целевой посетитель по <a href="#">минимальной цене</a></dd>
+                            <dd>Переход от <a href="#">30 копеек</a></dd>
+                            <dd>Внедрение и использование стратегий показа </dd>
+                        </dl>
+                        <dl>
+                            <dt>Эффективное ведение рекламной кампанииа</dt>
+                            <dd>Изучение целевой аудитории</dd>
+                            <dd>Подбор ключевых запросов</dd>
+                            <dd>Определение целевых страниц</dd>
+                            <dd>Улучшение продающих свойств сайта</dd>
+                            <dd>Составление «работающих» объявлений</dd>
+                            <dd>Управление ставками профессиональными менеджерами и
+                                автоматизированной системой собственной разработки через
+                                Яндекс.API</dd>
+                        </dl>
+                        <dl>
+                            <dt>Профессиональный анализ статистики для максимальной конверсии</dt>
+                            <dd>Использование систем аналитики Яндекс.Метрика, Google Analitics</dd>
+                            <dd>Изучение поведения пользователей</dd>
+                            <dd>Анализ тепловой карты </dd>
+                        </dl>
+                        <dl>
+                            <dt>Рекомендации по улучшению метрических показателей рекламной кампании</dt>
+                            <dd>Работа над постоянным улучшением качества кампании</dd>
+                        </dl>
+                    </div>
+                    <!-- podrazdel2__sertificat -->
+
+                    <!-- result -->
+                    <div class="result">
+                        <h2>Максимальный результат при адекватных вложениях!</h2>
+                        <span>Получить расчет бесплатно:</span>
+                        <span class="result__question">Как сделать заказ? </span>
+                        <dl>
+                            <dt>Просто позвоните по телефону: </dt>
+                            <dd>(495) 662 47 92 <span>(с 10 до 19 пн.-пт.)</span></dd>
+                        </dl>
+                        <p>Либо <span>заполните</span> <a href="#">форму он-лайн</a> и мы свяжемся с вами в течении рабочего дня!</p>
+                    </div>
+                    <!-- /result -->
+
+                    <!-- podrazdel2__data -->
+                    <div class="podrazdel2__data">
+                        <h2>Наши факты</h2>
+                        <dl>
+                            <dt>Проект:</dt>
+                            <dd><a href="#">teplo-sales.ru</a></dd>
+                            <dt>Тематика:</dt>
+                            <dd>интернет-магазин по продаже теплых полов</dd>
+                            <dt>Вид услуги:</dt>
+                            <dd>контекстная реклама Яндекс.Директ</dd>
+                        </dl>
+                        <div>
+                            <a href="#">
+                                <img src="pic/podrazdel2__data.jpg" width="650" height="314" alt="Источники, динамика переходов">
+                            </a>
+                            <span>(на графиках представленны статистические данные <a href="#">Яндекс.Метрики</a>)</span>
+                        </div>
+                    </div>
+                    <!-- /podrazdel2__data -->
+
+                    <!-- podrazdel2__how -->
+                    <div class="podrazdel2__how">
+                        <h2>Как это работает?</h2>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Проект</th>
+                                    <th>Второй столбик</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Проект</td>
+                                    <td>Второй столбик</td>
+                                </tr>
+                                <tr>
+                                    <td>Еще проект</td>
+                                    <td>100%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- /podrazdel2__how -->
+
+
+                </div>
+                <!-- /podrazdel2 -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

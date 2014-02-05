@@ -1,0 +1,216 @@
+/* --------------- article_list--------------- */
+.article_list {
+    width: 358px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 17px 0 0;
+    border-left: 1px solid #e2e0de;
+    border-right: 1px solid #e2e0de;
+    border-bottom: 1px solid #e2e0de;
+}
+.article_list h2 {
+    font-size: 14px;
+    color: #121212;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.article_list h2 + .article_list__item:before {
+    border: none;
+}
+.article_list__item:hover {
+    cursor: pointer;
+    border: 3px solid #eeeeee;
+    margin: 0;
+    padding: 8px 16px 9px;
+}
+.article_list__item:hover .close {
+    display: block;
+}
+.article_list__item .close {
+    text-indent: -5000px;
+    top: 9px;
+    right: 12px;
+    display: none;
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    background: url("../img/close.png") no-repeat;
+}
+.article_list__item:hover:before {
+    border-color: transparent;
+}
+.article_list__item:before {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    border-top: 1px dotted #e2e0de;
+}
+.article_list__item {
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0 16px;
+    position: relative;
+    padding: 8px 0 9px;
+}
+.article_list__item p {
+    font-size: 14px;
+    margin-bottom: 7px;
+    line-height: 21px;
+}
+.article_list__item p:first-child {
+    color: #858585;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+.article_list__item p:first-child a:hover {
+    text-decoration: none;
+}
+.article_list__item p:first-child a {
+    color: #606060;
+    text-decoration: underline;
+}
+.article_list__item p a:hover {
+    text-decoration: underline;
+}
+.article_list__item p a {
+    text-decoration: none;
+    color: #494949;
+}
+/* --------------- /article_list--------------- */
+
+/* --------------- wrap_object--------------- */
+.wrap_object {
+    display: inline-block;
+    vertical-align: top;
+    width: 364px;
+}
+.wrap_object_search {
+    background: #fff;
+    border-bottom: 1px solid #cecece;
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.wrap_object_search .nice-select {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 7px;
+    height: 28px;
+    width: 126px;
+    background: #fff;
+    color: #000;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #b0ada8;
+    border-radius: 3px;
+}
+.wrap_object_search .catalog__sort .nice-select {
+    right: 0;
+}
+.wrap_object_search .nice-select__item {
+    position: absolute;
+    height: 26px;
+    top: 0;
+    left: 0;
+    right: 27px;
+    z-index: 1;
+    line-height: 25px;
+    padding: 0 0 0 6px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "PT Sans";
+    font-size: 12px;
+    color: #000;
+}
+.wrap_object_search .nice-select__item:after {
+    content: '';
+    width: 7px;
+    height: 6px;
+    background: url("../img/catalog_rubric_select.png") no-repeat;
+    position: absolute;
+    top: 11px;
+    right: -18px;
+    z-index: 10;
+}
+.wrap_object_search .nice-select select {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 27px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "PT Sans";
+    font-size: 12px;
+    color: #000;
+    line-height: 24px;
+}
+.wrap_object_search .nice-select:first-child {
+    left: 0;
+}
+.wrap_estate__block {
+    position: relative;
+    width: 362px;
+    margin-bottom: 25px;
+    padding-left: 13px;
+}
+
+.wrap_object .estate__block:before {
+
+
+    width: 162px;
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-bottom: 1px dotted #757575;
+
+}
+.wrap_object .estate__block > div {
+    padding: 8px 9px;
+
+}
+.wrap_object .estate__block {
+    /*position: relative;*/
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    width: 162px;
+    border-bottom: none;
+    padding-bottom: 10px;
+    margin-right: 10px;
+}
+.wrap_object .estate__img{
+    width: 100%;
+}
+.wrap_object .estate__img {
+    width: 152px;
+    height: 100px;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+}
+.wrap_object .estate__img img{
+    width: 100% !important;
+
+}
+.wrap_object .estate__block .price {
+    position: absolute;
+    bottom: 10px;
+}
+.estate__block{
+
+}
+/* --------------- /wrap_object--------------- */

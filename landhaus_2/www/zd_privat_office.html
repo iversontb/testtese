@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>text</title>
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic&subset=cyrillic-ext,cyrillic,latin' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/search-result.css" />
+    <link rel="stylesheet" href="css/private__office.css" />
+    <link rel="stylesheet" href="css/select.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <script src="js/jquery.time-range.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery.sort.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.radio.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+
+    <!--[if  IE 9]>
+    <link rel="stylesheet" href="css/main.ie9.css" />
+    <![endif]-->
+
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+<!-- site -->
+<div class="site">
+
+<!-- site_wrap -->
+<div class="site_wrap">
+
+<!-- baner_top -->
+<div class="baner_top">
+    <img src="pic/pic1.jpg" width="1043" height="50" alt="">
+</div>
+<!-- /baner_top -->
+
+<!-- header -->
+<header class="header">
+
+    <!-- header__top -->
+    <div class="head_top">
+
+        <!-- center_block -->
+        <div class="center_block">
+
+            <!-- seatch_form -->
+            <form class="seatch_form">
+                <input type="search" placeholder="Поиск по сайту">
+                <input type="submit" class="search_but">
+            </form>
+            <!-- /seatch_form -->
+
+            <!-- head_top__menu -->
+            <div class="head_top__menu">
+                <a class="add_ad" href="#">Добавить объявление бесплатно</a>
+                <span class="enter_but"><a href="#">Войти</a> или <a href="#">зарегистрироваться</a></span>
+                <a class="favorit" href="#">Избранное</a>
+            </div>
+            <!-- /head_top__menu -->
+
+            <!-- aritcles_object -->
+            <dl class="aritcles_object">
+                <dt>Статьи</dt>
+                <dd> 2</dd>
+                <dt>Объекты </dt>
+                <dd>13</dd>
+            </dl>
+            <!-- /aritcles_object -->
+
+        </div>
+        <!-- /center_block -->
+
+    </div>
+    <!-- head_top -->
+
+    <!-- center_block -->
+    <div class="center_block">
+
+        <!-- logo -->
+        <a href="#" class="logo"><img src="img/logo.png" width="207" height="59" alt=""></a>
+        <!-- /logo -->
+
+        <p class="slogan">На нашем сайте в подразделах купить, построить, жить и арендовать доступен поиск недвижимости. </p>
+
+        <!-- weather -->
+        <div class="weather">
+            <img src="pic/pic2.jpg" width="385" height="49" alt="">
+        </div>
+        <!-- /weather -->
+
+        <!-- main_menu -->
+        <nav class="main_menu">
+            <a href="#" class="menu_item1"><span>недвижимость</span></a>
+            <a href="#" class="menu_item2"><span>строительство</span></a>
+            <a href="#" class="menu_item3"><span>загородная жизнь</span></a>
+            <a href="#" class="menu_item4"><span>форум</span></a>
+            <a href="#">Рекламный пункт меню</a>
+        </nav>
+        <!-- /main_menu -->
+
+    </div>
+    <!-- /center_block -->
+
+
+
+</header>
+<!-- /header -->
+
+<!-- site__content -->
+<div class="site__content">
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+<!-- site_wrap -->
+<div class="site_wrap">
+
+<!-- sort_block -->
+<form action="#" class="sort_block">
+
+    <!-- deal -->
+    <div class="deal">
+        <span>Я хочу:</span>
+        <div class="sort_but type_deal">
+            <a href="#">Купить</a>
+            <a href="#" class="active">Снять</a>
+            <input type="hidden" value="2">
+        </div>
+        <div class="sort_but type_place">
+            <a href="#">Дом</a>
+            <a href="#">Квартиру  </a>
+            <a href="#" class="active">Участок</a>
+            <input type="hidden" value="3">
+        </div>
+    </div>
+    <!-- /deal -->
+
+    <!-- price_sort -->
+    <div class="price_sort">
+        <label>Стоимость от</label>
+        <input type="text" id="minCost" value="0"  />
+        <label>до</label>
+        <input type="text" id="maxCost" value="5000"  />
+        <span>тыс. руб.  за сотку</span>
+
+        <!-- sliderCont -->
+        <div class="sliderCont">
+            <div id="slider"></div>
+        </div>
+        <!-- /sliderCont -->
+
+    </div>
+    <!-- /price_sort -->
+
+    <!-- buts_add -->
+    <div class="buts_add">
+        <a href="#">Выбрать район</a>
+        <a href="#">Удаленность от КАД</a>
+    </div>
+    <!-- /buts_add -->
+
+    <!-- finish_block -->
+    <div class="finish_block">
+        <p class="sort_result">Найдено 365 объектов</p>
+        <input type="submit" class="e_but" value="Начать поиск">
+        <a href="#">Перейти к расширенному поиску</a>
+    </div>
+    <!-- /finish_block -->
+
+    <!-- show_type -->
+    <div class="show_type">
+        <a href="#" class="line_type active"></a>
+        <a href="#" class="block_type "></a>
+        <a href="#" class="map_type "></a>
+    </div>
+    <!-- show_type -->
+
+</form>
+<!-- /sort_block -->
+
+<!-- content_site -->
+<div class="content_site">
+
+<!-- breadcrumbs -->
+<nav class="breadcrumbs">
+    <a href="#">Главная</a>
+    <span>Личный кабинет</span>
+</nav>
+<!-- /breadcrumbs -->
+
+
+
+
+<!-- privat__office -->
+<div class="private__office">
+    <h2>Коттедж, Лодейнопольский район, Лодейное поле</h2>
+    <!-- manage__ads -->
+    <div class="manage__ads">
+        <span>#185665478 от 13.08.13</span>
+        <span>Просмотры: 1459</span>
+        <div class="control__buts">
+            <a href="#">Сделать не активным</a>
+            <a href="#" class="view__online">Посмотреть на сайте</a>
+            <a href="#" class="remove">Удалить</a>
+        </div>
+    </div>
+    <!-- /manage__ads -->
+    <!-- private__details -->
+    <form class="private__details">
+        <!-- option__wall -->
+        <div class="options__wall">
+            <h3>Я хочу</h3>
+            <!-- option__radio -->
+            <div class="option__radio">
+                <!-- radio__wrap -->
+                <div class="radio__wrap">
+                    <div><input type="radio" class="niceRadio" name="myradio" id="buy"  checked="checked" value="первый"> <label for="buy">Купить</label></div>
+                    <div><input type="radio" class="niceRadio" name="myradio" id="rent"  /> <label for="rent">Снять</label></div>
+                </div>
+                <!-- /radio__wrap -->
+                <!-- radio__wrap -->
+                <div class="radio__wrap">
+                    <div><input type="radio" class="niceRadio" name="myradio1" id="house1"  checked="checked" value="первый"> <label for="house1">Дом</label></div>
+                    <div><input type="radio" class="niceRadio" name="myradio1" id="plot"  /> <label for="plot">Участок</label></div>
+                    <div><input type="radio" class="niceRadio" name="myradio1" id="apartment"  value="первый"> <label for="apartment">Квартира</label></div>
+                    <div><input type="radio" class="niceRadio" name="myradio1" id="commercial_property"  /> <label for="commercial_property">Коммерческая недвижимость</label></div>
+                </div>
+                <!-- /radio__wrap -->
+            </div>
+            <!-- /option__radio -->
+        </div>
+        <!-- /option__wall -->
+        <!-- private__price -->
+        <div class="private__price">
+            <h3>За</h3>
+            <div>
+                <input type="text" id="price"><label for="price">тыс. руб</label>
+                <span>3 000 тыс. руб. = 3 000 000 руб. (Все верно?)</span>
+            </div>
+        </div>
+        <!-- /private__price -->
+        <!-- private__location -->
+        <div class="private__location">
+            <h3>Расположение и инфраструктура</h3>
+            <div class="location__wrap">
+                <label for="location__select">Район</label>
+                <select id="location__select">
+                    <option value="1" selected>Лодейнопольский</option>
+                    <option value="2">Лодейнопольский 2</option>
+                    <option value="3">Лодейнопольский 3</option>
+                </select>
+                <label for="locality">Населенный пункт</label>
+                <input type="text" id="locality">
+                <label for="gated__development">Коттеджный поселок</label>
+                <input type="text" id="gated__development">
+                <label for="street">Улица</label>
+                <input type="text" id="street">
+                <label for="house">Дом</label>
+                <input type="text" id="house" class="location_small_text">
+                <label for="housing" class="housing">Корпус</label>
+                <input type="text" id="housing" class="location_small_text">
+                <a class="point__map" href="#">Указать на карте</a>
+            </div>
+            <div class="location_radio_wrap">
+                <div><input type="radio" class="niceRadio" name="myradio2" id="IGS"  /> <label for="IGS">ИЖС</label></div>
+                <div><input type="radio" class="niceRadio" name="myradio2" id="DNP"  /> <label for="DNP">ДНП</label></div>
+                <div><input type="radio" class="niceRadio" name="myradio2" id="gardening"  /> <label for="gardening">Садоводство</label></div>
+                <div><input type="radio" class="niceRadio" name="myradio2" id="other__location"  /> <label for="other__location">Другое</label></div>
+            </div>
+            <div class="which__village">
+                <span>В коттеджном поселке:</span>
+                <div><input type="radio" class="niceRadio" name="myradio3" id="village1" /> <label for="village1">Михайловка</label></div>
+                <div><input type="radio" class="niceRadio" name="myradio3" id="village2" /> <label for="village2">Красногорье</label></div>
+                <div><input type="radio" class="niceRadio" name="myradio3" id="village3" /> <label for="village3">Зеленицкий</label></div>
+                <div><input type="radio" class="niceRadio" name="myradio3" id="village4" /> <label for="village4">Усть-каминск</label></div>
+            </div>
+        </div>
+        <!-- /private__location -->
+        <!-- private__options -->
+        <div class="private__options">
+            <div>
+                <span>Тип дома</span>
+                <div><input type="checkbox" class="niceCheck" id="ch1"/><label for="ch1">Летний</label></div>
+                <div><input type="checkbox" class="niceCheck" id="ch2"/><label for="ch2">Всесезонный</label></div>
+            </div>
+            <div>
+                <span>Материал дома</span>
+                <div><input type="checkbox" class="niceCheck" id="ch3"/><label for="ch3">Кирпичный</label></div>
+                <div><input type="checkbox" class="niceCheck" id="ch4"/><label for="ch4">Деревянный</label></div>
+                <div><input type="checkbox" class="niceCheck" id="ch5"/><label for="ch5">Каркасный</label></div>
+            </div>
+            <div>
+                <span>Коммуникации</span>
+                <div><input type="checkbox" class="niceCheck" id="ch6"/><label for="ch6">Газ</label></div>
+                <div><input type="checkbox" class="niceCheck" id="ch7"/><label for="ch7">Электричество</label></div>
+                <div><input type="checkbox" class="niceCheck" id="ch8"/><label for="ch8">Водоснабжение</label></div>
+                <div><input type="checkbox" class="niceCheck" id="ch9"/><label for="ch9">Центральное отопление</label></div>
+            </div>
+        </div>
+        <!-- /private__options -->
+        <!-- private__photos -->
+        <div class="private__photos">
+            <h3>Фотографии <span> (не более 20-ти)</span></h3>
+            <div class="photo__wrap">
+                <img src="pic/private-office-1.jpg" width="43" height="43" alt="">
+                <div class="photo__info">
+                    <span>filename.jpg</span>
+                    <a href="#">Удалить</a>
+                </div>
+            </div>
+            <div class="photo__wrap">
+                <img src="pic/private-office-2.jpg" width="43" height="43" alt="">
+                <div class="photo__info">
+                    <span>name.jpg</span>
+                </div>
+            </div>
+            <div class="photo__wrap">
+                <img src="pic/private-office-3.jpg" width="43" height="43" alt="">
+                <div class="photo__info">
+                    <span>filename.jpg</span>
+                    <a href="#">Удалить</a>
+                </div>
+            </div>
+            <div class="photo__download">
+                <span>Добавить фото</span>
+                <input type="file" value="" />
+            </div>
+        </div>
+        <!-- /private__photos -->
+        <!-- private__video -->
+        <div class="private__video">
+            <h3>Видео</h3>
+            <div class="video__wrap">
+                <label for="video__youtube">Код видео Youtube</label>
+                <input type="text" id="video__youtube">
+            </div>
+        </div>
+        <!-- /private__video -->
+        <!-- private__description -->
+        <div class="private__description">
+            <h3>Описание</h3>
+            <div class="description__wrap">
+                <textarea></textarea>
+                <input type="submit" value="Сохранить">
+            </div>
+        </div>
+        <!-- /private__description -->
+    </form>
+    <!-- /private__details -->
+</div>
+<!-- /privat__office -->
+
+
+
+
+
+</div>
+<!-- content_site -->
+
+<!-- site__right_aside -->
+<div class="site__right_aside">
+    <ul class="office__menu">
+        <li><a href="#" class="active">Профиль</a> </li>
+        <li><a href="#">Мои объявления</a> </li>
+        <li><a href="#">Стол заказов</a> </li>
+        <li><a href="#">Избранное</a> </li>
+        <li><a href="#">Просмотренные объявления</a> </li>
+        <li><a href="#">Блокнот</a> </li>
+        <li><a href="#">Помощь специалиста</a> </li>
+    </ul>
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container">
+        <img src="pic/pic5.jpg" width="230" height="398" alt="">
+    </a>
+    <!-- /banner_container -->
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container2">
+        <img src="pic/pic6.jpg" width="230" height="120" alt="">
+    </a>
+    <!-- /banner_container -->
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container2">
+        <img src="pic/office-aside-pic1.jpg" width="230" height="120" alt="">
+    </a>
+    <!-- /banner_container -->
+
+    <!-- banner_container -->
+    <a href="#" class="banner_container2">
+        <img src="pic/office-aside-pic2.jpg" width="230" height="120" alt="">
+    </a>
+    <!-- /banner_container -->
+
+
+</div>
+<!-- /site__right_aside -->
+
+</div>
+<!-- /site_wrap -->
+
+
+</div>
+<!-- /content-wrap -->
+
+</div>
+<!-- /site__content -->
+
+</div>
+<!-- /site_wrap -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+
+    <!-- site_wrap -->
+    <div class="site_wrap">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <!-- center_block -->
+            <div class="center_block">
+
+                <p class="copy">&copy; 2013 Загородный дом</p>
+
+                <a href="tel:88006234187" class="footer_tel">8 (800) 623 41 87</a>
+
+                <!-- social -->
+                <dl class="social">
+                    <dt>Контакты</dt>
+                    <dd><a href="#" class="facebook" title="facebook">facebook</a> </dd>
+                    <dd><a href="#" class="vkontakte" title="vkontakte">vkontekte</a> </dd>
+                    <dd><a href="#" class="youtube" title="youtube">youtube</a> </dd>
+                    <dd><a href="#" class="twitter" title="twitter">twitter</a> </dd>
+                </dl>
+                <!-- /social -->
+
+                <!-- footer_menu -->
+                <ul class="footer_menu">
+                    <li><a href="#">Недвижимость</a> </li>
+                    <li><a href="#">Статьи</a> </li>
+                    <li><a href="#">Реклама на сайте</a> </li>
+                    <li><a href="#">Строительство</a> </li>
+                    <li><a href="#">Новости</a> </li>
+                    <li><a href="#">О проекте</a> </li>
+                    <li><a href="#">Загородная жизнь</a> </li>
+                    <li><a href="#">Журнал</a> </li>
+                    <li><a href="#">Правила использования</a> </li>
+                    <li><a href="#">Форум</a> </li>
+                </ul>
+                <!-- /footer_menu -->
+
+                <!-- personal_menu -->
+                <div class="personal_menu">
+                    <a href="#">Избранное  <span>5</span></a>
+                    <a href="#">Блокнот</a>
+                    <a href="#">Стол заказов <span>3</span></a>
+                </div>
+                <!-- /personal_menu -->
+
+                <!-- footer_bottom -->
+                <div class="footer_bottom">
+
+                    <!-- counters -->
+                    <ul class="counters">
+                        <li><img src="pic/pic3.jpg" width="77" height="27" alt=""></li>
+                        <li><img src="pic/pic4.jpg" width="70" height="25" alt=""></li>
+                    </ul>
+                    <!-- /counters -->
+
+                    <!-- creaters -->
+                    <dl class="creaters">
+                        <dt><img src="img/creaters.png" width="56" height="10" alt=""></dt>
+                        <dd><a href="#">разработка сайта</a> </dd>
+                    </dl>
+                    <!-- /creaters -->
+
+                    <!-- footer_search -->
+                    <form class="footer_search">
+                        <input type="search" placeholder="Поиск по сайту">
+                        <input type="submit" class="footer_search_but">
+                    </form>
+                    <!-- footer_search -->
+
+
+
+                </div>
+                <!-- /footer_bottom -->
+
+            </div>
+            <!-- /center_block -->
+
+        </div>
+        <!-- /footer__layout -->
+
+
+    </div>
+    <!-- /site_wrap -->
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

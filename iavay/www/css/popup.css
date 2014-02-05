@@ -1,0 +1,636 @@
+
+/* --------------- /footer --------------- */
+
+@font-face {
+    font-family: "scada-regular-webfont";
+    src: url("../fonts/scada-regular-webfont.eot");
+    src: url("../fonts/scada-regular-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/scada-regular-webfont.woff") format("woff"),
+    url("../fonts/scada-regular-webfont.ttf") format("truetype");
+}
+@font-face {
+    font-family: "scada-bold-webfont";
+    src: url("../fonts/scada-bold-webfont.eot");
+    src: url("../fonts/scada-bold-webfont.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/scada-bold-webfont.woff") format("woff"),
+    url("../fonts/scada-bold-webfont.ttf") format("truetype");
+}
+
+/* --------------- /fonts --------------- */
+
+
+a.size1{
+    line-height: 25px;
+}
+a.size2{
+    line-height: 32px;
+}
+a.size3{
+    line-height: 35px;
+}
+a.size4{
+    line-height: 28px;
+}
+a.red:visited,
+a.fiolet:visited{
+    color: #fff;
+}
+a.gray:visited{
+    color: #333;
+}
+input[type="submit"].size1{
+    width: 112px;
+    height: 27px;
+    line-height: 27px;
+}
+input[type="submit"].size2{
+    width: 112px;
+    height: 34px;
+    line-height: 34px;
+}
+input[type="submit"].size3{
+    width: 112px;
+    height: 37px;
+    line-height: 37px;
+}
+input[type="submit"].size4{
+    width: 112px;
+    height: 30px;
+    line-height: 30px;
+}
+.fiolet{
+    color: #fff;
+    border: 1px solid #5656aa;
+    background: url("../img/fiolet-back.png");
+    text-shadow: 1px -1px 1px #4b4b90;
+}
+.fiolet:hover{
+    background: url("../img/fiolet-back-hover.png");
+}
+.fiolet:active{
+    background: url("../img/fiolet-back-active.png");
+
+}
+.size1{
+    font-size: 12px;
+    height: 25px;
+}
+.size2{
+    height: 32px;
+    font-size: 13px;
+}
+.size3{
+    height: 35px;
+    font-size: 13px;
+}
+.size4{
+    height: 28px;
+    font-size: 13px;
+}
+.gray{
+    border: 1px solid #b6b6b6;
+    color: #333333;
+    background: url("../img/gray-back.png");
+    text-shadow: 2px 1px 1px #fff;
+}
+.gray:hover{
+    background: url("../img/gray-back-hover.png");
+}
+.gray:active{
+    background: url("../img/gray-back-active.png");
+}
+.red{
+    border: 1px solid #ff3d3d;
+    color: #fff;
+    background: url("../img/red-back.png");
+    text-shadow: 2px -1px 1px #d43737;
+}
+.red:hover{
+    background: url("../img/red-back-hover.png");
+}
+.red:active{
+    background: url("../img/red-back-active.png");
+}
+.buttonType{
+    border-radius: 3px;
+    display:  block;
+    width: 110px;
+    text-align: center;
+    padding: 0;
+    font-family: "scada-regular-webfont";
+    -webkit-appearance: none;
+}
+
+.socialBut{
+    display: block;
+    text-indent: -5000px;
+    width: 218px;
+    height: 30px;
+    background: url("../img/button-sprite.png");
+    border: none;
+}
+
+a.control,
+a.tracking{
+    line-height: 27px;
+}
+.tracking{
+    width: 118px;
+}
+.control{
+    width: 129px;
+}
+.blakStar{
+    background: url("../img/black-star.png") no-repeat;
+    padding-left: 20px;
+}
+.orangeStar{
+    background: url("../img/orange-star.png") no-repeat;
+    padding-left: 20px;
+}
+.socialBut.fb:active{ background-position: 0 0;}
+.fb:hover{ background-position: 0 -31px;}
+.fb{ background-position: 0 -62px;}
+.socialBut.g:active{ background-position: 0 -93px;}
+.g:hover{ background-position: 0 -124px; }
+.g{ background-position: 0 -155px; }
+.socialBut.mr:active{ background-position: 0 -186px; }
+.mr:hover{ background-position: 0 -217px;}
+.mr{ background-position: 0 -248px; }
+.socialBut.od:active{ background-position: 0 -279px;}
+.od:hover{ background-position: 0 -310px;}
+.od{ background-position: 0 -341px;}
+.socialBut.t:active{ background-position: 0 -372px;}
+.t:hover{ background-position: 0 -403px;}
+.t{ background-position: 0 -434px; }
+.socialBut.vk:active{ background-position: 0 -465px; }
+.vk:hover{ background-position: 0 -496px;}
+.vk{ background-position: 0 -527px;}
+
+.popUpContainerNew{
+    background: url("../img/popup-back.png");
+    padding: 5px;
+    width: 268px;
+    border-radius: 5px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 10px;
+}
+.popUpContainerNew .popUpForm{
+    background: #fff;
+    border-radius: 5px;
+    position: relative;
+}
+.popUpContainerNew .formHead{
+    background: url("../img/form-head.png");
+    height: 55px;
+    margin-bottom: 17px;
+    border-radius: 5px 5px 0 0;
+}
+.popUpContainerNew .formHead h2{
+    color: #333333;
+    font-family: "scada-bold-webfont";
+    font-size: 18px;
+    padding: 19px 0 0 23px;
+
+}
+.popUpContainerNew .closeBut{
+    position: absolute;
+    text-indent: -5000px;
+    top: 20px;
+    right: 25px;
+    background: url("../img/close-button.png");
+    width: 14px;
+    height: 14px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.popUpContainerNew .closeBut:hover{
+    opacity: 1;
+}
+.popUpContainerNew p{
+    text-align: center;
+    font-family: "scada-regular-webfont";
+    font-size: 13px;
+    margin-bottom: 17px;
+}
+.popUpContainerNew .socialWrap{
+    overflow: hidden;
+    clear: both;
+    height:  150px;
+}
+.popUpContainerNew .socialWrap li{
+    margin: 0 0 20px 25px;
+}
+.popUpContainerNew .wraper{
+    border-top: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    padding: 17px 0;
+    clear: both;
+}
+.popUpContainerNew .inputWrap{
+    border: 1px solid #999;
+    background: #f3f3f3;
+    width: 216px;
+    border-radius: 3px;
+    height: 28px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.popUpContainerNew .inputWrap input{
+    background: none;
+    border: none;
+    color: #333333;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /*height: 28px;*/
+    width: 196px;
+    padding: 6px 10px;
+    font-family: "scada-regular-webfont";
+    font-size: 14px;
+}
+.popUpContainerNew input[type="submit"].size4{
+    width: 218px;
+    margin-left: 25px;
+}
+::-webkit-input-placeholder {
+    color: #999;
+}
+:-moz-placeholder {
+    color: #999;
+}
+.placeholder {
+    color: #999;
+}
+.popUpContainerNew .popUpFormFooter{
+    overflow: hidden;
+    padding: 17px 0 17px 24px;
+}
+.popUpContainerNew .popUpFormFooter li:first-child{
+    margin-left: 0;
+}
+.popUpContainerNew .popUpFormFooter li{
+    float: left;
+    margin-left: 66px;
+}
+.popUpContainerNew .popUpFormFooter li a{
+    font-family: "scada-regular-webfont";
+    font-size: 12px;
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px solid #e4e4e4;
+}
+.popUpContainerNew .popUpFormFooter li a:hover{
+    border-bottom: 1px solid #888;
+}
+.popUpContainerNew .moreSoc{
+    color: #666;
+    font-size: 11px;
+    font-family: "scada-regular-webfont";
+    float: right;
+    text-decoration: none;
+    border-bottom: 1px dotted #666;
+    margin: 0 25px 10px 0;
+}
+.popUpContainerNew .moreSoc:hover{
+    border-bottom: none;
+    margin-bottom: 11px;
+}
+.popUpContainerNew .error{
+    font-size: 11px;
+    color: #333;
+    background: #e7f0c4;
+    text-align: left;
+    padding: 16px 0 16px 24px;
+    margin-top: -10px;
+    margin-bottom: 9px;
+}
+.popUpContainerNew .error p{
+    text-align: left;
+    margin-bottom: 0;
+    font-size: 11px;
+}
+.popUpContainerNew .userContainer{
+    overflow: hidden;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-bottom: 13px;
+}
+.popUpContainerNew .imgWrap{
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 51px;
+}
+.popUpContainerNew .vkUser{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background: url("../img/vk-boble.png");
+    width: 20px;
+    height: 20px;
+    text-indent: -5000px;
+}
+.popUpContainerNew .fbUser{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background: url("../img/fb-bovble.png");
+    width: 20px;
+    height: 20px;
+    text-indent: -5000px;
+}
+.popUpContainerNew .odUser{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background: url("../img/od-boble.png");
+    width: 20px;
+    height: 20px;
+    text-indent: -5000px;
+}
+.popUpContainerNew .ttUser{
+    position: absolute;
+    top: -5px;
+    right: -7px;
+    background: url("../img/tt-boble.png");
+    width: 20px;
+    height: 20px;
+    text-indent: -5000px;
+}
+.popUpContainerNew .userContainer p{
+    float: left;
+    text-align: left;
+    width: 200px;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 12px 0 0 12px;
+    line-height: 15px;
+    font-family: "scada-regular-webfont";
+}
+.regPop{
+    width: 301px;
+}
+.regPop .formHead{
+    margin-bottom: 10px;
+}
+.popUpContainerNew .lineContainer{
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
+}
+.popUpContainerNew .checkWrap{
+    float: left;
+    margin-left: 25px;
+}
+.popUpContainerNew .lineContainer label{
+    float: left;
+    font-family: "scada-regular-webfont";
+    font-size: 12px;
+    color: #333;
+    margin: 5px 0 0 9px;
+}
+.regPop .inputWrap{
+    width: 249px;
+}
+.regPop .inputWrap input{
+    width: 229px;
+}
+.regPop  input[type="submit"].size4{
+    width: 251px;
+}
+.popUpContainerNew .registred{
+    display: none;
+}
+.popUpContainerNew .noLine{
+    border-top: none;
+}
+.popUpContainerNew .forgotMessage{
+    text-align: left;
+    padding-left: 25px;
+    line-height: 20px;
+    padding-right: 20px;
+}
+.popUpContainerNew .load{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background: url("../img/thinkin-back.png");
+}
+.popUpContainerNew .load img{
+    position: absolute;
+    top: 50%;
+    margin-left: -19.5px;
+    margin-top: -19.5px;
+    left: 50%;
+}
+.popUpContainerNew .forgotMessage a{
+    font-family: 13px;
+    color: #7474d1;
+}
+.popUpContainerNew .forgotMessage a:hover{
+    text-decoration: underline;
+}
+.popUpContainerNew .noLine2{
+    border-bottom:  none;
+}
+.popUpContainerNew .noLine2 a.size1{
+    margin-left: 25px;
+}
+.oferta{
+    width: 582px;
+}
+.popUpContainerNew .scrollBox{
+    padding-left: 25px;
+    position: relative;
+}
+.popUpContainerNew .scroll-pane {
+    width: 534px;
+    height: 343px;
+    overflow: auto;
+
+}
+
+
+.popUpContainerNew .scrollBox p{
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+    line-height: 15px;
+}
+
+/*
+	ScrollBar Styles
+*/
+.content-wrap .jScrollPaneContainer,
+.popUpContainerNew .jScrollPaneContainer {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.content-wrap .jScrollPaneTrack,
+.popUpContainerNew .jScrollPaneTrack {
+    position: absolute;
+    cursor: pointer;
+    right: 0;
+    top: 0 !important;
+    height: 91% !important;
+    background: #dddddd;
+    border-radius: 15px;
+    width: 14px !important;
+}
+.content-wrap .jScrollPaneDrag,
+.popUpContainerNew .jScrollPaneDrag {
+    position: absolute;
+    background: #a2a2a2;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 10px !important;
+    left: 2px;
+    margin: 2px 0 -2px 0;
+
+}
+.content-wrap .jScrollPaneDragTop,
+.popUpContainerNew .jScrollPaneDragTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:  none;
+    overflow: hidden;
+    background: url(../images/scrollDragTop.gif) no-repeat;
+    height:3px;
+}
+.content-wrap .jScrollPaneDragBottom,
+.popUpContainerNew .jScrollPaneDragBottom {
+    position: absolute;
+    bottom: 0;
+    display:  none;
+    left: 0;
+    overflow: hidden;
+    background: url(../images/scrollDragBot.gif) no-repeat;
+    height:3px;
+}
+.content-wrap a.jScrollArrowUp,
+.popUpContainerNew a.jScrollArrowUp {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    display:  none;
+    height: 18px;
+    background: url(../images/arrow_up.gif) no-repeat;
+}
+.content-wrap a.jScrollArrowDown,
+.popUpContainerNew a.jScrollArrowDown {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    display:  none;
+    right: 0;
+    text-indent: -2000px;
+    overflow: hidden;
+    height: 18px;
+    background: url(../images/arrow_down.gif) no-repeat;
+}
+.content-wrap .scrollShadow,
+.popUpContainerNew .scrollShadow{
+    background: url("../img/scrool-back.png");
+    height: 52px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 88%;
+    z-index: 10;
+    margin: 0 25px;
+}
+.oferta .formHead{
+    margin-bottom: 20px;
+}
+.popUpContainerNew .conteiner{
+    overflow: hidden;
+    border-top: 1px solid #e4e4e4;
+    margin-top: 10px;
+    padding:  20px 25px;
+}
+.popUpContainerNew .conteiner .size1{
+    width: 110px;
+    float: left;
+}
+.popUpContainerNew .conteiner .fiolet{
+    float: right;
+    width: 206px;
+}
+.popUpContainerNew .haveAc{
+    display: block;
+    color: #666;
+    font-size: 12px;
+    float: right;
+    border-bottom: 1px solid #e4e4e4;
+}
+.popUpContainerNew .haveAc:hover{
+    border-bottom: 1px solid #333;
+}
+.popUpContainerNew .over{
+    overflow:  hidden;
+    padding: 15px 25px;
+}
+.popUpContainerNew .conteiner .forgotMessage{
+    padding: 0;
+    margin-bottom: 0;
+}
+.popUpContainerNew .exemple{
+    font-family: "scada-regular-webfont";
+    font-size: 12px;
+    padding-left: 25px;
+    margin-bottom: 15px;
+}
+.popUpContainerNew .exemple p{
+    margin-bottom: 5px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.popUpContainerNew .exemple p a{
+    color: #666;
+    text-decoration: none;
+    border-bottom: 1px dashed #666;
+}
+.popUpContainerNew .exemple p a:hover{
+    border-bottom: none;
+}
+
+.popUpContainerNew .selectWrap{
+    padding-left: 25px;
+    margin-bottom: 10px;
+}
+.popUpContainerNew .selectWrap label{
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 13px;
+    font-family:  "scada-regular-webfont";
+    font-weight: bold;
+}
+.popUpContainerNew .selectWrap label span{
+    color: #888888;
+    font-size: 11px;
+    font-weight: normal;
+    margin-right: 25px;
+    float: right;
+}
+.popUpContainerNew .hiddenBlok{
+
+}

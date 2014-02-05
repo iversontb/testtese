@@ -1,0 +1,156 @@
+<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Наши контакты">
+    <meta name="keywords" content="почта, адрес, skype, e-mail">
+    <title>Контакты &laquo; Web Ares Lab</title>
+    <link rel="stylesheet" href="css/s0.css">
+    <link rel="stylesheet" href="css/m0.css">
+
+    <script src="js/modernizr-1.7.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/history.js"></script>
+    <script src="js/coin-slider.min.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script src="js/tween.max.min.js"></script>
+    <script src="js/j.m.js"></script>
+    
+    <!--[if lte IE 9]>
+         <link rel="stylesheet" href="css/pie.css">
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/ie.8.css">
+        <script src="js/j.ie.8.js"></script>
+     <![endif]-->
+
+</head>
+<body>
+        
+    <!--site-->
+    <div class="site">
+
+        <!--header-->
+        <header class="header">
+            <a href="/" title="Web Ares Lab"><img class="logo" src="img/logo.png" width="266" height="203" alt="Web Ares Lab"/></a>
+
+            <!--menu-->
+            <nav class="menu">
+                <a href="/about-us.html" title="О нас &laquo; Web Ares Lab">О нас</a>
+                <a href="/portfolio.html" title="Портфолио &laquo; Web Ares Lab">Портфолио</a>
+                <a href="/news.html" title="Новости &laquo; Web Ares Lab">Новости</a>
+                <a class="active" href="/contact.html" title="Контакты &laquo; Web Ares Lab">Контакты</a>
+            </nav>
+            <!--/menu-->
+
+        </header>
+        <!--/header-->
+            
+        <!-- site__wrapper -->
+        <div class="site__wrapper site__wrapper_contact" data-php="php/page.php">
+
+            <!-- address -->
+            <section class="address">
+                <h1>Связаться с нами через:</h1>
+
+                <div>
+                    <a href="https://www.facebook.com/pages/Web-Ares/572268776168536" class="f">facebook</a>
+                    <!--<a href="#" class="v">vk</a>-->
+                    <!--<a href="#" class="g">google</a>-->
+                </div>
+                <address class="e-contact">
+                    <a href="mailto:ares@webares.com" class="mail">ares@webares.com</a>
+                    <span class="phone">+38 (096) 218-83-88</span>
+                    <a href="skype:facebook:office_254" class="skype">facebook:office_254</a>
+                    <!--<span class="icq">88888888</span>-->
+                </address>
+                <!--/e-contact-->
+            </section>
+            <!-- /address -->
+
+            <!-- feedback__form -->
+            <section class="feedback__form">
+                <h2>Связаться с нами на прямую:</h2>
+
+                <!-- feedback -->
+                <form class="feedback" id="feedback" action="php/feedback.php">
+                    <input class="feedback__name" name="name" id="name" type="text" placeholder="ФИО">
+                    <input class="feedback__mail" id="mail" name="mail" type="email" placeholder="Введите свой e-mail">
+                    <textarea class="feedback__area" id="message" name="message" placeholder="Пожелание, дополнительная иформация"></textarea>
+                    <input class="feedback__send" type="submit" value="Отправить">
+                </form>
+                <!-- /feedback -->
+
+            </section>
+            <!-- /feedback__form -->
+
+            <!-- our-team -->
+            <section class="our-team">
+                <h2>Наша команда:</h2>
+                <ul>
+                    <li>
+                        <img src="pic/pic5.png" width="78" height="106" alt=""/>
+                        <h3>Петрунин Николай</h3>
+                        <dl>
+                            <dt>Должность:</dt>
+                            <dd>Front-end-programmer</dd>
+                            <dt>Стаж:</dt>
+                            <dd>3 года</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="pic/pic5.png" width="78" height="106" alt=""/>
+                        <h3>Петрунин Евгений</h3>
+                        <dl>
+                            <dt>Должность:</dt>
+                            <dd>Front-end-programmer</dd>
+                            <dt>Стаж:</dt>
+                            <dd>2 года</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </section>
+            <!-- /our-team -->
+
+        </div>
+        <!-- /site__wrapper -->
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div>
+
+            <!-- copyright -->
+            <p class="copyright">Web Ares Lab &copy; 2013</p>
+            <!-- /copyright -->
+
+            <!-- menu -->
+            <div class="menu menu_footer">
+                <a href="/about-us.html" title="О нас &laquo; Web Ares Lab">О нас</a>
+                <a href="/portfolio.html" title="Портфолио &laquo; Web Ares Lab">Портфолио</a>
+                <a href="/news.html" title="Новости &laquo; Web Ares Lab">Новости</a>
+                <a href="/contact.html" title="Контакты &laquo; Web Ares Lab">Контакты</a>
+            </div>
+            <!-- /menu -->
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-41619464-1']);
+        _gaq.push(['_trackPageview']);
+        _gaq.push(['_trackPageLoadTime']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+.wrap_more ol li > span, .wrap_calculator, .wrap_btn a, .bottom_list li, .network a, .footer__bottom form input[type="text"] {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+    position: relative;
+}
+.footer__bottom form {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

@@ -1,0 +1,9 @@
+.the_first_step form input,
+.take_a_franchise,
+.what_i_get,
+.how_to_become,
+.the_first_step form #call{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

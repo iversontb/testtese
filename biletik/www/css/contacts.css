@@ -1,0 +1,59 @@
+/* --------------- map --------------- */
+.map{
+    min-width: 1000px;
+    height: 596px;
+    margin-top: -62px;
+    margin-bottom: 87px;
+}
+.map img{
+
+    z-index: 0;
+    width:100%
+}
+/* --------------- /map --------------- */
+
+.address{
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* --------------- .contacts --------------- */
+.contacts{
+    display: inline-block;
+    background: #ffffff;
+    font-style: normal;
+    margin-top: 72px;
+    margin-left: -3px;
+    padding-left: 34px;
+    padding-top: 23px;
+    padding-bottom: 47px;
+    padding-right: 85px;
+}
+.contacts h1{
+    font-family: "Days";
+    font-size: 36px;
+    color: #212121;
+    margin-bottom: 19px;
+}
+.contacts ul li{
+    font-family: "Arial";
+    font-size: 16px;
+    color: #212121;
+    line-height: 24px;
+}
+.contacts ul li:first-child{
+    font-size: 24px;
+}
+.contacts ul li span{
+    font-weight: bold;
+}
+.contacts ul li a{
+    color: #212121;
+    text-decoration: underline;
+}
+.contacts ul li a:hover{
+    text-decoration: none;
+}
+/* --------------- /contacts --------------- */

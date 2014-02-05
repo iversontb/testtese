@@ -1,0 +1,126 @@
+/* --------------- ares-slider --------------- */
+.ares-slider {
+    margin: 0 auto;
+    width: 826px;
+    height: 344px;
+    position: relative;
+    text-align: center;
+    margin-bottom: 8px;
+
+}
+/*.ares-slider:before{*/
+    /*content: '';*/
+    /*position: absolute;*/
+    /*background: url("../img/bkg_button.png") no-repeat;*/
+    /*width: 826px;*/
+    /*height: 344px;*/
+    /*left: 0;*/
+    /*top: 212px;*/
+    /*z-index: 1;*/
+/*}*/
+.ares-slider a{
+    width: 826px;
+    height: 344px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.ares-slider img {
+    display: block;
+    background: #fff;
+    padding: 5px;
+}
+.ares-slider__next,
+.ares-slider__prev {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 50px;
+
+    cursor: pointer;
+    z-index: 1;
+}
+.ares-slider__prev {
+    left: auto;
+    background: url("../img/left.png");
+    right: 18px;
+    left: 10px;
+    top: 150px;
+}
+.ares-slider__prev:hover {
+    background: url("../img/left-hover.png");
+}
+
+.ares-slider__next {
+    left: auto;
+    background: url("../img/right.png");
+    right: 18px;
+    right: 10px;
+    top: 150px;
+}
+
+.ares-slider__next:hover {
+    background: url("../img/right-hover.png");
+}
+.ares-slider__points {
+    position: relative;
+    top: 286px;
+    list-style: none !important;
+    padding-top: 13px;
+    left: auto !important;
+}
+.ares-slider__points li {
+    width: 10px;
+    height: 10px;
+    float: left;
+    background: url("../img/dot.png");
+    margin-left: 8px;
+    cursor: pointer;
+}
+.ares-slider__points li:first-child {
+    margin-left: 0;
+}
+.ares-slider__points li.active {
+    cursor: default;
+    background: url("../img/active-dot.png");
+}
+.ares-slider__preview {
+    position: absolute;
+    bottom: -192px;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 164px;
+}
+.ares-slider__preview ul {
+    position: absolute;
+    top: 0;
+    list-style: none;
+    left: 0;
+    width: 100% !important;
+    text-align: left;
+}
+.ares-slider__preview li {
+    float: left;
+    margin-left: 3px;
+    width: 164px;
+    height: 164px;
+    margin-right: 36px;
+    cursor: pointer;
+    position: relative;
+}
+.ares-slider__preview li:hover{
+    opacity: 0.8;
+}
+.ares-slider__preview li:first-child {
+    margin-left: 0;
+}
+.ares-slider__preview img {
+    width: 164px;
+    height: 164px;
+    position: relative;
+    z-index: -1;
+}
+/* --------------- /slider --------------- */

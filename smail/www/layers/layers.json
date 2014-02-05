@@ -1,0 +1,103 @@
+{
+	"tpl": "/layers/index.tpl",
+	"tag": "#base_html",
+	"tags": {
+		"#menu": {
+			"tpl": "/layers/blocks/menu.tpl"
+		},
+		"#special": {
+			"tpl": "/layers/blocks/menu2.tpl",
+			"json": "/layers/pages/show.njs?s=1",
+			"config": { "shows": [] },
+			"onload": "onloadSpecial"
+		},
+		"#slideshow": {
+			"tpl": "/layers/slideshow/slideshow.tpl",
+			"json": "/plugins/files/dir.njs?src=/data/Слайды/&random=1&realname=2"
+		},
+		"#galleries": {
+			"tpl": "/layers/gallery/galleries.tpl",
+			"json": "/layers/pages/show.njs?s=1",
+			"config": {
+				"num": 3
+			},
+			"onload": "onloadGalleries"
+		},
+		"#breadcrumb": {
+			"config": {
+				"last": {},
+				"breadcrumb": []
+			},
+			"tpl": "/layers/blocks/breadcrumb.tpl",
+			"oncheck": "oncheckBreadcrumb",
+			"onshow": "onshowDefault"
+		},
+		"#page": {
+			"tpl": "/data/Главная.tpl"
+		},
+		"#contacts_window": {
+			"tpl": "/layers/send_message.tpl"
+		},
+		"#itlifestat": {
+			"tpl": "/layers/itlifestat.tpl",
+			"config": {},
+			"oncheck": "reparseStatLayer",
+			"onshow": "onshowDefault"
+		}
+	},
+	"states": {
+		"Галерея": {
+			"config": {
+				"title": "Галерея"
+			},
+			"tpl": "/layers/gallery/gallery.tpl",
+			"json": "/layers/pages/show.njs?s=1",
+			"tag": "#page",
+			"onload": "onloadGallery"
+		},
+		"Галерея/[^/]+(/[^/]+){0,1}": {
+			"config": {
+				"title": "Альбом",
+				"last": {}
+			},
+			"tpl": "/layers/pages/album.tpl",
+			"json": "/layers/pages/show.njs?s=1",
+			"tag": "#page",
+			"oncheck": "oncheckGallery2",
+			"onload": "onloadGallery2",
+			"onshow": "onshowGallery2"
+		},
+		"Отзывы": {
+			"config": {
+				"title": "Отзывы"
+			},
+			"json": "/layers/pages/show.njs?s=2",
+			"tpl": "/layers/pages/comments.tpl",
+			"tag": "#page"
+		},
+		"Шоу/[^/]+(/[^/]+){0,1}": {
+			"config": {
+				"title": ""
+			},
+			"tpl": "/layers/pages/show.tpl",
+			"tag": "#page",
+			"oncheck": "oncheckShow"
+		},
+		"Информация": {
+			"tag": "#page",
+			"tpl": "/layers/pages/information.tpl",
+			"json": "/plugins/files/dir.njs?src=/data/Информация/&onlyname=2"
+		},
+		"Информация/[^/]+": {
+			"tag": "#page",
+			"htmlString": "<div id='information'></div>",
+			"tags": {
+				"#information": {
+					"ext": "/plugins/files/page.layer.js",
+					"jsontpl": "/plugins/files/dir.njs?src={{config.dir}}&realname=3&e=tpl,html,doc,docx,odt&f=1&d=1&sub=1", 
+					"config": { "dir": "/data/Информация/" }
+				}
+			}
+		}
+	}
+}

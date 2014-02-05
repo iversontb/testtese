@@ -1,0 +1,17 @@
+/* css for ltie8 */
+@font-face {
+    font-family: "pfdindisplaypro-light";
+    src: url("../fonts/pfdindisplaypro-light.eot");
+}
+@font-face {
+    font-family: "ptsans";
+    src: url("../fonts/ptsans.eot");
+}
+@font-face {
+    font-family: "ptsans-bold";
+    src: url("../fonts/ptsans-bold.eot");
+}
+
+.wrap_aside .more:hover, .personnel input[type="submit"]:hover, a.send_resume:hover {
+    filter: alpha(opacity=80)
+}

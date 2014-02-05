@@ -1,0 +1,176 @@
+/* --------------- news__fix --------------- */
+.news__fix {
+    margin-left: -8px;
+}
+/* --------------- news__fix --------------- */
+
+/* --------------- news__fix --------------- */
+.news__fix .button a.more__questions {
+    width: 118px;
+}
+/* --------------- news__fix --------------- */
+
+/* --------------- news__fix_news --------------- */
+.news__fix_news {
+    background: #ffeec1;
+    border: 1px solid #e3e1df;
+    border-top: none;
+    box-shadow: 0 1px 0 rgba( 226, 226, 226, 0.4 );
+    padding-top: 15px;
+    margin-bottom: 9px;
+}
+.news__fix_news h2 {
+    font-family: "PT Serif";
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 21px 5px 21px;
+}
+.news__fix_news ul {
+    margin: 0 22px 6px 22px;
+}
+.news__fix_news > ul > li {
+    border-top: 1px dotted #757575;
+    padding-bottom: 6px;
+}
+.news__fix_news > ul > li:first-child {
+    border: none;
+}
+.news__fix_news span {
+    font-family: "PT Sans";
+    font-size: 12px;
+    color: #777777;
+    display: block;
+    padding-top: 9px;
+}
+.news__fix_news a,
+.news__fix_news a:visited {
+    font-family: "PT Serif";
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 10px 9px 0;
+    color: #000;
+    text-decoration: none;
+    position: relative;
+}
+.news__fix_news a:hover {
+    text-decoration: underline;
+}
+.news__fix_news ul.comment-reviews {
+    display: inline-block;
+    margin-left: 0;
+    position: relative;
+    top: 4px;
+}
+.news__fix_item {
+    background: #fff;
+    border: 1px solid #e3e1df;
+    border-top: none;
+    box-shadow: 0 1px 0 rgba( 226, 226, 226, 0.4 );
+}
+/* --------------- /news__fix_news --------------- */
+
+/* --------------- news__fix_item --------------- */
+.news__fix_item {
+    margin-bottom: 9px;
+}
+.news__fix_item ul {
+    margin: 0 19px;
+}
+.news__fix_item > ul > li {
+    border-top: 1px dotted #757575;
+    padding: 15px 0 19px 0;
+    min-height: 112px;
+}
+.news__fix_item > ul > li:first-child {
+    border: none;
+}
+.news__fix_item img {
+    border: 1px solid #d7d7d7;
+    float: left;
+    margin: 6px 19px 6px 0;
+}
+.news__fix_item h3 {
+    font-size: 18px;
+    font-family: "PT Serif";
+    line-height: 24px;
+    margin-bottom: 2px;
+}
+.news__fix_item span {
+    font-size: 12px;
+    font-family: "PT Sans";
+    color: #777777;
+    line-height: 21px;
+    margin-right: 19px;
+}
+.news__fix_item span > a,
+.news__fix_item span > a:visited{
+    font-size: 12px;
+    font-family: "PT Sans";
+    color: #000;
+    text-decoration: underline;
+    margin-left: 11px;
+}
+.news__fix_item span > a:hover {
+    text-decoration: none;
+}
+.news__fix_item .comment-reviews li {
+    display: inline-block;
+    vertical-align: top;
+    color: #282828;
+    font-size: 12px;
+    margin-right: 6px;
+}
+.news__fix_item ul.comment-reviews {
+    display: inline-block;
+    margin-left: 0;
+    position: relative;
+    top: 4px;
+}
+.news__fix_item .comment-reviews li.comment-reviews__views {
+    background: url("../img/news-inner__view.png") no-repeat 4px 2px;
+}
+.news__fix_item .comment-reviews li.comment-reviews__comments {
+    background: url("../img/news-inner__comment.png") no-repeat 0 1px;
+}
+.news__fix_item p {
+    font-family: "PT Sans";
+    font-size: 14px;
+    line-height: 21px;
+    color: #656565;
+    padding-top: 6px;
+}
+/* --------------- /news__fix_item --------------- */
+
+/* --------------- news__fix_thems --------------- */
+.news__fix_thems {
+    border: 3px solid #e8e7e7;
+    margin: 20px 0;
+    padding: 16px 0 4px 19px;
+}
+.news__fix_thems h2 {
+    font-family: "PT Serif";
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.news__fix_thems ul {
+    margin-left: -2px;
+}
+.news__fix_thems a,
+.news__fix_thems a:visited {
+    display: inline-block;
+    vertical-align: top;
+    padding: 7px 9px;
+    margin: 0 9px 13px 0;
+    font-size: 12px;
+    font-family: "PT Sans";
+    color: #494949;
+    border: 1px solid #ada9a3;
+    border-radius: 3px;
+    background: #e8e7e7;
+}
+.news__fix_thems a:hover {
+    background: #d5d4d4;
+}
+/* --------------- /news__fix_thems --------------- */

@@ -1,0 +1,507 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>title</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jcarousellite_1.0.1.pack.js"></script>
+    <script src="js/jquery.localscroll.js"></script>
+    <script src="js/jquery.scrollto.js"></script>
+    <script type="text/javascript">
+        $(function($) {
+            $.localScroll({
+                duration: 1000,
+                hash: false });
+        });
+    </script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+        <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <div class="site__layout">
+            <!-- header -->
+            <header class="header">
+
+                <!-- logo -->
+                <a href="index.html" title="На главную" class="logo"><img src="img/logo.png" width="296" height="74" alt=""></a>
+                <!-- /logo -->
+
+                <!-- main-menu -->
+                <nav class="main-menu">
+
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="firstMenu"><a class="main-menu__lnk" href="#catalog">Каталог</a></td>
+
+
+                                <td><a class="main-menu__lnk" href="#presentView"> Виды фасовки</a></td>
+                                <td><a class="main-menu__lnk" href="#forDiler">Для диллера</a></td>
+                                <td><a class="main-menu__lnk" href="#about">О бренде  </a></td>
+
+                                <td><a class="main-menu__lnk" href="#contacts">Контакты</a></td>
+
+                                <td><a class="main-menu__lnk" href="#">заказ и доставка </a></td>
+                                <td><a class="main-menu__lnk" href="#">прайс-лист</a></td>
+                                <td><a class="main-menu__lnk" href="#">конструктор</a></td>
+                                <td  class="lastMenu" style="text-align: right"><p class="phone"><span>8 (812)</span> 333-22-11</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </nav>
+                <!-- /main-menu -->
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <div class="content">
+
+                        <!-- catalogMenu -->
+                        <div class="catalogMenu" id="catalog">
+                            <div class="topicType">Каталог товаров</div>
+
+                            <!-- subMenu -->
+                            <div class="subMenu">
+
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <!-- container -->
+                                                <div class="container">
+                                                    <a href="#"><span>Саморезы</span></a>
+
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel leftPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                                <!-- /container -->
+                                            </td>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>Дюбели</span></a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel leftPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>Такеллаж</span></a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel rightPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>Шайбы и гайки</span></a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel rightPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>Болты</span></a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel rightPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>SORMAT</span></a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel rightPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>Шурупы</span></a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel leftPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>Анкеры</span></a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel leftPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>Спецкрепеж</span></a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel rightPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>Шпильки</span></a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel rightPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>Винты</span></a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel rightPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="container">
+                                                    <a href="#"><span>Перфорация</a>
+                                                    <!-- subLevel -->
+                                                    <div class="subLevel rightPos">
+                                                        <div class="close" title="close">close</div>
+                                                        <ul>
+                                                            <li><a href="#">Саморез гипсокартон-дерево промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, белый цинк</a></li>
+                                                            <li><a href="#">Саморез гипсокартон-металл промфасовка</a></li>
+                                                            <li><a href="#">Саморез оконный, сверло, желтопас </a></li>
+                                                            <li><a href="#">Саморез металл-металл с прессшайбой </a></li>
+                                                            <li><a href="#">Саморезы фурнитурные бел/желт, острые</a></li>
+                                                            <li><a href="#">Шайба уплотнительная (EPDM)</a></li>
+                                                            <li><a href="#">Саморез для сэндвич-панелей промфасовка</a></li>
+                                                            <li><a href="#">Саморез для ГВЛ промфасовка </a></li>
+                                                            <li><a href="#">Саморез металл-металл промфасовка</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- /subLevel -->
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <!-- /subMenu -->
+
+                        </div>
+                        <!-- /catalogMenu -->
+
+                        <!-- bread_crumbs -->
+                        <ol class="bread_crumbs">
+                            <li><a href="#">Главная</a></li>
+                            <li><span>Каталог</span></li>
+                        </ol>
+                        <!-- /bread_crumbs -->
+
+                        <!-- form_inner -->
+                        <div class="form_inner">
+                            <span class="title">Для квалифицированной помощи в открытии магазина крепежа нам необходима от Вас следующая первичная информация:</span>
+
+                            <!-- form -->
+                            <form action="#">
+                                <div class="wrap_input">
+                                    <label for="town"><span>Город в котором будет расположен магазин:</span></label>
+                                    <input id="town" type="text"/>
+                                </div>
+                                <div class="wrap_input">
+                                    <label for="person"><span>Ответственное лицо:</span></label>
+                                    <input id="person" type="text"/>
+                                </div>
+                                <div class="wrap_input">
+                                    <label for="tel"><span>Контактный телефон:</span></label>
+                                    <input id="tel" type="text"/>
+                                </div>
+                                <div class="wrap_input">
+                                    <label for="mail"><span>Е-mail:</span></label>
+                                    <input id="mail" type="text"/>
+                                </div>
+                                <div class="wrap_input">
+                                    <label for="square"><span>Планируемая площадь под крепежные изделия, м2:</span></label>
+                                    <input id="square" type="text"/>
+                                </div>
+                                <div class="wrap_input">
+                                    <label for="plan"><span>План помещения:</span></label>
+                                    <input id="plan" type="file"/>
+                                </div>
+                                <div class="wrap_input">
+                                    <label for="price"><span>Приблизительная сумма первоначальной закупки, руб:</span></label>
+                                    <input id="price" type="text"/>
+                                </div>
+                                <div class="wrap_input">
+                                    <label for="text"><span>Пожелания к ассортименту (если есть):</span></label>
+                                    <input id="text" type="text"/>
+                                </div>
+                                <div class="wrap_input">
+                                    <label for="date"><span>Предполагаемая дата открытия магазина:</span></label>
+                                    <input id="date" type="text"/>
+                                </div>
+                                <input type="submit" class="send" value="ОТПРАВИТЬ">
+                            </form>
+                            <!-- /form -->
+
+                            <p>Наш специалист свяжется с Вами в течение нескольких минут после получения информации!</p>
+                            <p>Наша компания оказывает помощь в организации розничных продаж для потенциальных клиентов. Мы обладаем большим опытом в организации открытия торговых точек по всей России.</p>
+                            <p>Важно помнить, что с момента решения открытия магазина крепежных изделий, до его фактического открытия может пройти до 30 дней. Это время уйдет на комплекс мероприятий по подготовке к открытию. </p>
+                            <p>С нашей стороны помощь будет заключаться в подборке торгового оборудования, необходимого ассортимента и количества товара в соответствии со стратегией продаж нашего клиента (формирование установочной матрицы), основного направления деятельности клиента, конъюнктурой рынка в регионе и торговой площадью.</p>
+
+                            <span class="title">Как правило, розничные продажи крепежа делятся на 4 вида:</span>
+
+                            <!-- form -->
+                            <ol class="sale">
+                                <li>
+                                    <span class="sale__number">1</span>
+                                    <span class="sale__title">Продажа в блистерной упаковке или пакетиках (1-50 ед. товара в упак.);</span>
+                                    <p>Данный вид продаж  подходит  для магазинов самообслуживания. </p>
+                                    <p>Плюсы:  более предпочтительный формат для розничных клиентов, так как имеет саму маленькую фасовку; занимает мало торговой площади; не требует складских запасов; не отнимает время продавца на отвес нужного количества; есть штрих-код.</p>
+                                    <p>Минусы: требуется специальное торговое оборудование для вывешивания товара; товар в закупке и продаже дороже остальных вариантов, так как имеет дополнительные затраты на фасовку и упаковку; узкий ассортимент товара.</p>
+                                </li>
+                                <li>
+                                    <span class="sale__number">2</span>
+                                    <span class="sale__title">Продажа в небольших коробочках и пластиковых ведрах (50-250 ед. товара в упак.);</span>
+                                    <p>Данный вид продаж подходит для магазинов, занимающихся продажей строительных материалов, хозяйственными товарами, для расширения существующего ассортимента товаров новой группой, а так же для магазинов самообслуживания .</p>
+                                    <p>Плюсы: упаковка удобна для хранения и продажи  (не требует специального торгового оборудования); не отнимает время продавца на отвес нужного количества; есть штрих-код; дешевле блистерной упаковки.</p>
+                                    <p>Минусы: товар в закупке и продаже дорогой, так как дополнительные затраты на фасовку и упаковку; узкий ассортимент; нужны складские запасы.</p>
+                                </li>
+                                <li>
+                                    <span class="sale__number">3</span>
+                                    <span class="sale__title">Продажа товара поштучно или на вес;</span>
+                                    <p>Данный вид продаж оптимален для специализированных магазинов крепежа, а так же магазинов оборудованных фасовочным оборудованием или специальным отделом .</p>
+                                    <p>Плюсы: самый дешевый в закупе крепеж; возможность затаривать склад в необходимом количестве и ассортименте; широкий ассортимент крепежа; удобен для хранения на складе; не нужно специальное торговое оборудование;  годен для оптовой торговли.</p>
+                                    <p>Минусы: необходимы весы фасовочные для отвеса нужного количества;  нужны складские запасы; нет штрих-кода.</p>
+                                </li>
+                                <li>
+                                    <span class="sale__number">4</span>
+                                    <span class="sale__title">Комбинированный вариант</span>
+                                    <p>Многие компании комбинируют продажи товара на вес с продажей готовой расфасованной продукции, которая представлена в прикассовой зоне. Притом, фасованная продукция – это только самые продаваемые группы, например, саморезы. </p>
+                                    <p>Плюсы – увеличение скорости отпуска клиента в магазине, продажа конечного продукта. </p>
+                                </li>
+                            </ol>
+                            <!-- /form -->
+
+                            <p>В зависимости от выбранной стратегии продаж крепежа наша компания осуществляет оптимальную подборку продукции по ассортименту и количеству. Выборка осуществляется таким образом, что бы в ассортименте присутствовали самые ходовые позиции (группа А, по ABC-анализу), а также чуть менее ходовые позиции (группа В). Количество определяется исходя из 3-х месячной потребности по данным группам.</p>
+                            <p>МЫ можем организовать открытие магазина одинаково хорошо во всех форматах! </p>
+
+                            <!-- form -->
+                            <form action="#">
+                                <div class="wrap_input">
+                                    <label for="name"><span>Имя</span></label>
+                                    <input id="name" type="text"/>
+                                </div>
+                                <div class="wrap_input">
+                                    <label for="phone"><span>Телефон</span></label>
+                                    <input id="phone" type="text"/>
+                                </div>
+                                <div class="wrap_input">
+                                    <label for="email"><span>Email</span></label>
+                                    <input id="email" type="text"/>
+                                </div>
+
+                                <input type="submit" class="send" value="ОТПРАВИТЬ">
+                            </form>
+                            <!-- /form -->
+
+                        </div>
+                        <!-- /form_inner -->
+
+                    </div>
+
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <p class="footerPhone"><span>8 (812) </span>333-22-11</p>
+            <p class="copy">© 2013 Госкрепеж. Копирование материалов запрещено</p>
+            <a href="#" class="creaters">saitoria</a>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

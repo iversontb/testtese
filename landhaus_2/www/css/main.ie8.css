@@ -1,0 +1,26 @@
+.buts_add a,
+.sort_but a{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f8f8', endColorstr='#eeeeee',GradientType=0 ); /* IE6-8 */
+}
+.buts_add a:hover,
+.sort_but a:hover{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#f8f8f8',GradientType=0 );
+
+}
+.e_but{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7c7c', endColorstr='#bd0303',GradientType=0 );
+
+}
+.e_but:hover{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bd0303', endColorstr='#ff7c7c',GradientType=0 );
+
+
+}
+
+.deal > span{
+    font-size: 14px;
+}
+.head_top__menu > span,
+.head_top__menu > a{
+    margin-right: 8px;
+}

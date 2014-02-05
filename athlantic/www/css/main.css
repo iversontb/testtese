@@ -1,0 +1,328 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    content-wrap
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "helveticaneuebold";
+    src: url("../fonts/helveticaneuebold.woff") format("woff");
+}
+@font-face {
+    font-family: "helveticaneuemedium";
+    src: url("../fonts/helveticaneuemedium.woff") format("woff");
+}
+@font-face {
+    font-family: "pfcentroslabproblack";
+    src: url("../fonts/pfcentroslabpro-black.woff") format("woff");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    font-family: tahoma;
+    z-index: 1;
+}
+
+
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+
+
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 42px;
+    left: 38px;
+}
+/* --------------- /logo --------------- */
+.site:after{
+    width: 263px;
+    background: #bc301b;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.rightSideBar{
+    float: left;
+    width: 263px;
+    position: relative;
+    z-index: 10;
+    background: #bc301b;
+}
+.mainMenu{
+    padding-top: 125px;
+    margin: 0 38px 40px 38px;
+    border-bottom: 1px solid #c95949;
+}
+.mainMenu a:hover{
+    text-decoration: none;
+}
+.mainMenu a{
+    display: block;
+    color: #ffd78a;
+    font-size: 16px;
+    margin: 0 0 30px 0;
+    text-decoration: underline;
+}
+.address{
+    font-style: normal;
+    margin: 0 38px;
+    border-bottom: 1px solid #c95949;
+    padding-bottom: 38px;
+}
+.tel{
+   background: url("../img/phone.png") no-repeat  left center;
+    padding-left: 25px;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.tel span{
+    font-weight: bold;
+}
+.pointer{
+    background: url("../img/pointer.png") no-repeat left center;
+    padding-left: 25px ;
+    color: #fff;
+    line-height: 16px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+.mail:hover{
+    text-decoration: none;
+}
+.mail{
+    background: url("../img/mail.png") no-repeat left center;
+    padding-left: 25px;
+    color: #ffd78a;
+    text-decoration: underline;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.leaveBut:hover{
+    opacity: 0.8;
+}
+.leaveBut{
+    display: block;
+    color: #957029;
+    font-weight: bold;
+    font-size: 12px;
+    background: url("../img/but-back.png");
+    height: 45px;
+    border-radius: 3px;
+    line-height: 45px;
+    text-align: center;
+    width: 155px;
+}
+
+.site__content {
+    margin-left: 263px;
+}
+.gallBlock h3{
+    color: #fff;
+    font-size: 81px;
+    padding: 55px 0 20px 145px;
+    position: relative;
+    width: 500px;
+    z-index: 5;
+
+}
+.gallBlock p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 21px;
+    position: relative;
+    z-index: 5;
+    padding: 0 0 20px 145px;
+    width: 500px;
+}
+.gallBlock img{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 0;
+}
+.redBut{
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+    background: url("../img/red-but.png");
+    height: 55px;
+    border-radius: 3px;
+    line-height: 55px;
+    text-align: center;
+    width: 155px;
+    margin-left: 145px;
+    position: relative;
+    z-index: 5;
+}
+/* --------------- footer --------------- */
+.footer {
+    margin: 38px;
+}
+.copy{
+    color: #fff;
+    font-size: 11px;
+    line-height: 15px;
+}
+/* --------------- /footer --------------- */

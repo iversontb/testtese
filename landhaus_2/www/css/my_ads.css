@@ -1,0 +1,283 @@
+/* --------------- mark_all --------------- */
+.mark_all {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 34px;
+}
+.mark_all input {
+    vertical-align: top;
+    margin-top: 9px;
+    margin-right: 4px;
+}
+.mark_all label {
+    display: inline-block;
+    vertical-align: top;
+    color: #494949;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-right: 12px;
+}
+.mark_all a:hover {
+    background: #eeeeee;
+    background: -moz-linear-gradient(top,  #eeeeee 1%, #f8f8f8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#eeeeee), color-stop(100%,#f8f8f8));
+    background: -webkit-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: -o-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: -ms-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: linear-gradient(to bottom,  #eeeeee 1%,#f8f8f8 100%);
+}
+.mark_all a {
+    margin-bottom: 14px;
+    display: inline-block;
+    background: #f8f8f8;
+    padding: 0 13px;
+    background: -moz-linear-gradient(top,  #f8f8f8 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#eeeeee));
+    background: -webkit-linear-gradient(top,  #f8f8f8 0%,#eeeeee 100%);
+    background: -o-linear-gradient(top,  #f8f8f8 0%,#eeeeee 100%);
+    background: -ms-linear-gradient(top,  #f8f8f8 0%,#eeeeee 100%);
+    background: linear-gradient(to bottom,  #f8f8f8 0%,#eeeeee 100%);
+    border: 1px solid #aba6a4;
+    border-radius: 3px;
+    color: #4b4b4b;
+    font-size: 12px;
+    height: 28px;
+    line-height: 26px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.mark_all a.delete {
+    position: relative;
+    padding-left: 24px;
+    margin-right: 8px;
+}
+.mark_all a.delete:after {
+    content: "";
+    background: url("../img/delete.png") no-repeat;
+    width: 11px;
+    height: 12px;
+    position: absolute;
+    top: 8px;
+    left: 6px;
+}
+/* --------------- /mark_all --------------- */
+
+/* --------------- wrap_type --------------- */
+.wrap_type {
+    display: inline-block;
+}
+.wrap_type > span {
+    display: inline-block;
+    vertical-align: top;
+    color: #494949;
+    font-size: 12px;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+.wrap_type .type_point {
+    display: inline-block;
+    margin-top: 2px;
+    margin-right: 16px;
+}
+/* --------------- /wrap_type --------------- */
+
+/* --------------- nice-select --------------- */
+.nice-select {
+    margin-top: 2px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 28px;
+    width: 106px;
+    background: #fff;
+    color: #000;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #b0ada8;
+    border-radius: 3px;
+}
+.nice-select__item {
+    position: absolute;
+    height: 26px;
+    top: 0;
+    left: 0;
+    right: 27px;
+    z-index: 1;
+    line-height: 25px;
+    padding: 0 0 0 9px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: "PT Sans";
+    font-size: 12px;
+    color: #000;
+}
+.nice-select__item:after {
+    content: '';
+    width: 7px;
+    height: 6px;
+    background: url("../img/catalog_rubric_select.png") no-repeat;
+    position: absolute;
+    top: 11px;
+    right: -18px;
+    z-index: 10;
+}
+.nice-select select {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 27px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: "PT Sans";
+    font-size: 12px;
+    color: #000;
+    line-height: 24px;
+}
+/* --------------- /nice-select --------------- */
+
+/* --------------- wrap_ads --------------- */
+.wrap_ads {
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+.wrap_ads .ads_item:first-child {
+    background: #fff8b0;
+    margin-right: 8px;
+}
+.wrap_ads .ads_item {
+    position: relative;
+    padding: 10px 100px 18px 13px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 358px;
+    background: #dd3e3e;
+    display: inline-block;
+    vertical-align: top;
+    border: 3px solid #dd3e3e;
+}
+.wrap_ads .title:hover {
+    text-decoration: underline;
+}
+.wrap_ads .ads_item:first-child .title {
+    color: #212121;
+    background: url("../img/title1.png") left top no-repeat;
+
+}
+.wrap_ads .ads_item:first-child p {
+    color: #212121;
+}
+.wrap_ads .ads_item:first-child .price {
+    color: #dd3e3e;
+}
+.wrap_ads .ads_item:first-child .more {
+    color: #434343;
+    background: url("../img/more1.png") no-repeat;
+}
+.wrap_ads .title {
+    display: inline-block;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 34px;
+    letter-spacing: 2px;
+    color: #fff8b0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: url("../img/title2.png") left 1px no-repeat;
+}
+.wrap_ads p {
+    color: #3b3b3b;
+    font-size: 12px;
+    margin-top: 7px;
+    line-height: 15px;
+}
+.wrap_ads .price {
+    text-align: right;
+    position: absolute;
+    top: 15px;
+    right: 17px;
+    color: #f9f7f5;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+}
+.wrap_ads .price span {
+    font-size: 12px;
+    display: block;
+    font-weight: 400;
+}
+.wrap_ads p {
+    color: #fff;
+}
+.wrap_ads .more {
+    position: absolute;
+    bottom: 19px;
+    right: 14px;
+    color: #781a1a;
+    font-style: italic;
+    font-size: 12px;
+    text-decoration: underline;
+    padding-left: 15px;
+    background: url("../img/more2.png") no-repeat;
+}
+.wrap_ads .more:hover {
+    text-decoration: none;
+}
+.sort_but a {
+    padding: 0 14px;
+}
+/* --------------- /wrap_ads --------------- */
+
+/* --------------- wrap_item --------------- */
+.search-result__layout {
+    border: none;
+}
+.search-result__item:after {
+    display: none;
+}
+.wrap_item {
+    margin-bottom: 10px;
+    box-shadow: 0 2px 0 #bebcbb;
+}
+.wrap_title {
+    border-right: 1px solid #e2e2e2;
+    border-left: 1px solid #e2e2e2;
+}
+.search-result__item {
+    border: 1px solid #e2e2e2;
+}
+.wrap_title .wrap_check {
+    background: #e2e2e2;
+    display: inline-block;
+    width: 35px;
+    height: 34px;
+    vertical-align: top;
+    margin-right: 12px;
+}
+.wrap_title .wrap_check input {
+    margin: 10px 0 0 10px;
+}
+.wrap_title span {
+    padding-top: 11px;
+    font-weight: 400;
+    color: #646464;
+    font-size: 12px;
+    vertical-align: top;
+    display: inline-block;
+    width: 177px;
+}
+.wrap_title a:hover {
+    text-decoration: none;
+}
+.wrap_title a {
+    color: #dd3e3e;
+    font-size: 12px;
+    text-decoration: underline;
+    line-height: 33px;
+}
+/* --------------- /wrap_item --------------- */

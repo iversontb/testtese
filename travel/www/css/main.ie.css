@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS ltie10 */
+
+.sort{
+    background: url("../img/back-menu.png");
+}
+.footer{
+    background: url("../img/footer-back.png");
+}
+.propouseBlock li{
+    background: url("../img/gra-grad.png");
+}
+.main-menu{
+    background: url("../img/opacity-back.png");
+}
+.topicMargin2{
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+.topicMargin2 span{
+    float: left;
+    margin-top: 5px;
+}
+.topicMargin{
+    overflow: hidden;
+}
+.topicMargin span{
+    float: left;
+    margin-top: 15px;
+}
+#maxCost,
+#minCost{
+    display: none;
+
+}

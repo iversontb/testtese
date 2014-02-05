@@ -1,0 +1,73 @@
+.slider2 h2 {
+    font-weight: normal;
+    font-family: 'pfdintextcomppro-regular';
+    color: #282525;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.ares-slider {
+    position: relative;
+    height: 235px;
+    margin: 0 0 40px 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0 20px;
+    margin-left: 17px;
+}
+.ares-slider a {
+    display: block;
+}
+.ares-slider > ul {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+.ares-slider_item {
+    position: absolute;
+    left: -1000px;
+    width: 146px;
+}
+.ares-slider_item img {
+    width: 100%;
+    margin-bottom: 13px;
+}
+.ares-slider_item a{
+    color: #000;
+}
+.ares-slider_item a p{
+    margin-bottom: 0;
+    line-height: 15px;
+}
+.ares-slider_item a span{
+    font-weight: bold;
+    color: #000;
+}
+.ares-slider__next:hover,
+.ares-slider__prev:hover {
+    opacity: 0.8;
+}
+.ares-slider__next,
+.ares-slider__prev {
+    position: absolute;
+    content: '';
+
+    width: 16px;
+    height: 23px;
+    top: 50%;
+    margin-top: -20px;
+    left: -27px;
+    cursor: pointer;
+
+}
+.ares-slider__prev{
+    background: url("../img/left-gall.png");
+}
+.ares-slider__next {
+    background: url("../img/right-gall.png");
+    left: auto !important;
+    right: 0 !important;
+}

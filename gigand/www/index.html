@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <title>title</title>
+    <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/range.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/slider-range.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <div class="site__layout">
+
+            <!-- header -->
+            <header class="header">
+
+                <!-- header__info -->
+                <div class="header__info">
+                    <span>Компьютерная и сетевая поддержка
+                        малого бизнеса</span><span>Без выходных, с 9<sup>00</sup> до 20<sup>00</sup></span>
+                </div>
+                <!-- /header__info -->
+
+                <!-- header__tel -->
+                <div class="header__tel">
+                    <span><span>(812)</span> 612-00-21</span>
+                    <a href="#">Перезвонить вам?</a>
+                </div>
+                <!-- /header__tel -->
+
+                <!-- header__title -->
+                <div class="header__title">Только 3 месяца лета <span>скидка </span>на все услуги 25%</div>
+                <!-- /header__title -->
+
+                <!-- logo -->
+                <a href="#" class="logo" title="На главную"><img src="img/logo.png" width="141" height="141" alt=""></a>
+                <!-- /logo -->
+
+                <!-- main-menu -->
+                <nav class="main-menu">
+                    <a class="menu1" href="#">Виртуализация</a>
+                    <a class="menu2" href="#">Хранение
+                        данных</a>
+                    <a class="menu3" href="#">Видеонаблюдение</a>
+                    <a class="menu4" href="#">1с</a>
+                    <a class="menu5" href="#">Сети</a>
+                    <a class="menu6" href="#">Телефония</a>
+                </nav>
+                <!-- /main-menu -->
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <!-- wrap_tabs -->
+                    <div class="wrap_tabs">
+
+                        <!-- info_nav -->
+                        <ul class="info_nav">
+                            <li class="current">Кратко о нас</li>
+                            <li>Услуги и решения</li>
+                            <li>контакт</li>
+                        </ul>
+                        <!-- /info_nav -->
+
+                        <!-- info -->
+                        <div class="info" style="display: block">
+
+                            <!-- wrap_services -->
+                            <div class="wrap_services">
+                                <h2>Работать с нами выгодно и удобно!</h2>
+                                <div class="services">
+                                    <a class="menu1" href="#"><span>Работаем быстро и качественно</span></a>
+                                    <a class="menu2" href="#"><span>Лучшие цены на рынке</span></a>
+                                    <a class="menu3" href="#"><span>Гарантии, сервис, скидки</span></a>
+                                </div>
+                                <div class="wrap_more">
+                                    <h2>А еще</h2>
+                                    <ol>
+                                        <li>
+                                            <span>1</span>
+                                            <p><span>МЫ НАДЕЖНЫЕ! </span>Работае на рынке профессиональных услуг с 2005 года. Сотни довольных клиентов</p>
+                                        </li>
+                                        <li>
+                                            <span>2</span>
+                                            <p><span>МЫ ПОЗИТИВНЫЕ! </span>Мы приступаем к работе с позитивом и уверены: у нас все получится!</p>
+                                        </li>
+                                        <li>
+                                            <span>3</span>
+                                            <p><span>МЫ ПРОФЕССИОНАЛЫ! </span>Опыт и квалификация наших сотрудников подтверждены соответствующими сертификатами. </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!-- /wrap_services -->
+
+                            <!-- wrap_calculator -->
+                            <div class="wrap_calculator">
+
+                                <!-- calculator_top -->
+                                <div class="calculator_top">
+                                    <div class="slider_title">Рассчитать стоимость
+                                        обслуживания компьютеров</div>
+                                    <div class="num">
+                                        <input type="text" id="amount">
+                                    </div>
+                                    <p class="server">
+                                        <span class="qty_up">+</span>
+                                        <span class="qty_down">-</span>
+                                        <input type="text" value="0">
+                                        <a href="#" class="link">есть сервер?</a>
+                                    </p>
+                                    <div class="maxWrap">
+                                        <span class="minPoint">До 3</span>
+                                        <span class="maxPoint">Более 100</span>
+                                    </div>
+                                    <div class="wrap_slider">
+                                        <div id="slider"></div>
+                                    </div>
+                                </div>
+                                <!-- /calculator_top -->
+
+                                <!-- calculator_bottom -->
+                                <div class="calculator_bottom">
+                                    <div class="total"><span>Итого </span>
+                                        <input id="total" type="text" value="3000" readonly/>
+                                    </div>
+                                    <div class="discount">Новый клиент? Получите <span>скидку на
+                                        облуживание</span> в первый месяц!</div>
+                                    <div class="wrap_btn">
+                                        <a href="#"><span>Заявка он-лайн</span> или <span>+7 812 612-00-21</span></a>
+                                    </div>
+                                </div>
+                                <!-- /calculator_bottom -->
+
+                            </div>
+                            <!-- /wrap_calculator -->
+
+                        </div>
+                        <!-- /info -->
+
+                        <!-- info -->
+                        <div class="info">
+                            <!-- wrap_services -->
+                            <div class="wrap_services">
+                                <h2>Работать с нами выгодно и удобно!</h2>
+                                <div class="wrap_more">
+                                    <h2>А еще</h2>
+                                    <ol>
+                                        <li>
+                                            <span>1</span>
+                                            <p><span>МЫ НАДЕЖНЫЕ! </span>Работае на рынке профессиональных услуг с 2005 года. Сотни довольных клиентов</p>
+                                        </li>
+                                        <li>
+                                            <span>2</span>
+                                            <p><span>МЫ ПОЗИТИВНЫЕ! </span>Мы приступаем к работе с позитивом и уверены: у нас все получится!</p>
+                                        </li>
+                                        <li>
+                                            <span>3</span>
+                                            <p><span>МЫ ПРОФЕССИОНАЛЫ! </span>Опыт и квалификация наших сотрудников подтверждены соответствующими сертификатами. </p>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <!-- /wrap_services -->
+                        </div>
+                        <!-- /info -->
+
+                        <!-- info -->
+                        <div class="info">
+                            <!-- wrap_services -->
+                            <div class="wrap_services">
+                                <h2>Работать с нами выгодно и удобно!</h2>
+                                <div class="services">
+                                    <a class="menu1" href="#"><span>Работаем быстро и качественно</span></a>
+                                    <a class="menu2" href="#"><span>Лучшие цены на рынке</span></a>
+                                    <a class="menu3" href="#"><span>Гарантии, сервис, скидки</span></a>
+                                </div>
+                            </div>
+                            <!-- /wrap_services -->
+                        </div>
+                        <!-- /info -->
+
+                    </div>
+                    <!-- /wrap_tabs -->
+
+                    <!-- bottom_list -->
+                    <ol class="bottom_list">
+                        <li>
+                            <h3>Рекомендация от ЗАО “Тритон”</h3>
+                            <p>ЗАО «Тритон» благодарит компанию за качественное и доступное консультирование наших сотрудников по вопросам функционирования компьютерной техники и работы с ней. Это команда высококлассных специалистов, выполняющих свои обязанности на сто процентов. </p>
+                        </li>
+                        <li>
+                            <h3>Благодарность от Home Credit Systems</h3>
+                            <p>Выражаем благодарность  за активное и плодотворное сотрудничество, за индивидуальный подход и гибкость в работе. ИТ-аутсорсинг бывает разный. ИТ-аутсорсинг у компании  оставляет только приятные впечатления и желание продолжать сотрудничество.</p>
+                        </li>
+                        <li>
+                            <h3>Благодарность от Home Credit Systems</h3>
+                            <p>Выражаем благодарность  за активное и плодотворное сотрудничество, за индивидуальный подход и гибкость в работе. ИТ-аутсорсинг бывает разный. ИТ-аутсорсинг у компании  оставляет только приятные впечатления и желание продолжать сотрудничество.</p>
+                        </li>
+                        <li>
+                            <h3>Рекомендация от ЗАО “Тритон”</h3>
+                            <p>ЗАО «Тритон» благодарит компанию за качественное и доступное консультирование наших сотрудников по вопросам функционирования компьютерной техники и работы с ней. Это команда высококлассных специалистов, выполняющих свои обязанности на сто процентов. </p>
+                        </li>
+                    </ol>
+                    <!-- /bottom_list -->
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <!-- wrap_brand -->
+            <div class="wrap_brand">
+                <div class="brand_inner">
+                    <a href="#"><img src="img/brand1.png" width="109" height="60" alt=""/></a>
+                    <a href="#"><img src="img/brand2.png" width="109" height="60" alt=""/></a>
+                    <a href="#"><img src="img/brand3.png" width="109" height="60" alt=""/></a>
+                    <a href="#"><img src="img/brand4.png" width="109" height="60" alt=""/></a>
+                    <a href="#"><img src="img/brand5.png" width="109" height="60" alt=""/></a>
+                    <a href="#"><img src="img/brand6.png" width="109" height="60" alt=""/></a>
+                </div>
+            </div>
+            <!-- /wrap_brand -->
+
+            <!-- footer__center -->
+            <div class="footer__center">
+                <div class="footer__center_content">
+                    <h3>Оставайтесь на связи:</h3>
+                    <h3>Не менее интересные разделы</h3>
+                    <a href="mailto:mail@mail.com" class="mail">mail@mail.com</a>
+                    <span class="tel">+7 111 123 66 99</span>
+                    <span class="street">Москва
+                    Пр. Маяковского, 17</span>
+
+                    <!-- network -->
+                    <div class="network">
+                        <a class="vkontakte" title="Vkontakte" href="#">Vkontakte</a>
+                        <a class="facebook" title="Facebook" href="#">facebook</a>
+                        <a class="twitter" title="Twitter" href="#">twitter</a>
+                        <a class="youtube" title="Youtube" href="#">youtube</a>
+                    </div>
+                    <!-- /network -->
+
+                    <!-- footer__nav -->
+                    <ol class="footer__nav">
+                        <li><a href="#">Виртуализация</a></li>
+                        <li><a href="#">Виртуализация</a></li>
+                        <li><a href="#">Виртуализация</a></li>
+                        <li><a href="#">Хранение данных</a></li>
+                        <li><a href="#">Хранение данных</a></li>
+                        <li><a href="#">Хранение данных</a></li>
+                        <li><a href="#">Видеонаблюдение</a></li>
+                        <li><a href="#">Видеонаблюдение</a></li>
+                        <li><a href="#">Видеонаблюдение</a></li>
+                        <li><a href="#">1с</a></li>
+                        <li><a href="#">1с</a></li>
+                        <li><a href="#">1с</a></li>
+                        <li><a href="#">Сети</a></li>
+                        <li><a href="#">Сети</a></li>
+                        <li><a href="#">Сети</a></li>
+                        <li><a href="#">Телефония</a></li>
+                        <li><a href="#">Телефония</a></li>
+                        <li><a href="#">Телефония</a></li>
+                    </ol>
+                    <!-- /footer__nav -->
+
+                    <img class="garand_img" src="img/garand.png" width="165" height="190" alt=""/>
+                </div>
+            </div>
+            <!-- /footer__center -->
+
+            <!-- wrap_bottom -->
+            <div class="wrap_bottom">
+                <div class="footer__bottom">
+                    <a class="footer__logo" title="На главную" href="#"><img src="img/footer_logo.png" width="89" height="89" alt=""/></a>
+                    <span class="logo__text">Все права
+защищены</span>
+                    <form action="#">
+                        <h2><span>Оставьте ваш e-mail</span>И мы свяжемся что бы помочь вам</h2>
+                        <input type="text"/>
+                        <input type="submit" value="ОТПРАВИТЬ"/>
+                    </form>
+                </div>
+            </div>
+            <!-- /wrap_bottom -->
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

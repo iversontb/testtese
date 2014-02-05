@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- META -->
+<meta charset="utf-8" />
+
+    <meta name="MobileOptimized" content="100%" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.formstyler.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--[if IE 6]>
+<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
+
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="css/ie7.css"/><![endif]-->
+
+<!-- JS -->
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="js/jquery.mousewheel.js" type="text/javascript"></script>
+<script src="js/jcarousellite_1.0.1.js" type="text/javascript"></script>
+<script src="js/jquery.jscrollpane.min.js" type="text/javascript"></script>
+<script src="js/jquery.scrollTo-min.js" type="text/javascript"></script>
+<script src="js/jquery.formstyler.js" type="text/javascript"></script>
+<script src="js/jquery.effect.clip.min.js" type="text/javascript"></script>
+<script src="js/jquery.wookmark.min.js" type="text/javascript"></script>
+<script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
+
+<script src="js/script.js" type="text/javascript"></script>
+<script src="js/jquery.return.js" type="text/javascript"></script>
+
+
+<title>Main page</title>
+</head>
+<body>
+<div id="sidebar">
+    <div id="fastlinks">
+        <div class="links">
+            <a class="personal" href="#">личный кабинет</a>
+            <a class="looks" href="#"><span>15</span>просмотрено</a>
+            <a class="wishlist" href="#"><span>4</span>wishlist</a>
+        </div>
+        <div class="basket" id="minibasket">
+            <div class="inner" style="display: none;">
+                <div class="basket-del-tt" style="display: none;"><div>
+                    <a class="wish" href="#">В WISHLIST</a>
+                    <a href="#">вернуть</a>
+                    <a class="del-btn" href="#">Удалить</a>
+                </div></div>
+                <div class="items">
+                    <div class="item">
+                        <img src="images/tmp/basket-item.png" alt="">
+                        <div class="info">
+                            <span class="name">сумка Victoria Beckham</span>
+                            <b class="price">12 890 Р</b>
+                            <a class="del" href="#">удалить</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/tmp/basket-item.png" alt="">
+                        <div class="info">
+                            <span class="name">сумка Victoria Beckham</span>
+                            <b class="price">12 890 Р</b>
+                            <a class="del" href="#">удалить</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="images/tmp/basket-item.png" alt="">
+                        <div class="info">
+                            <span class="name">сумка Victoria Beckham</span>
+                            <b class="price">12 890 Р</b>
+                            <a class="del" href="#">удалить</a>
+                        </div>
+                    </div>
+                    <div class="item last">
+                        <img src="images/tmp/basket-item.png" alt="">
+                        <div class="info">
+                            <span class="name">сумка Victoria Beckham</span>
+                            <b class="price">12 890 Р</b>
+                            <a class="del" href="#">удалить</a>
+                        </div>
+                    </div>
+                </div>
+                <p class="total">
+                    Сумма <b>333 999 Р</b>
+                </p>
+                <a class="buy" href="#">купить сразу</a>
+                <p class="tobasket">
+                    <a href="#">Перейти в корзину</a>
+                </p>
+            </div>
+            <a class="basket-opener" href="#"><span>2</span></a>
+        </div>
+    </div>
+    <div class="abs">
+        <a id="uplink" href="#" style="display: none;"><span></span><br>наверх</a>
+    </div>
+    <div class="space"></div>
+    <div class="content">
+        <ul class="left-menu">
+            <li><a href="#" class="current">Личный кабинет</a></li>
+            <li><a href="#">Мои заказы</a></li>
+            <li><a href="#">Карта лояльности</a></li>
+            <li><a href="#">Персональные данные</a></li>
+            <li><a href="#">Подписка на новости</a></li>
+        </ul>
+    </div>
+</div>
+    <div id="wrapper">
+        <div id="content">
+            <div id="header">
+                <div class="contacts">
+                    <span class="phone"><b>+7 (495) 730-80-20</b> <a href="#">контакты</a></span>
+                    <span class="worktime">
+                        ЦУМ: с 8.00 до 23.00 <br>
+                        Интернет-магазин: круглосуточно
+                    </span>
+                </div>
+                <div class="right">
+                    <div class="search">
+                        <input type="text" value="" id="search-field" />
+                        <a href="#"></a>
+                    </div>
+                    <div class="city-select">
+                        <div class="list">
+                            <a class="current" href="#"><span>Москва</span></a>
+                            <div class="other">
+                                <a href="#">Санкт-Петербург</a><br>
+                                <a href="#">Новосибирск</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="delivery" href="#">Оплата и доставка</a>
+                </div>
+                <a href="#" id="logo"><img src="images/logo.png" alt=""></a>
+            </div>
+            <ul id="top-menu">
+                <li><a href="#">Бренды</a></li>
+                <li><a href="#">Новинки</a></li>
+                <li>
+                    <a href="#">Для женщин</a>
+                    <div class="submenu">
+                        <div class="arr"><span></span></div>
+                        <div class="inner" ><!--style="background-image:url('images/tmp/menu.png');" >-->
+                            <a href="#"><img class="b1" src="images/tmp/menu-right.png" alt=""></a>
+                            <a href="#"><img class="b1" src="images/tmp/menu-bottom.png" alt=""></a>
+                        <div class="col">
+                            <div class="category">
+                                <a href="#" class="cat">Женская одежда</a>
+                                <div class="subcat">
+                                    <a href="#">Новинки</a><br>
+                                    <a href="#">Платья</a><br>
+                                    <a href="#">Сарафаны</a><br>
+                                    <a href="#">Блузы</a><br>
+                                    <a href="#">Футболки</a><br>
+                                    <a href="#">Новинки</a><br>
+                                    <a href="#">Платья</a><br>
+                                    <a href="#">Сарафаны</a><br>
+                                    <a href="#">Блузы</a><br>
+                                    <a href="#">Футболки</a><br>
+                                </div>
+                                <div class="subcat">
+                                    <a href="#">Жакеты</a><br>
+                                    <a href="#">Толстовки</a><br>
+                                    <a href="#">Дублёнки и шубы</a><br>
+                                    <a href="#">Пальто и плащи</a><br>
+                                    <a href="#">Футболки</a><br>
+                                    <a href="#">Леггинсы</a><br>
+                                    <a href="#">Платья</a><br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="category">
+                                <a href="#" class="cat">Женское белье</a>
+                                <div class="subcat">
+                                    <a href="#">Халаты и пижамы</a><br>
+                                    <a href="#">Чулки и колготки</a><br>
+                                    <a href="#">Футболки</a><br>
+                                    <a href="#">Леггинсы</a><br>
+                                </div>
+                            </div>
+                            <div class="category">
+                                <a href="#" class="cat">Женские пляжные принадлежности</a>
+                                <div class="subcat">
+                                    <a href="#">Купальники</a><br>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Для мужчин</a></li>
+                <li><a href="#">обувь и сумки</a></li>
+                <li><a href="#">детская одежда</a></li>
+                <li><a href="#">косметика и парфюм</a></li>
+                <li class="last"><a href="#">аксессуары</a></li>
+            </ul>
+
+            <div id="top-line"></div>
+
+            <!-- return_block -->
+            <form action="#" class="return_block">
+                <a href="#" class="print-ico"></a>
+                <h2 class="topic_type">возврат заказа № 76251</h2>
+
+                <!-- return_steps -->
+                <div class="return_steps">
+                    <a href="#" class="active"><span class="count_step">1</span>Выберите товары для возврата</a>
+                    <a href="#"><span class="count_step">2</span>Подтвердите ваш выбор</a>
+                    <a href="#"><span class="count_step">3</span>Доставка в ЦУМ</a>
+                </div>
+                <!-- /return_steps -->
+
+                <!-- first_step -->
+                <div class="first_step">
+
+                    <!-- line_block -->
+                    <div class="line_block">
+
+                        <!-- produkt_box -->
+                        <div class="produkt_box">
+
+                            <!-- produkt_box__img -->
+                            <div class="produkt_box__img">
+                                <img src="pic/pic1.png" width="100" height="100" alt="">
+                            </div>
+                            <!-- /produkt_box__img -->
+
+                            <h3><a href="#">Леггинсы
+                                Alexander
+                                Macqueen</a> </h3>
+
+                            <!-- product_info -->
+                            <div class="product_info">
+
+                                <!-- product_info_line -->
+                                <div class="product_info_line">
+                                    <span>цвет</span>
+                                    <a class="color" href="#"><span style="background-color: #f50a00;"></span></a>
+                                </div>
+                                <!-- /product_info_line -->
+
+                                <!-- product_info_line -->
+                                <div class="product_info_line">
+                                    <span>размер</span>
+                                    <a class="color" href="#"><span>48</span></a>
+                                </div>
+                                <!-- /product_info_line -->
+
+
+                            </div>
+                            <!-- /product_info -->
+
+                            <!-- product_price -->
+                            <div class="product_price">
+                                3 520 890 Р
+                            </div>
+                            <!-- /product_price -->
+
+
+                        </div>
+                        <!-- /produkt_box -->
+
+                        <div class="delivery-type">
+                            <label for="" class="checked">
+                                <input type="radio" class="no_return" name="delivery" checked>
+                                Возврат не требуется
+                            </label>
+                            <label for="">
+                                <input class="return_reason_but" type="radio" name="delivery">
+                                Вернуть
+                            </label>
+
+                            <p class="reasons_text"></p>
+
+                            <!-- reasons -->
+                            <div class="reasons">
+                                <!-- reasons_inside -->
+                                <div class="reasons_inside">
+                                    <h3>Выберите причину возврата:</h3>
+                                    <label for="">
+                                        <input type="radio" name="delivery9" >
+                                        Не подошел размер
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery9">
+                                        Доставлен другой товар
+
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery9" >
+                                        Товар выглядит иначе, чем на сайте
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery9">
+                                        Товар был нужен для примерки
+                                    </label>
+                                    <label for="" >
+                                        <input type="radio" name="delivery9" >
+                                        Брак
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery9">
+                                        Другое
+                                    </label>
+                                </div>
+                                <!-- /reasons_inside -->
+                            </div>
+                            <!-- reasons -->
+
+                        </div>
+
+                    </div>
+                    <!-- /line_block -->
+
+                    <!-- line_block -->
+                    <div class="line_block">
+
+                        <!-- produkt_box -->
+                        <div class="produkt_box">
+
+                            <!-- produkt_box__img -->
+                            <div class="produkt_box__img">
+                                <img src="pic/pic1.png" width="100" height="100" alt="">
+                            </div>
+                            <!-- /produkt_box__img -->
+
+                            <h3><a href="#">Леггинсы
+                                Alexander
+                                Macqueen</a> </h3>
+
+                            <!-- product_info -->
+                            <div class="product_info">
+
+                                <!-- product_info_line -->
+                                <div class="product_info_line">
+                                    <span>цвет</span>
+                                    <a class="color" href="#"><span style="background-color: #f50a00;"></span></a>
+                                </div>
+                                <!-- /product_info_line -->
+
+                                <!-- product_info_line -->
+                                <div class="product_info_line">
+                                    <span>размер</span>
+                                    <a class="color" href="#"><span>48</span></a>
+                                </div>
+                                <!-- /product_info_line -->
+
+
+                            </div>
+                            <!-- /product_info -->
+
+                            <!-- product_price -->
+                            <div class="product_price">
+                                3 520 890 Р
+                            </div>
+                            <!-- /product_price -->
+
+
+                        </div>
+                        <!-- /produkt_box -->
+
+                        <div class="delivery-type">
+                            <label for="" class="checked">
+                                <input type="radio" class="no_return" name="delivery3" checked>
+                                Возврат не требуется
+                            </label>
+                            <label for="">
+                                <input class="return_reason_but" type="radio" name="delivery3">
+                                Вернуть
+                            </label>
+                            <p class="reasons_text"></p>
+                            <!-- reasons -->
+                            <div class="reasons">
+                                <!-- reasons_inside -->
+                                <div class="reasons_inside">
+                                    <h3>Выберите причину возврата:</h3>
+                                    <label for="">
+                                        <input type="radio" name="delivery8" >
+                                        Не подошел размер
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery8">
+                                        Доставлен другой товар
+
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery8" >
+                                        Товар выглядит иначе, чем на сайте
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery8">
+                                        Товар был нужен для примерки
+                                    </label>
+                                    <label for="" >
+                                        <input type="radio" name="delivery8" >
+                                        Брак
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery8">
+                                        Другое
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- reasons -->
+                        </div>
+
+                    </div>
+                    <!-- /line_block -->
+
+                    <!-- line_block -->
+                    <div class="line_block">
+
+                        <!-- produkt_box -->
+                        <div class="produkt_box">
+
+                            <!-- produkt_box__img -->
+                            <div class="produkt_box__img">
+                                <img src="pic/pic1.png" width="100" height="100" alt="">
+                            </div>
+                            <!-- /produkt_box__img -->
+
+                            <h3><a href="#">Леггинсы
+                                Alexander
+                                Macqueen</a> </h3>
+
+                            <!-- product_info -->
+                            <div class="product_info">
+
+                                <!-- product_info_line -->
+                                <div class="product_info_line">
+                                    <span>цвет</span>
+                                    <a class="color" href="#"><span style="background-color: #f50a00;"></span></a>
+                                </div>
+                                <!-- /product_info_line -->
+
+                                <!-- product_info_line -->
+                                <div class="product_info_line">
+                                    <span>размер</span>
+                                    <a class="color" href="#"><span>48</span></a>
+                                </div>
+                                <!-- /product_info_line -->
+
+
+                            </div>
+                            <!-- /product_info -->
+
+                            <!-- product_price -->
+                            <div class="product_price">
+                                3 520 890 Р
+                            </div>
+                            <!-- /product_price -->
+
+
+                        </div>
+                        <!-- /produkt_box -->
+
+                        <div class="delivery-type">
+                            <label for="" class="checked">
+                                <input type="radio" class="no_return" name="delivery2" checked>
+                                Возврат не требуется
+                            </label>
+                            <label for="">
+                                <input class="return_reason_but" type="radio" name="delivery2">
+                                Вернуть
+                            </label>
+                            <p class="reasons_text"></p>
+
+                            <!-- reasons -->
+                            <div class="reasons">
+                                <!-- reasons_inside -->
+                                <div class="reasons_inside">
+                                    <h3>Выберите причину возврата:</h3>
+                                    <label for="">
+                                        <input type="radio" name="delivery10" >
+                                        Не подошел размер
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery10">
+                                        Доставлен другой товар
+
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery10" >
+                                        Товар выглядит иначе, чем на сайте
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery10">
+                                        Товар был нужен для примерки
+                                    </label>
+                                    <label for="" >
+                                        <input type="radio" name="delivery10" >
+                                        Брак
+                                    </label>
+                                    <label for="">
+                                        <input type="radio" name="delivery10">
+                                        Другое
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- reasons -->
+                        </div>
+
+
+
+
+                    </div>
+                    <!-- /line_block -->
+
+                </div>
+                <!-- /first_step -->
+
+                <!-- second_step -->
+                <div class="second_step">
+
+                    <span class="return_topic">вы возвращаете эти товары:</span>
+
+                    <!-- line_block -->
+                    <div class="line_block">
+
+                        <!-- produkt_box -->
+                        <div class="produkt_box">
+
+                            <!-- produkt_box__img -->
+                            <div class="produkt_box__img">
+                                <img src="pic/pic1.png" width="100" height="100" alt="">
+                            </div>
+                            <!-- /produkt_box__img -->
+
+                            <h3><a href="#">Леггинсы
+                                Alexander
+                                Macqueen</a> </h3>
+
+                            <!-- product_info -->
+                            <div class="product_info">
+
+                                <!-- product_info_line -->
+                                <div class="product_info_line">
+                                    <span>цвет</span>
+                                    <a class="color" href="#"><span style="background-color: #f50a00;"></span></a>
+                                </div>
+                                <!-- /product_info_line -->
+
+                                <!-- product_info_line -->
+                                <div class="product_info_line">
+                                    <span>размер</span>
+                                    <a class="color" href="#"><span>48</span></a>
+                                </div>
+                                <!-- /product_info_line -->
+
+
+                            </div>
+                            <!-- /product_info -->
+
+                            <!-- product_price -->
+                            <div class="product_price">
+                                3 520 890 Р
+                            </div>
+                            <!-- /product_price -->
+
+
+                        </div>
+                        <!-- /produkt_box -->
+
+
+
+                    </div>
+                    <!-- /line_block -->
+
+                    <!-- line_block -->
+                    <div class="line_block">
+
+                        <!-- produkt_box -->
+                        <div class="produkt_box">
+
+                            <!-- produkt_box__img -->
+                            <div class="produkt_box__img">
+                                <img src="pic/pic1.png" width="100" height="100" alt="">
+                            </div>
+                            <!-- /produkt_box__img -->
+
+                            <h3><a href="#">Леггинсы
+                                Alexander
+                                Macqueen</a> </h3>
+
+                            <!-- product_info -->
+                            <div class="product_info">
+
+                                <!-- product_info_line -->
+                                <div class="product_info_line">
+                                    <span>цвет</span>
+                                    <a class="color" href="#"><span style="background-color: #f50a00;"></span></a>
+                                </div>
+                                <!-- /product_info_line -->
+
+                                <!-- product_info_line -->
+                                <div class="product_info_line">
+                                    <span>размер</span>
+                                    <a class="color" href="#"><span>48</span></a>
+                                </div>
+                                <!-- /product_info_line -->
+
+
+                            </div>
+                            <!-- /product_info -->
+
+                            <!-- product_price -->
+                            <div class="product_price">
+                                3 520 890 Р
+                            </div>
+                            <!-- /product_price -->
+
+
+                        </div>
+                        <!-- /produkt_box -->
+
+
+
+                    </div>
+                    <!-- /line_block -->
+
+                    <!-- cash_payment -->
+                    <div class="cash_payment">
+
+                        <h3 class="topic_type2">вы платили за товар наличными</h3>
+                        <p>Деньги за товары, которые вы возвращаете, будут переведены на ваш рассчетный счет.
+                            Укажите имя получателя, банк и номер счета.</p>
+                        <p>Все поля обязательны к заполнению</p>
+
+
+                        <!-- input_line -->
+                        <div class="input_line">
+                            <label>ФИО получателя</label>
+                            <input class="requared styled" type="text">
+                            <span class="error_text">Поле должно
+быть заполнено</span>
+                        </div>
+                        <!-- /input_line -->
+
+                        <!-- input_line -->
+                        <div class="input_line">
+                            <label>Банк получателя</label>
+                            <input class="requared styled" type="text">
+                            <span class="error_text">Поле должно
+быть заполнено</span>
+                        </div>
+                        <!-- /input_line -->
+
+                        <!-- input_line -->
+                        <div class="input_line bik">
+                            <label>БИК</label>
+                            <input maxlength="9" class="requared styled number_type" type="text">
+
+                            <span>БИК банка состоит только из 9 цифр</span>
+                            <span class="error_text">Поле должно
+быть заполнено</span>
+                        </div>
+                        <!-- /input_line -->
+
+                        <!-- input_line -->
+                        <div class="input_line">
+                            <label>Номер счета получателя</label>
+                            <input maxlength="25" class="requared styled number_type" type="text">
+                            <span  class="error_text">Поле должно
+быть заполнено</span>
+                            <span>Номер счета включает от 10 до 25 цифр.</span>
+                        </div>
+                        <!-- /input_line -->
+
+                        <!-- input_line -->
+                        <div class="input_line">
+                            <label>Комментарий</label>
+                            <textarea class="styled"></textarea>
+                        </div>
+                        <!-- /input_line -->
+
+                        <div class="frm">
+                            <label class="checked" for=""><input type="checkbox" checked><span class="text_check">Я прочитал и принимаю <a href="#">условия возврата товаров</a>.
+                                Возвращаемые мной товары им соответствуют.</span></label>
+                        </div>
+
+                    </div>
+                    <!-- /cash_payment -->
+
+                    <!-- card_payment -->
+                    <div style="display: none;" class="card_payment">
+
+                        <h3 class="topic_type2">вы платили за товар картой</h3>
+                        <p>Вы предпочитаете получить стоимость возвращаемых товаров:</p>
+
+                        <div class="delivery-type">
+                            <label for="" class="checked">
+                                <input type="radio" name="delivery5" checked>
+                                На вашу подарочную карту и на банковскую карту, которыми вы оплатили покупки
+                            </label>
+                            <label for="">
+                                <input type="radio" name="delivery5">
+                                На новую <a href="#">вируальную подарочную карту</a> и на банковскую карту, которой вы оплатили часть покупки
+                            </label>
+                        </div>
+
+                        <a href="#" class="comments_block">Комментарий</a>
+
+
+                        <div class="frm">
+                            <label class="checked" for=""><input type="checkbox" checked><span class="text_check">Я прочитал и принимаю <a href="#">условия возврата товаров</a>.
+                                Возвращаемые мной товары им соответствуют.</span></label>
+                        </div>
+
+                    </div>
+                    <!-- /card_payment -->
+
+                </div>
+                <!-- /second_step -->
+
+                <!-- third_step -->
+                <div class="third_step">
+                    <h2>БЛАГОДАРИМ ВАС ЗА ОБРАЩЕНИЕ</h2>
+                    <p>Ваша заявка передана в Клиентский отдел и будет рассмотрена в течение 3-х дней.
+                        На вашу электронную почту pugacheva@alla.com отправлено письмо с информацией о заявке.</p>
+                    <p><b>13 154 рубля</b> будут возвращены на новую вирутальную карту и вашу банковскую карту в течение 10 дней после получения нами товаров.</p>
+                    <h3>КАК ОТПРАВИТЬ НАМ ТОВАРЫ</h3>
+                    <p>Вы можете отправить нам товары удобным вам способом или приехать лично по адресу</p>
+
+                    <!-- return_type -->
+                    <div class="return_type">
+                        <a href="#" class="return_type_item1"><span>г. Москва,
+                            ул. Петровка, д.2,</span>тел. +7 495 933 73 03
+                            Получатель — ТД ЦУМ
+                            (Интернет-магазин)</a>
+                        <a href="#" class="return_type_item2"><span>Курьером</span></a>
+                        <a href="#" class="return_type_item3"><span>Транспортная
+                            компания DHL</span></a>
+                        <a href="#" class="return_type_item4"><span>Почта России</span></a>
+                    </div>
+                    <!-- return_type -->
+
+                    <!-- discount -->
+                    <div class="discount">
+                        <label>ВВЕДИТЕ КОД КУПОНА НА ДОСТАВКУ</label>
+                        <input type="text" class="styled">
+                        <a href="#" class="orange-btn">применить</a>
+                    </div>
+                    <!-- /discount -->
+
+                    <h3>КАК ОТМЕНИТЬ ВАШУ ЗАЯВКУ НА ВОЗВРАТ</h3>
+
+                    <p>Если вы передумали, вы можете <a href="#">отменить заявку прямо сейчас</a> или в списке заказов</p>
+
+                </div>
+                <!-- /third_step -->
+
+                <!-- return_block__footer -->
+                <div class="return_block__footer">
+                    <a href="#" class="orange-btn continue_but">ПРОДОЛЖИТЬ</a>
+                    <a href="#" class="return_but">вернуться</a>
+                    <input type="submit" class="orange-btn continue_buy" value="ПРОДОЛЖИТЬ ПОКУПКИ" >
+
+                    <!-- first_steps_text -->
+                    <div class="first_steps_text">
+                        <a href="#" class="why_cant"><span>Почему я не могу вернуть все покупки?</span></a>
+                        <p><span>Вы можете вернуть товар в течение 14 дней с момента покупки.</span>
+                            <span>Товарный вид и потребительские свойства должны быть полностью сохранены.</span>
+                            Деньги будут возвращены в течение 10 дней после получения нами товара.</p>
+
+                        <p>Подробнее об <a href="#">условиях обмена товара или возврата в случае брака</a></p>
+                    </div>
+                    <!-- /first_steps_text -->
+
+                    <p>Вы всегда можете связаться с нами и решить вопрос индивидуально
+                        <a href="mailto:hotline@tsum.ru">hotline@tsum.ru</a>  или + 7 (495) 933 73 03 с 10 до 20 ежедневно</p>
+                </div>
+                <!-- /return_block__footer -->
+
+            </form>
+            <!-- /return_block -->
+
+        <div id="myorders" style="display: none;">
+            <div class="total-orders">
+                <div class="filter">
+                    <select class="styled" name="" id="" style="width: 100px;">
+                        <option value="">месяц</option>
+                        <option value="">январь</option>
+                        <option value="">февраль</option>
+                        <option value="">март</option>
+                    </select>
+                    <select class="styled" name="" id="" style="width: 70px;">
+                        <option value="">год</option>
+                        <option value="">2014</option>
+                        <option value="">2013</option>
+                        <option value="">2012</option>
+                        <option value="">2011</option>
+                    </select>
+                    <a class="btn" href="#">показать</a>
+                </div>
+                <span class="counts">
+                    Всего 15 заказов | <b>У вас 250 бонусов</b>
+                </span>
+            </div>
+            <div class="pers-order pers-order-open">
+                <em class="arr"></em>
+                <span class="total-price"><b>на сумму 24 500 Р</b>Бонусов за покупку: 2034</span>
+                <b class="number">№46750-934787</b> <span class="date">от 23 марта 2013</span>
+                <p class="info">В пути. <b>Планируемая дата доставки 29 марта 2013.</b><br>
+                Адрес доставки: Рязань, ул. Серпуховская, 19, 34. Оплата наличными.</p>
+                <div class="items">
+                    <div class="item">
+                        <a class="name" href="http://google.com">жакет с шерстяными вставками от victoria beckham</a>
+                        <p class="artikul">артикул 1223837480</p>
+                        <b class="price">12 890 Р</b>
+                    </div>
+                    <div class="item">
+                        <a class="name" href="http://google.com">Блузка от GUCCI</a>
+                        <p class="artikul">артикул 1223837480</p>
+                        <b class="price">24 900 Р</b>
+                    </div>
+                </div>
+            </div>
+            <div class="pers-order">
+                <em class="arr"></em>
+                <span class="total-price"><b>на сумму 24 500 Р</b>Бонусов за покупку: 2034</span>
+                <b class="number">№46750-934787</b> <span class="date">от 23 марта 2013</span>
+                <p class="info">В пути. <b>Планируемая дата доставки 29 марта 2013.</b><br>
+                Адрес доставки: Рязань, ул. Серпуховская, 19, 34. Оплата наличными.</p>
+                <div class="items" style="display: none;">
+                    <div class="item">
+                        <a class="name" href="#">жакет с шерстяными вставками от victoria beckham</a>
+                        <p class="artikul">артикул 1223837480</p>
+                        <b class="price">12 890 Р</b>
+                    </div>
+                    <div class="item">
+                        <a class="name" href="#">Блузка от GUCCI</a>
+                        <p class="artikul">артикул 1223837480</p>
+                        <b class="price">24 900 Р</b>
+                    </div>
+                </div>
+            </div>
+            <div class="pers-order pers-order-inactive">
+                <em class="arr"></em>
+                <span class="total-price"><b>на сумму 24 500 Р</b>Бонусов за покупку: 2034</span>
+                <b class="number">№46750-934787</b> <span class="date">от 23 марта 2013</span>
+                <p class="info">В пути. <b>Планируемая дата доставки 29 марта 2013.</b><br>
+                Адрес доставки: Рязань, ул. Серпуховская, 19, 34. Оплата наличными.</p>
+                <div class="items" style="display: none;">
+                    <div class="item">
+                        <a class="name" href="#">жакет с шерстяными вставками от victoria beckham</a>
+                        <p class="artikul">артикул 1223837480</p>
+                        <b class="price">12 890 Р</b>
+                    </div>
+                    <div class="item">
+                        <a class="name" href="#">Блузка от GUCCI</a>
+                        <p class="artikul">артикул 1223837480</p>
+                        <b class="price">24 900 Р</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div class="copyright">
+                <div class="subscribe">
+                    <input type="text" value="" placeholder="ВВЕДИТЕ EMAIL">
+                    распродажи на вашу почту:
+                    <a href="#"></a>
+                </div>
+                &copy; 2006—2012 ЦУМ <br>
+                    Москва, ул. Петровка, 2 <br>
+                    Телефон: +7 (495) 730-80-20 <br>
+                    Официальный интернет-магазин ЦУМ, 2013
+                </div>
+                <div id="bottom-menu">
+                    <a href="#">О магазине</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Статьи</a>
+                    <a href="#">Гарантии</a>
+                    <a href="#">Доставка</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <a class="creator" href="#">Разработано в <img src="images/aero.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+<div class="clear"></div>
+
+<script type="text/javascript">
+    $(function(){
+        $("#phone").mask("8(999)999-99-99");
+        $('#sendSms').click(function(){
+            $('#smsPass').show();
+            return false;
+        });
+    });
+</script>
+</body>
+</html>

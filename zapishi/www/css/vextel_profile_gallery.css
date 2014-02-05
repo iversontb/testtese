@@ -1,0 +1,146 @@
+.your_photo {
+    padding-bottom: 20px;
+}
+.your_photo h1 {
+    color: #2C343A;
+    font-size: 47px;
+    font-weight: 400;
+    margin-bottom: 31px;
+}
+.your_photo .title {
+    margin-bottom: 21px;
+}
+.your_photo .title h2 {
+    color: #2C343A;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 400;
+    padding-top: 2px;
+    text-transform: uppercase;
+}
+.your_photo .title .download:hover, .add_gallery:hover {
+    opacity: 0.8;
+}
+.your_photo .title .download {
+    background: none repeat scroll 0 0 #EFB562;
+    border-radius: 15px 15px 15px 15px;
+    color: #242B2F;
+    display: inline-block;
+    font-family: Tahoma;
+    font-size: 17px;
+    height: 29px;
+    line-height: 26px;
+    margin: 0 0 0 14px;
+    text-align: center;
+    vertical-align: top;
+    width: 136px;
+}
+.your_photo ul {
+
+}
+.your_photo ul li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 48px 48px 0;
+}
+.your_photo ul li .wrap_img {
+    box-shadow: 2px 2px 1px #bababa;
+    margin-bottom: 10px;
+}
+.your_photo ul li .wrap_img img {
+    display: block;
+}
+.your_photo ul li .name_gallery:hover {
+    text-decoration: underline;
+}
+.your_photo ul li .name_gallery {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2f75af;
+}
+
+
+
+
+
+/* --- your_office --- */
+.wrap_your_office {
+    background: url("../img/your_office_bg.png") repeat;
+    border-top: 1px dashed #8b8e90;
+}
+.your_office {
+    border-bottom: 1px dashed #8b8e90;
+    padding: 17px 0 16px 26px;
+}
+.your_office h3 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+.your_office .profile_info {
+    padding: 0 0 5px 3px;
+    margin-bottom: 7px;
+}
+.your_office .profile_info ol {
+    display: inline-block;
+    vertical-align: top;
+}
+.your_office .profile_info .wrap_img {
+    margin: 0 0 0 26px;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 45px;
+    display: inline-block;
+    position: relative;
+}
+.your_office .profile_info .wrap_img img {
+    border-radius: 45px;
+    display: block;
+}
+.your_office .profile_info ol li {
+    margin-bottom: 14px;
+}
+.your_office .profile_info ol li a:hover, .your_office .favorites ol li a:hover, .wrap_your_office .log_off span:hover {
+    text-decoration: none;
+}
+.your_office .profile_info ol li a {
+    color: #efb562;
+    text-decoration: underline;
+    font-size: 12px;
+    font-weight: 400;
+}
+.your_office .profile_info ol li span {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px 0 0 14px;
+    width: 17px;
+    height: 17px;
+    background: #efb562;
+    color: #242b2f;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+}
+.your_office .favorites ol li {
+    margin-bottom: 14px;
+}
+.your_office .favorites ol li a {
+    color: #a8a9aa;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: underline;
+    font-family: Tahoma;
+}
+.wrap_your_office .log_off span {
+    text-decoration: underline;
+}
+.wrap_your_office .log_off {
+    color: #a8a9aa;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 17px 0 25px 27px;
+}
+
+/* --- /your_office --- */

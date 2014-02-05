@@ -1,0 +1,16 @@
+.wrap_aside, .category_products li a, .wrap_aphorism .aphorism, .cart, .main-menu, .wrap_map a, .wrap_special,
+.popup_product__inner, .popup_product .review, .popup_inner, .order_content {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+.footer_nav, .wrap_new, .wrap_new form input[type="checkbox"], .wrap_new form .wrap_input input[type="text"],
+.wrap_new form .wrap_input input[type="submit"], .header_top ol, .header_right input[type="text"], .wrap_block,
+.wrap_block .total a, .wrap_qty input, .sort_by a, .wrap_list, .navigation li a, .navigation li span,
+.popup_inner form input[type="text"], .popup_inner form input[type="submit"], .wrap_popup .bottom,
+.popup_product .you_opinion form, .wrap_btn a, .no_border, .no_borders, .wrap_region .wrap_item a, .person_info,
+.person_info input, .wrap_delivery_info a, .delivery_info, .delivery_info textarea {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+    position: relative;
+}
+

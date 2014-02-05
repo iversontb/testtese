@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/slider-partners.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.slides.min.js"></script>
+    <script src="js/jquery.ares.multiple.slider.js"></script>
+    <script src="js/jquery.main.gall.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site indexPage">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <h1 class="logo"><img src="img/logo.png" width="204" height="71" alt="Y-tec чтобы сайт приносил доход"></h1>
+            <!-- /logo -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <a href="#">О компании</a>
+                <a href="#">Услуги</a>
+                <span class="active" href="#">Портфолио</span>
+                <a href="#">Контакты</a>
+            </nav>
+            <!-- menu -->
+
+            <!-- phone -->
+            <address class="phone"><span>(495)</span> 662-47-92</address>
+            <!-- /phone -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- slideWrap -->
+                <div class="slideWrap">
+
+                    <!-- sliderContainer -->
+                    <div class="sliderContainer">
+
+
+                        <!-- container -->
+                        <div class="container">
+                            <div id="slides">
+                                <a href="#" class="contBox">
+                                    <img src="pic/gall-pic1.png" alt="" width="1000" height="362" />
+                                </a>
+                                <a href="#" class="contBox">
+                                    <img src="pic/gall-pic1.png" alt="" width="1000" height="362" />
+                                </a>
+                                <a href="#" class="contBox">
+                                    <img src="pic/gall-pic1.png" alt="" width="1000" height="362" />
+                                </a>
+                                <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="icon-chevron-left icon-large"></i></a>
+                                <a href="#" class="slidesjs-next slidesjs-navigation"><i class="icon-chevron-right icon-large"></i></a>
+                            </div>
+                        </div>
+                        <!-- /container -->
+
+                    </div>
+                    <!-- /sliderContainer -->
+
+                </div>
+                <!-- /slideWrap -->
+
+                <!-- services -->
+                <div class="services">
+                    <ul>
+
+                        <li class="siteCreation">
+                            <h3>Создание сайтов</h3>
+                            <ol>
+                                <li> <a href="#">Портфолио</a></li>
+                                <li><a href="#">Цены на создание сайта</a></li>
+                                <li> <a href="#">Разработка дизайна</a></li>
+                                <li><a href="#">Сайт под ключ</a></li>
+                                <li><a href="#">Баннеры</a> </li>
+                                <li><a href="#">Системы управления</a> </li>
+                            </ol>
+                            <a href="#" class="knowMore">Узнать больше
+                                о создании сайтов</a>
+                        </li>
+
+                        <li class="siteComersial">
+                            <h3>Реклама сайтов</h3>
+                            <ol>
+                                <li> <a href="#">Сколько стоит реклама</a></li>
+                                <li><a href="#">Компания по цене 1 сотрудника?</a></li>
+                                <li> <a href="#">Контекстная реклама</a></li>
+                                <li><a href="#">Медийная реклама</a></li>
+                                <li><a href="#">Реклама в социальных сетях</a> </li>
+                                <li><a href="#">Истории успеха</a> </li>
+                            </ol>
+                            <a href="#" class="knowMore">Узнать больше
+                                о рекламе сайтов</a>
+                        </li>
+
+                        <li class="siteMove">
+                            <h3>Продвижение сайтов</h3>
+                            <ol>
+                                <li> <a href="#">   Продвижение сайтов</a></li>
+                                <li><a href="#">Цены на продвижение</a></li>
+                                <li> <a href="#">Аудит сайтов</a></li>
+                                <li><a href="#">Техническая поддержка</a></li>
+                                <li><a href="#">Копирайтинг</a> </li>
+                                <li><a href="#">Преимущества с Y-tec</a> </li>
+                            </ol>
+                            <a href="#" class="knowMore">Узнать больше
+                                о продвижении сайтов</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <!-- /services -->
+
+                <!-- reviewBlock -->
+                <div class="reviewBlock">
+
+                    <!-- blockInside -->
+                    <div class="blockInside">
+
+                        <!-- review -->
+                        <div class="review">
+                            <h3>Отзывы клиентов <span>о работе с Y-tec</span></h3>
+
+                            <!-- reviewComment -->
+                            <div class="reviewComment">
+                                <h4>Компания «Компаникус корпоративикус»</h4>
+                                <p>Всем заключившим договор на продвижение сайта до 1 февраля - скидка 20%!Компания Y-tec предоставляет вам скидку в размере 20% на весь срок действия договора на продвижение сайта! Профессиональное поисковое продвижение вашего сайта – эксклюзивно,
+                                    но по разумной цене!  <a href="#">Весь отзыв ></a> </p>
+                            </div>
+                            <!-- /reviewComment -->
+
+                            <!-- reviewComment -->
+                            <div class="reviewComment">
+                                <h4>Компания «Компаникус корпоративикус»</h4>
+                                <p>Всем заключившим договор на продвижение сайта до 1 февраля - скидка 20%!Компания Y-tec предоставляет вам скидку в размере 20% на весь срок действия договора на продвижение сайта! Профессиональное поисковое продвижение вашего сайта – эксклюзивно,
+                                    но по разумной цене!  <a href="#">Весь отзыв ></a> </p>
+                            </div>
+                            <!-- /reviewComment -->
+
+                            <!-- reviewComment -->
+                            <div class="reviewComment">
+                                <h4>Компания «Компаникус корпоративикус»</h4>
+                                <p>Всем заключившим договор на продвижение сайта до 1 февраля - скидка 20%!Компания Y-tec предоставляет вам скидку в размере 20% на весь срок действия договора на продвижение сайта! Профессиональное поисковое продвижение вашего сайта – эксклюзивно,
+                                    но по разумной цене!  <a href="#">Весь отзыв ></a> </p>
+                            </div>
+                            <!-- /reviewComment -->
+
+                        </div>
+                        <!-- /review -->
+
+                        <!-- order -->
+                        <form action="#" class="order" id="order">
+                            <h2>Оформить заявку</h2>
+
+                            <div class="orderWrap">
+                                <p><span>Отправьте заявку</span>и мы свяжемся с вами в ближайшее время!</p>
+                                <fieldset>
+                                    <input type="text" id="name" name="name" placeholder="Ваше имя">
+                                    <input type="tel" name="phone" id="phone" placeholder="Ваш телефон">
+                                    <input type="email" name="mail" id="mail" placeholder="E-mail">
+                                    <textarea type="text" name="sms" id="sms" placeholder="Если у вас есть комментарии или вопросы, вы можете написать их тут"></textarea>
+                                </fieldset>
+                                <span>Поля, отмеченные звёздочкой <span>*</span>, обязательны для заполнения</span>
+
+                                <input type="submit" value="Отправить">
+                            </div>
+                        </form>
+                        <!-- /order -->
+
+                    </div>
+                    <!-- /blockInside -->
+
+                </div>
+                <!-- /reviewBlock -->
+
+                <!-- partners -->
+                <div class="partners">
+
+                    <h3 class="topicType"> Партнеры компании <span>Y-tec</span></h3>
+
+                    <!-- ares-multiple-slider -->
+                    <div class="ares-slider">
+                        <ul>
+                            <li class="ares-slider_item">
+                                <div class="imgwrap">
+                                    <img src="pic/partners1.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="ares-slider_item">
+                                <div class="imgwrap">
+                                    <img src="pic/partners2.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="ares-slider_item">
+                                <div class="imgwrap">
+                                    <img src="pic/partners3.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="ares-slider_item">
+                                <div class="imgwrap">
+                                    <img src="pic/partners4.jpg" alt="">
+                                </div>
+                            </li>
+                            <li class="ares-slider_item">
+                                <div class="imgwrap">
+                                    <img src="pic/partners1.jpg" alt="">
+                                </div>
+                            </li>
+
+                        </ul>
+                        <div class="ares-slider__prev"></div>
+                        <div class="ares-slider__next"></div>
+                    </div>
+                    <!-- ares-multiple-slider -->
+
+
+                </div>
+                <!-- /partners -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+        </div>
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

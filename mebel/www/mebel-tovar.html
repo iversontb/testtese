@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+    <link rel="stylesheet" href="css/color-choose.css" />
+
+    <link href="css/jquery.lightbox-0.5.css" rel="stylesheet" type="text/css" />
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/tween-max.min.js"></script>
+    <!--<script src="js/jquery.path.js"></script>-->
+    <script src="js/jquery.gallery.js"></script>
+    <script src="js/choose.js"></script>
+
+    <script type="text/javascript" src="js/jquery.radio.js"></script>
+    <script type="text/javascript" src="js/jquery.lightbox-0.5.pack.js"></script>
+
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+
+
+    <script>
+
+        $(function(){
+            $('.buyButton').click( function(){
+                var butPosTop = $(this).offset().top;
+                var butPosLeft = $(this).offset().left;
+                $('.basketAdd').css({'top':butPosTop-20, 'left':butPosLeft-20});
+                $('.basketAdd').fadeIn();
+
+                return false;
+            });
+            $('.okBut').click( function(){
+                $('.basketAdd').fadeOut();
+                return false;
+            });
+        });
+
+    </script>
+
+</head>
+<body>
+<div class="basketAdd popContainer">
+    <p>Вашт товар добавлен в корзину</p>
+    <ul class="butContainer">
+        <li><a href="#" class="yesBut okBut">Ok</a></li>
+    </ul>
+</div>
+
+<!-- choose_material -->
+<form action="php/category.php" class="choose_material">
+    <span class="cls" title="close">X</span>
+
+    <!-- choose_material__left_block -->
+    <div class="choose_material__left_block">
+        <ul>
+            <li class="active" data-category="cat0">
+                <a href="#">
+                    <span>Спецкатегория</span>
+                    + -16800 р.
+                </a>
+            </li>
+            <li  data-category="cat1">
+                <a href="#">
+                    <span>Категория 1</span>
+                    + 0 р.
+                </a>
+            </li>
+            <li  data-category="cat2">
+                <a href="#">
+                    <span>Категория 2</span>
+                    + 3900 р.
+                </a>
+            </li>
+            <li  data-category="cat3">
+                <a href="#">
+                    <span>Категория 3</span>
+                    + 6800 р.
+                </a>
+            </li>
+            <li  data-category="cat4">
+                <a href="#">
+                    <span>Категория 4</span>
+                    + 11200 р.
+                </a>
+            </li>
+
+        </ul>
+
+        <!-- material -->
+        <div class="material active_preload" id="wraper">
+
+            <h2 class="material__topic">Шиниллы</h2>
+
+            <!-- material__block -->
+            <a href="#" title="pic13" class="material__block active">
+                <img src="pic/pic13.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic14" class="material__block active">
+                <img src="pic/pic14.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic13" class="material__block active">
+                <img src="pic/pic13.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic14" class="material__block active">
+                <img src="pic/pic14.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic13" class="material__block active">
+                <img src="pic/pic13.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic14" class="material__block active">
+                <img src="pic/pic14.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic13" class="material__block active">
+                <img src="pic/pic13.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic14" class="material__block active">
+                <img src="pic/pic14.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic13" class="material__block active">
+                <img src="pic/pic13.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic14" class="material__block active">
+                <img src="pic/pic14.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic13" class="material__block active">
+                <img src="pic/pic13.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic14" class="material__block active">
+                <img src="pic/pic14.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic13" class="material__block active">
+                <img src="pic/pic13.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic14" class="material__block active">
+                <img src="pic/pic14.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic13" class="material__block active">
+                <img src="pic/pic13.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+            <!-- material__block -->
+            <a href="#" title="pic14" class="material__block active">
+                <img src="pic/pic14.jpg" height="122" width="112" alt="">
+            </a>
+            <!-- /material__block -->
+
+        </div>
+        <!-- /material -->
+
+
+
+
+    </div>
+    <!-- /choose_material__left_block -->
+
+    <!-- material_show -->
+    <div class="material_show">
+        <dl>
+            <dt>Цена с учетом материала:</dt>
+            <dd>500 руб.</dd>
+        </dl>
+
+        <!-- material__image -->
+        <div class="material__image">
+            <img src="pic/pic13.jpg" width="200px" height="224px">
+        </div>
+        <!-- /material__image -->
+
+        <a href="#" class="choose_button">Выбрать</a>
+
+    </div>
+    <!-- /material_show -->
+
+    <input type="hidden" name="cat0" id="category" >
+
+</form>
+<!-- /choose_material -->
+
+<div class="callTaket">
+    <form action="#" class="wholesaleForm">
+        <span class="close">close</span>
+        <div class="inputWrap">
+            <input type="text" placeholder="Ваш номер">
+        </div>
+        <div class="inputWrap">
+            <input type="text" placeholder="Артикул (если вопрос о товаре)">
+        </div>
+        <input type="submit" class="buyButton" value="Принять звонок">
+
+    </form>
+</div>
+
+<div class="wholesale">
+    <form action="#" class="wholesaleForm">
+        <span class="close">close</span>
+        <div class="inputWrap">
+            <input type="text" placeholder="Ваш номер">
+        </div>
+        <div class="inputWrap">
+            <input type="text" placeholder="Артикул">
+        </div>
+        <div class="inputWrap">
+            <input type="text" placeholder="Количество">
+        </div>
+        <input type="submit" class="buyButton" value="Принять звонок">
+
+    </form>
+</div>
+<div class="colorPop">
+    <div class="color">
+        <h2>Таблица цвета и фактуры </h2>
+        <span class="close">close</span>
+        <ul class="typeWrap">
+            <li>
+                <span class="type active">
+                    <img src="img/type1.png" height="83" width="83" alt="">
+                    <div class="borderHover"></div>
+                </span>
+            </li>
+            <li>
+                <span class="type">
+                    <img src="img/type2.png" height="83" width="83" alt="">
+                    <div class="borderHover"></div>
+                </span>
+            </li>
+            <li>
+                <span class="type">
+                    <img src="img/type3.png" height="83" width="83" alt="">
+                    <div class="borderHover"></div>
+                </span>
+            </li>
+            <li>
+                <span class="type">
+                    <img src="img/type4.png" height="83" width="83" alt="">
+                    <div class="borderHover"></div>
+                </span>
+            </li>
+        </ul>
+        <ul class="chooseColor">
+             <li>
+                 <span class="colorType">
+                     <img src="img/color1.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+             </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color2.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color3.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color4.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color5.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color6.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color7.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color8.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color9.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color10.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color11.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color12.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color13.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color14.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color15.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color16.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color17.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color18.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color19.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color20.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color21.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color22.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color23.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color24.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color25.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color26.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color27.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color28.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color29.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color30.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color31.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+            <li>
+                 <span class="colorType">
+                     <img src="img/color32.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+            </li>
+             <li>
+                 <span class="colorType">
+                     <img src="img/color33.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+             </li>
+             <li>
+                 <span class="colorType">
+                     <img src="img/color34.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+             </li>
+             <li>
+                 <span class="colorType">
+                     <img src="img/color35.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+             </li>
+             <li>
+                 <span class="colorType">
+                     <img src="img/color36.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+             </li>
+             <li>
+                 <span class="colorType">
+                     <img src="img/color37.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+             </li>
+             <li>
+                 <span class="colorType">
+                     <img src="img/color38.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+             </li>
+             <li>
+                 <span class="colorType">
+                     <img src="img/color39.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+             </li>
+             <li>
+                 <span class="colorType">
+                     <img src="img/color40.png" height="40" width="43" alt="">
+                     <div class="HoverColor"></div>
+                 </span>
+             </li>
+
+            <div class="buttonColor">
+                <a href="#">Помощь оператора в подборе цвета</a>
+                <a href="#" class="confirm">Подтверждаю</a>
+            </div>
+
+        </ul>
+    </div>
+</div>
+<!-- site -->
+<div class="site">
+<div class="site__layout">
+    <!-- header -->
+    <header class="header">
+
+        <!-- logo -->
+        <h1 class="logo"><a href="index.html" title="main"><img src="img/logo.png" height="30" width="151" alt="mebel"></a></h1>
+        <!-- /logo -->
+
+        <div class="phoneWrap">
+            <address>
+                <a href="tel:+7 (812) 000-00-00">+7 (812) 000-00-00</a>
+            </address>
+        </div>
+
+        <!-- main-menu -->
+        <nav class="main-menu">
+            <ol class="main-menu__layout">
+                <li class="main-menu__item"><a class="main-menu__lnk" href="#">Доставка</a></li>
+                <li class="main-menu__item"><a class="main-menu__lnk" href="#">Оплата</a></li>
+                <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                <li class="main-menu__item"><a class="main-menu__lnk" href="#">Войти</a></li>
+            </ol>
+        </nav>
+        <!-- /main-menu -->
+
+        <div class="basket">
+            <h4>В корзине</h4>
+            <a href="#">4 товара на 18 000 р.</a>
+            <a href="#" class="doneOreder">Оформить</a>
+        </div>
+
+
+    </header>
+    <!-- /header -->
+
+    <div class="site__content insideType1">
+
+        <!-- leftSideBar -->
+        <aside class="leftSideBar">
+
+            <!-- mainAccard -->
+            <ul class="mainAccard insideAccard">
+                <li>
+                    <span>Мягкая мебель</span>
+                    <div class="subMenuWrap">
+                        <h2>Мягкая мебель</h2>
+                        <ul>
+                            <li><a href="#">Диваны</a></li>
+                            <li><a href="#" class="active">Кожанные диваны</a></li>
+                            <li><a href="#">Угловые диваны</a></li>
+                            <li><a href="#">Диваны и кресла-кровати</a></li>
+                            <li><a href="#">Комплекты мебели</a></li>
+                            <li><a href="#">Тахты</a></li>
+                            <li><a href="#">Кресла и пуфы</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span>Шкафы и хранение</span>
+                    <div class="subMenuWrap">
+                        <h2>Шкафы и хранение</h2>
+                        <ul>
+                            <li><a href="#">Диваны</a></li>
+                            <li><a href="#">Кожанные диваны</a></li>
+                            <li><a href="#">Угловые диваны</a></li>
+                            <li><a href="#">Диваны и кресла-кровати</a></li>
+                            <li><a href="#">Комплекты мебели</a></li>
+                            <li><a href="#">Тахты</a></li>
+                            <li><a href="#">Кресла и пуфы</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span>Для прихожих</span>
+                    <div class="subMenuWrap">
+                        <h2>Для прихожих</h2>
+                        <ul>
+                            <li><a href="#">Диваны</a></li>
+                            <li><a href="#">Кожанные диваны</a></li>
+                            <li><a href="#">Угловые диваны</a></li>
+                            <li><a href="#">Диваны и кресла-кровати</a></li>
+                            <li><a href="#">Комплекты мебели</a></li>
+                            <li><a href="#">Тахты</a></li>
+                            <li><a href="#">Кресла и пуфы</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span>Столы и стулья</span>
+                    <div class="subMenuWrap">
+                        <h2>Столы и стулья</h2>
+                        <ul>
+                            <li><a href="#">Диваны</a></li>
+                            <li><a href="#">Кожанные диваны</a></li>
+                            <li><a href="#">Угловые диваны</a></li>
+                            <li><a href="#">Диваны и кресла-кровати</a></li>
+                            <li><a href="#">Комплекты мебели</a></li>
+                            <li><a href="#">Тахты</a></li>
+                            <li><a href="#">Кресла и пуфы</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span>Мебель для ванной</span>
+                    <div class="subMenuWrap">
+                        <h2>Мебель для ванной</h2>
+                        <ul>
+                            <li><a href="#">Диваны</a></li>
+                            <li><a href="#">Кожанные диваны</a></li>
+                            <li><a href="#">Угловые диваны</a></li>
+                            <li><a href="#">Диваны и кресла-кровати</a></li>
+                            <li><a href="#">Комплекты мебели</a></li>
+                            <li><a href="#">Тахты</a></li>
+                            <li><a href="#">Кресла и пуфы</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span>Кухонная мебель</span>
+                    <div class="subMenuWrap">
+                        <h2>Кухонная мебель</h2>
+                        <ul>
+                            <li><a href="#">Диваны</a></li>
+                            <li><a href="#">Кожанные диваны</a></li>
+                            <li><a href="#">Угловые диваны</a></li>
+                            <li><a href="#">Диваны и кресла-кровати</a></li>
+                            <li><a href="#">Комплекты мебели</a></li>
+                            <li><a href="#">Тахты</a></li>
+                            <li><a href="#">Кресла и пуфы</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span>Мебель для спальни</span>
+                    <div class="subMenuWrap">
+                        <h2>Мебель для спальни</h2>
+                        <ul>
+                            <li><a href="#">Диваны</a></li>
+                            <li><a href="#">Кожанные диваны</a></li>
+                            <li><a href="#">Угловые диваны</a></li>
+                            <li><a href="#">Диваны и кресла-кровати</a></li>
+                            <li><a href="#">Комплекты мебели</a></li>
+                            <li><a href="#">Тахты</a></li>
+                            <li><a href="#">Кресла и пуфы</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span>Детская</span>
+                    <div class="subMenuWrap">
+                        <h2>Детская</h2>
+                        <ul>
+                            <li><a href="#">Диваны</a></li>
+                            <li><a href="#">Кожанные диваны</a></li>
+                            <li><a href="#">Угловые диваны</a></li>
+                            <li><a href="#">Диваны и кресла-кровати</a></li>
+                            <li><a href="#">Комплекты мебели</a></li>
+                            <li><a href="#">Тахты</a></li>
+                            <li><a href="#">Кресла и пуфы</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <span>Украшения для интерьера</span>
+                    <div class="subMenuWrap">
+                        <h2>Украшения для интерьера</h2>
+                        <ul>
+                            <li><a href="#">Диваны</a></li>
+                            <li><a href="#">Кожанные диваны</a></li>
+                            <li><a href="#">Угловые диваны</a></li>
+                            <li><a href="#">Диваны и кресла-кровати</a></li>
+                            <li><a href="#">Комплекты мебели</a></li>
+                            <li><a href="#">Тахты</a></li>
+                            <li><a href="#">Кресла и пуфы</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!-- /mainAccard -->
+
+        </aside>
+        <!-- /leftSideBar -->
+
+
+
+        <!-- content-wrap -->
+        <div class="content-wrap">
+
+            <!-- goodsWrap -->
+            <div class="goodsWrap">
+                <h2>Диван «Кио»</h2>
+
+                <!-- crumbs -->
+                <ul class="crumbs">
+                    <li><a href="#">Главная</a>></li>
+                    <li><a href="#">Кожаные диваны</a></li>
+                </ul>
+                <!-- /crumbs -->
+
+                <!--gallWrap-->
+                <div class="gallWrap">
+
+                    <div class="largeGallery">
+                        <ul class="preview">
+                            <li class="active"><a href="pic/1.jpg"><img src="pic/1-1.png" width="168" height="100" alt=""></a></li>
+                            <li><a href="pic/4.jpg"><img src="pic/4-1.png" width="168" height="100" alt=""></a></li>
+                            <li><a href="pic/7.jpg"><img src="pic/7-1.png" width="168" height="100" alt=""></a></li>
+                            <li><a href="pic/8.jpg"><img src="pic/8-1.png" width="168" height="100" alt=""></a></li>
+                            <li><a href="pic/8.jpg"><img src="pic/8-1.png" width="168" height="100" alt=""></a></li>
+                            <li><a href="pic/9.jpg"><img src="pic/9.jpg" width="168" height="100" alt=""></a></li>
+                        </ul>
+                        <div class="preview__prev"></div>
+                        <div class="preview__next"></div>
+                        <a href="#" class="showLiteBox">Увеличить</a>
+                    </div>
+
+                </div>
+                <!--/gallWrap-->
+
+                <aside class="rightSideBar">
+
+                    <!-- container -->
+                    <div class="container">
+
+                        <h3>Доставка </h3>
+
+                        <div class="delivery">
+                            <p class="townDelivery">по Петербургу</p>
+                            <p>к 24.03.2013</p>
+                            <span>Бесплатно!</span>
+                        </div>
+
+                    </div>
+                    <!-- /container -->
+
+                    <!-- container -->
+                    <div class="container">
+
+                        <h3>Оплата </h3>
+
+                        <div class="payment">
+                            <ul>
+                                <li><a href="#"><img src="img/visa.png" height="27" width="45" alt=""></a></li>
+                                <li><a href="#"><img src="img/mastercard.png" height="27" width="45" alt=""></a></li>
+                                <li><a href="#"><img src="img/webmoney.png" height="27" width="45" alt=""></a></li>
+                                <li><a href="#"><img src="img/yd.png" height="27" width="45" alt=""></a></li>
+                            </ul>
+                            <p>Или курьеру при получении</p>
+                        </div>
+
+                    </div>
+                    <!-- /container -->
+
+                    <!-- container -->
+                    <div class="container">
+
+                        <h3>Есть вопросы? </h3>
+
+                        <div class="callUs">
+                            <p>Сразу звоните!</p>
+                            <p>
+                                <a href="tel:+7 (812) 000-00-00" class="phone">+7 (812) 000-00-00</a>
+                            </p>
+                            <a href="#" class="callOrder">Заказ звонка</a>
+                        </div>
+
+                    </div>
+                    <!-- /container -->
+
+                    <!-- container -->
+                    <div class="container">
+
+                        <h3>К товару подойдут:</h3>
+
+                        <ul class="propouse">
+                            <li>
+                                <a href="#">
+                                    <h2>Кресло «Кио»</h2>
+                                    <img src="pic/pic7.png" height="95" width="122" alt="">
+                                </a>
+                                <p>6 000 р.</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h2>Кресло «Кио»</h2>
+                                    <img src="pic/pic7.png" height="95" width="122" alt="">
+                                </a>
+                                <p>6 000 р.</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h2>Кресло «Кио»</h2>
+                                    <img src="pic/pic7.png" height="95" width="122" alt="">
+                                </a>
+                                <p>6 000 р.</p>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h2>Кресло «Кио»</h2>
+                                    <img src="pic/pic7.png" height="95" width="122" alt="">
+                                </a>
+                                <p>6 000 р.</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- /container -->
+
+
+                </aside>
+
+
+                <!-- descriptionBlock -->
+                <div class="descriptionBlock">
+
+                    <dl class="articleGoods">
+                        <dt>Артикул: </dt>
+                        <dd>0057</dd>
+                    </dl>
+
+                    <div class="containerBox">
+                        <div class="wraper">
+                            <!-- sizeBlock -->
+                            <div class="sizeBlock">
+
+                                <div class="checkBox">
+                                    <input type="radio" class="niceRadio" name="myradio" id="myradio1" tabindex="1" checked="checked" >
+                                    <label for="myradio1">100 x 202 х 85 см.</label>
+                                </div>
+                                <div class="checkBox active">
+                                    <input type="radio"  class="niceRadio" name="myradio" id="myradio2" tabindex="2" >
+                                    <label for="myradio2">125 х 202 х 96 см.</label>
+                                </div>
+                                <div class="checkBox">
+                                    <input type="radio"  class="niceRadio" name="myradio" id="myradio3" tabindex="3" >
+                                    <label for="myradio3">140 х 220 х 110 см.</label>
+                                </div>
+                                <div class="checkBox">
+                                    <input type="radio"  class="niceRadio" name="myradio" id="myradio4" tabindex="3" >
+                                    <label for="myradio4">160 х 220 х 120 см.</label>
+                                </div>
+
+                            </div>
+                            <!-- /sizeBlock -->
+
+                            <!-- imgSize -->
+                            <div class="imgSize">
+                                <img src="pic/pic4.jpg" height="149" width="179" alt="">
+                            </div>
+                            <!-- /imgSize -->
+
+                        </div>
+
+                        <!-- selectColor -->
+                        <div class="selectColor">
+                            <h3>Выберите цвет и материал</h3>
+
+                            <!--<div class="selmatlinks">-->
+                                <!--<div>-->
+                                    <!--<h5>Ткань-основа:</h5>-->
+                                    <!--<span></span>-->
+                                    <!--<a href="" class="osn">-->
+                                        <!--<i>не выбрана</i>-->
+                                        <!--<span>выбрать</span>-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div>-->
+                                    <!--<h5>Ткань-компаньон:</h5>-->
+                                    <!--<span></span>-->
+                                    <!--<a href="" class="compl">-->
+                                        <!--<i>не выбрана</i>-->
+                                        <!--<span>выбрать</span>-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                            <!--</div>-->
+
+                            <ul>
+                                <li class="basis">
+                                    <h5>Ткань-основа:</h5>
+                                    <div class="selectBlock">
+                                    </div>
+                                    <a href="#" class="selectColorBut">
+                                        <p>не выбрана</p>
+                                        <span id="1">Выбрать</span>
+                                    </a>
+                                </li>
+                                <li class="companion">
+                                    <h5>Ткань-компаньон:</h5>
+                                    <div class="selectBlock">
+                                    </div>
+                                    <a href="#" class="selectColorBut">
+                                        <p>не выбрана</p>
+                                        <span id="2">Выбрать</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /selectColor -->
+                    </div>
+
+                    <!-- riceWrap -->
+                    <div class="riceWrap">
+
+                        <!-- container -->
+                        <div class="container">
+
+                            <h3>Цена </h3>
+
+                            <!-- price -->
+                            <div class="price">
+                                <p class="oldPrice">13 400 P</p>
+                                <ul>
+                                    <li><span>всего</span></li>
+                                    <li><span class="goodsPrice">11 625</span></li>
+                                </ul>
+                            </div>
+                            <!-- /price -->
+
+                        </div>
+                        <!-- /container -->
+
+                        <!-- buttonsWrap -->
+                        <div class="buttonsWrap">
+                            <a href="#" class="buyButton">Надо брать!</a>
+                            <a href="#" class="opt">Хочу оптом</a>
+                        </div>
+                        <!-- /buttonsWrap -->
+
+                    </div>
+                    <!-- /riceWrap -->
+
+                    <!-- descriptionText -->
+                    <div class="descriptionText">
+                        <ul class="doteList">
+                            <li>текст текст текст</li>
+                            <li>текст текст текст</li>
+                            <li>текст текст текст</li>
+                            <li>текст текст текст</li>
+                        </ul>
+                        <p>Компактность, лёгкость, малогабаритность, многофункциональность и неповторимый дизайн - вот отличительные особенности дивана КИО. Спинка дивана разделена на две части, которые фиксируются независимо друг от друга в пяти положениях. Поднимающиеся боковые части фиксируются в пяти положениях. В основе дивана находится металлический каркас, на который натянуты инерционные ремни, поверх ремней укладывается многослойный матрац из латекса с полиуретаном. Эта уникальная конструкция в сочетании с эргономичным дизайном позволяет дивану КИО быть комфортной и надёжной мебелью, дающей максимум удобства, не занимая при этом много места. Диваны и кресла коллекции SOUL не требуют усилий при сборке.</p>
+                        <p>Данная модель, как и вся мебель, предлагаемая компанией BO-BOX, очень удобна при транспортировке и занимает в объеме 0,7 м3, 1 место.</p>
+
+                    </div>
+                    <!-- /descriptionText -->
+
+                </div>
+                <!-- /descriptionBlock -->
+
+
+
+
+            </div>
+            <!-- /goodsWrap -->
+
+        </div>
+        <!-- /content-wrap -->
+
+
+
+    </div>
+</div>
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <form action="#" method="post" class="askUs">
+            <div class="inputWrap">
+                <input type="text" placeholder="E-mail">
+            </div>
+            <textarea placeholder="Ваш вопрос"></textarea>
+            <input type="submit" class="askButton">
+        </form>
+
+        <ul class="footerMenu">
+            <li><a href="#">Вопрос-ответ</a></li>
+            <li><a href="#">О доставке</a></li>
+            <li><a href="#">Возврат товара</a></li>
+            <li><a href="#">О магазине</a></li>
+            <li><a href="#">Написать письмо</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+
+        <ul class="social">
+            <li><a href="#" title="twitter" class="twitter">twitter</a> </li>
+            <li><a href="#" title="facebook" class="facebook">facebook</a> </li>
+            <li><a href="#" title="vkontakte" class="vkontakte">vkontakte</a> </li>
+        </ul>
+
+        <div class="footerPhone">
+            <address>
+                <a href="tel:+7 (812) 000-00-00">+7 (812) 000-00-00</a>
+            </address>
+        </div>
+
+        <a href="http://xn--80aqcukcj1i.xn--p1ai/" class="saitoria">saitoria</a>
+
+        <p class="copy">&copy;ДаЁЖ Мебель  Все права защищены</p>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

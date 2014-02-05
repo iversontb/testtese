@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.6.1.js"></script>
+    <script type="text/javascript" src="js/jPlane.js"></script>
+    <script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="js/cusel-min-2.5.js"></script>
+
+
+
+    <script src="js/jquery.main.js"></script>
+
+    <script src="js/jquery.gallery.js"></script>
+
+
+
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+    <!--[if  IE 7]>
+    <link rel="stylesheet" href="css/main.ie7.css" />
+    <![endif]-->
+    <script>
+        $(function(){
+
+            var params = {
+                changedEl: ".selectWrap select",
+                visRows: 5,
+                scrollArrows: false
+            }
+            cuSel(params);
+
+        } );
+
+
+    </script>
+
+</head>
+<body>
+<!-- site -->
+<div class="site inside">
+<div class="site__layout">
+
+
+<div class="site__content">
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+
+<!--—BEGIN popUpWrap -->
+    <!--—alwaysBlock УДАЛИТЬ, СТИЛЬ ТОЛЬКО ДЛЯ ТОГО ЧТО БЫ ПОКАЗАТЬ ПОП АП -->
+<div class="popUpWrap alwaysBlock">
+    <!--—BEGIN popUpContainer -->
+    <div class="popUpContainer tablePop">
+
+
+        <!--—BEGIN popUpForm -->
+        <form method="post" action="#" class="popUpForm ">
+
+
+            <!--—BEGIN formHead -->
+            <div class="formHead">
+                <h2>Сохранить изменения?</h2>
+                <div class="closeBut" title="close">close</div>
+            </div>
+            <!--—END formHead -->
+
+            <!--—BEGIN wraper -->
+            <div class="wraper noLine noLine2">
+
+
+                <p class="forgotMessage">Некоторые изменения остались без сохранений!</p>
+
+
+
+                <a href="javascript:void(0)" class="buttonType gray size1 cancelBut">Отмена</a>
+                <a href="javascript:void(0)" class="buttonType fiolet size1 deleteProblem">Сохранить</a>
+
+            </div>
+            <!--—END wraper -->
+
+
+        </form>
+        <!--—END popUpForm -->
+
+
+    </div>
+    <!--—END popUpContainer -->
+</div>
+<!--—END popUpWrap -->
+
+
+</div>
+<!-- /content-wrap -->
+
+</div>
+</div>
+</div>
+<!-- /site -->
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+        <h1>footer</h1>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+.wrap_aside.wrap_review .wrap_img {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+    position: relative;
+}
+

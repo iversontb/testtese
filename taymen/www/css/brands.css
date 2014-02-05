@@ -1,0 +1,466 @@
+/* --------------- block_inner --------------- */
+.block_inner, .wrap_list {
+    width: 709px;
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+    font-family: Tahoma;
+    color: #888888;
+    position: relative;
+}
+.block_inner:before{
+    content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #63a4cc;
+}
+.block_inner h2 {
+    font-family: "PT Magistral";
+
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.block_inner h2 span:after {
+    background: url("../img/h2_bg.png") no-repeat;
+    width: 8px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    right: -14px;
+    content: "";
+}
+.block_inner h2 span {
+    position: relative;
+    color: #888888;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+.block_inner .brand {
+    font-family: "PT Magistral";
+    margin-bottom: 30px;
+}
+.block_inner .brand .wrap_img {
+    display: inline-block;
+    vertical-align: top;
+    width: 227px;
+    height: 119px;
+    overflow: hidden;
+    border: 1px solid #e9e9e9;
+}
+.block_inner .brand .wrap_info {
+    display: inline-block;
+    vertical-align: top;
+    width: 458px;
+    padding-left: 17px;
+}
+.block_inner h3 span {
+    display: block;
+}
+.block_inner h3 {
+    font-weight: normal;
+    color: #63a7d0;
+    font-size: 16px;
+    margin-bottom: 14px;
+    font-family: "PT Magistral";
+}
+.block_inner .brand p, .content p {
+    color: #888888;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 16px;
+    font-family: Tahoma;
+}
+.block_inner .more:hover {
+    opacity: 0.8;
+}
+.block_inner .more {
+    width: 80px;
+    height: 24px;
+    display: block;
+    text-indent: -5000px;
+    background: url("../img/link_more.png") no-repeat;
+}
+.block_inner p.no_margin {
+    margin-bottom: 4px;
+}
+.block_inner p {
+    /*line-height: 16px;*/
+    /*margin-bottom: 14px;*/
+}
+.block_inner .go_back:hover {
+    text-decoration: none;
+}
+.block_inner .go_back:before {
+    position: absolute;
+    content: "";
+    background: url("../img/back_bg.png") no-repeat;
+    width: 8px;
+    height: 10px;
+    top: 4px;
+    left: -16px;
+}
+.block_inner .go_back {
+    margin-left: 17px;
+    font-size: 14px;
+    position: relative;
+    color: #888888;
+    text-decoration: underline;
+    font-family: "PT Magistral";
+
+}
+.block_inner .ares-slider1__next {
+    left: auto;
+    right: -47px;
+}
+.align_left {
+    margin: 4px 19px 10px 0;
+    float: left;
+}
+.news_img {
+    position: relative;
+    width: 220px;
+    height: 110px;
+    border: 1px solid #dddddd;
+    margin: 4px 19px 10px 0;
+    float: left;
+}
+.news_img span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 78px;
+    height: 24px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 23px;
+    background: rgba(0, 0, 0, 0.5);
+}
+/* --------------- /block_inner --------------- */
+
+/* --------------- bread_nav --------------- */
+.bread_nav {
+    float: right;
+    font-family: Tahoma;
+}
+.bread_nav_bottom {
+    margin-bottom: 30px;
+}
+.bread_nav li {
+    display: inline-block;
+    margin: 0 2px;
+}
+.bread_nav a:hover {
+    background: #8bbfe1;
+    color: #fff;
+}
+.bread_nav a, .bread_nav span {
+    display: block;
+    width: 16px;
+    height: 16px;
+    color: #888888;
+    background: #eaeaea;
+    text-align: center;
+    line-height: 15px;
+    font-size: 12px;
+}
+.bread_nav span {
+    background: #64a2c9;
+    cursor: default;
+    color: #fff;
+}
+.bread_nav a.prev:hover, .bread_nav a.next:hover {
+    opacity: 0.8;
+}
+.bread_nav a.prev, .bread_nav a.next {
+    width: 8px;
+    height: 9px;
+}
+.bread_nav a.prev {
+    background: url("../img/arrow_prev.png") no-repeat;
+}
+.bread_nav a.next {
+    background: url("../img/arrow_next.png") no-repeat;
+}
+
+/* --------------- /bread_nav --------------- */
+
+/* --------------- brand_products --------------- */
+.wrap_brands h2 {
+    color: #77b5dd;
+    font-size: 18px;
+    font-family: "PT Magistral";
+}
+.brand_products {
+    margin-bottom: 20px;
+}
+.brand_products h3 + a {
+    margin: 0;
+}
+.brand_products a {
+    display: inline-block;
+    margin-left: 10px;
+    width: 163px;
+    height: 235px;
+    border: 1px solid #dddddd;
+}
+.brand_products a:hover span {
+    text-decoration: none;
+}
+.brand_products a span:before {
+    content: "";
+    background: url("../img/down_arrow1.png") no-repeat;
+    width: 20px;
+    height: 10px;
+    bottom: -9px;
+    left: 71px;
+    position: absolute;
+}
+.brand_products a span {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    line-height: 48px;
+    display: block;
+    width: 163px;
+    height: 49px;
+    background: #77b5dd;
+    font-size: 14px;
+    text-decoration: underline;
+}
+/* --------------- /brand_products --------------- */
+
+/* --------------- list_products --------------- */
+.list_products .product_item {
+    margin-bottom: 28px;
+}
+.list_products .wrap_img {
+    display: inline-block;
+    border: 1px solid #dedede;
+    width: 161px;
+    height: 232px;
+    vertical-align: top;
+    position: relative;
+    margin-right: 15px;
+}
+.list_products .wrap_img.new_product:before {
+    background: url("../img/new.png") no-repeat scroll 0 0 transparent;
+    content: "";
+    height: 43px;
+    position: absolute;
+    right: -1px;
+    bottom: -1px;
+    width: 44px;
+}
+.list_products .product_info {
+    display: inline-block;
+    vertical-align: top;
+    width: 525px;
+    position: relative;
+}
+.list_products .wrap_reviews {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+.list_products .wrap_reviews .stars_wrap {
+    background: url("../img/stars.png") no-repeat scroll left top transparent;
+    display: inline-block;
+    height: 12px;
+    margin-right: 10px;
+    width: 72px;
+}
+.list_products .wrap_reviews .stars {
+    background: url("../img/stars_act.png") no-repeat scroll left top transparent;
+    height: 12px;
+}
+.list_products .wrap_reviews .reviews:hover {
+    text-decoration: underline;
+}
+.list_products .wrap_reviews .reviews {
+    color: #77B5DD;
+    font-family: tahoma;
+    font-size: 11px;
+}
+.list_products .product_info h2 a:hover {
+    text-decoration: none;
+}
+.list_products .product_info h2 a {
+    font-weight: normal;
+    color: #63a5cd;
+    font-size: 14px;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 13px;
+}
+.list_products dl {
+    margin-bottom: 5px;
+    font-size: 14px;
+    line-height: 16px;
+}
+.list_products dl dt {
+    float: left;
+    padding-right: 4px;
+    color: #a6a6a6;
+    font-weight: normal;
+}
+.list_products dl dd {
+    color: #555555;
+    margin-bottom: 11px;
+}
+.list_products .more:hover {
+    opacity: 0.8;
+}
+.list_products .more {
+    background: url("../img/link_more.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 24px;
+    text-indent: -5000px;
+    width: 80px;
+}
+/* --------------- /list_products --------------- */
+
+/* --------------- added_product --------------- */
+.added_product {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+.added_product thead th {
+    background: #77b5dd;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+    height: 24px;
+    line-height: 22px;
+    padding: 0 5px;
+}
+.added_product tbody tr:hover {
+    background: #fffdd6;
+}
+.added_product td:first-child span {
+    text-indent: -5000px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin-left: 22px;
+    background: url("../img/status_bg.png");
+}
+.added_product td:first-child span.added {
+    background-position: 0 0;
+}
+.added_product td:first-child span.no_in_stock {
+    background-position: 0 -18px;
+}
+.added_product td:first-child span.delete {
+    background-position: 0 -36px;
+}
+.added_product tbody td {
+    color: #555555;
+    font-size: 14px;
+    padding: 0 5px;
+    height: 35px;
+    line-height: 34px;
+    border-bottom: 1px solid #dddddd;
+    vertical-align: middle;
+}
+.added_product input[type="submit"]:hover {
+    background-position: 0 -15px;
+}
+.added_product input[type="submit"].added {
+    background-position: 0 -30px;
+}
+.added_product input[type="submit"] {
+    border: none;
+    width: 20px;
+    height: 15px;
+    background: url("../img/added_cart_bg.png") no-repeat;
+}
+/* --------------- /added_product --------------- */
+
+/* --------------- wrap_qty --------------- */
+.added_product .plus-minus {
+    border: none;
+    margin-top: 8px;
+    height: 20px;
+    position: relative;
+    width: 61px;
+}
+.added_product .plus-minus input[type="button"] {
+    left: 44px;
+    position: absolute;
+    display: block;
+    width: 16px;
+    border-left: 1px solid #e9e9e9;
+    cursor: pointer;
+    background: url("../img/qty_btn.png") no-repeat;
+}
+.added_product .plus-minus_type2 input[type="button"]:hover {
+    background-position: -16px -10px;
+}
+.added_product .plus-minus_type2 input[type="button"] {
+    height: 8px;
+    top: 11px;
+    background-position: 0 -10px;
+}
+.added_product .plus-minus_type2 input[type="text"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-right: 16px;
+    text-align: center;
+    width: 61px;
+    height: 20px;
+    border: 1px solid #e9e9e9;
+    color: #555555;
+    font-size: 14px;
+}
+.added_product .plus-minus_type2 input.plus-minus__plus[type="button"]:hover {
+    background-position: -16px 0;
+}
+.added_product .plus-minus_type2 input.plus-minus__plus[type="button"] {
+    height: 10px;
+    top: 1px;
+    background-position: 0 0;
+}
+/* --------------- /wrap_qty --------------- */
+
+/* --------------- b-top --------------- */
+.b-top {
+    z-index:2600;
+    position:fixed;
+    left:0;
+    bottom:90px;
+    width:34%;
+    margin-left:50%;
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+}
+.b-top:hover {
+    opacity:1;
+    filter:alpha(opacity=100);
+    cursor:pointer;
+}
+.b-top-but {
+    text-align: center;
+    width: 50px;
+    height: 20px;
+    z-index:2600;
+    position:absolute;
+    display:block;
+    left:56px;
+    bottom:0;
+    margin:0 0 0 100%;
+    font-size: 14px;
+    padding:30px 0 0 0;
+    color: #77b5dd;
+    font-family: "PT Magistral";
+    background:#c6e0f0 url('../img/go_top.png') no-repeat 50% 11px;
+}
+/* --------------- /b-top --------------- */

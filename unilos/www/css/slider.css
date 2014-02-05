@@ -1,0 +1,113 @@
+.gallery {
+    height: 257px;
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.gallery > div {
+    overflow: hidden;
+    height: 257px;
+    width: 600px;
+    position: relative;
+}
+.gallery > div > ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+}
+.gallery > div > ul > li {
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    background: none;
+}
+
+.name_product{
+    text-align: center;
+    text-decoration: underline;
+    color: #b4dc51;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.gallery img{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.gallery span{
+    display: block;
+    width: 90px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-weight: bold;
+    color: #ff8614;
+    font-size: 12px;
+    margin: 0 auto;
+    background: #fff;
+    border: 2px solid #ff8614;
+    border-radius: 3px;
+    margin-bottom: 5px;
+
+}
+.gallery a{
+    display: block;
+}
+.gallery a.more_info{
+    display: block;
+    width: 90px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #7d7d7d;
+    font-size: 12px;
+    background: #ffeabf;
+    border: 2px solid #7d7d7d;
+    border-radius: 3px;
+    margin: 0 auto;
+}
+.gallery a div {
+    position: absolute;
+    z-index: 3;
+    color: #565656;
+    left: 0;
+    width: 100%;
+    background: #d9dad9;
+    font-size: 18px;
+    padding: 12px 0 18px 19px;
+    -moz-transition: bottom 0.3s ease-in;
+    -o-transition: bottom 0.3s ease-in;
+    -webkit-transition: bottom 0.3s ease-in;
+    -ms-transition: bottom 0.3s ease-in;
+    transition: bottom 0.3s ease-in;
+}
+.gallery a:hover div {
+    height: auto;
+    bottom: 0 !important;
+}
+
+
+.gallery__controls li {
+    float: left;
+    list-style: none;
+    background: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 90px;
+    background: #c1cac7;
+    margin: 0 2px 0 3px;
+    cursor: pointer;
+}
+.gallery__controls li.active {
+    cursor: default;
+    background: #818181;
+}
+.gallery__controls{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+}

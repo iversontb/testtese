@@ -1,0 +1,59 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+/*@font-face {*/
+    /*font-family: "helveticaneue";*/
+    /*src: url("../font/helveticaneue.eot");*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+/*}*/
+/* --------------- /fonts --------------- *//*\*/
+
+.search__text {
+    line-height: 25px;
+}
+.response__input  {
+    line-height: 25px;
+}
+.menu__item a:before,
+.menu__item a:after {
+    display: block;
+}
+.menu__item a:hover:after,
+.menu__item a:before {
+    display: none;
+}
+.menu__item a:hover:before{
+    display: block;
+}
+.ares-slider__points {
+    z-index: 100;
+}
+.ares-slider__points li {
+    background: transparent url("../img/points.png");
+    height: 13px;
+    width: 13px;
+    float: left;
+    margin-left: 6px;
+    border: none;
+    cursor: pointer;
+}
+.ares-slider__points li.active {
+    background: transparent url("../img/points.png") no-repeat right 0;
+}
+
+.map a,
+.map a:visited {
+    width: 12px;
+    height: 12px;
+    margin: -2px 0 0 -2px;
+    background: url("../img/map-ie.png");
+    border: none;
+    background-color: transparent;
+}
+.map a:after {
+    display: none;
+}
+.map a:hover {
+    background-position: 0 bottom;
+    background-color: transparent;
+}

@@ -1,0 +1,65 @@
+/*
+	Coin Slider jQuery plugin CSS styles
+	http://workshop.rs/projects/coin-slider
+*/
+
+
+.coin-slider { overflow: hidden; zoom: 1; position: relative; }
+.coin-slider a{ text-decoration: none; outline: none; border: none; }
+#cs-navigation-coin-slider{
+    display: block !important;
+}
+.cs-buttons { font-size: 0px; padding: 10px; float: left; }
+.cs-buttons a { margin-left: 5px; height: 13px; width: 13px; float: left; text-indent: -1000px;
+    background: url("../img/empty.png");
+}
+.cs-active {
+    background: url("../img/fill.png") !important;
+}
+
+.cs-title {
+    width: 545px;
+    height: 139px;
+    padding: 10px;
+    opacity: 1 !important;
+    left: 264px !important;
+    bottom: 35px !important;
+}
+.cs-title h2{
+    color: #133b61;
+    font-family: arial;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.cs-title h3{
+    color: #133b61;
+    font-family: arial;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: normal;
+}
+.cs-title p{
+    color: #424242;
+    line-height: 18px;
+    font-size: 12px;
+    font-family: arial;
+}
+
+.cs-prev{
+    background: url("../img/gall-left.png");
+    width: 16px;
+    height: 24px;
+    text-indent: -5000px;
+}
+.cs-prev:hover{
+    background: url("../img/gall-left-hover.png");
+}
+.cs-next {
+    background: url("../img/gall-right.png");
+    width: 16px;
+    height: 24px;
+    text-indent: -5000px;
+}
+.cs-next:hover{
+    background: url("../img/gall-right-hover.png");
+}

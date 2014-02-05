@@ -1,0 +1,22 @@
+FontName (HeliosExt-Italic)
+FullName (HeliosExt Italic)
+AppleName (HeliosExt-Italic)
+FamilyName (HeliosExt)
+Version (001.001)
+isFixedPitch false
+CharacterSet (custom)
+Encoding (SpecificEncoding)
+Pi true
+ItalicAngle -12
+CapHeight 726
+UnderlinePosition -95
+UnderlineThickness 64
+StemWidth 50
+Serif false
+MSMenuName (HeliosExt)
+VPMenuName (HeliosExt)
+WORDMenuName (HeliosExt)
+VPStyle (I)
+WindowsCharSet 200
+WindowsFirstChar 32
+WindowsLastChar 255

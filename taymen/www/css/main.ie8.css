@@ -1,0 +1,25 @@
+/* css for ltie8 */
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Ukrainian Jikharev";
+    src: url("../fonts/ukrainianjikharev.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Magistral C";
+    src: url("../fonts/pt_magistral_cyrillic.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+.ares-slider__points{
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+    zoom: 1;
+}
+.content-wrap aside>ul>li div ul li time{
+    background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#80000000,endColorstr=#80000000);
+    zoom: 1;
+}

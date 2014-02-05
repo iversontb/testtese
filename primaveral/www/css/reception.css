@@ -1,0 +1,302 @@
+/* --------------- reception.css --------------- */
+.site:after {
+    height: 347px;
+}
+.menu_container {
+    position: absolute;
+    margin-left: -470px;
+    top: 63px;
+    z-index: -1;
+    left: 50%;
+}
+/* --------------- header_inner --------------- */
+
+.header_inner {
+    height: 107px;
+}
+.header_inner .head_top {
+    height: 63px;
+}
+.header_inner .phone {
+    left: 223px;
+    top: 18px;
+    font-family: Trebuchet MS;
+}
+.header_inner dt {
+    color: #3B4255;
+    font-size: 24px;
+    font-family: "ptsans_bold";
+    /*font-weight: 700;*/
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 7px;
+}
+.header_inner dt span {
+    color: #EF4B23;
+}
+.header_inner dd {
+    display: inline-block;
+    vertical-align: top;
+}
+.header_inner .orange_but {
+    font-size: 11px;
+    height: 37px;
+    right: 20px;
+    top: 11px;
+    width: 219px;
+    line-height: 37px;
+}
+/* --------------- /header_inner --------------- */
+
+.reception_site .content-wrap {
+    width: 940px;
+}
+h1, h2 {
+    /*font-family: "ptsans";*/
+    font-size: 24px;
+    color: #3b4255;
+    text-transform: uppercase;
+    font-family: "ptsans_bold";
+    /*font-weight: 700;*/
+    margin-bottom: 7px;
+}
+
+/* --------------- bread_crumbs --------------- */
+
+.bread_crumbs {
+    height: 27px;
+    border-top: 1px solid #dbe2e7;
+    border-bottom: 1px solid #dbe2e7;
+    margin-bottom: 15px;
+    padding-top: 9px;
+}
+.bread_crumbs li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    padding-right: 10px;
+}
+.bread_crumbs a:hover {
+    text-decoration: none;
+}
+.bread_crumbs a:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: -10px;
+    background: url("../img/crumb_bg.png") right top no-repeat;
+    width: 6px;
+    height: 6px;
+}
+.bread_crumbs a {
+    position: relative;
+    color: #169fd3;
+    text-decoration: underline;
+}
+.bread_crumbs span {
+    color: #3b4255;
+    cursor: default;
+}
+/* --------------- /bread_crumbs --------------- */
+
+/* --------------- sub_menu --------------- */
+.sub_menu {
+    font-family: "ptsans";
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.sub_menu li:first-child {
+    margin: 0;
+}
+.sub_menu li {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 48px;
+}
+.sub_menu .name_doctor a:hover, .sub_menu .near_doctor a:hover {
+    border-color: transparent;
+}
+.sub_menu .name_doctor a {
+    color: #ef4b23;
+    border-bottom: 1px dotted #ef4b23;
+}
+.sub_menu .near_doctor a:before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: -22px;
+    background: url("../img/point.png") no-repeat;
+    width: 14px;
+    height: 20px;
+}
+.sub_menu .near_doctor a {
+    position: relative;
+    color: #0a94d3;
+    border-bottom: 1px dotted #0a94d3;
+}
+.sub_menu span {
+    color: #3b4255;
+    cursor: default;
+}
+/* --------------- /sub_menu --------------- */
+
+/* --------------- search_doctor --------------- */
+.search_doctor {
+    margin-bottom: 20px;
+}
+.search_doctor input[type="text"] {
+    background: url("../img/search_bg.png") repeat-x;
+    border: 1px solid #cbd1d4;
+    border-radius: 4px;
+    width: 841px;
+    height: 42px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 10px;
+}
+.search_doctor input[type="submit"]:hover {
+    opacity: 0.8;
+}
+.search_doctor input[type="submit"] {
+    border: none;
+    width: 87px;
+    height: 40px;
+    background: url("../img/orange-but-back.png") repeat;
+    border-radius: 30px;
+    color: #FFFFFF;
+    font-family: "ptsans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    text-shadow: 0 1px 1px #A76D48;
+    text-transform: uppercase;
+}
+/* --------------- /search_doctor --------------- */
+
+/* --------------- wrap_map --------------- */
+.wrap_map {
+    background: #fff;
+    margin-bottom: 11px;
+    padding: 10px;
+    box-shadow: 1px 3px 3px #e5eaed;
+}
+.wrap_map .wrap_img {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.wrap_map .wrap_img #map_canvas {
+    margin: 0 auto;
+    width: 901px;
+    height: 483px;
+}
+.wrap_map .find_doctor {
+    font-family: "ptsans";
+    font-weight: 400;
+    display: block;
+    text-align: center;
+    color: #3b4255;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+/* --------------- /wrap_map --------------- */
+
+/* --------------- attention --------------- */
+.attention {
+    background: #f3e8df;
+    padding: 14px 22px;
+    margin-bottom: 20px;
+}
+.attention p {
+    font-family: "ptsans";
+    font-weight: 400;
+    color: #3b4255;
+    font-size: 13px;
+    line-height: 19px;
+}
+.attention span {
+    font-family: "ptsans_bold";
+    color: #ef4b23;
+}
+/* --------------- /attention --------------- */
+
+/* --------------- search_result --------------- */
+.search_result {
+    font-family: "ptsans";
+    padding-bottom: 30px;
+}
+.search_result h2 {
+    margin-bottom: 18px;
+}
+.item_result {
+    padding: 10px 10px 17px;
+    background: #ebf0f4;
+    margin-bottom: 10px;
+}
+.item_result dt {
+    color: #3b4255;
+    font-size: 18px;
+    font-family: "ptsans_bold";
+    margin-bottom: 3px;
+}
+.item_result dd {
+    color: #6f7587;
+    font-size: 13px;
+    line-height: 22px;
+}
+.item_result dd span {
+    color: #ef5c3d;
+}
+.item_result dd.street {
+    color: #3b4255;
+    font-size: 18px;
+}
+.item_result .wrap_img {
+    width: 141px;
+    height: 145px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 13px;
+}
+.item_result .person_info {
+    width: 406px;
+    display: inline-block;
+    vertical-align: top;
+}
+.item_result .person_info .name {
+    color: #3b4255;
+    font-size: 22px;
+    display: block;
+    margin-bottom: 14px;
+    font-weight: 400;
+    white-space: pre-line;
+    line-height: 18px;
+}
+.item_result .person_info .post {
+    font-weight: 400;
+    color: #39a8ee;
+    font-size: 15px;
+    display: block;
+    margin-bottom: 18px;
+}
+.contact_info {
+    padding-top: 20px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top;
+}
+.contact_info .tel {
+    padding-left: 25px;
+    background: url("../img/tel_bg.png") no-repeat;
+    color: #3b4255;
+    font-family: "ptsans_bold";
+    margin-bottom: 46px;
+    font-size: 18px;
+}
+.contact_info .tel span {
+    color: #ef4b23;
+}
+/* --------------- /search_result --------------- */
+
+/* --------------- /reception.css --------------- */

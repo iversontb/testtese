@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/resrt.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/response.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery.response.js"></script>
+    <script src="js/fileuploader.js"></script>
+
+
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+    <!--[if lte IE 7]>
+        <link rel="stylesheet" href="css/main.ie7.css" />
+        <script src="js/jquery.ie7.js"></script>
+    <![endif]-->
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+
+        <!-- site__header -->
+        <header class="site__header">
+
+            <!-- logo -->
+            <a href="#" class="logo" title="на главную"><img src="img/logo.png" width="195" height="84" alt="Энфорта корпоративный стандарт связи"></a>
+            <!-- /logo -->
+
+            <!-- phone -->
+            <address class="phone">
+                8-800-500-10-10
+                <span>Eдиный федеральный номер</span>
+
+                <!-- btn -->
+                <a href="#" class="btn btn__phone">Отправить резюме</a>
+                <!-- /btn -->
+            </address>
+            <!-- /phone -->
+
+            <!-- your-city -->
+            <div class="your-city">
+                Ваш город: <a href="">Новосибирск</a>
+            </div>
+            <!-- /your-city -->
+
+            <!-- search -->
+            <form class="search" action="#">
+                <input type="search" class="search__text" placeholder="Поиск по сайту&hellip;">
+                <input type="submit" class="search__send" value="">
+            </form>
+            <!-- /search -->
+
+            <!-- menu -->
+            <nav class="menu">
+                <div class="menu__item menu__item_jobs">
+                    <a href="#">Вакансии</a>
+                </div>
+                <div class="menu__item menu__item_career active">
+                    <a href="#">Карьера</a>
+                </div>
+                <div class="menu__item menu__item_motivation">
+                    <a href="#">Мотивация</a>
+                </div>
+                <div class="menu__item menu__item_warranty ">
+                    <a href="#">Социальные гарантии</a>
+                </div>
+                <div class="menu__item menu__item_structure">
+                    <a href="#">Структура</a>
+                </div>
+                <div class="menu__item menu__item_live">
+                    <a href="#">ЭнфортаЖизнь</a>
+                </div>
+                <div class="menu__item menu__item_about">
+                    <a href="#">О компании</a>
+                </div>
+            </nav>
+            <!-- /menu -->
+
+        </header>
+        <!-- /site__header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- tab-menu -->
+                <ul class="tab-menu margin">
+                    <li><a href="#" >Текущие вакансии  </a></li>
+                    <li><a href="#"> Поиск вакансий</a></li>
+                    <li><a href="#"  class="active">  Процесс отбора кандидатов</a></li>
+                </ul>
+                <!-- /tab-menu -->
+
+                <!-- response -->
+                <form class="response" action="#">
+                    <h1>Отклик на вакансию</h1>
+                    <fieldset class="response__err">
+                        <label for="mail">Ваш email:</label>
+                        <input type="email" class="response__input response__mail" name="mail" id="mail">
+                    </fieldset>
+                    <fieldset>
+                        <label for="code">Телефон:</label>
+                        <span>+7</span>
+                        <input type="text" class="response__input response__code" name="code" id="code">
+                        <input type="tel" class="response__input response__phone" name="phone" id="phone">
+                    </fieldset>
+                    <fieldset>
+                        <label for="city">Город:</label>
+                        <select class="response__city" name="city" id="city">
+                            <option value="Новосибирск" selected>Новосибирск</option>
+                            <option value="Москва">Москва</option>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <label for="post">Желаемая должность:</label>
+                        <select class="response__post" name="post" id="post">
+                            <option value="Оператор call-центра" selected>Оператор call-центра</option>
+                            <option value="Директор">Директор</option>
+                        </select>
+                    </fieldset>
+
+                    <!-- tabs -->
+                    <div class="tabs">
+                        <div class="tabs__btn active">Отправить резюме</div>
+                        <div class="tabs__btn">Составить резюме</div>
+                        <div class="tabs__content active">
+
+                            <!-- file -->
+                            <div class="file">
+                                <div class="file__load"><span></span></div>
+                                <div class="file__btn">Выбрать файл</div>
+                                <div class="file__info"><span></span><span class="file__remove">Удалить</span></div>
+                                <span>Выберите файл для загрузки, не более 5 Мб.
+                                    <span>Допустимые форматы: .doc, .docx, .pdf.</span>
+                                </span>
+                                <input type="hidden" class="filepath" name="filepath" value="">
+                            </div>
+                            <!-- /file -->
+
+                        </div>
+                        <div class="tabs__content">
+
+                            <!-- resume -->
+                            <div class="resume">
+                                <fieldset>
+                                    <label for="name">ФИО:</label>
+                                    <input type="text" class="response__input response__name" name="name" id="name">
+                                </fieldset>
+                                <fieldset>
+                                    <label for="education">Образование:</label>
+                                    <textarea class="response__education" name="education" id="education"></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="experience">Опыт работы:</label>
+                                    <textarea class="response__experience" placeholder="Укажите Ваши последние 2-3 места работы" name="experience" id="experience"></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="progress">Достижения:</label>
+                                    <textarea class="response__progress" name="progress" id="progress"></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="about">О себе:</label>
+                                    <textarea class="response__about" placeholder="Ключевые навыки, знания определенных программ и т.д." name="about" id="about"></textarea>
+                                </fieldset>
+                                <fieldset>
+                                    <label for="notes">Примечания:</label>
+                                    <textarea class="response__notes" name="notes" id="notes"></textarea>
+                                </fieldset>
+                            </div>
+                            <!-- /resume -->
+
+                        </div>
+                    </div>
+                    <!-- /tabs -->
+
+                    <input type="submit" class="response__send" value="Отправить">
+
+                </form>
+                <!-- /response -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- site__footer -->
+    <footer class="site__footer">
+        <div class="footer__layout">
+            <div>
+                <div class="copyright">&copy; 2013, «<a href="#">Энфорта</a>». Все права защищены.</div>
+                <dl class="subscribe">
+                    <dt>Подписка на новости:</dt>
+                    <dd><a class="subscribe__mail" href="#"></a></dd>
+                    <dd><a class="subscribe__rss" href="#"></a></dd>
+                </dl>
+                <dl class="social">
+                    <dt>Мы в социальных сетях:</dt>
+                    <dd><a class="vk" href="#"></a></dd>
+                    <dd><a class="f" href="#"></a></dd>
+                    <dd><a class="t" href="#"></a></dd>
+                </dl>
+            </div>
+        </div>
+    </footer>
+    <!-- /site__footer -->
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* --------------- reclama --------------- */
+.reclama {
+    margin-bottom: 42px;
+    font-family: 'Open Sans', sans-serif;
+}
+.reclama div {
+    border-bottom: 1px solid #f1f4f7;
+    position: relative;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-bottom: 56px;
+}
+.reclama div:first-child {
+    padding-top: 0;
+}
+.reclama h2 {
+    font-size: 16px;
+    margin-bottom: 28px;
+}
+.reclama p {
+    line-height: 24px;
+    font-size: 14px;
+}
+.reclama div > img {
+    float: left;
+    clear: both;
+    margin-right: 21px;
+    border: 1px solid #cfd7de;
+}
+.reclama a {
+    color: #dc1f26;
+    font-size: 14px;
+    text-decoration: underline;
+    position: absolute;
+    bottom: 36px;
+    right: -42px;
+}
+.reclama a:after {
+    content: '\A0\3E';
+    top: 0;
+    right: 0;
+}
+.reclama a:hover {
+    text-decoration: none;
+}
+/* --------------- /reclama --------------- */

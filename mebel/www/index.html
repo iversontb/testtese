@@ -1,0 +1,296 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+
+    <script src="js/tween-max.min.js"></script>
+    <script src="js/jquery.path.js"></script>
+
+    <script src="js/jquery.main.js"></script>
+
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+    <script type="text/javascript">$(document).ready(function(){
+        $(window).scroll(function () {if ($(this).scrollTop() > 0) {$('#scroller').fadeIn();} else {$('#scroller').fadeOut();}});
+        $('#scroller').click(function () {$('body,html').animate({scrollTop: 0}, 400); return false;});
+    });</script>
+
+</head>
+<body>
+<canvas id="path">
+
+</canvas>
+    <!-- site -->
+    <div class="site">
+
+        <div class="discount">
+            <div class="discountInside">
+                <h2>Акция! При покупке кухонного гарнитура на стулья </h2>
+                <span class="discountType"></span>
+                <div class="closeDiscount">close</div>
+            </div>
+        </div>
+
+        <div class="site__layout">
+            <!-- header -->
+            <header class="header">
+
+                <!-- logo -->
+                <h1 class="logo"><a href="index.html" title="main"><img src="img/logo.png" height="30" width="151" alt="mebel"></a></h1>
+                <!-- /logo -->
+
+                <div class="phoneWrap">
+                    <address>
+                        <a href="tel:+7 (812) 000-00-00">+7 (812) 000-00-00</a>
+                    </address>
+                </div>
+
+                <!-- main-menu -->
+                <nav class="main-menu">
+                    <ol class="main-menu__layout">
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Доставка</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Оплата</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Войти</a></li>
+                    </ol>
+                </nav>
+                <!-- /main-menu -->
+
+                <div class="basket">
+                    <h4>В корзине</h4>
+                    <a href="#">4 товара на 18 000 р.</a>
+                    <a href="#" class="doneOreder">Оформить</a>
+                </div>
+
+
+            </header>
+            <!-- /header -->
+
+            <div class="site__content">
+
+                <!-- content-wrap -->
+                <div class="content-wrap">
+
+                    <ul class="mainAccard indexAccard">
+                        <li>
+                            <span><span>Мягкая мебель</span></span>
+                            <div class="subMenuWrap">
+                                <h2>Мягкая мебель</h2>
+                                <ul>
+                                    <li><a href="#">Диваны</a></li>
+                                    <li><a href="#">Кожанные диваны</a></li>
+                                    <li><a href="#">Угловые диваны</a></li>
+                                    <li><a href="#">Диваны и кресла-кровати</a></li>
+                                    <li><a href="#">Комплекты мебели</a></li>
+                                    <li><a href="#">Тахты</a></li>
+                                    <li><a href="#">Кресла и пуфы</a></li>
+                                </ul>
+                                <img src="pic/pic1.png" height="345" width="702" alt="">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span><span>Шкафы и хранение</span></span>
+                            <div class="subMenuWrap">
+                                <h2>Шкафы и хранение</h2>
+                                <ul>
+                                    <li><a href="#">Диваны</a></li>
+                                    <li><a href="#">Кожанные диваны</a></li>
+                                    <li><a href="#">Угловые диваны</a></li>
+                                    <li><a href="#">Диваны и кресла-кровати</a></li>
+                                    <li><a href="#">Комплекты мебели</a></li>
+                                    <li><a href="#">Тахты</a></li>
+                                    <li><a href="#">Кресла и пуфы</a></li>
+                                </ul>
+                                <img src="pic/pic1.png" height="345" width="702" alt="">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span><span>Для прихожих</span></span>
+                            <div class="subMenuWrap">
+                                <h2>Для прихожих</h2>
+                                <ul>
+                                    <li><a href="#">Диваны</a></li>
+                                    <li><a href="#">Кожанные диваны</a></li>
+                                    <li><a href="#">Угловые диваны</a></li>
+                                    <li><a href="#">Диваны и кресла-кровати</a></li>
+                                    <li><a href="#">Комплекты мебели</a></li>
+                                    <li><a href="#">Тахты</a></li>
+                                    <li><a href="#">Кресла и пуфы</a></li>
+                                </ul>
+                                <img src="pic/pic1.png" height="345" width="702" alt="">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span><span>Столы и стулья</span></span>
+                            <div class="subMenuWrap">
+                                <h2>Столы и стулья</h2>
+                                <ul>
+                                    <li><a href="#">Диваны</a></li>
+                                    <li><a href="#">Кожанные диваны</a></li>
+                                    <li><a href="#">Угловые диваны</a></li>
+                                    <li><a href="#">Диваны и кресла-кровати</a></li>
+                                    <li><a href="#">Комплекты мебели</a></li>
+                                    <li><a href="#">Тахты</a></li>
+                                    <li><a href="#">Кресла и пуфы</a></li>
+                                </ul>
+                                <img src="pic/pic1.png" height="345" width="702" alt="">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span><span>Мебель для ванной</span></span>
+                            <div class="subMenuWrap">
+                                <h2>Мебель для ванной</h2>
+                                <ul>
+                                    <li><a href="#">Диваны</a></li>
+                                    <li><a href="#">Кожанные диваны</a></li>
+                                    <li><a href="#">Угловые диваны</a></li>
+                                    <li><a href="#">Диваны и кресла-кровати</a></li>
+                                    <li><a href="#">Комплекты мебели</a></li>
+                                    <li><a href="#">Тахты</a></li>
+                                    <li><a href="#">Кресла и пуфы</a></li>
+                                </ul>
+                                <img src="pic/pic1.png" height="345" width="702" alt="">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span><span>Кухонная мебель</span></span>
+                            <div class="subMenuWrap">
+                                <h2>Кухонная мебель</h2>
+                                <ul>
+                                    <li><a href="#">Диваны</a></li>
+                                    <li><a href="#">Кожанные диваны</a></li>
+                                    <li><a href="#">Угловые диваны</a></li>
+                                    <li><a href="#">Диваны и кресла-кровати</a></li>
+                                    <li><a href="#">Комплекты мебели</a></li>
+                                    <li><a href="#">Тахты</a></li>
+                                    <li><a href="#">Кресла и пуфы</a></li>
+                                </ul>
+                                <img src="pic/pic1.png" height="345" width="702" alt="">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span><span>Мебель для спальни</span></span>
+                            <div class="subMenuWrap">
+                                <h2>Мебель для спальни</h2>
+                                <ul>
+                                    <li><a href="#">Диваны</a></li>
+                                    <li><a href="#">Кожанные диваны</a></li>
+                                    <li><a href="#">Угловые диваны</a></li>
+                                    <li><a href="#">Диваны и кресла-кровати</a></li>
+                                    <li><a href="#">Комплекты мебели</a></li>
+                                    <li><a href="#">Тахты</a></li>
+                                    <li><a href="#">Кресла и пуфы</a></li>
+                                </ul>
+                                <img src="pic/pic1.png" height="345" width="702" alt="">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span>
+                                <span>Детская</span>
+                                <div class="clickHere">Кликай</div>
+                            </span>
+                            <div class="subMenuWrap">
+                                <h2>Детская</h2>
+                                <ul>
+                                    <li><a href="#">Диваны</a></li>
+                                    <li><a href="#">Кожанные диваны</a></li>
+                                    <li><a href="#">Угловые диваны</a></li>
+                                    <li><a href="#">Диваны и кресла-кровати</a></li>
+                                    <li><a href="#">Комплекты мебели</a></li>
+                                    <li><a href="#">Тахты</a></li>
+                                    <li><a href="#">Кресла и пуфы</a></li>
+                                </ul>
+                                <img src="pic/pic1.png" height="345" width="702" alt="">
+
+                            </div>
+                        </li>
+                        <li>
+                            <span><span>Украшения для интерьера</span></span>
+                            <div class="subMenuWrap">
+                                <h2>Украшения для интерьера</h2>
+                                <ul>
+                                    <li><a href="#">Диваны</a></li>
+                                    <li><a href="#">Кожанные диваны</a></li>
+                                    <li><a href="#">Угловые диваны</a></li>
+                                    <li><a href="#">Диваны и кресла-кровати</a></li>
+                                    <li><a href="#">Комплекты мебели</a></li>
+                                    <li><a href="#">Тахты</a></li>
+                                    <li><a href="#">Кресла и пуфы</a></li>
+                                </ul>
+                                <img src="pic/pic1.png" height="345" width="702" alt="">
+
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- /content-wrap -->
+
+            </div>
+        </div>
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer__layout">
+
+            <form action="#" method="post" class="askUs">
+                <div class="inputWrap error">
+                    <input type="email" placeholder="E-mail" required>
+                </div>
+                <div class="textareaWrap error">
+                    <textarea placeholder="Ваш вопрос" required></textarea>
+                </div>
+                <input type="submit" class="askButton">
+            </form>
+
+            <ul class="footerMenu">
+                <li><a href="#">Вопрос-ответ</a></li>
+                <li><a href="#">О доставке</a></li>
+                <li><a href="#">Возврат товара</a></li>
+                <li><a href="#">О магазине</a></li>
+                <li><a href="#">Написать письмо</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <ul class="social">
+                <li><a href="#" title="twitter" class="twitter">twitter</a> </li>
+                <li><a href="#" title="facebook" class="facebook">facebook</a> </li>
+                <li><a href="#" title="vkontakte" class="vkontakte">vkontakte</a> </li>
+            </ul>
+
+            <div class="footerPhone">
+                <address>
+                    <a href="tel:+7 (812) 000-00-00">+7 (812) 000-00-00</a>
+                </address>
+            </div>
+
+            <a href="http://xn--80aqcukcj1i.xn--p1ai/" class="saitoria">saitoria</a>
+
+            <p class="copy">&copy;ДаЁЖ Мебель  Все права защищены</p>
+
+        </div>
+    </footer>
+    <!-- /footer -->
+<div id="scroller" class="b-top" style="display: none;"><span class="b-top-but">наверх</span></div>
+</body>
+</html>

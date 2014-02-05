@@ -1,0 +1,66 @@
+/* --------------- contact_form --------------- */
+.contact_form {
+    width: 463px;
+}
+.contact_form .wrap_input {
+    margin-bottom: 10px;
+}
+.contact_form label {
+    width: 90px;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    padding-right: 11px;
+    font-size: 12px;
+    font-family: Arial;
+    color: #000;
+}
+.contact_form textarea {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #a09a9a;
+    height: 171px;
+    width: 357px;
+}
+.contact_form input[type="text"] {
+    width: 357px;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0 0 0 10px;
+    border: 1px solid #a09a9a;
+}
+.contact_form .wrap_btn {
+    text-align: right;
+}
+.contact_form input[type="submit"] {
+    margin-right: 10px;
+}
+.contact_form input[type="submit"]:hover, .contact_form input[type="reset"]:hover {
+    opacity: 0.8;
+}
+.contact_form input[type="submit"], .contact_form input[type="reset"] {
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: bold;
+    width: 123px;
+    height: 25px;
+    border-radius: 6px;
+    background: #c2791b;
+    border: none;
+}
+/* --------------- /contact_form --------------- */
+
+/* --------------- content --------------- */
+.content ol {
+    list-style: decimal;
+    margin-left: 20px;
+}
+/* --------------- /content --------------- */

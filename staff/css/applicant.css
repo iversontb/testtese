@@ -1,0 +1,122 @@
+/* --------------- services --------------- */
+.services {
+    margin-bottom: 13px !important;
+}
+.services li:before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 17px;
+    background: url("../img/arrow.png") no-repeat;
+    width: 9px;
+    height: 5px;
+}
+.services li {
+    position: relative;
+    padding-left: 42px;
+    background: #f6f6f6;
+    height: 27px;
+    line-height: 26px;
+    margin-bottom: 3px !important;
+}
+.services li a {
+    font-family: "ptsans";
+    font-size: 13px;
+    color: #000;
+}
+/* --------------- /services --------------- */
+
+/* --------------- wrap_vacancy --------------- */
+.wrap_vacancy {
+    margin-bottom: 18px;
+}
+.vacancy {
+    text-decoration: none !important;
+    border: 1px solid #dfdfdf;
+    background: url("../img/vacancy_bg.png") right top repeat-y #fff;
+    padding: 9px 13px 13px;
+    width: 282px;
+    margin: 0 12px 11px 0;
+    min-height: 65px;
+    display: inline-block;
+    vertical-align: top;
+    color: #110f0c;
+    font-size: 13px;
+    font-family: ptsans;
+}
+.vacancy:hover .title {
+    text-decoration: underline;
+}
+.vacancy .title {
+    font-family: ptsans-bold;
+    font-size: 13px;
+    font-weight: normal;
+    white-space: pre-line;
+    line-height: 16px;
+}
+.vacancy .name {
+    display: block;
+    margin: 1px 0 2px 0;
+    font-size: 13px;
+    font-family: "ptsans";
+}
+.vacancy .price {
+    display: block;
+}
+.wrap_vacancy .all:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.wrap_vacancy .all {
+    display: block;
+    color: #fff;
+    width: 102px;
+    height: 24px;
+    background: #d87b02;
+    text-align: center;
+    line-height: 23px;
+    font-size: 13px;
+    text-decoration: underline;
+}
+/* --------------- /wrap_vacancy --------------- */
+
+/* --------------- content --------------- */
+.content p {
+    color: #110f0c;
+}
+.content li {
+    margin-bottom: 0;
+}
+/* --------------- /content --------------- */
+
+/* --------------- brand__item --------------- */
+.brand__item:hover span {
+    text-decoration: none;
+}
+.brand__item {
+    position: relative;
+    width: 191px;
+    height: 124px;
+    display: inline-block;
+    border: 1px solid #d6d6d6;
+    vertical-align: top;
+    font-family: "ptsans";
+    margin: 0 14px 36px 0;
+}
+.brand__item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.brand__item span {
+    width: 191px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    color: #1b65be;
+    font-size: 13px;
+}
+/* --------------- /brand__item --------------- */

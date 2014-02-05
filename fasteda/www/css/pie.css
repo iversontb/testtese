@@ -1,0 +1,6 @@
+.green_process, .yellow_process, .your_opinion input {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+    position: relative;
+}
+

@@ -1,0 +1,24 @@
+.menu__content a,
+.basket,
+.basket a,
+.product__card li,
+.deals h2 a,
+.product__card .product__img,
+.buy__wrap,
+.buy2,
+.nice-select,
+.write__wrap,
+.product__menu a
+
+{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+
+.tabs dt {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3b3b3b', endColorstr='#1d1d1d',GradientType=0 );
+}
+.tabs dt.active {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#21c3ff', endColorstr='#0092d6',GradientType=0 ); /* IE6-8 */
+}
+

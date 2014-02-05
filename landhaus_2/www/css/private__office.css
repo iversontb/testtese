@@ -1,0 +1,576 @@
+/* --------------- private__office --------------- */
+.private__office {
+    margin-left: -9px;
+    padding-right: 7px;
+}
+.private__office h2{
+    font-size: 18px;
+    color: #121212;
+    font-family: 'PT Serif', serif;
+    margin-bottom: 16px;
+}
+.private__office .manage__ads{
+    margin-bottom: 20px;
+}
+.private__office .manage__ads span{
+    font-size: 12px;
+    color: #8c8c8c;
+    display: inline-block;
+    vertical-align: baseline;
+}
+.private__details >div {
+    border-top: dotted 1px #aeaaa4;
+    padding: 13px 7px 19px 7px;
+    position: relative;
+}
+.private__details >div:first-child{
+    border-top: none;
+}
+/* --------------- control__buts --------------- */
+.private__office .control__buts{
+    margin-left: 28px;
+    display: inline-block;
+}
+.private__office .control__buts a{
+    height: 26px;
+    padding: 0 13px;
+    background: #f8f8f8;
+    background: -moz-linear-gradient(top,  #f8f8f8 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#eeeeee));
+    background: -webkit-linear-gradient(top,  #f8f8f8 0%,#eeeeee 100%);
+    background: -o-linear-gradient(top,  #f8f8f8 0%,#eeeeee 100%);
+    background: -ms-linear-gradient(top,  #f8f8f8 0%,#eeeeee 100%);
+    background: linear-gradient(to bottom,  #f8f8f8 0%,#eeeeee 100%);
+    font-size: 12px;
+    color: #4b4b4b;
+    display: inline-block;
+    line-height: 26px;
+    border: solid 1px #aeaaa4;
+    border-radius: 5px;
+    margin-right: 8px;
+    position: relative;
+}
+.private__office .control__buts a:hover{
+    background: #eeeeee;
+    background: -moz-linear-gradient(top,  #eeeeee 1%, #f8f8f8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#eeeeee), color-stop(100%,#f8f8f8));
+    background: -webkit-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: -o-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: -ms-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: linear-gradient(to bottom,  #eeeeee 1%,#f8f8f8 100%);
+}
+.private__office .control__buts .view__online{
+    padding: 0 17px 0 26px;
+}
+.private__office .control__buts .view__online:before{
+    position: absolute;
+    top: 10px;
+    left: 7px;
+    background: url("../img/view-but.png");
+    width: 12px;
+    height: 7px;
+    content: "";
+}
+.private__office .control__buts .remove{
+    padding: 0 13px 0 23px;
+}
+.private__office .control__buts .remove:before{
+    position: absolute;
+    top: 7px;
+    left: 6px;
+    background: url("../img/remove-but.png");
+    width: 11px;
+    height: 11px;
+    content: "";
+}
+/* --------------- /control__buts --------------- */
+.private__office .private__details{
+    background-color: #ffffff;
+    border: solid 1px #bebcbb;
+    border-top: 0 ;
+    padding: 5px 20px 10px 24px;
+    margin-bottom: 40px;
+}
+.private__details .options__wall{
+    padding: 14px 7px 5px 7px;
+}
+.private__details > div h3{
+    font-size: 16px;
+    color: #858585;
+    display: inline-block;
+    vertical-align: top;
+}
+.private__details > div h3 span{
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 8px;
+}
+/* --------------- option__radio --------------- */
+.option__radio {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 118px;
+    width: 400px;
+}
+.option__radio .radio__wrap{
+    border-radius: 5px;
+    border: solid 1px #beb8ab;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 11px;
+}
+
+.option__radio .radio__wrap div{
+    display: inline-block;
+    position: relative;
+    border-right: solid 1px #d1d1d1;
+}
+.option__radio .radio__wrap .niceRadio {
+    position: absolute;
+    left: -500px;
+}
+
+.option__radio .radio__wrap .radioChecked + label {
+    background: #ffefc6;
+    box-shadow: inset 2px 2px 3px #e3cda1;
+    cursor: default;
+}
+.option__radio .radio__wrap .radioChecked + label:hover{
+    cursor: default;
+    background: #ffefc6;
+    box-shadow: inset 2px 2px 3px #e3cda1;
+}
+.option__radio .radio__wrap .niceRadio input {
+    margin-left: -500px;
+}
+.option__radio .radio__wrap label{
+    font-size: 12px;
+    height: 32px;
+    color: #595149;
+    display: inline-block;
+    cursor: pointer;
+    padding: 7px 12px;
+    margin-bottom: -20px;
+    background: #f8f8f8;
+    background: -moz-linear-gradient(top, #f8f8f8 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#eeeeee));
+    background: -webkit-linear-gradient(top, #f8f8f8 0%,#eeeeee 100%);
+    background: -o-linear-gradient(top, #f8f8f8 0%,#eeeeee 100%);
+    background: -ms-linear-gradient(top, #f8f8f8 0%,#eeeeee 100%);
+    background: linear-gradient(to bottom, #f8f8f8 0%,#eeeeee 100%);
+    margin-left: -4px;
+}
+.option__radio .radio__wrap label:hover{
+    background: #eeeeee;
+    background: -moz-linear-gradient(top,  #eeeeee 1%, #f8f8f8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#eeeeee), color-stop(100%,#f8f8f8));
+    background: -webkit-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: -o-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: -ms-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: linear-gradient(to bottom,  #eeeeee 1%,#f8f8f8 100%);
+}
+.option__radio .radio__wrap div:first-child label{
+    margin-left: 0;
+}
+/* --------------- /option__radio --------------- */
+/* --------------- private__price --------------- */
+.private__price > div{
+    display: inline-block;
+    margin-left: 143px;
+    vertical-align: top;
+}
+.private__price h3{
+margin: 5px 0 0 5px;
+}
+.private__price > div input {
+    border: solid 1px #b0ada8;
+    background-color: transparent;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 3px #DDD7CB;
+    width: 140px;
+    height: 29px;
+    margin-right: 18px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0 8px 0 8px;
+}
+.private__price > div > label{
+    font-size: 12px;
+    color: #6a6a6a;
+    margin-right: 40px;
+}
+.private__price > div span{
+    font-size: 12px;
+    color: #858585;
+}
+/* --------------- /private__price --------------- */
+/* --------------- private__location --------------- */
+.private__office .private__location{
+    padding: 14px 6px 29px;
+}
+.private__location h3{
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+.private__location .location__wrap{
+    display: block;
+    padding-left: 4px;
+    width: 400px;
+    margin-bottom: 23px;
+}
+
+.private__location .location__wrap label{
+    font-size: 14px;
+    color: #494949;
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 163px;
+    margin-bottom: 28px;
+}
+.private__location .location__wrap input{
+    background-color: transparent;
+    border: solid 1px #b0ada8;
+    box-shadow: inset 0 2px 3px #DDD7CB;
+    height: 28px;
+    width: 211px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 8px 0 8px;
+}
+.private__location .location__wrap .location_small_text{
+    width: 41px;
+    margin-right: 14px;
+}
+.private__location .location__wrap .housing{
+    min-width: 58px;
+}
+.private__location .location__wrap .point__map{
+    font-size: 14px;
+    color: #606060;
+    border-bottom: dashed 1px #606060;
+    display: inline-block;
+    margin-left: 189px;
+    position: relative;
+}
+.private__location .location__wrap .point__map:hover{
+    border-bottom: dashed 1px transparent;
+}
+.private__location .location__wrap .point__map:before{
+    content: '';
+    background: url("../img/point-map.png");
+    width: 9px;
+    height: 13px;
+    position: absolute;
+    left: -21px;
+    top: 2px;
+ }
+.location_radio_wrap .niceRadio , .which__village .niceRadio {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/radio_but.png) 0 -12px;
+    overflow: hidden;
+}
+.location_radio_wrap .radioChecked , .which__village .radioChecked{
+    background-position: 0 0;
+}
+.location_radio_wrap .niceRadio input , .which__village .niceRadio input{
+    margin-left: -17px;
+}
+.private__location .location_radio_wrap{
+    position: absolute;
+    top: 60px;
+    left: 460px;
+
+}
+.private__location .location_radio_wrap label{
+    font-size: 14px;
+    color: #494949;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 4px;
+    margin-bottom: 12px;
+}
+.private__location .which__village {
+    font-size: 14px;
+    color: #494949;
+    padding-left: 4px;
+}
+.private__location .which__village span{
+    display: inline-block;
+    vertical-align: top;
+}
+.private__location .which__village div{
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 21px;
+    margin-top: 2px;
+}
+.private__location .which__village div span{
+margin-top: -2px;
+}
+.private__location .which__village .niceRadio {
+    margin-top: 2px;
+}
+/* --------------- /private__location --------------- */
+/* --------------- private__options --------------- */
+.private__office .private__options {
+    font-size: 14px;
+    color: #494949;
+    padding: 30px 10px 9px 10px;
+}
+.private__options > div{
+margin-bottom: 19px;
+}
+.private__options > div > span{
+    display: inline-block;
+    vertical-align: top;
+    min-width: 164px;
+}
+.private__options div > div {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 16px;
+}
+.private__options div > span + div {
+    margin-left: 0;
+}
+.private__options .niceCheck {
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    cursor: pointer;
+    background: url(../img/checkbox-sprite.png) 0 -11px;
+    overflow: hidden;
+    margin-right: 9px;
+}
+.private__options .niceChecked {
+    background-position: 0 0;
+}
+.private__options .niceCheck input {
+    margin-left: -100px;
+}
+/* --------------- /private__options --------------- */
+/* --------------- private__photos --------------- */
+.private__office  .private__photos {
+    padding: 27px 10px 24px;
+}
+.private__office .private__photos h3 {
+    display: block;
+}
+.private__photos .photo__wrap{
+    display: inline-block;
+    padding-top: 17px;
+    min-width: 140px;
+}
+.private__photos .photo__wrap img{
+    border:  solid 1px #d1d1d1;
+    display: inline-block;
+    vertical-align: top;
+}
+.photo__wrap .photo__info {
+    display: inline-block;
+    vertical-align: top;
+    padding: 6px;
+}
+.private__photos .photo__wrap span{
+    color: #606060;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 3px;
+}
+.private__photos .photo__wrap a{
+    color: #606060;
+    font-size: 12px;
+    margin-left: 16px;
+    position: relative;
+    border-bottom: dashed 1px #d1d1d1;
+}
+.private__photos .photo__wrap a:hover{
+    border-bottom:  dashed 1px transparent;
+}
+.private__photos .photo__wrap a:before{
+    content: '';
+    background: url("../img/delete-but.jpg") no-repeat;
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    left: -18px;
+    top: 2px;
+}
+.photo__download {
+    background: #f8f8f8;
+    background: -moz-linear-gradient(top, #f8f8f8 0%, #eeeeee 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f8f8f8), color-stop(100%,#eeeeee));
+    background: -webkit-linear-gradient(top, #f8f8f8 0%,#eeeeee 100%);
+    background: -o-linear-gradient(top, #f8f8f8 0%,#eeeeee 100%);
+    background: -ms-linear-gradient(top, #f8f8f8 0%,#eeeeee 100%);
+    background: linear-gradient(to bottom, #f8f8f8 0%,#eeeeee 100%);
+    overflow: hidden;
+    position: relative;
+    width: 129px;
+    height: 26px;
+    border: solid 1px #d1d1d1;
+    border-radius: 5px;
+    margin-top: 24px;
+}
+.photo__download:hover{
+    background: #eeeeee;
+    background: -moz-linear-gradient(top,  #eeeeee 1%, #f8f8f8 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#eeeeee), color-stop(100%,#f8f8f8));
+    background: -webkit-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: -o-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: -ms-linear-gradient(top,  #eeeeee 1%,#f8f8f8 100%);
+    background: linear-gradient(to bottom,  #eeeeee 1%,#f8f8f8 100%);
+}
+.photo__download span{
+    font-size: 12px;
+    color: #4b4b4b;
+    padding-left: 29px;
+    line-height: 24px;
+}
+.photo__download input {
+    height: 200px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+    cursor: pointer;
+    font-size: 200px;
+}
+.photo__download:before{
+    content: '';
+    background: url("../img/file__plus.png");
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 8px;
+    top: 9px;
+}
+/* --------------- /private__photos --------------- */
+/* --------------- private__video --------------- */
+.private__office .private__video{
+    padding: 19px 11px;
+}
+.private__office .private__video h3{
+    margin-bottom: 16px;
+}
+.private__video label{
+    font-size: 14px;
+    color: #494949;
+    margin-top: 5px;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 161px;
+}
+.private__video input{
+    background-color: transparent;
+    border: solid 1px #b0ada8;
+    box-shadow: inset 0 2px 3px #DDD7CB;
+    height: 28px;
+    width: 211px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px;
+    padding: 0 8px 0 8px;
+    margin-top: -2px;
+}
+/* --------------- /private__video --------------- */
+/* --------------- private__description --------------- */
+.private__office .private__description{
+padding: 20px 11px;
+}
+.private__office .private__description h3{
+    margin-top: 5px;
+}
+.description__wrap {
+    display: inline-block;
+    margin-left: 91px;
+    width: 376px;
+}
+.description__wrap textarea{
+    background-color: transparent;
+    border: solid 1px #b0ada8;
+    box-shadow: inset 0 2px 3px #DDD7CB;
+    height: 150px;
+    width: 375px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-radius: 5px;
+    padding: 5px 8px 0 8px;
+    margin-bottom: 26px;
+}
+.description__wrap input{
+    border: solid 1px #b6b3ae;
+    border-radius: 5px;
+    background: #ff7c7c;
+    background: -moz-linear-gradient(top,  #ff7c7c 0%, #bd0303 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7c7c), color-stop(99%,#bd0303));
+    background: -webkit-linear-gradient(top,  #ff7c7c 0%,#bd0303 99%);
+    background: -o-linear-gradient(top,  #ff7c7c 0%,#bd0303 99%);
+    background: -ms-linear-gradient(top,  #ff7c7c 0%,#bd0303 99%);
+    background: linear-gradient(to bottom,  #ff7c7c 0%,#bd0303 99%);
+    width: 112px;
+    height: 28px;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+}
+.description__wrap input:hover{
+    background: #bd0303;
+    background: -moz-linear-gradient(top,  #bd0303 0%, #ff7c7c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#bd0303), color-stop(100%,#ff7c7c));
+    background: -webkit-linear-gradient(top,  #bd0303 0%,#ff7c7c 100%);
+    background: -o-linear-gradient(top,  #bd0303 0%,#ff7c7c 100%);
+    background: -ms-linear-gradient(top,  #bd0303 0%,#ff7c7c 100%);
+    background: linear-gradient(to bottom,  #bd0303 0%,#ff7c7c 100%);
+}
+/* --------------- /private__description --------------- */
+/* --------------- /private__office --------------- */
+/* --------------- office__menu --------------- */
+.office__menu{
+    background-color: #ffffff;
+    border: solid 1px #c1bfbe;
+    border-top: none;
+    margin-top: 27px;
+    margin-bottom: 13px;
+    padding-bottom: 11px;
+}
+
+.office__menu .active {
+    background-color: #ffefc6;
+    text-decoration: none;
+    font-family: 'PT Serif', serif;
+    font-weight: bold;
+}
+.office__menu .active:hover{
+    cursor: default;
+}
+.office__menu .active:before{
+    content: '';
+    background: url("../img/aside-arrow.png");
+    width: 8px;
+    height: 16px;
+    position: absolute;
+    left: -8px;
+    top: 7px;
+}
+.office__menu a{
+    width: 215px;
+    height: 32px;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #454545;
+    display: block;
+    line-height: 32px;
+    padding-left: 15px;
+    position: relative;
+}
+.office__menu a:hover{
+    text-decoration: none;
+}
+/* --------------- /office__menu --------------- */

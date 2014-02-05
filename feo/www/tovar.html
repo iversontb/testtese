@@ -1,0 +1,508 @@
+﻿<!DOCTYPE html> 
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/select.css" />
+    <link rel="stylesheet" href="css/jquery-ui-1.10.3.custom.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/slider.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.select.js"></script>
+    <script src="js/jquery.ares.multiple.slider.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="js/iscroll-probe-min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+    <!-- site -->
+    <div class="site">
+        <!-- header -->
+        <header class="header">
+
+            <!-- logo -->
+            <a href="#" class="logo" title="на главную"><img src="img/logo.png" width="170" height="26" alt="FeoRoom.com"></a>
+            <!-- /logo -->
+
+            <!-- header__time -->
+            <div class="header__time">
+                Киев
+                <span>10:55</span>
+            </div>
+            <!-- /header__time -->
+
+            <!-- header__currency -->
+            <form class="header__currency">
+                <label>Валюта</label>
+                <select>
+                    <option value="1" selected>Рубли</option>
+                    <option value="2">Гривны</option>
+                    <option value="3">Доллары</option>
+                </select>
+            </form>
+            <!-- /header__currency -->
+
+            <!-- header__login -->
+            <a href="#" class="header__login">Вход для владельцев</a>
+            <!-- /header__login -->
+
+            <!-- header__about -->
+            <div class="header__about">
+                <h2>Отдых в феодосии</h2>
+                <p>Аренда и бронирование жилья.</p>
+                <p>Cнять посуточно квартиру, дом под ключ,
+                    гостиницу, элиг, частный сектор.</p>
+            </div>
+            <!-- /header__about -->
+
+            <!-- header__address -->
+            <address class="header__address">
+                <div class="header__address-phone">
+                    <a href="tel:+380955749015">+380-955-749-015</a>
+                    <a href="tel:+74955775757">+7 (495) 577-57-57</a>
+                    Звонки принимаются с 9:00 до 22:00
+                </div>
+                <a href="icq:241151096" class="header__address-icq">241151096</a>
+                <a href="skype:FEOROOM" class="header__address-skype">FEOROOM</a>
+                <dl>
+                    <dt>Пишите нам:</dt>
+                    <dd>
+                        <a href="#" class="header__address-vk"></a>
+                    </dd>
+                    <dd>
+                        <a href="#" class="header__address-od"></a>
+                    </dd>
+                    <dd>
+                        <a href="mailto:feoroom@gmail.com"></a>
+                    </dd>
+                </dl>
+            </address>
+            <!-- /header__address -->
+
+            <!-- header__favorites -->
+            <div class="header__favorites">
+                В избранном объектов
+                <span>10</span>
+            </div>
+            <!-- /header__favorites -->
+
+            <!-- header__menu -->
+            <nav class="header__menu">
+                <ul>
+                    <li>
+                        <a href="#">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#">Каталог</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Бронирование</a>
+                    </li>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Вопрос-ответ</a>
+                    </li>
+                    <li>
+                        <a href="#">Отзывы</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- /header__menu -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- breadcrumbs -->
+            <nav class="breadcrumbs">
+                <a href="#">Главная</a>
+                <a href="#">Каталог</a>
+                <a href="#">Хостел «Феодосия»</a>
+            </nav>
+            <!-- breadcrumbs -->
+
+            <!-- card -->
+            <div class="card">
+                <h1>Хостел «Феодосия»</h1>
+                <a href="#" class="card__prev">Предыдущий</a>
+                <a href="#" class="card__next">Следуюший</a>
+
+                <!-- card__address -->
+                <address class="card__address">
+                    <span>Адрес: ул. Генерала Горбачева 4</span>
+                    <a href="#" class="card__map">на карте</a>
+                </address>
+                <!-- /card__address -->
+
+                <!-- card__info -->
+                <div class="card__info">
+
+                    <!-- ares-multiple-slider -->
+                    <div class="ares-slider">
+                        <ul>
+                            <li class="ares-slider_item">
+                                <a href="pic/pic5.png">
+                                    <img src="pic/pic3.png" width="95" height="58" alt="">
+                                </a>
+                            </li>
+                            <li class="ares-slider_item">
+                                <a href="pic/pic6.png">
+                                    <img src="pic/pic4.png" width="95" height="58" alt="">
+                                </a>
+                            </li>
+                            <li class="ares-slider_item">
+                                <a href="pic/pic5.png">
+                                    <img src="pic/pic3.png" width="95" height="58" alt="">
+                                </a>
+                            </li>
+                            <li class="ares-slider_item">
+                                <a href="pic/pic6.png">
+                                    <img src="pic/pic4.png" width="95" height="58" alt="">
+                                </a>
+                            </li>
+                            <li class="ares-slider_item">
+                                <a href="pic/pic5.png">
+                                    <img src="pic/pic3.png" width="95" height="58" alt="">
+                                </a>
+                            </li>
+                            <li class="ares-slider_item">
+                                <a href="pic/pic6.png">
+                                    <img src="pic/pic4.png" width="95" height="58" alt="">
+                                </a>
+                            </li>
+                            <li class="ares-slider_item">
+                                <a href="pic/pic5.png">
+                                    <img src="pic/pic3.png" width="95" height="58" alt="">
+                                </a>
+                            </li>
+                            <li class="ares-slider_item">
+                                <a href="pic/pic6.png">
+                                    <img src="pic/pic4.png" width="95" height="58" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="ares-slider__prev"></div>
+                        <div class="ares-slider__next"></div>
+                    </div>
+                    <!-- ares-multiple-slider -->
+
+                    <!-- card__favorites -->
+                    <a href="#" class="card__favorites"></a>
+                    <!-- /card__favorites -->
+
+                    <!-- card__code -->
+                    <dl class="card__code">
+                        <dt>Код объекта:</dt>
+                        <dd>1021</dd>
+                    </dl>
+                    <!-- /card__code -->
+
+                    <dl>
+                        <dt>Тип жилья:</dt>
+                        <dd>Гостиница</dd>
+                        <dt>Категория:</dt>
+                        <dd>Мини гостиница</dd>
+                        <dt>Номеров:</dt>
+                        <dd>40</dd>
+                        <dt>Этажность:</dt>
+                        <dd>3</dd>
+                        <dt>Расстояние до моря:</dt>
+                        <dd>
+                            <span>760 м.</span>
+                            <a href="#" class="card__map">на карте</a>
+                        </dd>
+                        <dt>Пляж рядом:</dt>
+                        <dd>песок галька</dd>
+                        <dt>Аренда минимум:</dt>
+                        <dd>5 суток</dd>
+                    </dl>
+
+                    <!-- card__video -->
+                    <a href="#" class="card__video">
+                        <span>Видео</span>
+                    </a>
+                    <!-- /card__video -->
+
+                    <!-- card__owner -->
+                    <div class="card__owner">
+                        <h2>Владелец: Василий</h2>
+                        <div class="card__owner-phone">
+                            <a href="tel:+380503451729">+38(050) 345-17-29,</a>
+                            <a href="tel:+380503451729">+38(050) 345-17-29</a>
+                        </div>
+                        <a class="card__owner-skype" href="skype:FEOROOM">FEOROOM</a>
+                        <a class="card__owner-icq" href="icq:241151096">241151096</a>
+                        <dl>
+                            <dt>Написать:</dt>
+                            <dd>
+                                <a href="#" class="header__address-vk"></a>
+                            </dd>
+                            <dd>
+                                <a href="#" class="header__address-od"></a>
+                            </dd>
+                            <dd>
+                                <a href="mailto:feoroom@gmail.com"></a>
+                            </dd>
+                        </dl>
+                    </div>
+                    <!-- /card__owner -->
+
+                    <!-- card__social -->
+                    <div class="card__social">
+                        <img src="pic/social.png" width="340" height="40" alt="">
+                    </div>
+                    <!-- /card__social -->
+
+                </div>
+                <!-- /card__info -->
+
+            </div>
+            <!-- /card -->
+
+            <!-- reservation -->
+            <form class="reservation">
+                <h2>Бронирование</h2>
+
+                <!-- dates -->
+                <div class="dates" data-price="150" data-busy="2014.01.05-2014.01.18::2014.01.25-2014.02.03">
+                    <input type="text" name="startDate" class="dates__start" placeholder="Дата въезда">
+                    <input type="text" name="finishDate" class="dates__finish" placeholder="Дата въезда">
+
+                    <!-- dates__line -->
+                    <div class="dates__line" id="scroll">
+                        <ul>
+                            <li>ср<span>1</span></li>
+                            <li>чт<span>2</span></li>
+                            <li>пт<span>3</span></li>
+                            <li>сб<span>4</span></li>
+                            <li>вс<span class="dates__busy-on">5</span></li>
+                            <li>пн<span class="dates__busy">6</span></li>
+                            <li>вт<span class="dates__busy">7</span></li>
+                            <li>ср<span class="dates__busy">8</span></li>
+                            <li>чт<span class="dates__busy">9</span></li>
+                            <li>пт<span class="dates__busy">10</span></li>
+                            <li>сб<span class="dates__busy">11</span></li>
+                            <li>вс<span class="dates__busy">12</span></li>
+                            <li>пн<span class="dates__busy">13</span></li>
+                            <li>вт<span class="dates__busy">14</span></li>
+                            <li>ср<span class="dates__busy">15</span></li>
+                            <li>чт<span class="dates__busy">16</span></li>
+                            <li>пт<span class="dates__busy">17</span></li>
+                            <li>сб<span class="dates__busy-of">18</span></li>
+                            <li>вс<span class="dates__reserve">19</span></li>
+                            <li>пн<span class="dates__reserve">20</span></li>
+                            <li>вт<span class="dates__reserve">21</span></li>
+                            <li>ср<span class="dates__reserve">22</span></li>
+                            <li>чт<span class="dates__reserve">23</span></li>
+                            <li>пт<span class="dates__reserve">24</span></li>
+                            <li>сб<span class="dates__busy-on">25</span></li>
+                            <li>вс<span class="dates__busy">26</span></li>
+                            <li>пн<span class="dates__busy">27</span></li>
+                            <li>вт<span class="dates__busy">28</span></li>
+                            <li>ср<span class="dates__busy">29</span></li>
+                            <li>чт<span class="dates__busy">30</span></li>
+                            <li>пт<span class="dates__busy">31</span></li>
+                        </ul>
+                    </div>
+                    <!-- /dates__line -->
+
+                    <dl>
+                        <dt>Условные обозначения:</dt>
+                        <dd class="free">Свободно</dd>
+                        <dd class="busy">Занято</dd>
+                        <dd class="reserved">Вы забронировали</dd>
+                    </dl>
+
+                    <dl>
+                        <dt>Вы забронировали: </dt>
+                        <dd class="dates__count"><span>5</span> суток</dd>
+                    </dl>
+
+                    <p class="dates__price">Цена: <span><span class="dates__price-item">750</span> грн</span></p>
+
+                    <input type="submit" value="Забронировать">
+
+                </div>
+                <!-- /dates -->
+
+            </form>
+            <!-- /reservation -->
+
+            <!-- about -->
+            <div class="about">
+                <dl>
+                    <dt>Время въезда:</dt>
+                    <dd>14:00</dd>
+                    <dt>Время отъезда:</dt>
+                    <dd>18:00</dd>
+                </dl>
+                <span>( Время въезда-отъезда можно оговаривать)</span>
+                <h2>Описание</h2>
+                <p>Непосредственные окрестности Феодосии крайне бедны реками. Постоянно существует лишь
+                    немноговодная в летний период река Байбуга, берущая исток северо-западнее города. В городской
+                    черте её значительно подпитывают многочисленные <a href="#">ливнёвки источников</a> и грунтовых
+                    вод районов частного сектора с канализационными стоками. Многие улицы старой части города,
+                    радиально расположенные к заливу.</p>
+                <h2>В квартире имеется</h2>
+                <p>Непосредственные окрестности Феодосии крайне бедны реками. Постоянно существует лишь
+                    немноговодная в летний период река Байбуга, берущая исток северо-западнее города. В городской
+                    черте её значительно подпитывают многочисленные и грунтовых вод районов частного сектора с
+                    канализационными стоками. Многие улицы старой части города, радиально расположенные к
+                    заливу.</p>
+                <h2>На кухне</h2>
+                <p>Непосредственные окрестности Феодосии крайне бедны реками. Постоянно существует лишь
+                    немноговодная в летний период река Байбуга, берущая исток северо-западнее города.</p>
+                <h2>В ванной</h2>
+                <p>Непосредственные окрестности Феодосии крайне бедны реками. Постоянно существует лишь
+                    немноговодная в летний период река.</p>
+                <dl>
+                    <dt>Спальные места:</dt>
+                    <dd>Диван (2 места) (2 шт.)</dd>
+                </dl>
+            </div>
+            <!-- /about -->
+
+            <!-- map -->
+            <div class="map">
+                <h2>Расположение на карте</h2>
+
+                <!-- map__wrap -->
+                <div class="map__wrap" data-title="Хостел «Феодосия»" id="map" data-lat="45.04142" data-lang="35.37728"></div>
+                <!-- /map__wrap -->
+
+            </div>
+            <!-- /map -->
+
+            <!-- prices -->
+            <div class="prices">
+                <h2>Цены в указанные даты</h2>
+                <ul>
+                    <li>1 мая 2014г. - 31 мая 2014г.<span>200грн.</span></li>
+                    <li>1 мая 2014г. - 31 мая 2014г.<span>200грн.</span></li>
+                    <li>1 мая 2014г. - 31 мая 2014г.<span>200грн.</span></li>
+                    <li>1 мая 2014г. - 31 мая 2014г.<span>200грн.</span></li>
+                    <li>1 мая 2014г. - 31 мая 2014г.<span>200грн.</span></li>
+                </ul>
+            </div>
+            <!-- /prices -->
+
+            <!-- also -->
+            <div class="also">
+                <h2>Смотрите также</h2>
+                <ul>
+                    <li>
+
+                        <!-- also__link -->
+                        <a href="#" class="also__link">
+                            1-комнатная квартира, посуто-
+                            чно, Феодосия, р-н Динамо
+                            <img src="pic/pic2.png" width="211" height="160" alt="">
+                        </a>
+                        <!-- /also__link -->
+
+                        <span>от <span>1 500</span> р. / Сутки </span>
+                        <a href="#" class="also__favorite"></a>
+                    </li>
+                    <li>
+
+                        <!-- also__link -->
+                        <a href="#" class="also__link">
+                            1-комнатная квартира, посуто-
+                            чно, Феодосия, р-н Динамо
+                            <img src="pic/pic2.png" width="211" height="160" alt="">
+                        </a>
+                        <!-- /also__link -->
+
+                        <span>от <span>1 500</span> р. / Сутки </span>
+                        <a href="#" class="also__favorite"></a>
+                    </li>
+                    <li>
+
+                        <!-- also__link -->
+                        <a href="#" class="also__link">
+                            1-комнатная квартира, посуто-
+                            чно, Феодосия, р-н Динамо
+                            <img src="pic/pic2.png" width="211" height="160" alt="">
+                        </a>
+                        <!-- /also__link -->
+
+                        <span>от <span>1 500</span> р. / Сутки </span>
+                        <a href="#" class="also__favorite"></a>
+                    </li>
+                    <li>
+
+                        <!-- also__link -->
+                        <a href="#" class="also__link">
+                            1-комнатная квартира, посуто-
+                            чно, Феодосия, р-н Динамо
+                            <img src="pic/pic2.png" width="211" height="160" alt="">
+                        </a>
+                        <!-- /also__link -->
+
+                        <span>от <span>1 500</span> р. / Сутки </span>
+                        <a href="#" class="also__favorite"></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /also -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+    <!-- footer -->
+    <footer class="footer">
+
+        <!-- footer__layout -->
+        <div class="footer__layout">
+
+            <!-- footer__pay -->
+            <dl class="footer__pay">
+                <dt>Варианты оплаты:</dt>
+                <dd><a href="#"><img src="pic/pay1.png" width="56" height="35" alt=""></a></dd>
+                <dd><a href="#"><img src="pic/pay2.png" width="56" height="35" alt=""></a></dd>
+                <dd><a href="#"><img src="pic/pay3.png" width="56" height="35" alt=""></a></dd>
+                <dd><a href="#"><img src="pic/pay4.png" width="56" height="35" alt=""></a></dd>
+            </dl>
+            <!-- /footer__pay -->
+
+            <!-- footer__copyright -->
+            <div class="footer__copyright">Все права защищены</div>
+            <!-- /footer__copyright -->
+
+            <!-- footer__counter -->
+            <ul class="footer__counter">
+                <li><a href="#"><img src="pic/counter1.png" width="88" height="31" alt=""></a></li>
+                <li><a href="#"><img src="pic/counter2.png" width="88" height="31" alt=""></a></li>
+            </ul>
+            <!-- /footer__counter -->
+
+        </div>
+        <!-- /footer__layout -->
+
+    </footer>
+    <!-- /footer -->
+
+</body>
+</html>

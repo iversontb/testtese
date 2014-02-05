@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="css/main.css" />
+	<script src="js/modernizr-1.7.min.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery.main.js"></script>
+
+
+	<!--[if lte IE 7]> 
+		<link rel="stylesheet" href="css/main-ie7.css" />
+	<![endif]-->
+
+	
+</head>
+<body>
+
+	<!--popUpContainer-->
+	<form action="#" method="post" class="popUpContainer">
+	
+		<span class="closeButton" title="close">close</span>
+		<h2>Закрытие проблемы</h2>
+		
+		<!--container-->
+		<div class="container">
+			
+			<label>Укажите, пожалуйста, причины по которым вы считаете проблему закрытой:*</label>
+			<textarea></textarea>
+			<span class="error">Введите сообщение</span>
+			
+			<!--buttonList-->
+			<ul class="buttonList">
+				<li><a href="#" class="addVideo">+ Добавить ссылку на видео</a></li>
+				<li><a href="#" class="addPhoto">+ Прикрепить фото</a></li>				
+			</ul>
+			<!--/buttonList-->
+			
+				<!--block-->
+				<div class="block videReviews">
+				
+					<!--lineContainer-->
+					<div class="lineContainer">
+					
+						<!--inputWrap-->
+						<div class="inputWrap">
+							<input type="text" placeholder="Скопируйте ссылку на ролик с YouTube и вставьте в это поле">
+							<div class="clearButton" title="cleare">cleare</div>
+						</div>
+						<!--/inputWrap-->
+						<button class="addButton videoAdd">add</button>
+						
+					</div>
+					<!--/lineContainer-->
+					
+					<!--lineContainer-->
+					<div class="lineContainer">
+						<div class="inputWrap longInput">
+							<input type="text" placeholder="Введите комментарий к видео">
+						</div>
+					</div>
+					<!--/lineContainer-->
+							
+				</div>
+				<!--/block-->
+				
+				<!--block-->
+				<div class="block photoReviews">
+				
+					<!--lineContainer-->
+					<div class="lineContainer">
+						<div class="type_file">
+							<input type="file" size="53" class="inputFile"  />
+							<div class="fonTypeFile"></div>
+							<input type="text" class="inputFileVal" placeholder="Выберите фото, чтобы прикрепить к комментарию" readonly id="fileName" />
+							<div class="clearButton" title="cleare">cleare</div>
+						</div>
+						<button class="addButton photoButton">add</button>
+					</div>
+					<!--/lineContainer-->
+					
+					<!--lineContainer-->
+					<div class="lineContainer">
+						<div class="inputWrap longInput">
+							<input type="text" placeholder="Введите комментарий к фото">
+						</div>
+					</div>			
+					<!--/lineContainer-->
+										
+				</div>
+				<!--/block-->			
+			
+			<input type="submit" class="e-Button" value="Закрыть проблему">	
+		</div>
+		<!--/container-->
+		
+	</form>
+	<!--/popUpContainer-->
+
+</body>
+</html>

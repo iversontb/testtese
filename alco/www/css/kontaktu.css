@@ -1,0 +1,87 @@
+.homeAdress{
+    background: url("../img/home.png") no-repeat  9px center;
+    padding-left: 40px;
+    line-height: 19px;
+    margin-bottom: 25px;
+}
+.homeAdress span{
+    display: block;
+}
+.phoneBlock{
+    background: url("../img/phone.png") no-repeat 9px center;
+    padding-left: 40px;
+    margin-bottom: 29px;
+}
+.email dl,
+.phoneBlock dl{
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+.email dt,
+.phoneBlock dt{
+    float: left;
+    color: #0088af;
+}
+.email dd,
+.phoneBlock dd{
+    float: left;
+    color: #353535;
+}
+.email{
+    background: url("../img/email.png") no-repeat 9px center;
+    padding-left: 40px;
+    color: #353535;
+    margin-bottom: 26px;
+}
+.icq{
+    background: url("../img/icq.png") no-repeat 9px center;
+    line-height: 15px;
+    color: #353535;
+    margin-bottom: 5px;
+    padding-left: 40px;
+}
+.skype{
+    background: url("../img/skype.png") no-repeat 9px center;
+    line-height: 16px;
+    color: #353535;
+    padding-left: 40px;
+    margin-bottom: 24px;
+}
+.workTime span{
+    color: #0088af;
+}
+.workTime{
+    background: url("../img/time.png") no-repeat 9px center;
+    line-height: 15px;
+    color: #353535;
+    padding-left: 40px;
+}
+.contactBlock{
+    margin-top: 20px;
+    width: 353px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 34px;
+}
+.imgContainer{
+    display: inline-block;
+    vertical-align: top;
+    width: 347px;
+    margin-top: 26px;
+}
+.howGet{
+    border-top: 1px solid #629d2d;
+    padding-top: 14px;
+    margin-bottom: 100px;
+}
+.howGet h3{
+    font-size: 18px;
+    font-family: tahoma;
+    margin-left: 8px;
+    margin-bottom: 18px;
+    font-weight: normal;
+}
+.mapContainer{
+    width: 540px;
+    margin: 0 auto;
+}

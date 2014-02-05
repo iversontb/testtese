@@ -1,0 +1,437 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    content-wrap
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #54545e;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #54545e;
+}
+:-moz-placeholder {
+    color: #54545e;
+}
+.placeholder {
+    color: #54545e;
+}
+/* --------------- /Style to null --------------- */
+
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 10;
+    left: 0;
+}
+.pop_back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.5);
+}
+.pop_in{
+    position: absolute;
+    width: 480px;
+    top: 95px;
+    left: 50%;
+    margin-left: -240px;
+    z-index: 4000;
+    background: #151516;
+}
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Font Name";
+    src: url("../fonts/font.woff") format("woff");
+}
+/* --------------- /fonts --------------- */
+
+body{
+    position: relative;
+    background: url("../img/bg-main.jpg") no-repeat center top #1d1e20;
+}
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 980px;
+    margin:0 auto;
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 100px;
+}
+.site__content {
+    background-color: #151516;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: relative;
+    top: 85px;
+    left: 1px;
+}
+/* --------------- /logo --------------- */
+
+/* --------------- navigation --------------- */
+.navigation{
+    position: relative;
+    margin-top: 113px;
+    background: url("../img/menu_bkg.jpg") repeat-x left top;
+    height: 52px;
+}
+.navigation:before{
+    content: '';
+    position: absolute;
+    background: url("../img/menu_line.png") no-repeat;
+    width: 980px;
+    height: 1px;
+    top: -1px;
+}
+.navigation ul{
+    margin-left: 33px;
+}
+.navigation ul li{
+    display: inline-block;
+    background: url("../img/header_menu_delimeter.png") left top no-repeat;
+}
+.navigation ul li:first-child{
+    background: none;
+}
+.navigation ul li a{
+    display: inline-block;
+    font-family: "Times New Roman";
+    color: #f4ddc4;
+    font-size: 17px;
+    padding-top: 16px;
+    padding-bottom: 19px;
+    padding-left: 29px;
+    padding-right: 28px;
+}
+.navigation ul li a.active{
+    color: #ffffff;
+}
+.navigation ul li a:hover{
+    color: #ffffff;
+}
+.navigation ul li .context_menu{
+    display: none;
+    background: #0d0d0d;
+    margin-left: 0;
+}
+.navigation ul li .context_menu li{
+    display: block;
+    background: none;
+}
+.navigation ul li .context_menu li a{
+    font-family: "Arial";
+    font-size: 12px;
+    color: #54545e;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    padding-left: 9px;
+    padding-right: 65px;
+}
+.navigation ul li .context_menu li a:hover{
+    color: #f4ddc4;
+}
+.navigation ul li:hover .context_menu{
+    display:inline-block;
+    position: absolute;
+    z-index: 2;
+    top: 52px;
+    left: 136px;
+
+
+}
+/* --------------- /navigation --------------- */
+
+/* --------------- content-wrap --------------- */
+.content-wrap {
+    padding-top: 30px;
+    position: relative;
+}
+.content-wrap:before{
+    content: '';
+    position: absolute;
+    background: url("../img/glow-cont.jpg") no-repeat;
+    width: 980px;
+    height: 345px;
+    top: 0;
+    left: 0;
+}
+.content-wrap h1, .content-wrap h2, .content-wrap h3{
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 26px;
+    color: #f4ddc4;
+}
+.content-wrap h3{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+}
+.content-wrap p{
+    font-family: "Arial";
+    font-size: 12px;
+    color: #54545e;
+    margin-bottom: 30px;
+    line-height: 15px;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- footer --------------- */
+.footer {
+    z-index: 2;
+    position: relative;
+    width: 980px;
+    margin:0 auto;
+    margin-top: -100px;
+    padding-bottom: 75px;
+}
+.footer:before{
+    content: '';
+    position: absolute;
+    background: url("../img/border-bottom.png") no-repeat;
+    width: 980px;
+    height: 3px;
+    top: 0;
+    left: 0;
+}
+.footer__layout {
+    padding-bottom: 25px;
+    background-color: #151516;
+    padding-top: 26px;
+    text-align: center
+}
+/* --------------- /footer --------------- */
+
+/* --------------- footer__menu --------------- */
+.footer__menu{
+    margin-bottom: 16px;
+}
+.footer__menu li{
+    display: inline-block;
+    padding-right: 16px;
+    padding-left: 17px;
+    background: url("../img/border-item.png") no-repeat left center;
+}
+.footer__menu li:first-child{
+    background: none;
+}
+.footer__menu li a{
+    font-family: "Times New Roman";
+    font-size: 17px;
+    color: #f4ddc4;
+}
+.footer__menu li a.active, .footer__menu li a:hover{
+    text-decoration: underline;
+}
+/* --------------- /footer__menu --------------- */
+
+/* --------------- copyright --------------- */
+.copyright, .copyright a{
+    font-family: arial;
+    font-size: 12px;
+    color: #54545e;
+}
+.copyright a{
+    margin-left: 19px;
+}
+.copyright a:hover{
+    text-decoration: underline;
+}
+/* --------------- /copyright --------------- */
+
+.wraper{
+    overflow: hidden;
+}
+
+
+
+.aside{
+    width: 220px;
+    float: left;
+    text-align: left;
+    color: #54545e;
+    margin-left: 27px;
+    vertical-align: top;
+}
+.card_block{
+    float: right;
+    width: 719px;
+    text-align: left;
+    padding-right: 25px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.card_block img{
+    float: left;
+    margin-right: 15px;
+}
+.aside a{
+    font-family: "Times New Roman";
+    text-transform: uppercase;
+    display: block;
+    padding: 5px 0 5px 5px;
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: underline;
+    color: #f4ddc4;
+}
+.aside a:hover{
+    text-decoration: none;
+    background: rgba(255,255,255,0.5);
+}

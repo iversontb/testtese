@@ -1,0 +1,394 @@
+@charset "utf-8";
+/*
+    main styles
+    version: 15.01.2013
+    
+    Style to null
+
+    fonts
+
+    site
+
+    header
+
+    logo
+
+    content-wrap
+
+    footer
+
+*/
+
+/* --------------- Style to null --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,dl, dt, dd,
+ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+    background: transparent;
+    font-size: 100%;
+}
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;
+}
+input, select, button, textarea {
+    margin: 0;
+    font-size: 100%;
+}
+input[type="text"], input[type="password"], textarea, input[type="email"], input[type="phone"], input[type="number"] {
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+input[type="checkbox"] {
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+
+ul,
+ol {
+    list-style:none;
+}
+html {
+    overflow-y: scroll;
+    overflow-x: auto;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    color: #000;
+    text-align: left;
+    z-index: 1;
+    position: relative;
+}
+
+input [type='text']{
+    padding: 0;
+}
+input, select, button, textarea {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+input,
+textarea {
+    outline: none;
+}
+textarea {
+    resize:none;
+    overflow: auto;
+}
+label, input[type="button"], input[type="submit"], button {
+    cursor: pointer;
+}
+a, a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus, a:active {
+    text-decoration: none;
+}
+input[type="search"]:focus {
+    outline: none;
+}
+input[type="submit"]::-moz-focus-inner,
+button::-moz-focus-inner {
+    padding:0;
+    border:0;
+}
+:focus {
+    outline: none;
+}
+input:invalid {
+    outline: none;
+    -moz-box-shadow: none;
+    border: none;
+}
+a:visited {
+    color: #8EA177;
+}
+::-webkit-input-placeholder {
+    color: #000;
+}
+:-moz-placeholder {
+    color: #000;
+}
+.placeholder {
+    color: #000;
+}
+/* --------------- /Style to null --------------- */
+
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "Font Name";
+    src: url("../fonts/font.woff") format("woff");
+}
+/* --------------- /fonts --------------- */
+
+/* --------------- site --------------- */
+.site {
+    min-height: 100%;
+    min-width: 1000px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+.site:after {
+    content: '';
+    display: block;
+    clear: both;
+    width: 100%;
+
+    height: 100px;
+}
+.site__content {
+    display: table;
+    width: 100%;
+}
+/* --------------- /site --------------- */
+
+/* --------------- header --------------- */
+.header {
+    position: relative;
+
+}
+/* --------------- /header --------------- */
+
+/* --------------- logo --------------- */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* --------------- /logo --------------- */
+
+
+
+.menu_main{
+    background: url("../img/menu-back.png");
+    height: 103px;
+    font-family: arial;
+}
+.menu_main > ul{
+    width: 895px;
+    margin: 0 auto;
+    position: relative;
+}
+.menu_main > ul > li{
+    float: left;
+
+}
+.menu_main > ul > li > a{
+    background: url("../img/but-back.png");
+    width: 179px;
+    height: 103px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.menu_main > ul > li > a.active{
+    background: url("../img/but-back-hover.png") no-repeat;
+}
+.menu_main > ul > li > a > span{
+    padding-top: 65px;
+    color: #693a10;
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    height: 103px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.menu_main > ul > li > a:hover{
+    background: url("../img/but-back-hover.png") no-repeat;
+}
+.item1 span{
+    background: url("../img/item1.png") no-repeat center 8px;
+}
+.menu_main > ul > li > a.active .item1 span:hover,
+.item1 span:hover{
+    background: url("../img/item1-hover.png") no-repeat center 8px;
+}
+.item2 span{
+    background: url("../img/item2.png") no-repeat center 16px;
+}
+.menu_main > ul > li > a.active .item2 span:hover,
+.item2 span:hover{
+    background: url("../img/item2-hover.png") no-repeat center 16px;
+}
+.item3 span{
+    background: url("../img/item3.png") no-repeat center 9px;
+}
+.menu_main > ul > li > a.active .item3 span:hover,
+.item3 span:hover{
+    background: url("../img/item3-hover.png") no-repeat center 9px;
+}
+.item4 span{
+    background: url("../img/item4.png") no-repeat center 14px;
+}
+.menu_main > ul > li > a.active .item4 span:hover,
+.item4 span:hover{
+    background: url("../img/item4-hover.png") no-repeat center 14px;
+}
+.item5 span{
+    background: url("../img/item5.png") no-repeat center 16px;
+}
+.menu_main > ul > li > a.active .item5 span:hover,
+.item5 span:hover{
+    background: url("../img/item5-hover.png") no-repeat center 16px;
+}
+.submain_menu{
+    display: none;
+    position: absolute;
+    top: 102px;
+    left: 0;
+    background: url("../img/submit-back.png");
+    border: 1px solid #dedede;
+    border-top: none;
+    box-shadow: 2px 3px 5px #dedede;
+    width: 893px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 10px;
+}
+.submain_menu li{
+    float: left;
+    margin-right: 10px;
+    max-width: 275px;
+    margin-bottom: 5px;
+}
+.submain_menu li a:hover{
+    text-decoration: underline;
+}
+.submain_menu li a{
+    color: #000;
+    text-decoration: none;
+}
+.sub_item1{
+    background: url("../img/pic1.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 70px;
+}
+.sub_item2{
+    background: url("../img/pic2.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 75px;
+}
+.sub_item3{
+    background: url("../img/pic3.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 75px;
+}
+.sub_item4{
+    background: url("../img/pic4.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 60px;
+}
+.sub_item5{
+    background: url("../img/pic5.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 75px;
+}
+.sub_item6{
+    background: url("../img/pic6.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 50px;
+}
+.sub_item7{
+    background: url("../img/pic7.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 40px;
+}
+.sub_item8{
+    background: url("../img/pic8.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 60px;
+}
+.sub_item9{
+    background: url("../img/pic9.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 50px;
+}
+.sub_item10{
+    background: url("../img/pic10.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 50px;
+}
+.sub_item11{
+    background: url("../img/pic11.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 50px;
+}
+.sub_item12{
+    background: url("../img/pic12.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 50px;
+}
+.sub_item13{
+    background: url("../img/pic13.png") no-repeat;
+    display: table-cell;
+    vertical-align: middle;
+    height: 50px;
+    padding-left: 70px;
+}

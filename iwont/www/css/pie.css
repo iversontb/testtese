@@ -1,0 +1,6 @@
+.process_request .wrap_slider, .process_request .wrap_slider .slider {
+	behavior: url(css/pie.htc);
+	zoom: 1;
+    position: relative;
+}
+

@@ -1,0 +1,24 @@
+/* --------------- copyrighting --------------- */
+.copyrighting{
+    font-family: 'Open Sans', sans-serif;
+}
+.copyrighting div {
+    border-bottom: 1px solid #f1f4f7;
+    position: relative;
+    margin-bottom: 23px;
+    min-height: 134px;
+}
+.copyrighting h2 {
+    font-size: 16px;
+    margin-bottom: 17px;
+}
+.copyrighting p {
+    font-size: 12px;
+    line-height: 18px;
+}
+.copyrighting img {
+    float: left;
+    clear: both;
+    margin: -23px 19px 19px 0;
+}
+/* --------------- /copyrighting --------------- */

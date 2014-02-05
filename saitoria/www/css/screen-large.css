@@ -1,0 +1,4 @@
+/* Common styles */
+.container.compact {
+    max-width: 970px;
+}

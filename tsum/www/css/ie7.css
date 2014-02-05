@@ -1,0 +1,52 @@
+div#sidebar div.basket div.items div.item div.info {
+    margin-left: 52px;
+}
+div#footer div.copyright div.subscribe {
+    width: 385px;
+}
+div.photo-slider div.nav div {
+    margin-left: auto;
+    position: relative;
+    left: -50%;
+}
+div#wrapper {
+    width: 803px;
+    padding: 0px;
+}
+    div#wrapper div#content {
+        margin-left: 0px;
+    }
+    div#wrapper div#footer {
+        margin-left: 0px;
+    }
+
+div.product-medium div.info {
+    float: left;
+}
+div.product-medium div.actions a {
+    margin-left: 1px;
+    margin-right: 2px;
+}
+div.product-big div.actions a {
+    margin-left: 1px;
+    margin-right: 2px;
+}
+ul#top-menu {
+    z-index: 10;
+}
+/*div#sidebar div.ch-list ul li .jq-checkbox {
+    margin: 0!important;
+    zoom: 1;
+    display: none!important;
+}
+div#sidebar div.ch-list ul li input {
+    margin: 0!important;
+    zoom: 1;
+    display: none!important;
+}*/
+div#sidebar {
+    zoom: 1;
+}
+    div#sidebar div#abs {
+        zoom: 1;
+    }

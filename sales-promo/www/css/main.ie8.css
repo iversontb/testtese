@@ -1,0 +1,18 @@
+/* css for ltie8 */
+.header form input.email,
+.filter form input.text {
+    line-height: 23px;
+}
+
+@font-face {
+    font-family: "helveticaneue";
+    src: url("../fonts/helveticaneue.eot");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "helveticaneue-condensedbold";
+    src: url("../fonts/helveticaneue-condensedbold.eot");
+    font-weight: normal;
+    font-style: normal;
+}

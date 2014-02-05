@@ -1,0 +1,9 @@
+.get_app .get_app__free,
+.user__img,
+.user__img img,
+.user_info__img,
+.user_info__img img{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

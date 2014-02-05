@@ -1,0 +1,6 @@
+.ares-slider__points li,
+.diplomas li{
+	behavior: url(css/pie.htc);
+	zoom: 1;
+}
+

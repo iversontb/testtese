@@ -1,0 +1,58 @@
+.ares-slider1 {
+    position: relative;
+    margin-right: 55px;
+    height: 100px;
+    padding-bottom: 24px;
+    margin-left: 55px;
+}
+.ares-slider1 > ul {
+    width: 100% !important;
+    height: 100% !important;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.ares-slider1_item {
+    position: absolute;
+    left: -1000px;
+}
+.ares-slider1_item > img {
+    width: 100%;
+}
+.ares-slider1_item > h3{
+    color: #3c444e;
+    font-size: 14px;
+}
+.ares-slider_item dl {
+    overflow: hidden;
+}
+.ares-slider1_item  dt,
+.ares-slider_item dd{
+    float: left;
+}
+.ares-slider1_item dt {
+    clear: both;
+}
+.ares-slider1__next,
+.ares-slider1__prev {
+    position: absolute;
+    content: '';
+    background: url("../img/left_arrow.png");
+    width: 14px;
+    height: 21px;
+    top: 50%;
+    margin-top: -9px;
+    left: -47px;
+    cursor: pointer;
+}
+.ares-slider1__next {
+    background-position: right 0;
+    left: 882px;
+}
+.ares-slider1__next:hover{
+    background: url("../img/right_arrow.png") right 0;
+}
+.ares-slider1__prev:hover{
+    background: url("../img/right_arrow.png");
+}

@@ -1,0 +1,51 @@
+h1, h2 {
+    color: #9f683f;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: Times New Roman;
+}
+h1 {
+    padding-bottom: 43px;
+    text-align: center;
+}
+h2 {
+    padding: 0 0 28px 5px;
+    text-transform: uppercase;
+}
+.faq_list li:first-child {
+    border: none;
+    padding-top: 0;
+}
+.faq_list li {
+    margin-bottom: 45px;
+    padding-top: 39px;
+    border-top: 1px dotted #b89650;
+}
+.faq_list h2 {
+    padding-bottom: 22px;
+}
+.faq_list a:first-child {
+    margin-top: 0;
+}
+.faq_list a {
+    color: #69b295;
+    font-size: 12px;
+    margin-top: 27px;
+    text-transform: uppercase;
+    display: block;
+}
+.faq_list a span:hover {
+    border: none;
+}
+.faq_list a span {
+    border-bottom: 1px dotted #69b295;
+}
+.faq_list p {
+    color: #9F683F;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 13px 0 15px 20px;
+}
+a.margin0 {
+    margin: 0;
+}

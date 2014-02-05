@@ -1,0 +1,70 @@
+.services{
+    width: 704px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 54px;
+    overflow: hidden;
+}
+.services > ul {
+    width: 740px;
+}
+.services > ul > li{
+    display: inline-block;
+    width: 229px;
+    padding-top: 146px;
+    margin-right: 5px;
+    vertical-align: top;
+}
+.services > ul > li:hover h3{
+    color: #dc1f26;
+}
+.services > ul > li h3{
+    font-size: 18px;
+    margin-bottom: 24px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.siteCreation{
+    background: url("../img/site-creation.png") no-repeat 0 0;
+}
+.siteComersial{
+    background: url("../img/site-comersial.png") no-repeat 0 0;
+}
+.siteMove{
+    background: url("../img/site-move2.png") no-repeat 0 0;
+}
+.services ol{
+    margin-bottom: 29px;
+}
+.services ol li{
+    margin-bottom: 10px;
+    background: url("../img/tire.png") no-repeat 0 9px;
+    padding-left: 10px;
+}
+.services ol a{
+    color: #262223;
+    font-weight: 300;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+}
+.services ol a:hover{
+    color: #dc1f26;
+    text-decoration: underline;
+
+}
+.slogan{
+    background: url("../img/back-slogan.jpg");
+    width: 713px;
+    height: 98px;
+    margin-bottom: 50px;
+    padding: 40px 0 0 31px;
+}
+.slogan h2{
+    font-weight: 800;
+    line-height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+}
+.slogan h2 span{
+    display: block;
+    color: #dc1f26;
+}

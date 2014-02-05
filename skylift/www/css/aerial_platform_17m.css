@@ -1,0 +1,151 @@
+
+.content-wrap h1{
+    font-family: "Verdana";
+    font-size: 24px;
+    color: #252525;
+    font-weight: normal;
+    margin-bottom: 17px;
+}
+/* --------------- /content-wrap --------------- */
+
+/* --------------- bread_crumbs --------------- */
+.bread_crumbs{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.bread_crumbs a{
+    font-family: "Verdana";
+    font-size: 12px;
+    color: #ee740c;
+    text-decoration: underline;
+    background: url("../img/arrow.png") no-repeat left center;
+    padding-left: 14px;
+}
+.bread_crumbs a:first-child{
+    background: none;
+    padding-left: 0;
+}
+.bread_crumbs a:hover{
+    text-decoration: none;
+}
+/* --------------- /bread_crumbs --------------- */
+
+/* --------------- chip_basket --------------- */
+.chip_basket{
+    font-family: "Arial";
+    font-size: 12px;
+    color: #373737;
+    text-decoration: underline;
+    background: url("../img/chip_basket.png") no-repeat left 0;
+    float: right;
+    margin-top: 4px;
+    padding-left: 29px;
+    display: inline-block;
+    height: 18px;
+}
+.chip_basket:hover{
+    text-decoration: none;
+}
+/* --------------- /chip_basket --------------- */
+
+/* --------------- features --------------- */
+.features{
+    display: inline-block;
+    width: 35%;
+    padding-right: 5%;
+}
+.features table caption{
+    font-family: "Arial";
+    font-size: 14px;
+    font-weight: bold;
+    color: #1c1c1c;
+    text-align: left;
+    border-bottom: 1px solid #f1f1f1;
+}
+.features table{
+    width: 100%;
+    line-height: 35px;
+    margin-bottom: 24px;
+}
+.features table tbody tr{
+    border-bottom: 1px solid #f1f1f1;
+}
+.features table tbody tr td:first-child{
+    font-family: "Arial";
+    font-size: 14px;
+    color: #1c1c1c;
+    margin-bottom: 21px;
+    font-weight: normal;
+    text-align: left;
+}
+.features table tbody tr td{
+    font-family: "Arial";
+    font-size: 14px;
+    color: #1c1c1c;
+    font-weight: bold;
+    text-align: right;
+}
+/* --------------- /features --------------- */
+
+/* --------------- order --------------- */
+.order{
+    font-family: "Verdana";
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    border-radius: 17px;
+    border: 1px solid #f5850e;
+    padding-left: 10px;
+    padding-right: 12px;
+    display: inline-block;
+    height: 41px;
+    line-height: 41px;
+    box-shadow: 0 3px 2px #ffc366 inset;
+    background: rgb(254,154,0);
+    background: -moz-linear-gradient(top,  rgba(254,154,0,1) 0%, rgba(243,123,2,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,154,0,1)), color-stop(100%,rgba(243,123,2,1)));
+    background: -webkit-linear-gradient(top,  rgba(254,154,0,1) 0%,rgba(243,123,2,1) 100%);
+    background: -o-linear-gradient(top,  rgba(254,154,0,1) 0%,rgba(243,123,2,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(254,154,0,1) 0%,rgba(243,123,2,1) 100%);
+    background: linear-gradient(to bottom,  rgba(254,154,0,1) 0%,rgba(243,123,2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe9a00', endColorstr='#f37b02',GradientType=0 );
+}
+.order:hover{
+    background: rgb(252,151,0);
+    background: -moz-linear-gradient(top,  rgba(252,151,0,1) 0%, rgba(242,78,2,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,151,0,1)), color-stop(100%,rgba(242,78,2,1)));
+    background: -webkit-linear-gradient(top,  rgba(252,151,0,1) 0%,rgba(242,78,2,1) 100%);
+    background: -o-linear-gradient(top,  rgba(252,151,0,1) 0%,rgba(242,78,2,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(252,151,0,1) 0%,rgba(242,78,2,1) 100%);
+    background: linear-gradient(to bottom,  rgba(252,151,0,1) 0%,rgba(242,78,2,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fc9700', endColorstr='#f24e02',GradientType=0 );
+    box-shadow: 0px 3px 2px #fbb74e inset;
+}
+.order:active{
+    box-shadow: none;
+}
+/* --------------- /order --------------- */
+
+/* --------------- rental_terms --------------- */
+.rental_terms{
+    display: inline-block;
+    vertical-align: top;
+    width: 59%;
+}
+.gallery img{
+    margin-bottom: 26px;
+}
+.rental_terms p{
+    font-family: "Arial";
+    font-size: 12px;
+    color: #1c1c1c;
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+.rental_terms span{
+    font-family: "Arial";
+    font-size: 12px;
+    font-weight: bold;
+    color: #1c1c1c;
+}
+/* --------------- /rental_terms --------------- */

@@ -1,0 +1,104 @@
+.b-window_index {
+	//margin-left: 50px;
+}
+.header .nth1{
+    width: 126px;
+    background-position: -127px 0;
+}
+.header .nth1:active {
+    width: 126px;
+    background-position: -127px -61px;
+}
+.header .active.nth1{
+    background-position: -127px -122px;
+}
+.header .nth2 {
+    width: 127px;
+    background-position: -255px 0;
+}
+.header .nth2:active {
+    width: 127px;
+    background-position: -255px -61px;
+}
+.header .active.nth2 {
+    background-position: -255px -122px;
+}
+.header .active.nth3 {
+    background-position: -385px -122px;
+}
+.header .nth3 {
+    width: 128px;
+    background-position: -385px 0;
+}
+.header .nth3:active {
+    width: 128px;
+    background-position: -385px -61px;
+}
+input[type="text"] {
+	line-height: 20px;
+}
+.preload {
+	background-color: #fff;	
+}
+
+/* --------------- body --------------- */
+body:before {
+    background: url(../img/b-sitewraper_before.png) repeat-x center top;
+}
+.header {
+    background: url(../img/b-mainheader.png) center top;
+}
+.menu > a{
+    background: url(../img/e-mainmenu.png) no-repeat 0 0;
+}
+.address > div > a {
+    background: url(../img/e-social__item.png);
+}
+.address > address > *{
+    background: url(../img/e-contact.png) no-repeat;
+}
+.cs-buttons a {
+    background: url(../img/gall-active.png) no-repeat 0 -12px;
+}
+.cs-buttons .cs-active {
+    background: url(../img/gall-active.png) no-repeat 0 0  !important;
+}
+.cs-prev{
+    background: url(../img/gall-arrow-sprite.png) no-repeat;
+}
+.cs-next {
+    background: url(../img/gall-arrow-sprite.png) no-repeat right 0;
+}
+.why-we > article > h2 {
+    background: url(../img/e-window_title.jpg);
+}
+.why-we > article > h2:before {
+    background: url(../img/b-window__title-after.png);
+}
+.why-we > article > h2:after {
+    background: url(../img/b-window__title-after.png);
+}
+.feedback > .feedback__name,
+.feedback > .feedback__mail {
+    background: url(../img/e-input-text.png);
+}
+.feedback__send {
+    background: url(../img/e-button.png) repeat-x 0 0;
+}
+.scroll .ui-slider-handle {
+    background: url("../img/ui-slider-handle.png");
+}
+.portfolio__using .html5 {
+    background: url("../img/html5.png");
+}
+.portfolio__using .canvas {
+    background: url("../img/canvas.png");
+}
+.portfolio__using .ajax {
+    background: url("../img/ajax.png");
+}
+.sub-gallery__layout:before,
+.sub-gallery__layout:after {
+    background: url("../img/b-sub-galery__layout.png") repeat-x 0 0;
+}
+/* --------------- /body --------------- */

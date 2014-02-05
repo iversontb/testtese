@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,700,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vextal_rates.css">
+    <link rel="stylesheet" href="css/vextel_rates_new.css">
+    <link rel="stylesheet" href="css/jquery.scrollbar.css">
+
+    <title>zapishi</title>
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/jquery.main.js"></script>
+    <script src="js/jquery.town-search.js" > </script>
+    <script src="js/jquery.select.js" > </script>
+    <script src="http://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"> </script>
+    <script src="js/jquery.map.js" > </script>
+    <script type="text/javascript" src="js/jquery.scrollbar.js"></script>
+    <script type="text/javascript" src="js/srollbar.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+
+
+
+</head>
+<body>
+<div class="popUp">
+    <div class="popBack"></div>
+    <div class="videoPop">
+        <a href="#" class="closePop">Закрыть</a>
+        <iframe width="640" height="400" src="//www.youtube.com/embed/vkCi1twSywY" frameborder="0" allowfullscreen></iframe>
+    </div>
+</div>
+
+<!-- site -->
+<div class="site">
+<!-- header -->
+<header class="header">
+
+    <!-- logo -->
+    <a href="index.html" title="На главную" class="logo"><img src="img/logo.png" width="221" height="192" alt=""></a>
+    <!-- /logo -->
+
+    <!-- enterBlock -->
+    <div class="enterBlock lockOut">
+        Привет, <a href="#">info@mishabelstar.com</a>
+    </div>
+    <!-- /enterBlock -->
+
+    <!-- showCounter -->
+    <ul class="showCounter">
+        <li class="users">3400
+            <span>пользователей</span></li>
+        <li class="organization">1200
+            <span>организаций</span></li>
+    </ul>
+    <!-- /showCounter -->
+
+    <!-- social -->
+    <div class="social">
+        <a href="#" title="twitter" class="twitter">twitter</a>
+        <a href="#" title="facebook" class="facebook">facebook</a>
+        <a href="#" title="linkedIn" class="linkedIn">linkedIn</a>
+    </div>
+    <!-- /social -->
+
+</header>
+<!-- /header -->
+
+<!-- site__content -->
+<div class="site__content">
+
+<!-- content-wrap -->
+<div class="content-wrap">
+
+<!-- leftSideBar -->
+<aside class="leftSideBar">
+
+    <!-- subMenu -->
+    <div class="subMenu">
+        <a href="#">О нас</a>
+        <a href="#">Контакты</a>
+    </div>
+    <!-- /subMenu -->
+
+    <!-- sortTown -->
+    <form class="sortTown"  action="#" method="post">
+        <input type="text" name="searchText" data-php="php/town-search.php" class="townSearch" placeholder="Москва">
+        <a href="#" class="townDrop" val="showAll"></a>
+
+        <!-- resulSearch -->
+        <div class="resulSearch">
+            <div id="test-webkit3" class="content scroll-simple scroll-simple_outer">
+                <div class="resizable">
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /resulSearch -->
+
+    </form>
+    <!-- /sortTown -->
+
+
+
+    <!-- asideMenu -->
+    <nav class="asideMenu">
+        <span>Авто </span>
+
+        <!-- asideSubMenu -->
+        <div class="asideSubMenu">
+            <a href="#">автошколы</a>
+            <a href="#">техосмотр</a>
+            <a href="#">автострахование</a>
+            <a href="#">автошколы</a>
+            <a href="#">техосмотр</a>
+            <a href="#">автострахование</a>
+
+        </div>
+        <!-- /asideSubMenu -->
+        <span>  Активный отдых </span>
+        <!-- asideSubMenu -->
+        <div class="asideSubMenu">
+            <a href="#">автошколы</a>
+            <a href="#">техосмотр</a>
+            <a href="#">автострахование</a>
+            <a href="#">автошколы</a>
+            <a href="#">техосмотр</a>
+            <a href="#">автострахование</a>
+
+        </div>
+        <!-- /asideSubMenu -->
+        <a href="#">Безопасность </a>
+        <span>Бизнес </span>
+        <!-- asideSubMenu -->
+        <div class="asideSubMenu">
+            <a href="#">автошколы</a>
+            <a href="#">техосмотр</a>
+            <a href="#">автострахование</a>
+            <a href="#">автошколы</a>
+            <a href="#">техосмотр</a>
+            <a href="#">автострахование</a>
+
+        </div>
+        <!-- /asideSubMenu -->
+        <a href="#">Горячие услуги </a>
+        <a href="#">Домашнее хозяйство </a>
+        <a href="#">    Животный мир </a>
+        <a href="#">Здоровье </a>
+        <a href="#">Искусство </a>
+        <a href="#">Кафе Рестораны Бары </a>
+        <a href="#">Красота </a>
+        <a href="#">    Курьерские услуги </a>
+        <a href="#">Недвижимость </a>
+        <a href="#">Перевозки </a>
+        <a href="#">Производство </a>
+        <a href="#">Развлечение </a>
+        <a href="#">Реклама, СМИ </a>
+        <a href="#">Ремонт электроники </a>
+        <a href="#">Строительство и ремонт </a>
+        <a href="#">Туризм </a>
+        <a href="#">Учеба </a>
+
+    </nav>
+    <!-- /asideMenu -->
+
+    <!-- banner -->
+    <a href="#" class="banner">
+        <img src="pic/pic1.jpg" width="159" height="134" alt="">
+    </a>
+    <!-- /banner -->
+
+
+    <!-- videoBlog -->
+    <div class="videoBlog">
+        <a href="#" class="videoContainer popShow">
+            <img src="pic/pic2.jpg" width="175" height="105" alt="">
+        </a>
+        <a href="#" class="listVideo popShow">Посмотрите видео
+            о работе нашего
+            портала</a>
+    </div>
+    <!-- /videoBlog -->
+
+    <!-- banner -->
+    <a href="#" class="banner">
+        <img src="pic/pic3.jpg" width="200" height="301" alt="">
+    </a>
+    <!-- /banner -->
+
+</aside>
+<!-- /leftSideBar -->
+
+<!-- contentBlock -->
+<div class="contentBlock">
+
+    <!-- contantBanner -->
+    <a href="#" class="contantBanner">
+        <img src="pic/pic4.jpg" width="100%"  alt="">
+    </a>
+    <!-- /contantBanner -->
+
+    <!-- servisesWraper -->
+    <div class="servisesWraper">
+
+        <img src="pic/pic15.png" width="364" height="245" alt="">
+
+        <!-- servises -->
+        <dl class="servises">
+            <dt>Уникальная система онлайн-записи </dt>
+            <dd>Запись Онлайн помогает клиенту самостоятельно узнать всю необходимую
+                для него информацию , в любое время суток оформить запись на прием
+                и моментально получить подтверждение.</dd>
+        </dl>
+        <!-- servises -->
+
+        <!-- servises -->
+        <dl class="servises">
+            <dt>Удобные SMS напоминания</dt>
+            <dd>При помощи SMS напоминаний наш сервис напомнит вашим клиентам
+                о назначенном времени визита к вам. <span>Это удобно</span> для клиента, а вы
+                получите <span class="textDecor">отсутствие очередей</span>  и постоянно <span class="textDecor">заполненный рабочий
+                    график.</span> </dd>
+        </dl>
+        <!-- servises -->
+
+        <!-- servises -->
+        <dl class="servises">
+            <dt>Запись у вас на сайте</dt>
+            <dd>Наша система записи <span>может быть легко интегрирована на ваш сайт</span> – вы обеспечите максимальное удобство для своих
+                клиентов, которые смогут <span class="textDecor">сразу же</span>  назначить время посещения.</dd>
+        </dl>
+        <!-- servises -->
+
+        <!-- servises -->
+        <dl class="servises">
+            <dt>Уникальная цена</dt>
+            <dd>Привлекайте клиентов БЕСПЛАТНО!   Мы не берем  процент со сделки .</dd>
+        </dl>
+        <!-- servises -->
+
+        <img src="pic/pic16.png" width="270" height="282" alt="">
+
+
+        <!-- servises -->
+        <dl class="servises">
+            <dt>Рекламная страничка на Zapishi.com</dt>
+            <dd><span class="textDecor">Получите еще одну рекламную площадку</span>, которая будет привлекать к вам новых
+                клиентов – разместите страничку с предложением своих услуг на нашем сайте!
+                Сайт удобно просматривать с любых устройств: смартфонов, компьютеров и
+                планшетов, что обеспечивает <span>максимальный охват вашей целевой аудитории</span>.
+                Кроме выгодной системы записи, вы получаете постоянно действующую рекламу,
+                с положительными отзывами о вас, которую видят все посетители нашего сервиса.
+            </dd>
+        </dl>
+        <!-- servises -->
+
+
+        <!-- servises -->
+        <dl class="servises">
+            <dt>Акции и скидки</dt>
+            <dd>При помощи нашего сервиса, вы сможете <span>информировать клиентов о
+                проводимых акциях и действующих скидках</span>, благодаря чему рекламные акции
+                привлекут максимальное количество посетителей.
+            </dd>
+        </dl>
+        <!-- servises -->
+
+        <!-- servises -->
+        <dl class="servises">
+            <dt>Попробуйте бесплатно</dt>
+            <dd>Мы дарим вам <b>7 дней тестового периода полностью бесплатно</b> - оцените наше уникальное предложение, получая
+                новых клиентов уже сегодня!
+            </dd>
+        </dl>
+        <!-- servises -->
+
+    </div>
+    <!-- /servisesWraper -->
+
+    <div class="tarifContainer">
+
+        <ul class="tarifWrap">
+
+            <li>
+
+                <!-- tarifBlock -->
+                <div class="tarifBlock">
+                    <h3>Мини</h3>
+                    <p class="tarifPrice">200р/мес</p>
+                    <dl>
+                        <dt>сотрудников</dt>
+                        <dd>до 3</dd>
+                    </dl>
+
+                    <a href="#" class="choose">Выбрать</a>
+                </div>
+                <!-- /tarifBlock -->
+
+            </li>
+
+
+
+            <li>
+
+                <!-- tarifBlock -->
+                <div class="tarifBlock best">
+                    <h3>Безлимит</h3>
+                    <p class="tarifPrice">500р/мес</p>
+                    <dl>
+                        <dt>сотрудников</dt>
+                        <dd>безлимитно</dd>
+                    </dl>
+
+                    <a href="#" class="choose">Выбрать</a>
+                </div>
+                <!-- /tarifBlock -->
+
+            </li>
+
+
+        </ul>
+
+    </div>
+
+    <!-- mapConatiner -->
+    <div class="mapConatiner">
+        <div class="logoMap"></div>
+        <div class="mapBox">
+            <div id="map" class="mapYa" data-lat="55.78" data-long="37.60"></div>
+        </div>
+        <a href="#" class="showMap closeMap">РАЗВЕРНУТЬ КАРТУ</a>
+    </div>
+    <!-- /mapConatiner -->
+
+
+</div>
+<!-- /contentBlock -->
+
+
+
+</div>
+<!-- /content-wrap -->
+
+</div>
+<!-- /site__content -->
+
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <a href="#" class="footerLogo"><img src="img/footer-logo.png" width="76" height="110" alt=""></a>
+
+        <!-- footerMenu -->
+        <div class="footerMenu">
+            <a href="#">Справка</a>
+            <a href="#">Правила</a>
+            <a href="#">Пользовательское соглашение</a>
+            <a href="#">Отзывы</a>
+            <a href="#">Услуги</a>
+            <a href="#">Места</a>
+            <a href="#">Новости</a>
+        </div>
+        <!-- /footerMenu -->
+
+        <div class="logos"><img src="img/weblogos.png" width="100" height="52" alt=""></div>
+        <p class="copy">&copy; Vextel, 2012-2013</p>
+
+        <dl class="creaters">
+            <dt>Разработка:</dt>
+            <dd><a href="#"> Надежда Древаль</a>  & <a href="#">Михаил Белстар</a> </dd>
+        </dl>
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>

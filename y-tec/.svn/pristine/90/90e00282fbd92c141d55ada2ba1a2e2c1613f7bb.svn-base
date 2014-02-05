@@ -1,0 +1,36 @@
+/* --------------- baners --------------- */
+.baners {
+    position: relative;
+    width: 605px;
+    margin-bottom: 26px;
+    font-family: 'Open Sans', sans-serif;
+}
+.baners h2 {
+    font-size: 14px;
+    margin-bottom: 9px;
+    font-weight: bold;
+}
+.baners h2 > a {
+    color: #e5565c;
+    text-decoration: underline;
+    font-size: 14px;
+}
+.baners h3 > a:hover {
+    text-decoration: none;
+}
+.baners p {
+    font-size: 12px;
+    line-height: 18px;
+    display: block;
+    margin-bottom: 16px;
+}
+.baners a > img {
+    border: 1px solid #cfd7de;
+    width: 605px;
+    height: 117px;
+    margin-bottom: 37px;
+}
+.baners a > img:hover {
+    border-color: #000;
+}
+/* --------------- /baners --------------- */

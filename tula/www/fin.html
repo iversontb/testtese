@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/cusel.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/cusel-min-2.5.js"></script>
+    <script src="js/cusel-inic.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+    <script src="js/jquery.placeholder.js"></script>
+    <link rel="stylesheet" href="css/pie.css" />
+    <link rel="stylesheet" href="css/main.ie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+<!-- site -->
+<div class="site">
+    <div class="site__layout">
+        <!-- header -->
+        <header class="header">
+
+            <!-- headTop -->
+            <div class="headTop">
+
+                <div class="headTopInside">
+
+                    <!-- searchForm -->
+                    <form action="#" method="post" class="searchForm">
+                        <div class="inputWrap">
+                            <input type="text" placeholder="Поиск по сайту">
+                        </div>
+                    </form>
+                    <!-- /searchForm -->
+
+                    <a href="#" class="greenBut">Подять заявку</a>
+
+                    <p class="phone">+7 (4872) 35-75-81</p>
+
+                    <a href="#" class="skype">Позвонить сейчас</a>
+
+                    <!-- language -->
+                    <div class="language">
+                        <ul class="language__layout">
+                            <li class="language__item"><a class="language__lnk" href="#"><img src="img/english.png" height="11" width="16" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <!-- /language -->
+
+                </div>
+
+
+            </div>
+            <!-- /headTop -->
+
+            <!-- headInside -->
+            <div class="headInside">
+
+                <!-- logo -->
+                <a href="index.html" title="main" class="logo"><img src="img/logo.png"></a>
+                <!-- /logo -->
+
+                <h3 class="slogan">Центр сертификации Тульской ТПП</h3>
+
+                <a href="#" class="address">Тула, ул. Мира, д. 54</a>
+
+                <!-- main-menu -->
+                <nav class="main-menu">
+                    <ol class="main-menu__layout">
+                        <li class="main-menu__item main-menu__item_active"><span class="main-menu__lnk">Главная</span></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">О компании</a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Подтверждение соответствия </a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Сертификация услуг ЖКХ </a></li>
+                        <li class="main-menu__item"><a class="main-menu__lnk" href="#">Контакты</a></li>
+                    </ol>
+                </nav>
+                <!-- /main-menu -->
+
+            </div>
+            <!-- /headInside -->
+
+
+
+        </header>
+        <!-- /header -->
+
+        <div class="site__content">
+
+            <!-- content-wrap -->
+            <div class="content-wrap">
+
+                <!-- leftBlock -->
+                <div class="leftBlock">
+
+                    <p class="topicType1">Наши услуги</p>
+
+                    <!-- subMenu -->
+                    <ul class="subMenu">
+                        <li><a href="#">Подтверждение соответствия в рамках Таможенного союза</a></li>
+                        <li><a href="#">Сертификация услуг ЖКХ в системе «Стройжилко ммунсертификация» </a></li>
+                        <li><a href="#">Сертификация по ИСО 9001, 14001 и др.  </a></li>
+                        <li><a href="#">Сертификат соответствия «Евро 4»</a></li>
+                        <li><a href="#">Сертификат соответствия ГОСТ Р </a></li>
+                        <li><a href="#">Отказные письма</a></li>
+                        <li><a href="#">Декларация соответствия</a></li>
+                    </ul>
+                    <!-- /subMenu -->
+
+                </div>
+                <!-- /leftBlock -->
+
+                <!-- orderBlock -->
+                <form action="#" method="post" class="orderBlock">
+                    <p class="topicType3">Заявка онлайн</p>
+                    <div class="lineContainer">
+                        <label>ФИО контактного лица <span>*</span></label>
+                        <div class="inputWrap">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="lineContainer">
+                        <label>Название фирмы <span>*</span></label>
+                        <div class="inputWrap">
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="lineContainer">
+                        <label>Номер телефона/факса  <span>*</span></label>
+                        <div class="inputWrap">
+                            <input type="text">
+                        </div>
+                        <span>Например: +7 929 123 45 67</span>
+                    </div>
+                    <div class="lineContainer">
+                        <label>Электронная почта <span>*</span></label>
+                        <div class="inputWrap">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="lineContainer">
+                        <label>Вы бы хотели оформить <span>*</span></label>
+                        <div class="selectWrap">
+                            <select id="idSelect" name="nameSelect">
+                                <option value="Выберите услугу">Выберите услугу</option>
+                                <option value="Выберите услугу">Выберите услугу</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+
+                    <div class="lineContainer">
+                        <label>Наименование продукции <span>*</span></label>
+                        <div class="inputWrap">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="lineContainer">
+                        <label>Объект сертификации</label>
+                        <div class="selectWrap">
+                            <select id="idSelect2" name="nameSelect2">
+                                <option value="Выберите объект">Выберите объект</option>
+                                <option value="ВВыберите объект">Выберите объект</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="lineContainer">
+                        <label>Фирма производитель  <span>*</span></label>
+                        <div class="inputWrap">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="lineContainer">
+                        <label>Происхождение продукции (страна)  <span>*</span></label>
+                        <div class="inputWrap">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="lineContainer">
+                        <label>ТН ВЭД<span>*</span></label>
+                        <div class="inputWrap">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="lineContainer">
+                        <label>ОКП <span>*</span></label>
+                        <div class="inputWrap">
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="lineContainer capcha">
+
+                        <div class="block">
+                            <label>Введите слово с картинки  <span>*</span></label>
+                            <div class="inputWrap">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="capchaContainer">
+                            <img src="pic/pic9.jpg" height="38" width="178" alt="">
+                        </div>
+
+
+
+                    </div>
+
+                    <input type="submit" class="eBut">
+
+                    <ul class="documentsList">
+                        <li><a href="#">Форма заявки</a> на проведение сертификации продукции в Системе сертификации ГОСТ Р и ТР</li>
+                        <li><a href="#">Форма заявки</a> на проведение сертификации в Системе сертификации ГОСТ Р ISO 9001–2008</li>
+                    </ul>
+
+                </form>
+                <!-- /orderBlock -->
+
+
+                <!-- firms -->
+                <ul class="firms">
+                    <li><a href="#"><img src="pic/pic2.jpg" height="67" width="138" alt=""></a></li>
+                    <li><a href="#"><img src="pic/pic3.jpg" height="67" width="138" alt=""></a></li>
+                    <li><a href="#"><img src="pic/pic4.jpg" height="67" width="138" alt=""></a></li>
+                    <li><a href="#"><img src="pic/pic5.jpg" height="67" width="138" alt=""></a></li>
+                    <li><a href="#"><img src="pic/pic6.jpg" height="67" width="138" alt=""></a></li>
+                    <li><a href="#"><img src="pic/pic7.jpg" height="67" width="138" alt=""></a></li>
+                    <li><a href="#"><img src="pic/pic8.jpg" height="67" width="138" alt=""></a></li>
+                </ul>
+                <!-- /firms -->
+
+            </div>
+            <!-- /content-wrap -->
+
+        </div>
+    </div>
+</div>
+<!-- /site -->
+
+<!-- footer -->
+<footer class="footer">
+    <div class="footer__layout">
+
+        <!-- footerMenu -->
+        <ul class="footerMenu">
+            <li><a href="#">Деятельность</a></li>
+            <li><a href="#">Охрана труда</a></li>
+            <li><a href="#">Задайте вопрос</a></li>
+            <li><a href="#">Сертификация продукции </a></li>
+            <li><a href="#">Подать заявку онлайн </a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Сертификация услуг </a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Часто задаваемые вопросы </a></li>
+            <li><a href="#">Сертификация в сфере ЖКХ </a></li>
+            <li><a href="#">Аттестаты аккредитации </a></li>
+            <li><a href="#">Полезные ссылки </a></li>
+            <li><a href="#">Сертификация ISO 9000 </a></li>
+            <li><a href="#">Документация</a></li>
+            <li><a href="#">Мероприятия</a></li>
+        </ul>
+        <!-- /footerMenu -->
+
+        <!-- footerBlock -->
+        <div class="footerBlock">
+
+            <p class="PhoterPhone">+7 (4872) 35-75-81</p>
+            <ul>
+                <li><a href="#" class="skype">Позвонить сейчас</a></li>
+                <li><a class="greenBut" href="#"></a></li>
+            </ul>
+
+            <!-- searchForm -->
+            <form action="#" method="post" class="searchForm">
+                <div class="inputWrap">
+                    <input type="text" placeholder="Поиск по сайту">
+                </div>
+            </form>
+            <!-- /searchForm -->
+
+            <p class="copy">&copy; 2002-2013 Центр сертификации Тульской ТПП</p>
+
+        </div>
+        <!-- /footerBlock -->
+
+
+    </div>
+</footer>
+<!-- /footer -->
+
+</body>
+</html>
